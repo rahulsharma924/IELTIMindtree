@@ -1,0 +1,19 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='howToOrder-clientlib'}" />
+
+<div data-sly-list.children="${resource.listChildren}">
+<div data-sly-list.fields="${children.listChildren}">
+
+<section class="howtoorder_section">
+  <div class="howtoorder_item">
+    <div class="howtoorder_container">
+      <div class="howtoorder_icon">
+        <i class="${fields.howtoordericon}"></i>
+      </div>
+      <div class="howtoorder_text">
+          <h3 class="howtoorder_heading">${fields.howtoorder}</h3>
+           <p class="howtoorder_description" >${fields.howtoorderdescription @context='html'}</p>
+      </div>
+    </div>
+  </div>
+</section>

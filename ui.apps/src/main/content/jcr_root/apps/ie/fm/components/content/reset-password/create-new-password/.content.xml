@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-20T15:15:41.497+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/fm/settings/wcm/templates/content-page-without-breadcrumb"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Create New Password"
+        sling:resourceType="core/wcm/components/page/v3/page"
+        pageTitle="Create New Password">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/container/v1/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/container/v1/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container">
+                    <customformtitle
+                        jcr:created="{Date}2022-09-20T14:01:58.824+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-20T14:02:02.977+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customformtitle"
+                        text="&lt;p>Create New Password&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <customcreatepwddesc
+                        jcr:created="{Date}2022-09-20T14:11:02.258+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-20T14:11:02.258+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customcreatepwddesc"/>
+                    <customcreatepwddesc_1317072196
+                        jcr:created="{Date}2022-09-20T14:11:15.336+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-20T14:23:21.955+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customcreatepwddesc"
+                        text="&lt;p>In order to protect your account, make sure your password:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Must be at least 8 characters&lt;/li>&#xd;&#xa;&lt;li>Can not match any part of your username or email address&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                        textIsRich="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </customcreatepwddesc_1317072196>
+                    <enterpassword
+                        jcr:created="{Date}2022-09-18T15:56:13.134+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-18T15:58:50.764+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Enter Password"
+                        sling:resourceType="ie/fm/components/content/resetpassword/enterpassword"
+                        id="pswd1"
+                        name="enterPassword"
+                        rows="2"
+                        type="password">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </enterpassword>
+                    <confirmpassword
+                        jcr:created="{Date}2022-09-18T15:56:55.886+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-18T15:59:36.960+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Confirm Password"
+                        sling:resourceType="ie/fm/components/content/resetpassword/confirmpassword"
+                        id="pswd2"
+                        name="confirmPassword"
+                        rows="2"
+                        type="password">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </confirmpassword>
+                    <confirmpasswordbutto
+                        jcr:created="{Date}2022-09-18T16:08:32.770+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-18T16:17:28.200+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Confirm Password"
+                        sling:resourceType="ie/fm/components/content/resetpassword/confirmpasswordbutton"
+                        id="confirmpasswordbutton"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </confirmpasswordbutto>
+                    <confirmbutton
+                        jcr:created="{Date}2022-09-18T16:10:38.507+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-18T16:11:35.398+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Confirm Password"
+                        sling:resourceType="ie/fm/components/content/resetpassword/confirmbutton"
+                        name="confirmPassword"
+                        type="submit">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="2"
+                                width="3"/>
+                        </cq:responsive>
+                    </confirmbutton>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

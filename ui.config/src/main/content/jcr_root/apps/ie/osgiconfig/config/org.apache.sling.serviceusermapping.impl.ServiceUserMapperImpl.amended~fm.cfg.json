@@ -1,0 +1,6 @@
+{
+  "user.default": "",
+  "user.mapping": [
+    "aem-ie.core:fm-service-user=[fm-service-user]"
+  ]
+}

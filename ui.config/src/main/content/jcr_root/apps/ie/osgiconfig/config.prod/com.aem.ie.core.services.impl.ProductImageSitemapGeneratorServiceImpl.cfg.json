@@ -1,0 +1,9 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "productImageXmlPath":"/content/fm/sitemap_productimage.xml",
+  "applicationId":"O0PAXP3VI5",
+  "apiKey": "8a37765fbbbc43130ee092a905f98a95",
+  "indexName": "fm_product_en_prod",
+  "lastModifiedDate": "2023-07-11",
+  "productImageRootPath": "/content/dam/infinite-electronics/product-assets/fairview-microwave/images/"
+}

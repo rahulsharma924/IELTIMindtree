@@ -1,0 +1,7 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getBlogRootPath":"/content/fm/en/blog",
+  "getBlogtagRootPath":"/content/cq:tags",
+  "getBlogArchivesRootPath":"/content/fm/en/blog/archives",
+  "getArticleLimit":"3"
+}

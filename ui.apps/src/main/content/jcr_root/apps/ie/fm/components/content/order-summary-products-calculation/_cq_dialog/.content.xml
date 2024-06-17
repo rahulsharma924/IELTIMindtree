@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Order Summary and Email popup"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_text_v2"
+    trackingFeature="core-components:text:v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <firsttab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Email Confirmation text"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the text for email confirmation, when email is sent."
+                                                fieldLabel="Email confirmation text."
+                                                name="./emailconfirmationtext"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </firsttab>
+                    <secondtab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Email and Print Buttons, Heading of component"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the title of the component"
+                                                fieldLabel="Title"
+                                                name="./maintitle"/>
+                                            <emailbtn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Email Button text"
+                                                fieldLabel="Email Button text"
+                                                name="./emailbtn"/>
+                                            <buttonlink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Print button text"
+                                                fieldLabel="Print button text"
+                                                name="./printbtn"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </secondtab>
+                    <thirdtab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Email Modal popup"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the heading of email modal popup."
+                                                fieldLabel="Enter the heading of email modal popup."
+                                                name="./headingemailmodalpopup"/>
+                                            <emailLabels
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Email label text."
+                                                fieldLabel="Email label text"
+                                                name="./emailLabels"/>
+                                            <addmoreemailsbtntext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Button text for add more emails CTA."
+                                                fieldLabel="Enter the Button text for add more emails CTA."
+                                                name="./addmoreemails"/>
+                                            <cancelCTA
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the button text - Cancel CTA"
+                                                fieldLabel="Enter the button text - Cancel CTA"
+                                                name="./cancelCTA"/>
+                                            <saveCTA
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the button text - Save CTA"
+                                                fieldLabel="Enter the button text - Save CTA"
+                                                name="./saveCTA"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </thirdtab>
+                    <orderconfirmationmessage
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Order Confirmation Message"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Main Title for confirmation"
+                                                fieldLabel="Enter the heading"
+                                                name="./mainHeading"/>
+                                            <descriptiontextRefnum
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Description for reference number"
+                                                fieldLabel="Enter description text for reference number field"
+                                                name="./descriptiontextRefnum"/>
+                                            <descriptiontext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Description text below reference number"
+                                                fieldLabel="Enter the description"
+                                                name="./descriptiontext"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </orderconfirmationmessage>
+                    <taxexemption
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tax exemption Block"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <taxExemptText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text for tax exempt."
+                                                fieldLabel="Enter the text for tax exempted."
+                                                name="./taxExemptText"/>
+                                            <downloadPdf
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Dowmload pdf for tax exemption"
+                                                fieldLabel="Download pdf path"
+                                                name="./downloadPdf"
+                                                rootPath="/content/dam/fm"/>
+                                            <downloadPathText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Download Path Text Field (Tax Exemption)"
+                                                fieldLabel="Enter Download Path Text Field for tax exemption"
+                                                name="./downloadPathText"/>
+                                            <downloadRemainingText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Complete the sentence."
+                                                fieldLabel="Enter the remaining text for tax exemption"
+                                                name="./downloadRemainingText"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </taxexemption>
+                    <redirection
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Redirection Block"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <redirectionPath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Create account redirection path"
+                                                fieldLabel="Redirection path"
+                                                name="./href"
+                                                rootPath="/content/fm/en"/>
+                                            <redirectionPathText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Redirection Path Text Field (Create Account)"
+                                                fieldLabel="Enter Redirection Path Text Field"
+                                                name="./redirectionPathText"/>
+                                            <remainingText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Complete the sentence."
+                                                fieldLabel="Enter the remaining text."
+                                                name="./remainingText"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </redirection>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

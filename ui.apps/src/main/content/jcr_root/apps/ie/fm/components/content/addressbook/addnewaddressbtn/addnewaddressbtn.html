@@ -1,0 +1,231 @@
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='addnewaddressbtn'}" /> 
+
+<div class="addnewaddress_btn" >
+    <button
+        data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+        data-sly-use.iconTemplate="icon.html"
+        data-sly-element="${button.buttonLink.valid ? 'a' : 'button'}"
+        type="${button.buttonLink.valid ? '' : 'button'}"
+        id="${button.id}"
+        class="cmp-button ie-primary-btn"
+        data-sly-attribute="${button.buttonLink.htmlAttributes}"
+        aria-label="${button.accessibilityLabel}"
+        data-cmp-clickable="${button.data ? true : false}"
+        data-cmp-data-layer="${button.data.json}"
+    >
+        <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+        <span data-sly-test="${button.text}" class="cmp-button__text">${button.text}</span>
+    </button>
+
+    <div id="addnewaddress-popup" class="addnewaddress-pop-up">
+        <!-- Modal content -->
+        <div class="modal-content-filter">
+            <div class="modal-header-filter">
+                <span class="popup-close">
+                    <i class="fa-regular fa-xmark font-32 close-icon" aria-hidden="true"></i>
+                </span>
+                <div class="filter-text">${properties.popupheadertitle}</div>
+            </div>
+            <div class="modal-body-filter scroll-box">
+                <div class="address-title-shipping">${properties.addresstype}</div>
+                <div class="select-address">
+                    <p>
+                        <input type="radio" id="addresslabel1" name="radio-group" value="Shipping" />
+                        <label for="addresslabel1">${properties.addresslabel1}</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="addresslabel2" name="radio-group" value="Billing" />
+                        <label for="addresslabel2">${properties.addresslabel2}</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="addresslabel3" name="radio-group" value="Both" />
+                        <label for="addresslabel3">${properties.addresslable3}</label>
+                    </p>  
+                </div>
+                <p class="messagealert" id="addressTypeMsg"></p>
+                <div class="address-title-shipping">${properties.addressnewtitletype}</div>
+                <div class="row-data">
+                    <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                            <label for="addfirstName" class="label-text">${properties.firstname}</label>
+                            <div class="order-country-input">
+                                <input type="text" id="addfirstName" class="first__name" name="firstname" placeholder="${properties.FirstNamePlacehoder}" />
+                            </div>
+                            <p class="messagealert validation-error" id="addfirstNameMsgs"></p>
+                        </div>
+
+                    <!--<div class="select-estimate">
+                            <label for="addnewlastname" class="label-text">${properties.lastname}</label>
+                            <div class="order-country-input">
+                                <input type="text" id="addlastname" name="lastname" placeholder="${properties.lastnameplaceholder}" />
+                            </div>
+
+                            <p class="messagealert" id="addlastNameMsgs"></p>
+                        </div>-->
+                    </div>
+                    <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                            <label for="addcompanyname" class="label-text">${properties.companyname} </label>
+                            <div class="order-country-input">
+                                <input type="text" id="addcompanyname" class="company__name" name="companyname" placeholder="${properties.companynameplaceholder}" />
+                            </div>
+
+                            <p class="messagealert validation-error" id="addcompanyMsgs"></p>
+                        </div>
+                    </div>
+                    <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                            <label for="addmodalcountry" class="label-text" for="addmodalcountry">${properties.countryregion}</label>
+                            <div class="dropdown" id="form-options-region">
+                                <select class="addcmp-form-options__field custom-select btn dropdown-toggle country__name" name="country" id="addmodalcountry">
+                                    <option value="" selected="selected">
+                                        Select
+                                    </option>
+                                </select>
+                                <p class="messagealert validation-error" id="countrymsg"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                            <label for="addaddressone" class="label-text">${properties.address1}</label>
+                            <div class="order-country-input">
+                                <input type="text" id="addaddressone" class="address__first--name" name="addressone" placeholder="${properties.address1placeholder}" />
+                            </div>
+
+                            <p class="messagealert validation-error" id="addaddressmsg"></p>
+                        </div>
+                    </div>
+                    <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                            <label for="addaddresstwo" class="label-text">${properties.address2}</label>
+                            <div class="order-country-input">
+                                <input type="text" id="addaddresstwo" class="address__second--name" name="addresstwo"  placeholder="${properties.address2placeholder}" />
+                            </div>
+
+                            <p class="messagealert validation-error" id="addaddressmsgtwo"></p>
+                        </div>
+                    </div>
+                    <div class="d-flex-zipcode flex-direction-column">
+                        <div class="select-estimate">
+                            <label for="addcityname" class="label-text">${properties.cityname}</label>
+                            <div class="order-country-input">
+                                <input type="text" id="addcityname" class="city__name" name="cityname"  placeholder="${properties.citynameplaceholder}" />
+                            </div>
+
+                            <p class="messagealert validation-error" id="addcityMsg"></p>
+                        </div>
+                        <div class="select-estimate select-mt">
+                            <label for="addmodalstate" class="label-text">${properties.statename}</label>
+                            <div class="dropdown">
+                                <select class="addcmp-form-options__field custom-select btn dropdown-toggle state__name" name="state" id="addmodalstate">
+                                    <option value="" selected="selected">
+                                        Select
+                                    </option>
+                                </select>
+                                <p class="messagealert validation-error" id="statemsg"></p>
+                            </div>
+                        </div>
+                        <div class="select-estimate select-mt">
+                            <label for="addzipcode" class="label-text">${properties.zipcode}</label>
+                            <div class="order-country-input">
+                                <input type="text" id="addzipcode" class="zip__code" name="zipcode"  placeholder="${properties.zipcodeplaceholder}" />
+                            </div>
+                            <p id = "AddZipmsg" class="ie-error-medium validation-error"> </p>
+                            <p id = "AddZiplengthmsg" class="ie-error-medium validation-error"> </p>
+                            <!-- <p class="messagealert" id="addzipcodemsg"></p> -->
+                        </div>
+                    </div>
+					<div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                            <label for="addphonenumber" class="label-text">${properties.addphonenumber}</label>
+                            <div class="order-country-input">
+								<input type="tel" id="addphonenumber" name="addphonenumber" class="phonenumberval phone__number"/>
+							</div>
+                            
+                            <p class="messagealert validation-error" id="phoneNumberMsg"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer-filter pd-20">
+                <div class="footer-btn-right mb-15">
+                    <div class="compare-box">
+                        <input id="defaultid" class="compare-checkbox" type="checkbox" name="checkbox" />
+                        <label for="defaultid"><span class="d-none-compare-mobile">${properties.checkboxtitle}</span></label>
+                    </div>
+                </div>
+
+                <div class="footer-btn-right">
+                    <button type="button" class="footer-btn-clear cancelbtn-mt ie-scondary-btn" id="cancelresetbtn">${properties.cancelbtntitle}</button>
+                    <button type="button" id="addnewaddressbtn" class="footer-btn-apply ie-primary-btn validate__address">${properties.addbtntitle}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="AddressSavedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <div class="modal-body">
+                                <div class="savemodal-wrapper">                                   
+                                        <div class="info-updated-block">${properties.popuptext}
+                                        </div>
+                                </div>
+                                <div class="close-section-cls"><button type="button" data-dismiss="modal"
+                                                class="cancelbtn-mt ie-primary-btn address-done-cls">${properties.buttontext}</button></div>
+
+                        </div>
+                </div>
+        </div>
+</div>
+<script>
+
+var modal = document.getElementById("addnewaddress-popup");
+     var btn = document.getElementById("filterBtnnew");
+        var cancelbtn = document.getElementsByClassName("cancelbtn-mt")[0];
+        var span = document.getElementsByClassName("popup-close")[0];
+        btn.onclick = function(event) {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+            clearAddNewAddressBookError();
+        }
+        cancelbtn.onclick = function () {
+            modal.style.display = "none";
+            clearAddNewAddressBookError();
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                clearAddNewAddressBookError();
+            }
+        }
+        function clearAddNewAddressBookError(){
+            $("#addnewaddress-popup").find("input").val("");
+            $("#addnewaddress-popup").find("select").val("");
+            $("#addnewaddress-popup").find("input:checkbox[name=checkbox]").prop("checked", false);
+            $("#addnewaddress-popup").find("input:radio[name=radio-group]").prop("checked", false);
+            document.getElementById("addressTypeMsg").innerHTML = '';
+            document.getElementById("addfirstNameMsgs").innerHTML = '';
+            document.getElementById("addcompanyMsgs").innerHTML = '';
+            document.getElementById("countrymsg").innerHTML = '';
+            document.getElementById("addaddressmsg").innerHTML = '';
+            document.getElementById("addaddressmsgtwo").innerHTML = '';
+            document.getElementById("addcityMsg").innerHTML = '';
+            document.getElementById("statemsg").innerHTML = '';
+            document.getElementById("AddZipmsg").innerHTML = '';
+            document.getElementById("phoneNumberMsg").innerHTML = '';
+        }
+</script>
+
+ <sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='addnewaddressbtn'}" /> 

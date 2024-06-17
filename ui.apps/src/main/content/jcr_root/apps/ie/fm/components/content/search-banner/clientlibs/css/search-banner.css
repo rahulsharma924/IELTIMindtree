@@ -1,0 +1,100 @@
+.search__banner_section {
+  background: var(--secondaryLinkNormal);
+  display: flex;
+}
+#WhitePaperInfo .fm-container{ padding-right: 0px;}
+#technicalresources_banner .fm-container{ padding-right: 0px;}
+.search__banner_section {
+  background-color: var(--secondaryLinkNormal);
+  max-width:1280px;
+  width: 100%;
+  margin:0 auto;
+  height: 388px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: start;
+}
+.calculator_card_div {
+  flex: 0 0 50%;
+  height: 100%;
+}
+.calculators_content {   
+  flex: 0 0 50%;
+  height: 100%;
+}
+.search__banner_textarea{
+	padding: 45px 78px 10px 73px;
+}
+.search__banner{
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondaryLinkNormal);
+}
+.search__banner .search__banner_title {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize45);
+  color: var(--secondaryColor);
+  margin-bottom: 32px;
+}
+.search__banner .search__banner_content {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
+  color: var(--secondaryColor);
+  min-height: 71px;
+  line-height: var(--lineHeight1and428);
+  margin:30px 0 45px 0;
+  width:50%;
+}
+#technicalresources_banner .search__banner_content {
+    margin: 20px 0 45px 0;
+}
+.search__banner p.search__banner_content{
+  width:100%;
+
+}
+.search__banner .cmp-search__input {
+  background: transparent;
+  border: 0;
+  padding: 10px 20px;
+  color: var(--btnDisabledLight);
+  font-size: var(--fontSize14);
+  font-weight: var(--fontWeightSmall);
+  width: 100%;
+  border-radius: 30px;
+  background-color: var(--secondaryColor);
+  height: 38.41px;
+}
+.search__banner_section .search__banner--image{
+  width:50%;
+}
+.search__banner_section .search__banner--image img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height:388px;
+}
+@media screen and (min-width: 883px){
+  /* .search-banner-conatiner > .search__banner_section{
+    max-width: inherit;
+  } */
+  #WhitePaperInfo .fm-container#technicalresources_banner {
+      height: 190px;
+      position: absolute;
+      width: 100%;
+      left: 0;   
+  }
+  #WhitePaperInfo .container.responsivegrid {
+      height: 388px;
+  }
+}
+@media (min-width: 320px) and (max-width:833px) {
+  .search__banner{ width: 100%;}
+  .search__banner .search__banner_section{ height:auto; display:block;}
+  .search__banner .search__banner_section .search__banner_content{ flex:0 0 100%; width:100%; margin-bottom:15px;margin-top:0;}
+  .search__banner .search__banner_section .search__banner_content .search__banner_textarea{ width: 100%; padding:26px 30px 39px 30px; margin: 0;}
+  .search__banner .search__banner_section .search__banner_content .search__banner_title{ margin-bottom: 15px;}
+  .search__banner .search__banner_section .search__banner--image{ display: none;}
+  }

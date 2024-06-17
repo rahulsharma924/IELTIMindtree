@@ -1,0 +1,16 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getAllOptions": "https://apim-iedtecomm-dev01.azure-api.net/olcc/fairview/get-all-options",
+  "getOption": "https://apim-iedtecomm-dev01.azure-api.net/olcc/fairview/get-selected-options",
+  "getCreateUrl": "https://apim-iedtecomm-dev01.azure-api.net/olcc/fairview/create-olcc",
+  "getSearchOptions": "https://apim-iedtecomm-dev01.azure-api.net/olcc/fairview/search-options",
+  "getCableAssembly": "https://apim-iedtecomm-dev01.azure-api.net/olcc/fairview/get-cable-assembly",
+  "getCustomLengthToCartUrl": "https://apim-iedtecomm-dev01.azure-api.net/cart/fairview/addCustomLengthToCart",
+  "getBearerTokenUrl": "https://login.microsoftonline.com/4f7484a6-7806-40b4-949d-8bb4c5da172f/oauth2/v2.0/token",
+  "getClientIdBearerTokenUrl": "3090757e-7360-4213-99bb-32f07945b4fc",
+  "getClientSecretBearerTokenUrl": "Tcr8Q~esAQaxXJ-85JSddHVrUp3o02JH6ioUXbwF",
+  "getGrantTypeBearerTokenUrl": "client_credentials",
+  "getScopeBearerTokenUrl": "00000002-0000-0000-c000-000000000000/.default",
+  "getOLCCLoginUrl": "https://apim-iedtecomm-dev01.azure-api.net/login/fairview",
+  "getSearchCableAssembly": "https://apim-iedtecomm-dev01.azure-api.net/olcc/fairview/search-cable-assembly"
+}

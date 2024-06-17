@@ -1,0 +1,31 @@
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='recaptcha-clientlib'}" /> 
+
+<div
+  data-sly-use.googleCaptchaModel="com.aem.ie.core.models.GoogleCaptchaModel"
+  class="col-md-12 test_class"
+  id="secretKey"
+  data-googleKey="${googleCaptchaModel.secretKey}"
+>
+  <script
+    src="https://www.google.com/recaptcha/api.js?onload=reCaptchaCallback&render=explicit"
+    async
+    defer
+  ></script>
+  <div id="rcaptcha" class="g-recaptcha" data-sitekey="SITE-KEY"></div>
+  <div id="response-div" class="captchaverify"></div>
+
+  <input
+    type="hidden"
+    value="true"
+    id="recaptchaRequired"
+    name="recaptchaRequired"
+  />
+</div>
+
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='recaptcha-clientlib'}" />

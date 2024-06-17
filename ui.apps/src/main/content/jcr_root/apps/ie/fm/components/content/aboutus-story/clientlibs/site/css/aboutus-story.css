@@ -1,0 +1,122 @@
+.aboutus-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0 70px;
+}
+.aboutus-image-section{max-width: 494px;}
+.aboutus-title {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    line-height: 1.483;
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+.aboutus-container {
+    display: flex;
+    justify-content: center;
+}  
+.aboutus-main {
+    margin-bottom:13px;
+} 
+.aboutus-description {
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--baseFontSize);
+    line-height: 1.875;
+    padding-right: 24px;
+    color: var(--secondaryBlack);
+}
+
+@media screen and (min-width:992px) {
+    .aboutus-image-section .aboutus-image img{
+        height: 693px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+   #page-caafedc8c7 .aboutus-image-section .aboutus-image img{
+        height: 121px;
+        width: 100%;
+        object-fit: cover;
+        margin: 15px 0;
+    }
+    .aboutus-image-section .aboutus-image img{
+        height: 100%;
+        width: 100%;
+    }
+.aboutus-title {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize28);
+    line-height: 0.75;
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+.aboutus-description {
+    font-weight: var(--fontWeightSmall);
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--secondaryBlack);
+    padding: 0 0 0 24px;
+    max-width:initial;
+}
+.aboutus-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    }
+    .aboutus-image-section{padding: 0 24px;max-width: unset;
+        height: 121px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #page-caafedc8c7 .aboutus-image-section .aboutus-image img{
+        height: 121px;
+        width: 100%;
+        object-fit: cover;
+        margin: 15px 0;
+    }
+    .aboutus-image-section .aboutus-image img{
+        height: 100%;
+        width: 100%;
+    }
+    .aboutus-image-section{padding: 0 24px;max-width: unset;
+        height: 121px;
+        overflow: hidden;
+    }
+    .aboutus-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        }
+    .aboutus-description{
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    .aboutus-section{
+        padding: 0;
+    }
+    .aboutus-title {
+        font-weight: var(--fontWeightBold);
+        font-size: var(--fontSize22);
+        line-height: var(--lineHeightSmall);
+        text-align: center;
+        color: var(--secondaryBlack);
+    }     
+        .aboutus-description p{
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize14);
+        line-height: 20px;
+        color: var(--secondaryBlack);
+        padding: 0 24px;
+        max-width:initial;
+        margin-top:24px;
+    }
+    .aboutus-main{margin-bottom: 13px;}
+    }
+    @media screen and (max-width:575px) {
+        .aboutus-image-section .aboutus-image img{
+            height: 121px;
+            object-fit: cover;
+        }
+    }

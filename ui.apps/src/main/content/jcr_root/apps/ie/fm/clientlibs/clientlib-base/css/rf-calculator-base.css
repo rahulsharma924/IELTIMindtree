@@ -1,0 +1,31 @@
+#tablehtml .symbol-block-cls .header-cls {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#tablehtml .symbol-block-cls ul li {
+    border-bottom: 1px solid #aaa;
+    padding: .9rem 0;
+}
+
+#disclaimercalculate p {
+    max-width: 50rem;
+    padding: 0;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: var(--fontWeightSmall);
+    font-size: .75rem;
+    line-height: 1.25rem;
+}
+
+#calculateViewAll {
+    background: var(--secondaryColor);
+    border: 1px solid var(--secondaryBtnVisited);
+    margin: 46%;
+    border-radius: 4px;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: var(--primaryColor);
+    cursor: pointer;
+}

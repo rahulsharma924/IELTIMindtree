@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastReplicated="{Date}2022-11-30T18:13:39.097Z"
+        cq:lastReplicated_preview="{Date}2022-12-01T06:24:42.955Z"
+        cq:lastReplicated_publish="{Date}2022-11-30T18:13:39.097Z"
+        cq:lastReplicatedBy="mdash@infiniteelectronics.com"
+        cq:lastReplicatedBy_preview="mdash@infiniteelectronics.com"
+        cq:lastReplicatedBy_publish="mdash@infiniteelectronics.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_preview="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/libs/cq/experience-fragments/components/experiencefragment/template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer"
+        jcr:uuid="fbc5dc13-1b8b-4e77-ae4e-68a1c2e9f79d"
+        sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
+    <master/>
+</jcr:root>

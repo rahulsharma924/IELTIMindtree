@@ -1,0 +1,440 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+		</div>
+		<div class="form-block-cls">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<p>${properties.select}</p>
+					<label for="option" class="d-none">SELECT UNIT OF MEASURE:</label>
+					<select id="option" class="input" onchange="changeFnUnit()">
+						<option value="length">Length</option>
+						<option value="mass">Weight/Mass</option>
+						<option value="powerwrap" selected="selected">Power</option>
+						<option value="ratio">Power Ratio</option>
+						<option value="temp">Temperature</option>
+						<option value="torque">Torque</option>
+					</select>
+				</div>
+			</div>
+			<div id="length" class="conv_cont dnone-cls">
+				<div class="form-block-cls"> 
+					<p>${properties.inputtype}</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8  col-12">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<label for="ki" class="d-none"></label>
+									<select class="input" id="ki">
+										<option value="km">Kilometers</option>
+										<option value="m">Meters</option>
+										<option value="cm">Centimeters</option>
+										<option value="mm">Millimeters</option>
+										<option value="mi">Miles</option>
+										<option value="yards">Yards</option>
+										<option value="ft">Feet</option>
+										<option value="in">Inches</option>
+										<option value="uin">Microinches</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<input type="text" class="input" value="Use numeric value" onblur="blurFn(this)"
+										onfocus="focusFn(this)"><span class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<p>${properties.outputtype}</p>
+									<label for="kilo" class="d-none"></label>
+									<select class="input" id="kilo">
+										<option value="km">Kilometers</option>
+										<option value="m">Meters</option>
+										<option value="cm">Centimeters</option>
+										<option value="mm">Millimeters</option>
+										<option value="mi" selected="selected">Miles</option>
+										<option value="yards">Yards</option>
+										<option value="ft">Feet</option>
+										<option value="in">Inches</option>
+										<option value="uin">Microinches</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="row">
+								<div class="col-12">
+									<button class="ie-primary-btn" type="button" onclick="clickFnAllconv('length')"
+										value="Calculate">
+										Calculate
+									</button>
+									<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="calculator-results">
+										<p>${properties.result}</p>
+										<div class="result_container results-calc">
+											<div class="result">
+												<div><span class="result-converted Convertedlength-cls"></span><span
+														id="power" class="output"></span><span id="vpp"
+														class="output"></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="mass" class="conv_cont dnone-cls">
+				<div class="form-block-cls">
+					<p>${properties.inputtype}</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<label for="gr" class="d-none"></label>
+									<select class="input" id="gr">
+										<option value="kg">Kilograms</option>
+										<option value="g">Grams</option>
+										<option value="mg">Milligrams</option>
+										<option value="lbs">Pounds</option>
+										<option value="oz">Ounces</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+								<div class="col-md-6 col-12">
+									<input type="text" class="input" value="Use numeric value" onblur="blurFn(this)"
+										onfocus="focusFn(this)"><span class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<p>${properties.outputtype}</p>
+									<label for="mi" class="d-none">milliWatt</label>
+									<select class="input fix-width-cls" id="mi">
+										<option value="kg">Kilograms</option>
+										<option value="g">Grams</option>
+										<option value="mg">Milligrams</option>
+										<option value="lbs" selected="selected">Pounds</option>
+										<option value="oz">Ounces</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+								<div class="col-12">
+									<div>
+										<button class="ie-primary-btn" type="button" onclick="clickFnAllconv('mass')"
+											value="Calculate">
+											Calculate
+										</button>
+										<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+									</div>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="calculator-results">
+										<p>${properties.result}</p>
+										<div class="result_container results-calc">
+											<div class="result">
+												<div><span class="result-converted Convertedmass-cls"></span><span
+														id="power" class="output"></span><span id="vpp"
+														class="output"></span></div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="powerwrap" class="conv_cont">
+				<div class="form-block-cls">
+					<p class="power-note-cls">Note: Assumes 50 Ohm system. Input voltages are RMS values.</p>
+					<p>${properties.inputtype}</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<label for="from" class="d-none"></label>
+									<select id="from" class="input">
+										<option value="mW">Milliwatts</option>
+										<option value="W">Watts</option>
+										<option value="dBm">dBm</option>
+										<option value="dBW">dBW</option>
+										<option value="mV">Millivolts</option>
+										<option value="V">Volts</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+								<div class="col-md-6 col-12">
+									<input type="text" id="input" class="input" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)"><span
+										class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<p>${properties.outputtype}</p>
+									<label for="from1" class="d-none">milliWatt</label>
+									<select id="from1" class="input">
+										<option value="mW">Milliwatts</option>
+										<option value="W">Watts</option>
+										<option value="dBm" selected="selected">dBm</option>
+										<option value="dBW">dBW</option>
+										<option value="mV">Millivolts</option>
+										<option value="V">Volts</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+								<div class="col-12">
+									<div>
+										<button class="ie-primary-btn" type="button"
+											onclick="clickFnAllconv('powerwrap')" value="Calculate">
+											Calculate
+										</button>
+										<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="calculator-results">
+										<p>Result:</p>
+										<div class="result_container results-calc">
+											<div class="result">
+												<div><span class="result-converted convertedpower-cls"></span><span
+														id="power" class="output"></span><span id="vpp_power"
+														class="output"></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="ratio" class="conv_cont dnone-cls">
+				<div class="form-block-cls">
+					<p>Power Output:</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<label for="th1" class="d-none"></label>
+									<input id="th1" class="input" type="text" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)"><span
+										class="error ErrorText"></span>
+								</div>
+								<div class="col-md-6 col-12">
+									<label for="from2" class="d-none">milliWatt</label>
+									<select id="from2" class="input">
+										<option value="mW">Milliwatts</option>
+										<option value="W">Watts</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+							<p>Power Input:</p>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<label for="th2" class="d-none">milliWatt</label>
+									<input id="th2" class="input" type="text" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)"><span
+										class="error ErrorText"></span>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<label for="from3" class="d-none">milliWatt</label>
+									<select id="from3" class="input">
+										<option value="mW">Milliwatts</option>
+										<option value="W">Watts</option>
+									</select>
+								</div>
+							</div>
+							<p>Note: Units must be consistent</p>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+									<div class="col-12">
+										<div>
+											<button class="ie-primary-btn" type="button" onclick="clickFnAllconv('ratio')"
+												value="Calculate">
+												Calculate
+											</button>
+											<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+										</div>
+									</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="calculator-results">
+										<p>Result:</p>
+										<div class="result_container results-calc">
+												<div class="result"><span
+														class="result-converted convertedratio-cls"></span><span id="db"
+														class="output"></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+						   </div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="temp" class="conv_cont dnone-cls">
+				<div class="form-block-cls">
+					<p>Select input type:</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<label for="from4" class="d-none"></label>
+									<select id="from4" class="input">
+										<option value="°F">Fahrenheit</option>
+										<option value="°C">Celsius</option>
+										<option value="°K">Kelvin</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+								<div class="col-md-6 col-12">
+									<input type="text" id="input1" class="input" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)"><span
+										class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<p>Select output type:</p>
+									<label for="to" class="d-none">milliWatt</label>
+									<select id="to" class="input">
+										<option value="°F">Fahrenheit</option>
+										<option value="°C" selected="selected">Celsius</option>
+										<option value="°K">Kelvin</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+								<div class="col-12">
+									<div>
+										<button class="ie-primary-btn" type="button" onclick="clickFnAllconv('temp')"
+											value="Calculate">
+											Calculate
+										</button>
+										<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="calculator-results">
+										<p>Result:</p>
+										<div class="result_container results-calc">
+												<div class="result"><span
+														class="result-converted convertedtemp-cls"></span><span
+														class="output"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="torque" class="conv_cont dnone-cls">
+				<div class="form-block-cls">
+					<p>Select input type:</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<label for="from5" class="d-none"></label>
+									<select id="from5" class="input">
+										<option value="Nm">Newton-meters</option>
+										<option value="ft-lbs">Foot-pounds</option>
+										<option value="in-lbs">Inch-pounds</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+								<div class="col-md-6 col-12">
+									<input type="text" id="input2" class="input" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)"><span
+										class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<p>Select output type:</p>
+									<label for="from6" class="d-none"></label>
+									<select id="from6" class="input">
+										<option value="Nm">Newton-meters</option>
+										<option value="ft-lbs" selected="selected">Foot-pounds</option>
+										<option value="in-lbs">Inch-pounds</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+								<div class="col-12">
+									<div>
+										<button class="ie-primary-btn" type="button" onclick="clickFnAllconv('torque')"
+											value="Calculate">
+											Calculate
+										</button>
+										<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+									</div>
+							   </div>
+							 </div>
+							 <div class="row">
+								<div class="col-12">
+									<div class="calculator-results">
+										<p>Result:</p>
+										<div class="result_container results-calc">											
+												<div class="result"><span
+														class="result-converted convertedtorque-cls"></span><span
+														class="output"></span></div>
+											
+										</div>
+									</div>
+							   </div>
+							 </div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row rf-calculator-container">
+			<div class="col-12 text-center my-5">
+				<img id="eq" alt="length" src="/content/dam/infinite-electronics/images/fairview-microwave/application-images/calculator/metricimages/lengthconv_eq.png" />
+			</div>
+	</div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

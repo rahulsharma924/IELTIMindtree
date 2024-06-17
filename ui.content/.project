@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>aem-ie.ui.content</name>
+  <comment>UI content package for IE Project. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>aem-ie.core</project>
+    <project>aem-ie.ui.apps</project>
+    <project>aem-ie.ui.frontend</project>
+    <project>aem-ie.ui.apps.structure</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.m2e.core.maven2Builder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.m2e.core.maven2Nature</nature>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

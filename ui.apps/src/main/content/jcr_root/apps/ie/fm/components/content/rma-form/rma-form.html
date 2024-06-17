@@ -1,0 +1,758 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='rma-form'}"
+/>
+<section class="rma__form">
+<div id="myModalRMA" class="modal fade">
+  <div class="modal-dialog rma-popup-pos">
+    <div class="modal-content rma-popup-delprodrow">
+      <div class="modal-header">
+        <span class="txt">Delete row</span>
+      </div>
+      <!-- dialog body -->
+      <div class="modal-body">
+        <span class="txt"
+          >Are you sure you want to delete the product row?</span
+        >
+      </div>
+      <!-- dialog buttons -->
+      <div class="modal-footer">
+        <button type="button" class="no-btn ie-scondary-btn">No</button>
+        <button type="button" class="yes-btn ie-primary-btn">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="rma-outer-div" id="rmafForm">
+  <div class="rma-wrapper">
+    <h2 class="rmaf-title">${properties.rfformtitle}</h2>
+    <div class="rmaf-sub-div">
+      <h4 class="rmaf-subtitle">${properties.rfformsubtitle}</h4>
+    </div>
+    <div class="rmaf-form-wrapper">
+      <form
+        
+        name="FairviewMicrowaveRMA"
+        id="rmaForm"
+        class="rma-form"
+      >
+        <div class="layout container-fluid">
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfFirstName"
+                    >${properties.rffirstname}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row"> -->
+                  <!-- <div class="col-xs-12 "> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="FirstName"
+                      id="rfFirstName"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="rma-label" for="rfLastName"
+                    >${properties.rflastname}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row"> -->
+                  <!-- <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="LastName"
+                      id="rfLastName"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfCompany"
+                    >${properties.rfcompany}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="Company"
+                      id="rfCompany"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="rma-label" for="rfJob"
+                    >${properties.rfjob}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="Title"
+                      id="rfJob"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfEmail"
+                    >${properties.rfemail}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="EmailAddress"
+                      id="rfEmail"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="rma-label" for="rfPhone"
+                    >${properties.rfphone}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="BusinessPhone"
+                      id="rfPhone"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfAddress1"
+                    >${properties.rfaddress1}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="Address1"
+                      id="rfAddress1"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="rma-label" for="rfAddress2"
+                    >${properties.rfaddress2}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="Address2"
+                      id="rfAddress2"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfCity"
+                    >${properties.rfcity}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="City"
+                      id="rfCity"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <label class="rma-label" for="rfCountry"
+                    >${properties.rfcountry}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <select
+                      class="elq-item-select"
+                      id="rfCountry"
+                      name="country"
+                      style="width: 100%"
+                      data-value=""
+                     
+                    ><option value="" selected="" disabled="" hidden="">
+                      Select
+                    </option></select>
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfZipcode"
+                    >${properties.rfzipcode}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="ZipCode"
+                      id="rfZipcode"
+                      maxlength="10"
+                      minlength="1"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="elq-label statereq" for="rfState"
+                    >${properties.rfstate}
+                        
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <select
+                      class="elq-item-select"
+                      id="rfState"
+                      name="stateProv"
+                      style="width: 100%"
+                      data-value=""
+                    >
+                    <option value="" selected="">
+                      Select
+                    </option>
+                    </select>
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfSalesInvoice"
+                    >${properties.rfsalesinvoice}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="fairviewMicrowaveReturnMerchSalesInvoi"
+                      id="rfSalesInvoice"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="rma-label" for="rfPONum"
+                    >${properties.rfponum}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="fairviewMicrowaveReturnMerchPO1"
+                      id="rfPONum"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-12 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <span class="rma-label rma__label"
+                    >${properties.rfrmareq}
+                  </span>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="field-control-wrapper radio-inputs">
+                        <div class="radio-input-label">
+                          <input
+                            type="radio"
+                            id="errorOrder"
+                            name="rmaReqType"
+                            value="ErrorOrder"
+                            checked
+                          />
+                          <label for="errorOrder">Error in Order</label><br />
+                        </div>
+                        <div class="radio-input-label">
+                          <input
+                            type="radio"
+                            id="rescOrder"
+                            name="rmaReqType"
+                            value="RescOrder"
+                          />
+                          <label for="rescOrder">Rescind Order</label><br />
+                        </div>
+                        <div class="radio-input-label">
+                          <input
+                            type="radio"
+                            id="defItem"
+                            name="rmaReqType"
+                            value="DefItem"
+                          />
+                          <label for="defItem">Defective Item</label><br />
+                        </div>
+                        <div class="radio-input-label">
+                          <input
+                            type="radio"
+                            id="others"
+                            name="rmaReqType"
+                            value="Others"
+                          />
+                          <label for="others">Others</label><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="layout-col col-sm-6 col-xs-12">
+                  <div class="elq-field-style form-element-layout row">
+                    <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                     
+                      <div class="field-control-wrapper">
+                        <input
+                          type="text"
+                          class="elq-item-input others-txt"
+                          name="rmaReqType_others"
+                          id="othersTxt"
+                          value=""
+                          style="width: 100%"
+                        />
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row rma-prod-label-row rma-no-mobile">
+            <div class="grid-layout-col">
+              <div class="layout-col col-sm-4 col-xs-11">
+                <div class="elq-field-style form-element-layout row">
+                  <div style="text-align: left" class="col-sm-12 col-xs-12">
+                    <span class="rma-label">Part # </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-layout-col">
+              <div class="layout-col col-sm-2 col-xs-12 rmaf-col-1 rmaf-col-2">
+                <div class="elq-field-style form-element-layout row">
+                  <div style="text-align: left" class="col-sm-12 col-xs-12">
+                    <span class="rma-label">QTY </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-layout-col">
+              <div class="layout-col col-md-5 col-sm-6 col-xs-12 rmaf-col-2">
+                <div class="elq-field-style form-element-layout row">
+                  <div style="text-align: left" class="col-sm-12 col-xs-12">
+                    <span class="rma-label" 
+                      >Detailed reason for returns
+                  </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row act-prod-row rma-form-skuvalue">
+            <div class="grid-layout-col">
+              <div class="layout-col col-sm-4 col-xs-12">
+                <div class="col-sm-12 col-xs-12 rma-no-desk part-num-ip">
+                  <span class="rma-label">Part # </span>
+                  <button type="button" class="rma-close" aria-label="Close">
+                    <i
+                      class="fa-regular fa-xmark font-24"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </div>
+                <div class="elq-field-style form-element-layout row">
+                  <div class="col-sm-12 col-xs-12">
+                    <div class="field-control-wrapper">
+                      <input
+                        type="text"
+                        class="elq-item-input fm-rma-sku"
+                        name="fairviewMicrowaveReturnMerchPart0SKU"
+                        id="rfPartNum_0"
+                        value=""
+                        style="width: 100%"
+                      />
+                      <label class="error-inval" id="rfqSKUinval_0" for="rfPartNum_0"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-layout-col">
+              <div class="layout-col col-sm-2 col-xs-12 rmaf-col-1 rmaf-col-2">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rma-no-desk"
+                >
+                  <span class="rma-label">QTY </span>
+                </div>
+                <div class="elq-field-style form-element-layout row">
+                  <div class="col-sm-12 col-xs-12">
+                    <div class="field-control-wrapper">
+                      <input
+                        type="text"
+                        class="elq-item-input fm-rma-qty"
+                        name="fairviewMicrowaveReturnMerchPart0Qty"
+                        id="rfQty_0"
+                        value=""
+                        style="width: 100%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-layout-col">
+              <div class="layout-col col-md-5 col-sm-5 col-xs-12 rmaf-col-2">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rma-no-desk"
+                >
+                  <span class="rma-label"
+                    >Detailed reason for return
+                  </span>
+                </div>
+                <div class="elq-field-style form-element-layout row">
+                  <div class="col-sm-12 col-xs-12">
+                    <div class="field-control-wrapper">
+                      <textarea
+                        class="elq-item-input fm-ror"
+                        style="width: 100%"
+                        id="fmRor_0"
+                        name="fmReasonForReturn0"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-layout-col rma-no-mobile">
+              <div class="layout-col col-md-1 col-sm-1 col-xs-12 rmaf-col-2">
+                <div class="elq-field-style form-element-layout row">
+                  <button type="button" class="rma-close" aria-label="Close">
+                    <i
+                      class="fa-regular fa-xmark font-24"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div style="text-align: left" class="col-sm-12 col-xs-12">
+                  <label class="rma-label" for="rfSign"
+                    >${properties.rfnamesiglabel}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-1">
+                  <!-- <div class="row">
+                    <div class="col-xs-12"> -->
+                  <div class="field-control-wrapper">
+                    <input
+                      type="text"
+                      class="elq-item-input"
+                      name="rfSignForName"
+                      id="rfSign"
+                      value=""
+                      style="width: 100%"
+                    />
+                  </div>
+                  <!-- </div>
+                  </div> -->
+                  <div class="form-element-instructions">
+                    ${properties.rfnamevaltext}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="grid-layout-col"> -->
+            <div class="layout-col col-sm-6 col-xs-12">
+              <div class="elq-field-style form-element-layout row">
+                <div
+                  style="text-align: left"
+                  class="col-sm-12 col-xs-12 rmaf-col-2"
+                >
+                  <label class="rma-label" for="rfDate"
+                    >${properties.rfdate}
+                  </label>
+                </div>
+                <div class="col-sm-12 col-xs-12 rmaf-col-2">
+                  
+                  <div class="field-control-wrapper">
+                    <input
+                      type="date"
+                      class="elq-item-input rma-form-date"
+                      name="fairviewMicrowaveReturnMerchDate1"
+                      id="rfDate"
+                      value=""
+                      style="width: 100%"
+                      disabled
+                    />
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="row rma-recaptch">
+            <div class="body">
+              <sly
+                data-sly-resource="${'captcha' @ resourceType='/apps/ie/fm/components/content/account/recaptcha'}"
+              >
+              </sly>
+            </div>
+          </div>
+          <div class="row">
+            
+            <div class="layout-col col-sm-12 col-xs-12">
+              
+              <div class="col-sm-12 col-xs-12">
+               
+                    <input
+                      type="button"
+                      class="submit-button-style ie-primary-btn"
+                      value="${properties.rfsubmitbtntext}"
+                      id="rfSubmitBtn"
+                    />
+                 
+                </div>
+               
+              </div>
+              
+            </div>
+           
+          </div>
+          <input type="hidden" value="${properties.iesalesemail}" class="iesalesemail"/>
+          </form>
+        </div>
+      
+    </div>
+  </div>
+</section>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='rma-form'}"
+/>
+

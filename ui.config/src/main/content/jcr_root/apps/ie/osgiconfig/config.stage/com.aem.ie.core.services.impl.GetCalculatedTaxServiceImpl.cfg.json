@@ -1,0 +1,6 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "calculatedTaxCTURL": "https://apim-iedtecomm-uat01.azure-api.net/tax/fairview/estimateTax",
+  "calculateTaxCTURL": "https://apim-iedtecomm-uat01.azure-api.net/tax/fairview/apply-tax",
+  "reCalculateTaxURL": "https://apim-iedtecomm-uat01.azure-api.net/tax/fairview/recalculate-tax"
+}

@@ -1,0 +1,169 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+		<div class="form-block-cls">
+			<p>${properties.select}</p> 
+			<div class="row">
+				<div class= "col-lg-4 col-md-6 col-12">
+					<label for="option" class="d-none"></label>
+					<select id="option" class="input" onchange="changeFnTorque()">
+						<option value="single">Single Torque</option>
+						<option value="range">Torque Range</option>
+					</select>
+				</div>
+			</div>
+			<div id="single" class="conv_cont">
+				<div class="form-block-cls">
+					<p>${properties.inputtype}</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<label for="from" class="d-none">milliWatt</label>
+									<select id="from" class="input">
+										<option value="Nm">Newton-meters </option>
+										<option value="ft-lbs">Foot-pounds </option>
+										<option value="in-lbs">Inch-pounds </option>
+									</select>
+									<span class="error ErrorText"></span>
+								</div>
+								<div class="col-md-6 col-12">
+									<input type="text" id="input" class="input" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)">
+									<span class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<p>${properties.outputtype}</p>
+									<label for="to1" class="d-none"></label>
+									<select id="to1" class="input">
+										<option value="Nm">Newton-meters </option>
+										<option value="ft-lbs" selected="selected"> Foot-pounds</option>
+										<option value="in-lbs">Inch-pounds </option>
+									</select>
+									<span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+								<div class="col-12">
+									<div>
+										<button class="ie-primary-btn" type="button" onclick="clickFnTorque('single')"
+											value="Calculate">
+											Calculate
+										</button>
+										<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+									</div>
+		
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class=" calculator-results">
+										<p>Result:</p>
+										<div class="result_container results-calc">
+											<div class="result">
+												<div><span class="result-converted convertedtorque-cls"></span><span id="power" class="output"></span><span id="vpp"
+														class="output"></span></div>
+											</div>
+										</div>
+										<div id="button_cont"><input class="related_search dnone-cls" type="button"
+												value="Find Related Products"></div>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="range" class="conv_cont dnone-cls">
+				<p>Select input type:</p>
+				<div class="row top-block-cls">
+					<div class="col-lg-8 col-12">
+						<div class="row">
+							<div class="col-12">
+								<label for="from1" class="d-none"></label>
+								<select id="from1" class="input input-range-cls">
+									<option value="Nm">Newton-meters </option>
+									<option value="ft-lbs">Foot-pounds </option>
+									<option value="in-lbs">Inch-pounds </option>
+								</select>
+								<span class="error ErrorText"></span>
+							</div>
+						</div>
+						<div class="row space-cls">
+							<div class="col-lg-6 disp-rangeblock-cls">
+								<input type="text" id="input1" class="input input-type-cls" value="Use numeric value"
+									onblur="blurFn(this)" onfocus="focusFn(this)">
+								<span class="error ErrorText"></span>
+								<p class="to-cls">to</p>
+							</div>
+							<div class="col-lg-6">
+								<input type="text" id="input2" class="input input-type-cls" value="Use numeric value"
+									onblur="blurFn(this)" onfocus="focusFn(this)">
+								<span class="error ErrorText"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<div>
+									<p>${properties.outputtype}</p>
+									<label for="to" class="d-none"></label>
+									<select id="to" class="input">
+										<option value="Nm">Newton-meters </option>
+										<option value="ft-lbs" selected="selected"> Foot-pounds</option>
+										<option value="in-lbs">Inch-pounds </option>
+									</select>
+									<span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="row">
+							<div class="col-12 calculator-results">
+								<button class="ie-primary-btn" type="button" onclick="clickFnTorque('range')"
+									value="Calculate">
+									Calculate
+								</button>
+								<p class="calculate-error-cls">
+									<span class="error ErrorText"></span>
+									<span id="errormsg" class="error ErrorText"></span>
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 calculator-results">
+								<p>${properties.result}</p>
+								<div class="result_container results-calc">
+									<div class="result"><span class="result-converted convertedtorquerange-cls"> </span> <span id="temp" class="output"></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

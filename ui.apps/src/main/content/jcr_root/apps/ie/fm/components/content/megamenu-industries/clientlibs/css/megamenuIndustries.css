@@ -1,0 +1,200 @@
+/* megamenu - industries for desktop css starts */
+
+.quick .toggle-group {
+    transition: none;
+    -webkit-transition: none;
+}
+
+.megamenu-industries-wrapper {
+    text-align: left;
+    padding-right: 0px;
+}
+
+.industries-navigation-btn.collapsed,
+.industries-navigation-btn {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: var(--primaryColor);
+    background: none;
+    border: 0;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+.industries-navigation-btn.collapsed:hover,
+.industries-navigation-btn:hover {
+    color: var(--invertedColor);
+    text-decoration: none;
+}
+
+
+.image-wrapper .img-description a:hover,
+.image-wrapper .img-description:hover {
+    color: var(--primaryColor);
+    text-decoration: underline;
+}
+
+.industrycard.card.card-body .industries-menu:hover,
+.industrycard.card.card-body .industries-menu a:hover{
+    color: var(--invertedColor);
+    text-decoration: none;
+}
+
+.industry-dropdowns {
+   /* width: 100%; */
+    position: fixed;
+    z-index: 2;
+    background: var(--secondaryColor);
+    max-height: 260px;
+    right: 32px;
+    left: 32px;
+    padding: 35px 0;
+    /* max-width: -webkit-fill-available; */
+    max-width: 670px;
+    display: none;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.industry-dropdowns.collapse.show {
+    display: flex;
+    margin: 0 auto;
+    top: 212px;
+}
+
+.industry-wrapper {
+    width: 100%;
+    margin:0 auto;
+    height: auto;
+    display: flex;
+    padding: 0 20px 0 42px;
+   /* margin: 0 24% 0 9%;*/
+}
+div.industries-navigation-btn{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.industries-navigation-btn .showBorderBottom {
+    font-weight: var(--fontWeightBold);
+    border-bottom: 4px solid var(--invertedColor);
+    padding-bottom: 15px;
+}
+
+.industries-navigation-btn:focus {
+    outline: none;
+}
+
+.industrycard.card.card-body {
+    height: auto;
+    display: flex;
+    text-align: center;
+    border: none;
+    flex-flow: column wrap;
+    padding: 0;
+    column-gap: 35px;
+}
+
+.industrycard.card.card-body .industries-menu {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 14px;
+    width: 183px;
+    max-width: 100%;
+  /*  margin-right: 24px; */
+}
+
+.industrycard.card.card-body .industries-menu,
+.industrycard.card.card-body .industries-menu a {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1and428);
+    color: var(--tabPanelClr);
+    cursor: pointer;
+}
+
+.image-wrapper img,
+.image-wrapper a {
+     width: 193px; 
+    /* height: 129px; */
+    object-fit: contain;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.image-wrapper .img-description,
+.image-wrapper .img-description a {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1and428);
+    color: var(--tabPanelClr);
+    margin-top: 6px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#overlayIndustries {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 214px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#overlayIndustries.active {
+    display: block;
+}
+
+.industry-wrapper .image-wrapper{
+    padding: 0;
+}
+.industry-wrapper .img-wrapper-inner{max-width: 143px;}
+
+.industry-wrapper .image-wrapper a img{
+    border-radius: 10px;
+    margin-top: -5px;
+}
+
+@media screen and (max-width: 833px) {
+    .megamenu-industries-wrapper,
+    #main-header.cmp-container.fm-main-container .buildingblock .xf-master-building-block .megamenu-industries {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 833px) and (max-width: 1025px) {
+
+	#main-header.sticky #megamenu-desktop {
+		width: 45%;
+    }
+    #main-header.sticky #megamenu-desktop .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+		margin-right: 5px;
+    }
+	#main-header.sticky #megamenu-desktop .products-wrapper {
+		padding-right: 10px;
+    }
+    #main-header.sticky .products-btn,
+	#main-header.sticky .products-wrapper button {
+		margin-right: 5px;
+	}
+    #main-header.sticky #megamenu-desktop .megamenu-industries-wrapper {
+		padding-right: 10px
+	}
+	#main-header.sticky #megamenu-desktop {
+		top: -90px;
+    }
+
+}
+
+@media print {
+#main-header.sticky #megamenu-desktop .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+    margin-right: -10px;
+}
+}
+/* megamenu - industries for desktop css ends */

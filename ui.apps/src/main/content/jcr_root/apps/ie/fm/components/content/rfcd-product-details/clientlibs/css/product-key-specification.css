@@ -1,0 +1,39 @@
+.accord-key-desc .specification-title{
+	font-size: var(--fontSize14);
+	line-height: var(--baseLineHeight);
+	font-weight: var(--fontWeightBold);
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.accord-key-desc .specification-title .icon_section{
+	margin-left: 40px;
+	vertical-align: middle;
+}
+.accord-key-desc .specification-title.close_list .icon_section{
+	transform: scaleY(-1);
+}
+.accord-key-desc .list_wrap{
+	margin-bottom: 20px;
+}
+.accord-key-desc .list_wrap .icon_section{
+	margin-right: 10px;
+	margin-top: 3.1px;
+}
+.accord-key-desc .icon_section .fa-circle-check{
+	color: var(--successMedium);
+}
+.accord-key-desc .detail_section{
+	font-size: var(--fontSize14);
+	line-height: var(--baseLineHeight);
+}
+.accord-key-desc .detail_section .title_section {
+	white-space: nowrap;
+}
+.accord-key-desc .detail_section .value_section{
+	font-weight: var(--fontWeightBold);
+	margin-left: 5px;
+	word-break: break-word;
+}
+.accord-key-title{
+	display: block;
+}

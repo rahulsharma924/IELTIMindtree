@@ -1,0 +1,25 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='service-cards-clientlib'}" />
+<div class="tnr_Services" data-sly-list.scards = "${resource.getChildren}">
+	<div class="tnrService_List">
+	<ul>
+		<sly data-sly-test = "${scards.name == 'servicecardsmulti'}">
+			<li data-sly-repeat.scards1 = "${scards.getChildren}">
+				<div class="tnrService_List--block">
+					<div class="serviceImage"><img alt="${scards1.servicecardstitle}" src="${scards1.servicecardsimg}" width="100" height="306"></div>
+					<div class="serviceContent">
+						<h3 class="serviceTitle">${scards1.servicecardstitle}</h3>
+						<div class="fv_Para_small serviceDescription analyticServiceDescription">${scards1.servicecardstext @context='html'}</div>
+					</div>
+			</div>
+			</li>
+	    </sly>
+	</ul>
+    </div>
+</div>
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='service-cards-clientlib'}" />
+
+

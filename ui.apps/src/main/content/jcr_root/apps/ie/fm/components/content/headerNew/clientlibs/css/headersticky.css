@@ -1,0 +1,110 @@
+#main-header.sticky .compSearchbox {
+    display: none;
+}
+
+#main-header.sticky .compMicrolinks .linkname {
+    display: none;
+}
+
+#main-header.sticky .headerContainer {
+    position: relative;
+}
+
+#megamenu-container {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+}
+
+#main-header.sticky #megamenu-desktop {
+    width: 55%;
+    position: absolute;
+    justify-content: center;
+    right: unset;
+    top: -75px;
+    left: 27%;
+}
+
+.animateUp {
+    animation: fadeInUp 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animateDown {
+    animation: fadeInDown 0.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#main-header.sticky #megamenu-desktop .products-wrapper {
+    padding-right: 20px;
+}
+
+#main-header.sticky #megamenu-desktop .megamenu-industries-wrapper {
+    padding-right: 20px;
+}
+
+#main-header.sticky #megamenu-desktop .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+#main-header.sticky #megamenu-desktop .zeynep.opened {
+    top: 74px;
+}
+
+#main-header.sticky #megamenu-desktop .industry-dropdowns.collapse.show {
+    display: flex;
+    margin: 0 auto;
+    top: unset;
+}
+
+#main-header.sticky #megamenu-desktop .industry-wrapper {
+    margin: 0 6%;
+}
+
+#main-header.sticky .compMicrolinks.Search {
+    display: block;
+}
+
+#main-header.sticky .compSearchbox {
+    max-width: 550px;
+}
+
+
+/*added by Dhanam */
+
+#main-header.sticky #megamenu-desktop #overlayIndustries.active {
+    display: none;
+}
+
+@media print {
+#main-header.sticky #megamenu-desktop .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+    margin-right: -10px;
+}
+}

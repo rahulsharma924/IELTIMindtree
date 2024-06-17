@@ -1,0 +1,3 @@
+
+#base=js
+contact-right-pane.js

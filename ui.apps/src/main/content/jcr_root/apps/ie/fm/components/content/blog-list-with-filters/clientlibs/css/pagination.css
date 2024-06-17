@@ -1,0 +1,173 @@
+.paginationjs {
+  display: flex;
+  line-height: 1.6;
+  font-family: "Marmelad", "Lucida Grande", "Arial", "Hiragino Sans GB", Georgia, sans-serif;
+  font-size: 14px;
+  box-sizing: initial;
+  margin-left:25px;
+}
+.paginationjs:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.paginationjs .paginationjs-pages {
+  right: 80px;
+  position: absolute;
+  margin-left: 10px;
+}
+.paginationjs .paginationjs-pages ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.paginationjs .paginationjs-pages li {
+  float: left;
+  border: none;
+  list-style: none;
+}
+.paginationjs .paginationjs-pages li > a {
+  min-width: 30px;
+  height: 28px;
+  line-height: 22px;
+  display: block;
+  background: #fff;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.paginationjs .paginationjs-pages li > a:hover {
+  background: #eee;
+}
+.paginationjs .paginationjs-pages li.active {
+  border: none;
+}
+.paginationjs .paginationjs-pages li.active > a {
+  line-height: 28px;
+  background: #aaa;
+  color: #fff;
+  cursor: default;
+}
+.paginationjs .paginationjs-pages li.disabled > a {
+  opacity: 0.3;
+  cursor: default;
+}
+.paginationjs .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs .paginationjs-pages li:first-child {
+  border:none;
+}
+.paginationjs .paginationjs-pages li:first-child > a {
+  border:none;
+}
+.paginationjs .paginationjs-pages li:last-child {
+  border:none;
+}
+.paginationjs .paginationjs-pages li:last-child > a {
+  border:none;
+}
+
+.paginationjs .paginationjs-go-input {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  right: 140px;
+  position: absolute;
+}
+.paginationjs .paginationjs-go-input > input[type="text"] {
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #E5E7E9 ;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  box-shadow: none;
+  box-sizing: initial;
+  width:30px;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 12px;
+}
+.paginationjs .paginationjs-go-button {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.paginationjs .paginationjs-go-button > input[type="button"] {
+
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #E5E7E9;
+  text-align: center;
+  padding: 0 8px;
+  font-size: 14px;
+  vertical-align: baseline;
+  outline: none;
+  box-shadow: none;
+  color: #333;
+  cursor: pointer;
+}
+.paginationjs .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #f8f8f8;
+}
+.paginationjs .paginationjs-nav {
+  float: left;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #0E0F10;
+}
+.paginationjs .paginationjs-pages li.paginationjs-next {
+  border: none ;
+}
+
+.paginationjs .paginationjs-go-input, span.pageInfoText {
+  vertical-align: middle ;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.paginationjs .paginationjs-go-input, span.totalPageTxt{
+  font-weight: 700;
+}
+.paginationjs .paginationjs-go-input > input[type="text"] {
+  line-height: 18px;
+  color: #0E0F10;
+}
+.paginationjs .paginationjs-go-button {
+  margin-left: 5px;
+}
+.paginationjs .paginationjs-go-button > input[type="button"] {
+  vertical-align: middle;
+}
+.paginationjs.paginationjs-big .paginationjs-pages li > a {
+  line-height: 36px;
+}
+.paginationjs.paginationjs-big .paginationjs-go-input > input[type="text"] {
+  height: 36px;
+  line-height: 36px;
+}
+@media(max-width:480px) and (min-width:320px) {
+  .blogList-block {
+   padding:12px 12px;
+  }
+  .paginationjs{
+   margin-left:12px;
+  }
+  }
+  @media screen and (max-width: 833px) {
+    .paginationjs .paginationjs-go-input {
+      right:70px;
+    }
+    .paginationjs .paginationjs-pages {
+        right:13px;
+    }
+  }
+

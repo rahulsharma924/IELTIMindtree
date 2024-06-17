@@ -1,0 +1,10 @@
+            <td class="row main-head align-base">
+                        <p class="products fsize-12" >${name} 
+                        placeholder
+                        </p>
+                        <p class="qnty-price font-normal" >${quantity}</p>
+                        <p class="qnty-price text-right font-normal" ><span>$</span><span>${price}</span></p>
+                        <p class="qnty-price text-right font-normal" ><span>$</span><span>${subtotalPrice}</span></p>
+                    </td>
+
+

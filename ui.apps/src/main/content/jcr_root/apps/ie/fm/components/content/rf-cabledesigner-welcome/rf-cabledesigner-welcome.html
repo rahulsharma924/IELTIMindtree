@@ -1,0 +1,61 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	 data-sly-call="${clientlib.all @ categories='cat-rfcdwelcome'}" />
+<div class="welcome_page hide-component" id="welcome-component">
+	<div class="row instruction_wrap analyticinstruction">
+		<div class="col">
+			<h1 class="fv_main_heading">${properties.welcomeheading @context = 'text'}<i class="fa-brands fa-youtube icon_section" data-toggle="modal" data-target="#popup_div"></i> </h1>
+			<div class="bold_text">${properties.instructionheading @context = 'text'}</div>
+			<div id="instruction_content">
+				${properties.instructions @context = 'html'}
+			</div>
+			<a class="expand_click close_btn" data-target="instruction_content">Close</a>
+		</div>
+	</div>
+	<div class="row bottom_content" id="bottom_content">
+		<div class="col">
+
+			<div class="heading_section">
+				<h2 class="sub_heading">${properties.questiontext @context = 'text'}</h2>
+				<div class="skip_content form-check">
+					<input class="form-check-input" type="checkbox" value="" id="skip_content_check_box">
+					<label class="form-check-label" for="skip_content_check_box">
+						Skip this step next time
+					</label>
+				</div>
+			</div>
+			<div class="row flex-column flex-md-row  align-items-center justify-content-md-center align-items-md-stretch analyticrfcabledesigner">
+
+				<sly data-sly-use.listUse="${'/apps/ie/fm/clientlibs/clientlib-base/js/listcollection.js' @ multifieldName='cards'}"></sly>
+				<sly data-sly-list=${listUse}>
+					<div class="col-8 col-md-3 card_section" id="card_${itemList.index}">
+						<div class="card_wrap">
+							<div class="card_title">${item.properties.title}</div>
+							<div class="img_wrap"><img alt="${item.properties.title}" src="${item.properties.file}"></div>
+						</div>
+					</div>
+				</sly>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="popup_div" tabindex="-1" role="dialog" aria-labelledby="exampleModalvedio" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header" id="exampleModalvedio">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<iframe width="560" height="315" src="${properties.videourl}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+<input type="hidden" value="${properties.redirecturl || '/content/fm/en/the-rf-cable-designer/the-rf-cable-designer-main-page'}.html" id="rfcabledesignmainpage">

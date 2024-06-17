@@ -1,0 +1,4 @@
+#base=js
+news-post.js
+analyticlatest-news.js
+

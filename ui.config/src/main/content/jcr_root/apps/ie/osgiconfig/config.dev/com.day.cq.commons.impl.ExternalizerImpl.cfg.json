@@ -1,0 +1,9 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "externalizer.domains": [
+    "local $[env:AEM_EXTERNALIZER_LOCAL;default=https://qa-dt.fairviewmicrowave.com]",
+    "author $[env:AEM_EXTERNALIZER_AUTHOR;default=https://qa-dt.fairviewmicrowave.com]",
+    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=https://qa-dt.fairviewmicrowave.com]",
+    "preview $[env:AEM_EXTERNALIZER_PREVIEW;default=https://qa-dt.fairviewmicrowave.com]"
+  ]
+}

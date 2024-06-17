@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-20T13:41:09.559+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/fm/settings/wcm/templates/content-page-without-breadcrumb"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Email Sent"
+        sling:resourceType="core/wcm/components/page/v3/page"
+        pageTitle="Email Sent">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/container/v1/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/container/v1/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/container/v1/container">
+                    <customformtitle
+                        jcr:created="{Date}2022-09-20T11:23:07.223+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-20T11:23:24.730+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customformtitle"
+                        text="&lt;p>Email Sent&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <customformdesc
+                        jcr:created="{Date}2022-09-20T11:24:08.541+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-20T11:24:13.834+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customformdesc"
+                        text="&lt;p>If this email has an account associated with [Fairview], we will send a reset password link to that address.&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <nextbutton
+                        jcr:created="{Date}2022-09-18T15:28:58.623+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-20T13:40:58.867+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Next"
+                        sling:resourceType="ie/fm/components/content/resetpassword/nextbutton"
+                        id="Next"
+                        name="Next"
+                        type="submit">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </nextbutton>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

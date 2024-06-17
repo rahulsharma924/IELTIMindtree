@@ -1,0 +1,23 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='shopbycategory'}" />
+
+<div aria-label="categories data" class="shop-by-category shop-by-cards-container analyticshopbycat" id='categoriesData'>
+
+  <div class="card analyticsshopbycardview" style="flex-direction: column; order: 12;">
+    <a title="view all" role="link" href="${properties.viewalllink}">
+      <div class="card-img-wrap">
+        <img
+        src="${properties.viewallimagepath}"
+          class="img-with-text img-thumbnail" alt="${properties.viewallalttext}" loading="lazy"
+        />
+      </div>
+      <p>${properties.viewalltitle}</p>
+    </a>
+  </div>
+
+</div>
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='shopbycategory'}" />

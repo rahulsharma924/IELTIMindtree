@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js" integrity="sha512-36dJpwdEm9DCm3k6J0NZCbjf8iVMEP/uytbvaiOKECYnbCaGODuR4HSj9JFPpUqY98lc2Dpn7LpyPsuadLvTyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    .email-footer-contactUs{
+  margin: 0;display: inline-block;text-align: right; width: 31%;
+}
+.email-template-body{
+  padding: 20px 50px 50px;display: block;text-align: center;margin: 0 auto;
+}
+.th-main{
+  padding:10px 15px 10px 25px;display: flex;justify-content: left;align-items: center;border-bottom: 1px solid #E5E7E9;
+}
+.th-data{
+ text-align: left;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;
+}
+.p-wd{
+  width: 212px;
+}
+.p-wd-90{
+  width: 95px;
+  text-align: center;
+}
+.pd-24{
+  padding: 0 24px;
+}
+.products{
+  width:59%;display: inline-block;text-align: left;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;
+}
+.qnty-price{
+  width:20%; display: inline-block;text-align: center;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;
+}
+.subtotal{
+  display: block;text-align: right; display: grid;grid-template-columns:84% 16%;
+  margin-bottom: 8px;
+}
+.subtotal-text{
+  padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;font-weight: bolder;text-align: right;
+}
+.subtotal-right{
+  padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;text-align: right;display: inline-block;
+}
+
+.gridsection{
+  display: grid;grid-template-columns: 50% 50%;
+  word-wrap: break-word;
+  column-gap: 5px;
+}
+.contactinfo-details{
+  display: flex;justify-content: space-between;vertical-align: text-top;display: inline-block;width: 69%;margin: 0;
+}
+.address{
+  padding-left:25px;
+}
+.gridsection{
+  padding: 0 24px;
+}
+.socialContactUs-email{
+  display: inline-block;text-align: right;width: 100%;
+}
+.socialContactUs-social{
+  display: flex;justify-content: space-between;display: block;text-align: right;
+}
+.main-head{
+  padding: 10px 25px;display: flex;justify-content: left;align-items: center;border-bottom: 1px solid #E5E7E9;
+}
+.total-cal{
+  padding: 10px 25px;display: flex;justify-content: right;align-items: center;display: block;text-align: right;
+}
+    .footertext{
+    display: flex;
+   
+}
+ @media only screen and (max-width:575px) {
+      .footertext{
+    display: flex;
+    flex-direction: column;
+}
+  .total-cal{
+    padding:10px 5px;
+  }
+  .socialContactUs-email{
+  display: inline-block;text-align: left;width: 100%;
+}
+.main-head{
+  padding: 10px 5px;display: flex;justify-content: left;align-items: center;border-bottom: 1px solid #E5E7E9;
+}
+.socialContactUs-social{
+  display: flex;justify-content: space-between;display: block;text-align: left;
+}
+  .contactinfo-details{
+  display: flex;justify-content: space-between;vertical-align: text-top;display: inline-block;width: 69%;margin: 0;
+}
+  .gridsection{
+  display: grid;grid-template-columns:100%;
+}
+.contactinfo-details,.email-footer-contactUs{
+  width: 100%;
+}
+.email-footer-contactUs{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.email-template-body{
+  padding: 20px 5px 24px;display: block;text-align: center;margin: 0 auto;
+}
+.products{
+  width:35%;display: inline-block;text-align: left;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;
+}
+.qnty-price{
+  width:22%; word-wrap:break-word; display: inline-block;text-align: center;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;
+}
+.subtotal{
+  grid-template-columns:74% 26%;
+}
+.contactUs-email{
+  flex-direction: column;
+}
+.address{
+  padding-left: 0;
+}
+.align-base{
+  align-items: baseline;
+}
+.fsize-12{
+  font-size: 12px;
+}
+}
+
+.font-normal{
+  font-weight: 400;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+  </style>
+</head>
+</head>
+<body id="body" style="margin:0; padding:0;">
+
+  <table  class ="table-container"  cellspacing="0" cellpadding="0" class="email-template-checkout-success-section" style="background: #fff; margin: 0 auto; max-width: 640px; border: 1px solid #e7eaee; font-family: 'Poppins';font-style: normal;" cellspacing="0" cellpadding="0" border="0">
+    <thead class="email-template-header">
+        <tr class="header-img-wrap" style="padding: 20px;display: flex;justify-content: center;align-items: center;border-bottom: 1px solid #e5e7e9;display: block;text-align: center;margin: 0 auto;">
+           <td style="display: block;text-align: center;margin: 0 auto;"> <img class="header-img" src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/application-images/fm-logo_new.jpg" alt="header-image" style="width: 250px;height: 73px;object-fit: contain;"> </td>
+        </tr>
+    </thead>
+    <tbody class="email-template-body">
+        <tr class="email-heading-wrap">
+          <td>  <h1 class="order-place-heading" style="font-weight: 400;font-size: 31px;line-height: 42px;color: #000000;text-align: center;margin:0;">Your Order has Been Placed</h1></td>
+        </tr>
+        <tr class="email-para-wrap">
+          <td class="pd-24">  <p class="email-para" style="margin: 40px auto;width: 100%;font-weight: 400;font-size: 16px;line-height: 24px;color: #0E0F10;text-align: left;">Thank you for your business. The following is a summary of your order, and tracking information will be provided through e-mail once available. Feel free to contact us directly if you have additional questions or would like further information.</p></td>
+        </tr>
+        <tr class="email-shipping-details-wrap">
+            <td class="email-shipping-details-block gridsection">
+                <div style="justify-content: left;display: flex;flex-direction: column;">
+                    <h2 style="font-weight: 700;font-size: 16px;line-height: 24px;color: #454B4F;margin:0;margin-bottom: 14px;text-align: left;">Shipping</h2>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingName}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingadd}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingadd2}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingemail}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingPhone}</p>
+                </div>
+                
+                <div style="justify-content: left;display: flex;flex-direction: column;">
+                    <h2 style="font-weight: 700;font-size: 16px;line-height: 24px;color: #454B4F;margin:0;margin-bottom: 14px;text-align: left;">Billing</h2>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingName}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingadd}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingadd2}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingemail}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingPhone}</p>
+                </div>
+                <div style="justify-content: left;display: flex;flex-direction: column;  margin-top: 10px;">
+                    <h2 style="font-weight: 700;font-size: 16px;line-height: 24px;color: #454B4F;margin:0;text-align: left;">Shipping Method</h2>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;">${shippingmethod} (<span style="font-weight: normal;">$</span>${ShippingAmt})
+                </div>
+              
+                <div style="justify-content: left;display: flex;flex-direction: column; margin-top: 10px;">
+                    <h2 style="font-weight: 700;font-size: 16px;line-height: 24px;color: #454B4F;margin:0;text-align: left;">Payment  Method</h2>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;">${paymentmethod}</p>
+                </div>
+            </td>
+            <td class="email-shipping-details-block row" style="margin-bottom: 11px;width:100%;display: inline-block;">
+             
+            </td>
+        </tr>
+        <tr class="email-orrder-summary-table-wrap" style="margin: 0 auto;background: #FAFBFB;outline: 1px solid #E5E7E9;display: block;width: 100%;">
+           <td style="display: block;width: 100%;"> <h3 class="email-table-mainHeading" style="font-weight: 400;font-size: 22px;line-height: 33px;color: #212429;padding: 10px 25px;text-align: left;margin:0;border-bottom: 1px solid #E5E7E9;">Order summary</h3></td>
+            <td style="display: block;width: 100%;">
+              <table class="email-order-cal-table" style="display: block;width: 100%;" cellspacing="0" cellpadding="0" border="0">
+                <tbody style="display: block;width: 100%;">
+                  <tr class="order-cal-table" style="padding:0; margin:0;list-style: none;display: block;width: 100%;">
+                      <td class="row main-head">
+                          <p class="products" >PRODUCT</p>
+                          <p class="qnty-price" >QUANTITY</p>
+                          <p class="qnty-price text-right" >PRICE</p>
+                          <p class="qnty-price text-right" >TOTAL</p>
+                      </td>
+                      startloop
+                       <td class="row total-cal">
+                        <ul style="list-style: none;padding: 0;display: block;text-align: right;margin: 0;display: block;text-align: right;">
+                          <li class="subtotal"><p class="subtotal-text">Sub total: </p>  <p class="subtotal-right"><span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${subTotal} </span> </p></li>
+                          <li class="subtotal"><p class="subtotal-text">Shipping: </p>  <p class="subtotal-right"><span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${ShippingAmt} </span> </p></li>
+                          <li class="subtotal"><p class="subtotal-text">Tax:</p>  <p class="subtotal-right"> <span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${TaxAmt} </span> </p></li>
+                          <li class="subtotal"><p class="subtotal-text">Order total: </p>  <p class="subtotal-right"> <span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${totalAmt} </span> </p></li>
+                        </ul>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+        </tr>
+    </tbody>
+    <table class="email-template-footer" style="padding: 20px 30px; font-family: 'Poppins'; max-width: 640px; margin: 0 auto; background: #002A42;color: #fff;display: block;vertical-align: text-top;">
+<tbody class="footertext">
+          <tr class="contactinfo-details">
+            <td style="display: inline-block;text-align: left;width: 100%;margin-bottom: 8px;"><h4 style="font-weight: 700;font-size: 14px;line-height: 21px;text-transform: uppercase;color: #FFFFFF;margin: 0 0 8px;">CONTACT INFO</h4></td>
+            <td class="contactUs-email" style="display: flex;width: 100%;margin-bottom: 20px;">
+              <div>
+                <p style="display: flex;margin:0;margin-bottom: 5px;cursor: pointer;">
+                  <!--/* <i class="fa-solid fa-phone" style="font-weight: 600;color: #FFFFFF;font-size: 12px;line-height: 18px;"></i> */-->
+                  <a href="tel:+18007154396" title="contact-us" style="font-weight: 400;color: #FFFFFF;font-size: 12px;line-height: 18px;cursor: pointer;text-decoration: none;vertical-align: middle;display: inherit;">
+                    <img alt="contact-us" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/rfqfooter/phone.svg" style="width:14px;cursor: pointer;margin-right: 10px;">
+                      +1 (800) 715-4396
+                  </a>
+                </p>
+
+                <p style="display: flex;margin:0;margin-bottom: 5px;cursor: pointer;">
+                  <!--/* <i class="fa-solid fa-message" style="font-weight: 600;color: #FFFFFF;font-size: 12px;line-height: 18px;"></i> */-->
+                  <!--/* <span style="font-weight: 400;color: #FFFFFF;font-size: 12px;line-height: 18px;margin-left: 10px;">sales@fairviewmicrowave.com</span> */-->
+                  <a title="sales@fairviewmicrowave.com" href="mailto:sales@fairviewmicrowave.com" style="font-weight: 400;color: #FFFFFF;font-size: 12px;line-height: 18px;cursor: pointer;text-decoration: none;vertical-align: middle;display: inherit;">
+                    <img alt="mail-us" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/rfqfooter/mail.svg" style="width:14px;cursor: pointer;margin-right: 10px;">
+                      sales@fairviewmicrowave.com
+                  </a>
+                </p>
+
+                <p style="display: flex;margin:0;margin-bottom: 5px;cursor: pointer;">
+                  <!--/* <i class="fa-solid fa-globe" style="font-weight: 600;color: #FFFFFF;font-size: 12px;line-height: 18px;"></i> */-->
+                  <a href="https://www.fairviewmicrowave.com/" title="Fairview Website" target="_blank" style="font-weight: 400;color: #FFFFFF;font-size: 12px;line-height: 18px;cursor: pointer;text-decoration: none;vertical-align: middle;display: inherit;">
+                    <img alt="website" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/rfqfooter/web.svg" style="height: 15px;cursor: pointer;margin-right: 10px;"> fairviewmicrowave.com
+                  </a>
+                </p>
+              </div>
+              <div class="address">
+                <p style="display: flex;margin:0;margin-bottom: 5px;">
+                  <!--/* <i class="fa-solid fa-location-dot" style="font-weight: 600;color: #FFFFFF;font-size: 12px;line-height: 18px;"></i> */-->
+                  <span style="font-weight: 400;color: #FFFFFF;font-size: 12px;line-height: 18px;vertical-align: middle;display: inherit;">
+                    <img alt="contact-us" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/rfqfooter/location-icon.png" style="height:15px;cursor: pointer;object-fit: contain;margin-right: 10px;">
+                      <span>Headquarters
+                      <br>1301 Leora Ln
+                      <br>Lewisville, Texas 75056</span>
+                  </span>
+                </p>
+              </div>
+            </td>
+          
+          </tr>
+          <tr class="email-footer-contactUs">
+            <td class="socialContactUs-email">
+
+                <h4 style="margin: 0;margin-bottom: 10px;white-space: nowrap;text-transform: uppercase;font-weight: 700;">Let's Connect</h4>
+
+                <div class="socialContactUs-social">
+                  <!--/* <i class="fa-brands fa-facebook" style="font-weight: 600;color: #FFFFFF;font-size: 20px;line-height: 20px;cursor: pointer;"></i>
+                  <i class="fa-brands fa-linkedin" style="font-weight: 600;color: #FFFFFF;font-size: 20px;line-height: 20px;cursor: pointer;"></i>
+                  <i class="fa-brands fa-twitter" style="font-weight: 600;color: #FFFFFF;font-size: 20px;line-height: 20px;cursor: pointer;"></i>
+                  <i class="fa-brands fa-youtube" style="font-weight: 600;color: #FFFFFF;font-size: 20px;line-height: 20px;cursor: pointer;"></i> */-->
+
+                  <a title="Facebook" href="http://www.facebook.com/people/Fairview-Microwave/100063721473386/" target="_blank" style="width: auto;display: inline-block;height: auto;background: transparent;margin-right: 6px;">
+                    <img alt="FB" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/footer/facebook.png" style="width: 20px;height: 20px;cursor: pointer;">
+                  </a>
+                  <a title="Linkedin" href="http://www.linkedin.com/company/fairview-microwave-inc./" target="_blank" style="width: auto;display: inline-block;height: auto;background: transparent;margin-right: 6px;">
+                    <img alt="Linkedin" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/footer/linkdein.png" style="width: 20px;height: 20px;cursor: pointer;">
+                  </a>
+                  <a title="Twitter" href="http://twitter.com/Fairview_Micro" target="_blank" style="width: auto;display: inline-block;height: auto;background: transparent;margin-right: 6px;">
+                    <img alt="Twitter" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/footer/twitter.png" style="width: 20px;height: 20px;cursor: pointer;">
+                  </a>
+                  <a title="Youtube" href="http://www.youtube.com/" target="_blank" style="width: auto;display: inline-block;height: auto;background: transparent;">
+                    <img alt="Youtube" src="https://publish-p78402-e680778.adobeaemcloud.com/content/dam/fm/rfqfooter/yt.svg" style="width: 20px;height: 20px;cursor: pointer;">
+                  </a>
+                </div>
+            </td>
+
+          </tr>
+       </tbody>
+        <tbody>
+          <tr>
+            <td><div><p style="font-weight: 400;color: #FFFFFF;font-size: 10px;line-height: 18px;margin: 0;">&#169; 2022 Infinite Electronics, Inc. Fairview Microwave is a registered trademark of Infinite Electronics, Inc. Same-day shipping terms and conditions can be found <a class="footer__link" style="font-size:10px;color: #fff;" href="https://www.fairviewmicrowave.com/t-Shipping.aspx"><u> here</u></a></p></div></td>
+          </tr>
+        </tbody>         
+        </table>
+  </table>
+</body>
+</html>

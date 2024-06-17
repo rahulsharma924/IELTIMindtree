@@ -1,0 +1,19 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='rfadapters'}" />
+<div class="single-block-carousel">
+  <div class="single-block-carousel-btn-wrap" id="rfadaterslink">
+    <a href="/${properties.buttonlink}" target="_blank" class="ie-primary-btn">
+           ${properties.button}
+      </a>
+  </div>
+
+  <div class="single-block-carousel-card-wrap" id="rfadaterslink1">
+    <a href="/${properties.buttonlink}" target="_blank">
+     <img alt="${properties.productname}" src="${properties.image}" class="single-block-carousel-img" loading="lazy" width="300" height="110"/>
+    </a>
+  </div>
+  
+  <div class="single-block-carousel-content">
+    <p class="single-block-carousel-productname">${properties.productname}</p>
+    <p class="single-block-carousel-productdescription">${properties.productdescription}</p>
+  </div>
+</div>

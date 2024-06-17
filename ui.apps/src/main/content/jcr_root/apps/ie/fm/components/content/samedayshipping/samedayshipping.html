@@ -1,0 +1,43 @@
+<div
+  data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+  data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.text="${textModel.text}"
+  data-cmp-data-layer="${textModel.data.json}"
+  id="${component.id}"
+  class="cmp-text samedayshipping-text">
+  <div id="main" class="samedayshipping_main">
+    <div class="samedayshipping_container">
+      <div class="samedayshipping_text">
+        <div
+          class="cmp-text__paragraph samedayshipping_static"
+          data-sly-unwrap="${textModel.isRichText}"
+        >
+          <div class="samedayshipping_static_txt">
+            <div class="samedayshipping_static_txt1">
+              <i class="fa-solid fa-truck-fast"></i>
+              ${text @ context = textModel.isRichText ? 'html' : 'text' }
+            </div>
+            <div class="samedayshipping_time"><span id="test"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="needassistance_text d-none d-lg-block">
+        <p>
+          <span>${properties.needAssistance}</span>
+          <a
+            id="assistance-mobile"
+            href="tel:${properties.needassistancephone}"
+            title="${properties.needassistancephone}"
+          >
+            ${properties.needassistancephone}
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <sly
+    data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"
+  ></sly>
+</div>

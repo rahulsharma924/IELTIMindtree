@@ -1,0 +1,31 @@
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" data-sly-call="${clientlib.css @ categories='video-hero-banner'}" />
+
+<section class="watch-video">
+    <div class="row mxauto">
+        <div class="watch-video-details col-12 col-md-6 col-lg-6">
+            <h1 class="watch-video_title ">${properties.watchvideotitle}</h1>
+            <p class="watch-video_desc watch-video_link_gap">${properties.watchvideodescription}</p> 
+              <a aria-label="${properties.watchvideobutton}" class="rfcableconnector__action-link watch-video_btn" href="#youtubeId" role="link" title="${properties.watchvideobutton}" data-toggle="modal">${properties.watchvideobutton}</a>
+            <div  id="youtubeId" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                       <iframe id="youtubepopupId" class="content" title="Product Video" width="560" height="315" src="${properties.watchvideobuttonlink}" allowfullscreen></iframe>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <figure class="watch-video_image col-12 col-md-6 col-lg-6 pl-xs-0">
+            <img src="${properties.watchvideoimage}" class="watch-man" alt="Hero Video Banner Image" loading="lazy">
+        </figure>
+    
+       
+    </div>
+   
+  </section>
+
+  <sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" data-sly-call="${clientlib.js @ categories='video-hero-banner', loading='defer'}" />

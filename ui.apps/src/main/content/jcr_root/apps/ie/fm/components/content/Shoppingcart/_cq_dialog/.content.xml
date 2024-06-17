@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Shopping Cart"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.navigation.v1.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_navigation_v2"
+    trackingFeature="core-components:navigation:v2">
+    <content
+        granite:class="cmp-navigation__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <email-popup
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Email Popup"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <popup-title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Email Popup Title"
+                                                fieldLabel="Popup Title"
+                                                name="./emailtitle"/>
+                                            <input-title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Email Input label Title"
+                                                fieldLabel="Input Title"
+                                                name="./emailinputtitle"/>
+                                            <addrecipientbtn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add Another Recipient Button Title"
+                                                fieldLabel="Add another recipient"
+                                                name="./addanotherrecipient"/>
+                                            <emailcancelbtn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Cancel Button "
+                                                fieldLabel="Email cancel button"
+                                                name="./emailcancelbtn"/>
+                                            <emailsentbtn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Send Button"
+                                                fieldLabel="Email send button"
+                                                name="./emailsentbtn"/>
+                                            <emailsenttitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Email Confirmation Message"
+                                                fieldLabel="Email confirmation message"
+                                                name="./emailsenttitle"/>
+                                            <freightlabeltxt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Freight Label Tooltip"
+                                                fieldLabel="Freight Label Tooltip"
+                                                name="./freightlabeltxt"/>
+                                            <continueshoppingtxt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please Enter Continue Shopping Text"
+                                                fieldLabel="Continue Shopping Text"
+                                                name="./continueshoppingtxt"/>
+                                            <contshoplink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Please Enter Continue Shopping Text"
+                                                fieldLabel="Continue Shopping Text"
+                                                name="./contshoplink"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </email-popup>
+                    <rfq
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="RFQ"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <rfqHeading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the heading for RFQ modal popup"
+                                                fieldLabel="Enter the heading for RFQ modal popup"
+                                                name="./rfqHeading"/>
+                                            <firstName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the First Name Label Text (mandatory field)"
+                                                fieldLabel="Enter the First Name Label Text."
+                                                name="./firstName"/>
+                                            <lastName
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Last Name Label Text (mandatory field)"
+                                                fieldLabel="Enter the Last Name Label Text."
+                                                name="./lastName"/>
+                                            <companyname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Company Name Label (Optional field)"
+                                                fieldLabel="Enter Company Name Label"
+                                                name="./rfqCompanyName"/>
+                                            <jobTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Job Title Label (Optional field)"
+                                                fieldLabel="Enter Job Title Label"
+                                                name="./jobTitle"/>
+                                            <email
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Email label Text (Mandatory field)"
+                                                fieldLabel="Enter Email Label"
+                                                name="./email"/>
+                                            <phonenumber
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Phone Number label text (mandatory field)"
+                                                fieldLabel="Enter Phonenumber Label"
+                                                name="./phoneNum"/>
+                                            <addressline1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Shipping Address1 label text (mandatory field)"
+                                                fieldLabel="Enter Shipping Address1 Label"
+                                                name="./shippingAddOne"/>
+                                            <addressline2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Shipping Address2 label text (optional field)"
+                                                fieldLabel="Enter Shipping Address2 Label"
+                                                name="./shippingAddTwo"/>
+                                            <city
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter City label text (mandatory field)"
+                                                fieldLabel="Enter City Label"
+                                                name="./city"/>
+                                            <country
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Country label text (mandatory field)"
+                                                fieldLabel="Enter Country Label"
+                                                name="./country"/>
+                                            <zipcode
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Zipcode label text (mandatory field)"
+                                                fieldLabel="Enter Zipcode Label"
+                                                name="./zipcode"/>
+                                            <product
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter table heading label text for Product "
+                                                fieldLabel="Enter table heading label text for Product "
+                                                name="./product"/>
+                                            <quantity
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter table heading label text for Quantity "
+                                                fieldLabel="Enter table heading label text for Quantity "
+                                                name="./quantity"/>
+                                            <price
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter table heading label text for Unit Price "
+                                                fieldLabel="Enter table heading label text for Unit Price  "
+                                                name="./price"/>
+                                            <subtotal
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter table heading label text for Sub total"
+                                                fieldLabel="Enter table heading label text for Sub total"
+                                                name="./subtotal"/>
+                                            <state
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter state label text (mandatory field)"
+                                                fieldLabel="Enter State Label"
+                                                name="./state"/>
+                                            <noteHeading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Note Block Heading text"
+                                                fieldLabel="Enter Note Block Heading text"
+                                                name="./noteHeading"/>
+                                            <noteDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Note Block Description text"
+                                                fieldLabel="Enter Note Block Description Label text"
+                                                name="./noteDescription"/>
+                                            <recapchaDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Recapcha Block Description text"
+                                                fieldLabel="Enter Recapcha Block Description Label text"
+                                                name="./recapchaDescription"/>
+                                            <cancelCTA
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter label text for Cancel CTA"
+                                                fieldLabel="Enter label text for Cancel CTA"
+                                                name="./cancelCTA"/>
+                                            <submitCTA
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter label text for Submit CTA"
+                                                fieldLabel="Enter label text for Submit CTA"
+                                                name="./submitCTA"/>
+                                            <confirmMsgheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the confirmation message heading text"
+                                                fieldLabel="Enter the confirmation message heading text"
+                                                name="./confirmMsgheading"/>
+                                            <toemail 
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the mail id for sales team of fairviewmircowave"
+                                                fieldLabel="Mail id of sales team"
+                                                name="./toemail"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="A description to display as the subheadline for the confirmation message."
+                                                fieldLabel="Description"
+                                                name="./confirmmsgdescription"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <format
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="bold,italic"/>
+                                                    <justify
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="-"/>
+                                                    <links
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="modifylink,unlink"/>
+                                                    <lists
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <misctools jcr:primaryType="nt:unstructured">
+                                                        <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                                            <chars jcr:primaryType="nt:unstructured">
+                                                                <default_copyright
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;copy;"
+                                                                    name="copyright"/>
+                                                                <default_euro
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;euro;"
+                                                                    name="euro"/>
+                                                                <default_registered
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;reg;"
+                                                                    name="registered"/>
+                                                                <default_trademark
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;trade;"
+                                                                    name="trademark"/>
+                                                            </chars>
+                                                        </specialCharsConfig>
+                                                    </misctools>
+                                                    <paraformat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <formats jcr:primaryType="nt:unstructured">
+                                                            <default_p
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Paragraph"
+                                                                tag="p"/>
+                                                            <default_h1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 1"
+                                                                tag="h1"/>
+                                                            <default_h2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 2"
+                                                                tag="h2"/>
+                                                            <default_h3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 3"
+                                                                tag="h3"/>
+                                                            <default_h4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 4"
+                                                                tag="h4"/>
+                                                            <default_h5
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 5"
+                                                                tag="h5"/>
+                                                            <default_h6
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 6"
+                                                                tag="h6"/>
+                                                            <default_blockquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Quote"
+                                                                tag="blockquote"/>
+                                                            <default_pre
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Preformatted"
+                                                                tag="pre"/>
+                                                        </formats>
+                                                    </paraformat>
+                                                    <table
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="-">
+                                                        <hiddenHeaderConfig
+                                                            jcr:primaryType="nt:unstructured"
+                                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                            hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing"/>
+                                                    </table>
+                                                    <tracklinks
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat]">
+                                                            <popovers jcr:primaryType="nt:unstructured">
+                                                                <justify
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                                    ref="justify"/>
+                                                                <lists
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                    ref="lists"/>
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat"/>
+                                                            </popovers>
+                                                        </inline>
+                                                        <dialogFullScreen
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps]">
+                                                            <popovers jcr:primaryType="nt:unstructured">
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat"/>
+                                                            </popovers>
+                                                        </dialogFullScreen>
+                                                        <tableEditOptions
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]"/>
+                                                    </cui>
+                                                </uiSettings>
+                                            </description>
+                                            <continueCTA
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter label text for Continue CTA"
+                                                fieldLabel="Enter label text for Continue CTA"
+                                                name="./continueCTA"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </rfq>
+                    <filedLable
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="filedLable"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <zipCodeLable
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Zip code label"
+                                                name="./zipcodeLabel"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </filedLable>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

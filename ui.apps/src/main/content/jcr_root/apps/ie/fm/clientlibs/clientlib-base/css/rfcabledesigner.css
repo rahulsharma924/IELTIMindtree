@@ -1,0 +1,221 @@
+/*Custom component*/
+
+.rfcableconnector_content {
+  background: var(--secondaryLinkNormal);
+}
+.rfcableconnector_content{
+  padding: 0;
+}
+.rfcableconnector_title,
+.rfcableconnector__pretitle {
+  font-weight: var(--fontWeightSmall);
+  font-size: 2.713rem;
+  line-height: var(--baseLineHeight);
+  color: var(--secondaryColor);
+  padding-top:30px;
+  padding-right: 5px;
+  padding-left: 77px;
+}
+.rfcableconnector__pretitle {
+  padding-top:30px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.rfcableconnector__description {
+  font-weight: var(--fontWeightBold);
+  padding-right: 36px;
+  padding-left: 77px;
+  padding-bottom: 30px;
+}
+
+.promotional-page .rfcableconnector__action-link:focus-visible{
+  outline: none;
+}
+
+.rfcableconnector__description p {
+  color: var(--secondaryColor);
+  margin: 0;
+  padding: 34px 0 34px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.rfcableconnector__action-container {
+  margin-bottom: 30px;
+}
+
+#Product-banners-block .rfcableconnector__action-container{
+  margin-top: 40px;
+}
+.rfcableconnector__action-link {
+  color: var(--secondaryColor);
+  font-weight: var(--fontWeightBold);
+  line-height: 1.375;
+  text-decoration: none;
+  border: 1.5px solid var(--secondaryColor);
+  margin-left: 77px;
+  border-radius: 4px;
+  padding: 15px 20px;
+}
+.rfcableconnector__action-link:hover {
+  color: var(--secondaryColor);
+}
+
+.rfcableconnector .col-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.rfcable_block_image .cmp-image {
+  margin-top: 0;
+}
+
+
+.rfcable_block_image .cmp-image__image{
+  height: auto;
+}
+.rfcableconnector.row {
+  background: var(--secondaryLinkNormal);
+  margin: 0 auto;
+}
+.rfcableconnector-container{
+  margin: 0 auto;
+  display: flex;
+  max-width: 1280px;
+}
+@media screen and (min-width:992px) {
+  #rfcableconnector-a2c8dcc7ab .col-sm-6:nth-child(2){padding:0 0;}
+  .promotional-page .rfcableconnector__description{
+    font-weight: var(--fontWeightBold);
+    padding: 10px 108px 10px 75px;
+    font-size: 0.875rem;
+  }
+  .promotional-page .rfcableconnector__description p {
+    color: var(--secondaryColor);
+    margin: 0;
+    padding: 15px 0 0 0;
+  }
+}
+@media screen and (max-width:991px) {
+  .rfcableconnector_content{
+    padding: 20px 24px;
+  }
+  .rfcableconnector_content.col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 32px 24px;
+    margin-top: 30px;
+  }
+  .rfcableconnector_title,
+  .rfcableconnector__pretitle {
+    font-weight: var(--fontWeightSmall);
+    font-size: 1.938rem;
+    line-height: var(--baseLineHeight);
+    color: var(--secondaryColor);
+  }
+  .rfcableconnector__pretitle {
+    padding:0;
+    margin: 0;
+    width: 100%;
+  }
+  .rfcableconnector_title {
+    padding: 0;
+    margin: 0;
+  }
+  .rfcableconnector__description {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height:  var(--baseLineHeight);
+    color: var(--secondaryColor);
+    margin: 9px 0 35px;
+    padding: 0;
+  }
+  .rfcableconnector__action-link {
+    color: var(--secondaryColor);
+    font-weight: var(--fontWeightBold);
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    border: 1.5px solid  var(--secondaryColor);
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+ 
+  #rfcableconnector-a2c8dcc7ab .rfcableconnector_content{
+   padding: 20px 15px 15px 24px;
+  }
+  
+  #rfcableconnector-a2c8dcc7ab-image img{
+    object-fit: cover;
+    height: 366px;
+    object-position: right;
+  }
+  #rfcableconnector-a2c8dcc7ab-image{
+    padding: 0;
+  }
+  #rfcableconnector-a2c8dcc7ab .col-sm-6:nth-child(2){padding:0 0;}
+  .rfcableconnector__description p{
+    padding: 24px 0 24px 0;
+  }
+  .rfcableconnector_title, .rfcableconnector__pretitle{
+    font-size: 1.738rem;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+  #rfcableconnector-a2c8dcc7ab-image{
+    padding: 0;
+  }
+  .rfcableconnector__description p{
+    padding: 24px 0 24px 0;
+  }
+  .rfcableconnector_title, .rfcableconnector__pretitle{
+    font-size: 1.738rem;
+  }
+  #rfcableconnector-a2c8dcc7ab-image img{
+    object-fit: cover;
+    height: 365px;
+    object-position: right;
+  }
+  #rfcableconnector-a2c8dcc7ab .col-sm-6:nth-child(2){padding:0 0; display: none;}
+  #rfcableconnector-a2c8dcc7ab .rfcableconnector_content{
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+    padding: 20px 24px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .rfcableconnector__pretitle,.rfcableconnector_title {
+    font-size: var(--fontSize26);
+  }
+  .rfcableconnector__pretitle{
+    padding-top: 32px;
+  }
+  .rfcableconnector-container{
+    display: grid;
+  }
+  .rfcableconnector__description p {
+      padding:9px 0 3px 0;
+  }
+  .rfcableconnector__action-container{
+    margin-bottom: 56px;
+  }
+  #rfcableconnector-a2c8dcc7ab .rfcableconnector_content{
+    padding: 0 24px;
+  }
+  #Product-banners-block .rfcableconnector_content {
+      margin-top: 30px;
+      padding: 0 24px;
+  }
+ 
+}

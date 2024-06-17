@@ -1,0 +1,28 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='landingpage-brochuresAll'}"
+/>
+<div class="resourceCard">
+   
+      <sly data-sly-use.cfvalues="${'com.aem.ie.core.models.BrochuresContentFragmentContent' @cfInput1=properties.cfmpath1, cfInput2=properties.cfmpath2, cfInput3=properties.cfmpath3}">
+         <div class="broucherInformation analyticbrouchers" data-sly-list.key1="${cfvalues.BrochuresMyHashMap}">
+            <div class="broucher_details">
+               <div class="broucherLink border-img" data-sly-list.key3="${cfvalues.BrochuresImageHashMap}">
+                  <sly data-sly-test="${key3 == key1}">
+                     <img class="BroucherImage img-height" alt="${key1 @ context='html'}" src="${cfvalues.BrochuresImageHashMap[key3]}" aria-label="broucherimage" />
+                  </sly>
+               </div>
+               <h2 class="broucherTitle">${key1 @ context='html'}</h2>
+               <div class="white-desc"><p class="broucherDesc">${cfvalues.BrochuresMyHashMap[key1] @ context='html'}</p></div>
+               <div class="broucherLink m-top" data-sly-list.key2="${cfvalues.BrochuresImageMyHashMap}">
+                  <sly data-sly-test="${key2 == key1}">
+                     <a class="ie-tertiary-link font-weight-500" href="${cfvalues.BrochuresImageMyHashMap[key2]}" title="${properties.pdfname}">
+                     <i class="fa-sharp fa-solid fa-file-pdf"></i> 
+                     ${properties.pdfname}</a>
+                  </sly>
+               </div>
+            </div>
+         </div>
+      </sly>
+   
+</div>

@@ -1,0 +1,4 @@
+#base=css
+product-common.css
+product-details.css
+product-key-specification.css

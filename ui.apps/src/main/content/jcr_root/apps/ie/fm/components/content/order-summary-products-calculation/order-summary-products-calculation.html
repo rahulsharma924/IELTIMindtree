@@ -1,0 +1,124 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='orderSummaryProductsListWithCalculation'}" />
+<div class="loader_wrapper" id="loading-indicator">
+    <div class="loader"></div>
+  </div>
+<section class="order-placed-confirmation-message-section d-none">
+  <h2 class="order-placed-heading">${properties.mainHeading}</h2>
+
+  <div class="order-placed-description">
+    <div class="order-placed-description-refNum">
+      <p class="order-placed-descriptionText">${properties.descriptiontextRefnum}<span class="order-placed-refNum" id="orderNum"></span>.</p>
+      <p class="order-placed-descriptionText">${properties.descriptiontext}</p>
+    </div>
+    <div class="tax-exemption-section d-none">
+      <p>${properties.taxExemptText}</p>
+      <p><a title="download-pdf" id="downloadLink" href="${properties.downloadPdf}">${properties.downloadPathText}</a>  ${properties.downloadRemainingText}</p>
+    </div>
+    <div class="create-account-redirect-section d-none">
+      <p><a title="redirectionLink" href="${properties.href}">${properties.redirectionPathText}</a>  ${properties.remainingText}</p>
+    </div>
+  </div>
+
+<div class="oSPLC-wrapper">
+    <div class="orderSummaryProductsList-section">
+     <div class="email-confirmation-msg d-none"> 
+        <div class="d-flex justify-content-start align-items-center">  
+            <i class="fa-solid fa-circle-check"></i>  
+            <h2 class="email-confirm-text">${properties.emailconfirmationtext}</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fa-regular fa-xmark"></i></span> 
+            </button>
+        </div>       
+	 </div>
+
+        <div class="product-list-wrapper">
+            <div class="details-export-wrapper d-flex analyticcheckoutsuccess">
+                <button class="productList-email" data-toggle="modal" data-target="#emailModalPopup" id="ordersumemail">
+                    ${properties.emailbtn}
+                </button>
+                <!-- Modal -->
+                <div class="productList-email-modal modal fade analyticemailpopup" id="emailModalPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="productList-emailmodal-dialog modal-dialog modal-dialog-centered" role="document">
+                <div class="productList-emailmodal-content modal-content">
+                    <div class="productList-emailmodal-header modal-header">
+                        <h2 class="productList-emailmodal-title modal-title" id="exampleModalLongTitle">${properties.headingemailmodalpopup}</h2>
+                        <i class="fa-thin fa-xmark" data-dismiss="modal"></i>
+                    </div>
+                    <div  class="productList-emailmodal-body modal-body">
+                        <div class="notification-email-address-block">
+                            <p class="emailLabels">${properties.emailLabels}</p>
+                            <input type="email" class="notification-email-address" id="notification-email-address1" aria-describedby="emailNotification" placeholder="" onkeyup="enableBtn(this)">
+                            <i class="fa-light fa-check d-none"></i>
+                            <p id="validateOrderConfirmationEmailMsg" class="ie-error-medium validateOrderConfirmationEmailMsg"></p>
+                        </div>
+                        <div id="productList-emailmodal-body">
+                            
+                        </div>
+                        
+                        
+                        <button class="add-more-emails">
+                            ${properties.addmoreemails}
+                        </button>
+                    </div>
+                    <div class="productList-emailmodal-footer modal-footer">
+                        <button type="button" class="btn productList-emailmodal-footer-close-btn" data-dismiss="modal" >${properties.cancelCTA}</button>
+                        <button type="button" id="sendEmailOnOrderConf" class="btn ie-primary-btn productList-emailmodal-footer-sve-btn" disabled>${properties.saveCTA}</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- Modal -->
+                <p> | </p>
+                <button class="print analyticcheckoutsuccessprint" onclick="window.print()">
+                    ${properties.printbtn}
+                </button>
+            </div>
+            <div class="order-summary-productList">
+                <h3 class="order-summary-heading">${properties.maintitle}</h3>
+                <input type="hidden" value="" id="analytics-productDetails" />
+                <div class="productList-details" id= "productDetails">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-summary-calculation">
+        <div class="order-price-calculation">
+            <div class="order-cal">
+                <ul class="order-body col-12">
+                    <li class="col-12 d-flex">
+                        <p class="col-9">Items</p>
+                        <p class="col-3"><span>$</span><span id ="items"></span></p>
+                    </li>
+                    <li class="col-12 d-flex">
+                        <p class="col-9">Estimated shipping & handling</p>
+                        <p class="col-3"><span>$</span><span id ="estimatedShippingCharge"></span></p>
+                    </li>
+                    <li class="col-12 d-flex">
+                        <p class="col-9">Total before tax</p>
+                        <p class="col-3"><span>$</span><span id ="totalBeforeTax"></p>
+                    </li>
+                    <li class="col-12 d-flex">
+                        <p class="col-9">Estimated tax to be collected</p>
+                        <p class="col-3"><span>$</span><span id ="estimatedTax"></p>
+                    </li>
+                </ul>
+                <div class="order-footer col-12">
+                    <ul class="total-amt-cal">
+                        <li class="col-12 d-flex">
+                            <p class="col-9"><strong>Order total</strong></p>
+                            <p class="col-3"><strong><span>$</span><span id ="orderTotal"></strong></p>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='orderSummaryProductsListWithCalculation'}" />

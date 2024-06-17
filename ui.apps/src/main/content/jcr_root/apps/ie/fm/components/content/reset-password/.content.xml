@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-09-19T19:42:58.481+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/fm/settings/wcm/templates/content-page-without-breadcrumb"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Reset Password"
+        sling:resourceType="core/wcm/components/page/v3/page"
+        pageTitle="Reset Password">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/container/v1/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/container/v1/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="core/wcm/components/form/container/v2/container"
+                    action="/content/usergenerated/fm/en/reset-password/cq-gen1663492937213/"
+                    actionType="foundation/components/form/actions/store">
+                    <formtitle
+                        jcr:created="{Date}2022-09-19T18:37:11.051+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-19T18:37:37.320+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/formtitle"
+                        text="&lt;p>Reset Password&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <customformtitle
+                        jcr:created="{Date}2022-09-19T19:00:03.682+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-19T19:00:21.230+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customformtitle"
+                        text="&lt;p>Reset Password&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <customformdesc
+                        jcr:created="{Date}2022-09-19T19:04:49.469+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-19T19:04:57.169+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="ie/fm/components/content/resetpassword/customformdesc"
+                        text="&lt;p>Enter your email address you used to create your account. We'll send you a link to reset your password.&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <email
+                        jcr:created="{Date}2022-09-18T15:02:25.690+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-18T15:03:12.567+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Email"
+                        sling:resourceType="ie/fm/components/content/resetpassword/email"
+                        id="resetpwdemail"
+                        name="Email"
+                        rows="2"
+                        type="email">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </email>
+                    <sendemailbutton
+                        jcr:created="{Date}2022-09-18T15:19:00.877+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-09-18T15:22:54.174+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Send Email"
+                        sling:resourceType="ie/fm/components/content/resetpassword/sendemailbutton"
+                        id="sendEmailButton"
+                        linkTarget="_self">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                    </sendemailbutton>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <email-sent/>
+    <enter-code/>
+    <create-new-password/>
+    <successfulpasswordreset/>
+</jcr:root>

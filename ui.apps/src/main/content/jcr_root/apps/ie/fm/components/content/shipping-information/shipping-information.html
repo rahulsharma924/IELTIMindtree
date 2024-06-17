@@ -1,0 +1,1560 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='shippingInformation'}"
+/>
+<div class="loader_wrapper" id="loading-indicator">
+  <div class="loader"></div>
+</div>
+<section class="row shipping-info-order-summary-details d-none">
+  <section class="shippingInformation-section col-7">
+    <div class="container-fluid">
+      <div class="redirect-signInPage">
+        <a
+          href="/content/fm/en/continue-shopping.html"
+          class="ie-secondary-link"
+          title="Return to Cart"
+          >${properties.returntocarttitle}</a
+        >
+        <div class="guest-user">
+          <div class="redirect-signIn-block">
+            <p class="">${properties.returntosigntext}</p>
+            <a
+              class="redirect-signInPage ie-primary-btn"
+              title="Sign In"
+              href="/content/fm/en/sign-in.html/checkout"
+              >${properties.signinctabtn}</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="shippingPage">
+        <div id="shippingInformation" class="shippingInfo">
+          <h1 class="shipping-info-headder">${properties.shippingformtitle}</h1>
+
+          <form name="validateShippingDetails">
+            <!-- Address form starts -->
+            <div class="shipping-address-form guest-user">
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="ShippingName"
+                    >${properties.shippingaddressname}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control guest__shipping-name"
+                    id="ShippingName"
+                    name="ShippingName"
+                  />
+                  <p
+                    id="ShippingNameMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="ShippingCompany"
+                    >${properties.shippingaddresscompany}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ShippingCompany"
+                  />
+                  <p
+                    id="ShippingCompanyMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="ShippingphoneNumber"
+                    >${properties.shippingaddressphonenumber}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ShippingphoneNumber"
+                    name="ShippingphoneNumber"
+                  />
+                  <p
+                    id="ShippingphoneNumberMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 mb-3 guest-shipaddress__wrap-dd">
+                  <label for="ShippingCountry"
+                    >${properties.shippingaddresscountry}</label
+                  >
+                  <select
+                    class="form-control custom-select"
+                    id="ShippingCountry"
+                    name="ShippingCountry"
+                    onchange="countryChange()"
+                  >
+                    <option value="" selected="selected">Select</option>
+                  </select>
+                  <p
+                    id="ShippingCountrymsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="ShippingAddressLine1"
+                    >${properties.shippingaddress1}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ShippingAddressLine1"
+                    placeholder=""
+                    name="ShippingAddressLine1"
+                  />
+                  <p
+                    id="ShippingAddressLine1msg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="ShippingAddressLine2"
+                    >${properties.shippingaddressoptional}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ShippingAddressLine2"
+                  />
+                  <p
+                    id="ShippingAddressLine2msg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="ShippingCity"
+                    >${properties.shippingaddresscity}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ShippingCity"
+                    placeholder="Enter"
+                    name="ShippingCity"
+                  />
+                  <p
+                    id="ShippingCityMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+                <div class="col-md-4 mb-3 guest-shipaddress__wrap-dd">
+                  <label for="ShippingState"
+                    >${properties.shippingaddressstate}</label
+                  >
+                  <select
+                    class="form-control custom-select"
+                    id="ShippingState"
+                    name="ShippingState"
+                    onchange="selectState()"
+                  >
+                    <option value="" selected="selected">Select</option>
+                  </select>
+                  <p
+                    id="ShippingStateMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="ShippingZip"
+                    >${properties.shippingaddresszipcode}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ShippingZip"
+                    placeholder="Zip"
+                    name="ShippingZip"
+                  />
+                  <p
+                    id="ShippingZipMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="ShippingEmail"
+                    >${properties.shippingaddressemail}</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="ShippingEmail"
+                    name="ShippingEmail"
+                  />
+                  <p class="email-message">
+                    Order confirmation and updates will be sent to this email
+                    address.
+                  </p>
+                  <p
+                    id="ShippingEmailMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+            </div>
+            <!-- Address form ends -->
+            <div class="saved-shipping-address logged-in-user">
+              <div
+                id="default_address"
+                class="custom-control custom-radio col-lg-5 col-md-5 default-shipping-address"
+              >
+                <input
+                  type="radio"
+                  data-country=""
+                  class="get-taxdetails custom-control-input customRadio"
+                  id="customRadio"
+                  name="selectedAddress"
+                  value=""
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="customRadio"
+                >
+                  <p class="default-addr__fields customer-name"></p>
+                  <p class="default-addr__fields default-addr__company"></p>
+                  <p class="default-addr__fields default-addr__addr1"></p>
+                  <p class="default-addr__fields default-addr__addr2"></p>
+                  <p class="default-addr__fields default-addr__city-state"></p>
+                  <p class="default-addr__fields default-addr__country"></p>
+                  <p class="default-addr__fields default-addr__phone"></p>
+                </label>
+                <div class="edit-existing-shipping-address">
+                  <a
+                    href="#"
+                    class="EditShippingInfo ie-secondary-link"
+                    aria-label="Edit shipping information"
+                    data-toggle="modal"
+                    data-target="#editShippingAddressPopup"
+                    onclick="editAddress(this)"
+                  >
+                    Edit
+                  </a>
+                </div>
+              </div>
+              <div id="otherAddressAccordion">
+                <div class="other-address-list mt-lg-4 mb-3">
+                  <a
+                    class="card-link clickable"
+                    data-toggle="collapse"
+                    href="#otherAddressClickText"
+                    >${properties.addresses}
+                    <span
+                      ><i class="fa fa-chevron-down" aria-hidden="true"></i
+                    ></span>
+                  </a>
+                </div>
+                <div
+                  id="otherAddressClickText"
+                  class="collapse show"
+                  data-parent="#otherAddressAccordion"
+                >
+                  <div
+                    class="d-lg-flex flex-lg-wrap d-md-flex mb-4 other-address"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="add-new-address">
+                <a
+                  href="#"
+                  class="add-new-address-btn ie-primary-link"
+                  aria-label="add new address"
+                  data-toggle="modal"
+                  data-target="#addNewShippingAddressPopup"
+                >
+                  +Add a New Address
+                </a>
+              </div>
+              <div class="contactInfo mt-4">
+                <h3>Contact information</h3>
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <label for="contactInfoEmail"
+                      >${properties.contactaddressemail}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contactInfoEmail"
+                      name="ShippingContactEmail"
+                    />
+                    <p class="email-message">
+                      Order confirmation and updates will be sent to this email
+                      address.
+                    </p>
+                    <p
+                      id="ShippingContactEmailMsg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="contactInfoPhoneNumber"
+                      >${properties.contactaddressphonenumber}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contactInfoPhoneNumber"
+                      name="ShippingContactInfoPhoneNum"
+                    />
+                    <p
+                      id="ShippingContactInfoPhoneNumMsg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DT-599 starts here(Mahesh) -->
+            <div class="checkout-final-declaration">
+              <div id="checkout-final-declaration">
+                <p class="declaration-title">
+                  ${properties.finaldestinationdeclarationtitle}
+                </p>
+                <p
+                  class="freight-forwarder align-items-center justify-content-start"
+                >
+                  ${properties.freightlabel}
+                </p>
+                <div class="declaration-yes-no">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input FDD_radio"
+                      id="customRadioy"
+                      name="declaration"
+                      value="yes"
+                    />
+                    <label
+                      class="custom-control-label check-me"
+                      for="customRadioy"
+                      >Yes</label
+                    >
+                  </div>
+
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input FDD_radio"
+                      id="customRadion"
+                      name="declaration"                      
+                      value="no"
+                    />
+                    <label
+                      class="custom-control-label check-me"
+                      for="customRadion"
+                      >No</label
+                    >
+                  </div>                
+                </div>
+                <p id="final-declaration-error" class="ie-error-medium enter-carrier-error-message"></p>
+                <div class="freight-forwarder-yes">
+                  <div class="declaration-text-yes">
+                    ${properties.descofdeclarationtextyes @context='html'}
+                  </div>
+                  <div class="edit-adddress-box arrow--1">
+                    <div class="address-title-shipping mb-4">
+                      ${properties.finaldestinationtitle}
+                    </div>
+                    <div class="row-data pd-right">
+                      <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                          <label class="label-text" for="finalDestinationName"
+                            >${properties.finaldestinationname}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationName"
+                              name="finalDestinationName"
+                            />
+                            <p
+                              id="finalDestinationNameMsg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                          <label
+                            class="label-text"
+                            for="finalDestinationCompany"
+                            >${properties.finaldestinationcompany}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationCompany"
+                              name="company-name"
+                            />
+                            <p
+                              id="finalDestinationCompanyNameMsg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                          <label class="label-text" for="finalDestinationPhone"
+                            >${properties.finaldestinationphonenumber}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationPhone"
+                              name="finalDestinationPhone"
+                            />
+                            <p
+                              id="finalDestinationPhoneMsg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                          <label
+                            class="label-text"
+                            for="finalDestinationCountry"
+                            >${properties.finaldestinationcountry}</label
+                          >
+                          <select
+                            class="order-summry-select form-control order-country-select custom-select"
+                            id="finalDestinationCountry"
+                            name="finalDestinationCountry"
+                          >
+                            <option value="" selected="selected">Select</option>
+                          </select>
+                          <p
+                            id="finalDestinationCountrymsg"
+                            class="ie-error-medium enter-carrier-error-message"
+                          ></p>
+                        </div>
+                      </div>
+                      <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                          <label
+                            class="label-text"
+                            for="finalDestinationAddress1"
+                            >${properties.finaldestinationaddress1}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationAddress1"
+                              name="finalDestinationAddress1"
+                            />
+                            <p
+                              id="finalDestinationAddress1msg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex-zipcode">
+                        <div class="select-estimate">
+                          <label
+                            class="label-text"
+                            for="finalDestinationAddress2"
+                            >${properties.finaldestinationoptional}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationAddress2"
+                              name="finalDestinationAddress2"
+                            />
+                            <p
+                              id="finalDestinationAddress2msg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex-zipcode flex-direction-column">
+                        <div class="select-estimate">
+                          <label class="label-text" for="finalDestinationCity"
+                            >${properties.finaldestinationcity}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationCity"
+                              name="finalDestinationCity"
+                            />
+                            <p
+                              id="finalDestinationCitymsg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                        <div class="select-estimate select-mt">
+                          <label class="label-text" for="finalDestinationstate"
+                            >${properties.finaldestinationstate}</label
+                          >
+                          <select
+                            class="order-summry-select order-country-select form-control custom-select"
+                            id="finalDestinationstate"
+                            name="finalDestinationstate"
+                          >
+                            <option
+                              class="ais-SortBy-option"
+                              value=""
+                              selected="selected"
+                            >
+                              Select
+                            </option>
+                          </select>
+                          <p
+                            id="finalDestinationstatemsg"
+                            class="ie-error-medium enter-carrier-error-message"
+                          ></p>
+                        </div>
+                        <div class="select-estimate select-mt last-estimate">
+                          <label class="label-text" for="finalDestinationZip"
+                            >${properties.finaldestinationzipcode}</label
+                          >
+                          <div class="order-country-input">
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="finalDestinationZip"
+                              name="finalDestinationZip"
+                            />
+                            <p
+                              id="finalDestinationZipmsg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                            <p
+                              id="finalDestinationZiplengthmsg"
+                              class="ie-error-medium enter-carrier-error-message"
+                            ></p>
+                          </div>
+                        </div>
+                      </div>
+                      <!--<div class="d-flex-zipcode">
+                                                    <div class="select-estimate">
+                                                    <label class="label-text" for="finalDestinationEmail">${properties.finaldestinationemail}</label>
+                                                    <div class="order-country-input">
+                                                        <input class="form-control" type="email" id="finalDestinationEmail" name="finalDestinationEmail" />
+                                                    </div>
+                                                    <p class="order-confirmation-mail">Order confirmation and updates will be sent to this email address.</p>
+                                                    <p id = "finalDestinationEmailMsg" class="ie-error-medium enter-carrier-error-message"> </p> 
+                                                </div>
+                                            </div>-->
+                    </div>
+                  </div>
+
+                  <div class="shipping-method-yes">
+                    <div class="warning-yellow-icon">
+                      <i
+                        class="fa fa-times"
+                        aria-hidden="true"
+                        style="width: 22px; height: 19px"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="shipping-title" id="shipping-title-yellow">
+                        Shipping method
+                      </p>
+                      <p class="shipping-charges">
+                        Shipping charges cannot be calculated at this time.
+                        Please indicate in the shipping instructions if you
+                        would like to be contacted by a customer service
+                        representative with shipping options prior to processing
+                        your order. The customer is responsible for all shipping
+                        changes that may include duties, taxes and customs fees.
+                      </p>
+                    </div>
+                    <div class="close-yellow-icon">
+                      <i class="fa-regular fa-xmark font-12 xmark"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--/* Radhika */-->
+                <div class="tax-exemption-check-section">
+                  <div class="tax-exemption-block">
+                    <div
+                      class="d-flex align-items-center justify-content-start"
+                    >
+                      <p class="shipping-title">
+                        ${properties.taxempheading || 'Tax exemption Status'}
+                      </p>
+                      <i
+                        class="fa-regular fa-circle-question font-18 tooltip"
+                      ></i>
+                    </div>
+
+                    <label
+                      id="taxApproved"
+                      style="padding-bottom: 15px; display: none"
+                    ></label>
+                    <div class="col-md-8" id="taxExemptionCheck">
+                      <div class="check_box mb-4 mb-lg-4">
+                        <input
+                          type="checkbox"
+                          class="form-control"
+                          id="taxCheck"
+                          onclick="taxBoxNumber()"
+                        />
+                        <label id="taxExemptLabel" for="taxCheck"></label>
+                      </div>
+                      <input
+                        type="text"
+                        inputmode="decimal"
+                        name="taxNumber"
+                        class=""
+                        placeholder="Enter tax exempt number"
+                        id="taxNumber"
+                        style="display: none"
+                        onKeyup="checkLength()"
+                      />
+                      <p
+                        id="errorMsg"
+                        class="ie-error-medium enter-carrier-error-message mt-2"
+                      ></p>
+                    </div>
+                    <div class="tax-message">
+                      <div class="taxexemption_msg-upperdiv">
+                        <i class="fa fa-exclamation-circle fa-lg"></i>
+                        ${properties.taxmessagedesciption @context='html'}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/* Tax exemption */-->
+
+                <div class="mathod-of-shipping" id="method-of-shipping">
+                  <div class="shipping__loader"></div>
+
+                  <p class="shipping-title">
+                    ${properties.methodofshippingtitle}
+                  </p>
+                  <div class="shipping-methods-section d-none">
+                    <div class="shippinginfo__method-error">
+                      <div class="shippinginfo_msg-upperdiv">
+                        <i class="fa fa-exclamation-triangle fa-lg"></i>
+                        <p
+                          class="shippingingo__methoderror-txt shippinginfo__method-title"
+                        >
+                          ${properties.shipmetherrtitle}
+                        </p>
+                      </div>
+                      <div class="shippinginfo_msg-lowerdiv carrier-overweight">
+                        <p
+                          class="shippingingo__methoderror-txt shippinginfo__method-subtitle"
+                        >
+                          ${properties.shipmetherrsubtitle}
+                        </p>
+                      </div>
+                      <div class="shippinginfo_msg-lowerdiv carrier-err-desc">
+                        <p
+                          class="shippingingo__methoderror-txt shippinginfo__method-subtitle"
+                        >
+                          ${properties.shipmethodcarriererror}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="types-of-shipping">
+                      <ul class="shipping-ul"></ul>
+                    </div>
+                    <div class="row shipping-carrier">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                          <label for="select-box-account"
+                            >${properties.shippingaccount}</label
+                          >
+                          <select
+                            class="form-control"
+                            name="select-box-account"
+                            id="select-box-account"
+                          >
+                            <option value="Select">
+                              ${properties.shippingaccountdropdown}
+                            </option>
+                          </select>
+                          <p
+                            id="shippingaccountmsg"
+                            class="ie-error-medium enter-carrier-error-message"
+                          ></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="form-group">
+                          <label for="carrier-acc-number"
+                            >${properties.carrieraccount}</label
+                          >
+                          <input
+                            type="number"
+                            id="carrier-acc-number"
+                            name="carrier-acc-number"
+                            class="form-control"
+                            placeholder="Enter"
+                            disabled
+                          />
+                          <p
+                            id="shippingaccountnumbermsg"
+                            class="ie-error-medium enter-carrier-error-message"
+                          ></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DT-599 Ends -->
+
+            <!--/* checkout special address */-->
+            <div class="special-instructions">
+              <p class="special-title">
+                <label for="form-special" class="checkout-special-title"
+                  >${properties.checkoutspecialtitle}</label
+                >
+              </p>
+              <textarea
+                class="special-desc"
+                id="form-special"
+                maxlength="150"
+                placeholder=""
+              ></textarea>
+            </div>
+
+            <!--/* continue button */-->
+            <div class="continue-btn-block d-flex justify-content-end">
+              <button
+                type="button"
+                class="continue-btn analyticscontinuebutton validate__shipping--info ie-primary-btn button__disabled"
+              >
+                ${properties.continuectabtn}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order-summary-sect col-5">
+    <div class="orderSummary-Sect" id="checkout-ordersummary">
+      <h2 data-sly-test="${properties.ordersummary}">
+        ${properties.ordersummary}
+      </h2>
+
+      <div class="cartItem_wrapper card_box"></div>
+      <hr class="mb-3 mt-2 mt-lg-3 total-line d-lg-none" />
+      <div class="row">
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+          <p class="cart_order_summary_left">Items</p>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
+          <p class="cart_order_summary_right" id="subtotal">0.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+          <p class="cart_order_summary_left">Shipping</p>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
+          <p class="cart_order_summary_right" id="shipping_amt">$0.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+          <p class="cart_order_summary_left">Handling</p>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
+          <p
+            class="cart_order_summary_right"
+            data-handling="0.00"
+            id="handling_amt"
+          >
+            $0.00
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+          <p class="cart_order_summary_left">Total before tax</p>
+        </div>
+        <div class="col-md-4 col-4 col-sm-4 col-lg-4 text-right">
+          <p class="cart_order_summary_right" id="totalBeforeTax">$0.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+          <p class="cart_order_summary_left">Estimated tax to be collected</p>
+        </div>
+        <div class="col-md-4 col-4 col-sm-4 col-lg-4 text-right">
+          <p class="cart_order_summary_right" id="estimatedTaxToBeCollected">
+            $0.00
+          </p>
+        </div>
+      </div>
+
+      <hr class="mb-4 mt-2 mt-lg-3 total-line" />
+      <div class="row order-total">
+        <div class="col-lg-6 col-6 pl-3">
+          <div class="itemSubTotal">Order Total</div>
+        </div>
+        <div class="itemSubTotal-value col-lg-6 col-6 pr-3 text-right">
+          <span class="subtotalValue subtotalValue_checkout" id="total_amount"
+            >0.00</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="shippingInfo-customCapabilities">
+      <sly
+        data-sly-resource="${resource @ resourceType='/apps/ie/fm/components/content/Customcapablities'}"
+      ></sly>
+    </div>
+  </section>
+
+  <!-- Add new address Popup starts hear -->
+  <!-- Modal -->
+  <div class="modal fade" id="addNewShippingAddressPopup" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add new address</h4>
+        </div>
+        <div class="modal-body">
+          <form name="newShippingAddress" id="addformid">
+            <!-- Address form starts -->
+            <div class="shipping-address-form">
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="addNewShippingAddressName"
+                    >${properties.addnewaddressname}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addNewShippingAddressName"
+                    name="addNewShippingAddressName"
+                  />
+                  <p
+                    id="addNewShippingAddressNameMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="addNewShippingAddressCompany"
+                    >${properties.addnewaddresscompany}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addNewShippingAddressCompany"
+                  />
+                  <p
+                    id="addNewShippingAddressCompanyMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="addNewShippingAddressPhoneNumber"
+                    >${properties.addnewaddressphonenumber}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addNewShippingAddressPhoneNumber"
+                    aria-describedby="addNewShippingAddressPhoneNumber"
+                    name="addNewShippingAddressPhoneNumber"
+                  />
+                  <p
+                    id="addNewShippingAddressPhoneNumberMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="addNewShippingAddressCountry"
+                    >${properties.addnewaddresscountry}</label
+                  >
+                  <select
+                    class="form-control custom-select"
+                    id="addNewShippingAddressCountry"
+                    name="addNewShippingAddressCountry"
+                    tabindex="0"
+                  >
+                    <option value="" selected="selected">Select</option>
+                  </select>
+                  <p
+                    id="addNewShippingAddressCountryMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="addNewShippingAddressAddressLine1"
+                    >${properties.addnewaddress1}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addNewShippingAddressAddressLine1"
+                    placeholder=""
+                    name="addNewShippingAddressAddressLine1"
+                  />
+                  <p
+                    id="addNewShippingAddressAddressLine1Msg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="addShippingAddressLine2"
+                    >${properties.addnewaddressoptional}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addShippingAddressLine2"
+                  />
+                  <p
+                    id="addShippingAddressLine2Msg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="addNewShippingAddressCity"
+                    >${properties.addnewaddresscity}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addNewShippingAddressCity"
+                    name="addNewShippingAddressCity"
+                  />
+                  <p
+                    id="addNewShippingAddressCityMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="addNewShippingState"
+                    >${properties.addnewaddressstate}</label
+                  >
+                  <select
+                    class="form-control custom-select"
+                    id="addNewShippingState"
+                    name="addNewShippingState"
+                  >
+                    <option value="" selected="selected">Select</option>
+                  </select>
+                  <p
+                    id="addNewShippingStateMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="addNewShippingAddressZip"
+                    >${properties.addnewaddresszipcode}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addNewShippingAddressZip"
+                    placeholder="Zip"
+                    name="addNewShippingAddressZip"
+                  />
+                  <p
+                    id="addNewShippingAddressZipMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn-default cancelShippingAddressBtn ie-scondary-btn"
+            data-dismiss="modal"
+            type="reset"
+            value="Reset"
+          >
+            ${properties.addnewaddresscancelbtn}
+          </button>
+          <button
+            type="button"
+            class="saveShippingAddressBtn btn-md ie-primary-btn"
+            aria-label="Save"
+            type="submit"
+            value="save"
+          >
+            ${properties.addnewaddresssavebtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="add-new-address-modal modal-backdrop fade show"></div>
+  <!-- Add new address Popup Ends hear -->
+
+  <!--/* Dhanam modal popup starts*/-->
+  <div class="modal fade" id="editShippingAddressPopup" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit address</h4>
+        </div>
+
+        <div class="modal-body">
+          <form name="editExistingAddress">
+            <!-- Address form starts -->
+
+            <div class="shipping-address-form">
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="editNewShippingAddressName"
+                    >${properties.editaddressname}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editNewShippingAddressName"
+                    required
+                    name="editNewShippingAddressName"
+                  />
+                  <p
+                    id="editNewShippingAddressNameMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row CompanyNamefield">
+                <div class="col-md-12 mb-3">
+                  <label for="editNewShippingAddressCompany"
+                    >${properties.editaddresscompany}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editNewShippingAddressCompany"
+                  />
+                  <p
+                    id="editNewShippingAddressCompanyMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="editNewShippingAddressPhoneNumber"
+                    >${properties.editaddressphonenumber}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editNewShippingAddressPhoneNumber"
+                    required
+                    name="editNewShippingAddressPhoneNumber"
+                  />
+                  <p
+                    id="editNewShippingAddressPhoneNumberMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="editNewShippingAddressCountry"
+                    >${properties.editaddresscountry}</label
+                  >
+
+                  <select
+                    class="form-control custom-select"
+                    id="editNewShippingAddressCountry"
+                    name="editNewShippingAddressCountry"
+                  ></select>
+
+                  <p
+                    id="editNewShippingAddressCountryMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="editNewShippingAddressAddressLine1"
+                    >${properties.editaddress1}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editNewShippingAddressAddressLine1"
+                    placeholder=""
+                    required
+                    name="editNewShippingAddressAddressLine1"
+                  />
+                  <p
+                    id="editNewShippingAddressAddressLine1Msg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row AddressLineoptional">
+                <div class="col-md-12 mb-3">
+                  <label for="editShippingAddressLine2"
+                    >${properties.editaddressoptional}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editShippingAddressLine2"
+                  />
+                  <p
+                    id="editShippingAddressLine2Msg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="editShippingAddressCity"
+                    >${properties.editaddresscity}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editShippingAddressCity"
+                    placeholder="Philadelphia"
+                    required
+                    name="editShippingAddressCity"
+                  />
+                  <p
+                    id="editShippingAddressCityMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label for="editAddressShippingState"
+                    >${properties.editaddressstate}</label
+                  >
+
+                  <select
+                    class="form-control custom-select"
+                    id="editAddressShippingState"
+                    name="editAddressShippingState"
+                  ></select>
+                  <p
+                    id="editAddressShippingStateMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label for="editShippingAddressZip"
+                    >${properties.editaddresszipcode}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="editShippingAddressZip"
+                    placeholder=""
+                    required
+                    name="editShippingAddressZip"
+                  />
+                  <p
+                    id="editShippingAddressZipMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="editNewShippingAddressEmail"
+                    >${properties.editaddressemail}</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    disabled="disabled"
+                    id="editNewShippingAddressEmail"
+                    required
+                    name="editNewShippingAddressEmail"
+                  />
+                  <p
+                    id="editNewShippingAddressEmailMsg"
+                    class="ie-error-medium enter-carrier-error-message"
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="modal-footer editShippingAddressFooter analytic-shippingaddressfooter"
+        >
+          <div class="modal-footer-editshippingaddress">
+            <a
+              href="#"
+              class="deleteShippingAddressBtn"
+              title="Delete Address"
+              aria-label="Delete Address"
+              >${properties.editaddressdeletebtn}</a
+            >
+          </div>
+
+          <div class="modal-footer-editshippingaddress">
+            <button
+              type="button"
+              class="btn-default cancelShippingAddressBtn ie-scondary-btn"
+              data-dismiss="modal"
+              type="reset"
+              value="ResetEditAddress"
+              onclick="editShippingAddressPopup();"
+            >
+              ${properties.editaddresscancelbtn}
+            </button>
+            <button
+              type="button"
+              class="saveShippingAddressBtn edit-existing-address btn-md ie-primary-btn"
+              aria-label="Save"
+              type="submit"
+              value="savedAddress"
+            >
+              ${properties.editaddresssavebtn}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/* Dhanam modal popup ends */-->
+  <!--  delete address confirm popup -->
+  <div class="modal fade" id="deleteConfirm" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit address</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.deleteaddressconfirmtext1}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-scondary-btn"
+            aria-label="Cancel"
+            onclick="closeDeleteCancel()"
+          >
+            ${properties.deleteAddressCancelBtn}
+          </button>
+          <button
+            type="submit"
+            class="ie-primary-btn"
+            aria-label="OK"
+            onclick="confirmDeleteAddress()"
+          >
+            ${properties.deleteAddressOkBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  delete address confirm popup -->
+  <!--  delete address confirm popup -->
+
+  <div class="modal fade" id="successfullyDeleted" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit address</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.deleteaddressconfirmtext2}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn"
+            aria-label="ok"
+            data-dismiss="modal"
+            onclick=""
+          >
+            ${properties.AddressDeletedOkBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  delete address confirm popup -->
+  <!--  duplicat address confirm popup -->
+  <div class="modal fade" id="duplicatedAddress" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit address</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.deleteaddressconfirmtext3}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn"
+            aria-label="ok"
+            onclick="closeDeleteDuplicate()"
+          >
+            ${properties.AddressDuplicateOkBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  duplicat address confirm popup -->
+  <!--  add new address popup -->
+  <div class="modal fade" id="successfullyAdded" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add new address</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.duplicateaddressconfirmtext1}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn"
+            aria-label="ok"
+            data-dismiss="modal"
+            onclick=""
+          >
+            ${properties.AddressAddedSuccessfullyOkBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  duplicate of add new address popup -->
+
+  <!-- Address successfully saved popup -->
+  <div class="modal fade" id="successFullySaved" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">${properties.addrsavedhead}</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.addsavedbody}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn"
+            aria-label="ok"
+            data-dismiss="modal"
+            onclick=""
+          >
+            ${properties.addrsavedconf}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End  -->
+  <!--  unknownAddresstype confirm popup -->
+  <div class="modal fade" id="unknownAddresstype" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">${properties.unknownaddresstitle}</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.unknownaddresslabel}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn"
+            aria-label="ok"
+            data-dismiss="modal"
+            onclick=""
+          >
+            ${properties.unknownaddressbtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  unknownAddresstype confirm popup -->
+  <!-- For validate address popup -->
+  <div class="modal fade" id="addressValidationPopup" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">${properties.addrvalidtitle}</h4>
+        </div>
+        <div class="modal-body">
+          <div class="vldaddr-pu-title">${properties.addrvalidatesubt}</div>
+          <div class="vldaddr-pu-addrs">
+            <div class="oriaddr-div addrval-div">
+              <div class="original-address-title">
+                ${properties.oriaddrlabel}
+              </div>
+              <div class="custom-control custom-radio col-lg-5 mb-4">
+                <input
+                  type="radio"
+                  class="custom-control-input customRadio"
+                  id="oriAddress"
+                  name="oriRecAddr"
+                  value="oriAddr"
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="oriAddress"
+                >
+                  <p class="validation-addr__fields orig-address__addrl1"></p>
+                  <p class="validation-addr__fields orig-address__addrl2"></p>
+                  <p
+                    class="validation-addr__fields orig-address__city-state"
+                  ></p>
+                  <p class="validation-addr__fields orig-address__country"></p>
+                </label>
+              </div>
+            </div>
+            <div class="recaddr-div addrval-div">
+              <div class="recommended-address-title">
+                ${properties.recaddrlabel}
+              </div>
+              <div class="custom-control custom-radio col-lg-5 mb-4">
+                <input
+                  type="radio"
+                  checked
+                  class="custom-control-input customRadio"
+                  id="recAddress"
+                  name="oriRecAddr"
+                  value="recAddr"
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="recAddress"
+                >
+                  <p class="validation-addr__fields rec-address__addrl1"></p>
+                  <p class="validation-addr__fields rec-address__addrl2"></p>
+                  <p
+                    class="validation-addr__fields rec-address__city-state"
+                  ></p>
+                  <p class="validation-addr__fields rec-address__country"></p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn confirm-btn-address"
+            aria-label="ok"
+            data-dismiss="modal"
+            onclick=""
+          >
+            ${properties.confirmbtntxt}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="duplicateAddnewAddress" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add new address</h4>
+        </div>
+        <div class="modal-body">
+          <h4>${properties.duplicateaddressconfirmtext2}</h4>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="reset"
+            class="ie-primary-btn"
+            aria-label="ok"
+            data-dismiss="modal"
+            onclick=""
+          >
+            ${properties.AddressAddedSuccessfullyOkBtn2}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spinning loader"></div>
+  <!--  Add new address confirm popup -->
+</section>
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='shippingInformation'}"
+/>
+<script>
+  var currentPageName = '${currentPage.getName @ context="scriptString"}';
+</script>

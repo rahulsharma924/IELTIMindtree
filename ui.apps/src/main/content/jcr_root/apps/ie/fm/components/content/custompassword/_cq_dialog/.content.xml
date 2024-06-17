@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Form Text Field"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.form.text.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_form_text_v2"
+    trackingFeature="core-components:form-text:v2">
+    <content
+        granite:class="cmp-form-text__editDialog"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <fieldType
+                                                granite:class="cmp-form-text__types"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Constraint"
+                                                name="./type">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <text
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Text"
+                                                        value="text"/>
+                                                    <textarea
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Textarea"
+                                                        value="textarea"/>
+                                                    <email
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Email"
+                                                        value="email"/>
+                                                    <tel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tel"
+                                                        value="tel"/>
+                                                    <date
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Date"
+                                                        value="date"/>
+                                                    <time
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Time"
+                                                        value="time"/>
+                                                    <number
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Number"
+                                                        value="number"/>
+                                                    <password
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Password"
+                                                        value="password"/>
+                                                </items>
+                                            </fieldType>
+                                            <rows
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Text Lines"
+                                                min="{Long}1"
+                                                name="./rows"
+                                                value="2"
+                                                wrapperClass="cmp-form-text__rows"/>
+                                            <label
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Label of this field"
+                                                fieldLabel="Label"
+                                                name="./jcr:title"
+                                                required="{Boolean}true"/>
+                                            <hideLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Needed if the label is required only for accessibility purpose and does not impart any additional visual information about the field"
+                                                name="./hideTitle"
+                                                text="Hide the label from being displayed"
+                                                value="true"/>
+                                            <name
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Name"
+                                                name="./name"
+                                                required="{Boolean}true"/>
+                                            <value
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Default value of the field"
+                                                fieldLabel="Value"
+                                                name="./value"/>
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="HTML ID attribute to apply to the component."
+                                                fieldLabel="ID"
+                                                name="./id"
+                                                required="{Boolean}true"/>
+                                            <enterpasswordmessage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Enter the password message"
+                                                fieldLabel="Password message"
+                                                name="./enterpasswordmessage"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <format
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="bold,italic"/>
+                                                    <justify
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="-"/>
+                                                    <links
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="modifylink,unlink"/>
+                                                    <lists
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <misctools jcr:primaryType="nt:unstructured">
+                                                        <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                                            <chars jcr:primaryType="nt:unstructured">
+                                                                <default_copyright
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;copy;"
+                                                                    name="copyright"/>
+                                                                <default_euro
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;euro;"
+                                                                    name="euro"/>
+                                                                <default_registered
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;reg;"
+                                                                    name="registered"/>
+                                                                <default_trademark
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    entity="&amp;trade;"
+                                                                    name="trademark"/>
+                                                            </chars>
+                                                        </specialCharsConfig>
+                                                    </misctools>
+                                                    <paraformat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <formats jcr:primaryType="nt:unstructured">
+                                                            <default_p
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Paragraph"
+                                                                tag="p"/>
+                                                            <default_h1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 1"
+                                                                tag="h1"/>
+                                                            <default_h2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 2"
+                                                                tag="h2"/>
+                                                            <default_h3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 3"
+                                                                tag="h3"/>
+                                                            <default_h4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 4"
+                                                                tag="h4"/>
+                                                            <default_h5
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 5"
+                                                                tag="h5"/>
+                                                            <default_h6
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 6"
+                                                                tag="h6"/>
+                                                            <default_blockquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Quote"
+                                                                tag="blockquote"/>
+                                                            <default_pre
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Preformatted"
+                                                                tag="pre"/>
+                                                        </formats>
+                                                    </paraformat>
+                                                    <table
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="-">
+                                                        <hiddenHeaderConfig
+                                                            jcr:primaryType="nt:unstructured"
+                                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                            hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing"/>
+                                                    </table>
+                                                    <tracklinks
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat]">
+                                                            <popovers jcr:primaryType="nt:unstructured">
+                                                                <justify
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright,justify#justifyjustify]"
+                                                                    ref="justify"/>
+                                                                <lists
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                    ref="lists"/>
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                                    ref="paraformat"/>
+                                                            </popovers>
+                                                        </inline>
+                                                        <tableEditOptions
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]"/>
+                                                    </cui>
+                                                </uiSettings>
+                                            </enterpasswordmessage>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <about
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="About"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <helpMessage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A hint to the user of what can be entered in the field"
+                                                fieldLabel="Help Message"
+                                                name="./helpMessage"/>
+                                            <usePlaceholder
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Whether to display the help message inside the form input when it is empty and not focused"
+                                                name="./usePlaceholder"
+                                                text="Display help message as placeholder"
+                                                value="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </about>
+                    <constraints
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Constraints"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <constraintMessage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldDescription="Message displayed as tooltip when submitting the form if the value does not validate the Type chosen"
+                                                fieldLabel="Constraint Message"
+                                                name="./constraintMessage"
+                                                wrapperClass="cmp-form-text__constraintmessage"/>
+                                            <required
+                                                granite:class="cmp-form-text__required"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Whether the user must fill in a value before submitting the form"
+                                                name="./required"
+                                                text="Required"
+                                                value="true"/>
+                                            <readonlySelectedAlert
+                                                granite:class="cmp-form-text__readonlyselected-alert"
+                                                granite:hidden="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                                size="S"
+                                                text="Enabling the required option disables the readonly option"
+                                                variant="warning"/>
+                                            <requiredMessage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldDescription="Message displayed as tooltip when submitting the form if the value is left empty"
+                                                fieldLabel="Required Message"
+                                                name="./requiredMessage"
+                                                wrapperClass="cmp-form-text__requiredmessage"/>
+                                            <readonly
+                                                granite:class="cmp-form-text__readonly"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Whether the user cannot modify the value of the field"
+                                                name="./readOnly"
+                                                text="Make read only"
+                                                value="true"/>
+                                            <requiredSelectedAlert
+                                                granite:class="cmp-form-text__requiredselected-alert"
+                                                granite:hidden="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                                size="S"
+                                                text="Enabling the readonly option disables the required option"
+                                                variant="warning"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </constraints>
+                    <invalidmessage
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Invalid Message"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <invalidMsgTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the message title"
+                                                fieldLabel="Invalid Message Title"
+                                                name="./invalidmessagetitle"/>
+                                            <invalidMsgDescriptio
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the message Description"
+                                                fieldLabel="Invalid Message Description"
+                                                name="./invalidmessagedesc"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </invalidmessage>
+                    <acclockedmessage
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Account Locked Message"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <accLockMsgTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Account Locked Message Title"
+                                                fieldLabel="Account Locked Message Title"
+                                                name="./acclockmessagetitle"/>
+                                            <accLockMsgDescriptio
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldDescription="Enter the Account Locked Message Description"
+                                                fieldLabel="Account Locked Message Description"
+                                                name="./acclockmessagedesc"/>
+                                            <resetpwdLink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter the Reset Password Link"
+                                                fieldLabel="Reset Password Link"
+                                                name="./resetpwdlink"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </acclockedmessage>
+                    <cq:styles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

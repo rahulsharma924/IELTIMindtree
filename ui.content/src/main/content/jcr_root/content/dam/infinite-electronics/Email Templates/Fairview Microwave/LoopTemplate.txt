@@ -1,0 +1,21 @@
+<tr class="line">
+    <td
+        style="font-weight: bolder;color: #0E0F10; font-size: 12px;padding-left: 25px; padding-top: 25px; padding-bottom: 25px; mso-padding-top: 25px; mso-padding-bottom: 25px; mso-padding-left: 25px; border-bottom: 1px solid #E5E7E9; mso-border-bottom: 1px solid #E5E7E9; ">
+        ${name} </br>
+        placeholder
+    </td>
+    <td align="center"
+        style="font-weight: bolder;color: #0E0F10; font-size: 12px;border-bottom: 1px solid #E5E7E9;padding-top: 25px; padding-bottom: 25px; mso-padding-top: 25px; mso-padding-bottom: 25px;">
+        ${quantity}
+    </td>
+    <td align="right"
+        style="font-weight: bolder;color: #0E0F10; font-size: 12px;border-bottom: 1px solid #E5E7E9;padding-top: 25px; padding-bottom: 25px; mso-padding-top: 25px; mso-padding-bottom: 25px;">
+        <span>${price}</span>
+    </td>
+    <td align="right"
+        style="font-weight: bolder;color: #0E0F10; font-size: 12px;border-bottom: 1px solid #E5E7E9;padding-top: 25px; padding-bottom: 25px; mso-padding-top: 25px; mso-padding-bottom: 25px; mso-padding-right: 25px;padding-right: 25px;">
+        <span>${subtotalPrice}</span>
+    </td>
+
+
+</tr>

@@ -1,0 +1,10 @@
+# set OWASP crs strict limits for DOS protection
+SecAction \
+	"id:900700,\
+	phase:1,\
+	nolog,\
+	pass,\
+	t:none,\
+	setvar:'tx.dos_burst_time_slice=60',\
+	setvar:'tx.dos_counter_threshold=20',\
+	setvar:'tx.dos_block_timeout=600'"

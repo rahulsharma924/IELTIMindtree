@@ -1,0 +1,24 @@
+
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='aboutus-clientlib'}" />
+
+<div class="aboutus-section">
+    <div class="aboutus-main">
+        <div class="aboutus-title">${properties.headertext}</div>
+    </div>
+    <div class="aboutus-container">
+        <div class="aboutus-desc-section">
+            <div class="aboutus-description">${properties.text @context='html'}</div>
+
+            <!--<div id="industry-ph-showDiv">
+                <span id="industry-ph-btntoggle" onclick="indusbtn()">Show More</span>
+            </div> -->
+        </div>
+        <div class="aboutus-image-section">
+            <div class="aboutus-image"><img alt="warehouse" src="${properties.sectionimg}" loading="lazy" width="20" height="20"/></div>
+        </div>
+    </div>
+</div>
+
+
+

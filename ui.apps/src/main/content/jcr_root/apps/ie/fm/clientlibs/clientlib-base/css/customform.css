@@ -1,0 +1,2665 @@
+.custom_form_container {
+  display: flex;
+  justify-content: center;
+}
+.cmp-form .cmp-text {
+  margin-top: 0px;
+}
+#formsubtitle{
+  margin-top: 10px;
+}
+
+#formdesc p{
+  color: var(--primaryColor);
+}
+.dropdown-icon-arrow {
+  position: relative;
+}
+
+.dropdown-icon-arrow::after {
+  content: "";
+  justify-self: end;
+  width: 10px;
+  height: 8px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+  background-color: var(--select-arrow);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 15px;
+  top: 19px;
+}
+.pi-chngepwd-form {
+  max-width: 605px;
+}
+
+.personalinformationbutton {
+  margin: 46px 0 0px;
+  max-width: 81px;
+  max-height: 44px;
+  position: relative;
+}
+.personalinformationbutton .custom_save_btn button.cmp-button {
+  margin: 0;
+  width: 100%;
+  padding: 14px;
+  height: auto;
+  position: relative;
+  display: block;
+}
+.personalinformationbutton
+  .custom_save_btn
+  button.cmp-button
+  .cmp-button__text {
+  width: auto;
+}
+
+.cancel {
+  margin: 46px 21px 0px;
+  text-align: left;
+}
+
+.cancel .custom_cancel_btn {
+  text-align: left;
+}
+
+.changepasswordbutton {
+  margin: 46px 0 83px 0.5em;
+  max-width: 81px;
+  max-height: 44px;
+}
+.changepasswordbutton .custom_save_btn button.cmp-button {
+  margin: 0;
+  width: 100%;
+  padding: 14px;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+.passwordcancelbutton {
+  margin: 31px 0 0px;
+  text-align: left;
+  position: relative;
+  display: block;
+  left: 21px;
+  bottom: 28px;
+}
+
+.passwordcancelbutton .custom_cancel_btn {
+  margin: 46px 0 83px;
+  text-align: left;
+}
+
+.passwordcancelbutton .custom_cancel_btn .cmp-button {
+  text-align: left;
+  padding: 14px;
+  padding-left: 0;
+  margin: 0;
+}
+
+form.pi-chngepwd-form .custom_form_container {
+  justify-content: left;
+}
+
+form.pi-chngepwd-form .confirmpassword .cmp-form-text {
+  margin-bottom: 0;
+  position: relative;
+}
+
+form.pi-chngepwd-form .cmp-form-text {
+  margin: 0;
+  margin-bottom: 17px;
+  position: relative;
+}
+.custom_form_title h1{
+  font-weight: var(--fontWeightSmall);
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: var(--primaryColor);
+  text-align: center;
+  margin-top: 48px;
+}
+.custom_form_error_msg {
+  color: var(--invertedColor);
+  margin-block: 0px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightMedium);
+  font-size: 10px;
+}
+.custom_form_signin_error_msg {
+  color: var(--invertedColor);
+  margin-block: 0px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightMedium);
+  font-size: 10px;
+  height: 10px;
+}
+.custom_form_pi_industry_error_msg {
+  color: var(--invertedColor);
+  margin-block: 0px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightMedium);
+  font-size: 10px;
+  margin-left: 10px;
+}
+.custom_form_desc {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  text-align: center;
+
+  color: var(--newsDateColor);
+  max-width: 447px;
+  margin: 0 auto;
+}
+.custom_form_desc_resetpwd {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  text-align: center;
+
+  color: var(--newsDateColor);
+  width: 50%;
+  margin: 0 auto;
+  margin-right: 240px;
+}
+.custom_form_desc p {
+  margin-top: 0px;
+  font-weight: var(--fontWeightSmall);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.custom_create_pwd_desc {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+
+  color: var(--primaryColor);
+  max-width: 388px;
+  margin: 0 auto;
+}
+
+.cmp-form-text label.custom_form_label {
+  font-weight: var(--fontWeightNormal);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--primaryColor);
+  text-transform: none;
+  position: relative;
+}
+.form-group-drop-down label.custom_form_label {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  line-height: 24px;
+  color: var(--primaryColor);
+  text-transform: none;
+}
+form.pi-chngepwd-form .currentpassword .cmp-form-text label {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  margin-bottom: 6px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  text-transform: none;
+}
+form.pi-chngepwd-form .newpassword .cmp-form-text label {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  margin-bottom: 6px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  text-transform: none;
+}
+
+form.pi-chngepwd-form .confirmpassword .cmp-form-text label {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  margin-bottom: 6px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  text-transform: none;
+}
+.newpassword,.confirmpassword {margin-top: 10px;}
+.currentpassword .cmp-form-text,.newpassword .cmp-form-text, .confirmpassword .cmp-form-text{margin: 0; position: relative;}
+.pi-currentpassword ,.pi-newpassword,.pi-confirmpassword {position: absolute; right: 0px; top: 48px;}
+#currentpassword {
+  width:100%;
+  height: 44px;
+  position: relative;
+  border: 1px solid var(--SearchIcon);
+  background: var(--secondaryColor);
+}
+#newpassword {
+  width:100%;
+  height: 44px;
+  position: relative;
+  border: 1px solid var(--SearchIcon);
+  background: var(--secondaryColor);
+}
+#confirmpassword {
+  width: 100%;
+  height: 44px;
+  position: relative;
+  border: 1px solid var(--SearchIcon);
+  background: var(--secondaryColor);
+}
+
+input.custom_input_field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  background: var(--secondaryColor);
+  border: 1px solid var(--SearchIcon);
+  border-radius: 3px;
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize14);
+  line-height: 20px;
+  width: 386px;
+  height: 44px;
+}
+.backtosigninbutton {
+  margin-top: 13px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.custom_form_email {
+  display: flex;
+  justify-content: center;
+}
+input.custom_email_field:focus,
+input.custom_email_field:focus-visible,
+input.custom_email_field:visited {
+  background-color: var(--secondaryColor);
+}
+.aem-Grid > .aem-GridColumn.aem-GridColumn--default--none.sendemailbutton {
+  display: flex;
+  justify-content: center;
+}
+
+button.custom_email_button span {
+  font-weight: var(--fontWeightBold);
+  display: block;
+  padding: 14px 24px;
+}
+button.custom_email_button {
+  background: var(--invertedColor);
+  border-radius: 4px;
+  padding: 0;
+  border: 0px;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  text-align: center;
+  width: 388px;
+  color: var(--secondaryColor);
+  cursor: pointer;
+}
+button.custom_email_button.disabled {
+  background-color: var(--btnDisabledLight);
+  pointer-events: none;
+}
+.backtosignin_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+}
+.backtosignin_btn button,
+.custom_next_button .cmp-form-button:focus {
+  background: var(--secondaryColor);
+  border: 1px solid #005da6;
+  border-radius: 4px;
+  width: 390px;
+  height: 54px;
+  color: #005da6;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+}
+
+.form_subtitle.cmp-text h1 {
+  font-weight: var(--fontWeightSmall);
+  font-size: 1.937rem;
+  line-height: 42px;
+  color: var(--secondaryBlack);
+  text-align: center;
+  margin-top: 48px;
+}
+#page-0b4c051903 .form_subtitle.cmp-text h1{
+  margin-top: 0;
+}
+#page-0b4c051903 .cmp-title{
+  margin-bottom: 0.35rem;
+}
+
+#page-0b4c051903 #container-05811238b8 .custom_form_desc p {
+  color: var(--primaryColor);
+}
+#page-0b4c051903 .return_to_home_btn span {
+  margin-top: 24px;
+}
+.custom_next_button .cmp-form-button:hover,
+.custom_next_button .cmp-form-button:visited {
+  background: none;
+}
+.custom_next_button .cmp-form-button:focus {
+  box-shadow: none;
+}
+.confirm_pwd_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+}
+.confirm_pwd_btn button {
+  background: var(--btnDisabledLight);
+  border-radius: 4px;
+  border: 0px;
+  padding: 0;
+  width: 390px;
+}
+
+.confirm_pwd_btn button:hover {
+  cursor: default;
+}
+.confirm_pwd_btn button:hover .confirm_pwd_btn .cmp-button__text {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  color: var(--secondaryColor);
+}
+#personalinfo-title {
+  font-weight: var(--fontWeightBold);
+  font-size: 31px;
+  line-height: 46px;
+
+  color: var(--primaryColor);
+}
+
+#pi-changepassword-title {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize22);
+  line-height: 33px;
+  color: var(--primaryColor);
+  margin-top: 50px;
+}
+#pi-changepassword-title p {
+  line-height: 33px;
+  margin-left:-10px;
+}
+#payment-terms {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #212529;
+}
+#custID {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #212529;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: calc(3.25rem + 2px);
+}
+
+.industry-form-control {
+  background: var(--secondaryColor);
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+  width: 598px;
+  height: 44px;
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 20px;
+  color: var(--btnDisabledLight);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 14px;
+}
+ #firstName.personalinfo_input,
+#lastName.personalinfo_input ,
+ #company.personalinfo_input,
+#email.personalinfo_input ,
+#phoneNumber.personalinfo_input {
+  color:var(--secondaryBlack);
+}
+#company.personalinfo_input{
+  margin-bottom:21px;
+}
+#container-personal-info #email.personalinfo_input{background-color: #E5E7E9;}
+.cmp-form-text__text.personalinfo_input,
+.industryoptions .cmp-form-options__field,
+.industryoptions .cmp-form-options .select-selected {
+  background: var(--secondaryColor);
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+  width:100%;
+  height: 44px;
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 20px;
+  color: var(--primaryColor);
+}
+
+.industryoptions .cmp-form-options .select-items div {
+  height: 2.25em;
+}
+.custom_cancel_btn button.cmp-button,
+.custom_cancel_btn button.cmp-button:hover,
+.custom_cancel_btn button.cmp-button:focus {
+  border: 0px;
+  background: none;
+  border-radius: 0px;
+  outline: none;
+  cursor: pointer;
+}
+.custom_cancel_btn button.cmp-button .cmp-button__text {
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize14);
+  line-height: 20px;
+
+  color: var(--invertedColor);
+}
+.custom_cancel_btn button.cmp-button .cmp-button__text:active {
+  color: var(--invertedColorFocus);
+}
+
+.aem-Grid.aem-Grid--default--5>.aem-GridColumn.aem-GridColumn--default--5.custom__save--button {
+  width: auto;
+}
+.personalinformationbutton.aem-GridColumn--default--none.aem-GridColumn.aem-GridColumn--offset--default--0.aem-GridColumn--default--1 {
+  margin-top: 0
+}
+.custom_save_btn button.cmp-button {
+  display: flex;
+  justify-content: center;
+  color: var(--primaryColor);
+  background: var(--secondaryColor);
+  border-radius: 4px;
+  width: 81px;
+  height: 44px;
+  border: 1px solid var(--SearchIcon);
+  cursor: pointer;
+  align-items: center;
+}
+.custom_save_btn button.cmp-button:hover {
+  background: var(--secondaryBtnHover);
+}
+.custom_save_btn button.cmp-button:active {
+  background: var(--secondaryBtnVisited);
+}
+.custom_save_btn button.cmp-button .cmp-button__text {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
+  line-height: 20px;
+}
+#container-personal-info .custom_save_btn button.cmp-button{margin-left:0;}
+.cmp-text.address_book_title h1{
+  font-weight: var(--fontWeightBold);
+  font-size: 1.9375rem;
+  line-height: 1.916;
+  color: var(--primaryColor);
+  position: relative;
+  display: block;
+  top: 0px;
+}
+.addnewaddress_btn button.cmp-button {
+  background: var(--invertedColor);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px 0;
+  cursor: pointer;
+  border: 0px;
+  position: relative;
+  display: block;
+}
+.addnewaddress_btn button.cmp-button .cmp-button__text {
+  color: var(--secondaryColor);
+  font-weight: var(--fontWeightBold);
+  font-size: 0.875rem;
+  line-height: 0.8333;
+
+  padding-top: 3px;
+}
+.address_book_subtitle {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+
+  color: var(--secondaryBlack);
+  margin-left: 70px;
+  position: relative;
+  display: block;
+  right: 17%;
+}
+.address_book_section {
+  background: var(--secondaryColor);
+  border: 1px solid var(--secondaryBtnVisited);
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-top: 24px;
+  width: 299px;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  left: 7%;
+}
+
+.address_book_section_ba {
+  background: var(--secondaryColor);
+  border: 1px solid var(--secondaryBtnVisited);
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-top: 24px;
+  width: 299px;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  left: 6.8%;
+}
+
+.address_book_section_sa {
+  background: var(--secondaryColor);
+  border: 1px solid var(--secondaryBtnVisited);
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-top: 24px;
+  width: 299px;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  left: 7.3%;
+}
+
+.address_book_section:hover {
+  border: 2px solid var(--blueColorDark);
+}
+.address_book_section_ba:hover {
+  border: 2px solid var(--blueColorDark);
+}
+.address_book_section_sa:hover {
+  border: 2px solid var(--blueColorDark);
+}
+
+.address_book_desc:hover {
+  color: var(--blueColorDark);
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+}
+
+.address_book_subtitle:hover {
+  text-decoration: none;
+  text-decoration-color: var(--blueColorDark);
+  text-decoration-thickness: 2px;
+}
+
+.cmp-text.address_book_title:hover {
+  text-decoration: none;
+  text-decoration-color: var(--blueColorDark);
+  text-decoration-thickness: 2px;
+}
+
+.address_book_edit:hover {
+  color: var(--blueColorDark);
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+}
+#createAccounts {
+  max-width: 597px;
+}
+#create-acc .aem-Grid.aem-Grid--default--10>.aem-GridColumn.aem-GridColumn--default--8 {
+  width: 90%;
+}
+@media screen and (max-width: 575px) {
+#create-acc .aem-Grid.aem-Grid--default--10>.aem-GridColumn.aem-GridColumn--default--8 {
+  width: 100%;
+}
+}
+.address_book_name {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+
+  color: var(--primaryColor);
+  padding-bottom: 10px;
+}
+
+.address_book_static_txt {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+
+  color: var(--primaryColor);
+}
+
+.address_book_address_phone {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+
+  color: var(--primaryColor);
+}
+
+.address_book_edit {
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  display: block;
+  text-align: right;
+  left: 95px;
+}
+.address_book_default {
+  float: right;
+  width: 68px;
+  height: 22px;
+  background: var(--btnDisabledLight);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-right: 18px;
+}
+.address_book_default a,
+.address_book_default .defaultvalue {
+  color: var(--secondaryColor);
+  font-weight: var(--fontWeightBold);
+  font-size: 12px;
+  line-height: 0px;
+}
+.address_book_default a,
+.address_book_default .defaultvalue p {
+  margin-block: 0px;
+}
+.address_book_desc {
+  font-weight: var(--fontWeightSmall);
+  line-height: 24px;
+  width: 160px;
+}
+.address_book_edit a {
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize14);
+  line-height: 20px;
+
+  color: var(--secondaryLinkNormal);
+}
+.cmp-form .absasection {
+  position: relative;
+  display: block;
+  right: 17%;
+  width: 127%;
+}
+.cmp-form .abbasection {
+  position: relative;
+  display: block;
+  right: 17%;
+  width: 127%;
+}
+#ab-shippingaddress-label {
+  position: relative;
+  display: block;
+  left: 17%;
+}
+#ab-billingaddress-label {
+  position: relative;
+  display: block;
+  left: 17%;
+}
+
+.custom_change_pwd_desc ul li {
+  font-size: var(--fontSize14);
+}
+.firstname .cmp-form-text,.lastname .cmp-form-text, .phonenumber .cmp-form-text, .email .cmp-form-text,.company .cmp-form-text{
+  margin: .5em 0;
+}
+form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye,
+form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye-slash,
+.pi-currentpassword,.pi-newpassword,.pi-confirmpassword,
+.pi-currentpassword .fa-thin.fa-eye-slash,
+.pi-newpassword .fa-thin.fa-eye-slash,
+#Create_Pwd .cmp-form-text .fa-thin.fa-eye,
+#Create_Pwd .cmp-form-text .fa-thin.fa-eye-slash {
+  font-size: var(--baseFontSize);
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightSmall);
+}
+#Create_Pwd .cmp-form-text .fa-thin.fa-eye,
+#Create_Pwd .cmp-form-text .fa-thin.fa-eye-slash {
+  top: 45px;
+  position: absolute;
+  right: 0;
+}
+
+#Create_Pwd .custom_create_pwd_desc ul {
+  padding-left: 5px;
+}
+
+#Create_Pwd .cmp-form-text {
+  position: relative;
+}
+
+form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 44px;
+}
+
+form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye,
+form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye-slash,
+.pi-currentpassword .fa .fa-thin .fa-eye-slash {
+  font-size: var(--baseFontSize);
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightSmall);
+}
+
+form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin,
+.pi-currentpassword .fa .fa-thin .fa-eye-slash  {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 44px;
+}
+
+form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye-slash {
+  font-size: var(--baseFontSize);
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightSmall);
+}
+
+form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+
+}
+
+form.signin-page .password .cmp-form-text .fa-thin.fa-eye,
+form.signin-page .password .cmp-form-text .fa-thin.fa-eye-slash {
+  font-size: var(--baseFontSize);
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightSmall);
+}
+
+form.resetpassword-form .enterpassword .cmp-form-text .fa-thin.fa-eye,
+form.resetpassword-form .enterpassword .cmp-form-text .fa-thin.fa-eye-slash {
+  font-size: var(--baseFontSize);
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightSmall);
+}
+
+form.resetpassword-form .enterpassword .cmp-form-text .fa-thin {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 360px;
+  margin-top: 46px;
+}
+
+form.resetpassword-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+form.resetpassword-form .confirmpassword .cmp-form-text .fa-thin.fa-eye-slash {
+  font-size: var(--baseFontSize);
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightSmall);
+}
+
+form.resetpassword-form .confirmpassword .cmp-form-text .fa-thin {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 360px;
+  margin-top: 46px;
+}
+
+#useraccdetails:hover {
+  text-decoration: none;
+}
+
+#myacc-addressbook-form {
+  position: relative;
+  display: block;
+  margin-top: -55%;
+}
+
+#myacc-addressbook-form .absasection {
+  position: relative;
+  display: block;
+  width: 110%;
+}
+.container .cmp-form .abbasection {
+  position: relative;
+  display: block;
+  width: 110%;
+}
+#myacclink-signoutbutton {
+  position: absolute;
+  margin-top: 0px;
+}
+
+.form-group-drop-down {
+  display: grid;
+}
+.custom_cancel_btn button.cmp-button .cmp-button__text:hover {
+  font-weight: var(--fontWeightBold);
+  color: var(--invertedColor);
+  text-decoration: underline;
+}
+.custom_cancel_btn button.cmp-button .cmp-button__text:active {
+  color: var(--invertedColorFocus);
+  text-decoration: underline;
+}
+.personalinformationbutton .custom_save_btn button.cmp-button:focus {
+  outline: 2px solid #3144d8;
+  outline-offset: -2px;
+  background-color: var(--secondaryColor);
+}
+.personalinformationbutton .custom_save_btn button.cmp-button:active {
+  outline: 2px solid var(--secondaryBtnVisited);
+  /* outline-offset: -2px; */
+  background-color: var(--secondaryBtnVisited);
+}
+#container-personal-info .passwordcancelbutton{width:20%;}
+
+@media screen and (max-width: 991px) {
+  
+ #container-personal-info .aem-Grid--default--9 .aem-GridColumn--offset--default--1{
+  margin: 0;
+  width: 100%;
+}
+
+.aem-Grid.aem-Grid--default--7>.aem-GridColumn.aem-GridColumn--offset--default--0.custom__save--button {
+width: auto;
+}
+  #page-8fb4fda5fd .aem-GridColumn--default--6 {
+    width: 100%;
+  }
+  .pi-chngepwd-form {
+    max-width: 100%;
+  }
+  #currentpassword,
+  #newpassword,
+  #confirmpassword {
+    width: 100%;
+  }
+  #container-b1b8c163bd .aem-GridColumn--default--6 {
+    width: 100%;
+  }
+  .cmp-text.address_book_title h1{
+      margin-left: 0px;
+  }
+  #container-2fa9ab1eb6 .Article {
+    margin-left: 0;
+    padding: 0 24px;
+    width: 100%;
+  }
+  .form_subtitle.cmp-text h1{
+    font-weight: var(--fontWeightSmall);
+    font-size: 31px;
+    line-height: 42px;
+
+    color: var(--secondaryBlack);
+    text-align: center;
+    margin-top: 48px;
+  }
+  form.personalinfo-leftpanel {
+    display: none;
+  }
+
+  #useraccdetails {
+    display: none;
+  }
+
+  .custom_form_desc {
+    width: 80%;
+  }
+
+  .cmp-form-text label.custom_form_label,
+  .cmp-form-options .cmp-form-options__label {
+    position: relative;
+    display: block;
+
+    width: 100%;
+  }
+  .currentpassword {
+    position: relative;
+    display: block;
+  }
+
+  .newpassword {
+    position: relative;
+    display: block;
+  }
+
+  .confirmpassword {
+    position: relative;
+    display: block;
+  }
+  .changepasswordbutton {
+    position: relative;
+    display: block;
+  }
+  .passwordcancelbutton {
+    position: relative;
+    display: block;
+  }
+
+  .cmp-form-text__text.personalinfo_input,
+  .industryoptions .cmp-form-options__field,
+  .industryoptions .cmp-form-options .select-selected {
+    position: relative;
+    width: 100%;
+  }
+
+  .cancel {
+    margin: 46px 0 25px;
+    text-align: left;
+  }
+  .personalinformationbutton .custom_save_btn button.cmp-button {
+    width: 66px;
+  }
+
+  .passwordcancelbutton .custom_cancel_btn {
+    text-align: left;
+    position: relative;
+    display: block;
+  }
+  #rp_enter_password_label {
+    margin-left: 0px;
+  }
+  #rp_confirm_password_label {
+    margin-left: 0px;
+  }
+
+  .personalinfo_title {
+    font-size: 20px;
+  }
+
+  #pi-changepassword-title {
+    font-size: 21px;
+
+    margin-top: 36px;
+  }
+
+  .industry-form-control {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+    color: var(--primaryColor);
+    text-transform: none;
+  }
+
+  .cmp-text.address_book_title h1{
+    font-size: var(--fontSize22);
+    line-height: 33px;
+    margin-top: -10px;
+  }
+  .addnewaddress_btn button.cmp-button {
+    height: 40px;
+  }
+  .addnewaddress_btn button.cmp-button .cmp-button__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form_subtitle.cmp-text h1{
+    font-size: 18px;
+    font-weight: var(--fontWeightBold);
+  }
+  .return_to_home_btn span,
+  button.return_to_home_btn {
+    font-size: 12px;
+  }
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin,
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin,
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+
+  .cmp-text.address_book_title h1 {
+    width: 326px;
+    margin-top: 30px;
+  }
+
+  form.personalinfo-leftpanel {
+    display: none;
+  }
+
+  #useraccdetails {
+    display: none;
+  }
+
+  .custom_form_desc {
+    width: 80%;
+  }
+
+  .cmp-form-text label.custom_form_label,
+  .cmp-form-options .cmp-form-options__label {
+    position: relative;
+    display: block;
+
+    width: 100%;
+  }
+  .currentpassword {
+    position: relative;
+    display: block;
+  }
+
+  .newpassword {
+    position: relative;
+    display: block;
+  }
+
+  .confirmpassword {
+    position: relative;
+    display: block;
+  }
+  .changepasswordbutton {
+    position: relative;
+    display: block;
+  }
+  .passwordcancelbutton {
+    position: relative;
+    display: block;
+  }
+
+  .cmp-form-text__text.personalinfo_input,
+  .industryoptions .cmp-form-options__field,
+  .industryoptions .cmp-form-options .select-selected {
+    position: relative;
+    width: 100%;
+  }
+
+  .cancel {
+    margin: 46px 0 25px;
+    text-align: left;
+  }
+  .personalinformationbutton .custom_save_btn button.cmp-button {
+    width: 66px;
+  }
+
+  .passwordcancelbutton .custom_cancel_btn {
+    text-align: left;
+    position: relative;
+    display: block;
+  }
+
+  #rp_enter_password_label {
+    margin-left: 0px;
+  }
+  #rp_confirm_password_label {
+    margin-left: 0px;
+  }
+
+  .industry-form-control {
+    position: relative;
+    width: 100%;
+  }
+  .personalinfo_title {
+    font-size: 20px;
+  }
+  #personalinfo-title {
+    font-size: 21px;
+  }
+
+  #pi-changepassword-title {
+    font-size: 21px;
+    margin-top: 36px;
+  }
+
+  .industry-form-control {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+    color: var(--primaryColor);
+    text-transform: none;
+  }
+
+  .cmp-text.address_book_title h1{
+    font-size: var(--fontSize22);
+    line-height: 33px;
+    margin-top: -10px;
+  }
+  .addnewaddress_btn button.cmp-button {
+    height: 40px;
+  }
+  .addnewaddress_btn button.cmp-button .cmp-button__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form_subtitle.cmp-text h1{
+    font-size: 18px;
+    font-weight: var(--fontWeightBold);
+  }
+  .return_to_home_btn span,
+  button.return_to_home_btn {
+    font-size: 12px;
+  }
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin,
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    right: 10px;
+    top: 44px;
+  }
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+
+  .cmp-text.address_book_title h1 {
+    width: 326px;
+    margin-top: 30px;
+  }
+
+  #myacc-addressbook-form {
+    position: relative;
+    display: block;
+    margin-top: 70px;
+    margin-left: -75px;
+  }
+  #Create_Pwd .cmp-form-text label {
+    right: 0;
+  }
+
+  #Create_Pwd .cmp-form-text label {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  #myacclinksmbl p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #currentpassword,
+  #newpassword,
+  #confirmpassword {
+    width: 100%;
+  }
+
+  .custom_cancel_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    color: var(--invertedColor);
+    padding: 0px;
+  }
+
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    position: absolute;
+    float: right;
+    margin-right: 5px;
+  }
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    position: absolute;
+    float: right;
+    margin-right: 5px;
+  }
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    position: absolute;
+    float: right;
+    margin-right: 5px;
+  }
+
+  .passwordcancelbutton .custom_cancel_btn .cmp-button {
+    right: 71px;
+  }
+}
+
+.return_to_home_btn span {
+  background: var(--invertedColor);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 12px 0;
+  border: 0px;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  width: 181px;
+  cursor: pointer;
+  color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 575px) {
+ 
+  input.custom_input_field {
+    width: 100%;
+  }
+  .custom_form_email {
+    justify-content: normal;
+  }
+  .custom_cancel_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    color: var(--invertedColor);
+  }
+
+  .custom_form_error_msg {
+    width: 200px;
+    line-height: 18px;
+  }
+  #page-3f5a1a3d76 .aem-GridColumn--offset--default--1 {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 24px;
+  }
+  .custom_form_container {
+    display: flex;
+    justify-content: center;
+  }
+  #Create_Pwd .custom_form_container {
+    display: inherit;
+  }
+  #Create_Pwd .cmp-form-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #Create_Pwd .confirm_pwd_btn {
+    padding: 15px 0 30px;
+  }
+  #Create_Pwd .custom_create_pwd_desc {
+    padding: 0;
+  }
+  .cmp-form .cmp-text {
+    margin-top: 0px;
+  }
+
+  .cancel {
+    margin: 25px;
+    text-align: left;
+  }
+  .personalinformationbutton .custom_save_btn button.cmp-button {
+    width: 66px;
+  }
+
+  .custom_save_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+    position: relative;
+    right: 2px;
+  }
+
+  .changepasswordbutton .custom_save_btn button.cmp-button {
+    margin: 0;
+    width: 100%;
+    padding: 14px;
+    height: auto;
+    position: relative;
+    display: block;
+    min-width: 62px;
+  }
+  .changepasswordbutton .custom_save_btn button.cmp-button .cmp-button__text {
+    width: auto;
+  }
+
+  .passwordcancelbutton {
+    text-align: left;
+    position: relative;
+    display: block;
+    left: 21px;
+    bottom: 28px;
+  }
+
+  .passwordcancelbutton .custom_cancel_btn {
+    margin: 31px 0 0px;
+    text-align: left;
+  }
+
+  .passwordcancelbutton .custom_cancel_btn .cmp-button {
+    text-align: left;
+    padding: 14px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .custom_form_title h1{
+    font-weight: var(--fontWeightBold);
+    font-size: 25px;
+    line-height: 67px;
+    text-align: center;
+
+    color: var(--primaryColor);
+    text-align: center;
+    margin-top: 48px;
+  }
+  .custom_form_error_msg {
+    color: var(--invertedColor);
+    margin-block: 0px;
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: var(--fontWeightMedium);
+    font-size: 10px;
+  }
+  .custom_form_signin_error_msg {
+    color: var(--invertedColor);
+    margin-block: 0px;
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: var(--fontWeightMedium);
+    font-size: 10px;
+    height: 16px;
+  }
+  .custom_form_pi_industry_error_msg {
+    color: var(--invertedColor);
+    margin-block: 0px;
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: var(--fontWeightMedium);
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .custom_form_desc {
+    font-weight: var(--fontWeightSmall);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+    color: var(--newsDateColor);
+    /* width: 50%; */
+    margin: 0 auto;
+  }
+  .custom_form_desc_resetpwd {
+    font-weight: var(--fontWeightSmall);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+    color: var(--newsDateColor);
+    width: 50%;
+    margin: 0 auto;
+    margin-right: 240px;
+  }
+  .custom_form_desc p{
+    margin-top: 0px;
+    font-weight: var(--fontWeightSmall);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .cmp-text .custom_create_pwd_desc ul li::marker,
+  .cmp-text .custom_change_pwd_desc ul li::marker {
+    content: "\2022";
+    color: var(--secondaryBlack);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .custom_create_pwd_desc ul li {
+    padding-left: 8px;
+    list-style: outside;
+  }
+  .custom_create_pwd_desc p {
+    padding-left: 0px;
+  }
+  .cmp-form-text label.custom_form_label,
+  .cmp-form-options .cmp-form-options__label {
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+    color: var(--primaryColor);
+    text-transform: none;
+    position: relative;
+    display: block;
+  }
+  .form-group-drop-down label.custom_form_label {
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+    color: var(--primaryColor);
+    text-transform: none;
+    position: relative;
+    display: block;
+  }
+
+  input.custom_input_field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    background: var(--secondaryColor);
+    border: 1px solid var(--SearchIcon);
+    border-radius: 3px;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+    width: 386px;
+    height: 44px;
+  }
+  .backtosigninbutton {
+    margin-top: 13px;
+  }
+
+  .custom_form_email {
+    display: flex;
+    justify-content: center;
+  }
+  input.custom_email_field:focus,
+  input.custom_email_field:focus-visible,
+  input.custom_email_field:visited {
+    background-color: var(--secondaryColor);
+  }
+  .aem-Grid > .aem-GridColumn.aem-GridColumn--default--none.sendemailbutton {
+    display: flex;
+    justify-content: center;
+  }
+  button.custom_email_button,
+  button.return_to_home_btn {
+    background: var(--invertedColor);
+    border-radius: 4px;
+    padding: 0;
+    border: 0px;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+    text-align: center;
+    width: 388px;
+    color: var(--secondaryColor);
+    cursor: pointer;
+  }
+
+  .return_to_home_btn span,
+  button.return_to_home_btn {
+    width: 181px;
+  }
+
+  .return_to_home_btn_main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 23px;
+  }
+
+  .backtosignin_btn span {
+    background: var(--secondaryColor);
+    border: 1px solid #005da6;
+    border-radius: 4px;
+    width: 390px;
+    height: 54px;
+    color: #005da6;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: 48px;
+
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none !important;
+    padding: 0;
+    margin-top: 0;
+  }
+  .backtosignin_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    margin-right: 14px;
+  }
+  .backtosignin_btn button,
+  .custom_next_button .cmp-form-button:focus {
+    background: var(--secondaryColor);
+    border: 1px solid #005da6;
+    border-radius: 4px;
+    width: 390px;
+    height: 54px;
+    color: #005da6;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+
+    cursor: pointer;
+  }
+  .form_subtitle.cmp-text h1{
+    font-weight: var(--fontWeightSmall);
+    font-size: 31px;
+    line-height: 42px;
+    color: var(--secondaryBlack);
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .custom_next_button.backtosignin_btn button.cmp-form-button:hover,
+  button.cmp-form-button:hover,
+  .custom_next_button.backtosignin_btn .cmp-form-button:focus,
+  .backtosignin_btn span:hover {
+    background: var(--darkBlue);
+    color: var(--secondaryColor);
+    border: 1px solid #005da6;
+    outline: none;
+  }
+  .custom_next_button.backtosignin_btn button.cmp-form-button:active,
+  button.cmp-form-button:active,
+  .custom_next_button.backtosignin_btn .cmp-form-button:active,
+  .backtosignin_btn span:active {
+    background: var(--secondaryLinkNormal);
+    color: var(--secondaryColor);
+    border: 1px solid #005da6;
+  }
+  .custom_next_button .cmp-form-button:hover,
+  .custom_next_button .cmp-form-button:visited {
+    background: none;
+  }
+
+  .custom_next_button .cmp-form-button:focus {
+    box-shadow: none;
+  }
+  .confirm_pwd_btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .confirm_pwd_btn button {
+    background: var(--btnDisabledLight);
+    border-radius: 4px;
+    border: 0px;
+    width: 390px;
+    cursor: pointer;
+  }
+
+  .confirm_pwd_btn button:focus {
+    outline: none;
+  }
+
+  .confirm_pwd_btn .cmp-button__text {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+    padding: 14px 0;
+    color: var(--secondaryColor);
+  }
+  #personalinfo-title {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize22);
+    line-height: 46px;
+
+    color: var(--primaryColor);
+    width: 330px;
+  }
+  #payment-terms {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: var(--fontWeightSmall);
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #custID {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: var(--fontWeightSmall);
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #212529;
+  }
+
+  .form-group-drop-down {
+    display: grid;
+    margin: 0;
+  }
+
+  select.form-control:not([size]):not([multiple]) {
+    height: calc(3.25rem + 2px);
+  }
+
+  .cmp-form-text__text.personalinfo_input,
+  .industryoptions .cmp-form-options__field,
+  .industryoptions .cmp-form-options .select-selected {
+    background: var(--secondaryColor);
+    border: 1px solid var(--SearchIcon);
+    border-radius: 4px;
+    width: 100%;
+    height: 44px;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: 20px;
+    color: var(--btnDisabledLight);
+    position: relative;
+    display: block;
+  }
+
+  .industryoptions .cmp-form-options .select-items div {
+    height: 2.25em;
+  }
+  .custom_cancel_btn button.cmp-button,
+  .custom_cancel_btn button.cmp-button:hover,
+  .custom_cancel_btn button.cmp-button:focus {
+    border: 0px;
+    background: none;
+    border-radius: 0px;
+    outline: none;
+    cursor: pointer;
+  }
+  .custom_cancel_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    color: var(--invertedColor);
+    padding: 0px;
+  }
+  #pi-changepassword-title {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize22);
+    line-height: 33px;
+
+    color: var(--primaryColor);
+  }
+
+  .custom_change_pwd_desc ul li {
+    position: relative;
+    font-size: var(--fontSize14);
+  }
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  .cmp-text.address_book_title h1{
+    margin-left: 0px;
+  }
+
+  .addnewaddress_btn button.cmp-button {
+    margin-left: 30px;
+  }
+  input.custom_input_field {
+    width: 100%;
+  }
+  .custom_form_email {
+    justify-content: normal;
+  }
+  .custom_cancel_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    color: var(--invertedColor);
+  }
+  .confirm_pwd_btn button {
+    width: 100%;
+  }
+  .confirm_pwd_btn button.cmp-button {
+    margin: 0px;
+  }
+  .custom_form_error_msg {
+    width: 200px;
+    line-height: 18px;
+  }
+
+  .custom_cancel_btn button.cmp-button .cmp-button__text:active {
+    color: var(--invertedColorFocus);
+  }
+
+  .aem-Grid.aem-Grid--default--5>.aem-GridColumn.aem-GridColumn--default--5.custom__save--button {
+    width: auto;
+  }
+  .aem-Grid.aem-Grid--default--5>.aem-GridColumn.aem-GridColumn--offset--default--0.personalinformationbutton {
+    margin-top: 0;
+  }
+  .custom_save_btn button.cmp-button {
+    display: flex;
+    justify-content: center;
+
+    color: var(--primaryColor);
+    background: var(--secondaryColor);
+    border-radius: 4px;
+    width: 81px;
+    height: 44px;
+    border: 1px solid var(--SearchIcon);
+    cursor: pointer;
+  }
+  .custom_save_btn button.cmp-button:hover {
+    background: var(--secondaryBtnHover);
+  }
+  .custom_save_btn button.cmp-button:active {
+    background: var(--secondaryBtnVisited);
+  }
+  .custom_save_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+  }
+  .cmp-text.address_book_title h1{
+    font-weight: var(--fontWeightBold);
+    font-size: 31px;
+    line-height: 46px;
+
+    color: var(--primaryColor);
+  }
+  .addnewaddress_btn button.cmp-button {
+    background: var(--invertedColor);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px 0;
+    cursor: pointer;
+    border: 0px;
+  }
+  .addnewaddress_btn button.cmp-button .cmp-button__text {
+    color: var(--secondaryColor);
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    padding-top: 3px;
+  }
+  .address_book_subtitle {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+
+    color: var(--secondaryBlack);
+    margin-left: 70px;
+  }
+  .container .responsivegrid .abnewsection {
+    width: 130%;
+    position: relative;
+    display: block;
+    right: 17%;
+  }
+
+  .address_book_section_ba {
+    background: var(--secondaryColor);
+    border: 1px solid var(--secondaryBtnVisited);
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-top: 24px;
+    width: 299px;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    left: 7%;
+  }
+
+  .address_book_section_sa {
+    background: var(--secondaryColor);
+    border: 1px solid var(--secondaryBtnVisited);
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-top: 24px;
+    width: 299px;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    left: 7%;
+  }
+
+  .address_book_section_ba:hover {
+    border: 2px solid var(--blueColorDark);
+  }
+  .address_book_section_sa:hover {
+    border: 2px solid var(--blueColorDark);
+  }
+  .address_book_desc:hover {
+    color: var(--blueColorDark);
+    text-decoration: none;
+    text-decoration-thickness: 2px;
+  }
+
+  .address_book_subtitle:hover {
+    text-decoration: none;
+    text-decoration-color: var(--blueColorDark);
+    text-decoration-thickness: 2px;
+  }
+
+  .cmp-text.address_book_title:hover {
+    text-decoration: none;
+    text-decoration-color: var(--blueColorDark);
+    text-decoration-thickness: 2px;
+  }
+
+  .address_book_edit:hover {
+    color: var(--blueColorDark);
+    text-decoration: none;
+    text-decoration-thickness: 2px;
+  }
+
+  .address_book_name {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+
+    color: var(--primaryColor);
+    padding-bottom: 10px;
+  }
+
+  .address_book_static_txt {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+
+    color: var(--primaryColor);
+  }
+
+  .address_book_address_phone {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: 24px;
+
+    color: var(--primaryColor);
+  }
+
+  .address_book_edit {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+    position: relative;
+    display: block;
+    text-align: right;
+    left: 95px;
+  }
+  .address_book_default {
+    float: right;
+    width: 68px;
+    height: 22px;
+    background: var(--btnDisabledLight);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-right: 18px;
+  }
+  .address_book_default a,
+  .address_book_default .defaultvalue {
+    color: var(--secondaryColor);
+    font-weight: var(--fontWeightBold);
+    font-size: 12px;
+    line-height: 0px;
+  }
+  .address_book_default a,
+  .address_book_default .defaultvalue p {
+    margin-block: 0px;
+  }
+  .address_book_desc {
+    font-weight: var(--fontWeightSmall);
+    line-height: 24px;
+    width: 160px;
+  }
+  .address_book_edit a {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    color: var(--secondaryLinkNormal);
+  }
+
+  #ab-shippingaddress-label {
+    position: relative;
+    display: block;
+    left: 7%;
+  }
+  #ab-billingaddress-label {
+    position: relative;
+    display: block;
+    left: 7%;
+  }
+
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+  }
+
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+  }
+
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+  }
+
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+  }
+
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    
+    margin-top: 46px;
+  }
+
+  form.signin-page .password .cmp-form-text .fa-thin.fa-eye,
+  form.signin-page .password .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+    margin-right: 16px;
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+  }
+
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+
+    margin-top: 46px;
+  }
+
+  form.resetpassword-form .enterpassword .cmp-form-text .fa-thin.fa-eye,
+  form.resetpassword-form .enterpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+    margin-right: 16px;
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+  }
+
+  form.resetpassword-form .enterpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 360px;
+    margin-top: 46px;
+  }
+
+  form.resetpassword-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+  form.resetpassword-form
+    .confirmpassword
+    .cmp-form-text
+    .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+    margin-right: 16px;
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+  }
+
+  form.resetpassword-form .confirmpassword .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 360px;
+    margin-top: 46px;
+  }
+
+  .cmp-text .custom_change_pwd_desc ul li::marker,
+  .cmp-text .custom_change_pwd_desc ul li::marker {
+    content: "\2022";
+    color: var(--secondaryBlack);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #useraccdetails:hover {
+    text-decoration: none;
+  }
+
+  input.custom_input_field {
+    width: 100%;
+  }
+
+  .custom_form_email {
+    justify-content: normal;
+  }
+  .custom_cancel_btn button.cmp-button .cmp-button__text {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: 20px;
+
+    color: var(--invertedColor);
+  }
+
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .currentpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+    top: 44px;
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+    right: 10px;
+  }
+
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .newpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+    top: 44px;
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+    right: 10px;
+  }
+
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye,
+  form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin.fa-eye-slash {
+    font-size: var(--baseFontSize);
+    width: 16px;
+    height: 20px;
+    top: 0;
+    font-family: var(--fontfamilyIcon);
+    font-weight: var(--fontWeightSmall);
+    right: 10px;
+  }
+
+  .cancel .custom_cancel_btn button.cmp-button .cmp-button__text {
+    margin-left: 0px;
+  }
+
+  .passwordcancelbutton .custom_cancel_btn .cmp-button {
+    right: 8px;
+  }
+  #myacc-addressbook-form {
+    position: relative;
+    display: block;
+    margin-top: 70px;
+    margin-left: -75px;
+  }
+  .passwordcancelbutton .custom_cancel_btn .cmp-button {
+    margin-top: 10px;
+  }
+  .custom_cancel_btn button.cmp-button {
+    padding-top: 30px;
+  }
+  #container-personal-info .personalinformationbutton  .custom_cancel_btn button.cmp-button {
+    padding-top: 10px;
+  }
+  #container-personal-info .aem-Grid.aem-Grid--default--5>.aem-GridColumn.aem-GridColumn--default--3{width:100%;}
+  #container-personal-info .aem-GridColumn--default--7.passwordcancelbutton{width:20%;} 
+  #container-personal-info .text .sidebar__menu p.backtoorder-title{padding-left:0;}
+}
+
+.return_to_home_btn:hover {
+  text-decoration: none;
+}
+
+/* create new password CSS changes */
+
+.cmp .cmp-text {
+  width: 100%;
+  padding-left: -8px;
+}
+
+/*.custom_form_title p {
+  
+  text-align: center;
+  
+  }*/
+
+.cmp-text .custom_create_pwd_desc ul li::marker {
+  content: none;
+}
+.custom_create_pwd_desc ul li {
+  position: relative;
+  padding-left: 15px;
+  list-style: none;
+}
+.custom_create_pwd_desc ul li::before {
+  /* add the new bullet point */
+  display: inline-block;
+  content: "";
+  -webkit-border-radius: 2px;
+  border-radius: 6px;
+  height: 6px;
+  width: 6px;
+  margin-right: 2px;
+  background-color: var(--secondaryBlack);
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+@media (min-width: 767px) and (max-width: 991px){
+
+input.custom_input_field{
+    width:auto;
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .dropdown-icon-arrow {
+    position: relative;
+  }
+  .dropdown-icon-arrow::after {
+    content: "";
+    justify-self: end;
+    width: 10px;
+    height: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-color: var(--select-arrow);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 19px;
+  }
+
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    margin-top: 46px;
+  }
+
+  #Create_Pwd .custom_create_pwd_desc ul {
+    padding-left: 0px;
+  }
+  .custom_create_pwd_desc p {
+    text-align: left;
+    margin-left: 3px;
+  }
+  .custom_create_pwd_desc ul {
+    text-align: left;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .custom_form_title h1{
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #myaccbacktoorders p {
+    padding-left: 21px;
+    position: relative;
+    display: block;
+    top: 0;
+    right: 1%;
+    font-size: var(--baseFontSize);
+  }
+  #myaccbacktoorders p a:focus {
+    text-decoration: none;
+    border: none;
+  }
+  #myaccbacktoorders p a:hover {
+    text-decoration: none;
+  }
+
+  form.personalinfo-leftpanel {
+    display: none;
+  }
+  #createAccounts {
+    width: 100%;
+  }
+  #useraccdetails {
+    display: none;
+  }
+  #myacclinksmbl p {
+    padding-left: 21px;
+    position: relative;
+  }
+
+  #myacclinksorderhismbl {
+    display: block;
+  }
+
+  #myacc-addressbook-form {
+    position: relative;
+    display: block;
+    margin-top: 70px;
+    margin-left: -75px;
+  }
+  .dropdown-icon-arrow {
+    position: relative;
+  }
+  .dropdown-icon-arrow::after {
+    content: "";
+    justify-self: end;
+    width: 10px;
+    height: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-color: var(--select-arrow);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 19px;
+  }
+
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    margin-top: 46px;
+  }
+
+  #createAccounts {
+    width: 97%;
+  }
+  #createaccount form.createAccount .accenterpassword .cmp-form-text .fa-thin,
+  #createaccount
+    form.createAccount
+    .Accconfirmpassword
+    .cmp-form-text
+    .fa-thin {
+    right: 20px;
+  }
+  #Create_Pwd .custom_create_pwd_desc ul {
+    padding-left: 0px;
+  }
+  .custom_form_title h1{
+    font-size: 42px;
+  }
+  #createAccounts {
+    width: 91%;
+  }
+  #createaccount form.createAccount .accenterpassword .cmp-form-text .fa-thin,
+  #createaccount
+    form.createAccount
+    .Accconfirmpassword
+    .cmp-form-text
+    .fa-thin {
+    right: 60px;
+  }
+}
+
+#myaccbacktoorders p {
+  position: relative;
+}
+
+/* ######### FOR BACK TO HOME FROM ORDERS TABLE ############ */
+
+#myacclinkorderdetails p a {
+  color: black;
+}
+
+/* ##########FOR BACK TO ORDER TABLE FROM ORDER DETAILS############ */
+
+@media screen and (min-width: 833px) {
+  #myacclinkorderdetails p {
+    display: none;
+  }
+  
+  #myaccbacktoorders p {
+    top: -30px;
+  }
+
+  #myaccbacktoorders p a:focus {
+    text-decoration: none;
+    border: none;
+  }
+  #myaccbacktoorders p a:hover {
+    text-decoration: none;
+  }
+}
+#myaccbacktoorders p a {
+  color: black;
+}
+
+@media only screen and (max-width: 575px) {
+  #myacclinkorderdetails p {
+    padding-left: 42px;
+    position: relative;
+    display: block;
+    right: 2%;
+    top: 10px;
+    font-size: var(--baseFontSize);
+  }
+  #myacclinkorderdetails p a:focus {
+    border: 0;
+    text-decoration: none;
+    outline: none;
+  }
+  #myacclinkorderdetails p a:focus {
+    text-decoration: none;
+  }
+  #page-c25e1ac6a8 .aem-GridColumn--offset--default--1 {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 24px;
+  }
+  .custom_create_pwd_desc {
+    padding: 0 15px;
+  }
+  #Create_Pwd .custom_create_pwd_desc ul {
+    padding-left: 0px;
+  }
+
+  .custom_create_pwd_desc ul {
+    text-align: left;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .cmp-form-text {
+    display: grid;
+    margin: 0px;
+  }
+  .dropdown-icon-arrow {
+    position: relative;
+  }
+  .dropdown-icon-arrow::after {
+    content: "";
+    justify-self: end;
+    width: 10px;
+    height: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-color: var(--select-arrow);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 19px;
+  }
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    margin-top: 46px;
+  }
+
+  #disp-overflow {
+    display: block;
+    overflow: hidden;
+    width: 96%;
+  }
+
+  #SigninpageContainer {
+    padding: 0 24px;
+  }
+  #signin .responsivegrid {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+#disp-overflow {
+  margin-top: 25px;
+}
+#sendEmailButton {
+  margin-bottom: 50px;
+}
+
+.continue_shopping_btn {
+  color: #005da6;
+  font-weight: var(--fontWeightBold);
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #005da6;
+  margin-top: 2rem;
+  background-color: var(--secondaryColor);
+  max-width: 390px;
+  width: 100%;
+}
+
+.backtosignin_btn{
+  margin-left:auto;
+  margin-right: auto;
+  max-width: 390px;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-weight: var(--fontWeightBold);
+  line-height: var(--baseLineHeight);
+}
+
+#signOutBtnTextDesk {
+  padding: 90px 0px 90px 0px;
+}
+
+.email {
+  margin-top: 44px;
+}
+
+#page-5cb33f973b .aem-GridColumn--default--newline {
+  display: none;
+}
+button.custom_email_button:hover {
+  cursor: pointer;
+}
+button.custom_email_button:hover,
+button.return_to_home_btn:hover,
+.return_to_home_btn span:hover {
+  background: #a80711;
+}
+button.custom_email_button:focus {
+  cursor: pointer;
+}
+.return_to_home_btn span:focus {
+  background: #D83A22;
+border-radius: 4px;
+  outline: 2px solid #3144D8;
+  outline-offset:1px;
+}
+.return_to_home_btn span:active {
+ background: #6A0000;
+border-radius: 4px;
+  outline: 2px solid #3144D8;
+  outline-offset:1px;
+}
+button.custom_email_button:focus,
+button.return_to_home_btn:focus,
+.return_to_home_btn span:focus {
+  outline: 2px solid #3144d8;
+  outline-offset: 2px;
+}
+button.custom_email_button:active,
+button.return_to_home_btn:active,
+.return_to_home_btn span:active {
+  background: #6a0000;
+ 
+}
+.continue_shopping_btn:hover {
+  cursor: pointer;
+  background-color: var(--secondaryBtnHover);
+}
+.continue_shopping_btn:focus {
+  outline: 2px solid #3144d8;
+  outline-offset: -2px;
+  background-color: var(--secondaryColor);
+}
+.continue_shopping_btn:active {
+  outline: 2px solid var(--secondaryBtnVisited);
+  background-color: var(--secondaryBtnVisited);
+}
+.continue_shopping_btn:visited {
+  /* outline: 2px solid #3144D8;
+    outline-offset:-2px; */
+  background-color: var(--secondaryBtnVisited);
+}
+
+.confirm_pwd_btn button:focus {
+  outline: 2px solid #3144d8;
+  outline-offset: 1px;
+}
+
+.confirm_pwd_btn .cmp-button__text {
+  font-weight: var(--fontWeightBold);
+  color: var(--secondaryColor);
+  display: block;
+  padding: 14px 0;
+  line-height: 24px;
+}
+
+/* 
+  Added for Interactions of input fields of  Reset password and Sign In form
+*/
+.reset-passwd-email:focus-visible {
+  outline: 2px solid #3144d8;
+}
+
+.signinform-email:focus-visible {
+  outline: 2px solid #3144d8;
+}
+
+.signinform-passwd:focus-visible {
+  outline: 2px solid #3144d8;
+}
+
+/* 
+  Upto here
+*/
+
+form.pi-chngepwd-form .email {
+  margin-top: 0;
+}
+
+.changepasswordbutton .custom_save_btn button.cmp-button:focus {
+  outline: 2px solid #3144d8;
+  outline-offset: -2px;
+  background-color: var(--secondaryColor);
+}
+.changepasswordbutton .custom_save_btn button.cmp-button:active {
+  outline: 0;
+  /* outline-offset: -2px; */
+  background-color: var(--secondaryBtnVisited);
+  border: 1px solid var(--secondaryBtnVisited);
+}
+.custom_change_pwd_desc ul {
+  padding-left: 15px;
+}
+.pi-chngepwd-form .cmp-text .custom_change_pwd_desc ul li::before,
+.pi-chngepwd-form .cmp-text .custom_change_pwd_desc ul li::before {
+  content: "\2022";
+  color: var(--secondaryBlack);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.pi-chngepwd-form .cmp-text .custom_change_pwd_desc ul li::marker,
+.pi-chngepwd-form .cmp-text .custom_change_pwd_desc ul li::marker {
+  content: none;
+}
+
+/* for reset password */
+#reset_pwd_title h1{
+  font-weight: var(--fontWeightSmall);
+  font-size: 2.813rem;
+  line-height: 4.188rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.reset__password .custom_form_title p{
+  font-weight:var(--fontWeightSmall);
+  font-size:var(--fontSize45);
+  line-height:var(--lineHeight41);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.restform_title {
+  line-height: var(--lineHeight1and483);
+}
+#formtitle.custom_form_title p{
+  font-weight:var(--fontWeightSmall);
+  font-size:var(--fontSize45);
+  line-height:var(--lineHeight41);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+input.custom_input_field{
+  width:auto;
+}
+}
+@media screen and (max-width: 575px) {
+  .backtosignin_btn{
+    max-width: 315px;
+  }
+}
+@media screen and (max-width: 768px){
+  #formtitle.custom_form_title p{
+    font-size:var(--fontSize26);
+  }
+}

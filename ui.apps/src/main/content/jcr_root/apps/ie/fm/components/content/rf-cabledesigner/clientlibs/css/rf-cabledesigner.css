@@ -1,0 +1,879 @@
+.rf_cabledesigner_main_page {
+	font-size: var(--fontSize14);
+	line-height: var(--baseLineHeight);
+}
+
+.rf_cabledesigner_main_page .secondary_color {
+	color: var(--primaryColor);
+	font-size: var(--baseFontSize);
+	line-height: var(--baseLineHeight);
+}
+
+.rf_cabledesigner_main_page .bold_link {
+	font-weight: var(--fontWeightMedium);
+	color: var(--primaryColor);
+	text-decoration: underline;
+}
+
+.rf_cabledesigner_main_page .top_section {
+	margin-bottom: 25px;
+}
+.col.card_section{
+	width: 215px;
+    flex-basis: initial;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.rf_cabledesigner_main_page h1 {
+	font-size: var(--fontSize45);
+	font-weight: var(--fontWeightSmall);
+	color: var(--tabPanelClr);
+	line-height: var(--baseLineHeight);
+}
+
+.rf_cabledesigner_main_page h3 {
+	font-size: var(--fontSize18);
+	font-weight: var(--fontWeightBold);
+	line-height: var(--baseLineHeight);
+}
+
+.rf_cabledesigner_main_page .sub_heading_desc {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.rf_cabledesigner_main_page #filter_selection{
+	display: flex;
+    flex-direction: column;
+}
+.rf_cabledesigner_main_page .card_wrap {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.rf_cabledesigner_main_page .card_wrap .card_title {
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: var(--fontSize10);
+	line-height: var(--lineHeight1and3Q);
+}
+
+.rf_cabledesigner_main_page .img_wrap {
+	border: 1px solid var(--secondaryBtnVisited);
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+}
+
+
+.rf_cabledesigner_main_page .card_wrap .img_wrap .icon_section {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	color: var(--successMedium);
+	display: none;
+	font-size: var(--fontSize20);
+}
+
+.rf_cabledesigner_main_page .card_wrap .img_wrap .icon_section i {
+	color: var(--successMedium);
+}
+
+.rf_cabledesigner_main_page .card_section.enabled-cls .img_wrap .icon_section {
+	display: block;
+}
+
+.rf_cabledesigner_main_page .img_wrap img {
+	max-width: 100%
+}
+
+.rf_cabledesigner_main_page .img_wrap .img_section {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	opacity: 0.2;
+	text-align: center;
+}
+
+.rf_cabledesigner_main_page .card_section.enabled-cls .img_wrap .img_section {
+	opacity: 1;
+}
+
+.rf_cabledesigner_main_page .filter_section {
+	background-color: var(--secondaryBtnHover);
+	margin: 30px 0;
+	border-top: 2px solid var(--newsDateColor);
+	padding-top: 12px;
+}
+
+.rf_cabledesigner_main_page .select_container .input_field {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+	color: var(--secondaryBlack);
+}
+
+.rf_cabledesigner_main_page .select_container .unit_field {
+	width: 92px;
+	padding: 5px 10px;
+}
+
+.rf_cabledesigner_main_page .filter_section h4 {
+	font-weight: var(--fontWeightBold);
+	margin-bottom: 20px;
+	font-size: var(--fontSize14);
+	line-height: var(--lineHeight1and483);
+}
+
+.rf_cabledesigner_main_page .filter_section .icon_section {
+	margin-right: 0.625rem;
+}
+
+.rf_cabledesigner_main_page .filter_section .title {
+	font-weight: var(--fontWeightMedium);
+	margin-bottom: 5px;
+}
+
+.rf_cabledesigner_main_page .filter_section .column_section:first-child {
+	margin-bottom: 20px;
+}
+
+.rf_cabledesigner_main_page .filter_section .column_section .col_2 .input_field {
+	max-width: 132px;
+	padding: 10px;
+}
+
+.rf_cabledesigner_main_page .filter_section .column_section .col {
+	flex-grow: 0;
+	white-space: nowrap;
+}
+
+.rf_cabledesigner_main_page .input_field {
+	width: 100%;
+	background: var(--secondaryColor);
+	border: 1px solid var(--rheostatHandle);
+	border-radius: 4px;
+	height: 32px;
+}
+
+.rf_cabledesigner_main_page .filter_selection .card {
+	margin-bottom: 20px;
+}
+
+.rf_cabledesigner_main_page .card-header {
+	background-color: transparent;
+	border: 0;
+}
+
+.rf_cabledesigner_main_page .card-header h5 button {
+	font-size: var(--fontSize22);
+	font-weight: var(--fontWeightBold);
+	color: var(--tabPanelClr);
+	padding-left: 0;
+	line-height: var(--baseLineHeight);
+}
+
+.rf_cabledesigner_main_page .card-header .icon_section {
+	margin-right: 20px;
+	vertical-align: middle;
+	transform: scaleY(-1);
+}
+
+.rf_cabledesigner_main_page .active_card .card-header .icon_section {
+	transform: scaleY(1);
+}
+.rf_cabledesigner_main_page .active_connector_cable .card-header .icon_section {
+	transform: scaleY(-1);
+}
+
+.rf_cabledesigner_main_page .card-body .radio_wrap .mid_text {
+	font-size: var(--baseFontSize);
+	font-weight: var(--fontWeightNormal);
+	line-height: var(--lineHeight1andQ);
+}
+
+.rf_cabledesigner_main_page .card-body .select_type {
+	white-space: nowrap;
+}
+
+.rf_cabledesigner_main_page .card-body .select_type .col {
+	flex-grow: 0;
+}
+
+.rf_cabledesigner_main_page .card-body .radio_wrap label {
+	display: inline-block;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section {
+	display: none;
+}
+.rf_cabledesigner_main_page .existing_part_number_section .selected_part_section .content-added .result_section{
+	margin-right: 0;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .search_wrap {
+	border: 1px solid var(--secondaryBtnVisited);
+	height: 41px;
+	padding-left: 10px;
+	color: var(--btnDisabledLight);
+	margin-top: 20px;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .form-control {
+	border: 0;
+	height: 100%;
+	font-size: var(--baseFontSize);
+	line-height: var(--lineHeight1andQ);
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .form-control:focus {
+	outline: 0;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .icon_section {
+	position: relative;
+	top: 1px;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section {
+	display: none;
+}
+
+.rf_cabledesigner_main_page .search_whole_wrap {
+	position: relative;
+}
+
+.rf_cabledesigner_main_page .search_whole_wrap .selected_part_section {
+	display: none;
+}
+
+
+.rf_cabledesigner_main_page .search_result_wrap {
+	padding: 5px;
+	z-index: 1;
+	position: absolute;
+	display: none;
+	min-height: 5rem;
+}
+
+.rf_cabledesigner_main_page .search_result {
+	font-size: var(--baseFontSize);
+	line-height: var(--baseLineHeight);
+	border: 1px solid var(--secondaryBtnVisited);
+	border-radius: 4px;
+	border-radius: 4px;
+	padding: 15px;
+	background-color: var(--secondaryColor);
+	max-height: 502px;
+	overflow-y: auto;
+}
+
+.rf_cabledesigner_main_page .search_result .sku_label {
+	font-weight: var(--fontWeightSmall);
+}
+
+.rf_cabledesigner_main_page .search_result .content_wrap a {
+	color: var(--secondaryBlack);
+	pointer-events: none;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .search_title {
+	font-size: var(--fontSize12);
+	line-height: var(--lineHeight1and12);
+	font-weight: var(--fontWeightBold);
+	margin-bottom: 10px;
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .content_wrap {
+	cursor: pointer;
+	padding: 15px
+}
+
+.rf_cabledesigner_main_page .existing_part_number_section .content_wrap:hover {
+	background-color: var(--secondaryBtnVisited);
+}
+
+.rf_cabledesigner_main_page .selected_part_section {
+	padding: 11px 20px 0 20px;
+	background-color: var(--secondaryBtnHover);
+	margin: 20px 0;
+}
+
+.rf_cabledesigner_main_page .selected_part_section .result_section {
+	flex-grow: 1;
+}
+
+.rf_cabledesigner_main_page .selected_part_section .prdct-details{
+	flex-wrap: wrap;
+}
+
+.rf_cabledesigner_main_page .selected_part_section .radio_wrap {
+	color: var(--successMedium);
+	font-weight: var(--fontWeightBold);
+	font-size: var(--fontSize12);
+	line-height: var(--lineHeight1and12);
+}
+
+.rf_cabledesigner_main_page .selected_part_section .slected_label {
+	font-size: var(--baseFontSize);
+	font-weight: var(--fontWeightBold);
+	margin-right: 10px;
+	flex-shrink: 0;
+	margin-bottom: 11px;
+}
+
+.rf_cabledesigner_main_page .selected_part_section .match_link {
+	flex-shrink: 0;
+	margin-bottom: 11px;
+}
+
+.rf_cabledesigner_main_page .selected_part_section .match_link a {
+	flex-shrink: 0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.rf_cabledesigner_main_page .selected_part_section .pdf_section .icon_section {
+	border: 1px solid var(--secondaryBtnVisited);
+	border-radius: 4px;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	flex-shrink: 0;
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+.rf_cabledesigner_main_page .selected_part_section .pdf_section .icon_section i.fa-file-pdf {
+    color: var(--errorMedium);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-left: 3px;
+	font-size:var(--baseFontSize);
+}
+.rf_cabledesigner_main_page .selected_part_section .pdf_section .icon_detail a {
+	color: var(--secondaryBlack);
+}
+
+.rf_cabledesigner_main_page .sku_label {
+	font-weight: var(--fontWeightNormal);
+}
+
+.rf_cabledesigner_main_page .filter_wrap {
+	padding-bottom: 20px;
+	font-size: var(--baseFontSize);
+	line-height: var(--baseLineHeight);
+}
+
+.rf_cabledesigner_main_page .add_filter ul {
+	list-style-type: none;
+	padding: 0;
+	padding-top: 40px;
+}
+
+.rf_cabledesigner_main_page .modal-content {
+	height: auto;
+	margin: 0;
+}
+
+.rf_cabledesigner_main_page .modal-body {
+	padding: 0 20px 12px;
+}
+
+.rf_cabledesigner_main_page .table_wrap {
+	overflow: auto;
+	max-height: 300px;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-header {
+	margin-bottom: 20px;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer {
+	box-shadow: 0px -1px 0px var(--jomlFormBorder);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer .btn {
+	width: 87px;
+	height: 44px;
+	font-size: var(--fontSize14);
+	line-height: var(--lineHeight1andQ);
+	font-weight: var(--fontWeightBold);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer .cancel_btn {
+	border-color: var(--SearchIcon);
+	background: transparent;
+	color: var(--primaryColor);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer .cancel_btn:hover {
+	background: var(--secondaryBtnHover);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer .cancel_btn:focus {
+	outline: 2px solid var(--blueColorLight);
+	outline-offset: -2px;
+	background-color: var(--secondaryColor);
+	box-shadow: none;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer .cancel_btn:active {
+	background: var(--secondaryBtnVisited);
+	outline: 0;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .modal-footer .btn.select_btn {
+	border-color: transparent;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .thead-light {
+	position: sticky;
+	top: 0;
+	background-color: var(--secondaryColor);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .thead-light th:after {
+	content: "";
+	border-right: 2px solid var(--secondaryBtnVisited);
+	position: absolute;
+	right: 0;
+	height: 56%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .thead-light th:last-child:after {
+	border: 0;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .thead-light th {
+	color: var(--secondaryBlack);
+	background-color: transparent;
+	border-bottom: 1px solid var(--secondaryBtnVisited);
+	position: relative;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table td,
+.rf_cabledesigner_main_page .seeallmatches-cls .table th {
+	border-color: var(--secondaryBtnVisited);
+	vertical-align: middle;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table tr:last-child td {
+	border-bottom: 1px solid var(--secondaryBtnVisited);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table td:first-child,
+.rf_cabledesigner_main_page .seeallmatches-cls .table th:first-child {
+	border-left: 1px solid var(--secondaryBtnVisited);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table td:last-child,
+.rf_cabledesigner_main_page .seeallmatches-cls .table th:last-child {
+	border-right: 1px solid var(--secondaryBtnVisited);
+}
+
+.rf_cabledesigner_main_page .table_wrap td:nth-child(1) {
+	white-space: nowrap;
+}
+
+.rf_cabledesigner_main_page .table_wrap td:nth-child(2) .product_column {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	line-height: 1.25rem
+}
+
+.rf_cabledesigner_main_page .table_wrap td:nth-child(2) .product_column img {
+	margin-right: 10px;
+	width: 100px;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls tbody tr {
+	cursor: pointer;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls tbody tr:hover {
+	background-color: var(--secondaryBtnHover);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .tablerow-selected td {
+	border-right: 0;
+	background-color: transparent;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+	border-color: var(--blueColorDark);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .tablerow-selected td:first-child {
+	border-left: 2px solid var(--blueColorDark);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table .tablerow-selected td:last-child {
+	border-right: 2px solid var(--blueColorDark);
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .table tr.tablerow-selected:last-child td {
+	border-bottom: 2px solid var(--blueColorDark);
+}
+
+.rf_cabledesigner_main_page .modal-dialog-centered {
+	justify-content: center;
+}
+
+.rf_cabledesigner_main_page .modal-header .close {
+	margin: 3px 10px 0;
+}
+
+.rf_cabledesigner_main_page .seeallmatches-cls .select_btn.disabled {
+	background-color: var(--btnDisabledLight);
+	color: var(--secondaryColor);
+	pointer-events: none;
+	opacity: 1;
+}
+
+.rf_cabledesigner_main_page .btn-secondary {
+	border: 1px solid var(--secondaryBtnVisited);
+}
+
+/*.rf_cabledesigner_main_page .table_wrap::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+} */
+
+/* Track 
+.rf_cabledesigner_main_page .table_wrap::-webkit-scrollbar-track {
+	border-radius: 10px;
+}*/
+
+/* Handle 
+.rf_cabledesigner_main_page .table_wrap::-webkit-scrollbar-thumb {
+	background: var(--SearchIcon);
+	border-radius: 10px;
+}*/
+
+/* Handle on hover 
+.rf_cabledesigner_main_page .table_wrap::-webkit-scrollbar-thumb:hover {
+	background: var(--SearchIcon);
+} */
+
+.rf_cabledesigner_main_page .check-box-same-as-one {
+	margin-bottom: 30px;
+	display: none;
+}
+.rf_cabledesigner_main_page .connectror2-detail-cls .check-box-same-as-one {
+ display: block;
+}
+
+.rf_cabledesigner_main_page .reset_click {
+	cursor: pointer;
+}
+
+.rf_cabledesigner_main_page .check_product_result .modal-dialog {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.rf_cabledesigner_main_page .check_product_result .modal-header{
+	padding:37px 24px 26px 22px;
+	line-height: var(--lineHeight1and483);
+}
+
+.rf_cabledesigner_main_page .check_product_result .modal-content {
+	margin: 0;
+	height: auto;
+	max-width: 749px;
+	line-height: var(--lineHeight1and483);
+	font-size: var(--fontSize31);
+}
+
+.rf_cabledesigner_main_page .check_product_result .modal-body {
+	text-align: center;
+	padding: 29px 100px;
+	line-height: var(--lineHeight1and483);
+}
+
+.rf_cabledesigner_main_page .check_product_result .modal-body p {
+	line-height: var(--lineHeight1and483);
+	margin: 0;
+}
+
+.rf_cabledesigner_main_page .check_product_result .modal-footer {
+	border: 0;
+	background-color: var(--secondaryBtnHover);
+	padding: 18px 37px 16px 37px
+}
+
+.rf_cabledesigner_main_page .check_product_result .continue_btn {
+	font-size: var(--fontSize14);
+	width: 121px;
+	padding: 11px 14px;
+}
+
+.rf_cabledesigner_main_page #filter_selection .card.active_card .card-body-wrap {
+	display: block;
+}
+
+.rf_cabledesigner_main_page .active_connector_cable .select_type,
+.rf_cabledesigner_main_page .active_connector_cable .filter-area-cls,
+.rf_cabledesigner_main_page .active_connector_cable .search_whole_wrap .search_wrap {
+	display: none !important;
+}
+
+.rf_cabledesigner_main_page .active_connector_cable .selected_part_section {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.rf_cabledesigner_main_page .active_connector_cable .card-body {
+	padding-top: 0;
+}
+.rf_cabledesigner_main_page .icon_popup{
+position: absolute;
+display: none;
+padding: 20px;
+    background: #fff;
+    max-width: 500px;
+    max-height: 500px;
+    overflow: auto;
+    text-align: center;
+	border: 3px solid #000;
+    border-radius: 10px;
+	min-width: 300px;
+  /* transition:transform 2s cubic-bezier(.02,1.23,.79,1.08); */
+}
+.rf_cabledesigner_main_page .icon_popup img{
+	vertical-align: middle;
+    max-width: 100%;
+}
+.rf_cabledesigner_main_page .check_product_result[data-class="not-found-dom"] .modal-body{
+	text-align: left;
+	font-size: var(--fontSize20);
+	padding: 20px 50px;
+}
+.rf_cabledesigner_main_page .check_product_result[data-class="not-found-dom"] ul{
+	margin-top: 5px;
+}
+.rf_cabledesigner_main_page .check_product_result[data-class="not-found-dom"] ul li {
+	list-style-type: disc;
+}
+
+.rf_cabledesigner_main_page .card.assembly-cls {
+	order: 3
+}
+.rf_cabledesigner_main_page .connectror2-detail-cls {
+	order: 2
+}
+
+.rf_cabledesigner_main_page .check_product_result[data-class="creat_cableassembly"] .modal-title {
+	font-size: var(--fontSize31);
+}
+.rf_cabledesigner_main_page .check_product_result[data-class="no-results-dom"] .modal-body {
+	text-align: left;
+}
+/* custom css */
+.search_list_wrap {
+	padding-right: 4px;
+	padding-top: 4px;
+}
+
+.search_list {
+	overflow-y: auto;
+	height: 225px;
+}
+
+/*.search_list::-webkit-scrollbar {
+	width: 3px;
+}
+
+.search_list::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+}*/
+
+/*::-webkit-scrollbar-track {
+	background: transparent;
+}*/
+
+.bd-example-modal-lg .modal-dialog {
+	display: table;
+	position: relative;
+	margin: 0 auto;
+	top: calc(50% - 24px);
+}
+
+.bd-example-modal-lg .modal-dialog .modal-content {
+	background-color: transparent;
+	border: none;
+}
+
+.disable-list .item-selected {
+	font-weight: var(--fontWeightBold);
+	color: var(--secondaryBlack);
+}
+
+.each-itemdisabled-cls {
+	color: var(--quickLinksBorder);
+	pointer-events: none;
+}
+
+.icon_detail p {
+	line-height: var(--baseLineHeight);
+	margin-block: 0;
+}
+
+.spinner-wrapper {
+	width: 48px
+}
+
+.collapseFour .select_container .input_field {
+	width: 133px;
+	height: 44px;
+	padding: 10px;
+}
+
+.collapseFour .select_container .input_field:disabled {
+	background-color: var(--btnDisabledLight);
+}
+
+.collapseFour .select_container label {
+	display: block;
+}
+
+.collapseFour .question_icon {
+	font-size: 14px;
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+	cursor: pointer;
+}
+
+.collapseFour .check-box-0 .question_icon {
+	display: none;
+}
+
+.rec-spinner-wrapper {
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.rf_cabledesigner_main_page .invisible{
+ display: none;
+}
+/* custom css ends here */
+
+/* custom modal */
+.modalCls {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.4rem;
+	width: 100%;
+	padding: 1.3rem;
+	min-height: 50px;
+	position: fixed;
+	z-index: 10000;
+	top: calc(50% - 24px);	
+	background-color: transparent;	
+	border-radius: 15px;
+  }
+  
+  .modalCls .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .modalCls .fa-spinner {
+	 height: 48px;
+	 width: 48px;
+	 margin: auto;
+  }
+  .modalCls .spinner-wrapper{
+	margin: auto;
+  }
+  .modalCls p {
+	font-size: 0.9rem;
+	color: #777;
+	margin: 0.4rem 0 0.2rem;
+  }
+  .overlayCls {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);	
+	z-index: 9999;
+  }
+  
+  .hiddenCls {
+	display: none;
+  }
+
+  .modal {
+  	position: fixed;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	z-index: 1050;
+  	display: none;
+  	overflow: hidden;
+  	outline: 0;
+  	background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* tooltip */
+  .assembly-btn .assembly-tooltip{
+	visibility: hidden;
+	width: 310px;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 12px 8px 12px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 110%;
+    left: 24%;
+    margin-left: -60px 
+  }
+  .assembly-btn .assembly-tooltip::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent; 
+  }
+  
+  .assembly-btn .disabled:hover .assembly-tooltip {
+	visibility: visible;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+	.assembly-btn .assembly-tooltip{
+		width:90%;
+	}
+  }

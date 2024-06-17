@@ -1,0 +1,97 @@
+.bannerforcontact{
+    width: 100%;
+     margin: 0 auto;
+ }
+ .contactbanner-container {
+     max-width: 100%;
+     margin: 0 auto;
+ }
+ .contact-banner-text{
+     width:100%;  
+ }
+ 
+ #contactBanner .cnt-banner-title {
+     font-size: var(--fontSize45);
+     line-height: var(--baseLineHeight);
+     font-weight: var(--fontWeightSmall);
+     margin: 0 auto;
+     font-family: var(--fontFamily);
+ }
+ .technical_article_desc {
+     font-size: var(--fontSize22);
+     line-height:var(--baseLineHeight);
+     font-weight: var(--fontWeightSmall);
+ }
+  
+ #sameday-shipping-container .cmp-text p,
+ #qualitypolicy .cmp-text p {
+     font-weight:var(--fontWeightNormal);
+     text-align: left;
+     padding-left: 127px;
+ }
+ #qualitypolicy div div:nth-of-type(2) .cmp-text:nth-of-type(1) {
+     margin-top:50px;
+}
+  #sameday-shipping-container .cmp-text p{
+    font-weight: var(--fontWeightSmall);
+  }
+ #qualitypolicy {
+     width: 1280px;
+     margin: 0 auto;
+ }
+ @media screen and (min-width:1025px) {
+     #contactBanner .cnt-banner-img img {
+         height: 190px;
+     }
+ }
+ @media screen and (min-width:769px) and (max-width:1024px) {
+     #contactBanner .cnt-banner-img img {
+         height: 199px;
+         object-fit: cover;
+     }
+ }
+ @media screen and (max-width:768px) {
+     #contactBanner .cnt-banner-img img {
+         height: 122px;
+         object-fit: cover;
+     }
+     #contactBanner .cnt-banner-title {
+         font-size: var(--fontSize20);
+     }
+     #sameday-shipping-container .cmp-text p{
+        padding-left: 18px;
+        margin-right: 20px;
+    }
+ }
+ @media only screen and (max-width:576px) {
+     .cmp-teaser__content {
+         left: 50%;
+         font-size: var(--fontSize12);
+         width: 100%;
+     }
+     .cmp-teaser__description p {
+         margin: 0;
+         line-height: var(--baseLineHeight);
+     } 
+ }
+ #tool_resources_banner.fm-container, #industrial_autiomation_banner.fm-container{ padding-right: 0;}
+ 
+ @media screen and (min-width: 883px){
+     #qualitypolicy .bannerforcontact > .contactbanner-container {
+         max-width: inherit;
+         height: 190px;
+         position: absolute;
+         width: 100%;
+         left: 0; 
+     }
+     #qualitypolicy .bannerforcontact {
+         height: 190px;
+     }
+ }
+ 
+ @media screen and (min-width: 820px) and (max-width:1180px){
+    #sameday-shipping-container .cmp-text p{
+        padding-left: 18px;
+        margin-right: 20px;
+    }
+}

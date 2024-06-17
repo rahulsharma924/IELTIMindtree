@@ -1,0 +1,22 @@
+# ignoring internal and reserved paths
+
+SecRule REQUEST_URI "@beginsWith /systemready" \
+	"id:1010,\
+	phase:1,\
+	pass,\
+	nolog,\
+	ctl:ruleEngine=Off"	
+
+SecRule REQUEST_URI "@beginsWith /system/probes" \
+	"id:1011,\
+	phase:1,\
+	pass,\
+	nolog,\
+	ctl:ruleEngine=Off"
+
+SecRule REQUEST_URI "@beginsWith /gitinit-status" \
+	"id:1012,\
+	phase:1,\
+	pass,\
+	nolog,\
+	ctl:ruleEngine=Off"

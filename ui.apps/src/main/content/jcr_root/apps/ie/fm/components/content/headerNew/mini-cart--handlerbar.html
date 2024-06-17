@@ -1,0 +1,87 @@
+<div class="mini--cart d-none">
+  {{#each lineItems}}
+  <div class="row cartItem minicart__listitems mb-3 mt-2 mt-lg-3 analytics-minicart-listitems">
+    <div class="col-lg-2 d-none d-lg-block pr-0 minicart__image">
+        <span class="itemImg img-fluid">
+         {{imgURL assets seoName variant.sku custom "img-fluid"}}
+        </span>
+    </div>
+    <div class="col-lg-10 mb-3 mb-lg-0">
+      <div class="row">
+        <div class="col-lg-12 itemDescription minicart__title analytics-prod-minicart"
+             data-analytics-prod-detail="{{bestSellerRank}}@@{{color}}@@{{length}}@@{{returnCategory category}}@@{{startingPrice}}">
+          <p class="mt-0">
+            {{seoUrl categorySEOURL seoName variant.sku
+            custom.fields.masterSku name false}}
+          </p>
+        </div>
+      </div>
+      <div class="row align-baseline">
+        <div class="col-lg-6">
+          <div class="itemDetails fontweight-bold">
+            <span>SKU: </span
+            ><span class="minicart__sku"
+              >{{skuVarient variant.sku custom slug}}</span
+            >
+          </div>
+          {{#if color}}
+          <div class="itemDetails">
+            <span>Color:</span><span class="minicart__color">{{color}}</span>
+          </div>
+          {{/if}} {{#if length}}
+          <div class="itemDetails">
+            <span>Length:</span><span class="minicart__length">{{length}}</span>
+          </div>
+          {{/if}}
+        </div>
+
+        <div
+          class="col-lg-3 col-4 col-sm-3 col-md-3 ml-lg-0 ml-md-3 ml-3 mt-2 count-inlineflex product-count"
+        >
+          <div class="minicart__minus">-</div>
+          <input
+            type="number"
+            name="quantity"
+            value="{{quantity}}"
+            min="1"
+            max="99999"
+            class="Itemqty minicart__qty"
+            oninput="validity.valid||(value='')"
+          />
+          <div class="minicart__plus">+</div>
+        </div>
+        <div class="col-lg-3 col-6 text-lg-right text-left mt-2 cart-pl-5">
+          <p class="itemMultiPrice mt-0">
+            <i class="fa fa-times multiply-icon" aria-hidden="true"></i>
+            $<span class="minicart__price"
+              >{{#if price.value}}{{priceFormate price.value}}{{else}}
+              {{priceFormate money}}{{/if}}</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="row mt-3 align-items-center">
+        <div class="col-lg-6 col-6">
+          <a
+            href="javascript:void(0)"
+            class="removeItemLink minicart__remove--item"
+            onclick="removeItemFromCart(this)"
+            aria-label="Remove item from the cart"
+            data-lineitem-id="{{id}}"
+            data-analyticprod="{{skuVarient variant.sku custom slug}}@@{{#each name}} {{this}}{{/each}}@@{{id}}@@{{#if price.value}}{{priceFormate price.value}}{{else}}{{priceFormate money}} {{/if}}@@{{#if productType}}{{productType.id}}{{else}}{{custom.type.id}}{{/if}}@@{{quantity}}"
+            data-analyticslug="{{slug}}"
+            data-isitemcustom="{{customValue variant.sku}}"
+          >
+            Remove
+          </a>
+        </div>
+        <div class="col-lg-6 col-6 text-right itemPrice mt-1">
+          $<span class="minicart__sub--totlaprice"
+            >{{priceFormate totalPrice}}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

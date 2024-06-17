@@ -1,0 +1,52 @@
+.special-title {
+	padding: 0;
+	margin: 0;
+}
+.special-title .checkout-special-title {
+	font-weight: var(--fontWeightNormal);
+	font-size: var(--baseFontSize);
+	line-height: var(--lineHeight1and35);
+	color: var(--IScarrouselDecClr);
+	text-align: left;
+}
+.special-desc p {
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize14);
+	line-height: var(--baseLineHeight);
+	margin: 0;
+	color: var(--newsDateColor);
+}
+.special-desc {
+	max-width: 318px;
+	width: 100%;
+	border: 1px solid var(--SearchIcon);
+	border-radius: 4px;
+	padding: 12px;
+	background: var(--secondaryColor);
+	height: 95px;
+}
+.special-instructions {
+	padding: 0;
+	max-width: 1280px;
+	margin: 20px 0;
+}
+.special-desc :active, .special-desc:focus-visible {
+	border: 2px solid var(--blueColorLight);
+	border-radius: 4px;
+	outline-color: var(--blueColorLight);
+}
+@media only screen and (max-width:833px) {
+	.special-desc {
+		width: 100%;
+	}
+	.special-instructions {
+		display: flex;
+		flex-direction: column;
+		margin: 50px 0;
+	}
+	.special-desc {
+		max-width: 100%;
+		width: 100%;
+		height: 95px;
+	}
+}

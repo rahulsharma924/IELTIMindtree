@@ -1,0 +1,14 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='industry-ph-clientlib'}" />
+  <div class="industryblocks">
+      <div class="industry-ph-image"><img alt="sectionImage" src="${properties.sectionimg}" loading="lazy" width="50" height="500" /></div>
+      <div class="industry-content-block">
+         <!--<h6 class="industry-ph-secheadertext">${properties.sectionheadertext }</h6>-->
+         <div class="industry-ph-sectext industry-ph-showmore">${properties.sectiontextarea  @context='html'}</div>
+         <div id="industry-ph-showDiv">
+            <span id="industry-ph-btntoggle">Show More</span>
+         </div>
+      </div>
+   </div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='industry-ph-clientlib'}" />

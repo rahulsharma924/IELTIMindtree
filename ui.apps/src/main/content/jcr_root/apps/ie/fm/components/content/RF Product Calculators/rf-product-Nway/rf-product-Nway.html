@@ -1,0 +1,77 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+
+		<div class="form-block-cls">
+			<div>
+				<h3>${properties.Nwaycalculationtitle}</h3>
+			</div>
+			<div class="row top-block-cls mt-4 ">
+				<div class="col-lg-4 col-md-6">
+					<label class="general-cls">${properties.NumberofPortslabel}</label>
+					<select id="option" class="input">
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+					</select> <span class="error ErrorText"></span>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<label for="input" class="general-cls">${properties.pathlosslabel}</label>
+					<input id="input" class="input" type="text" value="${properties.pathlossPlacehoder}" onblur="blurFn(this)"
+						onfocus="focusFn(this)"> <span class="error ErrorText"></span>
+				</div>
+
+				<div class="col-lg-4 col-md-12 dt-mt-rem-dual">
+					<button id="go" class="ie-primary-btn" type="button"
+						onclick="generalClickFnNway()" value="Calculate">
+						${properties.pathlosscalculatebtntitle}
+					</button>
+					<p class="calculate-error-cls"><span class="error ErrorText"></span><span id="errormsg"
+							class="error ErrorText"></span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 offset-lg-8 col-md-12 calculator-results">
+					<p>${properties.nwayresultlabel}</p>
+					<div class="result_container results-calc">
+						<div class="result">
+						<span class="resultlabeltitle1"> ${properties.nwayresultlabeltitle1} </span>
+							<span id="tl" class="output"></span></div>
+					</div>
+					<div id="button_cont"><input class="related_search" type="button"
+							value="${properties.nwayfindrelatedprdTitle}" style="display:none"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

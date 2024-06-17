@@ -1,0 +1,243 @@
+/*************************************************************************
+ * ADOBE CONFIDENTIAL
+ * ___________________
+ * 
+ *  Copyright 2017 Adobe
+ *  All Rights Reserved.
+ * 
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe and its suppliers, if any. The intellectual
+ * and technical concepts contained herein are proprietary to Adobe
+ * and its suppliers and are protected by all applicable intellectual
+ * property laws, including trade secret and copyright laws.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe.
+ *************************************************************************/
+ 
+@editor-min-height: 12.75rem;
+@fullscreen-editor-width: 100%;
+
+.cfm-multieditor-richtext-editor {
+    min-height: @editor-min-height;
+}
+
+.cfm-multieditor-richtext-editor i {
+    font-style: italic;
+}
+
+.cfm-multieditor-richtext-editor b {
+    font-weight: bold;
+}
+
+/* "skin" settings */
+.cfm-multieditor-richtext-skin {
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #323232;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 .1875rem #326ec8;
+        border: .0625rem solid #326ec8;
+    }
+}
+
+/* "dialog mode": set skin on editor div directly */
+.cfm-multieditor-richtext-container > .cfm-multieditor-richtext-editor {
+    .cfm-multieditor-richtext-skin;
+    border: .0625rem solid;
+    border-radius: 0;
+    padding: .625rem;
+    border-color: #d0d0d0;
+}
+
+.cfm-multieditor-richtext-container > .cfm-multieditor-richtext-editor.is-invalid,
+.cfm-multieditor-richtext-container > .cfm-multieditor-richtext-editor.is-invalid:focus,
+.cfm-multieditor-richtext-container > .cfm-multieditor-richtext-editor.is-invalid:hover {
+    border-color: #d7373f;
+    padding-right: 41px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: calc(~"100% - "12px) 6px;
+}
+
+/* full screen: make wrapper scrollable + set skin */
+.cfm-multieditor-fullscreen-richtext-editor-wrapper {
+    overflow: auto;
+    .cfm-multieditor-richtext-skin;
+    padding: .625rem 3rem;
+}
+
+.cfm-container, .cfm-multieditor-toolbar-parent {
+    overflow: auto;
+    .rte-toolbar {
+        background-color: transparent;
+        position: relative;
+        box-shadow: none;
+    }
+    .coral-RichText, .rte-sourceEditor {
+        width: 100%;
+        overflow-y: auto;
+    }
+}
+
+.cfm-multieditor-textarea, .cfm-multieditor-richtext-editor {
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.cfm-multieditor-textarea {
+    font-size: 18px;
+}
+
+.cfm-multieditor-richtext-editor {
+    font-size: 16px;
+}
+
+.cfm-multieditor-fullscreen {
+    overflow-y: hidden;
+
+    .cfm-multieditor-richtext-container:extend(.cfm-container) {
+        width: @fullscreen-editor-width;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .cfm-multieditor-markdown-container, .cfm-multieditor-plaintext-container {
+        height: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .cfm-multieditor-fullscreen-content {
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .cfm-multieditor-fullscreen-richtext-editor-wrapper {
+        height: calc(~"100% - 3rem");
+    }
+
+    .cfm-multieditor-textarea {
+        width: @fullscreen-editor-width;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        display: block;
+        resize: none;
+        border: none;
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .cfm-multieditor-formatswitcher coral-selectlist {
+        // overwrite wrong font size coming from dialog header
+        font-size: .8125rem;
+    }
+
+    // @coral selectors are touching internals
+    // Justification: else coral-select overlay placed in the dialog title would be truncated CORAL-146
+    .coral3-Dialog-title {
+        overflow: visible;
+    }
+
+    /*
+        @coral selectors are touching internals
+        Justification: else RTE placed in the fullscreen dialog would not be scrollable
+
+        using internal styles (which is wrong, but necessary);
+        alternative solution: see end of file (still depends on Coral internals, so
+        IMHO this solution is still better)
+     */
+    .coral3-Dialog-wrapper {
+        height: 100%;
+    }
+
+    coral-dialog-header coral-actionbar {
+        // move action bar to vertical center of the dialog header (value is calculated as difference of heights of
+        // action bar and dialog header divided by two)
+        margin-top: 0.625rem;
+
+        coral-actionbar-primary coral-actionbar-item {
+            // overwrite wrong value coming from dialog title: set to height of action
+            // bar to align text vertically centered inside the action bar
+            line-height: 2.75rem;
+        }
+    }
+
+}
+
+.cfm-multieditor:extend(.cfm-container) {
+    .hidden {
+        display: none;
+    }
+}
+
+.cfm-multieditor .cfm-multieditor-textarea:extend(.cfm-multieditor-richtext-editor ) {
+    resize: none;
+    width: 100%;
+    min-height: @editor-min-height;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.cfm-multieditor-textstats-col-left {
+    display: inline-block;
+    width: 80%;
+}
+
+.cfm-multieditor-textstats-col-right {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+.cfm-multieditor-embedded-label {
+    margin-left: -.9375rem;
+    margin-top: 0.1rem;
+}
+
+.cfm-asset-picker {
+    z-index: 10100;
+}
+
+.cfm-coral2-backdrop {
+    z-index: 10099;
+}
+
+/* hide things that are shown in model editor, and vice versa */
+
+.cfm-modeleditor-preview {
+    display: none;
+}
+
+.cfm-modeleditor-preview-hidden {
+    display: inherit;
+}
+
+/* Selected for sync border */
+
+.cfm-multieditor-current-selected {
+    outline: none;
+    -webkit-box-shadow: 0 0 .1875rem #326ec8;
+    box-shadow: 0 0 .1875rem #326ec8;
+    border: .0625rem solid #326ec8;
+}
+
+/*
+    Alternative solution for FSM full height; does not rely on internal Coral 3 CSS, but
+    still makes assumption on the internal structure
+ */
+/*
+coral-dialog.cfm-multieditor-fullscreen > div {
+    height: 100% !important;
+}
+*/

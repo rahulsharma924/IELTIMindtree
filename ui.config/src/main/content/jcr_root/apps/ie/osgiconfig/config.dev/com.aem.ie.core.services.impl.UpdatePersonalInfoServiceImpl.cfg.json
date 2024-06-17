@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "updatepersonalinfo":"https://apim-iedtecomm-dev01.azure-api.net/account/fairview/update",
+  "updateDomaininfo": "https://qa-dt.fairviewmicrowave.com"
+}

@@ -1,0 +1,25 @@
+.payflow__checkout__failure {
+  max-width: 430px;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.payflow__checkout__failure a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.payflow__checkout__failure .ie-primary-btn {
+  color: var(--secondaryColor);
+}
+.payflow__checkout__failure .ie-scondary-btn:hover {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .payflow__checkout__failure {
+    max-width: 90%;
+  }
+}

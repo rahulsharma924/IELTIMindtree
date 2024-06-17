@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <servlet jcr:primaryType="nt:unstructured">
+        <errorhandler jcr:primaryType="nt:unstructured">
+            <_x0034_04.html/>
+            <ResponseStatus.java/>
+        </errorhandler>
+    </servlet>
+</jcr:root>

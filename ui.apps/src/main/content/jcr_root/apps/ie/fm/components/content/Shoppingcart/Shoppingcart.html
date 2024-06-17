@@ -1,0 +1,446 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='shoppingcart'}" />
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='fm.pdp'}" />
+<div class="loader_wrapper" id="loading-indicator"><div class="loader"></div></div>
+<section class="container Shoppingcart cart_container_details shopping__cart d-none">
+    
+    <div class="row col-md-12 cart_title_details">
+        <p class="cart_heading"><a title="Continue shopping" class="ie-secondary-link" href="${properties.contshoplink}">${properties.continueshoppingtxt} </a></p>
+    </div>
+    <div class="row cart_titlewithdetails">
+        <div class="col-md-6 col-sm-6">
+            <h1 class="cart_title">
+                My Cart <span class="outside_braces">(<span class="mycart_qty">0</span>)</span>
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 col-lg-7 col-sm-7" id="cart_left_section">
+            
+            <div class="card_box shopping__cart--template" data-freight-label=${properties.freightlabeltxt}>
+                <sly data-sly-include="shopping-cart-template.html"></sly>
+            </div>
+            <div class="row card_cleartext analytic-ContinueShopping"><div class="col-md-12" id="cart_bottom_buttons">
+                    <input type="hidden" value="" id="analytic-clearcart" />
+                    <button class="clear_cart" onclick="clearCart()" id="clear_cart">                      
+                        <span id="delete_cart_icon"><i class="fa-regular fa-circle-trash font-16"></i></span>
+                        <span class="clear_span_cart ie-secondary-link">Clear Cart</span>
+                    </button>
+                    <button onclick="window.location.href ='/content/fm/en/best-selling-rf-microwave-and-millimeter-wave-products.html';" class="ie-learn-more-btn continue_shopping_button">
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/* Order Summary Menu */-->
+        <div class="col-md-5 col-lg-5 col-sm-5" id="cart-right">
+            <div class="col-md-12 col-sm-12 right_align_sub analytic-MyCartSection">
+                <p class="right_text">
+                    <span class="right_text_email" data-toggle="modal" data-target="#emailpopup">Email</span>
+                    <span class="right_text_rfq" data-toggle="modal" data-target="#rfqModal">RFQ</span>
+                    <span onclick="window.print()" class="right_text_print analytic-MyCartSection-print">Print</span>
+                </p>
+            </div>
+            <div class="right_side_content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="order_summary_title">Order summary</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                        <p class="cart_order_summary_left">Items</p>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                        <p class="cart_order_summary_right" id="subtotal">$0.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                        <p class="cart_order_summary_left">Total before tax</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                        <p id="totalBeforeTax" class="cart_order_summary_right">$0.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                        <p class="cart_order_summary_left">Estimated tax to be collected</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                        <p class="cart_order_summary_right" id="estimatedTaxToBeCollected">$0.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-12">
+                        <p class="cart_order_summary_left italic_font">
+                             ${properties.zipcodeLabel}
+                        </p>
+                    </div>
+                </div>
+                <div class="row select_inputs">
+                    <div class="col-md-12 col-lg-6 pr-lg-0">
+                        <div class="form-group">
+                            <select class="form-control" id="select_box_country" onchange="disableSCZipTick()">
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 mobile-padding-none">
+                        <div class="form-group">
+                            <input disabled type="text" id="postal_code_input" class="form-control" placeholder="Postal Code" oninput="checkSCZipCode()" />
+                            <button type="button" class="postal_code_check_mark" id="check_active_class" onclick="getSCShipHandDateTax()"><i class="fa-regular fa-check"></i></button>
+                        </div>
+                        <p class="postal_code_error">Please provide valid postal code</p>
+                    </div>
+                </div>
+                <div class="row cart__loader d-none">
+                    <div class="col-md-12 col-lg-12 pr-lg-0">
+                      <div class="loader"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 warning_msgs d-none">
+                        <i class="fa-regular fa-triangle-exclamation"  id="warning_icon"></i>
+
+                        <p id="errorMsgForOrderSummary" class="error-msg-order-summary">
+                            The estimated costs and delivery date are not known for this zip code and/or products selected. You may
+
+                            <a href="/content/fm/en/contact-us.html">contact us</a>
+
+                            if you'd like more information about these details.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                        <p class="cart_order_summary_left">Estimated shipping & handling</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                        <p class="cart_order_summary_right" id="estShipHandCost">Unknown</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                        <p class="cart_order_summary_left">Estimated shipment</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                        <p class="cart_order_summary_right" id="estDelDate">Unknown</p>
+                    </div>
+                </div>
+                <hr class="between_line" />
+                <div class="row">
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                        <p class="cart_order_summary_left" id="estimated_total">
+                            Estimated total
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                        <p class="cart_order_summary_right" id="total_amount"></p>
+                    </div>
+                </div>
+                <div class="row proceed_button">
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <a class="btn-block ie-primary-btn proceed_checkout_button analyticscheckoutbutton" href="/content/fm/en/shipping-information.html" target="_parent">
+                            
+                                Proceed to Checkout
+                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div id="cart_recommnded_section">
+    <article data-sly-resource="${'recommended-product' @ resourceType='/apps/ie/fm/components/content/recommended-products'}"></article>
+ </div>
+    <!-- The Modal -->
+    <!--/* <div class="modal fade" id="emailpopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title filter-text" id="exampleModalLongTitle">${properties.emailtitle}</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-filter scroll-box">
+                        <div class="row-data">
+                            <div class="_d-flex-zipcode input_fields_wrap email__validation">
+                                <div class="select-estimate" id="new_chq">
+                                    <label class="label-text" for="email">${properties.emailinputtitle}</label>
+                                    <form action="#" class="eocform" id="eocform">
+                                        <div class="input-box">
+                                            <input type="text" name="email" class="email" id="email" placeholder="" onchange="validation(this)" />
+                                            <span class="errormsg" id="text"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 addanother_receipent_bottom_buttons" id="addanother_receipent_bottom_buttons">
+                                <button class="addanother_receipent_button add_field_button" id="anorbtn" >${properties.addanotherrecipient}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="modal-footer analyticemailcart">
+					<button type="button" class="btn btn-secondaryfooter-btn-clear eoccancel-mt" id="eoccancelbutton" data-dismiss="modal">${properties.emailcancelbtn}</button>
+					<button type="button" class="btn ie-primary-btn footer-btn-apply send-btn-enabled" id="eocsendbtn" data-dismiss="modal" disabled>${properties.emailsentbtn}</button>
+				</div>
+            </div>
+        </div>
+        
+    </div> */-->
+    <!-- new modal -->
+<div class="modal fade" id="emailpopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="emailmodal-dialog modal-dialog modal-dialog-centered" role="document">
+    <div class="emailmodal-content modal-content">
+        <div class="emailmodal-header modal-header">
+            <h2 class="emailmodal-title filter-text modal-title" id="exampleModalLongTitle">${properties.emailtitle}</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+        </div>
+        <div class="emailmodal-body modal-body">
+            <div class="email-address-block modal-body-filter">
+                <label class="label-text" for="email" id="emailNotification">${properties.emailinputtitle}</label>
+                <input type="email" class="email" id="email" aria-describedby="emailNotification" value="" placeholder="" onkeyup="anorenableBtn(this)" />
+                <i class="fa-light fa-check d-none"></i> 
+                <p class="ie-error-medium errormsg" id="errormsg"></p>
+            </div>
+            <div id="anor-emailmodal-body"></div>
+
+            <button class="addanother_receipent_button add_field_button" id="anorbtn">
+                ${properties.addanotherrecipient}
+            </button>
+        </div>
+        <div class="emailmodal-footer modal-footer analyticemailcart">
+            <button type="button" class="btn btn-secondaryfooter-btn-clear eoccancel-mt" id="eoccancelbutton" data-dismiss="modal">${properties.emailcancelbtn}</button>
+            <button type="button" class="btn ie-primary-btn footer-btn-apply send-btn-enabled" id="eocsendbtn" disabled>${properties.emailsentbtn}</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- new modal ends here -->
+	<div class="modal" id="confirmationmsg" data-backdrop="static">
+	    <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div><i class="fa-solid fa-circle-check confirmationmsg-image"></i></div>
+                    <div class="modal-title">${properties.emailsenttitle}</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for RFQ -->
+<div class="modal fade rfqModal" id="rfqModal" tabindex="-1" role="dialog" aria-labelledby="RFQ-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered rfqModal-dialog" role="document">
+        <div class="modal-content rfqModal-content" id="RFQ-modal">
+            <div class="modal-header rfqModal-header">
+                <h5 class="modal-title rfqModal-title" id="rfqModal-title">${properties.rfqHeading}</h5>
+                <button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa-thin fa-xmark" data-dismiss="modal"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body rfqModal-body">
+                    <div class="form-details-rfq">
+                        <div class="personal-details-rfq">
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="firstName-rfq">${properties.firstName}</label>
+                                    <input type="text" class="form-control" placeholder="" id="firstName-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "firstName-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                                <div class="col">
+                                    <label for="lastName-rfq">${properties.lastName}</label>
+                                    <input type="text" class="form-control" placeholder="" id="lastName-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "lastName-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="company-rfq">${properties.rfqCompanyName}</label>
+                                    <input type="text" class="form-control" placeholder="" id="company-rfq">
+                                    <p id = "company-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                                <div class="col">
+                                    <label for="jobTitle-rfq">${properties.jobTitle}</label>
+                                    <input type="text" class="form-control" placeholder="" id="jobTitle-rfq">
+                                    <p id = "jobTitle-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="email-rfq">${properties.email}</label>
+                                    <input type="text" class="form-control" placeholder="" id="email-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "email-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                                <div class="col">
+                                    <label for="contact-rfq">${properties.phoneNum}</label>
+                                    <input type="text" class="form-control" placeholder="" id="contact-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "contact-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shipping-details-rfq">
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="shippingAdd-rfq">${properties.shippingAddOne}</label>
+                                    <input type="text" class="form-control" placeholder="" id="shippingAdd-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "shippingAdd-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                                <div class="col">
+                                    <label for="shippingAdd2-rfq">${properties.shippingAddTwo}</label>
+                                    <input type="text" class="form-control" placeholder="" id="shippingAdd2-rfq">
+                                    <p id = "shippingAdd2-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="country-rfq">${properties.country}</label>
+                                        <div class="country-dropdown">
+                                            <select class="form-control custom-select" id="country-rfq" name="country-rfq" onkeyup="manageEnableBtn(this)" required>
+                                                <option value="" selected="selected">Select</option>
+                                            </select>
+                                            <p id = "country-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                    <label for="city-rfq">${properties.city}</label>
+                                    <input type="text" class="form-control" placeholder="" id="city-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "city-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="state-rfq">${properties.state}</label>
+                                        <div class="state-dropdown">
+                                            <select class="form-control custom-select" id="state-rfq" name="state-rfq" onkeyup="manageEnableBtn(this)" required>
+                                                <option value="" selected="selected">Select</option> 
+                                            </select>
+                                            <p id = "state-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                    <label for="zipcode-rfq">${properties.zipcode}</label>
+                                    <input type="text" class="form-control" placeholder="" id="zipcode-rfq" required onkeyup="manageEnableBtn(this)">
+                                    <p id = "zipcode-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                    <p id = "zipcodelength-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/* desktop view for order table */-->
+                    <div class="product-details-table-rfq">
+                        <div class="email-order-cal-table-rfq">                           
+                            <div class="row col-12 order-cal-table-rfq-head grey-border-b">
+                                <p class="col-6 mob-100" ><strong>${properties.product}</strong></p>
+                                <p class="col-2 mob-none" ><strong>${properties.quantity}</strong></p>
+                                <p class="col-2 mob-none" ><strong>${properties.price}</strong></p>
+                                <p class="col-2 mob-none" ><strong>${properties.subtotal}</strong></p>
+                            </div>
+                            <div class="popItem_wrapper">
+                                <div class="data__fillup"></div>
+                                <div class="row col-12 order-cal-table-rfq-body grey-border-b d-none">
+                                    <div class="col-6 d-flex mob-100">
+                                        <div class="col-3 productImg-wrapper">
+                                            <img class="order-cal-table-productImg-rfq" src="/content/dam/fm/product-images/product-img.png" alt="product-image"/>
+                                        </div>
+                                        <div class="col-9 product-content-wrapper">    
+                                            <p class="varient_name"></p>
+                                            <div class="product-specs">
+                                                <p class="varient_sku"></p>
+                                            </div>
+                                                
+                                        </div> 
+                                    </div>
+                                    <div class="col-2 mob-100"><p class="mob-block"><strong>${properties.quantity}:</strong></p><p class="pop_quantity"></p></div>
+                                    <div class="col-2 mob-100"><p class="mob-block"><strong>${properties.price}:</strong></p><p class="pop_price"></p></div>
+                                    <div class="col-2 mob-100"><p class="mob-block"><strong>${properties.subtotal}:</strong></p><p class="pop_total"></p></div>
+                                </div>
+                                <div class="total-cal-rfq">
+                                    <ul>
+                                            <li>
+                                                <p class="col-6 subtotal_right">
+                                                    <strong>Subtotal: </strong>
+                                                </p>
+
+                                                <p class="col-6">
+                                                    $<span class="pop_totalprice"> 00.00 </span>
+                                                </p>  
+                                            </li>
+
+                                            <li class="d-none">
+                                                <p class="col-6 tariff_charge">
+                                                    <strong>Tariff surcharge: </strong>
+                                                </p>
+
+                                                <p class="col-6"> 
+                                                    $<span> 00.00 </span>
+                                                </p>  
+                                            </li>
+                                        </ul>
+                                </div>
+							
+                            </div>
+                        </div>
+                        <div class="note-rfq">
+                            <div class="note-wrap d-flex">
+                                <div class="note-content-rfq">
+                                    <h3 class="note-tiltle-rfq"><i class="fa-solid fa-circle-exclamation"></i>${properties.noteHeading}</h3>
+                                    <p class="note-description-rfq">${properties.noteDescription}</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+					<input type="hidden" value="${properties.toemail}" id="iesalesemaiid"/>
+                    <!--/* recapcha */-->
+                    <div class="recapcha-rfq">
+                        <p>${properties.recapchaDescription}</p>
+                        <sly data-sly-resource="${resource @ resourceType='/apps/ie/fm/components/content/account/recaptcha'}"></sly>
+                    </div>
+                </div>
+                <div class="modal-footer rfqModal-footer">
+                    <button type="button" class="btn rfqModal-close-btn ie-scondary-btn" data-dismiss="modal">${properties.cancelCTA}</button>
+                    <button type="button" class="btn rfqModal-save-btn ie-primary-btn" disabled id="rfqsubmit">${properties.submitCTA}</button>
+                </div>
+            </form>    
+        </div>
+    </div>
+</div>
+
+<!-- Modal for RFQ on Save -->
+<div class="modal fade rfqModal-confirmation" id="rfqSaveModal" tabindex="-1" role="dialog" aria-labelledby="RFQ-modalSave" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rfqModal-confirmation-content">
+            <div class="modal-header rfqModal-confirmation-header" id="RFQ-modalSave">
+                <h3 class="modal-title rfqModal-title rfqModal-request-confirm-title" id="rfqModal-request-confirm-title">${properties.confirmMsgheading}</h3>
+                <button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa-thin fa-xmark" data-dismiss="modal"></i>
+                </button>
+            </div>
+            <div class="modal-body rfqModal-confirmation-body">
+                ${properties.confirmmsgdescription @ context="html"}
+            </div>
+            <div class="modal-footer rfqModal-confirmation-footer">
+                <button type="button" class="rfqModal-close-link ie-primary-btn" data-dismiss="modal">${properties.continueCTA}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='shoppingcart'}" />

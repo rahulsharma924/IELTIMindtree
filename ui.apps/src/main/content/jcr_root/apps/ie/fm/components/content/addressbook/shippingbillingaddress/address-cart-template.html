@@ -1,0 +1,47 @@
+<div class="address__cart--template d-none">
+  <div class="card-grid-address" data-card-number="{{index}}">
+    <div
+      class="card-title"
+      id="address-id"
+      data-id="{{id}}"
+      data-address-type="{{addressType}}"
+      data-first-name="{{firstName}}"
+      data-last-name="{{lastName}}"
+      data-country="{{country}}"
+      data-state="{{state}}"
+      data-city="{{city}}"
+      data-address-one="{{streetName}}"
+      data-address-two="{{streetNumber}}"
+      data-zip-code="{{postalCode}}"
+      data-phone="{{phone}}"
+      data-company-name="{{company}}"
+    >
+      <div class="card-title-name">{{firstName}} {{lastName}}</div>
+      {{#if defaultText}}
+      <div class="default-text">Default</div>
+      {{/if}}
+    </div>
+    <div
+      class="busniess-name"
+      id="address-companyName"
+    >
+    {{#if (isNotNA company)}}
+      {{company}}
+    {{/if}}  
+    </div>
+    <div class="busniess-address">
+      {{streetNumber}} <br />
+      {{#if (isNotNA streetName)}}
+        {{streetName}} <br />
+      {{/if}}
+      {{#if (isNotNA state)}}
+        {{city}}, {{state}} {{postalCode}}<br />
+      {{else}}
+        {{city}}, {{postalCode}}<br />
+      {{/if}}
+      {{countryName}} <br />
+      {{isCountryUSA countryName phone}}
+    </div>
+    <div class="edit-info"><a href="javascript:void(0)">Edit</a></div>
+  </div>
+</div>

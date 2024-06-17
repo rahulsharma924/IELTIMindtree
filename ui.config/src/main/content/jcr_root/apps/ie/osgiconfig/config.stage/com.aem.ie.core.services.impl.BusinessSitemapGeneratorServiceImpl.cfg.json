@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "xmlPath":"/content/fm/sitemap_business.xml",
+  "businessPagesRootPaths":["/content/fm/en","/content/fm/en/homepage", "/content/fm/en/policies","/content/fm/en/about-us","/content/fm/en/industries","/content/fm/en/tools-resources","/content/fm/en/resources","/content/fm/en/same-day-shipping","/content/fm/en/quality-policy","/content/fm/en/support","/content/fm/en/contact-us","/content/fm/en/contact-us","/content/fm/en/the-rf-cable-designer","/content/fm/en/tools-resources/rf-calculators-and-convertors","/content/fm/en/tools-resources/faq"]
+}

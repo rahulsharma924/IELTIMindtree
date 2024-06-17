@@ -1,0 +1,34 @@
+.software_block {
+    text-align: center;
+    width: 1016px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.sd-text p:first-child{
+	margin-bottom: 0;
+}
+.sd-text p:nth-child(2){
+	margin-bottom: 0;
+}
+
+.sd-title {
+	margin: 40px 0 30px;
+	text-align: center;
+}
+.sd-text{
+	padding: 0 25px;
+}
+.sd-text p{
+	margin:0 0 30px;
+	color: var(--secondaryBlack);
+}
+@media screen and (max-width:1024px){
+	.software_block {
+		padding: 0 20px;
+		width:100%;
+	}
+	.sd-title{
+		font-size: var(--fontSize20);
+		line-height: var(--baseLineHeight);
+	}
+}

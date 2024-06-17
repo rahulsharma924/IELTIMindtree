@@ -1,0 +1,36 @@
+#contactContainer{
+    max-width:1280px;
+    width:100%;
+    margin:0 auto;
+}
+.contact-para{
+    padding-top:68px;
+}
+.cont-para-text{
+    color:var(--newsDateColor);
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize18);
+    line-height: var(--baseLineHeight);
+    margin-bottom: 0;
+    margin-top: 5px;
+    
+}
+.fv_main_heading{
+    text-align: left;
+}
+@media screen and (max-width:768px){
+    .aem-Grid.aem-Grid--default--6>.aem-GridColumn.aem-GridColumn--offset--default--1{
+        margin-left:0;
+    }
+    .contact-para{
+        padding:25px;
+        margin-top: 0;
+    }
+    .cont-para-text{
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize14);
+        line-height: var(--lineHeight1and428);
+        margin-top:5px;
+        margin-bottom:0;
+    }
+}

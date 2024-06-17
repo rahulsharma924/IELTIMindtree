@@ -1,0 +1,128 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+  <sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='createaccbtn'}" /> 
+<div class="article-view">
+<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+        data-sly-use.iconTemplate="icon.html"
+        data-sly-element="${button.buttonLink.valid ? 'a' : 'button'}"
+        type="${button.buttonLink.valid ? '' : 'button'}"
+        id="${button.id}"
+        class="ie-scondary-btn cmp-button analyticcreatacc viewallbtn analyticviewallbtn" onclick="formValidation.validateCreateAccount()"
+        data-sly-attribute="${button.buttonLink.htmlAttributes}"
+        aria-label="${button.accessibilityLabel}"
+        data-cmp-clickable="${button.data ? true : false}"
+        data-cmp-data-layer="${button.data.json}" disabled> ${button.text}
+    <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+    <!--/* <span data-sly-test="${button.text}" class="cmp-button__text" onclick="validateCreateAccount();">${button.text}</span> */-->
+</button>
+</div>
+<script>
+
+//code for creat-account functionality analytic track
+document.querySelector("body").addEventListener('click', function(e) {    
+    var buttonElement = e.target.closest('button');  
+    var fn = "Create Account";
+    var fa="Create Account";
+    if(buttonElement !== null && buttonElement.value !== null && buttonElement.closest('.analyticcreatacc')!=null){      userid="";      
+        userDetails="";    
+        formName=fn;
+        formAction=fa;
+        formError="";
+        formStatus="";  
+
+        var fNameError = document.getElementById("firstnameMsg").innerText;    
+        lNameError=document.getElementById("lastnameMsg").innerText;
+        phnNoError=document.getElementById("phoneNumberMsg").innerText;        
+        emailError=document.getElementById("emailMsg").innerText;
+        //companyError=document.getElementById("companyMsg").innerText;
+        //industryError=document.getElementById("industryMsg").innerText;
+        msg1Error=document.getElementById("pswd11Msg").innerText;
+        msg2Error=document.getElementById("pswd22Msg").innerText;
+        //currentPwdError=document.getElementById("currentPwdMsg").innerText;
+        //nwePwdError=document.getElementById("newPwdMsg").innerText;
+        //confirmPwdError=document.getElementById("confirmPwdMsg").innerText;
+        //pwdError=document.getElementById("pwdMsg").innerText;
+        addressError=document.getElementById("AddressoneMsg").innerText;
+        addresstwoError=document.getElementById("AddresstwoMsg").innerText;
+        fNamesError=document.getElementById("firstnameMsg").innerText;
+        lNamesError=document.getElementById("lastNameMsg").innerText;
+        cmpsError=document.getElementById("companYMsg").innerText;
+        cmpssError=document.getElementById("compaNYMsg").innerText;
+        cityError=document.getElementById("cityMsg").innerText;
+        zipError=document.getElementById("zipcodeMsg").innerText;
+        shippingphError=document.getElementById("phoneNumberMsg").innerText;
+        countryshipError=document.getElementById("countryshippingmsg").innerText;
+        stateshipError=document.getElementById("stateshippingmsg").innerText;
+
+        captchError=document.querySelector(".captchaverify").innerText;
+        captchaborderclass=document.getElementById("rcaptcha").parentNode.className;        
+        borderRedFalse=captchaborderclass.search("validate_border_remove");
+        
+
+        countryError=document.getElementById("countrymsg").innerText;
+        stateError=document.getElementById("statemsg").innerText;
+        popupfError=document.getElementById("popufirstmsg").innerText;
+        popuplError=document.getElementById("popuplastmsg").innerText;
+        popupphnoError=document.getElementById("popupphonenumber").innerText;
+        popupCmpError=document.getElementById("popcompanymsg").innerText;
+        popupaddError=document.getElementById("popupaddressmsg").innerText;
+        popupadd2Error=document.getElementById("popupaddressmsgtwo").innerText;
+        popupzipError=document.getElementById("popupzipcodemsg").innerText;
+        popupcityError=document.getElementById("popupcitymsg").innerText;
+    
+        
+        lNameError!="" ? formError=formError+lNameError+"||" : formError=formError;
+        phnNoError!="" ? formError=formError+phnNoError+"||" : formError=formError;
+        emailError!="" ? formError=formError+emailError+"||" : formError=formError;
+        msg1Error!="" ? formError=formError+msg1Error+"||" : formError=formError;
+        msg2Error!="" ? formError=formError+msg2Error+"||" : formError=formError;
+        addressError!="" ? formError=formError+addressError+"||" : formError=formError;
+        addresstwoError!="" ? formError=formError+addresstwoError+"||" : formError=formError;
+        fNamesError!="" ? formError=formError+fNamesError+"||" : formError=formError;
+        lNamesError!="" ? formError=formError+lNamesError+"||" : formError=formError;
+        cmpsError!="" ? formError=formError+cmpsError+"||" : formError=formError;
+        cmpssError!="" ? formError=formError+cmpssError+"||" : formError=formError;
+        cityError!="" ? formError=formError+cityError+"||" : formError=formError;
+        zipError!="" ? formError=formError+zipError+"||" : formError=formError;
+        shippingphError!="" ? formError=formError+shippingphError+"||" : formError=formError;
+        countryshipError!="" ? formError=formError+countryshipError+"||" : formError=formError;
+        stateshipError!="" ? formError=formError+stateshipError+"||" : formError=formError;
+        borderRedFalse=="-1" ? formError=formError+"captch-error-"+captchError+"||" : formError=formError;    
+        countryError.length>=3 ? formError=formError+countryError+"||" : formError=formError;
+        stateError.length>=3 ? formError=formError+stateError+"||" : formError=formError;
+        popupfError.length>=3 ? formError=formError+popupfError+"||" : formError=formError;
+        popuplError.length>=3 ? formError=formError+popuplError+"||" : formError=formError;
+        popupphnoError.length>=3 ? formError=formError+popupphnoError+"||" : formError=formError;
+        popupCmpError.length>=3 ? formError=formError+popupCmpError+"||" : formError=formError;
+        popupaddError.length>=3 ? formError=formError+popupaddError+"||" : formError=formError;
+        popupadd2Error.length>=3 ? formError=formError+popupadd2Error+"||" : formError=formError;
+        popupzipError.length>=3 ? formError=formError+popupzipError+"||" : formError=formError;
+        popupcityError.length>=3 ? formError=formError+popupcityError+"||" : formError=formError;
+                            
+        formError=formError.slice(0, formError.length-2);        
+        if(formError!=""){
+          formStatus="false";
+        }
+        formCreatAccountDLCall(userDetails,formName,formError,formAction,formStatus);
+        return false;
+    }else{
+      return true;
+    }        
+  }, false);  
+  
+</script>

@@ -1,0 +1,14 @@
+{
+  "algoliaId":"$[env:algId]",
+  "algoliaKey":"$[env:algApi]",
+  "indexInuse":"$[env:indexInuse]",
+  "indexNmAsc":"$[env:indexNmAsc]",
+  "indexNmDsc":"$[env:indexNmDsc]",
+  "indexPrAsc":"$[env:indexPrAsc]",
+  "indexPrDsc":"$[env:indexPrDsc]",
+  "indexBs":"$[env:indexBs]",
+  "indexContent":"$[env:indexContent]",
+  "indexContentAsc":"$[env:indexContentAsc]",
+  "indexContentDsc":"$[env:indexContentDsc]",
+  "indexQuerySuggest":"$[env:indexQuerySuggest]"
+}

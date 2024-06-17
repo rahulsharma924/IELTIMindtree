@@ -1,0 +1,5 @@
+#base=js
+client.min.js
+hosted.fields.min.js
+payment-shipping-info.js
+paymentBraintree.js

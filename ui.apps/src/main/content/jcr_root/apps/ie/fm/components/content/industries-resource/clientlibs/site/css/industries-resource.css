@@ -1,0 +1,237 @@
+#resource.resource_Title_Description{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.resource_Title_Description .slick-slider {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+#resource .fv_main_heading{
+   margin-top:20px;
+}
+.slick-track {
+    margin-left: 7px;
+}
+.resource_Title_Description .slick-dots li button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: var(--secondaryBtnVisited);
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.resource_Title_Description .slick-dots li.slick-active button {
+    background: var(--newsDateColor);
+}
+.resource_Title_Description .slick-prev, .resource_Title_Description .slick-next {
+   background: var(--secondaryColor);
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+   z-index: 6;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+.resource_Title_Description .slick-prev {
+    left: -5px;
+    border: 1px solid var(--btnDisabledLight);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.resource_Title_Description .slick-next {
+    top: 50%;
+    right: -25px;
+    transform: translate(-50%, -50%);
+}
+.resource_Title_Description .slick-next:hover, .resource_Title_Description .slick-prev:hover {
+    background: var(--secondaryColor);
+    color: var(--btnDisabledLight);
+}
+.resource_Title_Description .slick-prev.slick-arrow.slick-disabled {
+    background: var(--secondaryColor);
+    color: transparent;
+    border: 1px solid var(--btnDisabledLight);
+}
+.resource_Title_Description .slick-prev.slick-arrow.slick-disabled::before {
+   opacity: 1;
+   content: "\f060";
+   color: var(--btnDisabledLight);
+   font-family: var(--fontfamilyIcon);
+}
+.resource_Title_Description .slick-next.slick-arrow.slick-disabled {
+    color: transparent;
+    border: 1px solid var(--btnDisabledLight);
+}
+.resource_Title_Description .slick-next.slick-arrow.slick-disabled::before {
+   opacity: 1;
+   content: "\f061";
+   font-family: var(--fontfamilyIcon);
+   color: var(--btnDisabledLight);
+}
+.resource_Title_Description .slick-next.slick-arrow, .resource_Title_Description .slick-prev.slick-arrow {
+    color: var(--invertedColor);
+    background: var(--secondaryColor);
+    border: 1px solid var(--invertedColor);
+}
+.resource_Title_Description .slick-next.slick-arrow::before {
+   content: "\f061";
+   font-family: var(--fontfamilyIcon);
+   color: var(--invertedColor);
+}
+.resource_Title_Description .slick-prev.slick-arrow::before {
+   content: "\f060";
+   font-family: var(--fontfamilyIcon);
+   color: var(--invertedColor);
+}
+.resource_Title_Description button.slick-next:after, .resource_Title_Description button.slick-prev:after {
+   color: transparent;
+}
+.resource_Title_Description .slick-dots li button:before {
+   color: transparent;
+}
+.resource_Title_Description .slick-dots li {
+   margin: 0;
+}
+.industries_carousel_main .industries_carousel_img {
+   margin-right: 24px;
+   height:253px;
+}
+.aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--10.Homepage .customcap_icon.industries_carousel_img img {
+   width: 100%;
+   object-fit: cover;
+   height: 253px;
+   margin-right: 26px;
+}
+.resource-view_more {
+   position: absolute;
+   bottom: 20px;
+}
+.resource-view_more .view-more-title4{
+   color: var(--secondaryBlack);
+   text-decoration: underline;
+}
+.resource-title{
+   margin-bottom:40px;
+}
+.resource_card_container{
+   height: 302px;
+   background: var(--secondaryColor);
+   border: 1px solid var(--secondaryBtnVisited);
+   border-radius: 4px;
+   margin-right: 24px;
+   padding: 20px;
+}
+.resource_card{
+   display: inline-flex;
+   margin-bottom: 50px;
+}
+.resource_label1{
+   font-weight: var(--fontWeightBold);
+   font-size:var(--fontSize12);
+   line-height: var(--baseLineHeight);
+   color: var(--blueColorDark);
+   
+   height: 20px;
+   display: inline-block;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 1px 7px;
+   gap: 2px;
+   background: var(--tagBgColor);
+   border: 1px solid var(--secondaryBtnVisited);
+   border-radius: 4px;
+   margin-bottom: 20px;
+}
+.resource_card-title{
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: var(--secondaryBlack);
+    margin-bottom: 20px;
+    text-transform: capitalize;	 
+}
+.resource_card-desc{
+   font-weight: var(--fontWeightSmall);
+   font-size: var(--fontSize14);
+   line-height: var(--baseLineHeight);
+   color: var(--secondaryBlack);
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+}
+.resource-view_moreimg {
+    position: absolute;
+}
+.view-more-title {
+   color: var(--secondaryBlack);
+   font-weight: var(--fontWeightNormal);
+   font-size: var(--baseFontSize);
+   line-height: var(--baseLineHeight);
+}
+
+.resource_Title_Description .slick-initialized .slick-slide {
+    width: 286px;
+    height: 302px;
+}
+.resource_Title_Description .slick-next:hover {
+    background: var(--secondaryColor);
+    color: var(--btnDisabledLight);
+}
+#resource .slick-dots {
+    bottom: -60px;
+}
+@media screen and (max-width:1024px){
+    #resource.resource_Title_Description{
+        max-width: 100%;
+        padding: 0 0 0 28px;
+   }
+   #resource.resource_Title_Description .slick-track{
+    margin-left: 0;
+   }
+    .resource_card_container {
+        margin: 0 0 0 20px;
+        padding: 20px 24px;
+   }
+    .resource_Title_Description .slick-prev {
+        left: -22px;
+    }
+
+    .resource_Title_Description .slick-next {
+        right: -9px;
+    }
+
+    .resource_Title_Description .slick-list {
+        padding: 0 0 0 5px;
+    }
+
+    .resource_Title_Description .slick-slider,
+    .resource_Title_Description .slick-track {
+        margin-left: 0;
+    }
+    .resource_Title_Description .slick-initialized .slick-slide {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 833px){
+    .resource_Title_Description .slick-list {
+        padding: 0 5px 0 5px;
+    }
+    #resource.resource_Title_Description{
+        padding: 0 28px 0 28px;
+   }
+   .resource_Title_Description .slick-next {
+      right: -41px;
+   }
+
+}
+@media screen and (max-width:833px){
+    #resource .fv_main_heading {
+        margin-left:-28px;
+    }
+}

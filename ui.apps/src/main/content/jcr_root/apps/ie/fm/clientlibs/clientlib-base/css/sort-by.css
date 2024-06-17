@@ -1,0 +1,66 @@
+/* Sort By styles */
+.blogSorting-by-wrapper {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 18px;
+    margin-right: 6px;
+}
+.blogSortBy {
+    border: 1px solid var(--secondaryBtnVisited);
+    border-radius: 4px;
+    padding: 8px 8px;
+    text-align: left;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize12);
+    color: var(--primaryColor);
+}
+.blogSortBy::after {
+    content: "";
+    justify-self: end;
+    width: 10px;
+    height: 8px;
+}
+.blogSortBy .sort-by-label {
+    margin: 0;
+}
+.blogSortBySelect {
+    border: none;
+    font-weight: var(--fontWeightBold);
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+}
+.blogSortBySelect option {
+    font-size: var(--fontSize14);
+}
+select#blogSelectTypes {
+    padding-left: 5px;
+}
+.blogSortBySelect:focus-visible {
+    outline: none;
+}
+
+/* apply CSS to the select tag of */
+.blogSortBy select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+/* for IE10 */
+.blogSortBy select::-ms-expand {
+    display: none;
+}
+.blogSortBy select {
+    color: var(--IScarrouselDecClr);
+}
+.for-dropdown-icon {
+    background: transparent;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-position-x: 80px;
+    background-position-y: 7px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 95px;
+}

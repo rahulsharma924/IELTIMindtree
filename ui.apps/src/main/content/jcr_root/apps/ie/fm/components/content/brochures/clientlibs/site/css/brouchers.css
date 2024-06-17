@@ -1,0 +1,203 @@
+.broucherInformation {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 0 30px;
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+  
+	
+}
+.white-desc{
+    margin-bottom: 11px;
+}
+.m-top{
+    margin-top: 4px;
+}
+.resourceCard {margin-top: 30px;}
+.broucher_details .broucherDesc {margin: 0; }
+.resourceCard .broucherInformation .broucher_details .img-height {
+    height: 259px;
+    object-fit: cover;
+}
+
+.text-ecllips {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.broucher_details {
+   
+	position:relative;
+    margin-bottom: 64px;
+}
+@media only screen and (min-width:992px) {
+    .broucher_details {
+        max-width: 389px;
+            }
+            .broucherInformation{
+                column-gap:8px;
+            }
+}
+@media only screen and (max-width:991px) {
+
+    .broucherInformation {
+        display: grid;
+        grid-template-columns:50% 50%;
+        padding: 0 30px;
+        max-width: 1280px;
+        margin: 0 auto 0 auto;
+       
+        
+    }
+    .broucher_details{
+        margin-bottom:40px;
+    }
+    .broucherInformation {
+        padding: 0 24px;
+    }
+    .broucher_details .broucherLink {
+        padding-top:10px;
+    }
+    .broucher_details .broucherDesc {
+        padding: 0;
+    }
+}
+.d-flex-row{
+    display: flex;
+}
+.pd-right-8{
+    padding-right: 8px;
+}
+@media only screen and (max-width: 767px) {
+    .broucherInformation {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .broucher_details {
+        margin: 0 0 40px 0;
+    }
+}
+
+.broucherInformation .broucher_details .border-img{
+    border: 1px solid #BBC1C4;
+    padding: 11px;
+    border-radius: 4px;
+    height: 259px;
+}
+
+.broucherInformation .broucher_details .BroucherImage {
+    width: 100%;
+    height: 241px;
+    object-fit: cover;
+    
+}
+.broucher_details .broucherTitle {
+    font-weight:var(--fontWeightBold);
+    font-size:var(--fontSize22);
+    line-height:var(--baseLineHeight);
+    color:var(--newsActivePagination);
+    margin: 20px 0 0 0;
+    min-height:66px;
+    max-height:66px;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+   
+}
+.broucher_details .broucherDesc {
+    font-weight:var(--fontWeightSmall);
+    font-size:var(--fontSize18);
+    line-height:var(--baseLineHeight);
+    color:var(--IScarrouselDecClr);
+    min-height:85px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.broucher_details .broucherButton img {
+    padding: 0 4px 0 0;
+}
+#BrochureInfo #ResourceTitle h1 {
+    padding: 10px 0 3px 0;
+}
+#BrochureInfo .article-view {
+    padding-bottom:0px;
+    background-color:var(--secondaryColor);
+}
+#BrochureInfo #ResourceViewAll {
+    margin: 0;
+}
+#BrochureInfo #ResourceDescription p {
+    font-weight:var(--fontWeightSmall);
+    font-size:var(--baseFontSize);
+    line-height:var(--baseLineHeight);
+    text-align: center;
+    color:var(--primaryColor);
+}
+#BrochureInfo .broucherInformation {
+    margin-bottom: 0;
+}
+#BrochureInfo .broucher_details {
+    margin-bottom: 45px;
+}
+
+@media only screen and (min-width:576px)  and (max-width:991px) {
+    .broucherInformation{
+        padding: 0 12px;
+    }
+    .broucher_details{
+        margin: 0 12px 40px 12px;
+    }
+
+}
+@media (min-width: 320px) and (max-width:575px) {
+    .broucher_details{
+        padding: 0 24px;
+    }
+    .broucher_details .broucherTitle{
+        min-height: auto;
+    max-height:auto;
+    }
+    .broucher_details .broucherDesc{
+        min-height: auto;
+    }
+    .broucher_details .broucherTitle {
+        font-size:var(--baseFontSize)
+    }
+    .broucher_details .broucherDesc {
+        font-size:var(--fontSize14);
+    }
+    .white-card .cardbroucherLink .broucherButton {
+        font-size:var(--fontSize14);
+    }
+}
+.cardbroucherLink a{
+    text-decoration: underline;
+}
+.broucherLink a{
+    text-decoration: underline;
+  }
+
+
+  .broucherInformation{
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0;
+    justify-content:center;
+    column-gap: 24px;
+  
+  }
+
+  @media only screen and (min-width:576px) {
+    .broucher_details{
+        min-width: 389px;
+        max-width: 389px;
+      }
+  }

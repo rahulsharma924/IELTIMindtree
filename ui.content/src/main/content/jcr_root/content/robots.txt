@@ -1,0 +1,12 @@
+User-agent: *
+Sitemap: https://publish-p78402-e680779.adobeaemcloud.com/sitemap.xml
+Disallow: /
+
+
+
+User-agent: Algolia Crawler
+Sitemap: https://publish-p78402-e680779.adobeaemcloud.com/sitemap.xml
+Allow: /
+
+
+# Algolia-Crawler-Verif: 650233224275B260

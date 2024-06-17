@@ -1,0 +1,4 @@
+#base=js
+plp-ssr.js
+plp-csr.js
+jquery-ui.min.js

@@ -1,0 +1,75 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='header-new-clientlib'}"
+/>
+
+<div class="headerContainer">
+  <div class="headerComponents">
+    <div
+      class="mobile-hamburger"
+      data-sly-resource="${'hamburger-mobile' @resourceType='/apps/ie/fm/components/content/hamburger-menu'}"
+    ></div>
+    <div class="compLogo">
+      <div class="logoFM">
+        <a href="/" title="FM Logo">
+          <img
+            class="img-fluid"
+            src="${properties.fmlogo}"
+            alt="FM Logo"
+            style="width: 100%; height: 100%"
+        /></a>
+      </div>
+    </div>
+    <div class="headerRight">
+      <div class="global-search">
+        <span class="search-title"
+          >Search <i class="fa-solid fa-xmark close-search-box"></i
+        ></span>
+        <div class="autocomp" id="autocomplete"></div>
+      </div>
+      <div class="compMicrolinks Search">
+        <a href="#url" title="Search">
+          <span class="linkname">${properties.fmsignin}</span>
+          <span class="icon"><i class="fa-solid fa-search"></i> </span>
+        </a>
+      </div>
+      <div class="compMicrolinks Signin analyticheader">
+        <a href="/content/fm/en/sign-in.html" title="Signin">
+          <span id="signInTextDesk" class="linkname signin_username"
+            >${properties.fmsignin}</span
+          >
+          <span class="icon signicon"><i class="fa-solid fa-user"></i></span>
+        </a>
+      </div>
+      <div class="compMicrolinks Contact analyticheader analyticcontactus">
+        <a href="/content/fm/en/contact-us.html" title="Contactus">
+          <span class="linkname">${properties.fmcontact}</span>
+          <span class="icon"><i class="fa-solid fa-comment-dots"></i></span>
+        </a>
+      </div>
+      <div
+        class="compMicrolinks analyticheader cart__section minicart__disabled"
+      >
+        <a
+          href="#"
+          data-toggle="modal"
+          data-target="#miniCartDetailsPopup"
+          aria-label="Cart"
+        >
+          <span class="linkname">${properties.fmcart}</span>
+          <span class="icon cart_main cart-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-counter"></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<sly data-sly-include="minicartpopup.html"></sly>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='header-new-clientlib'}"
+/>
+<sly data-sly-include="error-handler.html"></sly>
+<!--Header end-->

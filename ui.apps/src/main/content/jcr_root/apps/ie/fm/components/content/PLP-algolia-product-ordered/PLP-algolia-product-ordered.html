@@ -1,0 +1,95 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='Productsordered'}"
+/>
+
+<section
+  id="algolia-data"
+  class="product__ordered test pd-right-desk category-products aem-Grid aem-Grid--12"
+>
+  <sly data-sly-include="product-ordered-handlerbar.html"></sly>
+  <div
+    class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+  >
+    <div class="plp-filter">
+      <div style="display: none" id="brand-list"></div>
+      <div style="display: none" class="best-products"></div>
+    </div>
+  </div>
+
+  <div class="product-ordered-topsection">
+    <div class="PO-first-row">
+      <h2 class="product-ordered-title">Products ordered</h2>
+    </div>
+    <div class="product-ordered-second-row">
+      <div class="search-productordered">
+        <div class="search-box">
+          <input
+            class="search-input"
+            id="searchbox"
+            onkeyup="search_product();"
+            type="text"
+            placeholder="Search by keyword or part number"
+          />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <div class="sortby-container">
+        <div class="product-ordered-sortby">
+          <select name="cat" id="original" class="postform min-width">
+            <option value="-1">Past 60 days</option>
+            <option class="level-0" value="30">Past 30 days</option>
+            <option class="level-0" value="90">Past 90 days</option>
+            <option class="level-0" value="180">Past 180 days</option>
+            <option class="level-0" value="270">Past 270 days</option>
+            <option class="level-0" value="360">Past 360 days</option>
+          </select>
+        </div>
+      </div>
+      <div class="at-table-top d-block-mobile-result">
+        <div class="analyticplplimiter">
+          <span class="pd-right"><b>Showing</b></span>
+          <select class="select-no-of-rows" id="numOfRows"></select>
+          <span class="pd-right-left"> of </span
+          ><span
+            class="for-number-of-rows-selection"
+            id="totalNumberOfRows"
+          ></span
+          ><span class="for-number-of-rows-selection"> results</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="product-ordered-section">
+        <div class="product-ordered-list" id="prodcutorderedlist"></div>
+      </div>
+    </div>
+  </div>
+  <div class="at-table-bottom">
+    <div class="leftnav analyticplplimiter" id="records">
+      <span class="pd-right">Show</span>
+
+      <select class="select-no-of-rows" id="numOfRowsbottom"></select>
+      <span class="pd-right-left"> of </span
+      ><span
+        class="for-number-of-rows-selection"
+        id="totalNumberOfRowsbottom"
+      ></span
+      ><span class="for-number-of-rows-selection"> results</span>
+    </div>
+    <div class="rightnav analyticorderhistory-pagination" id="nav">
+      <span class="display-page-number">Page </span>
+      <span id="currentPageNumber" class="pNum"></span>
+      <span class="pd-right-left"> of </span>
+      <span id="totalNumberOfPages" class="tRecords"></span>
+      <button class="prev pagination__button" id="prev">
+        <i class="fa-solid fa-chevron-left fa-xs"></i>
+      </button>
+      <button class="next pagination__button" id="next">
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+      </button>
+    </div>
+  </div>
+</section>

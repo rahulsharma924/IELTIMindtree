@@ -1,0 +1,10 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='cat-sdss'}" />
+
+  <div id="stickytimer" class="samedayshipping-sticky-wrapper">
+    <div class="sdss-block">        
+    ${properties.sdss @context = 'html'}
+    <span class="timer-content" id="shipTimer"></span>
+  </div>             
+</div> 
+

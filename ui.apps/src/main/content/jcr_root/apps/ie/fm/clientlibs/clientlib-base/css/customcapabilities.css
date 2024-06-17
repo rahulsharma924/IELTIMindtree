@@ -1,0 +1,182 @@
+.Customcapablities {
+  width: 1280px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.cmp-container .Customcapablities .live_support h2,
+.Customcapablities .custom_capabilities h2,
+.Customcapablities .samedayshipping h2 {
+  color: var(--secondaryBlack);
+  font-weight: var(--fontWeightBold);
+}
+.ls_cc_sds {
+  margin: 30px auto;
+  justify-content: center;
+  color:  var(--secondaryBlack);
+}
+.ls_cc_sds.row {
+  margin-left: unset;
+  margin-right: unset;
+  margin:0 auto;
+  max-width: 1280px;
+}
+.ls_cc_sds_title {
+  font-weight: var(--fontWeightBold);
+}
+.heading__title--h4{
+  font-size: var(--baseFontSize);
+}
+.ls_cc_sds_desc {
+  font-size: var(--fontSize14);
+  line-height: 1.714;
+  font-weight: var(--fontWeightSmall);
+  width: 60%;
+  margin: 12px auto 17px;
+}
+.ls_cc_sds_desc a {
+    font-weight: var(--fontWeightSmall);
+    color: var(--secondaryBlack);
+    text-decoration: none;
+}
+.live_support.col-sm-4,
+.custom_capabilities.col-sm-4,
+.samedayshipping.col-sm-4 {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+.live_support_btn{
+  width: auto;
+  height: auto;
+  padding: 13px 27px;
+  cursor: pointer;
+  font-size:var(--fontSize14);
+  line-height:1.428;
+  border:1px solid var(--darkBlue);
+}
+/*.Customcapablities .livechat-support{
+  margin-top: 30px;
+}*/
+.Customcapablities .livechat-support button.live_support_btn, .Customcapablities .livechat-support button.live_support_btn:hover{
+  color: var(--darkBlue);
+  border:1px solid var(--darkBlue);
+}
+
+.Customcapablities .livechat-support button.live_support_btn:focus{
+    outline: 2px solid var(--blueColorLight);
+    outline-offset: -2px;
+    background-color: var(--secondaryColor);
+}
+.Customcapablities .livechat-support button.live_support_btn:active{
+	outline: 2px solid var(--secondaryBtnVisited);
+    background-color: var(--secondaryBtnVisited);
+                        }
+.custom_capabilities a:not([href]):not([tabindex]).customcap_btn,
+.custom_capabilities a.customcap_btn,
+.samedayshipping a:not([href]):not([tabindex]).samedayshipping_btn,
+.samedayshipping a.samedayshipping_btn {
+  color: var(--secondaryLinkNormal);
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and428);
+  cursor: pointer;
+}
+
+
+.Customcapablities .row.ls_cc_sds .custom_capabilities a.customcap_btn:hover,
+.Customcapablities .row.ls_cc_sds .samedayshipping a.samedayshipping_btn:hover {
+  color: var(--secondaryLinkNormal);
+  font-weight: var(--fontWeightBold);
+  text-decoration: var(--textDecorationUnderline);
+}
+.Customcapablities .row.ls_cc_sds .custom_capabilities a.customcap_btn:focus,
+.Customcapablities
+  .row.ls_cc_sds
+  .samedayshipping
+  a.samedayshipping_btn:focus {
+  color: var(--secondaryLinkActive);
+  text-decoration: underline;
+}
+.live_support,
+.custom_capabilities {
+  border-right: 1px solid var(--livesupportBorderClr);
+}
+.desc_link_gap {
+  margin-bottom: 6px;
+}
+.customcap_icon {
+  padding-bottom: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+.Customcapablities .row.ls_cc_sds .col-sm-4{
+  margin-top: 86px;
+}
+.Customcapablities .row.ls_cc_sds .live_support.col-sm-4 .customcap_icon img,
+.Customcapablities
+  .row.ls_cc_sds
+  .custom_capabilities.col-sm-4
+  .customcap_icon
+  img,
+.Customcapablities
+  .row.ls_cc_sds
+  .samedayshipping.col-sm-4
+  .customcap_icon
+  img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 977px) and (max-width: 1157px) {
+  .ls_cc_sds_desc {
+    width: 74%;
+  }
+}
+
+@media screen and (min-width: 834px) and (max-width: 976px) {
+  .ls_cc_sds_desc {
+    width: 94%;
+  }
+}
+
+@media only screen and (max-width: 833px) {
+  .ls_cc_sds_desc {
+    width: 80%;
+  }
+  .ls_cc_sds.row {
+    margin: 0px auto 38px;
+    padding-bottom: 0;
+  }
+  .Customcapablities .row.ls_cc_sds.container-fluid {
+    display: block;
+    padding: 0;
+  }
+  .Customcapablities .row.ls_cc_sds .col-sm-4{
+    margin-top:0;
+  }
+  .live_support.col-sm-4,
+  .custom_capabilities.col-sm-4 {
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--livesupportBorderClr);
+    border-right: 0;
+  }
+  .live_support.col-sm-4,
+  .custom_capabilities.col-sm-4,
+  .samedayshipping.col-sm-4 {
+    max-width: 100%;
+    display: block;
+    padding-top: 23px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media only screen and (max-width:575px) {
+  .live_support_btn {
+    width: auto;
+  }
+  .ls_cc_sds_desc{
+    max-width: 200px;
+  }
+}
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <title>Fairview Microwave</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+      <meta name="format-detection" content="telephone=no">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap">
+	   <style>
+	   body{
+	   font-family: Poppins, arial; 
+	   margin: 0 !important; 
+	   padding: 0 !important; 
+	   -webkit-text-size-adjust: 100% !important; 
+	   -ms-text-size-adjust: 100% !important; 
+	   -webkit-font-smoothing: antialiased !important;
+	   }
+            .btn {
+            background:#D83A22 !important;
+            display:inline-block;
+            }
+            .btn:hover {
+            background: #a80711 !important
+            }
+            .btn:active {
+            outline: 2px solid #3144d8 !important;
+            outline-offset: 1px !important
+            }
+            .footer__link{
+            color: #fff;
+            text-decoration: none;
+            }
+            .table-container {
+            border:1px solid #e7eaee;
+            }
+            .text.main_header {
+            font-size:31px;
+            color: #0E0F10;
+            line-height: 42px;
+            font-weight: 400;
+            margin-bottom:0;
+            padding-left:54px;
+            padding-right: 54px;
+            text-align: center;
+            }
+            .text.sub-title{
+            color: #0E0F10;
+            font-weight: 400;
+            margin-bottom:0;
+            padding-left:54px;
+            padding-right:54px;
+            }
+            .text-para{
+            font-size:16px;
+            color:#0E0F10; 
+            margin-top:15px
+            }
+            .text_hover {
+            color: #FFFFFF !important;
+            font-size: 16px !important; 
+            border-radius: 4px !important;
+            cursor: pointer !important; 
+            font-weight: 700 !important;
+			margin-top:20px;
+			margin-bottom:30px;
+            }
+            .reset-pass{
+            display: inline-block; 
+            cursor: pointer !important;
+            padding: 15px 25px;  
+            text-decoration: none !important; 
+            color: #FFFFFF !important;
+            }
+            .fm-microwave{
+            font-size:16px; 
+            color:#0E0F10;
+            margin-top:15px
+            }
+            .contact-info{
+            font-weight:bold; 
+            font-size: 14px;
+            }
+            .icon{
+            font-size:12px;
+            }
+            .copyright{
+            margin-bottom: 0;
+            }
+			.fm-logo{
+			text-decoration: none;
+			}
+			.contact-container{
+			color:#fff; 
+			padding: 20px;
+			}
+			.lets-connect{
+			font-weight:bold; 
+			font-size: 14px;
+			}
+            .rma-nti-container{
+                display: flex;
+                justify-content: center;
+            }
+            .rma-sales-temp-footer .contact-container{
+                background-color: #002A42;
+                width: auto;
+               
+            }
+            .rma-non-tabular-info{
+                background-color: #FAFBFB;
+                width: 100%;
+                padding-left:0; 
+                margin-top:50px;
+                margin-bottom: 50px;
+            }
+            /* .rma-non-tabular-info .rma-nti-row{
+                display: flex;
+                
+            } */
+            .rma-tabular-info{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .rma-tabular-info-table{
+                width:80%;
+                border:1px solid #E5E7E9;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                padding-top: 10px;
+                padding-bottom: 15px;
+
+                background: #FAFBFB;
+            }
+            .rma-temp-fc{
+                padding-left:15%;
+                font-weight: 700;
+            }
+            .rma-tabular-info-table td,.rma-tabular-info-table th{
+                text-align: center;
+            }
+            .rma-tabular-info-table thead{
+                border:1px solid #E5E7E9;
+                height: 40px;
+            }
+            .rma-tabular-info-table tr{
+                border:1px solid #E5E7E9;
+                height: 40px;
+            }
+            .rma-details-title{
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 33px;
+            }
+            .rma-tabular-info-table {border-collapse: collapse; }
+            .rma-tabular-info-table, .rma-tabular-info-table td,.rma-tabular-info-table th { border-bottom:  1px solid #E5E7E9; }
+         </style>
+   </head>
+   <body >
+    <div>
+       
+        <table width="100%"  cellspacing="0" cellpadding="0">
+        <!-- Top black border -->
+        <tbody>
+           <tr>
+              <td >
+                 <table width="640" class="table-container" align="center" cellspacing="0" cellpadding="0">
+        <tbody>
+           <tr>
+              <!-- Main viewport -->
+              <td>
+                 <table width="604"  cellspacing="0" cellpadding="0">
+        <tbody>
+           <tr>
+              <td>
+                 <table width="640" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                       <tr><td height="20"></td>
+                       </tr>
+                       <tr>
+                          <td align="center"><a target="_blank" class="fm-logo" title="FM Logo">
+                             <img class="template-image" width="269" height="42" align="center" src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/application-images/fm-logo_new.jpg" alt="FM Logo" border="0"></a>
+                          </td>
+                       </tr>
+                       <tr>
+                          <td style="border-bottom:1px solid #e7eaee">
+                             <table width="640" align="center" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                   <tr><td height="20"></td>
+                                   </tr>
+                                </tbody>
+                             </table>
+                          </td>
+                       </tr>
+                       <tr><td height="40"></td>
+                       </tr><tr>
+                          <td 
+                          	style="font-size:31px;
+										color: #0E0F10;
+										line-height: 42px;
+										font-weight: 400;
+										margin-bottom:0;
+										padding-left:54px;
+										padding-right: 54px;"
+
+                            align="center" cellspacing="0" cellpadding="0">Return merchandise authorization request</td>
+                       </tr>
+                       <tr>
+                          <td >
+                            <table class="rma-non-tabular-info">
+                                <tr ><td class="rma-temp-fc">Name:</td><td>${name}</td></tr>
+                                <tr ><td class="rma-temp-fc">Company:</td><td>${company}</td></tr>
+                                <tr ><td  class="rma-temp-fc">JobTitle:</td><td>${job}</td></tr>                                
+                                <tr ><td class="rma-temp-fc">Phone :</td><td>${phone}</td></tr>
+                                <tr ><td class="rma-temp-fc">Email :</td><td>${email}</td></tr>
+                                <tr ><td class="rma-temp-fc">City :</td><td>${city}</td></tr>
+                                <tr ><td class="rma-temp-fc">State :</td><td>${state}</td></tr>
+                                <tr ><td class="rma-temp-fc">Zip :</td><td>${zip}</td></tr>
+                                <tr ><td class="rma-temp-fc">Country :</td><td>${country}</td></tr>
+                                <tr ><td class="rma-temp-fc">FM Sales Invoice # :</td><td>${invoice}</td></tr>
+                                <tr ><td class="rma-temp-fc">Purchase Order Number :</td><td>${po}</td></tr>
+                                <tr ><td class="rma-temp-fc">RMA Type Request :</td><td>${ordertype}</td></tr>
+                                <tr ><td class="rma-temp-fc">SignatureName :</td><td>${signature}</td></tr>
+                                <tr ><td class="rma-temp-fc">Date:</td><td>${date}</td></tr>     
+                            </table>
+                          </td>
+                       </tr>
+                       <tr>
+         <td class="rma-tabular-info">
+
+        <table class="rma-tabular-info-table">
+         <thead>
+        <tr><td class="rma-details-title">RMA Details</td></tr>
+         <tr>
+           <th>SKU</th>
+            <th>QTY</th>
+            <th>Reason for return</th>
+             </tr>
+               </thead>
+                  <tbody>
+                      startloop 
+				</tbody>
+           </table>
+         </td>
+        </tr>
+                          
+                       <tr>
+                          <td bgcolor="#002A42" class="contact-container">
+                             <table width="600">
+                                <tbody>
+                                   <tr>
+                                      <td>
+                                        <table>
+                                            <tbody>
+                                              <tr><td style="font-weight:bold; font-size: 14px;">CONTACT INFO</td></tr>
+                                              <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/phone.svg">+1 800 715 4396<tr></tr></td></tr>
+                                              <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/mail.svg"> <a class="footer__link" href="mailto:sales@fairviewmicrowave.com">sales@fairviewmicrowave.com</a></td></tr>
+                                              <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/web.svg"> <a class="footer__link" href="https://fairviewmicrowave.com">fairviewmicrowave.com</a></td></tr>
+                                            </tbody>
+                                          </table>
+                                      </td>
+                                      <td>
+                                        <table>
+                                            <tbody>
+                                              <tr><td height="15"></td></tr>
+                                              <tr>
+                                               <td></td>
+                                                <td style="font-size: 12px; display:flex"><img style="height: 14px;padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/location-icon.png"> Headquarters<br/> 1301 Leora Ln<br/> Lewisville, Texas 75056</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                      </td>
+                                      <td align="right" valign="top">
+                                        <table>
+                                          <tbody>
+                                            <tr><td style="font-weight:bold; font-size: 14px;">LET'S CONNECT
+                                            </td></tr>
+                                            <tr><td><span class="iconThemb">
+                                              <a title="Facebook" class="footer__link" href="http://www.facebook.com/people/Fairview-Microwave/100063721473386/" target="_blank">
+                                              <img alt="FB" src="https://${domainname}/content/dam/fm/footer/facebook.png"></a>
+                                          </span>
+                                          <span class="iconThemb">
+                                              <a title="Linkedin" class="footer__link" href="http://www.linkedin.com/company/fairview-microwave-inc./" target="_blank">
+                                              <img alt="Linkedin" src="https://${domainname}/content/dam/fm/footer/linkdein.png"></a>
+                                          </span>
+                                          <span class="iconThemb">
+                                              <a title="Twitter" class="footer__link" href="http://twitter.com/Fairview_Micro" target="_blank">
+                                              <img alt="Twitter" src="https://${domainname}/content/dam/fm/footer/twitter.png"></a>
+                                          </span>
+                                          <span class="iconThemb">
+                                              <a title="Youtube" class="footer__link" href="http://www.youtube.com/company/fairview-microwave-inc" target="_blank">
+                                              <img alt="YouTube" src="https://${domainname}/content/dam/fm/rfqfooter/yt.svg"></a>
+                                          </span>
+                                          </td></tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                   </tr>
+                                   <tr><td colspan="3" style="font-size: 10px;"><p style="margin-bottom: 0;">&copy; 2022 Infinite Electronics, Inc. Fairview Microwave is a registered trademark of Infinite Electronics, Inc. Same-day shipping terms and conditions can be found <a class="footer__link" style="font-size:12px" href="https://www.fairviewmicrowave.com/t-Shipping.aspx">here</a></p>
+                                   </td></tr>
+                                </tbody>
+                             </table>
+                          </td>
+                       </tr>
+                 </tbody></table>
+                 </td></tr></tbody></table>
+     
+  
+</td></tr></tbody></table></td></tr></tbody></table></div></body>
+</html>

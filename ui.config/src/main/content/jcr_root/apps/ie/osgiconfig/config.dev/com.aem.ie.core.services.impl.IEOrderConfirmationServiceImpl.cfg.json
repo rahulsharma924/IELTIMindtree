@@ -1,0 +1,4 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getOrderConfirmationURL":"https://apim-iedtecomm-dev01.azure-api.net/order-direct/fairview/get-order/"
+}

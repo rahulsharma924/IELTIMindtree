@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/ie",
+        "create path (nt:unstructured) /content/dam/ie/jcr:content",
+        "set properties on /content/dam/ie/jcr:content\n  set cq:conf{String} to /conf/ie\n  set jcr:title{String} to \"IE Project\"\nend"
+    ]
+}

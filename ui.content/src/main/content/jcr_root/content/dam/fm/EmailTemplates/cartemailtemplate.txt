@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js" integrity="sha512-36dJpwdEm9DCm3k6J0NZCbjf8iVMEP/uytbvaiOKECYnbCaGODuR4HSj9JFPpUqY98lc2Dpn7LpyPsuadLvTyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+</head>
+<body id="body" style="margin:0; padding:0;">
+
+  <table class="email-template-checkout-success-section" style="margin: 0 auto;width: 1280px;max-width: 100%;background: #fff;font-family: 'Poppins';font-style: normal;" cellspacing="0" cellpadding="0" border="0">
+    <thead class="email-template-header">
+        <tr class="header-img-wrap" style="padding: 20px;display: flex;justify-content: center;align-items: center;border-bottom: 1px solid #e5e7e9;display: block;text-align: center;margin: 0 auto;">
+           <td style="display: block;text-align: center;margin: 0 auto;"> <img class="header-img" src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/application-images/fm-logo_new.jpg" alt="header-image" style="width: 250px;height: 73px;object-fit: contain;"> </td>
+        </tr>
+    </thead>
+    <tbody class="email-template-body" style="padding: 20px 50px 50px;display: block;text-align: center;margin: 0 auto;">
+        <tr class="email-heading-wrap">
+          <td>  <h1 class="order-place-heading" style="font-weight: 400;font-size: 31px;line-height: 42px;color: #000000;text-align: center;margin:0;">Review Cart</h1></td>
+        </tr>
+        <tr class="email-para-wrap">
+          <td>  <p class="email-para" style="margin: 40px auto;width: 100%;font-weight: 400;font-size: 16px;line-height: 24px;color: #0E0F10;text-align: left;">Dear ${fname} ${lname}, <br/> I have added the following items to my Fairview Microwave Shopping Cart for your review and purchase. You can place the order on the Fairview Microwave Website 24/7 or you
+                                                                    can call the Customer Service Department toll-free at (800) 715-4396 or internationally at +1 (972) 649-6678, Monday – Friday, 7am - 6pm.</p></td>
+        </tr>
+        <tr class="email-shipping-details-wrap" style="margin-bottom: 40px;display: block;">
+            <td class="email-shipping-details-block row" style="margin-bottom: 11px;width:100%;display: inline-block;text-align: left;">
+                <div class="email-shipping-details-subBlock col-6" style="width: 49%;display: inline-block;margin: 0;padding-right: 15px;">
+                    <h2 style="font-weight: 700;font-size: 16px;line-height: 24px;color: #454B4F;margin:0;margin-bottom: 14px;text-align: left;">Shipping</h2>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingName}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingadd}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingadd2}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingemail}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${shippingPhone}</p>
+                </div>
+                <div class="email-shipping-details-subBlock col-6" style="width: 49%;display: inline-block;margin: 0;">
+                    <h2 style="font-weight: 700;font-size: 16px;line-height: 24px;color: #454B4F;margin:0;margin-bottom: 14px;text-align: left;">Billing</h2>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingName}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingadd}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingadd2}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingemail}</p>
+                    <p style="font-weight: 400;font-size: 14px;line-height: 24px;color: #212529;text-align: left;margin: 0;margin-bottom: 5px;">${billingPhone}</p>
+                </div>
+            </td>
+         </tr>
+        <tr class="email-orrder-summary-table-wrap" style="margin: 0 auto;background: #FAFBFB;outline: 1px solid #E5E7E9;display: block;width: 100%;">
+           <td style="display: block;width: 100%;"> <h3 class="email-table-mainHeading" style="font-weight: 400;font-size: 22px;line-height: 33px;color: #212429;padding: 10px 25px;text-align: left;margin:0;border-bottom: 1px solid #E5E7E9;">Order summary</h3></td>
+            <td style="display: block;width: 100%;">
+              <table class="email-order-cal-table" style="display: block;width: 100%;" cellspacing="0" cellpadding="0" border="0">
+                <tbody style="display: block;width: 100%;">
+                  <tr class="order-cal-table" style="padding:0; margin:0;list-style: none;display: block;width: 100%;">
+                      <td class="row" style="padding: 10px 25px;display: flex;justify-content: left;align-items: center;border-bottom: 1px solid #E5E7E9;">
+                          <p class="col-6" style="width:59%;display: inline-block;text-align: left;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;">PRODUCT</p>
+                          <p class="col-2" style="width:19%; display: inline-block;text-align: center;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;">QUANTITY</p>
+                          <p class="col-2" style="width:19%; display: inline-block;text-align: center;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;">PRICE</p>
+                          <p class="col-2" style="width:19%; display: inline-block;text-align: center;margin: 0;padding: 0;font-weight: bolder;color: #0E0F10; font-size: 14px;line-height:20px;">TOTAL</p>
+                      </td>
+                      startloop
+                     <td class="row total-cal" style="padding: 10px 25px;display: flex;justify-content: right;align-items: center;display: block;text-align: right;">
+                        <ul style="list-style: none;padding: 0;padding-right: 64px;display: block;text-align: right;margin: 0;display: block;text-align: right;">
+                            <li style="display: block;text-align: right;"><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;font-weight: bolder;text-align: left;width:70%;display: inline-block; text-align:right">Sub total: </p><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;text-align: right;display: inline-block;text-align:right;width:30%"><span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${totalPrice} </span> </p></li>
+                          <li style="display: block;text-align: right;"><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;font-weight: bolder;text-align: left;width:70%;display: inline-block; text-align:right">Shipping: </p><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;text-align: right;display: inline-block;text-align:right;width:30%"><span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${ShippingAmt} </span> </p></li>
+                          <li style="display: block;text-align: right;"><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;font-weight: bolder;text-align: left;width:70%;display: inline-block;text-align:right">Tax:</p><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;text-align: right;display: inline-block;text-align:right;width:30%"> <span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${TaxAmt} </span> </p></li>
+                          <li style="display: block;text-align: right;"><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;font-weight: bolder;text-align: left;width:70%;display: inline-block;text-align:right">Order total: </p><p style="padding: 0;margin: 0;color: #0E0F10; font-size: 14px;line-height:20px;text-align: right;display: inline-block;text-align:right; width:30%"> <span style="font-weight: normal;"> $</span> <span style="font-weight: normal;"> ${totalAmt} </span> </p></li>
+                        </ul>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+        </tr>
+    </tbody>
+<tr>
+<td bgcolor="#002A42" style="color:#fff; padding: 20px;">
+<table width="600">
+<tbody>
+<tr>
+<td>
+  <table>
+     <tbody>
+     <tr><td style="font-weight:bold; font-size: 14px;">CONTACT INFO</td></tr>
+     <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/phone.svg">+1 800 715 4396<tr></tr></td></tr>
+     <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/mail.svg"> <a class="footer__link" href="mailto:sales@fairviewmicrowave.com">sales@fairviewmicrowave.com</a></td></tr>
+     <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/web.svg"> <a class="footer__link" href="https://fairviewmicrowave.com">fairviewmicrowave.com</a></td></tr>
+     </tbody>
+     </table>
+</td>
+<td>
+  <table>
+    <tbody>
+      <tr><td height="15"></td></tr>
+      <tr>
+       <td></td>
+        <td style="font-size: 12px; display:flex"><img style="height: 14px;padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/location-icon.png"> Headquarters<br/> 1301 Leora Ln<br/> Lewisville, Texas 75056</td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+<td align="right" valign="top">
+  <table>
+    <tbody>
+      <tr><td style="font-weight:bold; font-size: 14px;">LET'S CONNECT
+      </td></tr>
+      <tr><td><span class="iconThemb">
+        <a title="Facebook" class="footer__link" href="http://www.facebook.com/people/Fairview-Microwave/100063721473386/" target="_blank">
+        <img alt="FB" src="https://${domainname}/content/dam/fm/footer/facebook.png"></a>
+    </span>
+    <span class="iconThemb">
+        <a title="Linkedin" class="footer__link" href="http://www.linkedin.com/company/fairview-microwave-inc./" target="_blank">
+        <img alt="Linkedin" src="https://${domainname}/content/dam/fm/footer/linkdein.png"></a>
+    </span>
+    <span class="iconThemb">
+        <a title="Twitter" class="footer__link" href="http://twitter.com/Fairview_Micro" target="_blank">
+        <img alt="Twitter" src="https://${domainname}/content/dam/fm/footer/twitter.png"></a>
+    </span>
+	<span class="iconThemb">
+        <a title="Youtube" class="footer__link" href="http://www.youtube.com/company/fairview-microwave-inc" target="_blank">
+        <img alt="YouTube" src="https://${domainname}/content/dam/fm/rfqfooter/yt.svg"></a>
+    </span>
+    </td></tr>
+    </tbody>
+  </table>
+</td>
+</tr>
+<tr><td colspan="3" style="font-size: 10px;"><p style="margin-bottom: 0;">&copy; 2022 Infinite Electronics, Inc. Fairview Microwave is a registered trademark of Infinite Electronics, Inc. Same-day<br/> shipping terms and conditions can be found here <a class="footer__link" style="font-size:10px" href="https://www.fairviewmicrowave.com/t-Shipping.aspx">(<u>https://www.fairviewmicrowave.com/t-Shipping.aspx</u>)</a></p>
+</td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

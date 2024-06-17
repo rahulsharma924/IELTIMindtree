@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Form Text Field"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.form.text.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_form_text_v2"
+    trackingFeature="core-components:form-text:v2">
+    <content
+        granite:class="cmp-form-text__editDialog"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                granite:class="cq-RichText-FixedColumn-column"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <rfformitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="RMA-Form Title"
+                                        fieldLabel="RMA-Form Title"
+                                        name="./rfformtitle"/>
+                                    <rfformsubtitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        fieldDescription="RMA-Form SubtitleText"
+                                        fieldLabel="RMA-Form SubtitleText"
+                                        name="./rfformsubtitle"/>
+                                    <rffirstname
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="First Name Label"
+                                        fieldLabel="RMA-Form First Name Label"
+                                        name="./rffirstname"/>
+                                    <rflastname
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Last Name Label"
+                                        fieldLabel="RMA-Form Last Name Label"
+                                        name="./rflastname"/>
+                                    <rfcompany
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Company Name"
+                                        fieldLabel="RMA-Form Company Name"
+                                        name="./rfcompany"/>
+                                    <rfjob
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Job Title"
+                                        fieldLabel="RMA-Form Job Title"
+                                        name="./rfjob"/>
+                                    <rfemail
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Email Label"
+                                        fieldLabel="RMA-Form Email Label"
+                                        name="./rfemail"/>
+                                    <rfphone
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Phone Number Label"
+                                        fieldLabel="RMA-Form Phone Number"
+                                        name="./rfphone"/>
+                                    <rfaddress1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Address 1"
+                                        fieldLabel="RMA-Form Address 1"
+                                        name="./rfaddress1"/>
+                                    <rfaddress2
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Address 2"
+                                        fieldLabel="RMA-Form Address 2"
+                                        name="./rfaddress2"/>
+                                    <rfcity
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="City Label"
+                                        fieldLabel="RMA-Form City Label"
+                                        name="./rfcity"/>
+                                    <rfcountry
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Country Label"
+                                        fieldLabel="RMA-Form Country Label"
+                                        name="./rfcountry"/>
+                                    <rfzipcode
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Zipcode Label"
+                                        fieldLabel="RMA-Form Zipcode Label"
+                                        name="./rfzipcode"/>
+                                    <rfstate
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="State Label"
+                                        fieldLabel="RMA-Form State Label"
+                                        name="./rfstate"/>
+                                    <rfsalesinvoice
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Sales Invoice Label"
+                                        fieldLabel="RMA-Form Sales Invoice Label"
+                                        name="./rfsalesinvoice"/>
+                                    <rfponum
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="PO Number Label"
+                                        fieldLabel="RMA-Form PO Number Label"
+                                        name="./rfponum"/>
+                                    <rfrmareq
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="RMA Request Label"
+                                        fieldLabel="RMA-Form RMA Request Label"
+                                        name="./rfrmareq"/>
+                                    <rfretmsg
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Return Message Label"
+                                        fieldLabel="RMA-Form RMA Return Message Label"
+                                        name="./rfretmsg"/>
+                                    <rfretmsgvaltext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Return Message Validation Text"
+                                        fieldLabel="RMA-Form RMA Return Message Validation Text"
+                                        name="./rfretmsgvaltext"/>
+                                    <rfsigname
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Date Label"
+                                        fieldLabel="RMA-Form Date Label"
+                                        name="./rfdate"/>
+                                    <rfnamesiglabel
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Signature Message Validation Text"
+                                        fieldLabel="RMA-Form RMA Signature Message Validation Text"
+                                        name="./rfnamesiglabel"/>
+                                    <rfnamevaltext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Signature Message Validation Text"
+                                        fieldLabel="RMA-Form RMA Signature Message Validation Text"
+                                        name="./rfnamevaltext"/>
+                                    <rfsubmitbtntext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Submit Button Text"
+                                        fieldLabel="RMA-Form Submit Button Text"
+                                        name="./rfsubmitbtntext"/>
+                                    <iesalesemail 
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the mail id for sales team of fairviewmircowave"
+                                        fieldLabel="Mail id of sales team"
+                                        name="./iesalesemail"/>
+                                </items>
+                            </column>
+                        </items>
+                    </columns>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

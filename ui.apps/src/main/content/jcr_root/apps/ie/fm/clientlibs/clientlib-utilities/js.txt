@@ -1,0 +1,10 @@
+#base=js
+utilities-json.js
+seo-url.js
+image-url.js
+text-slice.js
+price-formate.js
+estimated-shipment.js
+common-utility.js
+regex-pattern.js
+error-module.js

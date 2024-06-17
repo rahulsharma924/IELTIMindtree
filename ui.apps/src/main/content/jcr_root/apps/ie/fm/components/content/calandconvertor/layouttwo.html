@@ -1,0 +1,20 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='calandconvertor'}" />
+
+
+<sly data-sly-use.convertersLinksModel="com.aem.ie.core.models.CalAndConvertorSlingModel"/>
+
+
+<div class="conversion_calculators_first_type">
+	<ul class="conversion_calculators_type">
+
+        <sly data-sly-repeat.convertersLink="${convertersLinksModel.convertersLinksDetails}">
+                    <li class="calculator_type_conversion">
+                      <a href="${convertersLink.resourceLink}.html" title="${convertersLink.title}"
+                        >${convertersLink.title}
+                      </a>
+                    </li>
+        </sly>
+     </ul>
+</div>

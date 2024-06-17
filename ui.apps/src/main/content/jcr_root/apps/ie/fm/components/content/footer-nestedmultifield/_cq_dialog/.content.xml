@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_text_v2"
+    trackingFeature="core-components:text:v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <firsttab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Footer Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <firstmultifield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./footertitlemulti">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Footer Main Title"
+                                                                    name="./footerheadtitle"/>
+                                                                <accordion
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="Footer Children Details">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                        name="./footermulti">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <column
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <title
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Child Title"
+                                                                                        name="./footertitle"/>
+                                                                                    <url
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                        fieldLabel="Child Link"
+                                                                                        name="./footerlink"
+                                                                                        rootPath="/content"/>
+                                                                                    <contactdesc
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Contact Description"
+                                                                                        name="./contactdesc"/>
+                                                                                    <contactmail
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldLabel="Contact Mail"
+                                                                                        name="./contactmail"/>
+                                                                                    <checkbox
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                                                        name="./newtabcheck"
+                                                                                        text="Open in new tab"
+                                                                                        value="true"/>
+                                                                                    <checkboxnewwindow
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                                                        name="./newwincheck"
+                                                                                        text="Open in New Window"
+                                                                                        value="true"/>
+                                                                                </items>
+                                                                            </column>
+                                                                        </items>
+                                                                    </field>
+                                                                </accordion>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </firstmultifield>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </firsttab>
+                    <secondtab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Footer Social"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <ecia-image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="ECIA Image"
+                                                name="./eciaimg"
+                                                rootPath="/content/dam"/>
+                                            <ecia-title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="ECIA Image Titile"
+                                                name="./eciatitle"/>
+                                            <ecia-link
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="ECIA Link"
+                                                name="./ecianowlink"/>
+                                            <connectwithus
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Connect with us text"
+                                                name="./connectusTitle"/>
+                                            <socialmediaicon1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Social Media Icon1"
+                                                fieldLabel="Social Media Icon1"
+                                                name="./socialmage1"
+                                                required="{Boolean}true"/>
+                                            <socialmediatitle1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Social Media Ttile1"
+                                                name="./socialmediatitle1"/>
+                                            <socialmedialink1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Social Media Link1"
+                                                name="./socialmedialink1"/>
+                                            <socialmediaicon2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Social Media Icon2"
+                                                fieldLabel="Social Media Icon2"
+                                                name="./socialmage2"
+                                                required="{Boolean}true"/>
+                                            <socialmediatitle2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Social Media Ttile2"
+                                                name="./socialmediatitle2"/>
+                                            <socialmedialink2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Social Media Link2"
+                                                name="./socialmedialink2"/>
+                                            <socialmediaicon3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Social Media Icon3"
+                                                fieldLabel="Social Media Icon3"
+                                                name="./socialmage3"
+                                                required="{Boolean}true"/>
+                                            <socialmediatitle3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Social Media Ttile3"
+                                                name="./socialmediatitle3"/>
+                                            <socialmedialink3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Social Media Link3"
+                                                name="./socialmedialink3"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </secondtab>
+                    <thirdtab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Footer Copyright"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <text1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Right Reserved Text"
+                                                name="./footerinc"
+                                                rootPath="/content/dam"/>
+                                            <text2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Sitemap Text"
+                                                name="./footersitemap"
+                                                rootPath="/content/dam"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </thirdtab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

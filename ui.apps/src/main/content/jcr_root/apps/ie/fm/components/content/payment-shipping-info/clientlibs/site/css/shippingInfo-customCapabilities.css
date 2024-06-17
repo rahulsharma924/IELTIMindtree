@@ -1,0 +1,139 @@
+@media screen and (min-width: 834px) {
+	.order-summary-sect .shippingInfo-customCapabilities {
+		display: block;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .customcap_icon img, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .customcap_icon img, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .customcap_icon img {
+		width: 30px;
+		height: 30px;
+		object-fit: contain;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .ls_cc_sds_title, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .ls_cc_sds_title, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .ls_cc_sds_title {
+		font-weight: var(--fontWeightBold);
+		font-size: var(--baseFontSize);
+		line-height: var(--baseLineHeight);
+		color: var(--secondaryBlack);		 
+	}
+	.order-summary-sect {
+		background: var(--secondaryBtnHover);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds {
+		width: 100%;
+		display: flex;
+		padding-top: 58px;
+		border-top: 1px solid var(--livesupportBorderClr);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities {
+		width: 49%;
+		display: inline-block;
+		max-width: 49%;
+		flex: 49%;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities {
+		border-right: 1px solid var(--livesupportBorderClr);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support {
+		width: 100%;
+		max-width: 100%;
+		margin-top: 64px;
+		border: 0;
+		border-top: 1px solid var(--livesupportBorderClr);
+		padding-top: 30px;
+		flex: 100%;
+		order: 3;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .ls_cc_sds_desc, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .ls_cc_sds_desc, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .ls_cc_sds_desc {
+		width: 80%;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping {
+		vertical-align: top;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping a:hover, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities a:hover, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .samedayshipping_btn:hover, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .customcap_btn:hover {
+		font-weight: var(--fontWeightBold);
+		text-decoration: underline;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping a:focus, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities a:focus, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .samedayshipping_btn:focus, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .customcap_btn:focus {
+		font-weight: var(--fontWeightBold);
+		text-decoration: underline;
+		color: var(--secondaryLinkActive);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping p a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .ls_cc_sds_desc.desc_link_gap a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support p a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .ls_cc_sds_desc.desc_link_gap a {
+		font-weight: var(--fontWeightSmall);
+		font-size:var(--fontSize14);
+		line-height:var(--baseLineHeight);
+		color: var(--secondaryBlack);
+	}
+}
+@media screen and (max-width: 992px) {
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities {
+		order: 2;
+		flex: 100%;
+		border: 0;
+		border-top: 1px solid var(--livesupportBorderClr);
+		margin-top: 64px;
+		padding-top: 30px;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping {
+		flex: 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 833px) {
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds {
+		width: 90%;
+		display: flex;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid var(--livesupportBorderClr);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping {
+		order: 1;
+		padding-top: 46px;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities {
+		order: 2;
+		padding-top: 46px;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support {
+		order: 3;
+		padding-top: 46px;
+		margin-top: 46px;
+		border: 0;
+		border-top: 1px solid var(--livesupportBorderClr);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping div img, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities div img, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support div img, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .customcap_icon img , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .customcap_icon img, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .customcap_icon img {
+		object-fit: contain;
+		height: 26px;
+		width: 26px;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping div, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities div, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support div, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .customcap_icon , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .customcap_icon , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .customcap_icon {
+		padding-bottom: 12px;
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping h2, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities h2, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support h2, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .ls_cc_sds_title , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .ls_cc_sds_title , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .ls_cc_sds_title {
+		font-weight: var(--fontWeightBold);
+		font-size: var(--baseFontSize);
+		line-height: var(--baseLineHeight);
+		color: var(--secondaryBlack);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping p, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities p, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support p, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .ls_cc_sds_desc.desc_link_gap , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .ls_cc_sds_desc.desc_link_gap , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .ls_cc_sds_desc.desc_link_gap {
+		margin: 12px auto;
+		font-weight: var(--fontWeightSmall);
+		font-size:var(--fontSize14);
+		line-height: var(--baseLineHeight);
+		color: var(--secondaryBlack);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping p a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .ls_cc_sds_desc.desc_link_gap a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support p a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .live_support .ls_cc_sds_desc.desc_link_gap a {
+		font-weight: var(--fontWeightSmall);
+		font-size:var(--fontSize14);
+		line-height: var(--baseLineHeight);
+		color: var(--secondaryBlack);
+	}
+	.order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities a, .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .samedayshipping .samedayshipping_btn , .order-summary-sect .shippingInfo-customCapabilities .row.ls_cc_sds .custom_capabilities .customcap_btn {
+		cursor: pointer;
+		color: var(--secondaryLinkNormal);
+		font-weight: var(--fontWeightMedium);
+		font-size:var(--fontSize14);
+		line-height: var(--lineHeight1andQ);
+	}
+}

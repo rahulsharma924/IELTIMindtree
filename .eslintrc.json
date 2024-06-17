@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "object-curly-spacing": ["warn", "always"],
+    "quotes": ["warn", "double"],
+    "indent": ["error", 2],
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "never",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+  }],
+    "eol-last": "error"
+  },
+  
+  "globals": {
+    "$": true
+  }
+}

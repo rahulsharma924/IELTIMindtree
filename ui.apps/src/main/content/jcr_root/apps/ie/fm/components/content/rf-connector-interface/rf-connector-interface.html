@@ -1,0 +1,74 @@
+<sly
+        data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+        data-sly-call="${clientlib.all @ categories='rf-connector-interface'}"></sly>
+<div class="fm-container ">
+    <section class="dsc-title">
+        ${properties.header @context='html'}
+    </section>
+    <div class="row  rf-wrapper-main" id="rf_wrapper"
+         data-sly-list.rfConnectorList="${resource.getChildren}">
+        <sly data-sly-test="${rfConnectorList.name == 'rfConnector'}">
+            <sly data-sly-repeat.rfConnector="${rfConnectorList.getChildren}">
+                <div class="col-xs-12 col-md-6 col-lg-4 ie-columns">
+                    <div class="card text-center">
+                        <div class="card-body card-body-content">
+                            <div class="bma-desc">
+                                <h2 class="card-title title-text">${rfConnector.rfConnectorTitle}</h2>
+                                <p class="bma-line-text">${rfConnector.rfConnectorDesc}</p>
+                            </div>
+                            <div class="d-flex justify-content-between  flexwrap "
+                                 data-sly-list.rfConnectorItems="${rfConnector.getChildren}">
+                                <sly data-sly-test="${rfConnectorItems.name == 'rfConnectorCard'}">
+                                    <sly data-sly-repeat.rfConnectorCard="${rfConnectorItems.getChildren}">
+                                        <div class="card-thumb ">
+                                            <div class="img-container img-border">
+                                                <img src="${rfConnectorCard.rfConnectorImage}"
+                                                     alt="${rfConnectorCard.rfImageAltText}">
+                                            </div>
+                                            <h3 class="mf-text">${rfConnectorCard.rfConnectorType}</h3>
+                                            <div class="d-flex datasheet-main justify-content-center p-relative">
+                                                <div class="rfdatasheet ">
+                                                    <a class="datasheet-box"  title="Datasheet" target="_blank"
+                                                       href="${rfConnectorCard.rfDatasheet}"><i
+                                                            class="fa fa-file-text-o" aria-hidden="true"></i>
+                                                        Datasheet</a>
+                                                       
+                                                </div>
+                                                <div class="d-none-box data-unavailable">
+                                                    <div class="modal-header">
+                                                        <div class ="dataunavailable"><i class="fa-solid fa-triangle-exclamation"></i>
+                                                            <div class="modal-title">${properties.dataUnavailableTitle}</div>
+                                                        </div>
+                                                      
+                                                        <button onclick="closeStyle()" type="button" class="close closepopup" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </sly>
+                                </sly>
+                              
+                               
+                                <!-- <div class="modal" id="data-unavailable" data-backdrop="static">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class ="dataunavailable"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                                                <div class="modal-title">${properties.dataUnavailableTitle}</div>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                          
+                            <a data-sly-test="${rfConnector.buttonText}" href="${rfConnector.buttonLink @context = 'text'}"
+                               class="ie-primary-btn shop-now-btn" x-cq-linkchecker="skip">${rfConnector.buttonText}</a>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </sly>
+    </div>
+   
+</div>

@@ -1,0 +1,27 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='brouchersAll'}" />
+<sly data-sly-use.brochureshashmap="com.aem.ie.core.models.BrochuresModel">
+   <div >      
+   <div class="broucherInformation analyticbrouchers" data-sly-list.key1="${brochureshashmap.BrochuresMyHashMap}">
+      <div class="broucher_details">
+          <div class="broucherLink border-img" data-sly-list.key3="${brochureshashmap.BrochuresImageHashMap}">
+              <sly data-sly-test="${key3 == key1}">
+               <img class="BroucherImage img-height" alt="Title" src="${brochureshashmap.BrochuresImageHashMap[key3]}" aria-label="broucherimage" />
+              </sly>
+          </div>
+      <p class="broucherTitle">${key1 @ context='html'}</p>
+      <div class="white-desc"><p class="broucherDesc broucherDesc-limit">${brochureshashmap.BrochuresMyHashMap[key1] @ context='html'}</p></div>
+<div class="broucherLink m-top" data-sly-list.key2="${brochureshashmap.BrochuresImageMyHashMap}">
+
+<sly data-sly-test="${key2 == key1}">
+<div class="d-flex-row">
+      <i class="fa-sharp fa-solid fa-file-pdf"></i> 
+   <a href="${brochureshashmap.BrochuresImageMyHashMap[key2]}" class="ie-tertiary-link font-weight-500">${properties.pdfname}</a>
+   </div>
+</sly>
+</div>
+   </div>
+ </div>
+</div>
+</sly>

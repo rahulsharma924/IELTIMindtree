@@ -1,0 +1,58 @@
+.thankyou-title{
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize45);
+    line-height: var(--lineHeight1andQ);
+    color: var(--secondaryBlack);
+    display:inline-block;
+}
+.thankyou-msg{
+    font-weight: var(--fontWeightSmall);
+    color: var(--primaryColor);
+    display:inline-block;
+}
+.thankyou-btn{
+    width: auto;
+    height: 50px !important;
+    padding: 10px;
+    background: var(--invertedColor);
+    border-radius: 4px;
+    font-weight: var(--fontWeightBold);
+    color: var(--secondaryColor);
+    border:0;
+    margin-top:34px;
+    cursor: pointer;
+
+}
+.thankyou{
+    text-align: center;
+    padding:50px;
+}
+.thankyou-btn:hover{
+    background:  var(--invertedColorHover);
+    color: var(--secondaryColor);
+}
+.thankyou-btn:active{
+    background:  var(--invertedColorVisited);
+    color: var(--secondaryColor);
+    outline:0;
+}
+.thankyou-btn:focus{
+background:  var(--invertedColor);
+color: var(--secondaryColor);
+outline: 2px solid var(--blueColorLight);
+outline-offset: 2px;
+}
+@media screen and (min-width:1024px){
+    .thankyou-btn{
+        width: 16.06%;
+        height: 50px !important;
+        padding: 10px;
+        background: var(--invertedColor);
+        border-radius: 4px;
+        font-weight: var(--fontWeightBold);
+        color: var(--secondaryColor);
+        border:0;
+        margin-top:34px;
+        cursor: pointer;      
+    }
+}

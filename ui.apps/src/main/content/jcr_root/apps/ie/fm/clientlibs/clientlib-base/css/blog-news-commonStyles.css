@@ -1,0 +1,302 @@
+/**** Sub Heading*****/
+
+.news-post-main-heading {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize31);
+  text-align: center;
+  color:var(--primaryColor);
+  line-height: var(--baseLineHeight);
+  margin:0 auto;
+}
+/**** Sub Description*****/
+p.news-post-main-description {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize14);
+  text-align: center;
+margin-bottom: 23px;
+color:var(--primaryColor);
+line-height: var(--baseLineHeight);
+margin-top: 8px;
+}
+/******Paragraph********/
+.news-list-with-filters-wrapper {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+/******Read more text link********/
+.news-card-read-more {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1andQ);
+    color: var(--secondaryLinkNormal);
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    position:absolute;
+    bottom:17px;
+}
+.news-card-read-more:hover,
+.news-card-read-more:focus {
+    color: var(--secondaryLinkNormal);
+    text-decoration: underline;
+    font-weight: var(--fontWeightBold);
+}
+.news-card-read-more:active{
+    color: var(--secondaryLinkActive);
+    text-decoration: underline;
+    font-weight: var(--fontWeightBold);
+}
+/******sory by style********/
+.newsSortBy {
+    border: 1px solid var(--secondaryBtnVisited);
+    border-radius: 4px;
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize12);
+    color: var(--primaryColor);
+}
+.newsSortBy::after {
+    content: "";
+    justify-self: end;
+    width: 10px;
+    height: 8px;
+}
+.newsSortBy .sort-by-label {
+    margin: 0;
+    font-size: var(--fontSize12);
+}
+.newsSortBySelect {
+    border: 0;
+    font-weight: var(--fontWeightBold);
+    outline: 0;
+    cursor: pointer;
+}
+.newsSortBySelect:focus-visible {
+    outline: 0;
+}
+select#newsSelectTypes {
+    padding-left: 5px;
+}
+select#newsSelectTypes option.ais-SortBy-option {
+     font-size: var(--fontSize12);
+}
+ .for-dropdown-icon{
+    background:transparent;
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-repeat:no-repeat;
+    background-position-x:77px;
+    background-position-y:7px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    width:89px;
+    color:var(--primaryColor);
+    font-weight:var(--fontWeightBold);
+}
+ .newsSortBy select{
+    -moz-appearance:none;
+    -webkit-appearance:none
+}
+ .newsSortBy select::-ms-expand{
+    display:none
+}
+
+/************Pagination Common CSS*****/
+.paginationjs {
+  display: flex;
+  line-height: 1.6;
+  /*font-family: "Marmelad", "Lucida Grande", "Arial", "Hiragino Sans GB", Georgia, sans-serif;*/
+  font-size: 14px;
+  box-sizing: initial;
+  margin-left: 5px;
+  margin-bottom: 24px;
+}
+.paginationjs:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.paginationjs .paginationjs-pages {
+	margin-left: 10px;
+	position: absolute;
+	right: 8px;
+}
+.paginationjs .paginationjs-pages ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.paginationjs .paginationjs-pages li {
+  float: left;
+  border: none;
+  list-style: none;
+}
+.paginationjs .paginationjs-pages li > a {
+  min-width: 30px;
+  height: 28px;
+  line-height: 22px;
+  display: block;
+  background: #fff;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.paginationjs .paginationjs-pages li > a:hover {
+  background: #eee;
+}
+.paginationjs .paginationjs-pages li.active {
+  border: none;
+}
+.paginationjs .paginationjs-pages li.active > a {
+  line-height: 28px;
+  background: #aaa;
+  color: #fff;
+  cursor: default;
+}
+.paginationjs .paginationjs-pages li.disabled > a {
+  opacity: 0.3;
+  cursor: default;
+}
+.paginationjs .paginationjs-pages li.disabled > a:hover {
+  background: none;
+}
+.paginationjs .paginationjs-pages li:first-child {
+  border:none;
+}
+.paginationjs .paginationjs-pages li:first-child > a {
+  border:none;
+}
+.paginationjs .paginationjs-pages li:last-child {
+  border:none;
+}
+.paginationjs .paginationjs-pages li:last-child > a {
+  border:none;
+}
+
+.paginationjs .paginationjs-go-input {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  right: 80px;
+  position: absolute;
+}
+.paginationjs .paginationjs-go-input > input[type="text"] {
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #E5E7E9 ;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  box-shadow: none;
+  box-sizing: initial;
+  width:30px;
+  vertical-align: middle;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+.paginationjs .paginationjs-go-button {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.paginationjs .paginationjs-go-button > input[type="button"] {
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #E5E7E9;
+  text-align: center;
+  padding: 0 8px;
+  font-size: 14px;
+  vertical-align: baseline;
+  outline: none;
+  box-shadow: none;
+  color: #333;
+  cursor: pointer;
+}
+.paginationjs .paginationjs-go-button > input[type="button"]:hover {
+  background-color: #f8f8f8;
+}
+.paginationjs .paginationjs-nav {
+  float: left;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #0E0F10;
+}
+.paginationjs .paginationjs-pages li.paginationjs-next {
+  border: none ;
+}
+
+.paginationjs .paginationjs-go-input, span.pageInfoText {
+  margin-left: 5px;
+  margin-left: 5px;
+  vertical-align: middle ;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+div#pagination {
+  position: relative;
+  width: 100%;
+}
+div#pagination1 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.paginationjs .paginationjs-go-input > input[type="text"] {
+  line-height: 18px;
+}
+.paginationjs .paginationjs-go-input > input[type="text"]::-webkit-input-placeholder {
+    color: #0E0F10;
+}
+.paginationjs .paginationjs-go-input > input[type="text"]::-moz-placeholder {
+    color: #0E0F10;;
+}
+.paginationjs .paginationjs-go-input > input[type="text"]:-ms-input-placeholder {
+      color: #0E0F10;
+}
+.paginationjs .paginationjs-go-input > input[type="text"]:-o-input-placeholder {
+    color: #0E0F10;
+} 
+.paginationjs .paginationjs-go-button {
+  margin-left: 5px;
+}
+.paginationjs .paginationjs-go-button > input[type="button"] {
+  vertical-align: middle;
+}
+.paginationjs.paginationjs-big .paginationjs-pages li > a {
+  line-height: 36px;
+}
+.paginationjs.paginationjs-big .paginationjs-go-input > input[type="text"] {
+  height: 36px;
+  line-height: 36px;
+}
+@media(max-width:480px) and (min-width:320px) {
+.newsList-block {
+    padding: 12px 12px;
+}
+.paginationjs{
+   margin-left: 12px;
+}
+div#pagination1 {
+  width: 100%; 
+}
+.paginationjs .paginationjs-go-input {
+    right: 60px;
+}
+.paginationjs .paginationjs-pages {
+    right: 0px;
+}
+}

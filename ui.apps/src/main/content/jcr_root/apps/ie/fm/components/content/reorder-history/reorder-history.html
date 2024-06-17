@@ -1,0 +1,64 @@
+
+<sly
+
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+
+	data-sly-call="${clientlib.css @ categories='reorder-history'}" />
+
+<section class="order-history p-0" id="orderHistoryId">
+    <div class="heading-sortby heading-sortby-mob" id="for_filter_by">
+        <h1 class="orders-title">Orders</h1>
+        <div class="sort-container analyticorderhistory-sort">
+            <label class="sortby-label dropdown-mobile-none" id="dropdown" for="idSortDropDown" >Sort by: </label>
+            <!-- <label class="sortby-label dropdown-desktop-no" id="dropdown" for="idSortDropDown">View by:</label> -->
+            <select class="sortby-dropdown select-dropdown-wd for-dropdown-icon" name="selection" id="idSortDropDown">
+                
+                <option selected value="date" class="option-wd dropdown-mobile-none">Order date</option>
+                <option value="date" class="option-wd dropdown-mobile-yes dropdown-desktop-no">Date</option>
+                <option value="status" class="option-wd " >Status</option>
+                <option value="items" class="option-wd dropdown-mobile-none">Items</option>
+                <option value="total" class="option-wd dropdown-mobile-none">Total</option>
+            </select>
+        </div>
+    </div>
+        <div class="order-history-table-wrapper">
+            <table class="table-data" id="tableData">
+                <thead>
+                <tr class="table-rows">
+                    <th >Status</th>
+                    <th>Order Date</th>
+                    <th>Order #</th> <th class="dropdown-desktop-no">Order #</th>
+                    <th class="column-dis-none-mob">PO</th>
+                    <th class="column-dis-none-mob">Total</th>
+                    <th class="column-dis-none-mob">Items</th>
+                    <th class="column-dis-none-mob">Actions</th>
+                </tr>
+                </thead>
+                <tbody id="orderListBody"></tbody>
+            </table>
+        </div>
+        <div class="at-table-bottom">
+            <div class="leftnav analyticplplimiter" id="records">
+                <span class="pd-right">Show</span>
+    
+                <select class="select-no-of-rows" id="numOfRows">
+                </select>
+                <span class="pd-right-left"> of </span><span class="for-number-of-rows-selection" id="totalNumberOfRows"></span><span class="for-number-of-rows-selection"> results</span>
+            </div>
+            <div class="rightnav analyticorderhistory-pagination" id="nav">
+                <span class="display-page-number">Page </span> 
+                <span id="currentPageNumber" class="pNum pd-right"></span>  of 
+                <span id="totalNumberOfPages" class="tRecords pd-left"></span>
+                <a title="Previous" class="prev" id="prev" href="#tableData" ><i class="fa-solid fa-chevron-left fa-xs"></i> </a>
+                <a title="Next" class="nxt" id="next" href="#tableData" > <i class="fa-solid fa-chevron-right fa-xs"></i></a>
+            </div>
+        </div>
+</section>
+
+<sly
+
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+
+	data-sly-call="${clientlib.js @ categories='reorder-history'}" />
+
+   

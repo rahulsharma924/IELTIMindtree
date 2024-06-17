@@ -1,0 +1,13 @@
+#base=js
+jquery.min.js
+handlebars.min.js
+bootstrap.min.js
+
+slick.min.js
+recommend-js.js
+recommend.js
+livevalidation_standalone.compressed.js
+autocomplete-js.js
+autocomplete-plugin-query-suggestions.js
+algoliasearch.umd.js
+instantsearch.js

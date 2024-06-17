@@ -1,0 +1,110 @@
+.prod-detail-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.resourceCard {
+    margin-top:0;
+    }
+.prod_detail_wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: left;
+   justify-content: left;
+   column-gap: 27px;
+   row-gap: 27px;
+}
+.Prod_detail_cards{
+    text-align: center;
+    padding: 20px 15px;
+    background:var(--secondaryColor);
+    border: 1px solid var(--secondaryBtnVisited);
+    width: 285px;
+}
+.prod_desc > h1, h2, .prod_desc h4, .desc-head, .desc-para{
+    font-weight:var(--fontWeightBold);
+    font-size:var(--fontSize12);
+    line-height:var(--baseLineHeight);
+    text-align: center;
+    color:var(--primaryColor);
+    margin: 0;
+
+}
+.prod_desc{
+margin-bottom:11px;
+}
+.prod_desc > h2, .desc-para{
+    font-weight:var(--fontWeightSmall);
+    display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.prod_btn{
+	color:var(--secondaryColor);
+}
+.shop-btn{
+    width: 183px;
+    text-align: center;
+    background-color: #d83a22;
+    border:0;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 19px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 44px;
+}
+.shop-btn:hover {
+    background-color: #a80711;
+    border:1px solid #a80711;
+}
+.shop-btn:focus,
+.shop-btn:focus-visible{
+    outline: 2px solid var(--blueColorLight);
+    outline-offset: 1px;
+    box-shadow: none;
+}
+.shop-btn:active {
+    background: #6a0000;
+}
+
+a:not([href]):not([tabindex]):focus{
+    outline: 0;
+}
+.product-box{
+    border:1px solid var(--secondaryBtnVisited);
+    padding-bottom: 20px;
+ }
+ .prod_img img{
+    width:100%; 
+ }
+@media screen and (min-width:768px) and (max-width:991px) {
+    .prod_detail_wrapper{
+        display: grid;
+        grid-template-columns:50% 50% ;
+        padding: 0 17px;
+     }
+   }
+@media screen and (max-width:767px) {
+    .prod_detail_wrapper{
+        display: grid;
+        grid-template-columns:100% ;
+        padding: 0 30px;
+     }
+     .Prod_detail_cards{
+        margin: 0 0 25px 0;
+     }
+     .prod-detail-section{
+        padding: 0 24px;
+     }
+}
+.divbox{
+    height: 200px;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+.justify-center{
+    justify-content: center;
+}

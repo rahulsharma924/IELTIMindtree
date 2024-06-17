@@ -1,0 +1,88 @@
+
+#confirmationmsg .modal-content {
+    background-color: var(--filterBg);
+	margin: auto;
+    padding: 14px 18px 18px 18px;
+    border: none;
+    width: 390px;
+    height: 56px;
+}
+#confirmationmsg .modal-title {
+   padding: 0 0 0 10px;
+    font-weight: 600;
+    font-size: var(--baseFontSize);
+    line-height: var(--lineHeight1and3Q);
+    color: var(--primaryColor);
+    width: 100%;
+}
+#confirmationmsg .modal-header{
+	justify-content: flex-start;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: none;
+        width: 355px;
+}
+#confirmationmsg .confirmationmsg-image{
+	margin: 4px 0 0 0;
+    width: 20px;
+    height: 20px;
+    color: var(--successMedium);
+    line-height: 20px;
+}
+
+#confirmationmsg .modal-dialog {
+    background: var(--secondaryColor);
+    box-shadow: 0 25px 50px -12px rgba(6, 25, 56, 0.25);
+    border-radius: 8px;
+    max-width: 390px;
+    margin: 120px 30px 0 864px;
+}
+#confirmationmsg button.close {
+    margin-left: 10px;
+    color: #879096;
+    font-weight: lighter;
+    font-size: 38px;
+}
+@media screen and (max-width: 767px) {
+#confirmationmsg .modal-dialog {
+    background: var(--secondaryColor);
+    box-shadow: 0 25px 50px -12px rgba(6, 25, 56, 0.25);
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 125px 0 0 0;
+}
+    #confirmationmsg .modal-content {
+    background-color: var(--filterBg);
+    margin: auto;
+       padding: 14px 18px 18px 18px;
+    border: 0;
+    width: 385px;
+    height: 56px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+#confirmationmsg .modal-dialog {
+    background: var(--secondaryColor);
+    box-shadow: 0 25px 50px -12px rgba(6,25,56,0.25);
+    border-radius: 8px;
+    max-width: 385px;
+    margin: 120px auto;
+}
+#confirmationmsg .modal-content {
+    background-color: var(--filterBg);
+    margin: auto;
+    padding: 14px 18px 18px 18px;
+    border: 0;
+    width: 385px;
+    height: 56px;
+}
+#confirmationmsg .modal-dialog {
+    background: var(--secondaryColor);
+    box-shadow: 0 25px 50px -12px rgba(6,25,56,0.25);
+    border-radius: 8px;
+    max-width: 385px;
+    margin: 120px auto;
+}
+}

@@ -1,0 +1,107 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+		</div>
+		<div class="form-block-cls">
+			<h3 class="mb-3">${properties.calculationtitle}</h3>	
+			<p>${properties.selectcascadedtitle}</p>
+			<div class="row top-block-cls">
+				<div class="col-4">
+					<label for="option" class="d-none">milliWatt</label>
+					<select id="option" onchange="changeNoiseFn()" data-acsb-navigable="true" data-acsb-now-navigable="true"
+						aria-hidden="false" data-acsb-hidden="false" 
+						data-acsb-validation-uuid="option" data-acsb-field-visible="true" aria-required="true"
+						aria-label="Select number of cascaded amplifiers:Result:"
+						data-acsb-tooltip="Select number of cascaded amplifiers:Result: | Required field">
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-6 col-md-4">
+					<p>${properties.noisetitle}</p>
+				</div>
+				<div class="col-6 col-md-4">
+					<p>${properties.gaintitle}</p>
+				</div>
+			</div>
+			<div id="boxes">
+				<div class="row">
+					<div class="col-6 col-md-4">
+						<input class="noise" type="text" value="${properties.noisePlaceholder1}" onkeypress="ifEnter(event)"
+							onblur="blurFn(this)" onfocus="focusFn(this)">
+					</div>
+					<div class="col-6 col-md-4">
+						<input class="gain" type="text" value="${properties.gainPlaceholder1}" onkeypress="ifEnter(event)"
+							onblur="blurFn(this)" onfocus="focusFn(this)">
+					</div>
+					<div class="col-6 col-md-4 error-field-calc">
+						<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+							data-acsb-force-hidden="true"></span>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-6 col-md-4">
+						<input class="noise" type="text" value="${properties.noisePlaceholder2}" onkeypress="ifEnter(event)"
+							onblur="blurFn(this)" onfocus="focusFn(this)">
+					</div>
+					<div class="col-6 col-md-4">
+						<input class="gain" type="text" value="${properties.gainPlaceholder2}" onkeypress="ifEnter(event)"
+							onblur="blurFn(this)" onfocus="focusFn(this)">
+					</div>
+					<div class="col-6 col-md-4">
+						<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+							data-acsb-force-hidden="true"></span>
+					</div>
+				</div>
+			</div>
+			<div class="calc-block-cls mt-5">
+				<button id="go" class="ie-primary-btn" type="button"  onclick="clickNoiseFn()"
+					value="Calculate">
+					${properties.noisecalculatebtntitle}
+				</button>
+				<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText" aria-hidden="true"
+						data-acsb-hidden="true" data-acsb-force-hidden="true"></span></p>
+			</div>
+			<div class="calculator-results">
+				<p>${properties.noiseresultlabel}</p>
+				<div class="result_container results-calc">
+					<div class="result">
+						<span class="result-converted"> ${properties.noiseresultlabeltitle1}
+						</span>
+						<span id="noise" class="output"></span> <br> 
+						<span class="result-converted"> ${properties.noiseresultlabeltitle2}
+						</span> 
+						<span id="gain" class="output"></span></div>
+				</div>
+				<div id="button_cont" class="mt-3"><input class="related_search dnone-cls" type="button"
+						value="${properties.findrelatedprdTitle}"></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>
+

@@ -1,0 +1,52 @@
+
+<section class="row ls_cc_sds container-fluid">
+<div class="live_support col-sm-4">
+  <div class="customcap_icon" >
+     <i class="fa-light fa-comment-dots font-24"></i>
+  </div>
+<h4 class="ls_cc_sds_title heading__title--h4">${properties.titleone}</h4>
+<p class="ls_cc_sds_desc"><span>${properties.descriptionone}</span> <a class="assistance-mobile" href="tel:${properties.phonenumber}"
+title="${properties.phonenumber}">${properties.phonenumber}</a><span>${properties.description}</span></p>
+<div class="livechat-support">
+  <button href="${properties.buttonlinkone}"  title="Live Chat" class="livechat-menu ie-scondary-btn live_support_btn ie-blue-border-btn analyticlivesupport">${properties.buttonone}</button>
+</div>
+
+</div>
+<div class="custom_capabilities analyticcustomcap col-sm-4">
+  <div class="customcap_icon">
+    <i class="fa-light fa-wrench font-24"></i>
+  </div>
+<h4 class="ls_cc_sds_title heading__title--h4">${properties.titletwo}</h4>
+<p class="ls_cc_sds_desc desc_link_gap">${properties.descriptiontwo}</p>
+<a title="${properties.titletwo} ${properties.buttontwo}" role="link" href="${properties.buttonlinktwo}"  class="customcap_btn">${properties.buttontwo}</a>
+</div>
+<div class="samedayshipping analyticsamedayshipping col-sm-4">
+  <div class="customcap_icon">
+    <i class="fa-light fa-truck font-24"></i>
+  </div>
+<h4 class="ls_cc_sds_title heading__title--h4">${properties.titlethree}</h4>
+<p class="ls_cc_sds_desc desc_link_gap">${properties.descriptionthree}</p>
+<a title="${properties.titlethree} ${properties.buttonthree}" role="link" class="samedayshipping_btn"  href="${properties.buttonlinkthree}">${properties.buttonthree}</a>
+</div>
+</section>
+<script>
+document.querySelector("body").addEventListener('click', function(e) { 
+    //var paraElement = e.target.closest('button');
+    var hyperlinkElement = e.target.closest('a');
+        var label="";
+        var category= "";
+        if((hyperlinkElement !== null && hyperlinkElement.closest('.analyticlivesupport')!=null)){  
+            label= hyperlinkElement.textContent.trim(); 
+            category= "Live support - " + pageName + " page";        
+        }  
+        else if((hyperlinkElement !== null && hyperlinkElement.closest('.analyticcustomcap')!=null)){  
+            label= hyperlinkElement.textContent.trim(); 
+            category= "Custom Capabilities - " + pageName + " page"; 
+        } 
+        else if((hyperlinkElement !== null && hyperlinkElement.closest('.analyticsamedayshipping')!=null)){  
+            label= hyperlinkElement.textContent.trim(); 
+            category= "Same day shipping - " + pageName + " page";  
+        }
+      ctalinkDataLayerCall(label,category);   
+    }, false);	
+</script>

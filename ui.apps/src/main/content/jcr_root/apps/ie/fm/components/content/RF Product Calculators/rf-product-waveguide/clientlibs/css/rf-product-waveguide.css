@@ -1,0 +1,85 @@
+#waveguide {
+    padding: 0 0 0 125px;
+    margin: 30px 125px 0 125px;
+}
+
+#waveguide-img1 .cmp-image__image {
+    margin: 30px 0 0 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#waveguide-img2 .cmp-image__image {
+    margin: 0px 0 0 50px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#waveguide .aem-Grid {
+    display: inline-flex;
+}
+
+#waveguide-img2{
+margin: 0px 0 0 100px;
+}
+@media screen and (max-width: 767px) {
+#waveguide .aem-Grid {
+    display: inline-block;
+}
+#waveguide {
+	padding: 0;
+    text-align: center;
+    margin: 30px;
+}
+#waveguide-img1 .cmp-image__image {
+    margin: 0 0 20px 0;
+ }
+#waveguide-img2 .cmp-image__image {
+    margin: 20px 0 0 20px;
+    width: 80%;
+}
+.title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: var (--fontSize24);
+    line-height: var(--lineHeight2and1Q);
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+#waveguide-img2 {
+    margin: 0;
+}
+}
+
+@media screen and (min-width: 768px)and (max-width: 991px) {
+#waveguide .aem-Grid {
+    display: inline-flex;
+}
+#waveguide {
+	padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#waveguide-img1 .cmp-image__image {
+    margin: 30px 0 0 0;
+
+}
+    .title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: var (--fontSize24);
+    line-height: var(--lineHeight2and1Q);
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+#waveguide-img2 .cmp-image__image {
+    margin: 0 0 0 100px;
+    width: 65%;
+
+}
+#waveguide-img2 {
+    margin: 20px;
+}
+}

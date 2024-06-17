@@ -1,0 +1,242 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <title>Fairview Microwave</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+      <meta name="format-detection" content="telephone=no">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap">
+	   <style>
+	   body{
+	   font-family: Poppins, arial; 
+	   margin: 0 !important; 
+	   padding: 0 !important; 
+	   -webkit-text-size-adjust: 100% !important; 
+	   -ms-text-size-adjust: 100% !important; 
+	   -webkit-font-smoothing: antialiased !important;
+	   }
+            .btn {
+            background:#D83A22 !important;
+            display:inline-block;
+            }
+            .btn:hover {
+            background: #a80711 !important
+            }
+            .btn:active {
+            outline: 2px solid #3144d8 !important;
+            outline-offset: 1px !important
+            }
+            .footer__link{
+            color: #fff;
+            text-decoration: none;
+            }
+            .table-container {
+            border:1px solid #e7eaee;
+            }
+            .text.main_header {
+            font-size:31px;
+            color: #0E0F10;
+            line-height: 42px;
+            font-weight: 400;
+            margin-bottom:0;
+            padding-left:54px;
+            padding-right: 54px;
+            }
+            .text.sub-title{
+            color: #0E0F10;
+            font-weight: 400;
+            margin-bottom:0;
+            padding-left:54px;
+            }
+            .text-para{
+            font-size:16px;
+            color:#0E0F10; 
+            margin-top:15px
+            }
+            .text_hover {
+            color: #FFFFFF !important;
+            font-size: 16px !important; 
+            border-radius: 4px !important;
+            cursor: pointer !important; 
+            font-weight: 700 !important;
+			margin-top:20px;
+			margin-bottom:30px;
+            }
+            .reset-pass{
+            display: inline-block; 
+            cursor: pointer !important;
+            padding: 15px 25px;  
+            text-decoration: none !important; 
+            color: #FFFFFF !important;
+            }
+            .fm-microwave{
+            font-size:16px; 
+            color:#0E0F10;
+            margin-top:15px
+            }
+            .contact-info{
+            font-weight:bold; 
+            font-size: 14px;
+            }
+            .icon{
+            font-size:12px;
+            }
+            .copyright{
+            margin-bottom: 0;
+            }
+			.fm-logo{
+			text-decoration: none;
+			}
+			.contact-container{
+			color:#fff; 
+			padding: 20px;
+			}
+			.lets-connect{
+			font-weight:bold; 
+			font-size: 14px;
+			}
+         </style>
+   </head>
+   <body  bgcolor="#ffffff">
+     <div>
+        
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+         <!-- Top black border -->
+         <tbody>
+            <tr>
+               <td bgcolor="#FFFFFF">
+                  <table width="640"  class ="table-container" align="center" cellspacing="0" cellpadding="0">
+         <tbody>
+            <tr>
+               <!-- Main viewport -->
+               <td>
+                  <table width="604" border="0" cellspacing="0" cellpadding="0">
+         <tbody>
+            <tr>
+               <td>
+                  <table width="640" align="center" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <td height="20"></td>
+                        </tr>
+                        <tr>
+                           <td align="center"><a target="_blank" class="fm-logo"  title="FM Logo">
+                              <img class="template-image" width="269" height="42" align="center" src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/application-images/fm-logo_new.jpg" alt="FM Logo" border="0"></a>
+                           </td>
+                        </tr>
+                        <tr >
+                           <td style="border-bottom:1px solid #e7eaee">
+                              <table width="640" align="center" cellpadding="0" cellspacing="0">
+                                 <tbody>
+                                    <td height="20"></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </td>
+                        </tr>
+                        <td height="40"></td>
+                        <tr>
+                            <td align="left"
+								style="font-size:31px;
+										color: #0E0F10;
+										line-height: 42px;
+										font-weight: 400;
+										margin-bottom:0;
+										padding-left:54px;
+										padding-right: 54px;"
+							>Hi ${name},</td>
+                        </tr>
+                        <tr>
+                           <td height="20"></td>
+                        </tr>
+                        
+                        <tr>
+
+						    <td 
+								style="
+									align:left;	
+									color: #0E0F10;
+									font-weight: 400;
+									margin-bottom:0;
+									padding-left:54px;"
+							>
+                                We have received your request and our team will be in touch with you shortly.   
+						   </td>
+						</tr>
+						   <tr>
+						   <td>
+                           <table width="540" align="center">
+                              <tbody>
+                                 <tr>
+                                    <td class="fm-microwave"><br/>
+                                       Sincerely,<br/>Fairview Microwave<br/><br/>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+						   </tr>
+                        <tr>
+                            <td bgcolor="#002A42" class="contact-container">
+                                <table width="600">
+                                   <tbody>
+                                      <tr>
+                                         <td>
+                                           <table>
+                                               <tbody>
+                                                 <tr><td style="font-weight:bold; font-size: 14px;">CONTACT INFO</td></tr>
+                                                 <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/phone.svg">+1 800 715 4396<tr></tr></td></tr>
+                                                 <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/mail.svg"> <a class="footer__link" href="mailto:sales@fairviewmicrowave.com">sales@fairviewmicrowave.com</a></td></tr>
+                                                 <tr><td style="font-size:12px"><img style="padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/web.svg"> <a class="footer__link" href="https://fairviewmicrowave.com">fairviewmicrowave.com</a></td></tr>
+                                               </tbody>
+                                             </table>
+                                         </td>
+                                         <td>
+                                           <table>
+                                               <tbody>
+                                                 <tr><td height="15"></td></tr>
+                                                 <tr>
+                                                  <td></td>
+                                                   <td style="font-size: 12px; display:flex"><img style="height: 14px;padding-right:10px;" src="https://${domainname}/content/dam/fm/rfqfooter/location-icon.png"> Headquarters<br/> 1301 Leora Ln<br/> Lewisville, Texas 75056</td>
+                                                 </tr>
+                                               </tbody>
+                                             </table>
+                                         </td>
+                                         <td align="right" valign="top">
+                                           <table>
+                                             <tbody>
+                                               <tr><td style="font-weight:bold; font-size: 14px;">LET'S CONNECT
+                                               </td></tr>
+                                               <tr><td><span class="iconThemb">
+                                                 <a title="Facebook" class="footer__link" href="http://www.facebook.com/people/Fairview-Microwave/100063721473386/" target="_blank">
+                                                 <img alt="FB" src="https://${domainname}/content/dam/fm/footer/facebook.png"></a>
+                                             </span>
+                                             <span class="iconThemb">
+                                                 <a title="Linkedin" class="footer__link" href="http://www.linkedin.com/company/fairview-microwave-inc./" target="_blank">
+                                                 <img alt="Linkedin" src="https://${domainname}/content/dam/fm/footer/linkdein.png"></a>
+                                             </span>
+                                             <span class="iconThemb">
+                                                 <a title="Twitter" class="footer__link" href="http://twitter.com/Fairview_Micro" target="_blank">
+                                                 <img alt="Twitter" src="https://${domainname}/content/dam/fm/footer/twitter.png"></a>
+                                             </span>
+                                             <span class="iconThemb">
+                                                 <a title="Youtube" class="footer__link" href="http://www.youtube.com/company/fairview-microwave-inc" target="_blank">
+                                                 <img alt="YouTube" src="https://${domainname}/content/dam/fm/rfqfooter/yt.svg"></a>
+                                             </span>
+                                             </td></tr>
+                                             </tbody>
+                                           </table>
+                                         </td>
+                                      </tr>
+                                      <tr><td colspan="3" style="font-size: 10px;"><p style="margin-bottom: 0;">&copy; 2022 Infinite Electronics, Inc. Fairview Microwave is a registered trademark of Infinite Electronics, Inc. Same-day shipping terms and conditions can be found <a class="footer__link" style="font-size:12px" href="https://www.fairviewmicrowave.com/t-Shipping.aspx">here</a></p>
+                                      </td></tr>
+                                   </tbody>
+                                </table>
+                             </td>
+                        </tr>
+                  </table>
+				  </table>
+      </div>
+   </body>
+</html>

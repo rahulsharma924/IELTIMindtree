@@ -1,0 +1,42 @@
+.product-help-block-job {
+    background-color:var(--secondaryBtnHover);
+    padding: 60px 30px 27px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.product-help{
+    background-color:var(--secondaryBtnHover);
+}
+h2.mainHeading-title {
+    font-weight: var(--fontWeightBold);
+    font-size:var(--fontSize32);
+    line-height:var(--baseLineHeight);
+    text-align: left;
+    margin-bottom: 40px;
+}
+.multiple-block {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 15px;
+}
+.multiple-block h3 {
+    font-weight: var(--fontWeightBold);
+    font-size:var(--fontSize18);
+    line-height:var(--lineHeight1and3Q);
+}
+.multiple-block p {
+    font-weight:var(--fontWeightSmall);
+    font-size:var(--baseFontSize);
+    line-height:var(--baseLineHeight);
+}
+.multiple-block div {
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 575px) {
+    .multiple-block {
+        display: grid;
+        grid-template-columns:100%;
+        
+    }
+}
+

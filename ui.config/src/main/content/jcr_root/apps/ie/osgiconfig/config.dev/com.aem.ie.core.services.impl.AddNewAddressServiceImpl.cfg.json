@@ -1,0 +1,10 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getNewAddressURL":"https://apim-iedtecomm-dev01.azure-api.net/account/fairview/addAddress",
+  "getCustomerOrderedProductURL":"https://apim-iedtecomm-dev01.azure-api.net/account/fairview/addAddress",
+  "getDeleteAddressURL": "https://apim-iedtecomm-dev01.azure-api.net/account/fairview/deleteAddress",
+  "getUpdateAddressURL": "https://apim-iedtecomm-dev01.azure-api.net/account/fairview/updateAddress",
+  "getEditAddressURL": "https://apim-iedtecomm-dev01.azure-api.net/account/fairview/updateAddress",
+  "getCustProfileURL":"https://apim-iedtecomm-dev01.azure-api.net/customer/fairview/me"
+  
+}

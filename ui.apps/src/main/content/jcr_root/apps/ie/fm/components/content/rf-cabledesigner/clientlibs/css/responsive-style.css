@@ -1,0 +1,117 @@
+@media screen and (min-width: 768px) {
+	.left_sidebar_wrap {
+		padding-top: 150px;
+	}
+
+	.left_sidebar_wrap .container {
+		width: auto;
+		position: sticky;
+		top: 170px;
+	}
+
+	.rf_cabledesigner_main_page h1 {
+		font-size: var(--fontSize45);
+	}
+
+	.specifications {
+		pointer-events: none;
+	}
+
+	.accordion-item {
+		display: block !important;
+	}
+
+	.specifications .plusminus {
+		display: none;
+	}
+
+	.captcha-cls .modal-dialog .modal-content {
+		width: 600px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.rf_cabledesigner_main_page .selected_part_section .content-added .result_section {
+		margin-right: 40px;
+		width: max-content;
+		flex: 1 1;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.rf_cabledesigner_main_page .selected_part_section .match_link {
+		margin-top: 0;
+	}
+
+	.rf_cabledesigner_main_page .selected_part_section .result_section {
+		margin-top: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.rf-container {
+		width: 1280px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+
+	.rf_cabledesigner_main_page .selected_part_section .result_section {
+		margin: 0 0 15px 0;
+	}
+
+	.parameter_section .selected_part_section .pdf_section .icon_section {
+		margin-left: 0;
+	}
+
+	#collapseFour .checkbox-container {
+		margin-bottom: 20px;
+	}
+	.col.card_section{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 879px) {
+	.rf_cabledesigner_main_page .card-body .radio_wrap .mid_text {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.assembly-btn {
+		width: 100%;
+		position: relative;
+	}
+
+	.primary-assembly {
+		width: 100%;
+	}
+
+	.plusminus {
+		display: block;
+	}
+
+	.accordion .accordion-item {
+		display: none;
+	}
+} 
+
+@media screen and (max-width: 504px) {
+	.rf_cabledesigner_main_page .icon_popup {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.card_section {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.rf_cabledesigner_main_page #filter_selection .assembly-cls.active_card .reset_btn {
+		top: 51px;
+	}
+}

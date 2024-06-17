@@ -1,0 +1,110 @@
+div#lhnHocButton div.lhnHocChatBtn {
+    background: var(--secondaryLinkNormal);
+}
+
+div#lhnHocButton div.lhnHocBackBubble {
+    background: var(--secondaryColor);
+}
+
+div#lhnHocButton.lhnround div.lhnHocChatBubble {
+    display: none;
+}
+
+div#lhnHocButton.lhnround div.lhnHocFrontBubble {
+    display: none;
+}
+
+div#lhnHocButton.lhnround div.lhnHocChatBtn {
+    border-radius: 4px;
+    box-shadow: 0 0 5px #999;
+    cursor: pointer;
+    width: 138px;
+    height: 57.6px;
+    bottom: calc(10% + 80px);
+    right: 30px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lhnHocChatBubbleCont:before {
+    content: "\f4ad";
+    font-family: var(--fontfamilyIcon);
+    color: var(--secondaryColor);
+    font-weight: var(--fontWeightBolder);
+    font-size: var(--fontSize22);
+    line-height: var(--lineHeight1and375);
+    color: var(--secondaryColor);
+}
+
+.lhnHocChatBubbleCont:after {
+    content: "Chat";
+    font-weight: var(--fontWeightMedium);
+    padding-left: 17px;
+    color: var(--secondaryColor);
+    line-height: var(--baseLineHeight);
+}
+
+#lhnHelpOutCenter div.lhnWindow-header button.lhnWindow-header-closer,
+#lhnHelpOutCenter div.lhnWindow-header button.lhnWindow-header-minimizer {
+    outline: none;
+    border: none;
+}
+
+div#lhnHocButton.lhnround div.lhnHocChatBubbleCont {
+    margin: 0;
+    top: 0;
+}
+
+div#lhnHocButton.lhnround {
+    z-index: auto;
+}
+
+@media only screen and (min-width: 834px) {
+    div#lhnHocInvite div.lhnHocInviteCont {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .lhnHocChatBtnCont {
+        display: none;
+    }
+    div#lhnHocInvite div.lhnHocInviteCont {
+        background-color: var(--secondaryLinkNormal);
+        color: var(--secondaryColor);
+    }
+    div#lhnHocInvite div.lhnHocInviteButton {
+        background-color: var(--secondaryLinkNormal);
+        border: 1px solid var(--secondaryColor);
+    }
+    div#lhnHocInvite div.lhnHocInviteButton.lhnstart {
+        background-color: var(--secondaryColor);
+        color: var(--secondaryLinkNormal);
+    }
+}
+@media only screen and (max-width:575px) {
+    div#lhnHocButton.lhnround{
+        display: none;
+    }
+}
+
+#lhnHelpOutCenter div.lhnWindow-header{
+    background-color:var(--secondaryLinkNormal);
+}
+
+#lhnHelpOutCenter button.form_submit, #lhnHelpOutCenter button.lhnFormButton{
+    background-color: var(--invertedColor);
+}
+
+#lhnHelpOutCenter button.form_submit:hover, #lhnHelpOutCenter button.lhnFormButton:hover{
+    background-color: var(--invertedColorFocus);
+}
+#lhnHelpOutCenter button.form_submit:hover, #lhnHelpOutCenter button.lhnFormButton:focus{
+   outline: 2px solid var(--blueColorLight);
+   background-color: var(--invertedColor);
+   outline-offset: 1px;
+}

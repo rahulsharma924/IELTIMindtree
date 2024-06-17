@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+
+
+ <filter root="/apps/ie"/>
+ <filter root="/apps/sling"/>
+ <filter root="/apps/system"/>
+ <filter root="/apps/system/config"/>
+ <filter root="/apps/dam"/>
+
+</workspaceFilter>

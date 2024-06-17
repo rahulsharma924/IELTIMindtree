@@ -1,0 +1,12 @@
+#base=js
+pdpdetail.js
+pdp-rfqmail.js
+pdp-rfqform-validation.js
+jszip-utils.min.js
+jszip.min.js
+FileSaver.js
+#pdp-html-functions.js
+product-details-pdf.js
+pdp-custom-variant.js
+analytics-product-details.js
+pdp-grp-schema.js

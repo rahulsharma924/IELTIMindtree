@@ -1,0 +1,38 @@
+@media only screen and (min-width: 834px) {
+  .livechat-support .live-chatBox {
+    position: fixed;
+    width: 138px;
+    height: 57.6px;
+    background: var(--secondaryLinkNormal);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    bottom: calc(10% + 80px);
+    right: 30px;
+  }
+  .livechat-support .live-chatBox i {
+    font-weight: var(--fontWeightBolder);
+    font-size: var(--fontSize20);
+    line-height: var(--lineHeightSmall);
+    /* Foundation/1 */
+    color: var(--secondaryColor);
+  }
+  .livechat-support .live-chatBox p {
+    /* width: 40px; */
+    font-weight: var(--fontWeightMedium);
+    padding-left: 17px;
+    /* Foundation/1 */
+    color: var(--secondaryColor);
+    /* padding-right: 35px; */
+  }
+}
+
+@media only screen and (max-width: 833px) {
+  .livechat-support .live-chatBox {
+    display: none;
+  }
+}

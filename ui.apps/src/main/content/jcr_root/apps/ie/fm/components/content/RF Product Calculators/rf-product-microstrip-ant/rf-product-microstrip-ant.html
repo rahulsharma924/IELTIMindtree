@@ -1,0 +1,98 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+
+		<div class="rfp-form-block-cls mt-3">
+			<div class="column">
+				<h4>${properties.microstripantcalculationtitle}</h4>
+			</div>
+			<div class="row">
+				<div class="col-lg-9 col-12">
+					<div class="row set-mb dt-mt-rem">
+						<div class="col-lg-4 col-md-6 ">
+							<select id="option2" class="input">
+								<option value="epsilon">Dielectric Constant</option>
+								<option value="vop">Velocity of Propogation (%)</option>
+							</select><span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<input id="dc" class="input" type="text" value="${properties.microstripantPlacehoder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)"> <span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6 offset-lg-4">
+							<label for="dh">${properties.Dielectricheightlabel}</label>
+							<input id="dh" class="input" type="text" value="${properties.DielectricheightPlacehoder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)"> <span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6 dt-mt-rem">
+							<select id="unit" class="input">
+								<option value="in">Inches</option>
+								<option value="uin">Microinches</option>
+								<option value="cm">Centimeters</option>
+								<option value="mm">Millimeters</option>
+								<option value="um">Micrometers</option>
+							</select> <span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6 offset-lg-4">
+							<label for="hit">${properties.OperationFrequencylabel}</label>
+							<input id="hit" class="input" type="text" value="${properties.OperationFrequencyPlacehoder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)"> <span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6 dt-mt-rem">
+							<select id="option1" class="input">
+								<option value="GHz">GHz</option>
+								<option value="MHz">MHz</option>
+							</select> <span class="error ErrorText"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="row">
+						<div class="col-12">
+							<button id="go" class="ie-primary-btn calculate-btn" type="button"
+								onclick="generalClickFnMicrostripAnt()" value="Calculate">
+								${properties.microstripantcalculatebtntitle}
+							</button>
+							<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText"></span></p>
+						</div>
+					</div>
+					<div class="row dt-mt-rem">
+						<div class="col-12">
+							<div class="calculator-results calculator-results-full">
+								<label>${properties.microstripantresultlabel}</label>
+								<div class="result_container results-calc">
+									<div class="result">
+										<span class="resultlabeltitle1"> ${properties.microstripantresultTitle1} </span>
+										<span id="width" class="output"></span> <br> <span class="resultlabeltitle2">
+											${properties.microstripantresultTitle2} </span>
+										<span id="length" class="output"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

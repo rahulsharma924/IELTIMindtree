@@ -1,0 +1,15 @@
+
+<template data-sly-template.message="${@ resourceCardModel}">
+	<h2 class="mainHeading">${properties.resourceheading}</h2>
+	<div class="solutionBlock">
+		<ul><sly data-sly-list.resourceCard="${resourceCardModel.resourceCards}">
+			<li>
+				<!--<img  src="${resourceCard.image}"  alt="${resourceCard.imagetitle}"/>-->
+				<i class='fa fa-thin fa-check product-check'></i>
+				<h4 >${resourceCard.title}</h4>
+				<p >${resourceCard.description}</p>
+			</li>
+		</sly>
+		</ul>
+	</div>
+</template>

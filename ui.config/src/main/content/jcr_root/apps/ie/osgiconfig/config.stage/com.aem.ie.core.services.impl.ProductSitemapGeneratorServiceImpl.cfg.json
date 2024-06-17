@@ -1,0 +1,8 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "xmlPath":"/content/fm/sitemap_product.xml",
+  "applicationId":"testing20MRCI4146",
+  "apiKey": "3297c12de1f34b28fb57bf7e6cb4b808",
+  "indexName": "fm_product_en_uat",
+  "lastModifiedDate": "2023-07-11"
+}

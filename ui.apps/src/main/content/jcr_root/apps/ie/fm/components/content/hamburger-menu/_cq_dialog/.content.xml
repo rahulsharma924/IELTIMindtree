@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hamburger Menu (Mobile Navigation)"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_text_v2"
+    trackingFeature="core-components:text:v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <firsttab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="First Multifield"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <productsTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Navigation Title for Products (Hamburger menu)"
+                                                fieldLabel="Navigation Title for Products (Hamburger menu)"
+                                                name="./products"/>
+                                            <accordian
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Hamburger Menu"
+                                                fieldLabel="Hamburger Menu">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./navMulti">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Navigation Title (Hamburger menu)"
+                                                                    fieldLabel="Navigation Title (Hamburger menu)"
+                                                                    name="./title"/>
+                                                                <url
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldDescription="Redirection link"
+                                                                    fieldLabel="Navigation link"
+                                                                    name="./Url"
+                                                                    rootPath="/content/fm/en"/>
+                                                                <id
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Unique navigation id"
+                                                                    fieldLabel="Navigation Id"
+                                                                    name="./id"/>
+                                                                <accordion
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                    composite="{Boolean}true"
+                                                                    fieldLabel="Block under Navigation (Block 1)">
+                                                                    <field
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                        name="./secondarynav">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <column
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <title
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                        fieldDescription="Sub Navigation Title under Hamburger menu"
+                                                                                        fieldLabel="Sub Navigation Title"
+                                                                                        name="./title"/>
+                                                                                    <url
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                        fieldDescription="Redirection link"
+                                                                                        fieldLabel="Navigation link"
+                                                                                        name="./buttonlink"
+                                                                                        rootPath="/content/fm/en"/>
+                                                                                </items>
+                                                                            </column>
+                                                                        </items>
+                                                                    </field>
+                                                                </accordion>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </accordian>
+                                            <signin
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Sign In Text (Hamburger menu)"
+                                                fieldLabel="Sign In Text (Hamburger menu)"
+                                                name="./signIn"/>
+                                            <signInLink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="On click of text, it will redirect to the respective page"
+                                                fieldLabel="Sign In Redirection link"
+                                                name="./signInLink"
+                                                rootPath="/content/fm/en"/>
+                                            <liveChat
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Live Chat Text (Hamburger menu)"
+                                                fieldLabel="Live Chat Text (Hamburger menu)"
+                                                name="./liveChat"/>
+                                            <liveChatLink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="On click of text, it will redirect to the respective page"
+                                                fieldLabel="Live Chat Redirection link"
+                                                name="./liveChatLink"
+                                                rootPath="/content/fm/en"/>
+                                            <callUs
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Contact Text (Hamburger menu)"
+                                                fieldLabel="Contact Text (Hamburger menu)"
+                                                name="./callUs"/>
+                                            <callUsLink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="On click of text, it will redirect to the respective page"
+                                                fieldLabel="Contact Us - Redirection link"
+                                                name="./callUsLink"
+                                                rootPath="/content/fm/en"/>
+                                            <signOut
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Sign Out (Hamburger menu)"
+                                                fieldLabel="Sign Out Text (Hamburger menu)"
+                                                name="./signOut"/>
+                                            <imagePath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Enter the image path"
+                                                fieldLabel="image path"
+                                                name="./image"
+                                                rootPath="/content/dam"/>
+                                            <imageAltTxt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Image ALT Text"
+                                                name="./hamburgeralttext"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </firsttab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

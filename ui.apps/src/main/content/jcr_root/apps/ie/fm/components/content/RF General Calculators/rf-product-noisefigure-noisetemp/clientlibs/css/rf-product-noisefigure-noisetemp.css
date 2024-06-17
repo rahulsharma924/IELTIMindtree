@@ -1,0 +1,98 @@
+#noisefigure-noisetemp {
+    padding: 0;
+    margin: 30px 125px 0 125px;
+}
+.calculator-results .results-calc-h4 {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1andQ);
+    letter-spacing: 0.03rem;
+    color: #000000;
+}
+
+#noisefigure-noisetemp-img1 .cmp-image__image {
+    margin: 70px 0 0 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0 0 0 100px;
+
+}
+#noisefigure-noisetemp-img2 .cmp-image__image {
+    margin: 0px 0 0 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#noisefigure-noisetemp .aem-Grid {
+    display: inline-flex;
+}
+
+#noisefigure-noisetemp-img2{
+margin: 0px 0 0 100px;
+}
+@media screen and (max-width: 767px) {
+#noisefigure-noisetemp .aem-Grid {
+    display: inline-block;
+}
+#noisefigure-noisetemp {
+	padding: 0;
+    text-align: center;
+    margin: 30px;
+}
+#noisefigure-noisetemp-img1 .cmp-image__image {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+#noisefigure-noisetemp-img2 .cmp-image__image {
+    margin: 0;
+    width: 100%;
+}
+.title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: var (--fontSize24);
+    line-height: var(--lineHeight2and1Q);
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+#noisefigure-noisetemp-img2 {
+    margin: 0;
+}
+}
+
+@media screen and (min-width: 768px)and (max-width: 991px) {
+#noisefigure-noisetemp .aem-Grid {
+    display: inline-flex;
+}
+#noisefigure-noisetemp {
+	padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#noisefigure-noisetemp-img1 .cmp-image__image {
+    margin: 75px 0 0 0;
+    width: 100%;
+    padding: 0;
+}
+    .title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: var (--fontSize24);
+    line-height: var(--lineHeight2and1Q);
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+#noisefigure-noisetemp-img2 .cmp-image__image {
+    padding: 0;
+    margin: 0 0 0 50px;
+    width: 100%;
+}
+#noisefigure-noisetemp-img2 {
+    margin: 20px;
+}
+
+}

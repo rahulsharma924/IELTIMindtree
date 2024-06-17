@@ -1,0 +1,3 @@
+#base=css
+algolia-min.css
+global-plp.css

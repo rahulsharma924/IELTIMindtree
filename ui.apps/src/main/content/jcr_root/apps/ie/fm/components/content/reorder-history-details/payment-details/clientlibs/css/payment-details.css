@@ -1,0 +1,56 @@
+
+.card-logo{
+    padding-left: 0px;
+}
+
+.card-num{
+    margin-left:15px;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var( --lineHeight1and428);
+} 
+#payTitle ,#payDetails {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize18);
+    line-height: var(--baseLineHeight);
+    border-bottom:12px;
+} 
+.card-details,.payment-details{
+    padding-left:10px;
+}
+
+@media screen and (min-width:768px){
+    #paymentDetails .payment-details{
+        padding: 0;
+    }
+}
+
+.payment-details .payment-details-table{
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var( --lineHeight1and428);
+}
+
+.payment-details .order-total{
+    padding-top:34px;
+    font-weight:var(--fontWeightBold) ;
+}
+
+.payment-details .payment-detail-row{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:768px){
+    .card-details{
+        margin-bottom:40px;
+    }
+    .payment-details{
+        margin-bottom:20px;
+        padding-right: 16px;
+    }
+}
+
+.payment-details .row{
+    margin-right: 0;
+}

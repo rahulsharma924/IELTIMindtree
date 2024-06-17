@@ -1,0 +1,28 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='fm.global'}"
+/>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='payflow-checkout-failure'}"
+/>
+<section class="payflow__checkout__failure">
+  <div class="payflow__checkout__body">
+    <h1 class="modal-title">${properties.orderFailedTitle}</h1>
+    <p>${properties.orderFailedTitleDescription}</p>
+    <a
+      x-cq-linkchecker="skip"
+      class="ie-scondary-btn"
+      href="${properties.orderFailedCheckoutLink}"
+    >
+      ${properties.orderFailedCheckoutTitle}
+    </a>
+    <a
+      x-cq-linkchecker="skip"
+      class="ie-primary-btn"
+      href="${properties.orderFailedContinueShoppingLink}"
+    >
+      ${properties.orderFailedContinueShoppingTitle}
+    </a>
+  </div>
+</section>

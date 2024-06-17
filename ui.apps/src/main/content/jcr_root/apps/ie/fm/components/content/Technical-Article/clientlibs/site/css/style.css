@@ -1,0 +1,115 @@
+.main_article_details .technicalArticleTitle {
+   
+    font-weight:var(--fontWeightBold);
+    font-size:var(--fontSize32);
+    line-height:var(--lineHeight1and428);
+    color:var(--secondaryBlack);
+}
+#technical-main-conatiner{
+    max-width: 1080px;
+    margin: 0 auto;
+    float: none;
+}
+.main_article_details .detailed_article p {
+    font-weight:var(--fontWeightNormal);   
+    font-size:var(--baseFontSize);
+    line-height:var(--baseLineHeight);
+    color:var(--secondaryBlack);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.main_article_details .detailed_article1 p {
+   
+    font-size:var(--fontSize14);
+    line-height:var(--lineHeight1and428);
+    color:var(--secondaryBlack);
+}
+
+.main_article_details .techArticleDesc {
+    font-size: var(--fontSize22);
+    font-weight: var(--fontWeightBold);
+    margin: 15px 0;
+}
+
+.main_article_details h2 {
+    font-size:var(--fontSize22);
+    font-weight:var(--fontWeightBold);
+    margin-bottom:5px;
+}
+
+.main_article_details h3 {
+    font-size:var(--fontSize22);
+    font-weight:var(--fontWeightBold);
+    margin-bottom:5px;
+}
+
+@media only screen and (max-width: 882px) {
+    .main_article_details .techArticleDesc {
+        margin: 50px 0 0 0;
+    }
+    .technicalArticleTitle,
+    .detailed_article p,
+    .detailed_article1 p {
+        margin: 0;
+    }
+  
+    .Technical-Article.aem-GridColumn--default--none.aem-GridColumn.aem-GridColumn--default--8.aem-GridColumn--offset--default--1 {
+        margin-left: 0%;
+        padding: 0 24px;
+        width: 100%;
+    }
+}
+.Technical-Article{
+    max-width:1080px;
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+}
+
+@media screen and (min-width:576px) {
+    .detailed_article ul{
+        padding-left: 0;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        font-weight: var(--fontWeightNormal);
+    }
+    .detailed_article ul li{
+        list-style: disc;
+        line-height:var(--baseLineHeight);
+    }
+    .detailed_article ol{
+        padding-left: 0;
+    margin-left: 30px;
+    }
+    .detailed_article ol li{
+        line-height:var(--baseLineHeight);
+    }
+}
+@media screen and (max-width:575px) {
+    .detailed_article ul{
+        padding-left: 0;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        font-weight: var(--fontWeightNormal);
+    }
+    .detailed_article ul li{
+        list-style: disc;
+        line-height:var(--baseLineHeight);
+    }
+    .detailed_article ol{
+        padding-left: 0;
+    margin-left: 20px;
+    }
+    .detailed_article ol li{
+        line-height:var(--baseLineHeight);
+    }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+        /* css rules for ipad portrait */
+    #technical-main-conatiner{
+        max-width: 720px;
+        margin: 0 auto;
+        float: none;
+    }
+  }

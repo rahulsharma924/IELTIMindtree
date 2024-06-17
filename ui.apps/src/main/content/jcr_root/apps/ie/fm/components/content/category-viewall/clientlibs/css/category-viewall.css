@@ -1,0 +1,106 @@
+#view-all .aem-Grid.aem-Grid--default--10>.aem-GridColumn.aem-GridColumn--default--8 {
+	width: 100%;
+	margin: 0;
+}
+#view-all .cmp-teaser__image img {
+	height: auto;
+	object-fit: contain;
+}
+#view-all .cmp-teaser__title{
+	color: var(--secondaryColor);
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize45);
+	line-height: var(--baseLineHeight);
+}
+.bs-title-container {
+	text-align: center;
+	margin: 0 0 30px;
+	padding:0;
+	z-index: 100;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 190px;
+}
+.view-all-categories {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.cat-viewall{
+	display: flex;
+	margin-top: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cat-viewall .card{
+	text-align:center;
+	border:none;
+	width:calc(20% - 23px);
+	margin:0 20px 40px 0;
+}
+.cat-viewall .card-img-wrap{
+	border: 1px solid var(--shopByBorderClr);
+	border-radius: 8px;
+}
+.cat-viewall .card p{
+	font-weight: var(--fontWeightMedium);
+	font-size: var(--fontSize13);
+	line-height:var(--baseLineHeight);
+	color: var(--tabPanelClr);
+	margin: 10px 0 0;
+}
+.cat-viewall .card a:hover p{
+	text-decoration: underline;
+	font-weight:var(--fontWeightBold);
+	color: var(--invertedColor);
+}
+.cat-viewall .card a:hover p:active{
+	text-decoration: var(--textDecorationUnderline);
+	color: var(--invertedColorFocus);
+}
+.cat-viewall .card-img-wrap img{
+	height:78px;
+	margin: 29px auto;
+	text-align: center;
+	border: 0;
+}
+.breadcrumb{
+	margin: 29px 0;
+	padding: 0;
+}
+.breadcrumb .ie-breadcrumb{
+	padding-left:40px;
+	margin-top:25px;
+}
+#view-all .breadcrumb {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+	.cat-viewall .card{
+	width:calc(25% - 23px);
+	}
+}
+@media screen and (max-width: 833px) {
+	.cat-viewall .card{
+		width:calc(50% - 23px);
+	}
+	.cat-viewall .card {
+		margin: 0 20px 20px 0;
+	}
+	.cat-viewall .card:nth-child(even){
+		margin-right:0;
+	}
+	#view-all .cmp-teaser__image img {
+		object-fit: cover;
+		min-height: 190px;
+	}
+	.breadcrumb .ie-breadcrumb{
+		padding-left: 24px;
+	}
+}
+

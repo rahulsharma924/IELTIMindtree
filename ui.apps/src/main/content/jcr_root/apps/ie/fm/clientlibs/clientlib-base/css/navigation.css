@@ -1,0 +1,119 @@
+@media screen and (max-width: 832px) {
+  #main-header.cmp-container.fm-main-container .navigation,
+  #main-header.cmp-container.fm-main-container .buildingblock:last-child .xf-master-building-block {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 833px) {
+  #megamenu-desktop {
+    padding-right: 0;
+    /*width: 1280px;*/
+    max-width: 100%;
+    margin: 0 auto;
+        }
+  #main-header.cmp-container.fm-main-container .navigation {
+    display: block;
+    /* border-top: 1px solid #e5e7e9; */
+    height: 60px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* width: 100%; */
+  }
+  /* #main-header.cmp-container.fm-main-container
+  .navigation
+  .cmp-navigation.ie-navigation
+  .cmp-navigation__group
+  li.cmp-navigation__item
+  a.cmp-navigation__item-link,
+  #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0E0F10;
+} */
+#main-header .cmp-navigation.ie-navigation {
+  padding: 18px 0;
+  margin: 0;
+  height: 60px;
+}
+/* #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item:first-child {
+  margin-left: 14px;
+} */
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item:last-child a {
+  margin-left: 41px;
+  margin-right: 0;
+}
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+  margin: 0;
+  margin-right: 41px;
+  padding: 0;
+  cursor: pointer;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0E0F10;
+}
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a:hover {
+  /* font-weight: 700; */
+  color: #D83A22;
+}
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a,
+#main-header.cmp-container.fm-main-container .navigation .cmp-navigation.ie-navigation .cmp-navigation__group li.cmp-navigation__item a.cmp-navigation__item-link {
+  /* padding: 3px 0; */
+  padding: 0;
+}
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active {
+  height: 42px;
+}
+
+#main-header.sticky .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active {
+  height: 57px;
+}
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active a.cmp-navigation__item-link,
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active a,
+#main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active a.cmp-navigation__item-link {
+  border-bottom: 4px solid #D83A22;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0E0F10;
+}
+
+}
+
+/* tools and resource css for navigation bar */
+#tools-and-resources #main-header .cmp-navigation__item--level-0 {
+  padding: 0;
+}
+
+@media screen and (max-width: 966px) and (min-width: 834px) {
+  #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+      font-size: 14px;
+  }
+ }
+@media screen and (min-width: 833px) and (max-width:1200px) {
+  #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active a.cmp-navigation__item-link,
+  #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active a,
+  #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active a.cmp-navigation__item-link {
+      height: inherit;
+  } 
+}
+@media screen and (min-width: 833px) and (max-width:1024px) {
+  #main-header.sticky .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item.cmp-navigation__item--active {
+      height: 73px;
+  }
+}
+
+@media print {
+    #main-header .cmp-navigation.ie-navigation .cmp-navigation__group .cmp-navigation__item a {
+        margin-right: 0;
+    }
+}

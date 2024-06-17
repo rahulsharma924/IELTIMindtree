@@ -1,0 +1,77 @@
+<!-- The Modal -->
+<section class="modal fade order-details__minicart" id="miniCartDetailsPopup">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-title mt-2">
+          My Cart
+          <span class="fontweight-normal"
+            >(<span class="minicart__count">0</span>)</span
+          >
+        </div>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body scrollbar minicart__body">
+        <div class="minicart__data--fillup">
+          <sly data-sly-include="mini-cart--handlerbar.html"></sly>
+        </div>
+        <div class="minicart__empty d-none analytic-startshopping">
+          <i class="fa fa-shopping-cart" id="cart_icon" aria-hidden="true"></i>
+          <p class="empty_cart_title">Your cart is empty</p>
+          <a
+            href="/content/fm/en/best-selling-rf-microwave-and-millimeter-wave-products.html"
+            class="ie-primary-btn start_shopping_btn"
+            >Start Shopping</a
+          >
+        </div>
+      </div>
+      <div class="modal-footer">
+        <hr class="mb-3 mt-0" />
+
+        <div class="row cartItem">
+          <div class="col-lg-12 col-12 text-lg-right text-center p-0">
+            <div class="itemSubTotal">
+              Subtotal: $<span
+                class="subtotalValue minicart__totalprice"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row mt-lg-4 row mt-lg-4 flex-lg-row flex-column-reverse d-flex mr-0"
+        >
+          <div class="col-lg-6 col-12 text-center mt-2">
+            <button type="button"
+              class="ie-primary-link viewCartLink"
+              aria-label="View the full cart"
+              onclick="validatethecartnavigation();"
+            >
+              View Cart
+            </button>
+          </div>
+          <div
+            class="col-lg-6 col-12 text-lg-right p-0 text-center mt-lg-0 mt-3"
+          >
+            <button
+              type="button"
+              class="btn ie-primary-btn checkoutBtn btn-md me-1 mb-2 px-lg-5 analyticscheckoutbutton-minicart"
+              aria-label="Checkout"
+              onclick="window.location.href ='/content/fm/en/shipping-information.html';"
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Declared variable to use in analytic tracking of start shopping -->
+<script>
+  var currentPageName = '${currentPage.getName @ context="scriptString"}';
+</script>

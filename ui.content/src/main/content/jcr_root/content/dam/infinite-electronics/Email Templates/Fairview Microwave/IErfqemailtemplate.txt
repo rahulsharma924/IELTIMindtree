@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/fontawesome.min.js"
+    integrity="sha512-36dJpwdEm9DCm3k6J0NZCbjf8iVMEP/uytbvaiOKECYnbCaGODuR4HSj9JFPpUqY98lc2Dpn7LpyPsuadLvTyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body style="margin:0; padding:0;">
+  <!--[if mso]>
+    <style>
+      
+tr.header-img-wrap td{
+    border-bottom: 1px solid #e5e7e9;
+}
+tr.line td{
+    border-bottom: 1px solid #e5e7e9;
+}
+
+    </style>
+      <![endif]-->
+
+
+
+  <table width="740" align="center"
+    style="background: #fff;border: 1px solid #e7eaee;font-family: 'Poppins';font-style: normal;" cellspacing="0"
+    cellpadding="0">
+    <tbody>
+
+      <tr>
+        <td>
+          <table align="center" width="100%" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr class="header-img-wrap"
+                style="border-bottom: 1px solid #e5e7e9;display: block;text-align: center;margin: 0 auto; padding-top: 20px; padding-bottom: 20px; mso-padding-top: 20px; mso-padding-bottom: 20px;">
+                <td style="display: block;text-align: center;margin: 0 auto;"> <img class="header-img"
+                    src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/application-images/2023-FM-New-Logo.png"
+                    alt="header-image" width="250" height="46"> </td>
+              </tr>
+            </thead>
+          </table>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td
+          style="padding: 20px 50px 50px; mso-padding-top: 20px; mso-padding-left: 50px; mso-padding-right: 50px; mso-padding-bottom: 50px;">
+          <table>
+            <tbody>
+              <tr>
+
+                <td align="center">
+                  <h1 class="order-place-heading"
+                    style="font-weight: 400;font-size: 31px;line-height: 42px;color: #000000; margin:0; mso-ascii-font-family:'Poppins';">
+                    RFQ</h1>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <p class="email-para"
+                    style="margin: 40px auto;width: 100%;font-weight: 400;font-size: 16px;line-height: 24px;color: #0E0F10;text-align: left;">
+                    I have added the following items to my Fairview Microwave Shopping Cart for your review and
+                    purchase. You can place the order on the Fairview Microwave Website 24/7 or you
+                    can call the Customer Service Department toll-free at (800) 715-4396 or internationally at +1 (972)
+                    649-6678, Monday &#x2010; Friday, 7am &#x2010; 6pm.</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <table width="100%" cellspacing="0" cellpadding="0"
+                    style="background: #FAFBFB;border: 1px solid #E5E7E9;">
+                    <tbody>
+                      <tr>
+                        <td colspan="5" align="left"
+                          style="border-bottom: 1px solid #E5E7E9;padding-left: 25px; mso-padding-left-alt:25px; padding-top:10px; padding-bottom: 10px; mso-padding-top:10px; mso-padding-bottom:10px;">
+                          <h3 style="font-weight: 400;  font-size: 22px;color: #212429;margin:0; ">Shopping Cart</h3>
+                        </td>
+                      </tr>
+                      <tr height="45">
+                        <td width="130"
+                          style="font-weight: bolder;font-size: 14px;color: #0E0F10;  padding-left: 25px; mso-padding-left-alt:25px; padding-top:10px; padding-bottom: 10px; mso-padding-top:10px; mso-padding-bottom:10px;">
+                          PRODUCT</td>
+                        <td align="center" width="230"
+                          style="font-weight: bolder;font-size: 14px;color: #0E0F10;padding-top:10px; padding-bottom: 10px; mso-padding-top:10px; mso-padding-bottom:10px; ">
+                          DESCRIPTION</td>
+                        <td align="center" width="130"
+                          style="font-weight: bolder;font-size: 14px;color: #0E0F10;padding-top:10px; padding-bottom: 10px; mso-padding-top:10px; mso-padding-bottom:10px; ">
+                          QUANTITY</td>
+                        <td align="right" width="130"
+                          style="font-weight: bolder;font-size: 14px;color: #0E0F10;  padding-top:10px; padding-bottom: 10px; mso-padding-top:10px; mso-padding-bottom:10px;">
+                          PRICE</td>
+                        <td align="right" width="130"
+                          style="font-weight: bolder;font-size: 14px;color: #0E0F10;padding-right: 25px; mso-padding-right-alt:25px; padding-top:10px; padding-bottom: 10px; mso-padding-top:10px; mso-padding-bottom:10px;">
+                          TOTAL</td>
+                      </tr>
+                      <tr>
+                        <td border="0" colspan="5" height="1" style="background:#E5E7E9 ;"></td>
+                      </tr>
+                      startloop
+                      <tr>
+                        <td align="right" colspan="4"
+                          style="color: #0E0F10; font-size: 14px;font-weight:bolder;padding-top: 15px;  mso-padding-top: 15px; ">
+                          Sub total:
+                        </td>
+                        <td align="right"
+                          style="color: #0E0F10; font-size: 14px; padding-top: 15px; mso-padding-top: 10px; padding-right: 25px; mso-padding-right: 25px; ">
+                          <span style="font-weight: normal;"> ${totalPrice}
+                          </span>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td align="right" colspan="4"
+                          style="color: #0E0F10; font-size: 14px;font-weight:bolder;padding-top: 10px;  mso-padding-top: 10px; padding-bottom: 10px;">
+                          Tariff Surcharge:
+                        </td>
+                        <td align="right"
+                          style="color: #0E0F10; font-size: 14px;padding-top: 10px;  mso-padding-top: 10px; padding-right: 25px; mso-padding-right: 25px;padding-bottom: 10px; ">
+                          <span style="font-weight: normal;"> $0.00 </span>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="3"
+                  style="color: #0E0F10; font-size: 14px; padding-top: 10px;  mso-padding-top: 10px;">
+                  Note: Taxes and Freight (if apllicable) will be calculated during Checkout.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table width="740"
+            style="padding: 20px 30px; font-family: 'Poppins';margin: 0 auto; background: #002A42;color: #fff;vertical-align: text-top; line-height: normal;">
+            <tbody>
+              <tr>
+                <td>
+                  <table>
+                    <tbody>
+
+                      <tr>
+                        <td color="#FFFFFF" colspan="2" style="font-weight:bold; font-size: 14px; color: #FFFFFF;">
+                          CONTACT INFO</td>
+                      </tr>
+
+                      <tr>
+                        <td style="width:18px; padding-top: 10px; mso-padding-top: 10px;"><img alt="contact-us"
+                            src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/phone.png"
+                            width="14" height="14" style="cursor: pointer;"></td>
+                        <td style="font-size:12px;padding-top: 10px; mso-padding-top: 10px;">
+                          <a href="tel:+18007154396" title="contact-us"
+                            style="font-weight: 400;color: #FFFFFF;font-size: 12px;cursor: pointer;text-decoration: none;vertical-align: middle;display: inherit;">
+                            +1 (800) 715-4396
+                          </a>
+                      </tr>
+                      <tr>
+                        <td style="width:18px;padding-top:5px;"><img alt="mail-us"
+                            src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/mail.png"
+                            width="14" height="12" style="cursor: pointer;"></td>
+                        <td> <a title="sales@fairviewmicrowave.com" href="mailto:sales@fairviewmicrowave.com"
+                            style="font-weight: 400;color: #FFFFFF;font-size: 12px;cursor: pointer;text-decoration: none;vertical-align: middle;display: inherit;">
+                            sales@fairviewmicrowave.com
+                          </a></td>
+                      </tr>
+                      <tr>
+                        <td style="width:18px;padding-top:5px;"><img alt="website"
+                            src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/web.png"
+                            width="14" height="15" style="cursor: pointer;"></td>
+                        <td><a href="https://www.fairviewmicrowave.com/" title="Fairview Website" target="_blank"
+                            style="font-weight: 400;color: #FFFFFF;font-size: 12px;cursor: pointer;text-decoration: none;vertical-align: middle;display: inherit;">
+                            fairviewmicrowave.com
+                          </a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td style="vertical-align: top;">
+                  <table>
+                    <tbody>
+
+                      <tr>
+                        <td style="vertical-align: top; width:18px;padding-top:34px; mso-padding-top:34px;"> <img
+                            alt="contact-us"
+                            src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/location.png"
+                            width="12" height="15" style="cursor: pointer;"></td>
+                        <td style="font-size: 12px;vertical-align: top;padding-top:34px; mso-padding-top:34px;">
+                          <span style="font-weight: 400;color: #FFFFFF;font-size: 12px;line-height: 18px;">
+                            <span>Headquarters
+                                <br>301 Leora Ln
+                                <br>Suite 100 Lewisville, TX 75056</span>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td align="right" valign="top">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td color="#FFFFFF" colspan="4" style="font-weight:bold; font-size: 14px;  color: #FFFFFF;">
+                          LET'S CONNECT
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding-top: 11px; mso-padding-top: 11px;"><span class="iconThemb">
+                            <a style="text-decoration: none;" title="Facebook"
+                              href="http://www.facebook.com/people/Fairview-Microwave/100063721473386/" target="_blank">
+                              <img alt="FB"
+                                src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/facebook.png"
+                                width="20" height="20" style="cursor: pointer;">
+                            </a>
+                          </span></td>
+                        <td style="padding-top: 11px; mso-padding-top: 11px;"> <span class="iconThemb">
+                            <a style="text-decoration: none; " title="Linkedin"
+                              href="http://www.linkedin.com/company/fairview-microwave-inc./" target="_blank">
+                              <img alt="Linkedin"
+                                src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/linkdein.png"
+                                width="20" height="20" style="cursor: pointer;">
+                            </a>
+                          </span></td>
+                        <td style="padding-top: 11px; mso-padding-top: 11px;">
+                          <span class="iconThemb">
+                            <a style="text-decoration: none;" title="Twitter" href="http://twitter.com/Fairview_Micro"
+                              target="_blank">
+                              <img alt="Twitter"
+                                src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/twitter.png"
+                                width="20" height="20" style="cursor: pointer;">
+                            </a>
+                          </span>
+                        </td>
+                        <td style="padding-top: 11px; mso-padding-top: 11px;">
+                          <span class="iconThemb">
+                            <a style="text-decoration: none;" title="Youtube"
+                              href="http://www.youtube.com/company/fairview-microwave-inc" target="_blank">
+                              <img alt="Youtube"
+                                src="https://${domainname}/content/dam/infinite-electronics/images/fairview-microwave/icons-vectors/yt.png"
+                                width="24" height="20" style="cursor: pointer;">
+
+                            </a>
+                          </span>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td color="#ffffff" colspan="3" style="font-size: 10px; padding-top: 20px;">&copy; 2022 Infinite
+                  Electronics, Inc. Fairview Microwave is a registered trademark of Infinite Electronics, Inc. Same-day
+                  shipping terms and conditions can be found <a style="color: #ffffff;"
+                    href="https://${domainname}/same-day-shipping.html">here</a>.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

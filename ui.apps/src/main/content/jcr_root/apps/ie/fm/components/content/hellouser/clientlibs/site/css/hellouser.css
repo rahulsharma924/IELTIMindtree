@@ -1,0 +1,49 @@
+
+.signin__username {
+    font-size: var(--fontSize31);
+    padding: 0;
+    font-weight: var(--fontWeightSmall);
+    margin-block: 0.5rem;
+}
+@media (min-width: 320px) and (max-width:833px) {
+    .hellouser{
+        font-size: var(--fontSize22);
+        line-height: var(--baseLineHeight);
+    }
+}
+
+
+#container-myaccount {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 23px;
+}
+
+
+@media only screen and (max-width:991px) {
+    #container-myaccount {
+        padding: 0 24px;
+    }
+}
+
+
+#container-myaccount .product-ordered-title {
+    margin-top: 20px;
+}
+
+#container-myaccount #personalinfo-title {
+    margin: 20px 0;
+}
+
+#container-myaccount #personalinfo-title p {
+    padding-left: 0;
+}
+
+#container-myaccount form.pi-chngepwd-form .confirmpassword .cmp-form-text .fa-thin {
+    margin-top: 0;
+    top: 44px;
+}
+
+#container-myaccount .abtitle {
+    margin: 20px 0;
+}

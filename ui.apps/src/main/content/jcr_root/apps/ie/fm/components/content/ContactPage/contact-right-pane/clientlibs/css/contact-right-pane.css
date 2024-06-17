@@ -1,0 +1,102 @@
+#contactPage #contactContentContainer.cmp-container{
+    max-width: 1280px;
+    margin:0 auto;
+  }
+.contact-right-pane{
+    width:100%;
+    padding: 15px 34px 15px 34px;
+    background: var(--secondaryBtnHover);
+}
+#rightPaneWrapper{
+    padding-top: 10px;
+}
+.rp-title-text{
+    font-size: var(--baseFontSize);
+    color: var(--newsDateColor);
+    font-weight: var(--fontWeightBold);  
+    line-height: var(--baseLineHeight); 
+}
+.rptext-mt{
+    margin-top: 5px;
+}
+.rp-text{
+    font-size: var(--baseFontSize);
+    color: var(--secondaryLinkNormal);
+    font-weight: var(--fontWeightSmall);
+    word-break: break-all;
+    line-height: var(--baseLineHeight);
+}
+.rp-text:hover{
+    color: var(--secondaryLinkNormal);
+    font-weight: var(--fontWeightBold);
+}
+.rp-text:active{
+    color: var(--secondaryLinkActive);
+    font-weight: var(--fontWeightBold);
+}
+.rp-headings{
+    font-size: var(--fontSize18);
+    color: var(--primaryColor);
+    font-weight: var(--fontWeightBold);
+    line-height: var(--baseLineHeight);
+    margin-bottom: 5px;
+    
+}
+.rp-email,.rp-office-hours,.rp-address{
+    padding-top:21px;
+}
+.rp-address-text{
+    width:200px;
+    word-break: break-word;
+}
+#googleMap{
+    height:140px;
+    max-width:105%;
+    margin-top:21px;
+    outline: 1px solid var(--SearchIcon);
+    border-radius: 8px;
+    margin-left:-10px;
+    overflow:hidden;
+}
+#googleMap iframe{
+    border-width: 0;
+ }
+ @media screen and (min-width:992px){
+  
+    #contactPage .aem-Grid.aem-Grid--default--4>.aem-GridColumn.aem-GridColumn--offset--default--0{
+        margin-top:68px;
+        padding-top: 0;
+        padding-left:34px;
+        padding-right: 34px;
+        background: var(--secondaryBtnHover);
+        width:381px;
+        margin-left:10%;
+    }   
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    #contactPage .aem-Grid.aem-Grid--default--4>.aem-GridColumn.aem-GridColumn--offset--default--0{
+        margin-top:68px;
+        padding-top: 0;
+        padding-left:34px;
+        padding-right: 34px;
+        background: var(--secondaryBtnHover);
+        width:90%;
+        margin-left:5%;
+    }      
+}
+@media screen and (max-width:767px){
+    .contact-right-pane{
+        padding-left:30px;
+        padding-right: 30px;
+        background: var(--secondaryBtnHover);
+    }
+    #googleMap{
+        height:140px;
+        max-width:105%;
+        margin-top:21px;
+        outline: 1px solid var(--SearchIcon);
+        border-radius: 8px;
+        margin-left:0;
+        
+    }  
+}

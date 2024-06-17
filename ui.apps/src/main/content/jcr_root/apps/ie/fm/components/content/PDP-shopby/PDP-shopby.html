@@ -1,0 +1,32 @@
+
+<div id="supportingproduct" class="shopby_Title_Description">
+    <h2 class="fv_main_heading mb50">${properties.shopbytitle}</h2>
+</div> 
+
+<div class="shopby-container">	
+    <div data-sly-list.multi="${resource.getChildren}" class="shopbycard">
+        <sly data-sly-test="${multi.name == 'shopbydetails'}">
+            <div class="shopby-container1">
+                <ul class="ws-product-categories" id="items">
+                    <li class="ws-product-category" data-sly-repeat.shopbyList="${multi.getChildren}">
+                       <sly data-sly-test="${shopbyList.shopbylink && !shopbyList.shopbylink1}"> <a class="ws-product-category__link"  href="/category${shopbyList.shopbylink}.html" x-cq-linkchecker="skip">
+                            <div class="cardimg-container">
+                                <img alt="supportingImage" class="shopbyimage" src="${shopbyList.image}" loading="lazy" width="90" height="72" />
+                            </div>
+                            <p class="shopby-image-title">${shopbyList.title}</p>
+                        </a>
+					</sly>
+
+					<sly data-sly-test="${shopbyList.shopbylink1 && !shopbyList.shopbylink}"> <a class="ws-product-category__link"  href="${shopbyList.shopbylink1 @context='text'}" x-cq-linkchecker="skip">
+                            <div class="cardimg-container">
+                                <img alt="supportingImage" class="shopbyimage" src="${shopbyList.image}" loading="lazy" width="90" height="72" />
+                            </div>
+                            <p class="shopby-image-title">${shopbyList.title}</p>
+                        </a>
+					</sly>
+                    </li>
+                </ul>
+            </div>
+        </sly>
+    </div>
+</div>

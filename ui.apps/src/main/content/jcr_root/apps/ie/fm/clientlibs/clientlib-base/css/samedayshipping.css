@@ -1,0 +1,108 @@
+.samedayshipping_container {
+	width: 100%;
+	max-width:1220px;
+	margin:0 auto;
+	display:flex;
+}
+.cmp-text p a {
+	color: var(--secondaryColor);
+}
+.cmp-text.samedayshipping-text {
+	color: var(--secondaryColor);
+}
+.samedayshipping_main .needassistance_text p a#assistance-mobile {
+	color: var(--secondaryColor);
+	z-index: 1;
+	font-weight: var(--fontWeightMedium);
+}
+.samedayshipping_main .needassistance_text p a#assistance-mobile:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.samedayshipping_static_txt1 {
+    display: flex;
+}
+.needassistance_text {
+	width:30%;
+}
+.samedayshipping_main {
+	padding: 15px 0;
+	background: var(--secondaryLinkNormal);
+}
+.row.samedayshipping_main .col-9.samedayshipping_text {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding: 0;
+	padding-right: 50px;
+}
+.samedayshipping_main .samedayshipping_text p,
+.samedayshipping_main .samedayshipping_text p span,
+.samedayshipping_main .samedayshipping_text i,
+.samedayshipping_main .samedayshipping_text span,
+.samedayshipping_time {
+	margin: 0;
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize14);
+	line-height: var(--lineHeightSmall);
+	color: var(--secondaryColor);
+}
+
+.samedayshipping_main .samedayshipping_text i {
+	font-weight: var(--fontWeightBolder);
+	margin-right: 7px;
+}
+.needassistance_text.d-none.d-lg-block p {
+    text-align: right;
+    line-height: 0;
+    margin: auto;
+}
+.needassistance_text p a, .needassistance_text p span {
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize12);
+	line-height: var(--baseLineHeight);
+	text-align: right;
+	color: var(--secondaryColor);
+	margin: 0;
+}
+.samedayshipping .cmp-text {
+	margin-top: 0;
+}
+.samedayshipping_text{ width:70%;}
+.samedayshipping_static_txt {
+	display: flex;
+	justify-content: right;
+}
+@media (max-width:1200px) and (min-width:980px) {
+	.needassistance_text {
+	margin-right: 20px;
+	}
+}
+@media screen and (max-width: 833px) {
+.samedayshipping_main {
+	padding: 8px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.samedayshipping .samedayshipping_main .samedayshipping_text p,
+.samedayshipping .samedayshipping_main .samedayshipping_text p span,
+.samedayshipping .samedayshipping_main .samedayshipping_text i,
+.samedayshipping .samedayshipping_main .samedayshipping_time span{
+	font-size: var(--fontSize11);
+} 
+.samedayshipping_text {
+	width: 100%;
+}
+.samedayshipping_static_txt {
+	display: block;
+}
+.samedayshipping_static_txt .samedayshipping_static_txt1 {
+	display: flex;
+	justify-content: center;
+}
+.samedayshipping_time {
+	text-align: center;
+}
+}	 
+

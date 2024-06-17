@@ -1,0 +1,6 @@
+{
+  "scheduler.name": "IE Sitemap Scheduler",
+  "scheduler.expression": "0 0 0 1/1 * ? *",
+  "includeGenerators": "com.aem.ie.core.services.impl.IESiteMapGeneratorImpl",
+  "searchPath": "/content/fm"
+}

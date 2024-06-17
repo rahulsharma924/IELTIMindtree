@@ -1,0 +1,104 @@
+<!--/* <a href="https://fairviewmicrowave.com">Add Additional Addresses</a> */-->
+<div class="create__account--billing--address createAccount" id="createAccounts">
+   <!--/* <form> */-->
+   <!--/* <div class="radio-btn">
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onkeyup="modalbutton(this)">
+          <label class="form-check-label" for="inlineRadio1">Shipping address</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onkeyup="modalbutton(this)">
+          <label class="form-check-label" for="inlineRadio2">Billing address</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" onkeyup="modalbutton(this)">
+          <label class="form-check-label" for="inlineRadio3">Both</label>
+      </div>
+      </div> */-->
+   <div id="form-id">
+      <div class="form-row">
+         <div class="col">
+            <label for="inputAddress">${properties.firstname}</label>
+            <input type="text" class="form-control" id="modalfirstname">
+            <p id="popufirstmsg" class="ie-error-medium field-validation-error"> </p>
+         </div>
+         <div class="col">
+            <label for="inputAddress">${properties.lastname}</label>
+            <input type="text" class="form-control" id="modallastname">
+            <p id="popuplastmsg" class="ie-error-medium"> </p>
+         </div>
+      </div>
+      <div class="form-group">
+         <label for="inputAddress">${properties.companyname}</label>
+         <input type="text" class="form-control" id="modalcompanyname" >
+         <p id="popcompanymsg" class="ie-error-medium"> </p>
+      </div>
+      <div class="form-group">
+         <label for="inputAddress">${properties.phonenumber}</label>
+         <input type="text" class="form-control" id="modalphnumber" >
+         <p id="popupphonenumber" class="ie-error-medium"> </p>
+      </div>
+      <div class="form-group">
+         <label for="inputAddress">${properties.countryregion}</label>
+         <div class="dropdown">
+            <select class="cmp-form-options__field custom-select btn dropdown-toggle" name="country" id="modalcountry">
+               <option  value="" selected="selected">
+                  Select
+               </option>
+            </select>
+            <p id ="countrymsg" class="validate-error ie-error-medium"> </p>
+         </div>
+         
+         <!--/* <select class="custom-select btn dropdown-toggle">
+            <option selected>United States</option>
+            <option value="1">United kingdom</option>
+            <option value="2">Sri Lanka</option>
+            <option value="3">Thailand</option>
+            </select> */-->
+         <!--/* <span class="glyphicon glyphicon-triangle-bottom" onclick="toggleCountry()"></span> */-->
+      </div>
+      <div class="form-group">
+         <label for="inputAddress">${properties.addresslineone}</label>
+         <input type="text" class="form-control" id="inputAddress"  >
+         <p id ="popupaddressmsg" class="ie-error-medium"> </p>
+      </div>
+      <div class="form-group">
+         <label for="inputAddress2">${properties.addresslinetwo}</label>
+         <input type="text" class="form-control" id="inputAddress2"  >
+         <p id ="popupaddressmsgtwo" class="ie-error-medium"> </p>
+      </div>
+      <div class="form-row form-row-flex">
+         <div class="form-group col-md-4">
+            <label for="inputCity">${properties.cityname}</label>
+            <input type="text" class="form-control" id="inputCity" >
+            <p id ="popupcitymsg" class="ie-error-medium"> </p>
+         </div>
+         <div class="form-group col-md-4">
+            <label for="modalstate">${properties.statename}</label>
+            <div class="dropdown">
+               <select class="cmp-form-options__field custom-select btn dropdown-toggle"
+                  name="state" id="modalstate">
+                  <option value="" selected="selected">
+                     Select
+                  </option>
+               </select>
+               <p id ="statemsg" class="validate-error ie-error-medium"> </p>
+            </div>
+            <!--/* <select id="inputState" class="form-control custom-select">
+               <option selected>Select</option>
+               <option>Mumbai</option>
+               <option>Thane</option>
+               <option>Pune</option>
+               <option>Nagpur</option>
+               </select> */-->
+            <!--/* <span class="glyphicon glyphicon-triangle-bottom statedropdown"></span> */-->
+         </div>
+         <div class="form-group col-md-4">
+            <label for="inputZip">${properties.zipcode}</label>
+            <input type="text" class="form-control" id="inputZip" >
+            <p id="popupzipcodemsg" class="ie-error-medium"> </p>
+         </div>
+      </div>
+   </div>
+   <!--/* </form> */-->
+</div>

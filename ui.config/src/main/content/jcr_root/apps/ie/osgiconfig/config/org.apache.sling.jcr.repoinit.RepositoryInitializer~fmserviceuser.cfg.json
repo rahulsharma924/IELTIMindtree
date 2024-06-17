@@ -1,0 +1,6 @@
+ {
+        "scripts":[
+            "create service user fm-service-user with path system/fm/fm-service-user",
+            "set ACL for fm-service-user\r\nallow jcr:read on /\r\nallow jcr:read, rep:write, jcr:versionManagement, jcr:modifyAccessControl ,jcr:readAccessControl, jcr:lockManagement on /content\r\nend"
+        ]
+    }

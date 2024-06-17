@@ -1,0 +1,30 @@
+<sly
+data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+
+data-sly-call="${clientlib.css @ categories=['customersupport']}"/>
+
+<div class="livechat-support">
+<div class="live-chatBox analytic-chatBox"  data-chatbtn="chat8x8">
+        <i class="fa-regular fa-comment-dots"></i>
+        <p class="event-chat-label">Chat</p>
+</div>
+
+</div>
+<script>
+
+document.querySelector("body").addEventListener('click', function(e) {  
+        var paraElement = e.target.closest('p');
+        var iElement = e.target.closest('i');
+            var label="";
+            var category= "";
+            if((paraElement !== null && paraElement.closest('.analytic-chatBox')!=null)){  
+                label= paraElement.textContent.trim(); 
+                category= "livechat";        
+              }  
+            else if((iElement !== null && iElement.closest('.analytic-chatBox')!=null)){  
+                label= "Chat"
+                category= "livechat";        
+              } 
+          ctalinkDataLayerCall(label,category); 
+        }, false);	
+          </script>

@@ -1,0 +1,1031 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='paypal-checkout'}"
+/>
+<div class="loader_wrapper" id="loading-indicator">
+  <div class="loader"></div>
+</div>
+<section class="row payment-info-order-summary-details d-none">
+  <section class="col-lg-7 payment-summery-details">
+    <a href="/content/fm/en/continue-shopping.html" class="returnCart"
+      >Return to Cart</a
+    >
+    <div class="card-deck" id="with-frieghtforwarder">
+      <div class="card card shipping_address_edit_wrap">
+        <div class="card-body">
+          <div class="shipping-address col selectedAddress">
+            <span><i class="fa fa-check"></i></span>
+            <h6 class="shipping-title">${properties.shipping}</h6>
+            <div class="shipping-addr-fields customer-name"></div>
+            <div class="shipping-addr-fields customer-address"></div>
+            <div class="shipping-addr-fields customer-addressline"></div>
+            <div class="shipping-addr-fields customer-email"></div>
+            <div class="shipping-addr-fields customer-phone"></div>
+          </div>
+          <a
+            href="#"
+            class="EditShippingInfo edit_back"
+            aria-label="Edit shipping information"
+          >
+            ${properties.editlabel}
+          </a>
+          <div class="col methodofShipping">
+            <p class="upsGround"><span></span></p>
+            <p class="upsAccountNo"><span></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="card card shipping_address_edit_wrap">
+        <div class="card-body">
+          <div class="shipping-address col" id="frieghtForward">
+            <span><i class="fa fa-check"></i></span>
+            <h6 class="shipping-title">
+              ${properties.frieghtforwardaddressLabel}
+            </h6>
+            <div class="shipping-addr-fields customer-name"></div>
+            <div class="shipping-addr-fields customer-address"></div>
+            <div class="shipping-addr-fields customer-addressline"></div>
+            <!--<div class ="shipping-addr-fields customer-email"></div>-->
+            <div class="shipping-addr-fields customer-phone"></div>
+          </div>
+          <a
+            href="#"
+            class="EditShippingInfo edit_back"
+            aria-label="Edit shipping information"
+          >
+            ${properties.editlabel}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck" id="no-frieght-address">
+      <div class="card shipping_address_edit_wrap">
+        <div class="card-body">
+          <div class="shipping-address col" id="shippingInfo">
+            <span><i class="fa fa-check"></i></span>
+            <h6 class="shipping-title">${properties.shipping}</h6>
+            <div class="shipping-addr-fields customer-name"></div>
+            <div class="shipping-addr-fields customer-company"></div>
+            <div class="shipping-addr-fields customer-addressline1"></div>
+            <div class="shipping-addr-fields customer-addressline2"></div>
+            <div class="shipping-addr-fields customer-city-state"></div>
+            <div class="shipping-addr-fields customer-country"></div>
+            <div class="shipping-addr-fields customer-email"></div>
+            <div class="shipping-addr-fields customer-phone"></div>
+          </div>
+          <a
+            href="#"
+            class="EditShippingInfo edit_back"
+            aria-label="Edit shipping information"
+          >
+            ${properties.editlabel}
+          </a>
+          <div class="col methodofShipping">
+            <p class="upsGround"><span></span></p>
+            <p class="upsAccountNo"><span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="payment-method">
+      <form action="/" id="my-sample-form" method="post">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="payment-method-header">${properties.paymentTitle}</h1>
+            <div class="billingadd-block">
+              <p class="payment-method billing-title pl-0 pb-0 mt-0">
+                ${properties.billingAddressLabel}
+              </p>
+              <div
+                class="payment-info billing-address custom-control custom-radio"
+              >
+                <input
+                  type="checkbox"
+                  class="check_box"
+                  checked="checked"
+                  id="billingAddress"
+                  value="billingaddress"
+                  onclick="showBillingAddress()"
+                />
+                <label class="checkbox-label" for="billingAddress">
+                  ${properties.billingShippingSame}
+                </label>
+              </div>
+            </div>
+            <!-- Add new address Popup starts hear -->
+            <!-- Modal -->
+            <div class="billing-addressbook card mb-4">
+              <div class="card-body">
+                <div
+                  class="selected-address col-lg-10 col-md-10 selectedAddress"
+                >
+                  <span><i class="fa fa-check"></i></span>
+                  <h6 class="shipping-title pl-0">Billing</h6>
+                  <div class="billing-addr-fields customerName"></div>
+                  <div class="billing-addr-fields customerCompany"></div>
+                  <div class="billing-addr-fields customerAddress"></div>
+                  <div class="billing-addr-fields customerAddressline"></div>
+                  <div class="billing-addr-fields customerCityStateZip"></div>
+                  <div class="billing-addr-fields customerCountry"></div>
+                  <div class="billing-addr-fields customerEmail"></div>
+                  <div class="billing-addr-fields customerPhone"></div>
+                </div>
+                <a
+                  href="#"
+                  class="editbillingInfo"
+                  aria-label="Edit shipping information"
+                  data-toggle="modal"
+                  data-target="#editBillingAddressPopup"
+                  onclick="editBillingAddress()"
+                >
+                  ${properties.editlabel}
+                </a>
+              </div>
+            </div>
+            <div class="address-book mb-10">
+              <div class="add-new-address">
+                <a
+                  href="#"
+                  class="add-new-address-btn"
+                  aria-label="add new address"
+                  data-toggle="modal"
+                  data-target="#addNewBillingAddressPopup"
+                >
+                  ${properties.addNewAddress}
+                </a>
+              </div>
+              <div
+                id="default_address"
+                class="custom-control custom-radio billing-add-types col-lg-5 col-md-5"
+              >
+                <input
+                  type="radio"
+                  data-country=""
+                  class="custom-control-input customRadio"
+                  id="customRadioBtn"
+                  name="example2"
+                  checked="checked"
+                  onclick="addressInfo(this)"
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="customRadioBtn"
+                >
+                  <div class="customer-name"></div>
+                  <div class="customer-company"></div>
+                  <div class="customer-address"></div>
+                  <div class="customer-address-line"></div>
+                  <div class="customer-address-citystatezip"></div>
+                  <div class="customer-address-country"></div>
+                  <div class="customer-address-phone"></div>
+                </label>
+                <div
+                  class="edit-existing-default-shipping-address edit-billing-add"
+                >
+                  <a
+                    href="#"
+                    class="EditShippingInfo"
+                    aria-label="Edit shipping information"
+                    data-toggle="modal"
+                    data-target="#editBillingAddressPopup"
+                    onclick="editAddress(this)"
+                  >
+                    ${properties.editlabel}
+                  </a>
+                </div>
+              </div>
+              <div id="otherAddressAccordion">
+                <div class="other-address-list">
+                  <a
+                    class="card-link clickable"
+                    data-toggle="collapse"
+                    href="#otherAddressClickText"
+                    >${properties.otherAddressLabel}
+                    <span
+                      ><i class="fa fa-chevron-down" aria-hidden="true"></i
+                    ></span>
+                  </a>
+                </div>
+                <div
+                  id="otherAddressClickText"
+                  class="collapse show"
+                  data-parent="#otherAddressAccordion"
+                >
+                  <div
+                    class="d-lg-flex flex-lg-wrap d-md-flex mb-4 other-address"
+                  ></div>
+                </div>
+              </div>
+              <div class="footer">
+                <button
+                  type="button"
+                  class="btn saveShippingAddressBtn continue-btn ie-primary-btn"
+                  id="billingContinueBtn"
+                  aria-label="Save"
+                  value="save"
+                >
+                  ${properties.continueLabel}
+                </button>
+              </div>
+            </div>
+            <div class="" id="billingAddressPopup" class="mb-10" role="dialog">
+              <div class="shipping-address-form">
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="billingShippingAddressName"
+                      >${properties.editaddressname}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingShippingAddressName"
+                      name="billingShippingAddressName"
+                    />
+                    <p
+                      id="billingShippingAddressNameMsg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="billingShippingAddressCompany"
+                      >${properties.editaddresscompany}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="billingShippingAddressCompany"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="billingShippingAddressPhoneNumber"
+                      >${properties.editaddressphonenumber}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingShippingAddressPhoneNumber"
+                      aria-describedby="billingShippingAddressPhoneNumber"
+                      name="billingShippingAddressPhoneNumber"
+                    />
+                    <p
+                      id="billingShippingAddressPhoneNumberMsg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="billingShippingAddressCountry1"
+                      >${properties.editaddresscountry}</label
+                    >
+                    <select
+                      class="form-control custom-select"
+                      id="billingShippingAddressCountry1"
+                    >
+                      <option value="" selected="selected">Select</option>
+                    </select>
+                    <p
+                      id="billingShippingAddressCountry1Msg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="billingShippingAddressAddressLine1"
+                      >${properties.editaddress1}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingShippingAddressAddressLine1"
+                      placeholder=""
+                      name="billingShippingAddressAddressLine1"
+                    />
+                    <p
+                      id="billingShippingAddressAddressLine1Msg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="ShippingAddressLine2"
+                      >${properties.editaddressoptional}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      id="ShippingAddressLine2"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="billingShippingAddressCity"
+                      >${properties.editaddresscity}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingShippingAddressCity"
+                      placeholder="Enter"
+                      name="billingShippingAddressCity"
+                    />
+                    <p
+                      id="billingShippingAddressCityMsg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="billingShippingState1"
+                      >${properties.editaddressstate}</label
+                    >
+                    <select
+                      class="form-control custom-select"
+                      id="billingShippingState1"
+                      name="billingShippingState1"
+                    >
+                      <option value="" selected="selected">Select</option>
+                    </select>
+                    <p
+                      id="billingShippingState1Msg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                    <label for="billingShippingAddressZip"
+                      >${properties.editaddresszipcode}</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingShippingAddressZip"
+                      placeholder="Zip"
+                      name="billingShippingAddressZip"
+                    />
+                    <p
+                      id="billingShippingAddressZipMsg"
+                      class="ie-error-medium enter-carrier-error-message"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">
+                <button
+                  type="button"
+                  class="btn saveShippingAddressBtn continue-btn ie-primary-btn"
+                  aria-label="Save"
+                  value="save"
+                >
+                  ${properties.continueLabel}
+                </button>
+              </div>
+            </div>
+            <div class="billing-address-details card mb-4">
+              <div class="card-body">
+                <div class="selected-address col selectedAddress">
+                  <span><i class="fa fa-check"></i></span>
+                  <h6 class="shipping-title pl-0">Billing</h6>
+                  <div
+                    class="customer-name-bill billing-addr-fields"
+                    id="customer-name-bill"
+                  ></div>
+                  <div
+                    class="customer-name-bill billing-addr-fields"
+                    id="customer-company-name-bill"
+                  ></div>
+                  <div
+                    class="customer-address-bill billing-addr-fields"
+                    id="address-bill-ship"
+                  ></div>
+                  <div
+                    class="customer-address-bill billing-addr-fields"
+                    id="address2-bill-ship"
+                  ></div>
+                  <div
+                    class="customer-address-bill billing-addr-fields"
+                    id="address-bill-shipdata"
+                  ></div>
+                  <div
+                    class="customer-address-bill billing-addr-fields"
+                    id="address-bill-country"
+                  ></div>
+                  <div
+                    class="customer-address-bill billing-addr-fields"
+                    id="phone-bill"
+                  ></div>
+                  <div class="customer-phone billing-addr-fields"></div>
+                  <a
+                    href="#"
+                    class="EditbillingInfo"
+                    aria-label="Edit shipping information"
+                    onclick="editAddressGuest()"
+                  >
+                    ${properties.editlabel}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="payment-info custom-control custom-radio radio_wrap">
+              <div class="PO-orderInfo">
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="PO-ref"
+                >
+                  <label class="Po-ref-no">PO Ref/No</label>
+                </label>
+                <div class="PO-number col-lg-12 col-md-12 p-0">
+                  <div class="col-md-12 mb-3 p-0">
+                    <div class="col-md-12 mb-3 p-0">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter"
+                        id="PONumber"
+                        name="PONumber"
+                        onfocusout="validatePOinfo()"
+                      />
+                      <p
+                        class="errorMsg ie-error-medium enter-carrier-error-message mt-2"
+                      ></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-orderInfo custom-control custom-radio">
+                <input
+                  type="radio"
+                  class="custom-control-input customRadio"
+                  id="purchaseorder"
+                  name="example1"
+                  value="purchaseorder"
+                  onclick="purchaseOrder()"
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="purchaseorder"
+                >
+                  <span class="payment-method">${properties.poLabel}</span>
+                </label>
+                <!-- <div class=" purchaseOrder col-lg-12 col-md-12 p-0">
+                                                      <div class="col-md-12 mb-3 p-0">
+                                                            <div class="col-md-12 mb-3 p-0">
+                                                                  <label class="payment-label" for="orderNumber">${properties.poSubLabel}</label>
+                                                                  <input type="text" class="form-control" placeholder="Enter" id="orderNumber" name="orderNumber" onkeyup="checkLength()" minlength="5" oninput="this.value = this.value.replace(/[^a-zA-Z0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+                                                                  <p class="errorMsg ie-error-medium enter-carrier-error-message mt-2"></p>
+                                                            </div>
+                                                      </div>
+                                                </div> -->
+              </div>
+              <div class="payment-info custom-control custom-radio">
+                <input
+                  type="radio"
+                  class="custom-control-input customRadio"
+                  id="wiretransfer"
+                  name="example1"
+                  value="wiretransfer"
+                  onclick="wireTransfer()"
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="wiretransfer"
+                >
+                  <span class="payment-method">${properties.wiretransfer}</span>
+                </label>
+                <div class="wiretrans-msg-wrapper">
+                  <div class="wiretrans-msg">
+                    <i class="fa fa-exclamation-circle fa-lg"></i>
+                    ${properties.wiretransfermsg @context='html'}
+                  </div>
+                </div>
+              </div>
+              <div class="payment-info custom-control custom-radio">
+                <input
+                  type="radio"
+                  class="custom-control-input customRadio"
+                  id="carddetails"
+                  name="example1"
+                  value="carddetails"
+                  onclick="cardDetails()"
+                />
+                <label
+                  class="form-check-label custom-control-label address-details"
+                  for="carddetails"
+                >
+                  <span class="payment-method"
+                    >${properties.creditCardLabel}</span
+                  >
+                </label>
+                <div class="card-details">
+                  <iframe id="payment-iframe" scrolling="no"></iframe>
+                </div>
+                <div class="payment-info saved-card col-lg-12 col-md-12"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- Add new address Popup Ends hear -->
+    </div>
+  </section>
+  <!--order summery-->
+  <section class="order-summary-sect col-5">
+    <div class="orderSummary-Sect" id="checkout-ordersummary">
+      <h2>Order Summary</h2>
+      <div class="cartItem_wrapper card_box"></div>
+      <hr class="mb-3 mt-2 mt-lg-3 total-line d-lg-none" />
+      <div class="row">
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+          <p class="cart_order_summary_left">Items</p>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
+          <p class="cart_order_summary_right" id="subtotal">0.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+          <p class="cart_order_summary_left">Shipping</p>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
+          <p class="cart_order_summary_right" id="shipping_amt">$0.00</p>
+        </div>
+      </div>
+      <div class="row handling_wrapper">
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+          <p class="cart_order_summary_left">Handling</p>
+        </div>
+        <div class="col-md-6 col-6 col-sm-6 col-lg-6 text-right">
+          <p
+            class="cart_order_summary_right"
+            id="handling_amt"
+            data-handling="0"
+          >
+            $0.00
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-6 col-sm-8 col-lg-8">
+          <p class="cart_order_summary_left">Total before tax</p>
+        </div>
+        <div class="col-md-4 col-6 col-sm-4 col-lg-4 text-right">
+          <p class="cart_order_summary_right" id="totalBeforeTax">$0.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+          <p class="cart_order_summary_left">Estimated tax to be collected</p>
+        </div>
+        <div class="col-md-4 col-4 col-sm-4 col-lg-4 text-right">
+          <p class="cart_order_summary_right" id="estimatedTaxToBeCollected">
+            $0.00
+          </p>
+        </div>
+      </div>
+      <hr class="mb-4 mt-2 mt-lg-3" />
+      <div class="row order-total">
+        <div class="col-lg-6 col-6 pl-3">
+          <div class="itemSubTotal">Order Total</div>
+        </div>
+        <div class="itemSubTotal-value col-lg-6 col-6 pr-3 text-right">
+          <span class="subtotalValue subtotalValue_checkout" id="total_amount"
+            >0.00</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="placeorder-btn-block d-flex justify-content-center">
+      <button
+        type="button"
+        class="placeorder-btn ie-primary-btn disabled"
+        onclick="placeOrder()"
+        id="placeOrderBtn"
+      >
+        Place Order
+      </button>
+    </div>
+    <div class="shippingInfo-customCapabilities">
+      <sly
+        data-sly-resource="${resource @ resourceType='/apps/ie/fm/components/content/Customcapablities'}"
+      ></sly>
+    </div>
+  </section>
+</section>
+<!-- Add new address Popup starts hear -->
+<!-- Modal -->
+<div class="modal fade" id="addNewBillingAddressPopup" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">${properties.addBillingAddress}</h4>
+      </div>
+      <div class="modal-body">
+        <form name="newShippingAddress" id="addNewformid">
+          <!-- Address form starts -->
+          <div class="shipping-address-form">
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="addNewBillingAddressName"
+                  >${properties.editaddressname}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNewBillingAddressName"
+                  name="addNewBillingAddressName"
+                />
+                <p
+                  id="addNewBillingAddressNameMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="addNewBillingAddressCompany"
+                  >${properties.editaddresscompany}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNewBillingAddressCompany"
+                />
+                <p
+                  id="addNewBillingAddressCompanyMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="addNewBillingAddressPhoneNumber"
+                  >${properties.editaddressphonenumber}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNewBillingAddressPhoneNumber"
+                  aria-describedby="addNewBillingAddressPhoneNumber"
+                  name="addNewBillingAddressPhoneNumber"
+                />
+                <p
+                  id="addNewBillingAddressPhoneNumberMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="addNewBillingAddressCountry"
+                  >${properties.editaddresscountry}</label
+                >
+                <select
+                  class="form-control custom-select"
+                  id="addNewBillingAddressCountry"
+                  name="addNewBillingAddressCountry"
+                  tabindex="0"
+                >
+                  <option value="" selected="selected">Select</option>
+                </select>
+                <p
+                  id="addNewBillingAddressCountryMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="addNewBillingAddressAddressLine1"
+                  >${properties.editaddress1}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNewBillingAddressAddressLine1"
+                  placeholder=""
+                  name="addNewBillingAddressAddressLine1"
+                />
+                <p
+                  id="addNewBillingAddressAddressLine1Msg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="addBillingAddressLine2"
+                  >${properties.editaddressoptional}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addBillingAddressLine2"
+                />
+                <p
+                  id="addBillingAddressLine2Msg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="addNewBillingAddressCity"
+                  >${properties.editaddresscity}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNewBillingAddressCity"
+                  placeholder="Enter"
+                  name="addNewBillingAddressCity"
+                />
+                <p
+                  id="addNewBillingAddressCityMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="addNewBillingAddressState"
+                  >${properties.editaddressstate}</label
+                >
+                <select
+                  class="form-control custom-select"
+                  id="addNewBillingAddressState"
+                  name="addNewBillingAddressState"
+                >
+                  <option value="" selected="selected">Select</option>
+                </select>
+                <p
+                  id="addNewBillingStateMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="addNewBillingAddressZip"
+                  >${properties.editaddresszipcode}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNewBillingAddressZip"
+                  placeholder="Zip"
+                  name="addNewBillingAddressZip"
+                />
+                <p
+                  id="addNewBillingAddressZipMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-default cancelBillingAddressBtn ie-scondary-btn"
+          data-dismiss="modal"
+          type="reset"
+          value="Reset"
+        >
+          ${properties.editaddresscancelbtn}
+        </button>
+        <button
+          type="button"
+          class="btn saveBillingAddressBtn btn-md ie-primary-btn"
+          aria-label="Save"
+          type="submit"
+          value="save"
+        >
+          ${properties.editaddresssavebtn}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="add-new-address-modal modal-backdrop fade show"></div>
+<!-- Add new address Popup Ends hear -->
+<!--/* Dhanam modal popup starts*/-->
+<div class="modal fade" id="editBillingAddressPopup" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">${properties.editAddress}</h4>
+      </div>
+      <div class="modal-body">
+        <form name="editExistingAddress">
+          <!-- Address form starts -->
+          <div class="shipping-address-form">
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="editNewBillingAddressName"
+                  >${properties.editaddressname}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editNewBillingAddressName"
+                  required
+                  name="editNewBillingAddressName"
+                />
+                <p
+                  id="editNewBillingAddressNameMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row CompanyNamefield">
+              <div class="col-md-12 mb-3">
+                <label for="editNewBillingAddressCompany"
+                  >${properties.editaddresscompany}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editNewBillingAddressCompany"
+                />
+                <p
+                  id="editNewBillingAddressCompanyMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="editNewBillingAddressPhoneNumber"
+                  >${properties.editaddressphonenumber}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editNewBillingAddressPhoneNumber"
+                  required
+                  name="editNewBillingAddressPhoneNumber"
+                />
+                <p
+                  id="editNewBillingAddressPhoneNumberMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="editNewBillingAddressCountry"
+                  >${properties.editaddresscountry}</label
+                >
+                <select
+                  class="form-control custom-select"
+                  id="editNewBillingAddressCountry"
+                  name="editNewBillingAddressCountry"
+                ></select>
+                <p
+                  id="editNewBillingAddressCountryMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="editNewBillingAddressAddressLine1"
+                  >${properties.editaddress1}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editNewBillingAddressAddressLine1"
+                  placeholder=""
+                  required
+                  name="editNewBillingAddressAddressLine1"
+                />
+                <p
+                  id="editNewBillingAddressAddressLine1Msg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row AddressLineoptional">
+              <div class="col-md-12 mb-3">
+                <label for="editBillingAddressLine2"
+                  >${properties.editaddressoptional}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editBillingAddressLine2"
+                />
+                <p
+                  id="editBillingAddressLine2Msg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="editBillingAddressCity"
+                  >${properties.editaddresscity}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editBillingAddressCity"
+                  placeholder="Philadelphia"
+                  required
+                  name="editBillingAddressCity"
+                />
+                <p
+                  id="editBillingAddressCityMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="editBillingAddressState"
+                  >${properties.editaddressstate}</label
+                >
+                <select
+                  class="form-control custom-select"
+                  id="editBillingAddressState"
+                  name="editBillingAddressState"
+                ></select>
+                <p
+                  id="editAddressBillingStateMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="editBillingAddressZip"
+                  >${properties.editaddresszipcode}</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="editBillingAddressZip"
+                  placeholder=""
+                  required
+                  name="editBillingAddressZip"
+                />
+                <p
+                  id="editBillingAddressZipMsg"
+                  class="ie-error-medium enter-carrier-error-message"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-default cancelShippingAddressBtn ie-scondary-btn"
+          data-dismiss="modal"
+          type="reset"
+          value="ResetEditAddress"
+          onclick="editShippingAddressPopup()"
+        >
+          ${properties.editaddresscancelbtn}
+        </button>
+        <button
+          type="button"
+          class="btn saveShippingAddressBtn btn-md ie-primary-btn"
+          aria-label="Save"
+          type="submit"
+          value="savedAddress"
+          onclick="editExistingBillingAddress()"
+        >
+          ${properties.editaddresssavebtn}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Order ID Fail Modal -->
+<div class="modal fade order__id--fail" id="orderIDBlanck" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h4 class="modal-title">${properties.orderFailedTitle}</h4>
+        <p>${properties.orderFailedTitleDescription}</p>
+        <a
+          x-cq-linkchecker="skip"
+          class="ie-primary-btn"
+          href="${properties.orderFailedContinueShoppingLink}"
+        >
+          ${properties.orderFailedContinueShoppingTitle}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='paypal-checkout'}"
+/>

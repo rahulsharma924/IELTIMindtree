@@ -1,0 +1,83 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+		</div>
+		<div class="form-block-cls">
+			<div class="row top-block-cls">
+					<div class="col-lg-8">
+						<p>${properties.poweroutput}</p>
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<input type="text" id="NumericId" class="input" value="Use numeric value"
+									onblur="blurFn(this)" onfocus="focusFn(this)"><span
+									class="error ErrorText"></span>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<label for="from" class="d-none">milliWatt</label>
+								<select id="from" class="input">
+									<option value="mW">Milliwatts</option>
+									<option value="W">Watts</option>
+								</select>
+							</div>
+						</div>
+						<p>${properties.powerinput}</p>
+				<div class="row top-block-cls">
+					<div class="col-lg-6 col-md-6">
+						<input type="text" id="NumericId1" class="input" value="Use numeric value"
+							onblur="blurFn(this)" onfocus="focusFn(this)">
+							<span class="error ErrorText"></span>
+                            <span class="error ErrorText"></span>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<label for="from1" class="d-none">milliWatt</label>
+						<select id="from1" class="input">
+							<option value="mW">Milliwatts</option>
+							<option value="W">Watts</option>
+						</select>
+						
+					</div>				
+				</div>
+					</div>
+					<div class="col-lg-4 col-md-12 dt-mt-rem">
+						<div class="row">
+							<div class="col-12">
+								<div class="dt-mt-rem-fix">
+									<button id="go" class="ie-primary-btn" type="button"  	onclick="generalClickFn()" value="Calculate">
+										Calculate
+									</button>
+									<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText"></span></p>
+								</div>
+						   </div>
+					   </div>
+					   <div class="row mt-2">
+						<div class="col-12">
+						<div class="calculator-results">
+							<p>${properties.result}</p>
+							<div class="result_container results-calc">
+								<div class="result">
+									<div><span  class="result-converted convertedratio-cls"></span><span id="power" class="output"></span><span id="db"
+											class="output"></span></div>
+								</div>
+							</div>
+						</div>
+						</div>
+						</div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+			
+		</div>
+	</div>
+</div>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

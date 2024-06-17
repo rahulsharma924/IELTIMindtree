@@ -1,0 +1,152 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+		</div>
+		<div class="form-block-cls">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<label for="option" class="d-none">milliWatt</label>
+					<select id="option" class="input" onchange="changeFnTemp()">
+						<option value="single">Single Temp</option>
+						<option value="range">Temp Range</option>
+					</select>
+				</div>
+			</div>
+			<div id="single" class="conv_cont">
+				<div class="form-block-cls">
+					<p>${properties.inputtype}</p>
+					<div class="row top-block-cls">
+						<div class="col-lg-8 col-12">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<label for="from" class="d-none">milliWatt</label>
+									<select id="from" class="input">
+										<option value="°F">Fahrenheit</option>
+										<option value="°C">Celsius</option>
+										<option value="°K">Kelvin</option>
+									</select>
+									<span class="error ErrorText"></span>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<input type="text" id="input" class="input" value="Use numeric value"
+										onblur="blurFn(this)" onfocus="focusFn(this)">
+									<span class="error ErrorText"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<p>${properties.outputtype}</p>
+									<label for="to" class="d-none">milliWatt</label>
+									<select id="to" class="input">
+										<option value="°F">Fahrenheit</option>
+										<option value="°C" selected="selected">Celsius</option>
+										<option value="°K">Kelvin</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="row">
+								<div class="col-12">
+							<button class="ie-primary-btn" type="button" onclick="clickFn('single')" value="Calculate">
+								Calculate
+							</button>
+							<p class="calculate-error-cls"><span class="error ErrorText"></span></p>
+						</div> 
+							</div>
+							<div class="row">
+								<div class="col-12">
+							<div class="calculator-results">
+								<p>${properties.result}</p>
+								<div class="result_container results-calc">
+									<div class="result">
+										<div><span class="result-converted convertedtemp-cls"></span><span id="power" class="output"></span><span id="vpp"
+												class="output"></span></div>
+									</div>
+								</div>
+							</div>
+							</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="range" class="conv_cont temp-range-cls">
+				<p>${properties.inputtype}</p>
+				<div class="row top-block-cls">
+					<div class="col-lg-8 col-12">
+						<div class="row">
+							<div class="col-12">
+								<select id="from1" class="input" aria-label="Fahrenheit"
+									data-acsb-tooltip="Fahrenheit">
+									<option value="°F">Fahrenheit</option>
+									<option value="°C">Celsius</option>
+									<option value="°K">Kelvin</option>
+								</select><span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+									data-acsb-force-hidden="true"></span>
+							</div>
+						</div>
+						<div class="row space-cls">
+							<div class="col-lg-6 disp-rangeblock-cls">
+								<input type="text" id="input1" class="input input-type-cls" value="Use numeric value"
+									onblur="blurFn(this)" onfocus="focusFn(this)">
+								<span class="error ErrorText"></span>
+								<p class="to-cls">to</p>
+							</div>
+							<div class="col-lg-6">
+								<input type="text" id="input2" class="input input-type-cls" value="Use numeric value"
+									onblur="blurFn(this)" onfocus="focusFn(this)">
+								<span class="error ErrorText"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<div>
+									<p>${properties.outputtype}</p>
+									<label for="to1" class="d-none">Fahrenheit</label>
+									<select id="to1" class="input">
+										<option value="°F">Fahrenheit</option>
+										<option value="°C" selected="selected">Celsius</option>
+										<option value="°K">Kelvin</option>
+									</select><span class="error ErrorText"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="row">
+							<div class="col-12 calculator-results">
+								<button class="ie-primary-btn" type="button" onclick="clickFn('range')"
+									value="Calculate">
+									Calculate
+								</button>
+								<p class="calculate-error-cls">
+									<span class="error ErrorText"></span>
+									<span id="errormsg" class="error ErrorText"></span>
+								</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 calculator-results">
+								<p>Result:</p>
+								<div class="result_container results-calc">
+									<div class="result"><span class="result-converted convertedtemprange-cls"> </span> <span id="temp" class="output"></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

@@ -1,0 +1,34 @@
+<section>
+<sly
+
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+
+	data-sly-call="${clientlib.css @ categories='contact-right-pane'}" />
+
+<div id="rightPaneWrapper">
+	<div class="rp-customer-service">
+		<h3 class="rp-headings">${properties.custservtitle}</h3>
+		<h4 class="rp-title-text">${properties.tollfreetitle}: <a title="${properties.tollfreenum}" class="rp-text" href="tel:${properties.tollfreenum}">${properties.tollfreenum}</a> </h4>
+		<h4 class="rp-title-text">${properties.interphonenumtitle}: <a title="${properties.interphonenum}" class="rp-text" href="tel:${properties.interphonenum}">${properties.interphonenum}</a> </h4>
+		<h4 class="rp-title-text">${properties.faxnumtitle}: <a title="${properties.faxnum}" class="rp-text" href="tel:${properties.faxnum}">${properties.faxnum}</a></h4>
+	</div>
+	<div class="rp-email">
+		<h3 class="rp-headings">${properties.emailtitle}</h3>
+		<h4 class="rp-title-text rptext-mt">${properties.salesmailtitle}:<br><a title="${properties.salesmail}" class="rp-text" href="mailto:${properties.salesmail}">${properties.salesmail}</a> </h4>
+		<h4 class="rp-title-text rptext-mt">${properties.techmailtitle}:<br><a title="${properties.techsupportmail}" class="rp-text" href="mailto:${properties.techsupportmail}"> ${properties.techsupportmail}</a></h4>
+	</div>
+	<div class="rp-office-hours">
+		<h3 class="rp-headings">${properties.offchourtitle}</h3>
+		<h4 class="rp-text">${properties.offchours}</h4>
+	</div>
+	<div class="rp-address">
+		<h3 class="rp-headings">${properties.addresstitle}</h3>
+		<h4 class="rp-text rp-address-text">${properties.address}</h4>
+	</div>
+	<div id="googleMap">
+		<iframe title="map" class="h-100 w-100" src="${properties.maplink}"></iframe>
+	</div>
+	
+</div>
+
+</section>

@@ -1,0 +1,6 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getLoginCTURL": "https://apim-iedtecomm-uat01.azure-api.net/login/fairview",
+  "getCheckoutLoginCTURL": "https://apim-iedtecomm-uat01.azure-api.net/login/fairview/guest/login"
+  
+}

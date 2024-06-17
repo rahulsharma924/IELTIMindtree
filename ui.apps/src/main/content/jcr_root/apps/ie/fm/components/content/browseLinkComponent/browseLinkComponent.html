@@ -1,0 +1,31 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='browseLink-clientlib'}" />
+
+<section class="browseLink analyticsupportFAQ">
+	<h2 class="browseLink-title">${properties.heading}</h2>
+	<div class="browseLink-text">
+        <sly data-sly-list.children="${resource.listChildren}">
+            <sly data-sly-list.fields="${children.listChildren}">
+                <div class="${fieldsList.odd ? 'browseLink-textinend' : 'browseLink-textinstart'}">
+                    <div class="browseLink-text-child">
+                        <p>
+                            <a class="ie-tertiary-link" title="${fields.valueMap.linkName}" href="${fields.valueMap.linkUrl}.html">
+                                ${fields.valueMap.linkName}
+                            </a>
+                        </p>
+                        <i class="fa-solid fa-arrow-right browseLink-righticon"></i>
+                    </div>
+                </div>
+            </sly>
+        </sly>
+	</div>
+</section>
+
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='browseLink-clientlib'}" />
+<script>
+    var currentPageName = '${currentPage.getName @ context="scriptString"}';
+  </script>

@@ -1,0 +1,22 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getAPIKey":"cm-p78402-e720520-integration-3",
+  "getSecret":"p8e-PnfUs5BytvpaKuYrjQGHhdxHOC224WjG",
+  "getTechnicalAccountId":"88161E0964F83B4A0A495C61@techacct.adobe.com",
+  "getOrgId":"757E34EE62B97AC60A495E3C@AdobeOrg",
+  "getMetaScopes": "ent_aem_cloud_api",
+  "getKeyPath": "/content/dam/fm/prod/secret.key/jcr:content/renditions/original/jcr:content",
+  "getImsHost": "ims-na1.adobelogin.com",
+  "getImsExchange": "https://ims-na1.adobelogin.com/ims/exchange/jwt",
+  "getJWTExpirationTime": "600",
+  "getAemHost": "https://author-p78402-e720520.adobeaemcloud.com",
+  "getAemMergedPdfFetchFolder": "/api/assets/infinite-electronics/product-assets/fairview-microwave/product-datasheets/",
+  "getAemMergedPdfDownloadFolder": "/api/assets/infinite-electronics/product-assets/fairview-microwave/olcc-datasheets/",
+  "getAemMergedPdfUploadFolder": "/content/dam/infinite-electronics/product-assets/fairview-microwave/olcc-datasheets",
+  "getAemPdfAssetDownloadFolder": "/api/assets/infinite-electronics/product-assets/fairview-microwave/product-datasheets/",
+  "getAemPdfAssetUploadFolder": "/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets",
+  "getAssetReplicateURL": "https://author-p78402-e720520.adobeaemcloud.com/bin/replicate.json",
+  "getAssetReplicateFolderPath": "/content/dam/infinite-electronics/product-assets/fairview-microwave/olcc-datasheets/",
+  "getAemPdfAssetLocalDownloadFilePath": "",
+  "getAemPdfAssetLocalUploadFolderPath": ""
+}

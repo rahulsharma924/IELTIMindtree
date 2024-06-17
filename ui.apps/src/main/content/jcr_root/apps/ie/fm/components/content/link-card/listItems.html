@@ -1,0 +1,25 @@
+
+<div class="card-section analyticsupportlearnmore">
+    <sly data-sly-list.children="${resource.listChildren}">
+        <sly data-sly-list.fields="${children.listChildren}">
+			<sly data-sly-use.display="display.html">
+				<sly data-sly-test="${fields}" data-sly-call="${display.message @ items=fields, itemsList=fieldsList}"/>
+			</sly>
+        </sly>
+    </sly>
+</div>
+<script>
+    document.querySelector("body").addEventListener('click', function(e) { 
+        var hyperlinkElement = e.target.closest('a');
+        if(hyperlinkElement){
+        var categorytext = hyperlinkElement.parentElement.previousElementSibling.previousElementSibling.textContent.trim();
+            var label="";
+            var category= "";
+            if((hyperlinkElement !== null && hyperlinkElement.closest('.analyticsupportlearnmore')!=null)){  
+                label= hyperlinkElement.textContent.trim(); 
+                category=  categorytext + " - " +'${currentPage.getName @ context="scriptString"}' + " page";        
+            }  
+          ctalinkDataLayerCall(label,category);
+        }   
+        }, false);	
+</script>

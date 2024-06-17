@@ -1,0 +1,4 @@
+#base=js
+jquery.validate.min.js
+rma-form.js
+rma-form-email.js

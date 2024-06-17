@@ -1,0 +1,9 @@
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+   data-sly-call="${clientlib.all @ categories='resourceCard'}"/>
+<sly data-sly-use.resourceCardModel="com.aem.ie.core.models.ResourceCardSlingModel"/>
+<sly data-sly-use.display="${properties.templateType}">
+	<sly data-sly-test="${resourceCardModel}" data-sly-call="${display.message @ resourceCardModel=resourceCardModel}"/>
+</sly>
+
+
+

@@ -1,0 +1,32 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='newsreleases-clientlib'}" />
+<sly data-sly-use.latestNewsModel="com.aem.ie.core.models.LatestNewsModel">
+   <section class="latest-news-post analyticlatestnews">
+      <div class="news-post-heading-description-wrapper">
+         <h2 class="news-post-main-heading">${latestNewsModel.heading}</h2>
+         <p class="news-post-main-description">${latestNewsModel.subHeading}</p>
+      </div>
+      <div class="news-post-card-wrapper">
+         <sly data-sly-list.item="${latestNewsModel.latestNewsList}">
+            <article class="col-3">
+               <div class="news-post-card">
+                  <div class="news-heading-description-wrapper">
+                     <div class="news-heading-publish-wrapper">
+                        <div class="latestNews_date">${item.latestNewsDate}</div>
+                        <h3>${item.latestNewsLabel}</h3>
+                        <p>${item.latestNewsTitle}</p>
+                     </div>
+                  </div>
+                  <div class="news-card-read-more-wrapper">
+                     <a href="${item.latestNewsPagePath}" role="link" title="${item.latestNewsTitle}" class="news-card-read-more">Read More</a>
+                  </div>
+               </div>
+            </article>
+         </sly>
+      </div>
+   </section>
+</sly>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='newsreleases-clientlib'}" />

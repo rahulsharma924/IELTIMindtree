@@ -1,0 +1,14 @@
+
+.plp-breadcrumbs{padding:25px 0px 25px 77px;}
+.plp-breadcrumbs li a{
+color: #879096;
+font-family: 'Poppins', sans-serif;
+}
+.plp-breadcrumbs ul{margin:0; padding:0;}
+.plp-breadcrumbs li{color: #879096; display:inline-block; font-size:14px;}
+
+.plp-breadcrumbs li span{padding: 0 3px; display: inline-block;}
+.plp-breadcrumbs li>* {display: inline-block; vertical-align: middle;}
+
+
+.plp-breadcrumbs strong{font-weight:700;}

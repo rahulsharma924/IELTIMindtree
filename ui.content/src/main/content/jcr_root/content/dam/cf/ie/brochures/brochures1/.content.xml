@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="c7383f73-c975-4f61-8587-0c3e94b30c0c">
+    <jcr:content
+        cq:lastReplicated="{Date}2023-05-18T16:33:19.471+05:30"
+        cq:lastReplicated_publish="{Date}2023-05-18T16:33:19.471+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:name="brochures1"
+        cq:parentPath="/content/dam/cf/ie/brochures"
+        jcr:lastModified="{Date}2023-05-18T15:40:34.454+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="brochures1"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-05-18T15:40:34.454+05:30">
+        <data
+            cq:model="/conf/fm/settings/dam/cfm/models/whitepapercfm"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Lorem ipsum dolor sit amet, consectetur bulkhead adipiscing elit. Sed libero ipsum, vulputate eget porttitor et, tincidunt ut tellus. Phasellus nec orci sem. Vivamus luctus gravida dolor vitae venenatis. Curabitur vitae massa vitae lorem consectetur convallis 1&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2023-05-18T15:40:34.396+05:30"
+                fieldLabel="/content/dam/fm/pdfs/Bi-PartySoftwareagreementLetter-DT-Final_Updated_Sep1-signed.pdf"
+                fieldLabel_x0040_LastModified="{Date}2023-05-16T21:14:30.517+05:30"
+                pdfimagepath="/content/dam/fm/sample.pdf"
+                pdfimagepath_x0040_LastModified="{Date}2023-05-17T20:46:51.769+05:30"
+                pdfname="View PDF"
+                pdfname_x0040_LastModified="{Date}2023-05-17T15:30:54.647+05:30"
+                title="Title for article, FAQ title, or featured content1"
+                title_x0040_LastModified="{Date}2023-05-18T15:40:34.394+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

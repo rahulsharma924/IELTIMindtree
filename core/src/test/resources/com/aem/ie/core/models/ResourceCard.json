@@ -1,0 +1,9 @@
+{
+  "showCustom": "true",
+  "image": "/content/dam/fm/Brochure-Image.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac sapien id sapien eleifend tincidunt et eget orci. ",
+  "title": "Title",
+  "imagetitle": "Brochure Image",
+  "jcr:primaryType": "nt:unstructured",
+  "resourceLink": "/content/dam/fm/Infinite-Electronics-Credit-Application.pdf"
+}

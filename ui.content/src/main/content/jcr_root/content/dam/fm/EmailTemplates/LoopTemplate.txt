@@ -1,0 +1,17 @@
+
+
+            <td class="row main-head align-base">
+                        <p class="products fsize-12" >${name} 
+                        <span style="display:block; font-weight: normal;">Coax Type: <small style="font-weight: bold;">${coaxType}</small></span>
+                         <span style="display:block; font-weight: normal;">Max frequency: <small style="font-weight: bold;">${maxfrequency}</small></span>
+                          <span style="display:block; font-weight: normal;">IL (db/100): <small style="font-weight: bold;">${attenuation}</small></span>
+                           <span style="display:block; font-weight: normal;">Flex type: <small style="font-weight: bold;">${flexType}</small></span>
+                            <span style="display:block; font-weight: normal;">Impedence: <small style="font-weight: bold;">${impedence}</small></span>
+                            <span style="display:block; font-weight: normal;">Number of sheilds: <small style="font-weight: bold;">${noOfshields}</small></span>
+                           <span style="display:block; font-weight: normal;">Cable color: <small style="font-weight: bold;">${color}</small></span>
+                          
+                        </p>
+                        <p class="qnty-price font-normal" >${quantity}</p>
+                        <p class="qnty-price text-right font-normal" ><span>$</span><span>${subtotalPrice}</span></p>
+                        <p class="qnty-price text-right font-normal" ><span>$</span><span>${subtotalPrice}</span></p>
+                    </td>

@@ -1,0 +1,41 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='secnav-clientlib'}" />
+
+<div class="secondaryNavigation">
+   <ul> 
+    <sly data-sly-list.children="${resource.listChildren}">
+        <sly data-sly-list.fields="${children.listChildren}">
+            <li class="secondaryNavigation_links industrialautomation_mobile_links">     
+                <a class="secondaryNavigation_link" href="#${fields.secid}" title="${fields.title}">${fields.title}</a>      
+            </li>
+        </sly>
+    </sly>
+</ul>
+</div>
+<div class="secondaryNav_hamburger d-lg-none" data-backdrop="static" data-toggle="modal" data-target="#secondaryNav_model">
+    <i class="fa-solid fa-bars fa-iphonebars"></i> 
+</div>
+<div class="modal fade " id="secondaryNav_model" tabindex="-1" role="dialog" aria-labelledby="secondNavModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content" >
+          <div class="modal-header" id="secondNavModal">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body" id="responsiveMyAccountModal">
+            <div class="model_secondaryNavigation industiralAutomation_links">
+                <sly data-sly-list.children="${resource.listChildren}">
+                    <sly data-sly-list.fields="${children.listChildren}">
+                        <div class="model_secondaryNavigation_links">     
+                            <a class="model_secondaryNavigation_link" href="#${fields.secid}" title="${fields.title}">${fields.title}</a>      
+                        </div>
+                    </sly>
+                </sly>
+            </div>
+          </div>
+       </div>
+    </div>
+ </div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='secnav-clientlib'}" />

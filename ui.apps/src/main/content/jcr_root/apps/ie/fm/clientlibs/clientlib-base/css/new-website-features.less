@@ -1,0 +1,200 @@
+#new-website-features {
+    .product-videoblock-new {
+        background: #004369;    
+    }
+
+    .product-videoblock {
+        .product-help-block {
+            max-width: 1280px;
+            padding: 0 25px;
+        }
+
+        .videoDetails {
+            padding: 40px 0;
+            padding-right: 40px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 28px;
+
+            @media (max-width: 1280px) {
+                font-size: 14px;
+                padding-right: 20px;
+            }
+
+            @media (max-width: 770px) {
+                text-align: center;
+                padding: 20px 0;
+                padding-right: 0;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                line-height: 1.5;
+
+                @media (max-width: 1280px) {
+                    font-size: 2rem;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+
+        .vediosection {
+            order: 2;
+            padding: 0;
+
+            @media (max-width: 770px) {
+                margin-bottom: 20px;
+            }
+
+            .embed-responsive-16by9 {
+                &::before {
+                    @media (max-width: 1280px) {
+                        padding-top: 83.25%;
+                    }
+
+                    @media (max-width: 770px) {
+                        padding-top: 56.25%;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .cmp-teaser__title {
+        max-width: 100%;
+    }
+
+    .new-feature-container {
+        width: 100.0%;
+        max-width: 1140px;
+        margin: 20px auto;
+        padding: 50px 24px 34px;
+
+        .row {
+            align-items: center;
+
+            @media (max-width: 575px) {
+                padding: 0 23px;
+            }
+        }
+
+        .new-feature-details {
+            padding: 0 20px;
+        }
+    }
+
+    section.watch-video {
+        background: #fff;
+        max-width: 1140px;
+        margin: 0 auto;
+
+        .watch-video_image.col-12.col-sm-6.col-md-6.col-lg-6.pl-xs-0 {
+            padding-right: 28px;
+            padding-left: 13px;
+
+            @media (max-width: 575px) {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .new-feature--gray {
+        background-color: #f8f9fa;
+    }
+
+    figure.watch-video_image.col-12.col-sm-6.col-md-6.col-lg-6.pl-xs-0 {
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    .new-feature-container,
+    .watch-video {
+        .watch-video_image {
+            @media (max-width: 575px) {
+                order: 0;
+            }
+        }
+
+        .watch-video-details {
+            @media (max-width: 575px) {
+                order: 1;
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+            padding: 25px 24px 15px;
+        }
+    }
+
+    .watch-video_image {
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            border: 1px solid #E5E7E9;
+
+            @media (max-width: 575px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .watch-video {
+        .row {
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 608px) {
+            padding: 50px 0 34px 15px;
+        }
+    }
+
+
+    .watch-video-details {
+        @media only screen and (min-width: 992px) {
+            padding: 0 15px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            padding: 0 0 0 15px;
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: 991px) {
+            padding: 0 15px;
+        }
+
+        .watch-video_title,
+        .watch-video_desc {
+            max-width: 100%;
+        }
+
+        .watch-video_desc {
+            @media (max-width: 575px) {
+                text-align: center;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .watch-video-details .watch-video_desc {
+            padding-top: 0;
+        }
+    }
+
+    .Customcapablities {
+        border-top: 1px solid #dee2e6;
+    }
+}

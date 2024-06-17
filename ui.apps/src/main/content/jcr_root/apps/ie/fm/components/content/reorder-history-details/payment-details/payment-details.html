@@ -1,0 +1,50 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='payment-details'}"
+/>
+
+<section class="container payment-details payment__details" id="paymentDetails" data-label="${properties.translabel}">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-9 card-details">
+      <div class="row">
+        <span id="payTitle">Payment method:</span>
+      </div>
+      <div class="row payment-details__source">
+        <div class="col-1 card-logo">
+          <img
+            class="product-img"
+            alt="prod-img"
+          />
+        </div>
+        <div class="col-8 card-num"></div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-3 payment-details">
+      <div class="row">
+        <span id="payDetails">Payment details:</span>
+      </div>
+      <div class="row payment-details-table">
+        <div class="payment-detail-row">
+          <span>Subtotal</span>
+          <span class="quants payment-details__subtotal"></span>
+        </div>
+        <div class="payment-detail-row">
+          <span>Shipping & Handling</span>
+          <span class="quants payment-details__shipping-handling"></span>
+        </div>
+        <div class="payment-detail-row">
+          <span>Sales tax</span>
+          <span class="quants payment-details__sales-tax"></span>
+        </div>
+        <div class="payment-detail-row order-total">
+          <span class="bottom-bill">Order total</span>
+          <span class="bottom-bill quants payment-details__total"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='payment-details'}"
+/>

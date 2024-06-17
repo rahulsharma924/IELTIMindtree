@@ -1,0 +1,36 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='search-banner-clientlib'}" />
+<section class="search__banner search-banner-conatiner" data-category-name="${properties.categoryType}">
+   <div class="search__banner_section">
+      <div class="search-box">
+         <!--<button class="support-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+  </div>
+      <div class="search__banner_content">
+         <div class="search__banner_textarea">
+         <h1 class="search__banner_title">${properties.bannerTitle}</h1>
+         <p class="search__banner_content">
+            ${properties.bannerDescription @context='html'}
+         <div class="search-relative">
+            <div class="banner-search-input" id="autocomplete-search"></div>
+            <!--
+          <form>
+            <input class="cmp-search__input ie-search-input"  type="text" name="fulltext" placeholder="Search">
+            <i class="fa fa-search searchicon search__input--button"></i>
+          </form>
+         -->
+         </div>
+      </div> 
+      </div>
+      <figure class="search__banner--image">
+         <img src="${properties.bannerImage}" alt="${properties.imageAltText}" width="100" height="388"/>
+      </figure>
+   </div>
+</section>
+<script>
+   
+
+</script>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='search-banner-clientlib'}" />

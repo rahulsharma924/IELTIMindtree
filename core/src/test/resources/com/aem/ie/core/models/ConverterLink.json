@@ -1,0 +1,25 @@
+{
+  "link": {
+    "showCustom": "true",
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/fm/en/testpage",
+    "category": "Featured",
+    "title": "Microstrip Calculator"
+  },"convertersLinksDetails": {
+    "item0": {
+    "showCustom": "false",
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/fm/en/testpage",
+    "category": "Featured",
+    "title": "Microstrip Calculator",
+    "description": "description"
+    },"item1": {
+    "showCustom": "true",
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/fm/en/testpage",
+    "category": "Featured",
+    "title": "Microstrip Calculator",
+    "description": "description"
+  }
+ }
+}

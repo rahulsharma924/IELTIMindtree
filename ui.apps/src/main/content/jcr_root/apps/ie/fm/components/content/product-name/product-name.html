@@ -1,0 +1,13 @@
+<sly
+		data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+		data-sly-call="${clientlib.css @ categories='productname-clientlib'}" />
+<div class="productName_Block">
+	<div class="productName_data" data-sly-set.myPath="${properties.buttonLink}">
+		<h2 class="productHeading">${properties.productText}</h2>
+		<p class="productDesc">${properties.productDesc @context = 'html'}</p>
+		<button type="button" title="Shop Now" class="ie-primary-btn" onclick="location.href ='${myPath @ context='html'}'">${properties.buttonText}</button>
+	</div>
+	<div class="col-md-4">
+		<img src="${properties.productImg}" alt="${properties.rfImageAltText}" width="300%" />
+	</div>
+</div>

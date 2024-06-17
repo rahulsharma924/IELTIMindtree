@@ -1,0 +1,51 @@
+<div class="blog__list--card d-none">
+  {{#each (limit blogList limitData)}}
+
+  <li>
+    <a
+      href="{{bloglink}}"
+      role="link"
+      x-cq-linkchecker="skip"
+      title="{{blogtitle}}"
+      ><div class="blogList-block filterDiv">
+        <div class="blogList-leftblock">
+          <h2 class="blogList-block-heading">{{blogtitle}}</h2>
+          <p class="blogList-name-date-category">
+            <span class="blogList-author">by {{blogauthor}} | </span>
+            <span class="blogList-date" data-event-date="{{formattedDate}}">
+              {{formattedDate}} |
+            </span>
+            <span class="blogList-category" data-category="{{bloglabel}}">
+              {{bloglabel}}
+            </span>
+          </p>
+        </div>
+        <span class="blogList-rightblock">
+          <i class="fa fa-angle-right"></i>
+        </span></div
+    ></a>
+  </li>
+  {{/each}}
+</div>
+<!-- Blog Filter Categories-->
+<div class="blog__list--filter--categories d-none">
+  {{#each blogList}}
+  <li>
+    <input
+      type="checkbox"
+      id="{{this}}"
+      class="filterSelection"
+      aria-label="Checkbox for following text input"
+      value="{{this}}"
+    /><span class="chkboxText">{{this}}</span>
+  </li>
+  {{/each}}
+</div>
+<!-- Blog Filter Archives-->
+<ul class="blog__list--filter--archives d-none">
+  {{#each blogList}}
+  <li data-year="{{this}}">
+    <span class="chkboxText archives-year"> {{this}} </span>
+  </li>
+  {{/each}}
+</ul>

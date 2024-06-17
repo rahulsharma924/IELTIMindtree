@@ -1,0 +1,93 @@
+.linkCard-block {
+    text-align: center;
+    padding: 0px 36px 0px 36px;
+}
+
+.linkCard-block--border {
+    border-left: 1px solid var(--livesupportBorderClr);
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.linkCard-title {
+    font-size: var(--baseFontSize);
+    font-weight: var(--fontWeightBold);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    width: 174px;
+    margin: auto;
+    color: var(--secondaryBlack);
+}
+
+.linkCard-description {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightSmall);
+    line-height: var(--lineHeight1and3Q);
+    text-align: center;
+    width: 219px;
+    padding: 8px 0px 9px 0px;
+    color: var(--secondaryBlack);
+}
+
+.linkCard-icon {
+    padding-bottom: 21px;
+}
+
+.linkCard-icon i {
+    font-size: var(--fontSize28);
+    font-weight: var(--fontWeightSmaller);
+    line-height: 0.85;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--tabPanelClr);
+}
+
+.linkCard-button a {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightMedium);
+    line-height: var(--lineHeight1and428);
+    text-align: center;
+    color: var(--secondaryLinkNormal);
+}
+
+.linkCard-button a:hover {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightBold);
+    line-height: var(--lineHeight1and428);
+    text-align: center;
+    color: var(--secondaryLinkNormal);
+    text-decoration: underline;
+}
+
+.linkCard-button a:active {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightBold);
+    line-height: var(--lineHeight1and428);
+    text-align: center;
+    color: var(--secondaryLinkActive);
+    text-decoration: underline;
+}
+
+@media screen and (max-width:833px) {
+    .card-section {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .linkCard-block--border {
+        border-right: none;
+        border-top: 1px solid var(--livesupportBorderClr);
+    }
+    .linkCard-block {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .linkCard-description {
+        width: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+
+#base=js
+rf-powercalculator.js
+conversions.js
+watermark.js 
+inputCheck.js

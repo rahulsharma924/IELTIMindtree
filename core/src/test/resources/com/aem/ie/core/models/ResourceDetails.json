@@ -1,0 +1,162 @@
+{
+  "resourcesdetails": {
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Description",
+      "pdftitle": "pdftitle",
+      "pdflink": "/content/fm/en/testpage",
+      "labelname": "Resource label",
+      "image": "/content/dam/fm/icon3.png",
+      "title": "",
+      "enableHeading": "true"
+    },"item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Description",
+      "pdftitle": "pdftitle",
+      "pdflink": "/content/fm/en/testpage",
+      "labelname": "Resource label",
+      "image": "/content/dam/fm/icon3.png",
+      "title": "Resource title",
+      "enableHeading": "false"
+    },"item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Description",
+      "pdftitle": "pdftitle",
+      "pdflink": "/content/dam/fm/product/datasheets/test.pdf",
+      "labelname": "Resource label",
+      "image": "/content/dam/fm/icon3.png",
+      "title": "",
+      "enableHeading": "true"
+    },"item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "description": "Description",
+      "pdftitle": "pdftitle",
+      "pdflink": "/content/dam/fm/product/datasheets/test.pdf",
+      "labelname": "Resource label",
+      "image": "/content/dam/fm/icon3.png",
+      "title": "Resource title",
+      "enableHeading": "false"
+    }
+  },"attachmentPDF": {
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Apr 24 2023 16:37:07 GMT+0530",
+  "jcr:uuid": "a1b31e8e-3d24-4005-ab2a-f3232b435969",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "cq:lastReplicatedBy_publish": "workflow-process-service",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "workflow-process-service",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicationAction_publish": "Activate",
+    "cq:lastReplicated": "Mon Apr 24 2023 16:37:08 GMT+0530",
+    "dam:assetState": "processed",
+    "jcr:lastModified": "Mon Apr 24 2023 16:37:11 GMT+0530",
+    "cq:lastReplicated_publish": "Mon Apr 24 2023 16:37:08 GMT+0530",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Mon Apr 24 2023 16:37:07 GMT+0530",
+      "cq5dam.thumbnail.48.48.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Mon Apr 24 2023 16:37:10 GMT+0530",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Mon Apr 24 2023 16:37:10 GMT+0530",
+          ":jcr:data": 1784
+        }
+      },
+      "cq5dam.thumbnail.140.100.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Mon Apr 24 2023 16:37:10 GMT+0530",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Mon Apr 24 2023 16:37:10 GMT+0530",
+          ":jcr:data": 5526
+        }
+      },
+      "cq5dam.web.1280.1280.jpeg": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Mon Apr 24 2023 16:37:10 GMT+0530",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/jpeg",
+          "jcr:lastModified": "Mon Apr 24 2023 16:37:10 GMT+0530",
+          ":jcr:data": 134529
+        }
+      },
+      "cqdam.preview.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Mon Apr 24 2023 16:37:10 GMT+0530",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Mon Apr 24 2023 16:37:10 GMT+0530",
+          ":jcr:data": 69031
+        }
+      },
+      "original": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Mon Apr 24 2023 16:37:07 GMT+0530",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:mimeType": "application/pdf",
+          "jcr:lastModified": "Mon Apr 24 2023 16:37:07 GMT+0530",
+          ":jcr:data": 3157676
+        }
+      },
+      "cq5dam.thumbnail.319.319.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Mon Apr 24 2023 16:37:10 GMT+0530",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Mon Apr 24 2023 16:37:10 GMT+0530",
+          ":jcr:data": 37634
+        }
+      }
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "dam:Physicalheightininches": "11.0",
+      "dam:Physicalwidthininches": "8.5",
+      "dam:numPages": 6,
+      "dam:extracted": "Mon Apr 24 2023 16:37:08 GMT+0530",
+      "dc:format": "application/pdf",
+      "dam:Producer": "iText® 5.5.13.1 ©2000-2019 iText Group NV (AGPL-version)",
+      "xmp:MetadataDate": "Wed Apr 19 2023 10:44:21 GMT+0530",
+      "pdf:Producer": "iText® 5.5.13.1 ©2000-2019 iText Group NV (AGPL-version)",
+      "xmp:ModifyDate": "Wed Apr 19 2023 10:44:21 GMT+0530",
+      "xmp:CreateDate": "Wed Apr 19 2023 10:44:21 GMT+0530",
+      "dam:sha1": "917eea273da12c5e2a47dccfb1003171a1cf956e",
+      "dam:size": 3157676
+    }
+  }
+}
+}

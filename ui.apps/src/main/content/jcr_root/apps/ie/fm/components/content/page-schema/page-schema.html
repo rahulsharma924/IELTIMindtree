@@ -1,0 +1,28 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='schema-clientlib'}" />
+<sly data-sly-use.schemaOrgModel="com.aem.ie.core.models.SchemaOrgModel">
+   <sly data-sly-test="${schemaOrgModel.newsPage==true}">
+      <div class = "schema" itemscope itemtype="https://schema.org/NewsArticle">
+         <sly data-sly-list.schemaOrgListItem="${schemaOrgModel.schemaOrgList}">
+            <div itemprop="about"> ${schemaOrgListItem.newsArticleTitle}</div>
+            <div itemprop="articleSection"> ${schemaOrgListItem.newsArticleSection}</div>
+            <div itemprop="articleBody">
+               ${schemaOrgListItem.newsArticleBody @context='html'}
+            </div>
+         </sly>
+      </div>
+   </sly>
+   <!-- <sly data-sly-test="${schemaOrgModel.blogPage==true}">
+      <div class = "schema" itemscope itemtype="https://schema.org/Blog">
+         <sly data-sly-list.schemaOrgListItem="${schemaOrgModel.schemaOrgList}">
+            <div itemprop="author">${schemaOrgListItem.blogAuthor}</div>
+            <div itemprop="datePublished">${schemaOrgListItem.datePublished}</div>
+            <img src="${schemaOrgListItem.image}" alt="${schemaOrgListItem.imageAltText}" />
+            <div itemprop="blogPost">
+               ${schemaOrgListItem.blogPost @context='html'}
+            </div>
+         </sly>
+      </div>
+   </sly> -->
+</sly>

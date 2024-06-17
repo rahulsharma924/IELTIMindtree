@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Dialog for Resource Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="section-res.editor"
+    helpPath="https://www.adobe.com/go/aem_cmp_text_v2"
+    trackingFeature="core-components:text:v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <firsttab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Live Support"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        granite:class="cq-RichText-FixedColumn-column"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A title that will be displayed above the Multi-Carousel Component."
+                                                fieldLabel="Title"
+                                                name="./resourcestitle"/>
+                                            <accordion
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Resource gallery"
+                                                name="./multicol">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./resourcesdetails">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <fieldset
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <Resource_x0020_label
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Enter the label name"
+                                                                    fieldLabel="Resource label"
+                                                                    name="./labelname"/>
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Enter the title "
+                                                                    fieldLabel="Resource title"
+                                                                    name="./title"/>
+                                                                <description
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                                    fieldDescription="Enter the description"
+                                                                    fieldLabel="Description"
+                                                                    name="./description"/>
+                                                                <pdfimage
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldDescription="Enter the image"
+                                                                    fieldLabel="image"
+                                                                    name="./image"
+                                                                    rootPath="/content/dam"/>
+                                                                <enableHeading
+                                                                    granite:class="cq-dialog-checkbox-showhide"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    checked="{Boolean}false"
+                                                                    fieldDescription="Click to show or hide details"
+                                                                    fieldLabel="Show Section Details"
+                                                                    name="./enableHeading"
+                                                                    text="Enable Section Details"
+                                                                    value="true">
+                                                                    <granite:data
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cq-dialog-checkbox-showhide-target=".togglefield"/>
+                                                                </enableHeading>
+                                                                <pdflink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldDescription="Enter the PDF path or view more link"
+                                                                    fieldLabel="PDF or View More link"
+                                                                    name="./pdflink"/>
+                                                                <content
+                                                                    granite:class="togglefield"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <pdftitle
+                                                                            granite:class="togglefield"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldDescription="Enter the PDF or Link title"
+                                                                            fieldLabel="PDF or Link Title"
+                                                                            name="./pdftitle"/>
+                                                                        <enablePdfIcon
+                                                                            granite:class="cq-dialog-heading-showhide"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                            checked="{Boolean}false"
+                                                                            fieldDescription="Click to show or hide PDF Icon"
+                                                                            fieldLabel="Show PDF Icon"
+                                                                            name="./enablePdfIcon"
+                                                                            text="Enable PDF Icon"
+                                                                            value="true"/>
+                                                                    </items>
+                                                                </content>
+                                                            </items>
+                                                        </fieldset>
+                                                    </items>
+                                                </field>
+                                            </accordion>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </firsttab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

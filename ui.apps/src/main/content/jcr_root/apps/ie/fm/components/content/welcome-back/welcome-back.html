@@ -1,0 +1,28 @@
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='welcome-clientlib'}" />
+
+<div class="welcomeBack_main hide col col-md-12">
+<h3 class="welcomeBack_label">${properties.welcometitle}</h3>
+<div class="bclass analyticexporenewprod">
+<div class="pText">${properties.text @context='html'}</div>
+<div class="welcomeBack_buttons container-fluid row">
+<div class="col-sm-12 welcomeBack1">
+    
+    <a role="link" href="${properties.explorelink}" target="_self"  class="ie-primary-btn" title="${properties.explore}">
+       ${properties.explore}
+    </a>
+    <!-- <button type="button"  onclick="window.location.href ='/content/fm/en/new-releases.html';"  target="_self"  class="ie-primary-btn" title="${properties.explore}">
+        ${properties.explore}
+    </button> -->
+</div>    
+</div>
+</div>
+</div>
+
+
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='welcome-clientlib'}" />

@@ -1,0 +1,4 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "updateCartCTURL":"https://apim-iedtecomm-dev01.azure-api.net/checkout/fairview/updateCart"
+}

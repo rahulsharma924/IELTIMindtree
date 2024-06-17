@@ -1,0 +1,38 @@
+.mailmessage {
+    margin-top: 3px;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--fontSize20);
+    color: var(--newsDateColor);
+}
+.passNewClass {
+    position: relative;
+}
+.accphonenumber{
+    margin: 16px 0 !important;
+}
+
+.accbillingcompany{
+    margin-top: 16px !important;
+    }
+/* contactByEmail */
+.formtext.aem-GridColumn .subscribe-block label.custom_form_label{
+    font-size: 22px;
+    font-weight: 600;
+}
+.formtext.aem-GridColumn p.contact_by_email_wrapper_text{
+    font-weight: 500;
+}
+.personal-infochkbox-wrapper input{
+    float: left;
+    height: 1rem;
+    width: 1rem;
+    margin: 0;
+}
+.personal-infochkbox-wrapper .mailmessage{
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+    top: -3px;
+}

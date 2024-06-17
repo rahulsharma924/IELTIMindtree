@@ -1,0 +1,25 @@
+#main{
+     border: 1px solid;
+   	background: #004369;
+	width: 100%;
+	overflow: hidden;
+	}
+p>span{
+  font-weight:bold;
+ }
+
+
+	/* .para{
+	color: white;
+	white-space: nowrap;
+	clear: both;
+	float: left;
+	}   */
+
+	.para span {
+		font-weight: bold;
+	}
+
+	.cmp-text.samedayshipping-text {
+		color: #fff;
+	}

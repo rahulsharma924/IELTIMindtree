@@ -1,0 +1,234 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='joinourmailinglist'}"
+/>
+
+<div class="join-mailing-list_main row">
+  <div class="jml_input">
+    <div class="mailing-title">
+      <label for="mailing_list">${properties.joinmaillabel}</label>
+    </div>
+    <div>
+      <input
+        type="email"
+        id="mailing_list"
+        placeholder="${properties.mailidplaceholdertext}"
+      />
+    </div>
+  </div>
+  <div
+    class="jml_btn_wrap analyticjoinmailinglist analytic-join-our-mailing-list"
+  >
+    <button
+      class="ie-primary-btn jml_btn"
+      type="submit"
+      data-toggle="modal"
+      data-target="#mailmodal"
+    >
+      ${properties.mailsubscribe}
+    </button>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="mailmodal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="mailListModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" id="mailListModal">
+      <div class="col-sm-12 col-xs-12 joml-title">
+        <span class="joml-title-txt">${properties.ejomltitle}</span>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <i class="fa-regular fa-xmark font-32" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 joml-subtitle-div">
+        <span class="joml-subtitle">${properties.ejomlsubtitle}</span>
+      </div>
+      <div class="joml-form-div" id="joinOurMail">
+        <form
+          method="post"
+          name="fm_join_list_expanded_"
+          action="https://s638200148.t.eloqua.com/e/f2"
+          onsubmit="return handleFormSubmitJ(this)"
+          id="form118"
+          class="elq-form"
+        >
+          <input
+            value="fm_join_list_expanded"
+            type="hidden"
+            name="elqFormName"
+          />
+          <input value="638200148" type="hidden" name="elqSiteId" />
+          <!-- <input
+            value=""
+            type="hidden"
+            id="jml_elqFormSubmissionToken"
+            name="elqFormSubmissionToken"
+          /> -->
+          <input name="elqCampaignId" type="hidden" />
+          <div class="layout container-fluid">
+            <div class="row">
+              <div class="grid-layout-col">
+                <div class="layout-col col-sm-12 col-xs-12">
+                  <div
+                    id="jml_formElement0"
+                    class="elq-field-style form-element-layout row"
+                  >
+                    <div style="text-align: left" class="col-sm-12 col-xs-12">
+                      <label class="elq-label joml-label" for="fe1288"
+                        >${properties.ejomlfname}</label
+                      >
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="field-control-wrapper">
+                            <input
+                              type="text"
+                              class="elq-item-input"
+                              name="firstName"
+                              id="fe1288"
+                              value=""
+                              style="width: 100%"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="grid-layout-col">
+                <div class="layout-col col-sm-12 col-xs-12">
+                  <div
+                    id="jml_formElement1"
+                    class="elq-field-style form-element-layout row"
+                  >
+                    <div style="text-align: left" class="col-sm-12 col-xs-12">
+                      <label class="elq-label joml-label" for="fe1289"
+                        >${properties.ejomllname}</label
+                      >
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="field-control-wrapper">
+                            <input
+                              type="text"
+                              class="elq-item-input"
+                              name="lastName"
+                              id="fe1289"
+                              value=""
+                              style="width: 100%"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="grid-layout-col">
+                <div class="layout-col col-sm-12 col-xs-12">
+                  <div
+                    id="jml_formElement2"
+                    class="elq-field-style form-element-layout row joml-last-ip"
+                  >
+                    <div style="text-align: left" class="col-sm-12 col-xs-12">
+                      <label class="elq-label joml-label" for="fe1286"
+                        >${properties.ejomlemail}</label
+                      >
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="field-control-wrapper">
+                            <input
+                              type="text"
+                              class="elq-item-input"
+                              name="emailAddress"
+                              id="fe1286"
+                              value=""
+                              style="width: 100%"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div id="elq-FormLastRow" class="row">
+                <div class="grid-layout-col">
+                  <div class="layout-col col-sm-12 col-xs-12">
+                    <div class="elq-field-style form-element-layout row">
+                      <div style="text-align:left;" class="col-sm-12 col-xs-12">
+                        <label class="elq-label">address1
+                        </label>
+                      </div>
+                      <div class="col-sm-12 col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="field-control-wrapper">
+                              <input type="text" value="" tabindex="-1" autocomplete="off" style="width:100%;" class="elq-item-input" name="address1" id="fe1289">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <div class="row joml-bottom-div">
+              <div class="grid-layout-col">
+                <div class="layout-col col-sm-12 col-xs-12">
+                  <div
+                    id="jml_formElement3"
+                    class="elq-field-style form-element-layout row"
+                  >
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="col-xs-12 joml-join-btn">
+                          <div>
+                            <input
+                              type="submit"
+                              value="${properties.ejomlbtn}"
+                              class="submit-button ie-primary-btn exp_jml_btn"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='joinourmailinglist'}"
+/>
+
+

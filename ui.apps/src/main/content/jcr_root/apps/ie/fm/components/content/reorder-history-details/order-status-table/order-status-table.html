@@ -1,0 +1,62 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='order-status-table'}"
+/>
+
+<div class="upper-portion">
+  <h2 class="order-status-text">
+    <span></span>
+  </h2>
+  <button
+    class="addnewaddress_btn reorder-btn-upper1 ie-primary-btn btn-text-upper reorder-button">
+    Reorder
+  </button>
+</div>
+<section class="row order-status">
+  <div class="col-md-8 col-lg-9 order-status-table order__status__table">
+    <ul class="ul-list">
+      <li class="list-item">
+    
+          <span class="htext">Order date</span>
+          <span class="vtext" id="orderDate"></span>
+        
+      </li>
+      <li class="list-item">
+        
+          <span class="htext">Order number</span>
+          <span class="vtext" id="orderNum"></span>
+        
+      </li>
+      <li class="list-item">
+        
+          <span class="htext">PO number</span>
+          <span class="vtext" id="po"></span>
+        
+      </li>
+      <li class="list-item">
+        
+          <span class="htext">Total</span>
+          <span class="vtext" id="totalPrice"></span>
+        
+      </li>
+      <li>
+        <div class="list-item">
+          <span class="htext">Items</span>
+          <span class="vtext" id="items"></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-4 col-lg-3 btn_container">
+    <button
+      class="addnewaddress_btn reorder-btn-upper ie-primary-btn btn-text-upper reorder-button"
+    >
+      Reorder
+    </button>
+  </div>
+</section>
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='reorder-details,order-status-table'}"
+/>

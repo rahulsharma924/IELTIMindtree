@@ -1,0 +1,6 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "xmlPath":"/content/fm/sitemap_category.xml",
+  "categoryJsonPath":"/content/dam/infinite-electronics/json/fairview-microwave/Categories.json",
+  "lastModifiedDate": "2023-07-11"
+}

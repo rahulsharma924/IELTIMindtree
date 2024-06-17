@@ -1,0 +1,6 @@
+#new-releases .aem-Grid.aem-Grid--default--10>.aem-GridColumn.aem-GridColumn--default--8{
+  width: 100%;
+  margin-left: 0;
+}
+
+body{display: none;}

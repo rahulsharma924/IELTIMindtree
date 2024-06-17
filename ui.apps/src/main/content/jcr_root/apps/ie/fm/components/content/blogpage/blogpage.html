@@ -1,0 +1,89 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='blogpage-clientlib'}"/>
+<sly data-sly-use.blogPageModel="com.aem.ie.core.models.BlogPageModel">
+<article>
+<div class="container" id="main_blog_article">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+	<div class="blog_art_page">
+		<div class="row alignitem-end">
+			<div class="col-sm-12 col-md-9 col-lg-10 blog_title_desc">
+				<sly data-sly-list.label="${blogPageModel.blogLink}"> <a href="/" class="tag blog__details--label">${label}</a></sly>
+			  <h1 class="blog_title">${blogPageModel.blogtitle}</h1>
+			  <p class="blog_post_author">by ${blogPageModel.blogauthor} | ${blogPageModel.formattedDate}</p>
+			</div>
+			<div class="col-sm-12 col-md-3 col-lg-2 social_icon_div">
+			  <div class="share_now">Share now</div>
+			  <div class="social_icons">
+				<a href="${pageProperties.blogfb}" title="Facebook" target="_blank" aria-label="Facebook" x-cq-linkchecker="skip"><i class="${pageProperties.blogfbicon} facebookicon" aria-hidden="true"></i></a>
+				<a href="${pageProperties.bloglinkedin}" title="Linkedin" target="_blank" aria-label="Linkedin" x-cq-linkchecker="skip"><i class="${pageProperties.bloglinkedinicon} linkedinicon" aria-hidden="true"></i></a>
+				<a href="${pageProperties.blogtwitter}" title="Twitter" target="_blank" aria-label="Twitter" x-cq-linkchecker="skip"><i class="${pageProperties.blogtwittericon} twittericon" aria-hidden="true"></i></a>
+			  </div>
+			</div>
+		</div>
+		<sly data-sly-test="${blogPageModel.blogimage !=null && blogPageModel.blogimage !=' '}">
+		<div class="row hero_imageDiv">
+		<div class="col-sm-12 hero_image_div">
+	     <div class="hero_image_container">
+			<img src="${blogPageModel.blogimage}" alt="${properties.imagealttext}" />
+		  </div>
+		</div>
+		<sly data-sly-test="${properties.blogimgtext !=null && properties.blogimgtext !=' '}">
+		<span class="col-sm-12 image_blog_title">${properties.blogimgtext}</span>
+	   </sly>
+		</div>
+	 </sly>
+		<div class="blog_content blog_art_space">
+			<div class="col-sm-12 blog_fullcontent">
+			  <sly>${blogPageModel.blogtext @context='html'}</sly>
+			  <sly data-sly-list.blog="${resource.getChildren}">
+				<!-- <sly data-sly-test="${blog.name == 'blogmulti'}" id="label-featured">
+				 <sly class="" data-sly-repeat.blog1="${blog.getChildren}">
+					<h2 class="content_bold">
+					  ${blog1.blogquestion @context='html'}
+					</h2>
+					<sly>${blog1.bloganswer @context='html'}</sly>
+				  </sly>
+				</sly>-->
+			  </sly>
+			</div>
+		</div>
+	</div>
+		<hr />
+	<div class="blog_art_page secondary-section">
+		<!--Related Article Code-->
+		<sly data-sly-use.blogRelatedArticle="com.aem.ie.core.models.RelatedArticleModel">
+			<div data-sly-test="${blogRelatedArticle.relatedArticles.size!=0}">
+            	<div class="blog-article_carousel_main analytic-industrial-automation">
+                	<h2 class="blog-article_carousel_title_h2">Related articles</h2>
+                </div>
+                <div data-sly-list.article="${blogRelatedArticle.relatedArticles}" class="blog_article related_article_slide">
+                	<div class="related_card">
+                    	<div class="customcap_icon blog-article_carousel_img">
+                        	<img src="${article.blogimage}" alt="${article.blogimageText}" />
+                        </div>
+                        <div class="text-wrapper">
+                        	<div class="related_article_desc">
+                            	<h3 class="blog-article_section_title">${article.blogtitle}</h3>
+                            	<p class="blog-articlesection_title">
+									${article.blogauthor} | ${article.formattedDate} |
+									<sly data-sly-list.label="${article.bloglabel}">${label} </sly>
+								</p>
+                            	<div class="blog-article_section_desc">${article.blogtext @ context='html'}</div>
+                         	</div>
+                            <a href="${article.bloglink}" title="Read More" aria-label="Read more" class="blog-article_section_link">Read More</a>
+                         </div>
+                    </div>
+				</div>
+			</div>
+		</sly>
+	</div>
+	</div>
+  </div>
+  </div>
+</article>
+</sly>
+
+
+

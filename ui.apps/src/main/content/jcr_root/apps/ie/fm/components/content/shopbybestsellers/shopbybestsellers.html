@@ -1,0 +1,16 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='shopbybestsellers'}" />
+
+<div class="shop-by-bestsellers">
+    <div class="shopByBestsellers analyticshopbybestsellers" id="bestsellers-hits">        
+    </div>
+    <div class="card view-all-shopByBestSellers">
+        <a title="view all" role="link" href="${properties.bestsellarlink}">
+            <div class="card-img-wrap">
+                <img src="${properties.bestsellerimagepath}" class="img-with-text img-thumbnail" alt="${properties.bestsellaralttext}" loading="lazy" />
+            </div>
+            <p>${properties.bestsellartitle}</p>
+        </a>
+    </div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='shopbybestsellers'}" />

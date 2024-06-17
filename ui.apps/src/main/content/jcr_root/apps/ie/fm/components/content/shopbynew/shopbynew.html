@@ -1,0 +1,17 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='shopbynew'}" />
+
+<div class="shop-by-new">
+    <div id="isnew-list"></div>
+    <div class="shopByNewRelease analyticshopbynew" id="shopByNewRelease-hits">               
+    </div> 
+    <div class="card view-all-shopByNew analyticsshopbycardview d-none" style="flex-direction: column; order: 12;">
+        <a title="view all" role="link" href="${properties.bynewlink}">
+            <div class="card-img-wrap">
+                <img src="${properties.bynewimagepath}" class="img-with-text img-thumbnail" alt="${properties.bynewlalttext}" loading="lazy" />
+            </div>
+            <p>${properties.shopbytitle}</p>
+        </a>
+    </div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.js @ categories='shopbynew'}" />

@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "xmlPath":"/content/fm/sitemap_index.xml",
+  "rootPath":"/content/fm"
+}

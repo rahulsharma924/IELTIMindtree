@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="843a4fe9-b792-4356-a231-ff397318e621">
+    <jcr:content
+        cq:lastReplicated="{Date}2023-05-18T16:33:34.789+05:30"
+        cq:lastReplicated_publish="{Date}2023-05-18T16:33:34.789+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:name="brochures4"
+        cq:parentPath="/content/dam/cf/ie/brochures"
+        jcr:lastModified="{Date}2023-05-18T15:40:12.250+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="brochures4"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-05-18T15:40:12.250+05:30">
+        <data
+            cq:model="/conf/fm/settings/dam/cfm/models/whitepapercfm"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                description="&lt;p>Lorem ipsum dolor sit amet, consectetur bulkhead adipiscing elit. Sed libero ipsum, vulputate eget porttitor et, tincidunt ut tellus. Phasellus nec orci sem. Vivamus luctus gravida dolor vitae venenatis. Curabitur vitae massa vitae lorem consectetur convallis 4&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2023-05-18T15:40:12.196+05:30"
+                pdfimagepath="/content/dam/fm/json/sample-category-filters.json"
+                pdfimagepath_x0040_LastModified="{Date}2023-05-18T13:27:51.240+05:30"
+                pdfname_x0040_LastModified="{Date}2023-05-18T13:26:19.913+05:30"
+                title="Title for article, FAQ title, or featured content4"
+                title_x0040_LastModified="{Date}2023-05-18T15:40:12.195+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,64 @@
+<div class="product__ordered--handlerbar d-none">
+  {{#each (limit filterData limitData)}}
+  <div class="product-conatiner">
+    <div class="product-ordered-image">
+      {{imgURL assets name brandSKU custom "orderedproductimage"}}
+    </div>
+    <div class="product-ordered-description">
+      <div class="desc">
+        {{seoUrl categorySEOURL seoName brandSKU custom.fields.masterSku name
+        false}}
+      </div>
+    </div>
+    <div class="pop-viewcol">
+      <div class="product-ordered-sku">
+        <span class="sku-title">SKU</span>
+        <span class="sku-value">{{brandSKU}}</span>
+      </div>
+      <div class="product-ordered-sku">
+        <span class="price-title">Starting price</span>
+        <span class="price-value">{{priceFormateProductOdered unitPrice}}</span>
+      </div>
+      <div class="product-ordered-sku">
+        <span class="ED-title">Estimated shipment</span>
+        <span class="ED-value">{{estimatedDate}}</span>
+      </div>
+
+      <div class="product-ordered-btn-right">
+        <a
+          href="order-history-details.html?order_id={{orderId}}"
+          data-order-id="{{orderId}}"
+          class="view__order product-ordered-ordered ie-scondary-btn"
+          x-cq-linkchecker="skip"
+          >{{viewOrder}}</a
+        >
+
+        {{#if (masterProduct length isCableAssembly)}}
+        <button
+          type="button"
+          id="addTocartbtn"
+          class="addTocartbtn-apply add__to__cart ie-primary-btn"
+          data-cartqty=""
+          data-master-sku="{{baseItemSKU}}"
+          data-length="{{length}}"
+          onclick="addToCartCustomLength(this)"
+        >
+          {{addToCart}}
+        </button>
+        {{else}}
+        <button
+          type="button"
+          id="addTocartbtn"
+          class="addTocartbtn-apply add__to__cart ie-primary-btn"
+          data-cartqty=""
+          data-sku="{{brandSKU}}"
+          onclick="addtocartSpecific(this)"
+        >
+          {{addToCart}}
+        </button>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

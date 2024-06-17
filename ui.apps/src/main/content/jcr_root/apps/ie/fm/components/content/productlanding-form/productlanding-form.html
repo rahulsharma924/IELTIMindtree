@@ -1,0 +1,44 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='search-banner-clientlib'}" />
+<div class="getmycopy-block col-md-12">
+
+<div class="row container">
+<div class ="col-md-4">
+
+<img src="${properties.productImage}" class="productImage" alt="${properties.imageAltText}" >
+</div>
+<div class="col-md-8">
+<h6 class="plTitle">${properties.categoryType}</h6>
+<h3 class="plHeading">${properties.bannerTitle}</h3>
+<form id="getMyFreecopyForm">
+<div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="plName">${properties.name}</label>
+                    <input type="text" name="plName" class="form-control" id="plName">
+                    <p id = "getMyCopyNameMsg" class="ie-error-medium enter-carrier-error-message"> </p>
+                  </div>
+				   <div class="col-md-6 mb-3">
+                    <label for="plPhone">${properties.phonenumber}</label>
+                    <input type="text" name="plPhone" class="form-control" id="plPhone">
+                    <p id = "getMyCopyPhoneMsg" class="ie-error-medium enter-carrier-error-message"> </p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="literatureemailid" >${properties.email}</label>
+                    <input type="text" name="literatureemailid" class="form-control" id="literatureemailid" aria-describedby="inputGroupPrepend">
+                    <p id = "getMyCopyEmailMsg" class="ie-error-medium enter-carrier-error-message"> </p>
+                  </div>
+                </div>
+				<button type="button" class="btn ie-primary-btn saveDetails-btn mt-3" aria-label="Save" id="literatureemail" value="save">
+                  ${properties.submitbtn}
+                </button>
+</form>
+</div>
+
+</div>
+</div>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='search-banner-clientlib'}" />

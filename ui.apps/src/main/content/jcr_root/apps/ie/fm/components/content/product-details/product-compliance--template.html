@@ -1,0 +1,74 @@
+<div class="product-compliance-handle d-none">
+  <div class="key-specification key-specification1 prod-comp-mt">
+    <div class="key-spec">
+      <h2 class="key-title accord-compli-title">
+        {{0.labels.productCompliance}}
+      </h2>
+      <h2 class="key-title desk-compli-title">
+        <span>{{0.labels.productCompliance}}</span>
+      </h2>
+      <div class="key-title accord-compli-links justify-end">
+        <div class="datasheet-btn-pdf analytics-datasheet-pdp rohs-status">
+          <button class="ie-scondary-btn" title="{{0.labels.rohsDeclaration}}" x-cq-linkchecker="skip" data-sku="{{objectID}}" data-datasheet="rohs-pdf" onclick="compliancepdfcheck(this);"><i class="fa-sharp fa-solid fa-file-pdf"></i>{{0.labels.rohsDeclaration}}</button>
+        </div>
+        <div class="datasheet-btn-pdf analytics-datasheet-pdp reach-status">
+          <button class="ie-scondary-btn" title="{{0.labels.reachDeclaration}}" x-cq-linkchecker="skip" data-sku="{{objectID}}" data-datasheet="reach-pdf" onclick="compliancepdfcheck(this);"><i class="fa-sharp fa-solid fa-file-pdf"></i>{{0.labels.reachDeclaration}}</button>
+        </div>
+        <div class="datasheet-btn-pdf analytics-datasheet-pdp tsca-status">
+          <button class="ie-scondary-btn" title="{{0.labels.tscaDeclaration}}" x-cq-linkchecker="skip" data-sku="{{objectID}}" data-datasheet="tsca-pdf" onclick="compliancepdfcheck(this);"><i class="fa-sharp fa-solid fa-file-pdf"></i>{{0.labels.tscaDeclaration}}</button>
+        </div>
+      </div>
+    </div>
+    <div class="speprate-line"></div>
+    <div class="key-spec-details-wrap accord-compli-desc">
+      <div class="key-spec-details key-spec-details1">
+        <div class="key-grid-two">
+          <div class="key-spec-data">
+            <div class="key-title-head">{{0.labels.rohsStatus}}</div>
+            <div class="key-title-value">
+              {{#if
+              roHSStatus}}{{roHSStatus}}{{else}}{{0.labels.notAvailable}}{{/if}}
+            </div>
+          </div>
+        </div>
+        <div class="key-grid-two">
+          <div class="key-spec-data">
+            <div class="key-title-head">{{0.labels.reachStatus}}</div>
+            <div class="key-title-value">
+              {{#if reachStatus}}{{reachStatus}}{{else}}{{0.labels.notAvailable}}{{/if}}
+            </div>
+          </div>
+        </div>
+        <div class="key-grid-two">
+          <div class="key-spec-data">
+            <div class="key-title-head">{{0.labels.tscaStatus}}</div>
+            <div class="key-title-value">{{#if tSCAStatus}}{{tSCAStatus}}{{else}}{{0.labels.notAvailable}}{{/if}}</div>
+            </div>
+          </div>          
+          <div class="key-grid-two">
+            <div class="key-spec-data">
+              <div class="key-title-head">{{0.labels.eccn}}</div>
+              <div class="key-title-value">
+                {{#if eCCN}}{{eCCN}}{{else}}{{0.labels.notAvailable}}{{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{#ifCond roHSStatus tSCAStatus reachStatus}}
+        <div class="key-spec-details-warning">
+          <div class="warningdetails">
+            <h3>{{0.labels.warning}}</h3>
+            <p>
+              {{0.labels.warningContent}}
+              <a title="{{0.labels.warning}}" x-cq-linkchecker="skip" href="{{0.labels.warningLink}}" target="_blank"
+                >{{0.labels.warningAnchor}}</a
+              >
+            </p>
+          </div>
+        </div>
+        {{else}}
+        {{/ifCond}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='category-pdp'}"
+/>
+<sly data-sly-include="key-specification--template.html"></sly>
+<sly data-sly-include="product-compliance--template.html"></sly>
+<section class="fm-container">
+  <div class="d-none">
+    <input
+      type="number"
+      id="input-custom-select"
+      onblur="customlengthselect(this)"
+    />
+    <select
+      onchange="customlengthselect()"
+      id="customunitselect"
+      class="order-summry-select order-country-select custom-unit-select"
+    >
+      <option class="ais-SortBy-option" value="IN" selected>in</option>
+      <option class="ais-SortBy-option" value="CM">cm</option>
+    </select>
+    <div class="pricing-tiersku"></div>
+    <div class="pricingtierprice"></div>
+    <div class="pricetire"></div>
+  </div>
+  <section class="breadcrumb-container">
+    <div class="aem-Grid aem-Grid--12">
+      <div class="fm-container">
+        <div
+          class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+        >
+          <div class="plp-breadcrumbs" id="iebreadcrumb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="pdp-data"
+    class="product-details main-wid aem-Grid aem-Grid--12"
+  ></section>
+  <section id="pdp-recommended">
+    <article
+      data-sly-resource="${'recommended-product' @ resourceType='/apps/ie/fm/components/content/recommended-products'}"
+    ></article>
+  </section>
+</section>

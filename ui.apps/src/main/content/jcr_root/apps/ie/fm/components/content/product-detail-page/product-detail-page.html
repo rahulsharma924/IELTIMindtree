@@ -1,0 +1,649 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+  <sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='category-pdp'}"/>
+<sly data-sly-use.productDetail="com.aem.ie.core.models.ProductDetail">
+<section class="fm-container" data-sly-test="${productDetail.skuNotValid}">
+  <div class="pdp-noresult">
+      ${productDetail.algoliaErrorResponse}
+  </div>
+</section>
+<section class="fm-container" data-sly-test="${!productDetail.skuNotValid}">
+  <section class="breadcrumb-container">
+      <div class="ie-grid ie-grid-12">
+          <div class="fm-container">
+              <div class="ie-grid-column ie-grid-column-12 ie-grid-column-12">
+                  <div class="plp-breadcrumbs" id="iebreadcrumb" data-customcable=${properties.customizedlink} data-customl0=${properties.customizedname} data-customl1=${properties.customizedl1name} data-customl2=${properties.customizedl2name}>
+                      <ul><li class="home"><a href="/content/fm/en/homepage.html" title="Go to Home Page">Home</a><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li><li class="category3 analyticsprodcategory ${productDetail.catName == '' ? 'd-none': ''}"><span>${productDetail.catName}</span><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li><li class="category4"><strong><span>${productDetail.nameValue}</span></strong></li></ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="pdp-data" class="product-details main-wid ie-grid ie-grid-12">
+      <div class="d-none" id="shipmentDate"></div>
+      <div class="ie-grid-column ie-grid-column-6 ie-grid-column-tablet-12 ie-grid-column-phone-12">
+          <div class="cart-empty">
+              <div id="myModal" class="modal pdp-modal" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="close pdpclose" data-dismiss="modal"
+                                  aria-label="Close"></button>
+                          <div class="modal-body">
+                              <img class="" id="img1" alt="productimage">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="mob-title-description">
+                  <p class="mob-pdpheader-title"><b>${productDetail.nameValue}</b></p>
+              </div>
+              <div class="pdpmain-title-description">
+                  <div class="productcard">
+                      <div class="pdp-flex-container">
+                          <ul class="pdp-thumbnails" id="items">
+                              <li class="thumbnails-image">
+                                  <img class="img-in-col plp-img-src" data-img-path="${productDetail.getOLCCImageCheck ? properties.olccimagerootpath : properties.productimagerootpath}" data-picsrc1="${productDetail.productImageUrl @context='uri'}" src="${productDetail.productImageUrl @context='uri'}"
+                                       alt="${productDetail.nameValue} ${properties.brandname} ${productDetail.brandSKUValue}">
+                              </li>
+                          </ul>
+                          <div class="product_card">
+                              <div class="pdp-container" id="to-be-changed">
+                                  <div class="compliance_label">
+                                      <span class="label-new freight-label" data-sly-test="${productDetail.hasOversizedValue}">
+                                          <span class="fr-tool-tip">${properties.freighttooltip}
+                                          <i class="fa-solid fa-caret-down"></i>
+                                          </span>${properties.freight}
+                                      </span>
+                                      <span class="label-new" data-sly-test="${productDetail.hasNewValue}">${properties.newlabel}</span>
+                                      <span class='compliancelabel' data-sly-test="${productDetail.ROHSLabelFlag}">${properties.rohslabel}</span>
+                                  </div>
+                                  <img class="cardimage plp-img-src" id="img-to-be-changed" src="${productDetail.productImageUrl @context='uri'}"
+                                       alt="${productDetail.productImageAltText}">
+                                  <button class="zoom_btn" onclick="$pdpGlobal.enlarge();">
+                                    <i class="fa-sharp fa-light fa-magnifying-glass-plus"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="main-title-description">
+                          <div class="desc" id="third_div">
+                              <h1 class="pdpheader-title">
+                                  ${productDetail.nameValue}
+                              </h1>
+                              <div class="pdpheader-desc pdp-morenew">${productDetail.webDescValue @ context="html"}</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ie-grid-column ie-grid-column-6 ie-grid-column-tablet-12 ie-grid-column-phone-12">
+          <div class="pdp-box-right">
+              <div class="pdp-box-grid">
+                  <div class="order-bg-color-light bgwhite fmrg-tp">
+                      <div class="order-details">
+                          <span data-currency="${productDetail.currencyCodeValue}" data-sku="${productDetail.objectIDValue}" class="order-items-name item-sku-ct">${properties.skukey}</span>
+                          <span class="order-items-price">
+                          <span class="pricing-tiersku">
+                          <span class="custom-sku">${productDetail.customSku}</span>
+                          <span class="orignal-sku ${productDetail.customStatusFlag ? 'd-none': ''}" id="pdpSku">${productDetail.objectIDValue}</span>
+                          <span class="newSelected-sku"><span class="base-sku">${productDetail.baseItemSKUValue}</span><span id="color-value">${productDetail.colorValue}</span><span id="length-value">-${productDetail.lengthValue}</span></span>
+                          </span>
+                         </span>
+                      </div>
+                      <div class="order-details quantity-div ${(productDetail.customStatusFlag) ? '' : (productDetail.requestAQuoteLabelButton || productDetail.masterCAValue ? 'd-none': '')}">
+                          <span class="order-items-name">${properties.qtyavailable}</span>
+                          <span data-outofstocktext="${properties.outofstocktext}" data-tel="${properties.outofstockcontact}" class="order-items-price item-inventory-ct">
+                              
+                          </span>
+                          <span class="order-items-price" id="ctInventory"></span>
+                      </div>
+                      <div class="order-details price-div ${(productDetail.customStatusFlag) ? '' : (productDetail.requestAQuoteLabelButton || productDetail.masterCAValue ? 'd-none': '')}">
+                          <span class="order-items-name">${properties.priceperunit}</span>
+                          <span class="order-items-name" id="ctPrice"></span>
+                          <span class="order-items-price"><span
+                                  class="pricingtierprice item-price-ct">
+                                  
+                                </span></span></span>
+                      </div>
+                      <div class="price-details-info ${(productDetail.customStatusFlag) ? '' : (productDetail.requestAQuoteLabelButton || productDetail.masterCAValue ? 'd-none': '')}" id="priceChart" data-discountLabel ="${properties.tablediscountLabel}">
+                          <div class="order-details pd-price">
+                              <span class="order-items-name qnty">${properties.tablequantityLabel}${productDetail.coaxialCableCheck}</span>
+                              <span class="order-items-price qnty">${properties.tablepriceLabel} </span>
+                          </div>
+                          <sly data-sly-test = "${!productDetail.customStatusFlag}">
+                              <div id="standardLengthPrice" class="pricetire ct-price-tier" data-sly-list.chartItem="${productDetail.priceChart}">
+                                 
+                              </div>
+                          </sly>
+                              <div class="pricetire" data-sly-list.chartCustomLengthPriceItem="${productDetail.calculatedCustomLengthPrice}">
+                                  <div class="order-details pd-price">
+                                      <span class="order-items-name font-normal">${chartCustomLengthPriceItem.quantityRange}</span>
+                                      <span class="order-items-price font-normal">${chartCustomLengthPriceItem.price}</span>
+                                  </div>
+                              </div>
+                          </sly>
+                      </div>
+                      <div class="price-text-info ${(productDetail.customStatusFlag) ? '' : (productDetail.requestAQuoteLabelButton || productDetail.masterCAValue ||  productDetail.CoaxialCableCheck==' (FEET)' ? 'd-none': '')}">
+                          <i class="fa-solid fa-circle-info info-icon"></i>
+                          <p>${properties.pricetextinfo}</p>
+                      </div>
+                      <sly data-sly-test="${(productDetail.CoaxialCableCheck==' (FEET)') && (!productDetail.requestAQuoteLabelButton)}">
+                        <div class="price-text-info-bulk-cable">
+                            ${properties.coaxialcableinfotextone @ context="html"} 
+                        </div>  
+                      </sly>
+                  </div>
+              </div>
+              <div class="pdp-box-grid">
+                  <div class="order-bg-color-light bg-mobile">
+                      <div class="form-pd-20">
+                          <div class="${productDetail.statusDiscontinue ? 'depleted-div' : 'd-none'}">
+                              <h2>${properties.depletedTitle}</h2>
+                              <p>${properties.depletedDescription}</p>
+                          </div>
+                          <div class="${productDetail.requestAQuoteLabelButton ? 'depleted-div' : 'd-none'}">
+                            <div class="replacement-div">
+                              <h2 class="depleted-discont-h2">${properties.requestaquoteTitle}</h2>
+                              <sly data-sly-test.emptySkuValue = "${productDetail.replacementSKUValue==''}">
+                                  <span class="depleted-discont-span">${properties.requestaquoteDescription @ context="html"}</span>
+                              </sly>
+                              <sly data-sly-test="${!emptySkuValue}">
+                                  <span class="depleted-discont-span">${properties.requestaquoteDescriptionWithSku @ context="html"}</span>
+                                  <span class="replacement-sku txt-bold">${properties.replacementSKULabel}</span>: <span class="replacement-sku" id="replacementSku">${productDetail.replacementSKUValue}</span>
+                              </sly>
+                            </div>
+                          </div>
+                          <div class="length-variant" data-sly-test=${productDetail.PDPLengthVariationCheckFlag}>
+                              <div class="d-flex-zipcode">
+                                  <div class="select-estimate">
+                                      <label>${properties.lengthtext}</label>
+                                      <select id="select-length" class="order-summry-select order-country-select ln-sel">
+                                          <option class="ais-SortBy-option" value="${productDetail.PDPSkuIdLengthMap[item]}" selected="${productDetail.PDPLengthValueMatchMap[item]}" data-sly-repeat.item="${productDetail.PDPLengthValueMatchMap}">
+                                              ${item}
+                                          </option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="custom-selectOption-box" data-sly-test=${productDetail.customLengthAllowedValue}>
+                              <div class="d-flex-zipcode">
+                                  <div class="select-estimate">
+                                      <label data-sly-test=${productDetail.PDPLengthVariationCheckFlag}>${properties.customlengthortext}</label>
+                                      <label data-sly-test=${!productDetail.PDPLengthVariationCheckFlag}>${properties.customlengthtext}</label>
+                                      <div id="inputCustom-select">
+                                          <input type='number' id='input-custom-select' oninput='$pdpCustomVariant.customButtonDisabled()' placeholder='Enter desired length' value='${productDetail.customlengthRequestParam}' />
+                                      </div>
+                                  </div>
+                                  <div class="select-estimate pl-10">
+                                      <label>${properties.unittext}</label>
+                                      <select                                              
+                                              id="customunitselect"
+                                              class="order-summry-select order-country-select custom-unit-select"
+                                      >
+                                          <option class="ais-SortBy-option" value="${productDetail.customUOMTextList[item]}" selected="${productDetail.customValueTextList[item]}" data-sly-repeat.item="${productDetail.customUOMTextList}">${item}</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              
+                            <div class="mininchpd">
+                                <span class="minimuminch">${properties.minimumcustomlengthtext}</span>
+                                <input type="hidden" id="basesku" value="${productDetail.baseItemSKUValue}" />
+                            </div>
+                              <button type="button" class="calculate-btn ie-primary-btn ${productDetail.customStatusFlag ? '' : 'ie-btn-disabled'}" disabled="${productDetail.customStatusFlag ? '' : 'disabled'}"
+                                  onclick="$pdpCustomVariant.customlengthselect()">${properties.calculatebuttontext}</button>
+                          </div>
+                          <!-- <div class="d-flex-zipcode color-code-sec" data-sly-test=${productDetail.colorVariationCheckFlag}>
+                              <div class="select-estimate">
+                                  <label>${properties.colortext}1</label>
+                                  <select id="select-color" class="order-summry-select color-select order-country-select">
+                                      <option class="ais-SortBy-option" value="${item}" selected="${productDetail.currentColorMatchMap[item]}" data-sly-repeat.item="${productDetail.currentColorMatchMap}">
+                                          ${item}
+                                      </option>
+                                  </select>
+                              </div>
+                          </div> -->
+                          <div class="${productDetail.requestAQuoteLabelButton ? 'd-none': 'd-flex-zipcode'}">
+                              <div class="select-estimate pdp__quantityupdate">
+                                  <label>${properties.quantity}</label>
+                                  <div class="input-group input-field-border w-auto wht-backg flex-space">
+                                      <button type="button" value="-"
+                                              class="plus-minus-pointer button-minus border-none rounded-circle icon-shape icon-sm mx-1"
+                                              data-field="quantity">-
+                                      </button>
+                                      <input type="number" step="1" min="1" max="99999" value="1" id="pdpProdQty"
+                                             name="quantity" class="input-plus-minus border-none text-center w-25"
+                                             oninput="validity.valid||(value='');">
+                                      <button type="button" value="+"
+                                              class="plus-minus-pointer button-plus border-none rounded-circle icon-shape icon-sm"
+                                              data-field="quantity">+
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <button type='button' class='hide request-button' onclick="$pdpGlobal.showRfqPopup()" data-sly-test="${productDetail.requestAQuoteLabelButton}">${properties.requestaquote}</button>
+                          <button type="button" class="${(productDetail.customStatusFlag) ? 'd-none' : (productDetail.masterCAValue ? 'ie-primary-btn cart-button std-btn-event add_to_cart add_to_cart--pdp add_to_cart--pdp-std ie-btn-disabled': 'ie-primary-btn cart-button std-btn-event add_to_cart add_to_cart--pdp')}"
+                                  disabled="${productDetail.masterCAValue ? 'disabled' : ''}"
+                                  data-cartqty="" data-currency="${productDetail.currencyCodeValue}" data-sku="${productDetail.objectIDValue}"
+                                  data-analyticcartprod="${productDetail.objectIDValue}@@${productDetail.nameValue}@@${productDetail.productIdValue}@@${productDetail.unitPriceValue}@@${productDetail.startingPriceValue}@@${productDetail.lengthValue}@@${productDetail.colorValue}@@${productDetail.bestSellerRankValue}@@${productDetail.inventoryValue}@@${productDetail.catName}@@pdp"
+                                  onclick="addtocartSpecific(this)" data-sly-test="${!productDetail.requestAQuoteLabelButton}">${properties.addtocart}
+                          </button>
+                          <button type="button" class="ie-primary-btn cart-button add_to_cart--pdp custom-btn-event custom-btn ${productDetail.customStatusFlag ? '' : 'd-none ie-btn-disabled'}" disabled="${productDetail.customStatusFlag ? '' : 'disabled'}"
+                                  onclick="$pdpGlobal.addToCartCustom()" data-sku="${productDetail.objectIDValue}" data-sly-test="${!productDetail.requestAQuoteLabelButton}">${properties.addtocart}
+                          </button>
+                      </div>
+                      <input type="hidden" id="analyticspdpproddetails" value="${productDetail.objectIDValue}@@${productDetail.nameValue}@@${productDetail.productIdValue}@@${productDetail.unitPriceValue}@@${productDetail.startingPriceValue}@@${productDetail.lengthValue}@@${productDetail.colorValue}@@${productDetail.bestSellerRankValue}@@${productDetail.inventoryValue}@@${productDetail.catName}@@${productDetail.hasNewValue}@@${(productDetail.rohsStatusValue!='' && productDetail.rohsStatusValue!='Not Available' )   ? true : false }">
+                      <div class="${productDetail.requestAQuoteLabelButton ? 'd-none': 'my-order-line'}"></div>
+                      <div class="${productDetail.requestAQuoteLabelButton ? 'd-none': 'confirm-pd-20'}">
+                          <div class="d-flex-postal">
+                              <label>${properties.confirmshipmenttext}</label>
+                              <div class="select-estimate checkboxgrey">
+                                  <div class="order-country-input zip-flex standard-shipment">
+                                      <input type="text" id="zipS" name="zipcode" oninput="$pdpGlobal.zipCheck('false')"
+                                             placeholder="${properties.postalboxplaceholder}" maxlength="10" disabled="${productDetail.masterCAValue ? 'disabled' : ''}">
+                                      <button type="button" onclick="$pdpGlobal.zipValidate(${productDetail.noWeightOverpweightValue==true ? 'true' : 'false' @ context='scriptToken'},'false')"
+                                              class="zip-button zip-button-grey" disabled="${productDetail.masterCAValue ? 'disabled' : ''}"><i class="fa-solid fa-check"></i>
+                                      </button>
+                                  </div>
+                                  <div class="order-country-input zip-flex custom-shipment d-none">
+                                    <input  type="text" id="zipC" name="zipcode" oninput="$pdpGlobal.zipCheck('true')"
+                                           placeholder="${properties.postalboxplaceholder}" maxlength="10">
+                                    <button type="button" onclick="$pdpGlobal.zipValidate(${productDetail.noWeightOverpweightValue==true ? 'true' : 'false' @ context='scriptToken'},'true')"
+                                            class="zip-button zip-button-grey"><i class="fa-solid fa-check"></i>
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="row cart__loader d-none">
+                                <div class="col-12">
+                                  <div class="loader"></div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="delivery-details deliver-valid">
+                              <i class="fa-solid fa-truck"></i> ${properties.zipestimationmsg} <span class="textred" id="delEst"></span>
+                          </div>
+                          <div id="pdpCallUsModal" class="modal pdp-modal-callus deliver-callus pdp-callus"
+                               tabindex="1">
+                              <div class="modal-content pdp-modal-content-callus">
+                                  <div class="pdp-callus-head">
+                                      <div class="pdp-callus-h1">
+                                          <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>
+                                          <span class="pdp-callus-contlab">${properties.calluslabel}</span>
+                                      </div>
+                                      <div class="pdp-callus-h2"><i class="fa fa-times fa-lg pdp-callus__close"
+                                                                    id="closePdpCallus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                                  <a class="pdp-callus-num" href="tel:${properties.freightsupportcontact}">${properties.freightsupportcontact}</a>
+                              </div>
+                          </div>
+                          <div class="delivery-details delivery-error">${properties.invalidzipmsg}</div>
+                      </div>
+                  </div>
+                  <div class="price-text-info length-info"  data-sly-test=${productDetail.customLengthAllowedValue}>
+                      <i class="fa-solid fa-circle-info info-icon"></i>
+                      <p>${properties.customlengthinfotext}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ie-grid main-wid main-wid-lower ie-grid-12">
+          <div class="ie-grid-column ie-grid-column-12 ie-grid-column-tablet-12 ie-grid-column-phone-12">
+              <div id="view-all-modal" class="modal" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h3>${properties.viewallmodalheader}</h3>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">×</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <ul>
+                                  <li>
+                                      <div class="hlf-name"><strong>${properties.viewalldocumentname}</strong></div>
+                                      <div class="hlf-action"><strong>${properties.viewallactions}</strong></div>
+                                  </li>
+                                  <li data-sly-repeat.item="${productDetail.viewAllWithMap}">
+                                      <sly data-sly-test="${item.type != 'Software Download'}">
+                                     <div class="hlf-name">${item.type}</div>
+                                      <div class="hlf-action"><a x-cq-linkchecker="skip" target="_blank" title="${properties.viewallview}"
+                                                                 href="${item.name @context='uri'}"><i
+                                              class="fa-solid fa-eye"></i>${properties.viewallview}</a><a x-cq-linkchecker="skip"
+                                                                                                          title="${properties.viewalldownload}"
+                                                                                                          href="${item.name @context='uri'}"
+                                                                                                          download><i
+                                              class="fa-solid fa-download"></i>${properties.viewalldownload}</a></div>
+
+								</sly>
+								<sly data-sly-test="${item.type == 'Software Download'}">
+                                      <div class="hlf-name">${item.type}</div>
+                                      <div class="hlf-action"><a x-cq-linkchecker="skip" target="_blank" title="${properties.viewallview}"
+                                                                 href="${item.name @context='uri'}"><i
+                                              class="fa-solid fa-eye"></i>${properties.viewallview}</a></div>
+
+								</sly>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="modal-footer">
+                              <a class="downl-anch" title="${properties.viewalldownloadall}" href="javascript:void(0)">${properties.viewalldownloadall}</a>
+                              <button type="button" class="close-btn-foot" data-dismiss="modal"
+                                      aria-label="${properties.viewallclose}">${properties.viewallclose}
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="key-specification key-spec-first">
+                  <div class="key-spec">
+                      <h2 class="key-title accord-key-title">${properties.keyspecificationskey}</h2>
+                      <h2 class="key-title desk-key-title"><span>${properties.keyspecificationskey}</span></h2>
+                      <div class="key-title accord-key-links justify-end">
+                          <div class="datasheet-btn-pdf analytics-datasheet-pdp ${productDetail.dataSheetFlag ? '' : 'd-none'}">
+                              <a x-cq-linkchecker="skip" target="_blank" title="Datasheet"
+                                 href="${productDetail.dataSheet @context='uri'}"><i class="fa-sharp fa-solid fa-file-pdf"></i>${properties.datasheettext}</a>
+                          </div>
+						  <sly data-sly-repeat.item="${productDetail.viewAllWithMap}">
+							<sly data-sly-test="${item.type == 'Software Download'}">
+						  <div class="datasheet-btn-pdf analytics-datasheet-pdp">
+                              <a class="swdownload-wrapper" x-cq-linkchecker="skip" target="_blank" title="Software"
+                                 href="${item.name @context='uri'}"><i class="fa-regular fa-download"></i><span class="swdownload-cls">${properties.swdownloadtext}</span></a>
+                          </div>
+ 						 </sly></sly>
+                          <div class="datasheet-btn-viewall ${productDetail.viewAllWithMap.size==0 ? 'd-none' : ''}">
+                              <a title="View All" data-toggle="modal" href="#view-all-modal">
+                                  ${properties.viewalltext}
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="speprate-line"></div>
+                  <div class="key-spec-details accord-key-desc" data-sly-list.keySpecs="${productDetail.KeySpecificationValues}">
+                      <div class="key-grid-two">
+                          <div class="key-spec-data">
+                              <div class="key-title-head">${keySpecs}</div>
+                              <div class="key-title-value">${productDetail.KeySpecificationValues[keySpecs]}</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="ie-grid-column ie-grid-column-12 ie-grid-column-tablet-12 ie-grid-column-phone-12">
+              <div class="key-specification prod-comp-temp">
+                  <div class="key-specification key-specification1 prod-comp-mt">
+                      <div class="key-spec">
+                          <h2 class="key-title accord-compli-title">
+                              ${properties.productcompliance}
+                          </h2>
+                          <h2 class="key-title desk-compli-title">
+                              <span>${properties.productcompliance}</span>
+                          </h2>
+                          <div class="key-title accord-compli-links justify-end">
+                              <div class="datasheet-btn-pdf analytics-datasheet-pdp ${productDetail.rohsStatusValue=='Not Available'?'d-none' : ''}">
+                                  <button class="ie-scondary-btn" title="RoHS Declaration" x-cq-linkchecker="skip"
+                                          data-sku="${productDetail.objectIDValue}" data-datasheet="rohs-pdf"
+                                          onclick="compliancepdfcheck(this);"><i class="fa-sharp fa-solid fa-file-pdf"></i>${properties.rohspdftext}
+                                  </button>
+                              </div>
+                              <div class="datasheet-btn-pdf analytics-datasheet-pdp ${productDetail.reachStatusValue=='Not Available'?'d-none' : ''}">
+                                  <button class="ie-scondary-btn" title="REACH Declaration"
+                                          x-cq-linkchecker="skip" data-sku="${productDetail.objectIDValue}" data-datasheet="reach-pdf"
+                                          onclick="compliancepdfcheck(this);"><i class="fa-sharp fa-solid fa-file-pdf"></i>${properties.reachpdftext}
+                                  </button>
+                              </div>
+                              <div class="datasheet-btn-pdf analytics-datasheet-pdp ${productDetail.tscaStatusValue=='Not Available'?'d-none' : ''}">
+                                  <button class="ie-scondary-btn" title="TSCA Declaration" x-cq-linkchecker="skip"
+                                          data-sku="${productDetail.objectIDValue}" data-datasheet="tsca-pdf"
+                                          onclick="compliancepdfcheck(this);"><i class="fa-sharp fa-solid fa-file-pdf"></i>${properties.tscapdftext}
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="speprate-line"></div>
+                      <div class="key-spec-details-wrap accord-compli-desc">
+                          <div class="key-spec-details key-spec-details1">
+                              <div class="key-grid-two">
+                                  <div class="key-spec-data">
+                                      <div class="key-title-head">${properties.rohsStatus ? properties.rohsStatus : 'RoHS status'}</div>
+                                      <div class="key-title-value">
+                                          ${productDetail.rohsStatusValue}
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="key-grid-two">
+                                  <div class="key-spec-data">
+                                      <div class="key-title-head">${properties.reachStatus}</div>
+                                      <div class="key-title-value">
+                                          ${productDetail.reachStatusValue}
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="key-grid-two">
+                                  <div class="key-spec-data">
+                                      <div class="key-title-head">${properties.tscaStatus}</div>
+                                      <div class="key-title-value">${productDetail.tscaStatusValue}</div>
+                                  </div>
+                              </div>
+
+                              <div class="key-grid-two">
+                                  <div class="key-spec-data">
+                                      <div class="key-title-head">${properties.eccn}</div>
+                                      <div class="key-title-value">
+                                          ${productDetail.eccnValue}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <sly data-sly-test="${productDetail.prop65Value}">
+                              <div class="key-spec-details-warning">
+                                  <div class="warningdetails">
+                                      ${properties.warningdetail @context='html'}
+                                  </div>
+                              </div>
+                          </sly>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade rfqModal" id="rfqModal" tabindex="-1" role="dialog" aria-labelledby="RFQ-modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered rfqModal-dialog" role="document">
+              <div class="modal-content rfqModal-content" id="RFQ-modal">
+                  <div class="modal-header rfqModal-header">
+                      <h5 class="modal-title rfqModal-title" id="rfqModal-title">${properties.rfqHeading}</h5>
+                      <button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close">
+                          <i class="fa-thin fa-xmark" data-dismiss="modal"></i>
+                      </button>
+                  </div>
+                  <form>
+                      <div class="modal-body rfqModal-body">
+                          <div class="form-details-rfq">
+                              <div class="personal-details-rfq">
+                                  <div class="form-row">
+                                      <div class="col">
+                                          <label for="firstName-rfq">${properties.firstName}</label>
+                                          <input type="text" class="form-control" placeholder="" id="firstName-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "firstName-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                      <div class="col">
+                                          <label for="lastName-rfq">${properties.lastName}</label>
+                                          <input type="text" class="form-control" placeholder="" id="lastName-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "lastName-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-row">
+                                      <div class="col">
+                                          <label for="company-rfq">${properties.rfqCompanyName}</label>
+                                          <input type="text" class="form-control" placeholder="" id="company-rfq">
+                                          <p id = "company-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                      <div class="col">
+                                          <label for="jobTitle-rfq">${properties.jobTitle}</label>
+                                          <input type="text" class="form-control" placeholder="" id="jobTitle-rfq">
+                                          <p id = "jobTitle-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-row">
+                                      <div class="col">
+                                          <label for="email-rfq">${properties.email}</label>
+                                          <input type="text" class="form-control" placeholder="" id="email-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "email-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                      <div class="col">
+                                          <label for="contact-rfq">${properties.phoneNum}</label>
+                                          <input type="text" class="form-control" placeholder="" id="contact-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "contact-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="shipping-details-rfq">
+                                  <div class="form-row">
+                                      <div class="col">
+                                          <label for="shippingAdd-rfq">${properties.shippingAddOne}</label>
+                                          <input type="text" class="form-control" placeholder="" id="shippingAdd-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "shippingAdd-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                      <div class="col">
+                                          <label for="shippingAdd2-rfq">${properties.shippingAddTwo}</label>
+                                          <input type="text" class="form-control" placeholder="" id="shippingAdd2-rfq">
+                                          <p id = "shippingAdd2-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-row">
+                                      <div class="col">
+                                          <label for="city-rfq">${properties.city}</label>
+                                          <input type="text" class="form-control" placeholder="" id="city-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "city-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                      <div class="col">
+                                          <label for="country-rfq">${properties.country}</label>
+                                          <div class="country-dropdown">
+                                              <select class="form-control custom-select" id="country-rfq" name="country-rfq" onkeyup="manageEnableBtn(this)" required>
+                                                  <option value="" selected="selected">Select</option>
+
+                                              </select>
+                                              <p id = "country-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-row">
+                                      <div class="col">
+                                          <label for="zipcode-rfq">${properties.zipcode}</label>
+                                          <input type="text" class="form-control" placeholder="" id="zipcode-rfq" required onkeyup="manageEnableBtn(this)">
+                                          <p id = "zipcode-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                          <p id = "zipcodelength-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                      </div>
+                                      <div class="col">
+                                          <label for="state-rfq">${properties.state}</label>
+                                          <div class="state-dropdown">
+                                              <select class="form-control custom-select" id="state-rfq" name="state-rfq" onkeyup="manageEnableBtn(this)" required>
+                                                  <option value="" selected="selected">Select</option>
+
+                                              </select>
+                                              <p id = "state-rfq-msg" class="ie-error-medium rfq-error-msg"> </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!--/* desktop view for order table */-->
+                          <div class="product-details-table-rfq">
+                              <div class="email-order-cal-table-rfq">
+                                  <div class="row col-12 order-cal-table-rfq-head grey-border-b">
+                                      <p class="col-6 mob-100" ><strong>${properties.product}</strong></p>
+                                  </div>
+                                  <div class="popItem_wrapper">
+                                      <div class="data__fillup"></div>
+                                      <div class="row col-12 order-cal-table-rfq-body grey-border-b">
+                                          <div class="col-12 d-flex mob-100 product-desc-row">
+                                              <div class="col-2 productImg-wrapper">
+                                                  <img class="order-cal-table-productImg-rfq" src="/content/dam/fm/product-images/product-img.png" alt="product-image"/>
+                                              </div>
+                                              <div class="col-10 product-content-wrapper">
+                                                  <p class="varient_name"></p>
+                                                  <div class="product-specs">
+                                                      <p class="varient_sku"></p>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="note-rfq">
+                                  <div class="note-wrap d-flex">
+                                      <div class="note-content-rfq">
+                                          <h3 class="note-tiltle-rfq"><i class="fa-solid fa-circle-exclamation"></i>${properties.noteHeading}</h3>
+                                          <p class="note-description-rfq">${properties.noteDescription}</p>
+                                      </div>
+
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!--/* recapcha */-->
+                          <div class="recapcha-rfq">
+                              <p>${properties.recapchaDescription}</p>
+                              <sly data-sly-resource="${resource @ resourceType='/apps/ie/fm/components/content/account/recaptcha'}"></sly>
+                          </div>
+                      </div>
+                      <div class="modal-footer rfqModal-footer">
+                          <button type="button" class="btn rfqModal-close-btn ie-scondary-btn" data-dismiss="modal">${properties.cancelCTA}</button>
+                          <button type="button" class="btn rfqModal-save-btn ie-primary-btn" disabled id="rfqsubmit">${properties.submitCTA}</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <!-- Modal for RFQ on Save -->
+      <div class="modal fade rfqModal-confirmation" id="rfqSaveModal" tabindex="-1" role="dialog" aria-labelledby="RFQ-modalSave" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content rfqModal-confirmation-content">
+                  <div class="modal-header rfqModal-confirmation-header" id="RFQ-modalSave">
+                      <h3 class="modal-title rfqModal-title rfqModal-request-confirm-title" id="rfqModal-request-confirm-title">${properties.confirmMsgheading}</h3>
+                      <button type="button" class="btn-close close" data-dismiss="modal" aria-label="Close">
+                          <i class="fa-thin fa-xmark" data-dismiss="modal"></i>
+                      </button>
+                  </div>
+                  <div class="modal-body rfqModal-confirmation-body">
+                      ${properties.confirmmsgdescription @ context="html"}
+                  </div>
+                  <div class="modal-footer rfqModal-confirmation-footer">
+                      <button type="button" class="rfqModal-close-link ie-primary-btn" onClick="thankupopup_email();">${properties.continueCTA}</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="pdp-recommended">
+      <article
+              data-sly-resource="${'recommended-product' @ resourceType='/apps/ie/fm/components/content/recommended-products'}"
+      ></article>
+  </section>
+</section>
+</sly>

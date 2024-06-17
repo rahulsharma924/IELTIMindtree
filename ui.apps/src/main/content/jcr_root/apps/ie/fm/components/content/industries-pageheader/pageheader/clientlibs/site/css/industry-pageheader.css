@@ -1,0 +1,337 @@
+#fixedHeader{
+	margin-bottom: 55px;
+}
+.fixedElement {
+	position:fixed;
+	top:147px;
+	width:100%;
+	z-index:99;
+}
+#ph-order {
+	background-color: var(--secondaryColor);
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+	border-bottom: 1px solid var(--secondaryBtnVisited);
+}
+#ph-order .ph-suborder{
+	padding:15px 20px 0 20px;
+}
+.plp-breadcrumbs{
+	display:none;
+}
+@media screen and (max-width:834px) {
+  #ph-order {
+    column-gap: 0;
+  }
+  #fixedHeader{
+    margin-bottom: 0;
+  }
+}
+#ph-suborder-id1 {
+	padding: 15px 0 0 0;
+}
+#ph-suborder-id2 {
+	padding: 15px 0 0 0;
+}
+#ph-suborder-id3 {
+	padding: 15px 0 0 0;
+}
+.industry-main-header {
+  background-image: url("/content/dam/infinite-electronics/images/fairview-microwave/application-images/industry-pageheader/banner-bg.png");
+}
+.industry-ph-header {
+	font-size: var(--fontSize45);
+	font-weight: var(--fontWeightSmall);
+	line-height: var(--baseLineHeight);
+	text-align: center;
+	color:var(--secondaryColor);
+	padding: 30px 0 25px 0;
+}
+.industry-ph-subheader {
+	font-size: var(--fontSize22);
+	font-weight: var(--fontWeightSmall);
+	line-height:  var(--baseLineHeight);
+	text-align: center;
+	color:var(--secondaryColor);
+	padding-bottom: 35px;
+}
+.ph-suborder a,
+.ph-suborder a:hover {
+	font-size: var(--fontSize14);
+	font-weight: var(--fontWeightSmall);
+	line-height: var(--baseLineHeight);
+	text-decoration: none;
+	color: var(--secondaryBlack);
+	border-bottom: 4px solid transparent;
+	padding-bottom: 5px;
+	display: block;
+}
+.ph-suborder a.industry-redline {
+	border-bottom: 4px solid var(--invertedColor);
+	display: block;
+	font-weight: var(--fontWeightBold);
+}
+.industryblocks{
+	width: 100%;
+	max-width: 1280px;
+	margin: 61px auto 0 auto;
+}
+.industry-ph-image {
+  float: left;
+  width: 50%;
+  padding: 0 5px 10px 25px;
+}
+.industry-ph-image img {
+	float: left;
+  width:100%;
+  height:580px;
+  object-fit: cover;
+    
+}
+.industry-content-block {
+	float: right;
+	width: 50%;
+	padding-left: 19px;
+	padding-right: 23px;
+  height: 590px;
+  overflow-y: auto;
+}
+.industry-ph-secheadertext {
+	font-size: var(--fontSize22);
+	font-weight: var(--fontWeightBold);
+	line-height: var(--baseLineHeight);
+}
+.industry-ph-sectext p {
+  margin-top: 5px;
+  margin-bottom: 16px;
+  font-weight: var(--fontWeightSmall);
+  line-height: var(--baseLineHeight);
+}
+/* .industry-ph-sectext a {
+    color: var(--serviceCardlink);
+    text-decoration: underline;
+}
+.industry-ph-sectext a:hover {
+    color: var(--secondaryLinkNormal);
+    -webkit-text-stroke: .8px var(--secondaryLinkNormal);
+} */
+#industry-ph-showDiv {
+  display: none;
+}
+@media screen and (max-width: 833px) {
+  .ph-suborder a,
+  .ph-suborder a:hover {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightSmall);
+    line-height: var(--baseLineHeight);
+    text-decoration: none;
+    color: var(--secondaryBlack);
+    padding: 0;
+  }
+  .ph-order-padding {
+    padding-bottom: 0;
+  }
+  .ph-suborder:nth-child(1),
+  .ph-suborder:nth-child(2) {
+    border-right: 1px solid var(--shopByBorderClr);
+  }
+  .ph-suborder a.industry-redline {
+    border-bottom: none;
+    display: inline-block;
+    font-weight: var(--fontWeightBold);
+    padding-bottom: 0;
+  }
+
+  .ph-suborder:has(a.industry-redline) {
+    border-bottom: 4px solid var(--invertedColor);
+    display: inline-block;
+    font-weight: var(--fontWeightSmall);
+    padding-bottom: 0;
+    margin-bottom: -2px;
+  }
+
+  .industry-main-header {
+    background-image: url("/content/dam/infinite-electronics/images/fairview-microwave/banners/banner-bg%201%20(1).png");
+  }
+
+  .industry-ph-header {
+    font-size:var(--fontSize22);
+    line-height: var(--baseLineHeight);
+    padding: 18px 0 8px 0;
+  }
+  .industry-ph-subheader {
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    padding: 0 0 18px 0;
+  }
+  #industry-ph-showDiv {
+    display: block;
+    color: var(--primaryColor);
+  }
+  #ph-order {
+    display: flex;
+  }
+  #ph-suborder-id1 {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    padding: 8px;
+  }
+  #ph-suborder-id2 {
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+    padding: 8px;
+  }
+  #ph-suborder-id3 {
+    display: flex;
+    text-align: center;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+  .ph-suborder {
+    padding: 7px;
+  }
+  .industryblocks {
+    padding-top: 0;
+    border-top: none;
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .industry-ph-image {
+    width: 100%;
+    padding: 0;
+  }
+  .industry-ph-image img {
+    margin-bottom: 5px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .industry-content-block {
+    float:none;
+    width: 100%;
+    height: auto;
+    padding: 8.5px 20px 0 20px;
+  }
+  #industry-ph-btntoggle {
+    display: block;
+    font-weight: var(--fontWeightBold);
+    text-decoration: underline;
+    padding: 10px 0 15px 0px;
+  }
+  #industry-ph-btntoggle:hover {
+    color: var(--invertedColor);
+    text-decoration: underline;
+  }
+  .industry-ph-showmore {
+    overflow: hidden;
+    height: 175px;
+  }
+  .industry-ph-showless {
+    overflow: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width:833px){
+  .MyAccountModalMenuIcon .fa-iphonebars{ position: absolute; top:6px; left:8px;} 
+  .MyAccountModalMenuIcon {
+    background: var(--secondaryColor);
+    border: 1px solid var(--btnDisabledLight);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: var(--fontWeightBolder);
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--btnDisabledLight);
+    left: 20px;
+    top:120px;
+    position: fixed;
+    z-index: 999;	
+  } 
+  .servicesheader-headertitle{
+    margin-top:60px;
+  }
+  .MyAccountModalMenuIcon{
+    display: none;
+  }
+  .MyAccountModalMenuIcon:focus {
+    outline: 0;
+  }
+  #MyAccountModalMobile .modal-content{
+    margin: 0;
+    width: 355px;
+    height: 216px;
+    margin: auto;
+    margin-top: 115px;
+  }
+  #MyAccountModalMobile  .modal-header{
+    padding: 10px 15px 5px;
+  }
+  #responsiveMyAccountModal{
+    display: inline-grid;
+    padding: 10px 18px 0;
+  }
+  #responsiveMyAccountModal a{
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: var(--primaryColor);
+    text-decoration: none;
+    opacity: 1;
+  }
+  #MyAccountModalMobile .modal-header .close span{
+    color:var(--btnDisabledLight);
+  }
+  #MyAccountModalMobile .modal-header .close{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width:576px) {
+  .industry-ph-sectext ul{
+      padding-left: 0;
+      margin-bottom: 0;
+      margin-left: 30px;
+ 
+  }
+  .industry-ph-sectext ul li{
+      list-style: disc;
+      line-height:var(--baseLineHeight);
+  }
+  .industry-ph-sectext ol{
+      padding-left: 0;
+  margin-left: 30px;
+  }
+  .industry-ph-sectext ol li{
+      line-height:var(--baseLineHeight);
+  }
+}
+@media screen and (max-width:575px) {
+  .industry-ph-sectext ul{
+      padding-left: 0;
+      margin-bottom: 0;
+      margin-left: 20px;
+ 
+  }
+  .industry-ph-sectext ul li{
+      list-style: disc;
+      line-height:var(--baseLineHeight);
+  }
+  .industry-ph-sectext ol{
+      padding-left: 0;
+  margin-left: 20px;
+  }
+  .industry-ph-sectext ol li{
+      line-height:var(--baseLineHeight);
+  }
+}

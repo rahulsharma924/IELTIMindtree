@@ -1,0 +1,10 @@
+#base=js
+#jszip-utils.min.js
+#jszip.min.js
+#FileSaver.js
+#pdp-html-functions.js
+#pdp-global-functions.js
+#product-details-pdf.js
+#product-details.js
+#pdp-custom-variant.js
+#analytics-product-details.js

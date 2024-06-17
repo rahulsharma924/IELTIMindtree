@@ -1,0 +1,71 @@
+.xf-web-container div.container {
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: none;
+  }
+}
+
+.container.responsivegrid .cmp-container {
+  font-family: "Poppins";
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fm-top-bar-main {
+  margin: 0 !important;
+}
+.fm-top-bar-bg {
+  background: #004369 !important;
+  color: #ffffff;
+}
+.fm-top-bar {
+  width: 1280px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.fm-container {
+  width: 1280px;
+  margin: 20px auto;
+}
+.fm-top-needassistance {
+  text-align: right;
+  float: left;
+}
+
+.fm-top-bar-bg {
+  margin: 0px !important;
+}
+
+.xf-web-container div.container {
+  padding: 0px !important;
+}
+.fm-main-container {
+  padding: 0px !important;
+}
+
+#main-header .cmp-navigation__item--level-0:nth-child(2):after {
+  display: none !important;
+}

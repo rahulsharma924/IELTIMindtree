@@ -1,0 +1,147 @@
+
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='emptycart'}" /> 
+
+
+    <section class="container-fluid cart_container_details">
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="cart_title">My Cart<span class="brace_font"> (0) </span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 empty_cart_sec">
+                <div class="cart_left_section analyticmycart">
+                    <i class="fa fa-shopping-cart" id="cart_icon" aria-hidden="true"></i>
+                    <p class="empty_cart_title">Your cart is empty</p>
+                    <center><button onclick="window.location.href ='/content/fm/en/best-selling-rf-microwave-and-millimeter-wave-products.html';" class="ie-primary-btn start_shopping_btn">Start Shopping</button></center>
+                </div>
+                <hr class="between_line between_line_top">
+            </div>
+            
+            <div class="col-md-12 col-lg-5 col-sm-12">
+                <div class="right_side_content">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="order_summary_title">Order summary</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                      <p class="cart_order_summary_left">Items</p>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                      <p class="cart_order_summary_right" id="subtotal">$0.00</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                      <p class="cart_order_summary_left">Total before tax</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                      <p id="totalBeforeTax" class="cart_order_summary_right">$0.00</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                      <p class="cart_order_summary_left">Estimated tax to be collected</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                      <p
+                        class="cart_order_summary_right"
+                        id="estimatedTaxToBeCollected"
+                      >$0.00</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-12">
+                      <p class="cart_order_summary_left italic_font">
+                        ${properties.zipcodeLabel}
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row select_inputs">
+                    <div class="col-md-12 col-lg-6 pr-lg-0">
+                      <div class="form-group">
+                        <select class="form-control" id="select_box_country">
+                          <option value="">Select</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 mobile-padding-none">
+                      <div class="form-group">
+                        <input
+                          disabled
+                          type="text"
+                          id="postal_code_input"
+                          class="form-control"
+                          placeholder="Postal Code"
+                          oninput="validateZipCodeEmpty()"
+                        />
+                        <span class="postal_code_check_mark" id="check_active_class"><i class="fa-regular fa-check"></i></span>
+                      </div>
+                      <p class="postal_code_error">Please provide valid postal code</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 warning_msgs">
+                      <i class="fa-regular fa-triangle-exclamation"  id="warning_icon"></i>
+                      <p id="errorMsgForOrderSummary" class="error-msg-order-summary">
+                        The estimated costs and delivery date are not known for this zip
+                        code and/or products selected. You may
+          
+                        <a href="/content/fm/en/contact-us.html">contact us</a>
+          
+                        if you’d like more information about these details.
+                      </p>
+                    </div>
+                  </div> 
+                  <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                      <p class="cart_order_summary_left">Estimated shipping & handling</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                      <p class="cart_order_summary_right" id="estShipHandCost">Unknown</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 col-8 col-sm-8 col-lg-8">
+                      <p class="cart_order_summary_left">Estimated shipment</p>
+                    </div>
+                    <div class="col-md-4 col-4 col-sm-4 col-lg-4">
+                      <p class="cart_order_summary_right" id="estDelDate">Unknown</p>
+                    </div>
+                  </div>
+                  <hr class="between_line" />
+                  <div class="row">
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                      <p class="cart_order_summary_left" id="estimated_total">
+                        Estimated total
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-6 col-sm-6 col-lg-6">
+                      <p class="cart_order_summary_right" id="total_amount">$0.00</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                      <button disabled class="btn-block ie-primary-btn proceed_checkout_button" id="disabled_checkout">
+                        Proceed to Checkout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+
+
+    <sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='emptycart'}" /> 
+
+<script>
+  var currentPageName = '${currentPage.getName @ context="scriptString"}';
+</script>

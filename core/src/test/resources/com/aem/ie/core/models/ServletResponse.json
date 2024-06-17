@@ -1,0 +1,807 @@
+{
+  "cart": {
+    "id": "fa8942e3-a8c7-436b-b687-e874e64d533b",
+    "version": 34,
+    "createdAt": "2023-04-12T12:25:19.575Z",
+    "lastModifiedAt": "2023-04-18T11:15:19.453Z",
+    "lastModifiedBy": {
+      "clientId": "3yjapz2LN0RLrgEhysElQ7tY",
+      "customer": {
+        "id": "2e7de61f-0d4d-4947-838b-978c22acd43e",
+        "typeId": "customer"
+      }
+    },
+    "createdBy": {
+      "clientId": "3yjapz2LN0RLrgEhysElQ7tY",
+      "customer": {
+        "id": "2e7de61f-0d4d-4947-838b-978c22acd43e",
+        "typeId": "customer"
+      }
+    },
+    "customerId": "2e7de61f-0d4d-4947-838b-978c22acd43e",
+    "customerEmail": "aem_orders_sush@yopmail.com",
+    "store": {
+      "key": "fairview",
+      "typeId": "store"
+    },
+    "lineItems": [
+      {
+        "id": "e565c53c-c35c-4563-80b1-4ecde7aca3bf",
+        "productId": "bdf075c5-f2ed-4574-890e-1fbf46934da9",
+        "productKey": "LMR-240-UF",
+        "name": {
+          "en-US": "Times Microwave LMR-240-UF Flexible Coax Cable Black TPE Jacket"
+        },
+        "productSlug": {
+          "en": "lmr240uf-flexible-coax-cable-pe-jacket-lmr-240-uf"
+        },
+        "productType": {
+          "id": "ae956b5a-d9b5-4a69-89ba-716f5afba949",
+          "typeId": "product-type"
+        },
+        "variant": {
+          "id": 1,
+          "sku": "LMR-240-UF",
+          "key": "LMR-240-UF",
+          "prices": [
+            {
+              "id": "81e3f3e3-f4b1-433d-98a3-6143581a077f",
+              "value": {
+                "centAmount": 133,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  },
+                  "maxNumber": 92233720368547.77,
+                  "minNumber": -92233720368547.77,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "maximalMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  }
+                },
+                "context": {
+                  "precision": 19,
+                  "fixedScale": true,
+                  "maxScale": 5,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "empty": false
+                },
+                "number": 1.33,
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "currencyCode": "USD",
+                  "numericCode": 840
+                },
+                "zero": false,
+                "negative": false,
+                "positive": true,
+                "negativeOrZero": false,
+                "positiveOrZero": true,
+                "type": "centPrecision"
+              }
+            },
+            {
+              "id": "3dcc7c7b-2e7f-4a71-975b-cccee908363e",
+              "value": {
+                "centAmount": 106,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  },
+                  "maxNumber": 92233720368547.77,
+                  "minNumber": -92233720368547.77,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "maximalMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  }
+                },
+                "context": {
+                  "precision": 19,
+                  "fixedScale": true,
+                  "maxScale": 5,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "empty": false
+                },
+                "number": 1.06,
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "currencyCode": "USD",
+                  "numericCode": 840
+                },
+                "zero": false,
+                "negative": false,
+                "positive": true,
+                "negativeOrZero": false,
+                "positiveOrZero": true,
+                "type": "centPrecision"
+              },
+              "customerGroup": {
+                "id": "592a735d-5389-45be-a13f-9771b9c857a1",
+                "typeId": "customer-group"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "seoName",
+              "value": "lmr240uf-flexible-coax-cable-pe-jacket-lmr-240-uf"
+            },
+            {
+              "name": "name",
+              "value": {
+                "en-US": "Times Microwave LMR-240-UF Flexible Coax Cable Black TPE Jacket"
+              }
+            },
+            {
+              "name": "description",
+              "value": {
+                "en-US": "LMR-240-UF coax cable from Fairview is only one of a large number of radio frequency twinaxial and coaxial cable types specifically stocked to be ready for quick shipment. Fairview Microwave LMR-240-UF coax cable is manufactured in a flexible design and has a 50 Ohm impedance.This low loss flexible 50 Ohm coax cable LMR-240-UF is constructed with a 0.24 inch diameter and TPE jacket.LMR-240-UF flexible 50 Ohm coax cable with TPE jacket is rated for a 5.8 GHz maximum operating frequency. This 50 Ohm 0.24 inch diameter and low loss flexible coax cable is built with a shield count of 2 and RF shielding of 90 dB. Fairview Microwave LMR-240-UF coax is constructed with PE (F) dielectric and a maximum operating temperature of 85 degrees C. Times Microwave LMR-240-UF coax cable specs for this wire properties can be found on its RF coax cable LMR-240-UF datasheet PDF specifications above.LMR-240-UF cable is part of more than one million RF, microwave and millimeter wave parts in stock at Fairview. This Times Microwave low loss LMR-240-UF coax cable is ready to buy and can be shipped worldwide. Fairview also maintains a wide selection of other radio frequency twinaxial and coaxial cable types that ship same-day from our warehouse as with the rest of our other RF/microwave and millimeter wave components.* LMR��� is a trademark of Times Microwave Systems."
+              }
+            },
+            {
+              "name": "oversized",
+              "value": false
+            },
+            {
+              "name": "uom",
+              "value": {
+                "key": "FT",
+                "label": "Foot/Feet"
+              }
+            },
+            {
+              "name": "weightUOM",
+              "value": {
+                "key": "LBS",
+                "label": "LBS"
+              }
+            },
+            {
+              "name": "weight",
+              "value": 0.032
+            },
+            {
+              "name": "replacedBy",
+              "value": {
+                "id": "7115e08d-648a-45f3-a5c7-4787c351dee3",
+                "typeId": "product"
+              }
+            },
+            {
+              "name": "difficultyfactor",
+              "value": 1
+            }
+          ],
+          "images": [],
+          "assets": [],
+          "availability": {
+            "isOnStock": true,
+            "availableQuantity": 79121
+          }
+        },
+        "price": {
+          "id": "81e3f3e3-f4b1-433d-98a3-6143581a077f",
+          "value": {
+            "centAmount": 133,
+            "currencyCode": "USD",
+            "fractionDigits": 2,
+            "factory": {
+              "defaultMonetaryContext": {
+                "precision": 19,
+                "fixedScale": true,
+                "maxScale": 5,
+                "amountType": "org.javamoney.moneta.FastMoney",
+                "empty": false
+              },
+              "maxNumber": 92233720368547.77,
+              "minNumber": -92233720368547.77,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "maximalMonetaryContext": {
+                "precision": 19,
+                "fixedScale": true,
+                "maxScale": 5,
+                "amountType": "org.javamoney.moneta.FastMoney",
+                "empty": false
+              }
+            },
+            "context": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            },
+            "number": 1.33,
+            "currency": {
+              "context": {
+                "empty": false,
+                "providerName": "java.util.Currency"
+              },
+              "defaultFractionDigits": 2,
+              "currencyCode": "USD",
+              "numericCode": 840
+            },
+            "zero": false,
+            "negative": false,
+            "positive": true,
+            "negativeOrZero": false,
+            "positiveOrZero": true,
+            "type": "centPrecision"
+          }
+        },
+        "totalPrice": {
+          "centAmount": 133,
+          "currencyCode": "USD",
+          "fractionDigits": 2,
+          "factory": {
+            "defaultMonetaryContext": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            },
+            "maxNumber": 92233720368547.77,
+            "minNumber": -92233720368547.77,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "maximalMonetaryContext": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            }
+          },
+          "context": {
+            "precision": 19,
+            "fixedScale": true,
+            "maxScale": 5,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "empty": false
+          },
+          "number": 1.33,
+          "currency": {
+            "context": {
+              "empty": false,
+              "providerName": "java.util.Currency"
+            },
+            "defaultFractionDigits": 2,
+            "currencyCode": "USD",
+            "numericCode": 840
+          },
+          "zero": false,
+          "negative": false,
+          "positive": true,
+          "negativeOrZero": false,
+          "positiveOrZero": true,
+          "type": "centPrecision"
+        },
+        "quantity": 1,
+        "addedAt": "2023-04-18T10:13:56.535Z",
+        "state": [
+          {
+            "quantity": 1,
+            "state": {
+              "id": "4e4b858c-7df6-4b57-8d01-e99a81bb378b",
+              "typeId": "state"
+            }
+          }
+        ],
+        "discountedPricePerQuantity": [],
+        "priceMode": "Platform",
+        "lineItemMode": "Standard",
+        "lastModifiedAt": "2023-04-18T10:13:56.535Z"
+      },
+      {
+        "id": "89a8aa6f-da4b-44f0-b54c-cb827d6c384f",
+        "productId": "60b17716-34e6-4316-800e-a8db981030f7",
+        "productKey": "SM4959",
+        "name": {
+          "en-US": "SMA Female (Jack) to SMA Female (Jack) 4 Hole Flange Adapter, Passivated Stainless Steel Body, High Temp, 1.25 VSWR"
+        },
+        "productSlug": {
+          "en": "sma-female-sma-female-4-hole-flange-adapter-sm4959"
+        },
+        "productType": {
+          "id": "ae956b5a-d9b5-4a69-89ba-716f5afba949",
+          "typeId": "product-type"
+        },
+        "variant": {
+          "id": 1,
+          "sku": "SM4959",
+          "key": "SM4959",
+          "prices": [
+            {
+              "id": "1a768138-e1f5-479a-b603-f1a73f963903",
+              "value": {
+                "centAmount": 4039,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  },
+                  "maxNumber": 92233720368547.77,
+                  "minNumber": -92233720368547.77,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "maximalMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  }
+                },
+                "context": {
+                  "precision": 19,
+                  "fixedScale": true,
+                  "maxScale": 5,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "empty": false
+                },
+                "number": 40.39,
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "currencyCode": "USD",
+                  "numericCode": 840
+                },
+                "zero": false,
+                "negative": false,
+                "positive": true,
+                "negativeOrZero": false,
+                "positiveOrZero": true,
+                "type": "centPrecision"
+              }
+            },
+            {
+              "id": "f4d08bf3-e9de-4620-8f13-c90581104c19",
+              "value": {
+                "centAmount": 3231,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "factory": {
+                  "defaultMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  },
+                  "maxNumber": 92233720368547.77,
+                  "minNumber": -92233720368547.77,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "maximalMonetaryContext": {
+                    "precision": 19,
+                    "fixedScale": true,
+                    "maxScale": 5,
+                    "amountType": "org.javamoney.moneta.FastMoney",
+                    "empty": false
+                  }
+                },
+                "context": {
+                  "precision": 19,
+                  "fixedScale": true,
+                  "maxScale": 5,
+                  "amountType": "org.javamoney.moneta.FastMoney",
+                  "empty": false
+                },
+                "number": 32.31,
+                "currency": {
+                  "context": {
+                    "empty": false,
+                    "providerName": "java.util.Currency"
+                  },
+                  "defaultFractionDigits": 2,
+                  "currencyCode": "USD",
+                  "numericCode": 840
+                },
+                "zero": false,
+                "negative": false,
+                "positive": true,
+                "negativeOrZero": false,
+                "positiveOrZero": true,
+                "type": "centPrecision"
+              },
+              "customerGroup": {
+                "id": "592a735d-5389-45be-a13f-9771b9c857a1",
+                "typeId": "customer-group"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "seoName",
+              "value": "sma-female-sma-female-4-hole-flange-adapter-sm4959"
+            },
+            {
+              "name": "name",
+              "value": {
+                "en-US": "SMA Female (Jack) to SMA Female (Jack) 4 Hole Flange Adapter, Passivated Stainless Steel Body, High Temp, 1.25 VSWR"
+              }
+            },
+            {
+              "name": "description",
+              "value": {
+                "en-US": "SMA adapter SM4959 from Fairview Microwave is part of a very large selection of in-stock interconnect RF components. Our  SMA to SMA adapter is a coaxial adapter design with a 50 Ohm impedance. This  50 Ohm SMA adapter is manufactured to precise RF adapter specifications and has a maximum VSWR of 1.25:1.SMA to SMA adapter is constructed with female gender on side 1 and female on side 2. SM4959 SMA female to SMA female coaxial adapter from Fairview is a straight body style. This straight SMA connector adapter is an in-line RF adapter design.Fairview female SMA to female SMA adapter is part of over one million RF, microwave and millimeter wave components in stock. Our straight  SMA adapter is ready for same day purchase and shipping worldwide. We also stock and/or custom build SMA coaxial cables that ship quickly from our facility for all your RF adapter component needs."
+              }
+            },
+            {
+              "name": "oversized",
+              "value": false
+            },
+            {
+              "name": "uom",
+              "value": {
+                "key": "EA",
+                "label": "Each"
+              }
+            },
+            {
+              "name": "weightUOM",
+              "value": {
+                "key": "LBS",
+                "label": "LBS"
+              }
+            },
+            {
+              "name": "weight",
+              "value": 0.0125
+            },
+            {
+              "name": "difficultyfactor",
+              "value": 0
+            }
+          ],
+          "images": [],
+          "assets": []
+        },
+        "price": {
+          "id": "1a768138-e1f5-479a-b603-f1a73f963903",
+          "value": {
+            "centAmount": 4039,
+            "currencyCode": "USD",
+            "fractionDigits": 2,
+            "factory": {
+              "defaultMonetaryContext": {
+                "precision": 19,
+                "fixedScale": true,
+                "maxScale": 5,
+                "amountType": "org.javamoney.moneta.FastMoney",
+                "empty": false
+              },
+              "maxNumber": 92233720368547.77,
+              "minNumber": -92233720368547.77,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "maximalMonetaryContext": {
+                "precision": 19,
+                "fixedScale": true,
+                "maxScale": 5,
+                "amountType": "org.javamoney.moneta.FastMoney",
+                "empty": false
+              }
+            },
+            "context": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            },
+            "number": 40.39,
+            "currency": {
+              "context": {
+                "empty": false,
+                "providerName": "java.util.Currency"
+              },
+              "defaultFractionDigits": 2,
+              "currencyCode": "USD",
+              "numericCode": 840
+            },
+            "zero": false,
+            "negative": false,
+            "positive": true,
+            "negativeOrZero": false,
+            "positiveOrZero": true,
+            "type": "centPrecision"
+          }
+        },
+        "totalPrice": {
+          "centAmount": 4039,
+          "currencyCode": "USD",
+          "fractionDigits": 2,
+          "factory": {
+            "defaultMonetaryContext": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            },
+            "maxNumber": 92233720368547.77,
+            "minNumber": -92233720368547.77,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "maximalMonetaryContext": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            }
+          },
+          "context": {
+            "precision": 19,
+            "fixedScale": true,
+            "maxScale": 5,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "empty": false
+          },
+          "number": 40.39,
+          "currency": {
+            "context": {
+              "empty": false,
+              "providerName": "java.util.Currency"
+            },
+            "defaultFractionDigits": 2,
+            "currencyCode": "USD",
+            "numericCode": 840
+          },
+          "zero": false,
+          "negative": false,
+          "positive": true,
+          "negativeOrZero": false,
+          "positiveOrZero": true,
+          "type": "centPrecision"
+        },
+        "quantity": 1,
+        "addedAt": "2023-04-18T11:15:19.438Z",
+        "state": [
+          {
+            "quantity": 1,
+            "state": {
+              "id": "4e4b858c-7df6-4b57-8d01-e99a81bb378b",
+              "typeId": "state"
+            }
+          }
+        ],
+        "discountedPricePerQuantity": [],
+        "priceMode": "Platform",
+        "lineItemMode": "Standard",
+        "lastModifiedAt": "2023-04-18T11:15:19.438Z"
+      }
+    ],
+    "customLineItems": [],
+    "totalPrice": {
+      "centAmount": 5487,
+      "currencyCode": "USD",
+      "fractionDigits": 2,
+      "factory": {
+        "defaultMonetaryContext": {
+          "precision": 19,
+          "fixedScale": true,
+          "maxScale": 5,
+          "amountType": "org.javamoney.moneta.FastMoney",
+          "empty": false
+        },
+        "maxNumber": 92233720368547.77,
+        "minNumber": -92233720368547.77,
+        "amountType": "org.javamoney.moneta.FastMoney",
+        "maximalMonetaryContext": {
+          "precision": 19,
+          "fixedScale": true,
+          "maxScale": 5,
+          "amountType": "org.javamoney.moneta.FastMoney",
+          "empty": false
+        }
+      },
+      "context": {
+        "precision": 19,
+        "fixedScale": true,
+        "maxScale": 5,
+        "amountType": "org.javamoney.moneta.FastMoney",
+        "empty": false
+      },
+      "number": 54.87,
+      "currency": {
+        "context": {
+          "empty": false,
+          "providerName": "java.util.Currency"
+        },
+        "defaultFractionDigits": 2,
+        "currencyCode": "USD",
+        "numericCode": 840
+      },
+      "zero": false,
+      "negative": false,
+      "positive": true,
+      "negativeOrZero": false,
+      "positiveOrZero": true,
+      "type": "centPrecision"
+    },
+    "cartState": "Active",
+    "shippingAddress": {
+      "country": "US",
+      "firstName": "shankar",
+      "lastName": "",
+      "streetName": "902 E Crawford St",
+      "streetNumber": "NA",
+      "postalCode": "67401",
+      "city": "Salina",
+      "state": "KS",
+      "company": "test-IE",
+      "phone": "998-778-7889"
+    },
+    "billingAddress": {
+      "id": "aQx8x--I",
+      "key": "c6b52ba8-8383-46e5-9a25-d3b249d432de-fairview",
+      "country": "US",
+      "firstName": "shankar",
+      "lastName": "",
+      "streetName": "327 Seward St",
+      "streetNumber": "Sitkasdadads",
+      "postalCode": "99835",
+      "city": "Sitka",
+      "state": "AK",
+      "company": "test-IE",
+      "phone": "(999) 999-9999"
+    },
+    "inventoryMode": "None",
+    "taxMode": "ExternalAmount",
+    "taxRoundingMode": "HalfEven",
+    "taxCalculationMode": "LineItemLevel",
+    "shippingInfo": {
+      "shippingMethodName": "UPS|GRND",
+      "price": {
+        "centAmount": 1315,
+        "currencyCode": "USD",
+        "fractionDigits": 2,
+        "factory": {
+          "defaultMonetaryContext": {
+            "precision": 19,
+            "fixedScale": true,
+            "maxScale": 5,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "empty": false
+          },
+          "maxNumber": 92233720368547.77,
+          "minNumber": -92233720368547.77,
+          "amountType": "org.javamoney.moneta.FastMoney",
+          "maximalMonetaryContext": {
+            "precision": 19,
+            "fixedScale": true,
+            "maxScale": 5,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "empty": false
+          }
+        },
+        "context": {
+          "precision": 19,
+          "fixedScale": true,
+          "maxScale": 5,
+          "amountType": "org.javamoney.moneta.FastMoney",
+          "empty": false
+        },
+        "number": 13.15,
+        "currency": {
+          "context": {
+            "empty": false,
+            "providerName": "java.util.Currency"
+          },
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD",
+          "numericCode": 840
+        },
+        "zero": false,
+        "negative": false,
+        "positive": true,
+        "negativeOrZero": false,
+        "positiveOrZero": true,
+        "type": "centPrecision"
+      },
+      "shippingRate": {
+        "price": {
+          "centAmount": 1315,
+          "currencyCode": "USD",
+          "fractionDigits": 2,
+          "factory": {
+            "defaultMonetaryContext": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            },
+            "maxNumber": 92233720368547.77,
+            "minNumber": -92233720368547.77,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "maximalMonetaryContext": {
+              "precision": 19,
+              "fixedScale": true,
+              "maxScale": 5,
+              "amountType": "org.javamoney.moneta.FastMoney",
+              "empty": false
+            }
+          },
+          "context": {
+            "precision": 19,
+            "fixedScale": true,
+            "maxScale": 5,
+            "amountType": "org.javamoney.moneta.FastMoney",
+            "empty": false
+          },
+          "number": 13.15,
+          "currency": {
+            "context": {
+              "empty": false,
+              "providerName": "java.util.Currency"
+            },
+            "defaultFractionDigits": 2,
+            "currencyCode": "USD",
+            "numericCode": 840
+          },
+          "zero": false,
+          "negative": false,
+          "positive": true,
+          "negativeOrZero": false,
+          "positiveOrZero": true,
+          "type": "centPrecision"
+        },
+        "tiers": []
+      },
+      "deliveries": [],
+      "shippingMethodState": "MatchesCart"
+    },
+    "discountCodes": [],
+    "directDiscounts": [],
+    "custom": {
+      "type": {
+        "id": "9b77cb02-ad1e-426a-a1cc-eb2a491655de",
+        "typeId": "type"
+      },
+      "fields": {
+        "instructions": "",
+        "contact": "(999) 999-9999",
+        "status": "N"
+      }
+    },
+    "refusedGifts": [],
+    "origin": "Customer",
+    "itemShippingAddresses": [],
+    "totalLineItemQuantity": 2
+  }
+}

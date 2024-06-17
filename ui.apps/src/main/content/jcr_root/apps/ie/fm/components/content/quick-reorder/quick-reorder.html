@@ -1,0 +1,45 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='quickreorder'}" />
+
+<div class="quickreorder_main guest-users analyticvieworderhistory d-none quick__order--hidden">
+  <div class="container-fluid row">
+    <div class="col-sm-6">
+      <h3 class="quickreorder welcomeBack_label"><strong>Quick reorder</strong></h3>
+    </div>
+    <div class="col-sm-6 vieworderhistory_label">
+      <label class="vieworderhistory"
+        ><a href="/content/fm/en/my-account/orders/order-history.html" style="color: #0e0f10"
+          >View Order History</a
+        ></label
+      >
+    </div>
+  </div>
+  <div class="quickreorder-table bclass view__quick--order">
+    <div class="row container-fluid view__quick--fillup">
+
+     
+      
+      <div class="col-sm-4 view__quick--order--card d-none">
+        <div class="img-wrap view__quick--order--image">
+        
+          <div class="imgs" style="height: 90px">
+            <img src="" alt="Product Image" loading="lazy"/>
+          </div>
+        </div>
+        <p class="description" data-toggle="tooltip" data-placement="bottom"></p>
+        <p class="addtocart">
+          <button class="cta-cart addtocart add_to_cart" data-sku="" data-cartqty="1" data-currency="USD" title="Add to Cart" onclick="addtocartSpecific(this)">Add to Cart</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+</script>
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='quickreorder'}" />

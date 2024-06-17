@@ -1,0 +1,17 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='service-cards-clientlib'}" />
+<sly data-sly-use.convertersLinksModel="com.aem.ie.core.models.ConvertersLinksSlingModel"/>
+<div class="tnr_Conv_Cal analyticRFconverterstoolsandresources">
+	<div class="tnr_Conv_Cal--list">
+		<ul>
+			<li data-sly-repeat.convertersLink="${convertersLinksModel.convertersLinksDetails}">
+				<sly data-sly-test="${convertersLink.category}">
+					<span class="featuredTag">${convertersLink.category}</span>
+				</sly>
+				<a title="${convertersLink.title}" href="${convertersLink.resourceLink}.html">${convertersLink.title}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='service-cards-clientlib'}" />

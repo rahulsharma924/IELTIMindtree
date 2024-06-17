@@ -1,0 +1,270 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='minicartpopup'}"
+/>
+<!--
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://fonts.googleapis.com/css?family=Poppins"
+/>-->
+
+<div
+  data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+  data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.text="${textModel.text}"
+  data-cmp-data-layer="${textModel.data.json}"
+  id="${component.id}"
+  class="cmp-text"
+>
+  <p
+    class="cmp-text__paragraph cart-text"
+    data-sly-unwrap="${textModel.isRichText}"
+  ></p>
+
+  <div>
+    <a
+      data-toggle="modal"
+      data-target="#miniCartDetailsPopup"
+      class="cart_main cart-container"
+      aria-label="Cart"
+    >
+      <i
+        class="fa-solid fa-cart-shopping"
+        style="font-size: 14px; display: inline-block; margin-right: 8px"
+      ></i>
+
+      <span class="cart-counter"></span>
+    </a>
+
+    <div class="d-none d-md-block sign-in-text analyticheader">
+      ${text @ context = textModel.isRichText ? 'html' : 'text'}
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="miniCartDetailsPopup">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="modal-title mt-2">
+            My Cart <span class="fontweight-normal">(2)</span>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="mini-cart-main-section"></div>
+        <div class="modal-body scrollbar">
+          <div class="row cartItem">
+            <div class="col-lg-2 d-none d-lg-block pr-0">
+              <a href="#" aria-label="Product Details">
+                <img
+                  class="itemImg img-fluid"
+                  src="/content/dam/infinite-electronics/images/fairview-microwave/application-images/shop-by1/Couplers.png"
+                  alt="coupler"
+                />
+              </a>
+            </div>
+            <div class="col-lg-10 mb-3 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-12 itemDescription">
+                  <p class="mt-0">
+                    1.85mm directional coupler 10 dB 1 GHz to 67 GHz rated to 20
+                    watts
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="itemDetails fontweight-bold">
+                    <span>SKU:</span><span> 9124014</span>
+                  </div>
+                  <div class="itemDetails">
+                    <span>Color:</span><span> Blue</span>
+                  </div>
+                  <div class="itemDetails">
+                    <span>Length:</span><span> 0.5</span>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-3 col-4 col-sm-3 col-md-3 ml-lg-0 ml-md-3 ml-3 mt-2 count-inlineflex product-count"
+                >
+                  <div class="qtyminus">-</div>
+                  <input
+                    type="text"
+                    name="quantity"
+                    value="1"
+                    class="Itemqty"
+                  />
+                  <div class="qtyplus">+</div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 text-lg-right text-left mt-2 cart-pl-5"
+                >
+                  <p class="itemMultiPrice mt-0">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <i class="fa fa-usd cart-pl-5" aria-hidden="true"></i>125.00
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-3 align-items-center">
+                <div class="col-lg-6 col-6">
+                  <a
+                    href="#"
+                    class="removeItemLink"
+                    aria-label="Remove item from the cart"
+                  >
+                    Remove
+                  </a>
+                </div>
+                <div class="col-lg-6 col-6 text-right itemPrice mt-1">
+                  $125.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="mb-3 mt-2 mt-lg-3" />
+          <div class="row cartItem">
+            <div class="col-lg-2 d-none d-lg-block pr-0">
+              <a href="#" aria-label="Product Details">
+                <img
+                  class="itemImg img-fluid"
+                  src="/content/dam/infinite-electronics/images/fairview-microwave/application-images/shop-by1/Couplers.png"
+                  alt="coupler"
+                />
+              </a>
+            </div>
+            <div class="col-lg-10 mb-3 mb-lg-0">
+              <div class="row">
+                <div class="col-lg-12 itemDescription">
+                  <p class="mt-0">
+                    1.85mm directional coupler 10 dB 1 GHz to 67 GHz rated to 20
+                    watts
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="itemDetails fontweight-bold">
+                    <span>SKU:</span><span> 9124014</span>
+                  </div>
+                  <div class="itemDetails">
+                    <span>Color:</span><span> Blue</span>
+                  </div>
+                  <div class="itemDetails">
+                    <span>Length:</span><span> 0.5</span>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-3 col-4 col-sm-3 col-md-3 ml-lg-0 ml-md-3 ml-3 mt-2 count-inlineflex product-count"
+                >
+                  <div class="qtyminus">-</div>
+                  <input
+                    type="text"
+                    name="quantity"
+                    value="1"
+                    class="Itemqty"
+                  />
+                  <div class="qtyplus">+</div>
+                </div>
+                <div
+                  class="col-lg-3 col-6 text-lg-right text-left mt-2 cart-pl-5"
+                >
+                  <p class="itemMultiPrice mt-0">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <i class="fa fa-usd cart-pl-5" aria-hidden="true"></i>125.00
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-3 align-items-center">
+                <div class="col-lg-6 col-6">
+                  <a
+                    href=""
+                    class="removeItemLink"
+                    aria-label="Remove item from the cart"
+                  >
+                    Remove
+                  </a>
+                </div>
+                <div class="col-lg-6 col-6 text-right itemPrice mt-1">
+                  $125.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <hr class="mt-0 mb-3" />
+
+          <div class="row cartItem">
+            <div class="col-lg-12 col-12 text-lg-right text-center p-0">
+              <div class="itemSubTotal">
+                Sub total: $<span class="subtotalValue">250.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row mt-lg-4 row mt-lg-4 flex-lg-row flex-column-reverse d-flex mr-0"
+          >
+            <div class="col-lg-6 col-12 text-center mt-2">
+              <a
+                href="#"
+                class="viewCartLink"
+                aria-label="View the full cart"
+                onclick="validatethecartnavigation();"
+              >
+                View Cart
+              </a>
+            </div>
+            <div
+              class="col-lg-6 col-12 text-lg-right p-0 text-center mt-lg-0 mt-3"
+            >
+            <button
+                  type="button"
+                  class="btn checkoutBtn btn-md me-1 mb-2 px-lg-5"
+                  aria-label="Checkout"
+                  onclick="window.location.href ='/content/fm/en/shipping-information.html';"
+                >
+                  Checkout
+                </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row empty-mini-cart">
+            <div class="cart_left_section">
+              <i
+                class="fa fa-shopping-cart"
+                id="mini-cart-icon"
+                aria-hidden="true"
+              ></i>
+              <p class="empty-mini-cart-title">Your cart is empty.</p>
+              <button
+                onclick="window.location.href ='/content/fm/en/best-selling-rf-microwave-and-millimeter-wave-products.html';"
+                class="start-shopping-btn"
+              >
+                Start Shopping
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <sly
+    data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"
+  ></sly>
+
+  <sly
+    data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.js @ categories='minicartpopup'}"
+  />
+</div>

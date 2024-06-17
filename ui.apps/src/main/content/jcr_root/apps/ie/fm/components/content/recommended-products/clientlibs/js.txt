@@ -1,0 +1,5 @@
+#base=js
+jszip-utils.min.js
+jszip.min.js
+FileSaver.js
+recommended-products.js

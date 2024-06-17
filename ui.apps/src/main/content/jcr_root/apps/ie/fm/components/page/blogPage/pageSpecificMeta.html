@@ -1,0 +1,7 @@
+<sly data-sly-use.blogPageModel="com.aem.ie.core.models.BlogPageModel">
+
+<meta data-sly-test.category="${page.category || properties['category']}" name="category" content="${category}"/>
+<meta data-sly-test.blogCategory="${blogPageModel.bloglabel}" name="blogCategory" content="${blogCategory}"/>
+<meta data-sly-test.author="${page.author || properties['author']}" name="author" content="${author}"/>
+<meta data-sly-test.publishDate="${page.publishDate || properties['publishDate']}" name="publishDate" content="${'MM/dd/yyyy' @ format=publishDate}"/>
+

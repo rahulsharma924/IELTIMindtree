@@ -1,0 +1,281 @@
+#home img.watch-man {
+    width: 100%;
+    height: 380px;
+}
+
+#youtubeId .modal-dialog {
+    max-width: 800px;
+    padding-top: 100px;
+}
+
+.watch-video .mxauto {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.watch-video {
+    background-color: var(--watchVideoBgClr);
+    padding: 50px 24px 34px;
+}
+
+.watch-video-details {
+    padding: 0;
+}
+
+.watch-video-details .watch-video_title {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    max-width: 496px;
+    line-height: 1.483;
+    color: var(--secondaryBlack);
+}
+
+.watch-video-details .watch-video_desc {
+    font-weight: var(--fontWeightSmall);
+    line-height: var(--baseLineHeight);
+    max-width: 463px;
+    color: var(--secondaryBlack);
+}
+
+.video-close {
+    position: absolute;
+    left: 228%;
+    top: 6%;
+}
+.homepage-video .close {
+    height: fit-content;
+    padding-left: 6px;
+    opacity: 1;
+    text-shadow: none;
+    color: var(--secondaryColor);
+}
+
+.video-close button {
+    font-weight: 100;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--secondaryColor);
+    border: none;
+    outline: none;
+}
+.watch-video-details .watch-video_btn{
+    margin:22px 0 0 0;
+    display: inline-block;
+}
+/*.watch-video-details .watch-video_btn {
+    color: var(--secondaryColor);;
+    background: var(--invertedColor);
+    border-radius: 4px;
+    border: none;
+    font-weight: var(--fontWeightBold);
+    padding: 10px 30px;
+    margin: 22px 0 0 0;
+}
+
+.watch-video-details .watch-video_btn a {
+    color: var(--secondaryColor);
+}
+
+.watch-video-details .watch-video_btn:hover {
+    cursor: pointer;
+    background-color: var(--invertedColorHover);
+}
+
+.watch-video-details .watch-video_btn:focus {
+    outline: 2px solid var(--blueColorLight);
+    outline-offset: 1px;
+    box-shadow: none;
+}
+
+.watch-video-details .watch-video_btn:active {
+    outline: 0 none;
+    background-color: var(--invertedColorVisited);
+}
+*/
+.video-close button:hover {
+    color: var(--secondaryColor);
+}
+
+#youtubeId .modal-content iframe {
+    margin: 0 auto;
+    display: block;
+    height: calc(100% - 40px);
+    width: 100%;
+    border: 0;
+}
+
+#youtubeId .modal-dialog {
+    margin: 0 auto;
+    pointer-events: visible;
+}
+
+#youtubeId .modal-content {
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    height: 590px;
+}
+.industries .slick-dots{
+    bottom:-60px;
+}
+
+.industries .slick-slider{
+    margin-bottom:35px
+}
+
+@media only screen and (min-width: 992px) {
+    .watch-video-details .watch-video_btn{
+        min-width: 206px;
+        text-align: center;
+    }
+    .watch-video-details {
+        padding: 0 0 0 55px;
+    }
+    .watch-video-details .watch-video_desc {
+        padding-top: 26px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .watch-video-details .watch-video_btn{
+        min-width: 153px;
+        text-align: center;
+    }
+    .watch-video-details {
+        text-align: center;
+    }
+    #home img.watch-man {
+        width: 100%;
+        height: 290px;
+        object-fit: cover;
+    }
+    .watch-video-details {
+        padding: 0;
+    }
+    .watch-video-details .watch-video_desc {
+        max-width: 376px;
+        padding: 10px 10px 10px 0;
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize12);
+        line-height: var(--lineHeight1andQ);
+        margin: 0;
+        text-align: left;
+    }
+    .watch-video .watch-video_image img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 198px;
+    }
+    #youtubeId .modal-content iframe {
+        padding: 0;
+        width: 100%;
+        height: 53%;
+    }
+    .watch-video_image.col-6 {
+        padding: 0;
+    }
+}
+
+#youtubeId .modal-body {
+    padding: 0;
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    #youtubeId .modal-dialog {
+        max-width: 750px;
+        padding-top: 100px;
+    }
+    .watch-video-details {
+        text-align: left;
+    }
+    .watch-video .watch-video_image img {
+        height: 300px;
+        object-fit: cover;
+    }
+    #youtubeId .modal-content iframe {
+        padding: 0;
+        width: 100%;
+        height: 109%;
+    }
+    .watch-video_image.col-6 {
+        padding: 0;
+    }
+    .col-md-4 {
+        flex: auto;
+        max-width: 50%;
+    }
+}
+
+.watch-video-details .watch-video_btn a:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    #youtubeId .modal-dialog {
+        max-width: 750px;
+        padding-top: 100px;
+        margin: 0 30px;
+    }
+    .watch-video-details {
+        text-align: left;
+    }
+    .watch-video_image.pl-xs-0 {
+        padding: 0;
+    }
+    #home img.watch-man {
+        width: 100%;
+        height: 198px;
+        object-fit: cover;
+    }
+    .watch-video-details .watch-video_title {
+        font-size: var(--fontSize18);
+        line-height: var(--baseLineHeight);
+        text-align: left;
+    }
+    .watch-video {
+        padding: 32px 24px;
+    }
+    .watch-video-details {
+        margin-bottom: 30px;
+    }
+    .watch-video-details .watch-video_title {
+        max-width: 100%;
+    }
+    .watch-video-details .watch-video_desc {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    #youtubeId .modal-dialog {
+        max-width: 350px;
+        padding-top: 100px;
+    }
+    .watch-video_image.pl-xs-0 {
+        padding: 0;
+    }
+    #home img.watch-man {
+        width: 100%;
+        height: 198px;
+        object-fit: cover;
+    }
+    .watch-video-details .watch-video_title {
+        font-size: var(--fontSize18);
+        line-height: var(--lineHeight1andQ);
+        text-align: center;
+    }
+    .watch-video {
+        padding: 32px 24px;
+    }
+    .watch-video-details {
+        margin-bottom: 30px;
+    }
+    .watch-video-details .watch-video_title {
+        max-width: 100%;
+    }
+    .watch-video-details .watch-video_desc {
+        max-width: 100%;
+    }
+}

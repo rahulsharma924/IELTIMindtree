@@ -1,0 +1,4 @@
+#base=js
+product-details.js
+pdp-delivery-details.js
+product-key-specification.js

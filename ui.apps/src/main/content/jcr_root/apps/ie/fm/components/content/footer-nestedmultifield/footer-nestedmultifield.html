@@ -1,0 +1,84 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='footer-nested-clientlib'}" />
+
+<div class="footerContainer">
+<div class="footerTop accordianNav analyticfooter" data-sly-list.multi="${resource.getChildren}">
+	<sly data-sly-test="${multi.name == 'footertitlemulti'}">
+	<div class="footerLinks" data-sly-repeat.nestedmulti1="${multi.getChildren}">
+        <h4 class="footerTitle dropArrow">${nestedmulti1.footerheadtitle} </h4>
+		<ul class="footerLinks_UL" data-sly-repeat.nestedmulti2="${nestedmulti1.getChildren}">
+			    <sly data-sly-test="${nestedmulti2.name == 'footermulti'}"
+                    data-sly-repeat.nestedmulti3="${nestedmulti2.getChildren}">
+
+
+					<sly data-sly-test ="${!nestedmulti3.newtabcheck && !nestedmulti3.newwincheck}">
+						<sly data-sly-test ="${'pdf' in nestedmulti3.footerlink}">
+							<li class="footerLinks_li ftrlink"><a title="${nestedmulti3.footertitle}" href="${nestedmulti3.footerlink}" class="ie-custom-link" target="_self">${nestedmulti3.footertitle}</a></li>
+						</sly>	
+						<sly data-sly-test ="${!('pdf' in nestedmulti3.footerlink)}">
+							<li class="footerLinks_li ftrlink"><a title="${nestedmulti3.footertitle}" href="${nestedmulti3.footerlink}.html" class="ie-custom-link" target="_self">${nestedmulti3.footertitle}</a></li>
+						</sly>	
+                    </sly> 
+					<sly data-sly-test="${nestedmulti3.newtabcheck}">
+					    <sly data-sly-test ="${'pdf' in nestedmulti3.footerlink}">
+							<li class="footerLinks_li ftrlink"><a title="${nestedmulti3.footertitle}" href="${nestedmulti3.footerlink}" class="ie-custom-link" target="_blank">${nestedmulti3.footertitle}</a></li>
+						</sly>
+						<sly data-sly-test ="${!('pdf' in nestedmulti3.footerlink)}">
+							<li class="footerLinks_li ftrlink"><a title="${nestedmulti3.footertitle}" href="${nestedmulti3.footerlink}" class="ie-custom-link" target="_blank">${nestedmulti3.footertitle}</a></li>
+						</sly>
+                    </sly> 
+					<sly data-sly-test="${nestedmulti3.newwincheck}">
+                        <li class="footerLinks_li ftrlink"><a title="${nestedmulti3.footertitle}" href="${nestedmulti3.footerlink}" class="open-newwindow ie-custom-link">${nestedmulti3.footertitle}</a></li>
+                    </sly> 
+					 <sly data-sly-test="${nestedmulti3.contactdesc}">
+                        <li class="footerLinks_li ftrtext">${nestedmulti3.contactdesc}</li>
+                    </sly>
+					<sly data-sly-test="${nestedmulti3.contactmail}">
+						<li class="footerLinks_li ftrmailto"><a title="${nestedmulti3.contactmail}" href="mailto:sales@fairviewmicrowave.com" class="ie-custom-link">${nestedmulti3.contactmail}</a></li>
+                    </sly>
+				</sly>
+		</ul>
+	</div><!--FooterLinks end-->
+	</sly>
+</div><!--Footer top end-->
+<div class="footerMid">
+        <!-- <div class="midColumn blankbox1">blankbox1</div>
+        <div class="midColumn blankbox2">blankbox2</div> -->
+        <div class="midColumn imageField">
+            <div class="eciaimg analyticsecia">
+                <a title="${properties.eciatitle}" href="${properties.ecianowlink}" target="_blank" x-cq-linkchecker="skip"><img alt="ECIA Member" class="img-fluid" src="${properties.eciaimg}" loading="lazy"  style="width:100%; height:100%;"/></a>
+            </div>
+        </div>
+        <div class="midColumn soicalmediaField analyticssocialmedia"> 
+            <h4 class="footerTitle">${properties.connectusTitle}</h4>
+            <div class="socialMediaIcons analyticssocialicons">
+                <span class="iconThemb">
+                    <a title="${properties.socialmediatitle1}" href="${properties.socialmedialink1}" target="_blank" x-cq-linkchecker="skip">
+                        <i class="${properties.socialmage1}"></i>
+                    </a>
+                </span>
+                <span class="iconThemb">
+                    <a title="${properties.socialmediatitle2}" href="${properties.socialmedialink2}" target="_blank" x-cq-linkchecker="skip">
+                        <i class="${properties.socialmage2}"></i>
+                    </a>
+                </span>
+                <span class="iconThemb">
+                    <a title="${properties.socialmediatitle3}" href="${properties.socialmedialink3}" target="_blank" x-cq-linkchecker="skip">
+                        <i class="${properties.socialmage3}"></i>
+                    </a>
+                </span>
+            </div>
+        </div>   
+</div><!--FooterMid end-->
+<div class="footerBottom">
+    <ul>
+        <li>${properties.footerinc}</li>
+        <li><a title="${properties.footersitemap}" href="https://qa-dt.fairviewmicrowave.com/sitemap.xml">${properties.footersitemap}</a></li>
+    </ul>
+</div><!--FooterBottom end-->
+</div><!--Container end-->
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='footer-nested-clientlib'}" />
+<!--FooterEND-->

@@ -1,0 +1,15 @@
+<style>
+.template-image {
+    margin-right: 100px;
+}
+.x_img-fluid{
+max-width: 100%;
+}
+</style>
+ <tr>
+ <td><img width="53" height="53" class="img-fluid" src="${image}" alt="productimage"</td>
+ <td><a>${productdesc} <br /></a></td>
+    <td>${quantity}</td>
+    <td>$${unitprice}</td>
+    <td>$${subtotal}</td>
+ </tr>

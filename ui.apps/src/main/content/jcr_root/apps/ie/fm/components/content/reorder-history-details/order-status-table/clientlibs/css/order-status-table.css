@@ -1,0 +1,201 @@
+.order-status{
+  white-space: nowrap;
+}
+.vtext {
+    font-weight: var(--fontWeightBold);
+    font-size:var(--fontSize14);
+    line-height:var(--lineHeight1and428);
+    color: var(--secondaryBlack);
+  }
+  .htext {
+    font-weight:var(--fontWeightSmall);
+    font-size:var(--fontSize14);
+    line-height:var(--lineHeight1and428);
+    color: var(--secondaryBlack);
+  }
+  .reorder-btn-upper1 {
+    height: 32px ;
+    width: 74px ;
+    padding: 0; 
+    margin: 3px 25px 20px 10px;
+    display: none;
+ 
+  }
+ 
+  
+  .reorder-btn-upper {
+    height: 32px ;
+    width: 145px ;
+    padding: 0; 
+    margin: 3px 25px 20px 10px;   
+  }
+ 
+  .btn_container {
+    isolation: isolate;
+    padding-right: 14px;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+  .btn-text-upper {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize12);
+  }
+
+  .order-status-table .reorder-button.button--disabled{
+    background: var(--btnDisabledLight);
+    border-color: var(--btnDisabledLight);
+  }
+  @media screen and (min-width: 1081px) {
+    .ul-list {
+      padding: 10px 10px 10px 20px;
+      margin-bottom: 5px;
+    }
+    .ul-list li {
+      display: inline-block;
+    }
+    .ul-list span {
+      display: block;
+    }
+    .list-item {
+      padding-right: 2%;
+    }
+    .order-status {
+      border: 1px solid var(--secondaryBtnVisited);
+      border-radius: 4px;
+      padding-right: 0px;
+      margin-bottom: 16px;
+      margin-left: 1px;
+      margin-right: 0;
+    }
+    .order-status-table {
+      padding-left: 0px;
+    }
+    .order-status-text {
+      font-weight: var(--fontWeightBold);
+      font-size:var(--fontSize31);
+    }
+    .upper-portion {
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (max-width:1080px) and (min-width:833px){
+    .reorder-btn-upper{
+      width:90%;
+    }
+    .ul-list {
+      padding: 10px 10px 10px 10px;;
+      margin-bottom: 5px;
+    }
+    .ul-list li {
+      display: inline-block;
+    }
+    .ul-list span {
+      display: block;
+    }
+    .list-item {
+      padding-right: 5px;
+    }
+    .order-status {
+      border: 1px solid var(--secondaryBtnVisited);
+      border-radius: 4px;
+      padding-right: 0px;
+      margin-bottom: 16px;
+      margin-left: 1px;
+    }
+    .order-status-table {
+      padding-left: 0px;
+    }
+    .order-status-text {
+      font-weight: var(--fontWeightBold);
+      font-size:var(--fontSize31);
+    }
+    .upper-portion {
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 576px) and (min-width: 351px) {
+    .reorder-btn-upper1 {
+      display: block;
+      position: absolute;
+      right: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 832px) and (min-width: 351px) {
+    .ul-list li {
+      display: block;
+    }
+    .ul-list span {
+      display: inline-block;
+    }
+    .ul-list {
+      padding-left: 0px;
+    }
+    .vtext {
+      position: absolute;
+      left: 155px;
+    }
+    .order-status-text {
+      font-weight: var(--fontWeightBold);
+      font-size: var(--fontSize22);
+      line-height:var(--baseLineHeight);
+    }
+    .reorder-btn-upper {
+      display: none;
+    }
+    .btn_container {
+      display: none;
+    }
+    .reorder-btn-upper1 {
+      display: block;
+      position: absolute;
+    }
+    .btn-text-upper {
+      font-weight: var(--fontWeightBold);
+      font-size: var(--fontSize12);
+
+    }
+    .upper-portion {
+      display: inline-flex;
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .reorder-btn-upper1 {
+      display: block;
+      position: sticky;
+    }
+    .vtext {
+      position: sticky;
+      left: 155px;
+    }
+    .ul-list li {
+      display: block;
+    }
+    .ul-list span {
+      display: inline-block;
+    }
+    .ul-list {
+      padding-left: 0px;
+    }
+    .order-status-text {
+      font-weight: var(--fontWeightBold);
+      font-size: var(--fontSize22);
+      line-height:var(--baseLineHeight);
+    }
+    .reorder-btn-upper {
+      display: none;
+    }
+    .btn_container {
+      display: none;
+    }
+    .upper-portion {
+      display: inline-flex;
+      margin-bottom: 15px;
+    }
+  }
+  @media only screen and (max-width:833px){
+    #my-account-mobile-nav {
+        display: block;
+    }
+}

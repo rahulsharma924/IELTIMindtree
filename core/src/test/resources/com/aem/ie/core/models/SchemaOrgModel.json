@@ -1,0 +1,59 @@
+{
+  "PageUtils": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industrial automation",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:description": "Description",
+      "pwaOrientation": "any",
+      "cq:template": "/conf/fm/settings/wcm/templates/home-page"
+    },
+    "news_detail": {"jcr:primaryType":"nt:unstructured","newsContent":"<h2>Hot-Switchable Variable Attenuators Up to 6 GHz Released by Fairview Microwave</h2>\r\n<p><br />\r\nAllen, TX - Fairview Microwave, Inc. a preeminent supplier of on-demand microwave and RF components, has released a new line of compact <a href=\"/nsearch-grid.aspx?sort&#61;y&amp;Category&#61;Step%20Attenuators\"><span style=\"\tcolor: rgb(51,51,255);\r\n\">hot-switchable variable attenuators</span></a>. RF attenuators are used to reduce the amplitude of an electronic signature in many common electronic scenarios including lab testing equipment, Distributed Antenna Systems (DAS) and power and signal monitoring systems.<br />\r\n<br />\r\nFairview Microwave’s new line of <span style=\"\tcolor: rgb(51,51,255);\r\n\">variable switch attenuators</span> come in 3 and 6 GHz frequency models and several different connector configurations including SMA and N type connectors with side or rear mount positions.  Several of these attenuators are hot-switchable, meaning attenuation can be changed on the fly without powering down the system, allowing test data to be read continuously.  Several models with varying attenuation adjustments are available including 0 to 12 dB attenuation in 1 dB steps and 0 to 40 dB attenuation in 10 dB steps, with other options available upon request. These new attenuator products also boast low attenuation tolerance and low insertion loss.<br />\r\n<br />\r\n“Our new lines of hot-switchable <a href=\"/variable-attenuators-category.aspx\">variable attenuators</a> provide engineers the flexibility to adjust and customize the RF performance of their distributed systems while the system is live”, says Greg Arnold, Technical Sales Manager for Fairview Microwave. “This adds an invaluable tool to the arsenal of components available to engineers for efficiently optimizing their DAS, multi-element antenna arrays or any multi-channel system requiring individual amplitude adjustment.”<br />\r\n<br />\r\nFairview’s new hot-switchable variable attenuators are in-stock and available to ship today. You can view the complete offering of RF coaxial attenuators from Fairview Microwave by visiting <a href=\"/nsearch-grid.aspx?sort&#61;y&amp;Category&#61;Step%20Attenuators\"><span style=\"\tcolor: rgb(51,51,255);\r\n\">https://www.fairviewmicrowave.com/nsearch-grid.aspx?sort&#61;y&amp;Category&#61;Step%20Attenuators</span></a>. For additional information, Fairview can be contacted at &#43;1-972-649-6678.</p>\r\n","jcr:lastModifiedBy":"PSagar@infiniteelectronics.com","newsimagealt":"Image of  Fairview Microwave Hot-Swithcing Step Attenuators","newsLabel":"ie:news/attenuator","newsTitle":"Fairview Microwave Releases 5G Outdoor-rated Omnidirectional Antennas 1","newsimage":"/content/dam/infinite-electronics/images/fairview-microwave/application-images/SA3501SMA-850x284-.jpg","jcr:lastModified":"Mon Jul 10 2023 06:34:04 GMT+0000","sling:resourceType":"ie/fm/components/content/news-detail","newsDate":"Tue Mar 14 2023 00:00:00 GMT+0530","textIsRich":["true","true"],"newsimgtext":"Fairview Microwave Hot-Swithcing Step Attenuators","aboutnewscontent":"<p><b>About Fairview Microwave:</b><br>\r\nA leading supplier of on-demand RF and microwave products since 1992, Fairview Microwave offers immediate delivery of RF components including attenuators, adapters, coaxial cable assemblies, connectors, terminations and much more. All products are shipped same-day from the company’s ISO 9001:2015 certified production facilities in Lewisville, Texas. Fairview Microwave is an Infinite Electronics brand.</p>\r\n<p><b>About Infinite Electronics:</b><br>\r\nBased in Irvine, Calif., Infinite Electronics is a global electronics supplier, offering a broad range of components, assemblies and wired/wireless connectivity solutions, serving the aerospace/defense, industrial, government, consumer electronics, instrumentation, medical and telecommunications markets. Infinite’s brands include Pasternack, Fairview Microwave, L-com, MilesTek, ShowMeCables, NavePoint, INC Installs, Integra Optics, PolyPhaser, Transtector, KP Performance Antennas, RadioWaves and Aiconics. Infinite Electronics serves their customer base with deep technical expertise and support, with one of the broadest inventories of products available for immediate shipment, fulfilling unplanned demand for engineers and technical buyers. Infinite Electronics is a Warburg Pincus portfolio company.</p>\r\n<div style=\"text-align: center;\"><b>###</b></div>\r\n<p><br>\r\nPress Contact:<br>\r\nGreg Arnold<br>\r\nFairview Microwave<br>\r\n1130 Junction Dr., suite 100<br>\r\nAllen, TX 75013<br>\r\n(972) 649-6678<br>\r\n</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n"}
+  },
+  "PageUtils1": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industrial automation",
+      "cq:lastReplicationAction": "Activate",
+      "pwaOrientation": "any",
+      "cq:template": "/settings/wcm/templates/news-template"
+    }
+  },
+  "PageUtils2": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industrial automation",
+      "cq:lastReplicationAction": "Activate",
+      "pwaOrientation": "any",
+      "cq:template": "/settings/wcm/templates/blog-template"
+    },
+    "blogpage":{"jcr:primaryType":"nt:unstructured","imagealttext":"Image of Impedance Matching Pad","blogimgtext":"Impedance Matching Pad","bloglinkedin":"#","blogfb":"#","jcr:lastModifiedBy":"kkantola@infiniteelectronics.com","blogtext":"<p>In cases where it may be necessary to connect 50 Ohm and 75 Ohm systems, there are a few methods to ensure impedance matching between these two impedance standards. The easiest and most cost effective, and smallest footprint, in most cases, is to use&nbsp;<a href=\"https://uat-dt.fairviewmicrowave.com/category/rf-impedance-matching-pads.html\">impedance matching pads</a>&nbsp;based on resistive circuits. Resistive impedance matching pads allow for inline impedance matching between 50 Ohm and 75 Ohm systems and are available in common coaxial connector standards. Some impedance matching pads are even available that adapt between coaxial connector standards and impedance standards, which can help to simplify a BOM and reduce the footprint of the signal chain compared to using an adapter and impedance matching circuit.&nbsp;</p>\r\n<p>Matching the impedance of the ports of two or more interconnected RF devices or components is essential for efficient, and often functional, RF circuits. Without proper impedance matching, like what can be achieved with Impedance Matching Pads,&nbsp; any signal passing through the node where two RF devices or components of disparate impedance induces reflections. These reflections can build up to substantial standing waves that may alter the behavior of, or even damage RF devices and components. Hence, impedance matching is typically vital between every RF device and component in a signal path.</p>\r\n<p>This would generally require ensuring that every individual RF device and component is matched, and that the influence of each and every RF device and component would result in an overall matched impedance at every port. Beyond cumbersome and potentially impossible, this approach, though necessary sometimes, isn’t well suited to the use of modules or off-the-shelf components. This is why many RF devices and components in connectorized packages, surface mount packages, or other types of modules/packaging are often available in standardized impedance values.</p>\r\n<p>For most RF and microwave applications, this value is 50 ohm, or 75 ohms for some broadcast and other applications. Having RF devices and components already impedance matched to standardized values enables rapid design and assembly of standardized impedance packages and modules without the need for system or design engineers to account for impedance matching at every node.</p>\r\n<p>This obviously isn’t the case with non-standardized impedance modules, drop-in style packages, or other RF devices which may not be feasible to offer in a standardized package. This includes some amplifiers for custom designs where the trade-off of ease-of-use and design/assembly simplicity is outweighed by other requirements.&nbsp;</p>\r\n","blogtwitter":"#","blogimg":"/content/dam/image25.png","blogauthor":"by Pete McNeil | Jun 16, 2022 ","jcr:lastModified":"Tue Sep 19 2023 22:20:34 GMT+0000","blogimage":"/content/dam/infinite-electronics/images/fairview-microwave/application-images/SI1540.jpg","bloglabel":"Antennas","blogshare":"Share now","blogtitle":"Low Noise Amplifiers Q&A ","sling:resourceType":"ie/fm/components/content/blogpage","textIsRich":["true"]}
+  },
+    "PageUtils3": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Industrial automation",
+        "cq:lastReplicationAction": "Activate",
+        "pwaOrientation": "any",
+        "cq:template": "/settings/wcm/templates/article-page"
+      }
+  }
+}
+
+

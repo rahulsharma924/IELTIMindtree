@@ -1,0 +1,14 @@
+
+<sly
+ data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+   data-sly-call="${clientlib.css @ categories='error'}"/>
+
+<div class="error-404 row">
+<div class="error404-description col-12 col-lg-12  pt-5">
+${properties.errortext @ context='html'}
+
+</div>
+</div>
+
+
+

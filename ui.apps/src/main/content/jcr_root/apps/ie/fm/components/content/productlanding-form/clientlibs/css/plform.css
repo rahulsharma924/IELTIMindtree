@@ -1,0 +1,50 @@
+.plTitle {
+	color: #d83a22;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 46px;
+}
+
+.plHeading {
+	color: #0e0f10;
+
+	font-weight: 700;
+	font-size: 31px;
+	line-height: 36px;
+	padding-bottom: 24px;
+	width:80%;
+}
+
+
+.getmycopy-block {
+	background-color: #fafbfb;
+	padding: 47px 0px;
+}
+
+.getmycopy-block .container {
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+.getmycopy-block label {
+	color: #0e0f10;
+}
+
+.saveDetails-btn {
+	background: #d83a22;
+	color: #ffffff;
+}
+.productImage{
+	height: 412px;
+}
+.enter-carrier-error-message {
+	color: var( --invertedColor);
+	margin-block: 0;
+	font-weight:var(--fontWeightMedium);
+	font-size:var(--fontSize12);
+	height: 16px;
+	width: 100%;
+	line-height: 18px;
+
+}

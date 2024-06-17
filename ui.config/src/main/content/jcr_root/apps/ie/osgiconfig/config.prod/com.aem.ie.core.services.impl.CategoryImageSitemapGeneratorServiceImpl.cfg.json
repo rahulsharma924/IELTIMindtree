@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "xmlPath":"/content/fm/sitemap_categoryimage.xml",
+  "categoryImageRootPath":"/content/dam/infinite-electronics/images/fairview-microwave/home-page-category"
+}

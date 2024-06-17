@@ -1,0 +1,238 @@
+ .white-card {
+    border: 1px solid var(--SearchIcon);
+    border-radius: 4px;
+    box-shadow: none;   
+    padding: 20px 24px;
+    position:relative;
+    width: 286px;
+    height: 302px;
+    margin-bottom: 24px;
+}
+
+.white-paper-main{
+    display: flex;
+    justify-content:center;
+    column-gap: 22px;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+.d-flex-row{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+}
+.view-pdf{
+    margin: 0;
+    padding: 0;
+}
+
+#view-pdf{
+    color:var(--secondaryBlack);
+}
+
+.pdf-icon-8{
+    padding-right: 8px;
+}
+
+.white-paper-main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.white-card .white-title p {
+    color:var(--primaryColor);
+    font-size:var(--fontSize18);
+    line-height:var(--baseLineHeight);
+    font-weight:var(--fontWeightBold);
+    min-height:52px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-bottom: 12px; 
+}
+
+.whitepaper-pdf a{
+    text-decoration: underline;
+}
+
+#WhitePaperInfo .white-card .white-title p {
+    word-spacing: -2px;
+}
+
+#WhitePaperInfo .article-view {
+    background:var(--secondaryColor);
+}
+
+#WhitePaperInfo #ResourceViewAll {
+    margin: 0 0 50px 0;
+}
+
+#WhitePaperInfo #ResourceDescription p {
+    margin-bottom: 24px;
+}
+
+#WhitePaperInfo #ResourceDescription p {
+    font-weight:var(--fontWeightSmall);
+    font-size:var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    color:var(--primaryColor);
+    margin-bottom: 34px;
+}
+
+#WhitePaperInfo .white-card .white-desc p {
+    margin-bottom: 34px;
+}
+
+.white-card .white-desc p {
+    color: var(--newsDateColor);
+    font-size:var(--fontSize14);
+    line-height:var(--lineHeight1and428);
+    font-weight: var(--fontWeightSmall);
+    margin-top:0;   
+    margin-bottom:29px;
+    display: -webkit-box;
+    -webkit-line-clamp:7;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    min-height: 143px;
+}
+
+.pdficon {
+    padding-right: 8px;
+}
+
+.white-card .cardbroucherLink .broucherButton:focus {
+    border:0;
+    outline:0;
+}
+
+.white-card .cardbroucherLink a:focus {
+    border:0;
+    outline:0;
+}
+
+.white-card .view-btn-link a {
+    color:var(--secondaryBlack);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-weight:var(--fontWeightNormal);
+    font-size:var(--baseFontSize);
+    line-height:var(--baseLineHeight);
+}
+
+.white-card .view-btn-link a img {
+    margin-right: 8px;
+}
+
+.white-paper-heading p {
+    color:var(--primaryColor);
+    font-size:var(--fontSize31);
+    font-weight:var(--fontWeightBold);
+    line-height:var(--lineHeightSmall);
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.whitepapersnew {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .white-papers {
+        padding: 0 35px;
+    }
+    .white-paper-main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 24px;
+    } 
+    .white-card {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+    .cardbroucherLink {
+        position: initial;
+        bottom: 21px;
+    }
+}
+
+@media only screen and (min-width:992px) { 
+    .view-btn-link {
+        height: 25px;
+    }
+    .white-paper-main {
+        padding: 0 30px 0 30px;
+    }
+}
+@media only screen and (min-width:576px)  and (max-width: 767px) {
+    .white-paper-main {
+        display: grid;
+        grid-template-columns:50% 50%;
+        padding: 0 15px 0 15px; 
+    }
+    .white-card {
+        margin: 0 0px 30px 0px;
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+    .cardbroucherLink {
+        position: initial;
+        bottom: 21px;
+    }	
+}
+@media only screen and (max-width:575px) {
+    .white-paper-main {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 0px;     
+    }
+    .white-card {
+        margin: 0 0px 30px 0px;
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+    .cardbroucherLink {
+        position: initial;
+        bottom: 21px;
+    }
+	.white-papers{
+        padding: 0 24px;
+    }
+}
+.resourecard {
+    max-width: 1010px;
+    margin: 0 auto;
+}
+.white-paper-main {
+    padding-bottom: 16px;
+}
+#technicalresouces_heading .servicesheader-headertext {
+    width: 100%;
+}
+#technicalresouces_heading .servicesheader-headertext p{
+    margin-bottom: 34px;
+}
+@media only screen and (max-width:575px) {
+    .white-card .white-title p {
+       min-height: auto;
+       font-size: var(--baseFontSize);
+    }
+    .white-card .cardbroucherLink .broucherButton {
+        font-size: .875rem;
+    }
+}
+

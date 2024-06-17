@@ -1,0 +1,40 @@
+.paginationjs {
+	margin-left: 5px;
+	margin-bottom: 24px;
+}
+.paginationjs .paginationjs-pages {
+	right: 23px;
+}
+.paginationjs .paginationjs-go-input > input[type="text"] {
+	font-weight: var(--fontWeightSmall);
+}
+.paginationjs .paginationjs-go-input, span.pageInfoText {
+	margin-left: 5px;
+	margin-left: 5px;
+}
+.paginationjs .paginationjs-go-input > input[type="text"]::-webkit-input-placeholder {
+	color: var(--primaryColor);
+}
+.paginationjs .paginationjs-go-input > input[type="text"]::-moz-placeholder {
+	color: var(--primaryColor);;
+}
+.paginationjs .paginationjs-go-input > input[type="text"]:-ms-input-placeholder {
+	color: var(--primaryColor);
+}
+.paginationjs .paginationjs-go-input > input[type="text"]:-o-input-placeholder {
+	color: var(--primaryColor);
+} 
+@media(max-width:480px) and (min-width:320px) {
+.newsList-block {
+	padding: 12px 12px;
+}
+div#pagination1 {
+	width: 100%; 
+}
+.paginationjs .paginationjs-go-input {
+	right: 60px;
+}
+.paginationjs .paginationjs-pages {
+	right: 0px;
+}
+}

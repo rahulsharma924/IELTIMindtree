@@ -1,0 +1,17 @@
+# identifying IP only by address and not by address + hash of user agent (which is by default)
+
+# The one below won't work - initcol would be appended and effectively previous initcal stays set
+#SecRuleUpdateActionById 901321 "initcol:ip=%{remote_addr}"
+# Instead pre-existing rule needs to be removed completely and a new one created containing new action:
+
+SecRuleRemoveById 901321
+SecAction \
+    "id:901322,\
+    phase:1,\
+    pass,\
+    t:none,\
+    nolog,\
+    ver:'OWASP_CRS/3.3.2',\
+    initcol:global=global,\
+    initcol:ip=%{remote_addr},\
+    setvar:'tx.real_ip=%{remote_addr}'"

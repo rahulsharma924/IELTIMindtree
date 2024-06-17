@@ -1,0 +1,2114 @@
+/* create account form css - preeti */
+#createaccount {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#createaccount.cmp-container .container.responsivegrid {
+  /* width: 100%; */
+  display: flex;
+}
+/* #createaccount.cmp-container .container.responsivegrid .createAccount {
+  width: 70%;
+} */
+#createaccount.cmp-container .container.responsivegrid .benefits {
+  /* width: 30%; */
+  /* margin-left: 126px; */
+  width: 35%;
+  margin-left: 1%;
+  margin-top: 184px;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper,
+.benefits .benefits-wrapper {
+  background: #fafbfb;
+  padding: 25px 26px 27px 30px;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper
+  h2,
+.benefits .benefits-wrapper h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper
+  p,
+.benefits .benefits-wrapper p,
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper
+  p
+  a,
+.benefits .benefits-wrapper p a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0e0f10;
+  margin: 0;
+}
+
+.benefits .benefits-wrapper p a:focus {
+  color: #9f0000;
+  text-decoration: underline;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper
+  p
+  a,
+.benefits .benefits-wrapper p a {
+  color: var(--invertedColor);
+  font-weight: var(--fontWeightMedium);
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper
+  p
+  a:hover,
+.benefits .benefits-wrapper p a:hover {
+  color: var(--invertedColor);
+  font-weight: var(--fontWeightBold);
+  text-decoration: underline;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper
+  p
+  a:hover,
+.benefits .benefits-wrapper p a:active {
+  color: var(--invertedColorFocus);
+  text-decoration: underline;
+  font-weight: var(--fontWeightBold);
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions,
+.benefits .benefits-descriptions {
+  margin: 10px 0 24px;
+  text-align: left;
+}
+#create-acc .benefits .benefits-descriptions{
+  margin: 27px 0 45px;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  div
+  p
+  i,
+.benefits .benefits-descriptions div p i,
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  div
+  p
+  img,
+.benefits .benefits-descriptions div p img {
+  font-size: 16px;
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  div
+  p
+  img,
+.benefits .benefits-descriptions div p img {
+  object-fit: contain;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  div,
+.benefits .benefits-descriptions div {
+  margin-bottom: 18px;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  div
+  p:last-child,
+.benefits .benefits-descriptions div p:last-child {
+  margin-left: 35px;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  p
+  b,
+.benefits .benefits-descriptions p b {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+#createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-descriptions
+  p,
+.benefits .benefits-descriptions p {
+  font-weight: 500;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+/* #createaccount .benefits {
+  display: none;
+} */
+#createaccount .cmp-form-text {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.select-selected:hover {
+  margin: 0;
+}
+/* #createaccount.cmp-container .cmp.cmp-text p {
+  margin-bottom: 17px;
+} */
+#createaccount.cmp-container .cmp.cmp-text .custom_form_title h1,
+#createaccount form.createAccount h1 {
+  /* margin: 0; */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 67px;
+  color: #000000;
+  text-align: left;
+}
+
+#createaccount.cmp-container .cmp.cmp-text,
+#createaccount.cmp-container .cmp.cmp-text .custom_form_desc,
+#createaccount form.createAccount p {
+  margin: 0;
+}
+#createaccount.cmp-container .cmp.cmp-text .custom_form_title h1,
+#createaccount form.createAccount h1 {
+  margin-top:5px;
+  color: #000000;
+  /* margin-bottom: 47px; */
+  /* margin-bottom: 17px; */
+  margin-bottom:35px;
+}
+#createaccount.cmp-container .cmp.cmp-text .custom_form_desc,
+#createaccount.cmp-container .cmp.cmp-text .custom_form_desc p,
+#createaccount form.createAccount,
+#createaccount form.createAccount .billingtext h3,
+#createaccount form.createAccount .billingaddressoption fieldset legend {
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+  margin: 0;
+  color: #000000;
+}
+#createaccount form.createAccount .contactpreferencesoptions fieldset legend {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0e0f10;
+}
+#createaccount form.createAccount .billingtext h3 {
+  margin-bottom: 22px;
+}
+
+#createaccount.cmp-container .cmp.cmp-text .custom_form_desc,
+#createaccount form.createAccount p {
+  margin-bottom: 18px;
+  width: 100%;
+}
+#createaccount form.createAccount .cmp-form-text p {
+  margin-bottom: 0;
+}
+
+#createaccount form.createAccount .email,
+#createaccount form.createAccount .accemail,
+#createaccount form.createAccount .acccompany,
+#createaccount form.createAccount .accbillingcompany,
+#createaccount form.createAccount .accaddressone,
+#createaccount form.createAccount .accaddresstwo {
+  margin: 0;
+  text-align: left;
+}
+#createaccount form.createAccount .email .cmp-form-text label,
+#createaccount form.createAccount .accemail label,
+#createaccount form.createAccount .acccompany label,
+#createaccount form.createAccount .accbillingcompany label,
+#createaccount form.createAccount .accaddressone label,
+#createaccount form.createAccount .accaddresstwo label {
+  margin-bottom: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0e0f10;
+  background: #ffffff;
+  /* text-transform: capitalize; */
+  text-transform: none;
+}
+#createaccount form.createAccount .email .cmp-form-text input,
+#createaccount form.createAccount .accemail .cmp-form-text input,
+#createaccount form.createAccount .acccompany .cmp-form-text input,
+#createaccount form.createAccount .accbillingcompany .cmp-form-text input,
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  .cmp-form-options__field.custom-select.btn.dropdown-toggle,
+#createaccount form.createAccount .accaddressone .cmp-form-text input,
+#createaccount form.createAccount .accaddresstwo .cmp-form-text input {
+  padding: 10px 12px;
+  background: #ffffff;
+  width: 597px;
+  height: 44px;
+  border: 1px solid #bbc1c4;
+  /* margin-bottom: 38px; */
+  /* margin-bottom: 17px; */
+}
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  .cmp-form-options__field.custom-select.btn.dropdown-toggle {
+  text-align: left;
+}
+#createaccount form.createAccount .countryoptions fieldset .select-selected,
+#createaccount form.createAccount .countryoptions fieldset .select-items,
+#createaccount form.createAccount .stateoptions fieldset .select-selected,
+#createaccount form.createAccount .stateoptions fieldset .select-items {
+  display: none;
+}
+
+#createaccount form.createAccount .industryoptions fieldset .select-selected{
+  display: none;
+}
+#createaccount form.createAccount .email .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accemail .cmp-form-text input::placeholder,
+#createaccount form.createAccount .acccompany .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accbillingcompany .cmp-form-text input::placeholder,
+#createaccount form.createAccount .countryoptions fieldset.cmp-form-options.cmp-form-options--drop-down .cmp-form-options__field.custom-select.btn.dropdown-toggle::placeholder,
+#createaccount form.createAccount .accaddressone .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accaddresstwo .cmp-form-text input::placeholder,
+#createaccount form.createAccount .firstname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accfirstname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accbillingfirstname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .lastname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .acclastname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accbillinglastname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .phonenumber .cmp-form-text input::placeholder,
+#createaccount form.createAccount .accphonenumber .cmp-form-text input::placeholder,
+#createaccount form.createAccount .cmp-form-text input::placeholder,
+#createaccount form.createAccount .industryoptions fieldset .select-selected,
+/* #createaccount form.createAccount .countryoptions fieldset .select-selected, */
+#createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field,
+#createAccounts #form-id .form-group select::placeholder,
+#createAccounts #form-id .form-group select option,
+#createaccount form.createAccount .stateoptions fieldset .dropdown .cmp-form-options__field,
+#createaccount form.createAccount .confirmpassword .cmp-form-text input::placeholder,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text input::placeholder,
+#createaccount form.createAccount .acccityname .cmp-form-text input::placeholder,
+#createaccount form.createAccount .acczipcode .cmp-form-text input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #879096;
+  background: #ffffff;
+}
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset
+  .dropdown
+  .cmp-form-options__field {
+  text-align: left;
+}
+#createaccount form.createAccount .industryoptions fieldset .select-selected,
+/* #createaccount form.createAccount .countryoptions fieldset .select-selected, */
+#createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field {
+  /* width: 593px; */
+  width: 598px;
+  height: 40px;
+}
+
+#createaccount form.createAccount .industryoptions fieldset .select-selected:hover,
+/* #createaccount form.createAccount .countryoptions fieldset .select-selected:hover, */
+#createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field:hover,
+#createaccount form.createAccount .stateoptions fieldset .select-selected:hover,
+#createaccount form.createAccount .stateoptions fieldset .dropdown .cmp-form-options__field:hover {
+  margin: 0;
+}
+
+#createaccount form.createAccount .email .cmp-form-text p,
+#createaccount form.createAccount .accemail .cmp-form-text p,
+#createaccount form.createAccount .acccompany .cmp-form-text p,
+#createaccount form.createAccount .accbillingcompany .cmp-form-text p,
+#createaccount form.createAccount .accaddressone .cmp-form-text p,
+#createaccount form.createAccount .accaddresstwo .cmp-form-text p,
+#createaccount form.createAccount .firstname .cmp-form-text p,
+/* #createaccount form.createAccount .accfirstname .cmp-form-text, */
+#createaccount form.createAccount .accbillingfirstname .cmp-form-text p,
+#createaccount form.createAccount .lastname .cmp-form-text p,
+#createaccount form.createAccount .acclastname .cmp-form-text,
+#createaccount form.createAccount .accbillinglastname .cmp-form-text p,
+#createaccount form.createAccount .phonenumber .cmp-form-text p,
+#createaccount form.createAccount .shippingphoneno .cmp-form-text p,
+#createaccount form.createAccount .confirmpassword .cmp-form-text p,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text,
+#createaccount form.createAccount .acccityname .cmp-form-text,
+#createaccount form.createAccount .acczipcode .cmp-form-text,
+#createaccount form.createAccount .accenterpassword .cmp-form-text p,
+#createaccount form.createAccount .accenterpassword .cmp-form-text ul li,
+#createAccounts #form-id .form-group .dropdown p,
+#createaccount form.createAccount .stateoptions fieldset .dropdown p,
+#createaccount form.createAccount .countryoptions fieldset .dropdown p,
+#createaccount form.createAccount .acczipcode .cmp-form-text p.zipcode-validation-msg {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+#createaccount form.createAccount .acczipcode .cmp-form-text p.zipcode-validation-msg {
+  color: #FF0000;
+}
+#createaccount form.createAccount .accemail .cmp-form-text p.mailmessage {
+  display: block;
+}
+#createaccount form.createAccount .accenterpassword .cmp-form-text {
+  margin-bottom: 0;
+  position: relative;
+}
+#createaccount form.createAccount .accenterpassword .cmp-form-text ul li {
+  color: #0e0f10;
+  list-style-position: inside;list-style: disc;
+}
+#createaccount form.createAccount .accenterpassword .cmp-form-text ul {
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 7px;
+}
+#createaccount
+  form.createAccount
+  .accenterpassword
+  .cmp-form-text
+  ul
+  li::marker {
+  /* content: "\2022"; */
+  color: #0e0f10;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+#createaccount form.createAccount .accenterpassword .cmp-form-text .fa-thin,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text .fa-thin {
+  position: absolute;
+  /* top: 26%; */
+  top: 44px;
+  right: 0;
+  cursor: pointer;
+}
+#createaccount form.createAccount .custompasswordone .Accconfirmpassword .cmp-form-text .fa-thin {
+  /* top: 54%; */
+  /* right: 41px; */
+  top: 34px;
+}
+#createaccount
+  form.createAccount
+  .accenterpassword
+  .cmp-form-text
+  .fa-thin.fa-eye,
+#createaccount
+  form.createAccount
+  .accenterpassword
+  .cmp-form-text
+  .fa-thin.fa-eye-slash,
+#createaccount
+  form.createAccount
+  .Accconfirmpassword
+  .cmp-form-text
+  .fa-thin.fa-eye,
+#createaccount
+  form.createAccount
+  .Accconfirmpassword
+  .cmp-form-text
+  .fa-thin.fa-eye-slash {
+  font-size: 16px;
+  width: 16px;
+  height: 20px;
+  margin-right: 16px;
+ /* font-family: "Font Awesome 6 Pro"; */
+  font-weight: 400;
+  font-style: normal;
+}
+/* #createaccount form.createAccount p  {
+  margin: 0;
+} */
+
+#createaccount form.createAccount .email .cmp-form-text input,
+#createaccount form.createAccount .accemail .cmp-form-text input,
+#createaccount form.createAccount .acccompany .cmp-form-text input,
+#createaccount form.createAccount .accbillingcompany .cmp-form-text input,
+#createaccount form.createAccount .countryoptions fieldset.cmp-form-options.cmp-form-options--drop-down .cmp-form-options__field.custom-select.btn.dropdown-toggle,
+#createaccount form.createAccount .accaddressone .cmp-form-text input,
+#createaccount form.createAccount .accaddresstwo .cmp-form-text input,
+#createaccount form.createAccount .firstname .cmp-form-text input,
+#createaccount form.createAccount .accfirstname .cmp-form-text input,
+#createaccount form.createAccount .accbillingfirstname .cmp-form-text input,
+#createaccount form.createAccount .lastname .cmp-form-text input,
+#createaccount form.createAccount .acclastname .cmp-form-text input,
+#createaccount form.createAccount .accbillinglastname .cmp-form-text input,
+#createaccount form.createAccount .phonenumber .cmp-form-text input,
+#createaccount form.createAccount .accphonenumber .cmp-form-text input,
+#createaccount form.createAccount .shippingphoneno .cmp-form-text input,
+#createaccount form.createAccount .industryoptions fieldset .select-selected,
+/* #createaccount form.createAccount .countryoptions fieldset .select-selected, */
+#createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field,
+#createAccounts #form-id .form-group select,
+#createAccounts #form-id .form-group select option,
+#createaccount form.createAccount .confirmpassword .cmp-form-text input,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text input,
+#createaccount form.createAccount .acccityname .cmp-form-text input,
+#createaccount form.createAccount .accenterpassword .cmp-form-text input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondaryBlack);
+  background:#fff;
+  border: 1px solid #bbc1c4;
+  height: 44px;
+  /* text-transform: capitalize; */
+  text-transform: none;
+  position: relative;
+  left: 0;
+  top: 0;
+
+}
+#createAccounts #form-id .form-group select{
+  color: var(--secondaryBlack);
+}
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text input {
+  text-transform: none;
+}
+
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .custom-select,
+#createAccounts #form-id .form-group select {
+  text-align: left;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .custom-select::after,
+.select-selected:after,
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset
+  .dropdown
+  .cmp-form-options__field::after,
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset
+  .dropdown
+  .cmp-form-options__field::after,
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  .cmp-form-options__field.custom-select.btn.dropdown-toggle::after,
+#createAccounts #form-id .form-group select::after {
+  float: right;
+  border: 8px solid #000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 0;
+  margin-top: 5px;
+}
+.dropdown-menu.show {
+  width: 100%;
+  border: 1px solid #bbc1c4;
+}
+
+#createaccount form.createAccount .industryoptions fieldset .select-items,
+/* #createaccount form.createAccount .countryoptions fieldset .select-items, */
+#createaccount form.createAccount .countryoptions fieldset .dropdown .dropdown-menu.countryList.show {
+  width: 598px;
+  margin-top: 1px;
+}
+
+/* #createaccount form.createAccount .countryoptions fieldset .select-items div, */
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset
+  .dropdown
+  .dropdown-menu.countryList.show {
+  height: auto;
+  width: 598px;
+}
+
+#createaccount form.createAccount .firstname,
+#createaccount form.createAccount .accfirstname,
+#createaccount form.createAccount .accbillingfirstname,
+#createaccount form.createAccount .lastname,
+#createaccount form.createAccount .acclastname,
+#createaccount form.createAccount .accbillinglastname {
+  /* width: 40%; */
+  width: 50%;
+  display: inline-block;
+  max-width: 308px;
+  /* height: 44px; */
+  /* margin-bottom: 16px; */
+}
+
+#createaccount form.createAccount .firstname .cmp-form-text input,
+#createaccount form.createAccount .accfirstname .cmp-form-text input,
+#createaccount form.createAccount .accbillingfirstname .cmp-form-text input,
+#createaccount form.createAccount .lastname .cmp-form-text input,
+#createaccount form.createAccount .acclastname .cmp-form-text input,
+#createaccount form.createAccount .accbillinglastname .cmp-form-text input {
+  width: 290px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #bbc1c4;
+  color: var(--secondaryBlack);
+}
+#createaccount form.createAccount .acclastname .cmp-form-text input{
+  width: 100%;
+}
+#createaccount form.createAccount .firstname .cmp-form-text .custom_form_label,
+#createaccount form.createAccount .accfirstname .cmp-form-text label,
+#createaccount form.createAccount .accbillingfirstname .cmp-form-text label,
+#createaccount form.createAccount .lastname .cmp-form-text .custom_form_label,
+#createaccount form.createAccount .acclastname .cmp-form-text label,
+#createaccount form.createAccount .accbillinglastname .cmp-form-text label,
+#createaccount
+  form.createAccount
+  .phonenumber
+  .cmp-form-text
+  .custom_form_label,
+#createaccount form.createAccount .accphonenumber .cmp-form-text label,
+#createaccount form.createAccount .shippingphoneno .cmp-form-text label,
+#createaccount form.createAccount .industryoptions fieldset label,
+#createaccount form.createAccount .countryoptions fieldset label,
+#createaccount form.createAccount .newpassword .cmp-form-text label,
+#createaccount form.createAccount .accenterpassword .cmp-form-text label,
+#createaccount form.createAccount .confirmpassword .cmp-form-text label,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text label,
+#createaccount form.createAccount .acccityname .cmp-form-text label,
+#createaccount form.createAccount .options fieldset label,
+#createaccount form.createAccount .stateoptions fieldset label,
+#createaccount form.createAccount .acczipcode .cmp-form-text label,
+#createaccount form.createAccount .billingaddressoption fieldset label {
+  margin-bottom: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background: #ffffff;
+  color: #0e0f10;
+  /* text-transform: capitalize; */
+  text-transform: none;
+}
+#createaccount form.createAccount .phonenumber .cmp-form-text input,
+#createaccount form.createAccount .accphonenumber .cmp-form-text input,
+#createaccount form.createAccount .shippingphoneno .cmp-form-text input,
+#createaccount form.createAccount .industryoptions fieldset .select-selected,
+/* #createaccount form.createAccount .countryoptions fieldset .select-selected, */
+#createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field,
+#createaccount form.createAccount .newpassword .cmp-form-text input,
+#createaccount form.createAccount .accenterpassword .cmp-form-text input,
+#createaccount form.createAccount .confirmpassword .cmp-form-text input,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text input {
+  padding: 12px;
+}
+#createaccount form.createAccount .newpassword .cmp-form-text input,
+#createaccount form.createAccount .accenterpassword .cmp-form-text input,
+#createaccount form.createAccount .confirmpassword .cmp-form-text input,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text input,
+#createaccount form.createAccount .accphonenumber .cmp-form-text input,
+#createaccount form.createAccount .shippingphoneno .cmp-form-text input {
+  width: 598px;
+  height: 44px;
+  border: 1px solid #bbc1c4;
+  background: #ffffff;
+}
+
+#createaccount
+  form.createAccount
+  .accenterpassword
+  .cmp-form-text
+  p.custom_form_error_msg,
+.custom_form_error_msg{
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--fontSize20);
+
+}
+
+input#Addressone, input#Addresstwo{
+  color: black;
+}
+#createaccount
+  form.createAccount
+  .accenterpassword
+  .cmp-form-text
+  p.custom_form_error_msg:last-child {
+  margin-bottom: 17px;
+}
+#createaccount form.createAccount .phonenumber,
+#createaccount form.createAccount .accphonenumber,
+#createaccount form.createAccount .shippingphoneno {
+  /* margin-bottom: 44px; */
+  /* margin-bottom: 19px; */
+  margin: 0;
+}
+#createaccount form.createAccount .phonenumber .cmp-form-text,
+#createaccount form.createAccount .accphonenumber .cmp-form-text,
+#createaccount form.createAccount .shippingphoneno .cmp-form-text {
+  margin-bottom: 11px;
+}
+#createaccount
+  form.createAccount
+  .industryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down,
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down {
+  margin: 0;
+  margin-bottom: 17px;
+  display: block;
+}
+#createaccount form.createAccount .confirmpassword .cmp-form-text,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text {
+  margin-bottom: 57px;
+  position: relative;
+}
+#createaccount form.createAccount .acccityname .cmp-form-text,
+#createaccount form.createAccount .options fieldset,
+#createaccount form.createAccount .stateoptions fieldset,
+#createaccount form.createAccount .acczipcode .cmp-form-text {
+  margin: 0;
+  margin-bottom: 61px;
+}
+#createaccount form.createAccount .acccityname .cmp-form-text input,
+#createaccount form.createAccount .options fieldset .select-selected,
+#createaccount form.createAccount .stateoptions fieldset .select-selected,
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset
+  .dropdown
+  .cmp-form-options__field,
+#createaccount form.createAccount .acczipcode .cmp-form-text input {
+  width: 187px;
+  height: 44px;
+  padding: 10px;
+  background: #ffffff;
+  color:#879096;
+  border: 1px solid #bbc1c4;
+  border-radius: 4px;
+  color: var(--secondaryBlack);
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-right: 25px;
+}
+#createAccounts #form-id .form-group select {
+  padding-right: 25px;
+}
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset
+  .dropdown
+  .cmp-form-options__field {
+  text-align: left;
+}
+#createaccount form.createAccount .options fieldset .select-items,
+#createaccount form.createAccount .stateoptions fieldset .select-items {
+  width: 187px;
+  background: #ffffff;
+  color: #0e0f10;
+  border: 1px solid #bbc1c4;
+  border-radius: 4px;
+  margin-top: 1px;
+  height: auto;
+}
+#createaccount form.createAccount .options fieldset .select-items div,
+#createaccount form.createAccount .stateoptions fieldset .select-items div {
+  height: 2.25em;
+}
+#createaccount form.createAccount .acccityname {
+  /* width: 25%; */
+  width: 31%;
+  display: inline-block;
+  max-width: 187px;
+}
+#createaccount form.createAccount .options,
+#createaccount form.createAccount .stateoptions {
+  /* width: 24%; */
+  width: 31%;
+  margin: 0 18px;
+  display: inline-block;
+  /* max-width: 220px; */
+  max-width: 187px;
+}
+#createaccount form.createAccount .acczipcode {
+  /* width: 24%; */
+  width: 30%;
+  display: inline-block;
+  max-width: 187px;
+}
+#createaccount form.createAccount .custom_form_container {
+  justify-content: left;
+}
+#createaccount form.createAccount .billingaddressoption fieldset legend,
+#createaccount form.createAccount .contactpreferencesoptions fieldset legend {
+  display: block;
+}
+#createaccount form.createAccount .billingaddressoption fieldset label {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+#createaccount form.createAccount .contactpreferencesoptions fieldset label {
+  margin: 0;
+  margin-bottom: 12px;
+  height: auto;
+}
+#createaccount
+  form.createAccount
+  .contactpreferencesoptions
+  fieldset
+  label:last-child {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#createaccount form.createAccount .billingaddressoption fieldset input,
+#createaccount form.createAccount .contactpreferencesoptions fieldset input {
+  margin: 0;
+  text-align: left;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+#createaccount
+  form.createAccount
+  .contactpreferencesoptions
+  fieldset
+  input:checked {
+  background: #2563eb;
+  border: 1.5px solid #2563eb;
+}
+#createaccount form.createAccount .billingaddressoption fieldset span,
+#createaccount form.createAccount .contactpreferencesoptions fieldset span {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#createaccount
+  form.createAccount
+  .billingaddressoption
+  fieldset
+  input[type="checkbox"],
+#createaccount
+  form.createAccount
+  .billingaddressoption
+  fieldset
+  input[type="radio"] {
+  background: #2563eb;
+  border: 1.5px solid #2563eb;
+  border-radius: 3px;
+  color: #ffffff;
+}
+#createaccount
+  form.createAccount
+  .billingaddressoption
+  fieldset
+  input[type="checkbox"]:focus-visible {
+  outline: 1.5px solid #2563eb;
+}
+/* #createaccount form.createAccount .billingaddressoption fieldset input:checked ~ .cmp-form-options__field-description {
+  background: #2563EB;
+  border: 1.5px solid #2563EB;
+  border-radius: 3px;
+  color: #ffffff;
+} */
+#createaccount form.createAccount .accaddress {
+  margin: 25px auto 50px;
+  text-align: center;
+  color: #005c90;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  max-width: 590px;
+}
+#createaccount form.createAccount .contactpreferencesoptions fieldset legend {
+  margin: 2px 0 18px;
+}
+#createaccount form.createAccount .createaccountbutton button.cmp-button {
+  margin: 19px 0 20px;
+  padding: 14px 93px 17px;
+  /* width: 100%; */
+  /* max-width: 587px; */
+  /* max-width: 100%; */
+  width: 587px;
+  min-height: 52px;
+  /* background: #879096; */
+  /* border: 1px solid #879096; */
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: all;
+  background: var(--invertedColor);
+  border: 1px solid var(--invertedColor);
+}
+#createaccount form.createAccount .createaccountbutton button.cmp-button:hover {
+  background: var(--invertedColorHover);
+  border: 1px solid var(--invertedColor);
+  outline: none;
+}
+#createaccount form.createAccount .createaccountbutton button.cmp-button:active,
+#createaccount
+  form.createAccount
+  .createaccountbutton
+  button.cmp-button:visited,
+#createaccount form.createAccount .createaccountbutton button.cmp-button:focus {
+  background: var(--invertedColor);
+  border: 1px solid var(--invertedColor);
+  outline: 2px solid var(--blueColorLight);
+  outline-offset:1px;
+ 
+}
+#createaccount form.createAccount .createaccountbutton button.cmp-button:focus-visible
+/* #createaccount form.createAccount .createaccountbutton button.cmp-button:focus  */ {
+  outline: 2px solid var(--blueColorLight);
+  /* outline: none; */
+  border: none;
+  /* background: #D83A22; */
+}
+#createaccount
+  form.createAccount
+  .createaccountbutton
+  button.cmp-button.disabled,
+#createaccount
+  form.createAccount
+  .createaccountbutton
+  button.cmp-button:disabled,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.add:disabled {
+  background: #879096;
+  border: 1px solid #879096;
+  pointer-events: none;
+}
+#createaccount form.createAccount .createaccountbutton button span {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+#createaccount form.createAccount .createaccounttext {
+  margin: 0 auto;
+  margin-bottom: 68px;
+  text-align: center;
+}
+#createaccount form.createAccount .createaccounttext p,
+#createaccount form.createAccount .createaccounttext p a,
+#createaccount form.createAccount .createaccounttext a {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0e0f10;
+}
+#createaccount form.createAccount .createaccounttext p a,
+#createaccount form.createAccount .createaccounttext a {
+  color: #005c90;
+  font-weight: 600;
+}
+#createaccount form.createAccount .createaccounttext p a:hover,
+#createaccount form.createAccount .createaccounttext a:hover {
+  font-weight: 700;
+}
+#createaccount form.createAccount .createaccounttext p a:active,
+#createaccount form.createAccount .createaccounttext a:active {
+  color: #002a42;
+}
+#createaccount form.createAccount .createaccounttext div {
+  width: 587px;
+  text-align: center;
+}
+#createaccount
+  form.createAccount
+  .accbillingfirstname
+  .cmp-form-text
+  input.cmp-form-text__text,
+#createaccount
+  form.createAccount
+  .accbillinglastname
+  .cmp-form-text
+  input.cmp-form-text__text {
+  width: 290px;
+}
+/* modal form popup css */
+#createaccount form.createAccount .accaddress .modal-dialog,
+.modal-dialog {
+  max-width: 800px;
+}
+#createaccount form.createAccount .accaddress button.form-btn {
+  background: transparent;
+  border: none;
+  color: #005c90;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#createaccount form.createAccount .accaddress button.form-btn:focus,
+#createaccount form.createAccount .accaddress button.form-btn:focus-visible {
+  border: none;
+  outline: none;
+}
+#createaccount form.createAccount .accaddress button.form-btn:hover {
+  color: #0e0f10;
+  text-decoration: underline;
+}
+#createaccount form.createAccount .accaddress button.form-btn:visited {
+  color: #000000;
+  text-decoration: underline;
+}
+#createaccount form.createAccount .accaddress .modal-header,
+.modal-header {
+  padding: 26px 24px 22px;
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #e5e7eb;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid #e5e7eb;
+}
+#createaccount form.createAccount .accaddress .modal-title,
+.modal-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: #0e0f10;
+}
+#createaccount form.createAccount .accaddress .modal-header .close,
+.modal-header .close,
+#createaccount form.createAccount .accaddress .modal-header .close span,
+.modal-header .close span {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 33px;
+  color: #000000;
+  opacity: 1;
+}
+#createaccount form.createAccount .accaddress .modal-header .close:focus,
+.modal-header .close:focus,
+#createaccount form.createAccount .accaddress .modal-header .close span:focus,
+.modal-header .close span:focus,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-header
+  .close:focus-visible,
+.modal-header .close:focus-visible,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-header
+  .close
+  span:focus-visible,
+.modal-header .close span:focus-visible {
+  border: none;
+  outline: none;
+}
+#createaccount form.createAccount .accaddress .modal-body,
+.modal-body {
+  /* padding: 65px 40px 12px; */
+  padding: 0px 40px 12px;
+}
+#createaccount form.createAccount .accaddress .modal-body .radio-btn {
+  text-align: left;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .form-check-inline
+  .form-check-input,
+.form-check-inline .form-check-input {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #0e0f10;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .form-check-inline
+  .form-check-label,
+.form-check-inline .form-check-label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 20px;
+}
+#createaccount form.createAccount .accaddress .modal-content h2.modal-heading {
+  /* margin: 30px 0 8px; */
+  margin: 27px 0 8px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-row
+  .col:first-child,
+#createAccounts #form-id .form-row .col:first-child {
+  /* margin-left: 0; */
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-row
+  .col:last-child,
+#createAccounts #form-id .form-row .col:last-child {
+  padding-left: 9px;
+  /* margin-right: 0; */
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-row,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-group,
+#createAccounts #form-id .form-row,
+#createAccounts #form-id .form-group {
+  margin-bottom: 17px;
+}
+/* #createaccount form.createAccount .accaddress .modal-content .modal-body .form-group {
+  margin-bottom: 20px;
+} */
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-row
+  .col,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-group,
+#createAccounts #form-id .form-row .col,
+#createAccounts #form-id .form-group {
+  text-align: left;
+  position: relative;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-row
+  .col
+  label,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-group
+  label,
+#createAccounts #form-id .form-row .col label,
+#createAccounts #form-id .form-group label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0e0f10;
+  text-align: left;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-group
+  span,
+#createaccount
+  form.createAccount
+  .industryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  span.industrydropdown,
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  span,
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  span {
+  height: 0;
+  width: 0;
+  /* color: #000; */
+  display: inline-block;
+  background: none;
+  border: 8px solid #000;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* bottom: 0; */
+  top: 70%;
+  /* left: 0; */
+  right: 2%;
+  cursor: pointer;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-group
+  span.up {
+  transform: rotate(180deg);
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-group
+  span.statedropdown {
+  right: 5%;
+}
+#createaccount
+  form.createAccount
+  .industryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  span.industrydropdown {
+  right: 9%;
+}
+#createaccount
+  form.createAccount
+  .countryoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  span {
+  right: 10%;
+}
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  span {
+  top: 72%;
+  right: 7%;
+}
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  .select-selected:after,
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  .select-arrow-active:after {
+  visibility: hidden;
+}
+#createaccount
+  form.createAccount
+  .stateoptions
+  fieldset.cmp-form-options.cmp-form-options--drop-down
+  .select-selected:hover:after {
+  background: none;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-control,
+.form-control,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .custom-select,
+.custom-select,
+.form-control,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-control {
+  padding: 12px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  max-height: 44px;
+}
+.form-control{
+  color: var(--secondaryBlack);
+}
+#createaccount form.createAccount .accaddress .modal-content .modal-body p,
+#createaccount form.createAccount .accaddress .modal-content .modal-body p,
+#createAccounts #form-id .form-row .col p,
+#createAccounts #form-id .form-group p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fontSize14);
+  line-height: 20px;
+  margin-bottom: 0;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .custom-select,
+.custom-select,
+.form-control,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-control,
+#createAccounts #form-id .form-group select {
+  height: 44px;
+  cursor: pointer;
+}
+#createAccounts #form-id .form-group select {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-control::placeholder,
+.form-control::placeholder,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .custom-select::placeholder,
+.custom-select::placeholder,
+.form-control::placeholder,
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-body
+  .form-control::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--baseFontSize);
+  line-height: 20px;
+  color: #879096;
+}
+#createaccount form.createAccount .accaddress .modal-content .modal-footer {
+  background: #fafbfb;
+  box-shadow: 0px -1px 0px #e5e7eb;
+  border-radius: 0px 0px 8px 8px;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button:first-child {
+  margin-right: 6px;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button:last-child {
+  margin-left: 6px;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button {
+  padding: 14px 13px;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.cancel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0e0f10;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #bbc1c4;
+  /* padding: 14px 13px; */
+  padding: 12px 13px;
+  /* max-width: 87px; */
+  max-height: 44px;
+  border-radius: 4px;
+  text-align: center;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.add {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background: var(--invertedColor);
+  border-radius: 4px;
+  padding: 12px 29px;
+  /* max-width: 87px; */
+  max-height: 44px;
+  border-radius: 4px;
+  text-align: center;
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.add:hover {
+  background: var(--invertedColorHover);
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.add:visited {
+  background: var(--invertedColorVisited);
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.add:focus {
+  background: var(--invertedColor);
+  border: 2px solid var(--blueColorLight);
+}
+#createaccount
+  form.createAccount
+  .accaddress
+  .modal-content
+  .modal-footer
+  button.btn.add:disabled {
+  background: #879096;
+  border: 1px solid #879096;
+  pointer-events: none;
+}
+input::-ms-reveal {
+  display: none;
+}
+#createaccount
+  form.createAccount
+  .industryoptions
+  fieldset
+  .select-selected:after {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+  margin: 0;
+  margin-top: 5px;
+  mask: none;
+  -webkit-mask: none;
+}
+#createaccount form.createAccount .countryoptions fieldset select::-ms-expand {
+  display: none;
+}
+
+#createaccount form.createAccount .countryoptions fieldset .dropdown,
+#createaccount form.createAccount .stateoptions fieldset .dropdown,
+#createAccounts #form-id .form-group .dropdown {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  /* min-width: 15ch; */
+  max-width: 598px;
+  /* border: 1px solid var(--select-border); */
+  /* border-radius: 0.25em; */
+  /* padding: 0.25em 0.5em; */
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+}
+#createAccounts #form-id .form-group .dropdown {
+  max-width: 100%;
+}
+/* #createaccount form.createAccount .stateoptions fieldset .dropdown {
+  max-width: 187px;
+} */
+#createaccount form.createAccount .countryoptions fieldset .dropdown::after,
+#createaccount form.createAccount .stateoptions fieldset .dropdown::after,
+#createAccounts #form-id .form-group .dropdown::after {
+  content: "";
+  justify-self: end;
+  width: 10px;
+  height: 8px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+  background-color: var(--select-arrow);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position-y: center;
+  top: 20px;
+  right: 12px;
+  pointer-events: none;
+}
+#createaccount form.createAccount input:focus-visible,
+/* #createaccount form.createAccount input:focus, */
+#createaccount form.createAccount select:focus-visible,
+#createaccount form.createAccount select:focus,
+#createaccount form.createAccount .industryoptions fieldset .select-selected:focus,
+#createaccount form.createAccount .industryoptions fieldset .select-selected:focus-visible {
+  outline: 2px solid var(--blueColorLight);
+}
+
+/* create account recaptcha */
+#createaccount .recaptcha .col-md-12.test_class {
+  padding-left: 0;
+}
+#createaccount .recaptcha .col-md-12.test_class.validate_border {
+  padding: 9px;
+}
+#createaccount
+  .recaptcha
+  .col-md-12.test_class
+  .g-recaptcha
+  iframe
+  body
+  .rc-anchor-aria-status
+  .rc-anchor-error-msg-container
+  .rc-anchor-error-msg {
+  font-size: 11px;
+}
+#createaccount
+  .recaptcha
+  .col-md-12.test_class
+  .g-recaptcha
+  iframe
+  body
+  #rc-anchor-container
+  .rc-anchor-normal.rc-anchor-error
+  .rc-anchor-error-msg-container {
+  width: 100%;
+}
+#createaccount form.createAccount #industrymsg{
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1280px) {
+  #createaccount.cmp-container .benefits-wrapper {
+    margin-top: 104px;
+  }
+  #createaccount.cmp-container
+  .container.responsivegrid
+  .benefits
+  .benefits-wrapper,
+.benefits .benefits-wrapper {
+ margin-right: 20px;
+}
+}
+
+
+@media screen and (max-width: 1240px) {
+  #createaccount form.createAccount .firstname,
+  #createaccount form.createAccount .accfirstname,
+  #createaccount form.createAccount .accbillingfirstname,
+  #createaccount form.createAccount .lastname,
+  #createaccount form.createAccount .acclastname,
+  #createaccount form.createAccount .accbillinglastname {
+    width: 597px;
+    max-width: 100%;
+    display: block;
+  }
+  #createaccount form.createAccount .firstname .cmp-form-text input,
+  #createaccount form.createAccount .accfirstname .cmp-form-text input,
+  #createaccount
+    form.createAccount
+    .accbillingfirstname
+    .cmp-form-text
+    input.cmp-form-text__text,
+  #createaccount form.createAccount .lastname .cmp-form-text input,
+  #createaccount form.createAccount .acclastname .cmp-form-text input,
+  #createaccount
+    form.createAccount
+    .accbillinglastname
+    .cmp-form-text
+    input.cmp-form-text__text {
+    width: 597px;
+  }
+
+  
+  #createaccount form.createAccount .acccityname .cmp-form-text,
+  #createaccount form.createAccount .options fieldset,
+  #createaccount form.createAccount .stateoptions fieldset {
+    margin: 0;
+    margin-bottom: 17px;
+  }
+  #createaccount form.createAccount .stateoptions{width: 33.3%;}
+  #createaccount form.createAccount .options, #createaccount form.createAccount .stateoptions fieldset .dropdown .cmp-form-options__field {
+    width:100%;
+    padding: 0 18px;
+    display: inline-block;
+  
+}
+
+#createaccount form.createAccount .acccityname .cmp-form-text input {
+    width:100%;
+    display: inline-block;
+  
+}
+#createaccount form.createAccount .acczipcode,#createaccount form.createAccount .acccityname{
+  width: 33.3%;
+}
+#createaccount form.createAccount .acczipcode .cmp-form-text input {
+    width:100%;
+    display: inline-block;
+   
+}
+#createaccount form.createAccount .countryoptions fieldset .dropdown, #createaccount form.createAccount .stateoptions fieldset .dropdown, #createAccounts #form-id .form-group .dropdown{
+  max-width:100%;
+}
+
+#create-acc .benefits-wrapper{
+  margin-top: 10px;
+}
+  #createaccount.cmp-container .container.responsivegrid {
+    display: block;
+    width: 100%;
+  }
+  #createaccount.cmp-container .container.responsivegrid .benefits,
+  #createaccount.cmp-container .benefits {
+    /* width: 70%; */
+    width: 587px;
+    max-width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 68px;
+  }
+  #createaccount.cmp-container .container.responsivegrid .createAccount {
+    /* width: 100%; */
+    display: block;
+  }
+  #createaccount.cmp-container
+    .container.responsivegrid
+    .benefits
+    .benefits-wrapper,
+  .benefits .benefits-wrapper {
+    margin-top: 0;
+  }
+  #createaccount form.createAccount .accenterpassword .cmp-form-text,#createaccount form.createAccount .Accconfirmpassword .cmp-form-text{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  
+ 
+  /*#createaccount form.createAccount .accenterpassword .cmp-form-text ul{padding-left: 10px;}*/
+
+  /* #createaccount form.createAccount .industryoptions fieldset .cmp-form-options__field.cmp-form-options__field--drop-down {
+    display: block;
+  } */
+  .cmp-form-text__text.personalinfo_input,
+  .industryoptions .cmp-form-options__field,
+  .industryoptions .cmp-form-options .select-selected {
+    display: block;
+  }
+  #createaccount
+    form.createAccount
+    .createaccountbutton
+    button.cmp-button:hover,
+  #createaccount
+    form.createAccount
+    .createaccountbutton
+    button.cmp-button:focus-visible {
+    /* outline: 2px solid #3144D8; */
+    background: var(--invertedColor);
+    border-radius: 4px;
+  }
+  #createaccount
+    form.createAccount
+    .createaccountbutton
+    button.cmp-button:focus {
+    background: var(--invertedColorVisited);
+  }
+  #createaccount.cmp-container .container.responsivegrid .createAccount {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 22px;
+  }
+  #createaccount.cmp-container .container.responsivegrid .benefits,
+  #createaccount.cmp-container .benefits {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 68px;
+  }
+  #createaccount .container.aem-GridColumn--default--5 {
+    display: block;
+    width: 100%;
+  }
+  #page-5cb33f973b .responsivegrid {
+    margin-left: 0;
+    width: 100%;
+  }
+  #page-5cb33f973b .responsivegrid .cmp-form {
+    padding: 0 10px;
+  }
+  #createaccount.cmp-container .cmp.cmp-text .custom_form_title h1,
+  #createaccount form.createAccount h1 {
+    font-size: 35px;
+  }
+  #createaccount form.createAccount .email .cmp-form-text input,
+  #createaccount form.createAccount .accemail .cmp-form-text input,
+  #createaccount form.createAccount .acccompany .cmp-form-text input,
+  #createaccount form.createAccount .accbillingcompany .cmp-form-text input,
+  #createaccount form.createAccount .countryoptions fieldset.cmp-form-options.cmp-form-options--drop-down .cmp-form-options__field.custom-select.btn.dropdown-toggle,
+  #createaccount form.createAccount .accaddressone .cmp-form-text input,
+  #createaccount form.createAccount .accaddresstwo .cmp-form-text input,
+  #createaccount form.createAccount .firstname,
+  #createaccount form.createAccount .accfirstname,
+  #createaccount form.createAccount .accbillingfirstname,
+  #createaccount form.createAccount .lastname,
+  #createaccount form.createAccount .acclastname,
+  #createaccount form.createAccount .accbillinglastname,
+  #createaccount form.createAccount .firstname .cmp-form-text input,
+  #createaccount form.createAccount .accfirstname .cmp-form-text input,
+  #createaccount form.createAccount .accbillingfirstname .cmp-form-text input,
+  #createaccount form.createAccount .lastname .cmp-form-text input,
+  #createaccount form.createAccount .acclastname .cmp-form-text input,
+  #createaccount form.createAccount .accbillinglastname .cmp-form-text input,
+  #createaccount form.createAccount .firstname .cmp-form-text input,
+  #createaccount form.createAccount .accfirstname .cmp-form-text input,
+  #createaccount form.createAccount .accbillingfirstname .cmp-form-text input,
+  #createaccount form.createAccount .lastname .cmp-form-text input,
+  #createaccount form.createAccount .acclastname .cmp-form-text input,
+  #createaccount form.createAccount .accbillinglastname .cmp-form-text input,
+  #createaccount form.createAccount .acccityname,
+  #createaccount form.createAccount .options,
+  #createaccount form.createAccount .stateoptions,
+  #createaccount form.createAccount .acccityname .cmp-form-text input,
+  #createaccount form.createAccount .options fieldset .select-selected,
+  #createaccount form.createAccount .stateoptions fieldset .select-selected,
+  #createaccount form.createAccount .stateoptions fieldset .dropdown .cmp-form-options__field,
+  #createaccount form.createAccount .acczipcode .cmp-form-text input,
+  #createaccount form.createAccount .acczipcode,
+  #createaccount form.createAccount .accphonenumber .cmp-form-text input,
+  #createaccount form.createAccount .shippingphoneno .cmp-form-text input,
+  #createaccount form.createAccount .industryoptions fieldset .select-selected,
+  #createaccount form.createAccount .industryoptions fieldset .select-items,
+  #createaccount form.createAccount .accenterpassword .cmp-form-text input,
+  #createaccount form.createAccount .Accconfirmpassword .cmp-form-text input,
+  /* #createaccount form.createAccount .countryoptions fieldset .select-selected, */
+  #createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field,
+  /* #createaccount form.createAccount .countryoptions fieldset .select-items, */
+  #createaccount form.createAccount .countryoptions fieldset .dropdown .dropdown-menu.countryList.show,
+  #createaccount form.createAccount .createaccountbutton button.cmp-button,
+  #createaccount form.createAccount .custom_form_container,
+  #createaccount form.createAccount .createaccounttext div,
+  #createAccounts #form-id .form-row .col,
+  #createaccount form.createAccount
+    .accbillinglastname
+    .cmp-form-text
+    input.cmp-form-text__text,
+  #createaccount form.createAccount
+    .accbillingfirstname
+    .cmp-form-text
+    input.cmp-form-text__text {
+    width: 100%;
+  }
+  #createAccounts #form-id .form-row .col {
+    max-width: 100%;
+    display: block;
+  }
+  #createaccount form.createAccount .custom_form_container {
+    display: block;
+  }
+  #createaccount form.createAccount .createaccountbutton button {
+    padding: 16px;
+  }
+  #createaccount form.createAccount .contactpreferencesoptions fieldset legend {
+    /* font-size: 20px; */
+    font-size: 16px;
+  }
+  #createaccount form.createAccount .radio-btn .form-check-inline {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+  #page-5cb33f973b .email{
+    width: 100%;
+  }
+  #page-5cb33f973b .sendemailbutton {
+    width: 100%;
+  }
+
+  #create-acc .Article{
+    margin-left: 0;
+    width: 100%;
+   
+  }
+
+  
+#createaccount form.createAccount .acccityname .cmp-form-text input,#createaccount form.createAccount .acczipcode .cmp-form-text input {
+    width:100%;
+    display: inline-block;
+  
+}
+#createaccount form.createAccount .stateoptions{
+  width: 33.3%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0;
+}
+#createaccount form.createAccount .acczipcode,#createaccount form.createAccount .acccityname{
+  width: 33.3%;
+    max-width: 100%;
+}
+ 
+#createaccount form.createAccount .countryoptions fieldset .dropdown, #createaccount form.createAccount .stateoptions fieldset .dropdown, #createAccounts #form-id .form-group .dropdown{
+  max-width:100%;
+}
+#createAccounts{max-width: 706px;}
+.accbillingaddress #createAccounts #form-id .form-row-flex{display: flex;}
+.accbillingaddress #createAccounts #form-id .form-row-flex .col-md-4{width: 33.3%;}
+}
+.industryoptions .cmp-form-options--drop-down::after{
+  content: "";
+  justify-self: end;
+  width: 10px;
+  height: 8px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+  background-color: var(--select-arrow);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position-y: center;
+  top:52px;
+  right:12px;
+  pointer-events: none;
+}
+@media screen and (min-width:992px){
+  .benefits .benefits-wrapper h2{
+    white-space: nowrap;
+  }
+  #new_form{
+    max-width: 598px;
+  }
+  #page-5cb33f973b #new_form{
+    max-width: 598px;
+    margin: 0 auto;
+  }
+  #page-5cb33f973b .email{
+    width: 100%;
+  }
+  #page-5cb33f973b .sendemailbutton {
+    width: 100%;
+  }
+
+  
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  #page-5cb33f973b .email{
+    width: 100%;
+  }
+  #page-5cb33f973b .sendemailbutton {
+    width: 100%;
+  }
+
+  
+  #create-acc .Article{
+    margin-left: 0;
+    width: 100%;
+    padding: 0 12px;
+   
+  }
+  #createAccounts {
+    max-width:100%;
+}
+  #createaccount form.createAccount .accemail .cmp-form-text input{width: 100%;}
+  #createaccount form.createAccount .firstname, #createaccount form.createAccount .accfirstname, #createaccount form.createAccount .accbillingfirstname, #createaccount form.createAccount .lastname, #createaccount form.createAccount .acclastname, #createaccount form.createAccount .accbillinglastname{
+    width: 100%;
+  }
+  #createaccount form.createAccount .firstname .cmp-form-text input, #createaccount form.createAccount .accfirstname .cmp-form-text input, #createaccount form.createAccount .accbillingfirstname .cmp-form-text input.cmp-form-text__text, #createaccount form.createAccount .lastname .cmp-form-text input, #createaccount form.createAccount .acclastname .cmp-form-text input, #createaccount form.createAccount .accbillinglastname .cmp-form-text input.cmp-form-text__text{
+    width: 100%;
+  }
+  #createaccount form.createAccount .newpassword .cmp-form-text input,#createaccount form.createAccount .accaddresstwo .cmp-form-text input,#createaccount form.createAccount .accaddressone .cmp-form-text input,#createaccount form.createAccount .countryoptions fieldset .dropdown,#createaccount form.createAccount .countryoptions fieldset.cmp-form-options.cmp-form-options--drop-down .cmp-form-options__field.custom-select.btn.dropdown-toggle,#createaccount form.createAccount .accbillingcompany .cmp-form-text input,#createaccount form.createAccount .industryoptions fieldset .select-selected,#createaccount form.createAccount .acccompany .cmp-form-text input, #createaccount form.createAccount .accenterpassword .cmp-form-text input, #createaccount form.createAccount .confirmpassword .cmp-form-text input, #createaccount form.createAccount .Accconfirmpassword .cmp-form-text input, #createaccount form.createAccount .accphonenumber .cmp-form-text input, #createaccount form.createAccount .shippingphoneno .cmp-form-text input{
+    width: 100%;
+    max-width:100%;
+  }
+
+  #createaccount form.createAccount .acccityname .cmp-form-text input,#createaccount form.createAccount .acczipcode .cmp-form-text input {
+    width:100%;
+    display: inline-block;
+  
+}
+#createaccount form.createAccount .stateoptions{
+  width: 33.3%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 10px;
+ 
+}
+#createaccount form.createAccount .acczipcode,#createaccount form.createAccount .acccityname{
+  width: 33.3%;
+    max-width: 100%;
+}
+  #createaccount form.createAccount .accenterpassword .cmp-form-text .fa-thin,
+#createaccount form.createAccount .Accconfirmpassword .cmp-form-text .fa-thin {
+  position: absolute;
+  /* top: 26%; */
+  top: 44px;
+  right:10px;
+  cursor: pointer;
+}
+
+
+
+#createAccounts{width: 100%;}
+.accbillingaddress #createAccounts #form-id .form-row-flex{display: flex;}
+#createaccount form.createAccount .custompasswordone .Accconfirmpassword .cmp-form-text .fa-thin {
+
+  top: 34px;
+}
+}
+
+
+
+  .confirm-btn-enabled:focus{background-color:var(--invertedColor);
+    outline: 2px solid var(--blueColorLight);
+    outline-offset:1px;
+  }
+ .confirm_pwd_btn .cmp-button.confirm-btn-enabled:hover{
+    cursor: pointer;
+    background-color: var(--invertedColorHover);
+    }
+    .confirm_pwd_btn .cmp-button.confirm-btn-enabled span{font-weight: 700;}
+  .confirm-btn-enabled:active{
+    background-color:var(--invertedColorVisited) !important;
+  }
+  .confirm_pwd_btn .cmp-button.confirm-btn-enabled{background-color: var(--invertedColor); border:1px solid var(--invertedColor);color: #fff; font-weight: 700;}
+  .confirm_pwd_btn .cmp-button.confirm-btn-enabled:hover{background-color:var(--invertedColorHover);cursor: pointer; color: #fff; font-weight: 700;}
+  .industryoptions .cmp-form-options__field{
+    appearance: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+
+  @media screen and (max-width: 575px) {
+    #page-5cb33f973b .email{
+      width: 100%;
+      padding: 0 13px;
+      margin: 0;
+    }
+    #page-5cb33f973b .sendemailbutton {
+      width: 100%;
+      padding: 0 6px;
+    }
+    #Create_Pwd{
+      padding: 0 24px;
+    }
+    #createaccount
+      form.createAccount
+      .createaccounttext
+      p
+      a.terms-and-conditions {
+      display: block;
+    }
+    #create-acc .responsivegrid {
+      margin-left: 0;
+      width: 100%;
+    }
+    .custom_form_title{text-align: left;} 
+
+    #page-5cb33f973b .custom_form_title h1{
+      text-align: center;
+    }
+
+    #createaccount form.createAccount .stateoptions{
+      width:100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    #createaccount form.createAccount .acczipcode,#createaccount form.createAccount .acccityname{
+      width:100%;
+        max-width: 100%;
+    }
+    #createaccount form.createAccount .createaccountbutton button.cmp-button {
+      padding: 16px 20px 17px;
+    }
+
+  }
+
+#createaccount form.createAccount .country-state-options.aem-GridColumn--default--none.aem-GridColumn.aem-GridColumn--offset--default--0.aem-GridColumn--default--2{
+     width: 31%;
+     margin: 0 18px;
+     display: inline-block;
+     max-width: 187px;
+}
+#createaccount form.createAccount .country-state-options .stateoptions {
+     margin: 0px;
+}
+#createaccount form.createAccount .countryoptions fieldset .dropdown .cmp-form-options__field,
+.industryoptions #Industry,
+#createaccount form.createAccount .countryoptions fieldset.cmp-form-options.cmp-form-options--drop-down .cmp-form-options__field.custom-select.btn.dropdown-toggle,
+#createAccounts.create__account--billing--address.createAccount #form-id .form-group select.cmp-form-options__field.custom-select.btn.dropdown-toggle,
+#createaccount form.createAccount .stateoptions fieldset .dropdown .cmp-form-options__field
+{
+ 
+  position: relative;
+  color: var(--secondaryBlack);
+}
+.hold-cmp-btn{
+    background: #879096 !important;;
+    border: 1px solid #879096 !important;;
+    pointer-events: none !important;;
+}

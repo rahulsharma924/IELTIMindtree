@@ -1,0 +1,26 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='producthelp-clientlib'}" />
+
+
+<div class="product-help-block-job">
+<div class="row">
+	<div class="col-md-4">
+	<img src="${properties.phelpimg}" alt="tickMark" width="100%" />
+	</div>
+	<div class="col-md-8">
+	<h2 class="mainHeading-title">${properties.phelptitle}</h2>
+
+	<div class="multiple-block" data-sly-list.phelpmulti="${resource.getChildren}">
+	<sly data-sly-test="${phelpmulti.name == 'producthelpmulti'}">
+	<div  data-sly-repeat.phelpmulti1="${phelpmulti.getChildren}">
+        <h3>${phelpmulti1.subtitle} </h3>
+		<p>${phelpmulti1.phelptext}</p>
+
+	</div>
+	</sly>
+	</div>
+	</div>
+</div>
+</div>
+

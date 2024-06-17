@@ -1,0 +1,141 @@
+.conversion_calculators_first_type {
+	 max-width: 802px; 
+	 margin: 0 auto;
+}
+.conversion_calculators_type {
+	padding: 0 12px;
+	margin-bottom: 0;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.calculator_type a:focus { 
+	border-radius: 0.25em;
+}
+.calculator_type a:-webkit-any-link:focus-visible {
+	outline: 0;
+	border: 0.125em solid var(--blueColorDark);
+	border-radius: 0.25em;
+}
+.calculator_type_conversion,.calculator_type {
+	display: flex;
+	padding: 12px 20px;
+	margin: 0 12px;
+	background: var(--secondaryColor);
+	box-shadow: inset 0 -1px 0 var(--newslistHeadingShadow);
+}
+.calculator_type_conversion a,.calculator_type a {
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--baseFontSize);
+	line-height: var(--lineHeight1and375);
+	color: var(--primaryColor);
+	text-align:left;
+}
+.calculator_type_conversion a:hover, .calculator_type a:hover {
+	font-weight: var(--fontWeightBold);
+	color: var(--invertedColor);
+}
+.calculator_type_conversion a:active, .calculator_type a:active {
+	color: var(--invertedColorFocus);
+	font-weight: var(--fontWeightBold);
+}
+#rf_product_calculator {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px 24px;
+	background: var(--secondaryBtnHover);
+}
+.slick-dots li.slick-active button[aria-selected="true"]:before{
+	display:none;
+}
+#Disclaimer_Text {
+	margin: 50px auto 0;
+    max-width: 1280px;
+}
+#Disclaimer_Text p{
+	font-size: var(--fontSize12);
+	line-height:var(--baseLineHeight);
+	text-align: center;
+	color: var(--primaryColor);
+}
+.single_row_calculators {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	margin: 0;
+	padding: 0;
+}
+#rf_product_calculatorss {
+    padding: 50px 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#Rf_Description_only {
+	max-width: 1280px;
+    margin: 50px auto 0;
+}
+@media only screen  and (max-width: 1024px) {
+	.calculators_disclaimer p {
+		padding: 0;
+	}
+	.conversion_calculators_first_type {
+		padding: 0;
+	} 
+	#rf_product_calculator,
+	#rf_product_calculatorss,
+	.calculators_disclaimer {
+		padding: 50px 24px;
+	}
+	.conversion_calculators {
+		padding: 50px 0 24px;
+	}
+	.calculator_type:nth-child(3n+1){
+		margin-left: 0;
+	}
+	.calculator_type:nth-child(3n){
+		margin-right: 0;
+	}
+	.calculator_type_conversion,.calculator_type {
+		margin: 0;
+	}
+}
+@media only screen and (max-width:576px) {
+	.conversion_calculators_type,.single_row_calculators{
+		grid-template-columns:100%;
+	}
+	.calculator_type{
+		margin: 0;
+	}
+	.conversion_calculators_heading{
+		font-size: var(--fontSize20);
+	}
+  #Rf_Description_only {
+    margin-top: 30px;
+}
+}
+@media only screen and (min-width:576px)  and (max-width:991px) {
+	.conversion_calculators_type,.single_row_calculators{
+		grid-template-columns:50% 50%;
+	}
+	.calculator_type:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.calculator_type:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 833px) {
+	.conversion_calculators_first_type {
+		display: block;
+	} 
+	#rf_product_calculator,
+	#rf_product_calculatorss,
+	.calculators_disclaimer {
+		padding: 20px 24px;
+	}
+	.conversion_calculators_type {
+		padding: 0;
+	}
+	.calculator_type_conversion{
+		margin-left: 20px;
+	}
+}
+

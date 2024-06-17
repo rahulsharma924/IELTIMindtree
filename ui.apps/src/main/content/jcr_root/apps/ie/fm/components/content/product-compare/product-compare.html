@@ -1,0 +1,95 @@
+<div class="compare-sec">
+  <div class="fm-container">
+    <div class="aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="compare-title">
+          <h3>Compare</h3>
+          <p class="compare-text"></p>
+          <button
+            title="Return to Shopping"
+            onclick="resetCompare()"
+            class="compare-btn"
+          >
+            Return to Shopping
+          </button>
+        </div>
+      </div>
+      <div
+        class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="compare-image">
+          <ul id="compare-image-thumbs"></ul>
+          <ul class="compare-dummy">
+            <li><a title="Add to compare" onclick="resetCompare()">&nbsp;</a></li>
+            <li><a title="Add to compare" onclick="resetCompare()">&nbsp;</a></li>
+            <li><a title="Add to compare" onclick="resetCompare()">&nbsp;</a></li>
+            <li><a title="Add to compare" onclick="resetCompare()">&nbsp;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="breadcrumb-container pb-0">
+  <div class="aem-Grid aem-Grid--12">
+    <div class="fm-container">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="plp-breadcrumbs">
+          <ul>
+            <li class="home">
+              <a href="/content/fm/en/homepage.html" title="Go to Home Page"
+                >Home</a
+              >
+              <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            </li>
+            <li class="category3">
+              <a href="#" title="Products">Products</a>
+              <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            </li>
+            <li class="category4">
+              <strong>Compare</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bs-title-container">
+  <div class="fm-container">
+    <div class="aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div>
+          <div>
+            <h1>Compare</h1>
+            <div class="plp-category-description">
+              Build your own list of products to compare specifications, pricing
+              etc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="compare-product">
+  <div class="fm-container">
+    <div class="aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="compare-flex" id="compare-prod"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='product-compare'}"
+/>

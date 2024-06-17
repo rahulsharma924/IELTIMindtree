@@ -1,0 +1,240 @@
+ /* megamenu - products for desktop css starts */
+ #main-header.cmp-container.fm-main-container .buildingblock:last-child,
+ #main-header.cmp-container.fm-main-container .buildingblock:nth-child(3),
+ #main-header.cmp-container.fm-main-container .buildingblock {
+    border-top: 1px solid var(--secondaryBtnVisited);
+       display: block;
+   }
+   #main-header.cmp-container.fm-main-container .buildingblock:last-child .xf-master-building-block,
+   #main-header.cmp-container.fm-main-container .buildingblock .xf-master-building-block {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+   }
+   .megamenu-products {
+     height: 60px;
+      }
+   .products-wrapper {
+    display: block;
+   }
+   #productstable .products-data .categoryId,
+   #productstable .products-data .categorytaxonomyPath,
+   #productstable .products-data .categorythumbnailUrl,
+   #productstable .products-data .categoryName,
+   .products-table-wrapper {
+       display: none;
+   }
+   .hide {
+       display: none;
+   }
+   .show {
+       display: block;
+   }
+   #productstable .products-data .categoryName.show,
+   .products-table-wrapper.show {
+       display: block;
+       cursor: pointer;
+   }
+   .products-table-wrapper table {
+       width: 100%;
+   }
+   #productstable .products-data .categoryName.show {
+      padding: 0;
+       padding-bottom: 13px;
+       position: relative;
+   }
+   #productstable .products-data .categoryName.show:last-child {
+       padding-bottom: 0px;
+   }
+   .products-table-wrapper.show {
+       position: relative;
+       top:0;
+      left: 0;
+      height: auto;
+      overflow-y: scroll;
+    padding-right:10px;
+   }
+
+   #productstable .products-data .categoryName.show span {
+       float: right;
+       margin-right: 14px;
+       font-style: normal;
+       font-weight:var(--fontWeightBolder);
+       font-size: var(--fontSize14);
+       line-height:var(--lineHeight1and428);
+       color:var(--SearchIcon);
+   }
+   .products-table-wrapper {
+       width: 100%;
+       max-width: 100%;
+       padding: 30px 0 41px 42px;
+       text-align: left;
+       background:var(--secondaryColor);
+   }
+   .products-table-wrapper table {
+       margin: 0;
+       border-collapse: inherit;
+   }
+   .products-data,
+   .products-data td,
+   .products-data td a,
+   .productstable tr td,
+   .productstable tr td a {
+       font-style: normal;
+       font-weight:var(--fontWeightBold);
+       font-size:var(--fontSize14);
+       line-height:var(--lineHeight1and428);
+       color:var(--tabPanelClr);
+       text-decoration: none;
+       height: auto;
+   }
+   .productstable tr td,
+   .productstable tr td a {
+    padding-bottom: 13px;
+   }
+   .products-wrapper {
+             width: 100%;
+          display: flex;
+       position: relative;
+        justify-content: center;
+        margin: 0;
+       padding: 18px 41px 18px 0px;
+       height: 60px;
+   }
+   .products-btn,
+   .products-wrapper button,
+   .products-wrapper button a {
+       border: none;
+       font-weight:var(--fontWeightSmall);
+       font-size:var(--baseFontSize);
+       line-height:var(--baseLineHeight);
+       color:var(--primaryColor);
+       background: transparent;
+       outline: none;
+       display: block;
+       cursor: pointer;
+       padding: 0;
+       padding-bottom: 18px;
+       margin-right: 12px;
+       padding-right: 0px;
+   }
+   .products-btn:hover,
+   .products-wrapper button:hover,
+   .products-wrapper button a:hover,
+   #productstable .products-data .categoryName.show:active,
+   #productstable .products-data .categoryName.show span:active,
+   .productstable tr td:active,
+   .productstable tr td a:active {
+       color:var(--invertedColor);
+   }
+   #productstable .products-data .categoryName.show:hover,
+   .productstable tr td:hover,
+   .productstable tr td a:hover {
+     color:var(--primaryColor);
+    text-decoration: underline;
+   }
+   .products-wrapper button a:hover {
+    text-decoration: none;
+   }
+   .products-btn.active {       
+       font-weight:var(--fontWeightBold);
+       font-size:var(--baseFontSize);
+       line-height:var(--baseLineHeight);
+       color:var(--primaryColor);
+       border-bottom: 4px solid var(--invertedColor);
+       display: block;
+       outline: none;
+       height: 42px;
+   }
+   .products-btn:active,
+   .products-btn:hover,
+   .products-btn:visited,
+   .products-btn:focus {
+       outline: none;
+   }
+   .fade-mode {
+            pointer-events: none;
+       position: relative;
+   }
+
+   .fade-mode:before {
+    content: "";
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.height-zero{height:0}
+  
+   @media screen and (max-width: 833px) {
+    .products-wrapper,
+    #main-header.cmp-container.fm-main-container .buildingblock .xf-master-building-block .megamenu-products {
+      display: none;
+    }
+    .products-table-wrapper.show {overflow-y: auto;}
+    .sec_level_border{display: none;
+        position: relative;
+        top: 78px;
+        z-index: 9;
+        margin: 0;
+    }
+    .zeynep_mob .submenu.sec_level_nav>label {
+        border: 0;
+    }
+   }
+@media screen and (min-width: 991px){
+    #main-header.sticky .headerComponents {
+        padding: 0;
+        top: 27%;
+    } 
+    .headerComponents {
+        padding: 0;
+        top: 27%;
+    }
+    .headerContainer {
+        height: 104px;
+    }
+    #main-header.sticky .headerContainer {
+        height: 97px;
+    }
+    .megamenu-products {
+        height: 59px;
+    }
+    div#megamenu-desktop {
+        height: 59px;
+    }
+    #overlay-products{
+        top: 215px;
+    }
+    #overlayIndustries{
+        top: 215px;
+    }
+    #main-header.sticky #megamenu-desktop .industry-dropdowns.collapse.show{
+        top: 74px;
+        /* margin-left: calc((100vw - 85%) / -2);
+        width: 100vw;
+        max-width: 94vw; */
+        margin-left: 0;
+        width: 100vw;
+        max-width: 670px;
+    }
+    #main-header.sticky #megamenu-desktop .industry-dropdowns .industry-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #main-header.sticky #megamenu-desktop .zeynep.opened {
+        top: 74px;
+    }
+    #main-header.sticky #megamenu-desktop.animateUp .industries-navigation-btn .showBorderBottom{
+        padding-bottom: 30px;
+    }
+    #main-header.sticky #megamenu-desktop.animateUp  .products-btn.active{
+        height: 56px;
+    }
+    #main-header.sticky #megamenu-desktop.animateUp .products-btn{
+        padding-bottom: 28px
+    }
+}
+
+  /* megamenu - products for desktop css ends */

@@ -1,0 +1,196 @@
+
+#editShippingAddressPopup .modal-header,
+#deleteConfirm .modal-header,
+#successfullyAdded .modal-header,
+#duplicatedAddress .modal-header,
+#successfullyDeleted .modal-header,
+#duplicateAddnewAddress .modal-header,
+#successFullySaved .modal-header,
+#unknownAddresstype .modal-header{
+    padding: 37px 0 26px 54px;
+    border-bottom: 1px solid var(--SearchIcon);
+    box-shadow: none;
+}
+
+#editShippingAddressPopup .modal-dialog,
+#deleteConfirm .modal-dialog,
+#successfullyDeleted .modal-dialog,
+#addressValidationPopup .modal-dialog,
+#successfullyAdded .modal-dialog,
+#addNewShippingAddressPopup .modal-dialog,
+#duplicateAddnewAddress .modal-dialog,
+#duplicatedAddress .modal-dialog,
+#successFullySaved .modal-dialog,
+#unknownAddresstype .modal-dialog {
+    max-width: 749px;
+    
+}
+
+#editShippingAddressPopup .modal-dialog {
+    width: 750px;
+}
+
+
+#editShippingAddressPopup .saveShippingAddressBtn {
+    font-size: var(--fontSize14);
+    padding: 12px 42px;
+ }
+
+#editShippingAddressPopup .cancelShippingAddressBtn {
+    font-size: var(--fontSize14);
+    padding: 12px 35px;
+    margin-right: 1rem;
+}
+
+#editShippingAddressPopup .modal-body {
+    padding: 25px 50px;
+}
+
+
+#editShippingAddressPopup .modal-footer {
+    background:var(--secondaryBtnHover);
+    border-top: none;
+    padding: 14px 30px 17px 55px;
+}
+
+#addNewShippingAddressPopup .modal-dialog,
+#editShippingAddressPopup .modal-dialog {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#addNewShippingAddressPopup .modal-content,
+#editShippingAddressPopup .modal-content {
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    margin: 140px auto;
+}
+
+
+.modal-footer.editShippingAddressFooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    -ms-flex-pack: end;
+    padding: .75rem;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.modal-footer.editShippingAddressFooter .modal-footer {
+    flex: auto;
+    border-top: none;
+}
+
+.modal-footer.editShippingAddressFooter {
+    justify-content: space-between;
+}
+
+.modal-footer-editshippingaddress .deleteShippingAddressBtn {
+    font-weight: var(--fontWeightMedium);
+    font-size:var(--baseFontSize);
+    line-height:var(--baseLineHeight);
+    color: var(--invertedColor);
+    background-color: transparent;
+}
+.modal-footer-editshippingaddress a:hover{
+    font-weight: var(--fontWeightBold);
+    text-decoration: underline;
+}
+.modal-footer-editshippingaddress a:active {
+    
+    font-weight: var(--fontWeightBold);
+    color: var(--invertedColorFocus);
+    text-decoration: underline;
+}
+
+  #editShippingAddressPopup .custom-select:focus {
+    outline: 2px solid var(--blueColorLight);
+    box-shadow: none;
+  }
+  #editShippingAddressPopup .modal-title,
+  #deleteConfirm .modal-title,
+  #successfullyDeleted .modal-title,
+  #successfullyAdded .modal-title,
+  #duplicateAddnewAddress .modal-title,
+  #successFullySaved .modal-title,
+  #unknownAddresstype .modal-title{
+    font-weight: var(--fontWeightBold);
+    font-size:var(--fontSize31);
+    color: var(--primaryColor);
+}
+#addressValidationPopup .modal-content{
+    width: auto;
+    height: auto;
+    margin: 50px;
+}
+
+#addressValidationPopup .modal-body{
+   padding:20px 10px 10px 40px;
+}
+#addressValidationPopup .modal-body .vldaddr-pu-addrs{
+    margin-top:15px;
+}
+#addressValidationPopup .oriaddr-div .custom-control,
+#addressValidationPopup .recaddr-div .custom-control{
+    margin-top: 10px;
+    padding-left:2rem;
+}
+#addressValidationPopup .oriaddr-div .original-address-title,
+#addressValidationPopup .recaddr-div .recommended-address-title{
+   font-size: var(--fontSize18);
+}
+#addressValidationPopup .oriaddr-div .address-details{
+    font-size: var(--baseFontSize);
+}
+
+.addr-validation-overflow #editShippingAddressPopup{
+    overflow-y: auto;
+}
+  @media screen and (max-width: 767px) {
+    #editShippingAddressPopup .modal-footer{
+        padding: 15px;
+        /* flex-direction: column-reverse; */
+    }
+    #editShippingAddressPopup .modal-body {
+        padding: 15px 32px 15px 32px;
+    }
+    #addressValidationPopup .modal-content{
+        width: auto;
+        height: auto;
+        margin: 195px 10px 10px 10px;
+    }
+    #addressValidationPopup .modal-body{
+        
+        padding: 20px 10px 10px 25px;
+    }
+    #editShippingAddressPopup .saveShippingAddressBtn {
+        padding: 12px 26px;
+    }
+    #editShippingAddressPopup .modal-header {
+        padding: 26px 0 20px 32px;
+        border-bottom: none;
+    }
+    #editShippingAddressPopup .cancelShippingAddressBtn{
+        padding: 12px 18px;
+        margin-right: 0.5rem;
+    }
+    .modal-footer-editshippingaddress{
+        margin: 25px 0 0px;
+    }
+    .modal-footer.editShippingAddressFooter{
+        justify-content: space-between;
+    }
+    #deleteConfirm .modal-header,
+#successfullyAdded .modal-header,
+#duplicatedAddress .modal-header,
+#successfullyDeleted .modal-header,
+#duplicateAddnewAddress .modal-header,
+#successFullySaved .modal-header,
+#unknownAddresstype .modal-heade{
+    padding: 25px 0 25px 25px;
+}
+}
+
+

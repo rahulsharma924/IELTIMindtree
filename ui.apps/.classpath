@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/content/jcr_root">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry including="**/*.java" kind="src" path="target/generated-sources/htl"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/aem-ie.core"/>
+	<classpathentry kind="var" path="M2_REPO/com/adobe/aem/aem-sdk-api/2022.10.9398.20221020T071514Z-220900/aem-sdk-api-2022.10.9398.20221020T071514Z-220900.jar" sourcepath="M2_REPO/com/adobe/aem/aem-sdk-api/2022.10.9398.20221020T071514Z-220900/aem-sdk-api-2022.10.9398.20221020T071514Z-220900-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/osgi.core/8.0.0/osgi.core-8.0.0.jar" sourcepath="M2_REPO/org/osgi/osgi.core/8.0.0/osgi.core-8.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.2/org.osgi.annotation.versioning-1.1.2.jar" sourcepath="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.2/org.osgi.annotation.versioning-1.1.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.1.1/org.osgi.annotation.bundle-1.1.1.jar" sourcepath="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.1.1/org.osgi.annotation.bundle-1.1.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.1/org.osgi.service.metatype.annotations-1.4.1.jar" sourcepath="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.1/org.osgi.service.metatype.annotations-1.4.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/osgi.annotation/8.0.1/osgi.annotation-8.0.1.jar" sourcepath="M2_REPO/org/osgi/osgi.annotation/8.0.1/osgi.annotation-8.0.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.namespace.extender/1.0.1/org.osgi.namespace.extender-1.0.1.jar" sourcepath="M2_REPO/org/osgi/org.osgi.namespace.extender/1.0.1/org.osgi.namespace.extender-1.0.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0.jar" sourcepath="M2_REPO/org/osgi/org.osgi.namespace.implementation/1.0.0/org.osgi.namespace.implementation-1.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component/1.5.0/org.osgi.service.component-1.5.0.jar" sourcepath="M2_REPO/org/osgi/org.osgi.service.component/1.5.0/org.osgi.service.component-1.5.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.util.function/1.0.0/org.osgi.util.function-1.0.0.jar" sourcepath="M2_REPO/org/osgi/org.osgi.util.function/1.0.0/org.osgi.util.function-1.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.util.promise/1.0.0/org.osgi.util.promise-1.0.0.jar" sourcepath="M2_REPO/org/osgi/org.osgi.util.promise/1.0.0/org.osgi.util.promise-1.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.5.0/org.osgi.service.component.annotations-1.5.0.jar" sourcepath="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.5.0/org.osgi.service.component.annotations-1.5.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.http.whiteboard/1.1.1/org.osgi.service.http.whiteboard-1.1.1.jar" sourcepath="M2_REPO/org/osgi/org.osgi.service.http.whiteboard/1.1.1/org.osgi.service.http.whiteboard-1.1.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.6/org.apache.sling.servlets.annotations-1.2.6.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.6/org.apache.sling.servlets.annotations-1.2.6-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.scripting.sightly.runtime/1.2.4-1.4.0/org.apache.sling.scripting.sightly.runtime-1.2.4-1.4.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.scripting.sightly.runtime/1.2.4-1.4.0/org.apache.sling.scripting.sightly.runtime-1.2.4-1.4.0-sources.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

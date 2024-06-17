@@ -1,0 +1,88 @@
+.servicesheader-headertitle {
+	text-align: center;
+	padding: 50px 0 8px;
+}
+.servicesheader-headertext {
+	text-align: center;
+	margin: 0 auto;
+	width: 65%;
+}
+
+#converters_calculators .servicesheader-headertext{
+   max-width: 580px;
+  }
+ 
+  #technical_resources .servicesheader-headertitle{
+    padding: 50px 0 25px 0px;
+  }
+ .servicesheader-headertext p{
+	margin: 0;
+	text-align: center;
+}
+ .servicesheader-contactus {
+	 text-align: center;
+	 padding-top: 15px;
+}
+ .servicesheader-contactus a {
+	font-size: var(--fontSize14);
+	font-weight: var(--fontWeightMedium);
+	line-height: var(--baseLineHeight);
+}
+.servicesheader-headertext p a{
+    color: var(--invertedColor);
+    margin-top: 15px;
+    display: block;
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightMedium);
+}
+.servicesheader-headertext p a:hover{
+    font-weight: var(--fontWeightBold);
+    text-decoration: var(--textDecorationUnderline);
+    color: var(--invertedColor);
+    text-decoration: underline;
+}
+/*#conversion-calculators*/
+ #conversion-calculators .servicesheader-headertext p{
+    color: var(--newsDateColor);
+}
+ #rf-calculators .servicesheader-headertext p{
+    color: var(--newsDateColor);
+}
+ #general-rf-calculators .servicesheader-headertext p{
+    color: var(--newsDateColor);
+}
+ #Disclaimer_Text .servicesheader-headertext{
+     width: 62%;
+     margin: 0 auto;
+}
+ #Disclaimer_Text .servicesheader-headertext p{
+     width: 100%;
+}
+ #services .servicesheader-headertitle{
+     padding-top:43px;
+}
+
+#services{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+ #services .servicesheader-headertext p{
+     margin: 0 auto;
+     line-height: 20px;
+     max-width: 602px;
+}
+ @media screen and (max-width:833px) {
+     .servicesheader-headertitle {
+         padding: 17px 0 14px;
+    }
+     .servicesheader-headertext{
+         width: 100%;
+         font-size: var(--fontSize12);
+         padding: 0 15px;
+    }
+     #Disclaimer_Text .servicesheader-headertext{
+         width: 100%;
+         margin: 0 auto 30px auto;
+    }
+}

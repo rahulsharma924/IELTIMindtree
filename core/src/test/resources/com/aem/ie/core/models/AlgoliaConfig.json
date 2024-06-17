@@ -1,0 +1,14 @@
+{
+  "algoliaId":"O0PAXP3VI5",
+  "algoliaKey":"dda2366f016f16279863c2ac2d068d8c",
+  "indexInuse":"fm_product_en_qa",
+  "indexNmAsc":"fm_product_en_name_asc_qa",
+  "indexNmDsc":"fm_product_en_name_desc_qa",
+  "indexPrAsc":"fm_product_en_price_asc_qa",
+  "indexPrDsc":"fm_product_en_price_desc_qa",
+  "indexBs":"fm_product_en_bestseller_qa",
+  "indexContent":"crawler_fm_contentqa",
+  "indexContentAsc":"crawler_fm_content_name_asc_qa",
+  "indexContentDsc":"crawler_fm_content_name_desc_qa",
+  "indexQuerySuggest":"fm_product_en_query_suggestions_qa"
+}

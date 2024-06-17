@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "xmlPath":"/content/fm/sitemap_whitepapers.xml",
+  "whitepapersRootPath":"/content/dam/infinite-electronics/white-papers/fairview-microwave/pdfs"
+}

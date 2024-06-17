@@ -1,0 +1,22 @@
+<sly  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='promotionallandingpage-clientlib'}"/>
+<section class="promotional__banner" data-category-name="${properties.categoryType}">
+  <div class="promotional__banner_section">
+    <div class="promotional__banner_content">
+      <div class="promotional__banner_textarea">
+        <h1 class="promotional__banner_title">${properties.bannerTitle}</h1>
+        <p class="promotional__banner_content">
+          ${properties.bannerDescription @context='html'}
+        </p>
+        <a class="remove_shopnow_btn" href="${properties.shopnowbtnlink}"> ${properties.shopnowbtntitle} </a>
+      </div>
+    </div>
+      <!-- <img class="promotional__banner--image img-promotioanl" src="${properties.bannerImage}" alt="${properties.imageAltText}" width="100" height="388"/> -->
+    <div class="promotional__banner--image img-promotioanl" style="background-image: url('${properties.secondarybannerImage @ context='styleString'}');" alt="${properties.imageAltText}">
+
+    </div>
+  </div>
+</section>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='search-banner-clientlib'}"
+/>

@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getClearCartURL":"https://apim-iedtecomm-dev01.azure-api.net/cart-direct/fairview/delete/"
+  
+}

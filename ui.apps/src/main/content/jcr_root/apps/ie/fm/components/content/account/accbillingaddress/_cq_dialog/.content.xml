@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Form Text Field"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.form.text.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_form_text_v2"
+    trackingFeature="core-components:form-text:v2">
+    <content
+        granite:class="cmp-form-text__editDialog"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <firstname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="First Label"
+                                                name="./firstname"
+                                                required="{Boolean}true"/>
+                                            <lastname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Last name Label"
+                                                name="./lastname"
+                                                required="{Boolean}true"/>
+                                            <phonenumber
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Phonenumber label"
+                                                name="./phonenumber"
+                                                required="{Boolean}true"/>
+                                            <companyname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Company Name Label"
+                                                name="./companyname"
+                                                required="{Boolean}true"/>
+                                            <countryregion
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Country/Region Label"
+                                                name="./countryregion"
+                                                required="{Boolean}true"/>
+                                            <addresslineone
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Address line one Label"
+                                                name="./addresslineone"
+                                                required="{Boolean}true"/>
+                                            <addresslinetwo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Address Two Label"
+                                                name="./addresslinetwo"
+                                                required="{Boolean}true"/>
+                                            <state
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="State Name Label"
+                                                name="./statename"
+                                                required="{Boolean}true"/>
+                                            <city
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="City Label"
+                                                name="./cityname"
+                                                required="{Boolean}true"/>
+                                            <zipcode
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The name of the field, which is submitted with the form data."
+                                                fieldLabel="Zip code Label"
+                                                name="./zipcode"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <cq:styles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,112 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='contact-form'}"
+/>
+<div class="contact-us-form-cont">
+  <form
+    method="post"
+    name="FairviewMicrowaveContactUs_"
+    action="https://s638200148.t.eloqua.com/e/f2"
+    onsubmit="return handleFormSubmit(this)"
+    id="form106"
+    class="elq-form"
+  >
+    <!--/* <h2>Contact Us Form</h2> */-->
+    <input
+      value="FairviewMicrowaveContactUs"
+      type="hidden"
+      name="elqFormName"
+    />
+    <input value="638200148" type="hidden" name="elqSiteId" />
+    <!-- <input value="" type="hidden" id="elqFormSubmissionToken" name="elqFormSubmissionToken"> -->
+    <input name="elqCampaignId" type="hidden" />
+    <div class="layout container-fluid">
+      <div class="row">
+        <div class="grid-layout-col">
+          <div id="formElement0" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1189">${properties.firstname}</label>
+            <input type="text" class="elq-item-input" name="FirstName" id="fe1189" value="" />           
+          </div>
+        </div>
+        <div class="grid-layout-col">
+          <div id="formElement1" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1190">${properties.lastname}</label>
+            <input type="text" class="elq-item-input" name="LastName" id="fe1190" value="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid-layout-col">
+          <div  id="formElement2" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1191">${properties.companyname}</label>
+            <input type="text" class="elq-item-input" name="Company" id="fe1191" value="" />
+          </div>
+        </div>
+        <div class="grid-layout-col">
+          <div  id="formElement3" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1192" >${properties.jobtitle}</label>
+            <input type="text" class="elq-item-input" name="Title" id="fe1192" value="" />
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="grid-layout-col">
+          <div  id="formElement4" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1193">${properties.email}</label>
+            <input type="text" class="elq-item-input" name="EmailAddress" id="fe1193" value="" />
+          </div>
+        </div>
+        <div class="grid-layout-col">
+          <div id="formElement5" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1444" >${properties.phonenumber}</label>
+            <input type="text" class="elq-item-input" name="businessPhoneString1" id="fe1444" value="" />
+          </div>
+        </div>
+
+       
+      </div>
+      <hr />
+      <div class="row">
+        <div class="grid-layout-col">
+          <div id="formElement6" class="layout-col col-sm-12 col-12 col-md-12 cu-sel-sub">
+            <label class="elq-label" for="fe1166">${properties.subjectfield}</label>
+            <select class="elq-item-select cu-sel" id="fe1166" name="fairviewMicrowaveContactUsMessage1" data-value="">
+                <!--/* Removed inline style */-->
+                <option value="" selected disabled hidden>
+                  Select
+                </option>
+                <!--/* Added Select for default selection */-->
+                <option value="General">General</option>
+                <option value="Technical Support">
+                  Technical Support
+                </option>
+                <option value="Sales Support">Sales Support</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid-layout-col-fw">
+          <div  id="formElement7" class="layout-col col-sm-12 col-xs-12">
+            <label class="elq-label" for="fe1167">${properties.messagefield}</label>
+            <textarea class="elq-item-input" name="fairviewMicrowaveContactUsMessage11" id="fe1167"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid-layout-col">
+          <div id="formElement8" class="layout-col col-sm-12 col-xs-12">
+            <input type="Submit" class="submit-button-style" value="${properties.submitbutton}" id="fe1165"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<!--/* Removed the inline styles from 'input' elements */-->
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='contact-form'}"
+/>

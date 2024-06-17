@@ -1,0 +1,30 @@
+<section>
+  <h2 class="messagecard-title">${properties.heading}</h2>
+  <div class="message-card-box analyticsupportmsgcard">
+    <sly data-sly-list.children="${resource.listChildren}">
+      <sly data-sly-list.fields="${children.listChildren}">
+        <div class="message-card-block">
+          <div class="message-card-icon">
+            <i class="fa-light ${fields.valueMap.iconPath}"></i> 
+          </div>
+          <h3 class="message-card-boxtitle">${fields.valueMap.title}</h3>
+          <address class="message-card-boxsubtitle">
+            <sly data-sly-test="${fields.valueMap.descriptionType == '_text'}">
+              ${fields.valueMap.descriptionText @ context='text' }
+            </sly>
+            <sly data-sly-test="${fields.valueMap.descriptionType == '_html'}">
+              ${fields.valueMap.descriptionHtml @ context='html' }
+            </sly>
+          </address>
+
+          <sly data-sly-test="${fields.valueMap.showLinkButton}">
+            <div class="livechat-menu message-card-livechat" >
+              <button>${fields.valueMap.linkName}</button>
+            </div>
+          </sly>
+        </div>
+      </sly>
+    </sly>
+  </div>
+</section>
+

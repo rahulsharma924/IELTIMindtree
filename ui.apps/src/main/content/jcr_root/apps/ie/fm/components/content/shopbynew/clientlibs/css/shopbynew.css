@@ -1,0 +1,55 @@
+.shopByNewRelease .ais-Hits-list {
+	padding-left: 0;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.shop-by-new .card .card-img-wrap img {
+	line-height: 0.7;
+}
+@media screen and (min-width:768px) {
+	.shopByNewRelease .ais-Hits-list{
+		display: grid;
+		align-items:flex-start;
+		grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+	}
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+	.shopByNewRelease .ais-Hits-list{
+		display: grid;
+		align-items: baseline;
+		grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+	}
+}
+.shopByNewRelease .ais-Hits-list li, .shopByNewRelease .ais-Hits-list li .card a .card-img-wrap, .shopByNewRelease .ais-Hits-list li .card a p {
+	cursor: pointer;
+}
+.shopByNewRelease .ais-Hits-list li:hover .card a p, .shopByNewRelease .ais-Hits-list li .card a .card-img-wrap:hover + p, .shopByNewRelease .ais-Hits-list li .card a p:hover {
+	text-decoration: underline;
+	color: var(--invertedColor);
+}
+.tabs.panelcontainer .cmp-tabs .cmp-tabs__tabpanel .shopbynew .shop-by-new .card p {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.tabs.panelcontainer .cmp-tabs .cmp-tabs__tabpanel.cmp-tabs__tabpanel--active {
+	display: block;
+	width: 100%;
+}
+.tabs.panelcontainer .cmp-tabs .cmp-tabs__tabpanel .shopbynew .shop-by-new {
+	display: block;
+	width: 100%;
+}
+.card.view-all-shopByNew {
+	flex-direction: column;
+	order: 12;
+}
+@media screen and (max-width: 600px) {
+.shopByNewRelease .ais-Hits-list {
+	justify-content:space-between;
+}
+}

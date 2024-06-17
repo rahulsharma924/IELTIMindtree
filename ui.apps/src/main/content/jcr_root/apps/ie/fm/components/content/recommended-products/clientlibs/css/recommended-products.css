@@ -1,0 +1,9 @@
+.product-grid:not(.available) .nostock-actions {
+    float: right;
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+}
+.prod-item {
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+{
+  "irItem": {
+    "pdflink": "/content/fm/en/article/sample-article-2",
+    "description": "description",
+    "title": "title",
+    "labelname": "labelname",
+    "pdftitle": "View PDF",
+    "image": "/content/dam/fm",
+    "jcr:primaryType": "nt:unstructured",
+    "enableHeading": "true"
+  }
+}
+
+

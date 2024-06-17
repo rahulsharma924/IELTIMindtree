@@ -1,0 +1,50 @@
+
+  .rc-anchor-normal.rc-anchor-error .rc-anchor-error-msg-container {
+    padding-left: 10px;
+    position: fixed;
+    padding-left: 10px;
+    margin: 6px 14px 0px 12px;
+    letter-spacing: -0.5px;
+  }
+
+  .rc-anchor-error-msg-container .rc-anchor-error-msg-container {
+    font-size: 11px;
+  }
+
+  #rc-anchor-container .rc-anchor-error-msg-container {
+    color: #ff0101;
+  }
+
+  .rc-anchor-normal-footer .rc-anchor-logo-portrait {
+    margin-top: 15px;
+  }
+  .rc-anchor-error-msg-container {
+    color: #ff0000;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    left: 0;
+    line-height: 13px;
+    margin: 6px 14px 0px 12px;
+    position: absolute;
+    top: 0;
+    letter-spacing: -0.5px;
+  }
+  .col-md-12 .captchaverify {
+    color: #ff0101;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    margin-top: 11px;
+  }
+  .validate_border {
+    border: 1px solid #ff0101;
+    width: 320px;
+    padding: 9px;
+  }
+
+  .validate_border_remove {
+    border: none;
+  }
+

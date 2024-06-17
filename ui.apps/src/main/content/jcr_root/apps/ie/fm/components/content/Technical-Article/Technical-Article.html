@@ -1,0 +1,17 @@
+
+
+<sly
+ data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+   data-sly-call="${clientlib.css @ categories='technical-article'}"/>
+
+<div class="main_article_details">
+<h1 class="technicalArticleTitle">${properties.technicalArticletitle}</h1>
+
+<p class="techArticleDesc ">${properties.techArticledesc}</p>
+
+<div class="detailed_article">${properties.techarticletitle @ context='html'}</div>
+
+<div class="detailed_article1">${properties.techarticletitle1 @ context='html'}</div>
+
+</div>
+

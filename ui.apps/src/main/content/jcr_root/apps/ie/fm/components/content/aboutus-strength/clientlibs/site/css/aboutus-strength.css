@@ -1,0 +1,198 @@
+.aboutus-strength-section .strengths_card_container .strength-section-image{
+    height:20px !important;
+    }
+    .img-wd{
+        width:40px;
+    }
+    .strength-section {
+        background: var(--secondaryBtnHover);
+        margin-bottom: 49px;
+        padding-bottom: 30px;
+    }
+    .strength-card-section5, .strength-card-section{
+        font-weight: var(--fontWeightNormal);
+        font-size: var(--fontSize18);
+        line-height: var(--baseLineHeight);
+        color: var(--primaryColor);
+    }
+    .strength-card-section5 {
+        margin-left: 15px;
+        max-width: 332px;
+    }
+    .strength-card-section {
+        margin-left: 10px;
+        max-width: 350px;
+    }
+    
+    .strengths_card_container {
+        display: -webkit-inline-box;
+        margin: 15px 0;   
+        padding-right: 10px;
+    }
+    
+    .aboutus-strength-section {
+        margin-bottom: 20px;
+        max-width: 887px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 87px;
+    }
+    .aboutus-title, .ourstrength-title  {
+        font-weight: var(--fontWeightBold);
+        font-size:  var(--fontSize31);
+        line-height:  1.483;
+        text-align: center;
+        color: var(--secondaryBlack);
+    }
+    .ourstrength-title{
+        padding-top: 25px;
+    }
+    
+    /*our story*/
+
+    .aboutus-container {
+        display: inline-flex;
+    }
+    
+    .aboutus-main {
+        margin-bottom:13px;
+    }
+    .aboutus-description {
+        font-weight: var(--fontWeightNormal);
+        font-size: var(--baseFontSize);
+        line-height: 1.875;
+        color: var(--secondaryBlack);
+        max-width: 493px;
+    }
+
+    #about-us-title h1{
+        text-align: center;
+        color: var(--secondaryBlack);
+        font-size: var(--fontSize45);
+        line-height: var(--lineHeight1and483);
+        font-weight: var(--fontWeightSmall);
+         margin-bottom: 20px;
+         margin-top: 30px;
+      }
+      #about-us-description,
+      #about-us-description-extension{
+        max-width: 1280px;
+        margin: 0 auto;
+       padding: 0 130px;
+      }
+      #About-us-herobanner{
+        margin: 0 auto;
+      }
+      #About-us-herobanner img{
+        height: 100%;
+      }
+      #About-us-herobanner.cmp-image{
+        margin-top: 0;
+      }
+    @media screen and (min-width:992px) {
+        .aboutus-image-section .aboutus-image img{
+          width: 491px !important;
+          height: 693px !important;
+          }
+          .mt-space{
+            margin: 15px 0 30px 0;
+          }
+    }
+    
+    @media screen and (min-width:768px) and (max-width:991px) {    
+    .ourstrength-title {
+        font-weight: var(--fontWeightBold);
+        font-size:var(--fontSize28);
+        line-height: 0.75;
+        padding-top: 25px;
+        text-align: center;
+        color: var(--secondaryBlack);
+    }
+    .strengths_card_container {
+        display: -webkit-inline-box;
+        margin: 10px 0 10px 10px;
+    }
+    .mt-space{
+        margin:15px 0 30px 10px;
+      }
+    .strength-card-section, .strength-card-section5 {
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize14);
+        line-height: var(--fontSize24);
+        color: var(--primaryColor);
+    }
+    .strength-card-section5 {
+        margin-left: 15px;
+    }
+    .aboutus-strength-section {
+        margin-bottom: 20px;
+        max-width:723px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+      
+    }
+    @media screen and (max-width:767px) {
+        .strength-section{
+            margin-bottom: 25px;
+        }
+        .aboutus-strength-section{
+            grid-template-columns: 100%;
+        }
+        .ourstrength-title {
+            font-size: var(--fontSize22);
+            font-weight: var(--fontWeightBold);     
+            line-height: var(--lineHeightSmall);
+            padding-top: 25px;
+            text-align: center;
+            color: var(--secondaryBlack);
+        }
+        .strengths_card_container {
+            display: -webkit-inline-box;
+            margin: 10px 0 10px 10px;
+        }
+    
+        .mt-space-mobile{
+            margin-top:25px;
+          }
+            .strength-card-section {
+            font-weight: var(--fontWeightSmall);
+            font-size: var(--fontSize14);
+            line-height: var(--baseLineHeight);
+            color:  var(--primaryColor);
+            padding-right: 24px;
+        }
+            .aboutus-strength-section {
+            margin:0 30px;
+        }
+        .strength-card-section5 {
+            font-weight: var(--fontWeightSmall);
+            font-size: var(--fontSize14);
+            line-height: var(--baseLineHeight);
+            color:  var(--primaryColor);
+            margin-left: 15px;
+        }
+        .aboutus-strength-section .strengths_card_container .strength-section-image{
+            width: 50px;
+             }
+             
+             .strengths_card_container{
+                 margin-left: 0;
+             }
+
+             #about-us-description,
+             #about-us-description-extension{
+               padding: 0 20px;
+             }
+             #about-us-title h1{
+               color: var(--secondaryBlack);
+               font-size: var(--fontSize22);
+               line-height: var(--lineHeight1and483);
+               font-weight: var(--fontWeightBold);
+               margin-bottom: 0px;
+             }
+        }
+    #container-30f3782682 .text p{max-width: 1010px; margin: 0 auto;}
+    

@@ -1,0 +1,96 @@
+  #rma-form-title-top{
+    text-align: center;
+    max-width: 812px;
+    margin: 2.25rem auto 1.5rem;
+    /* margin-top: 36px; */
+  }
+  #rma-form-text-top{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1022px;
+    margin-bottom:61px;
+  }
+  /* #rma-form-text-top a:hover,#rma-form-text-top a:active{
+    text-decoration:underline;
+    text-decoration-color:var(--secondaryBlack);
+  }
+  #rma-form-text-top a:active,#rma-form-text-top a:focus{
+    border:none;
+  } */
+  #rma-form-text-top a:visited{
+    text-decoration:none;
+  }
+  #rma-form-title-top h2{
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    color:var(--primaryColor);
+    line-height: var(--baseLineHeight);
+  }
+
+  #rma-form-text-top p,#rma-form-text-top  li{
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--baseFontSize);
+    color:var(--secondaryBlack);
+    line-height: var(--baseLineHeight);
+  }
+
+  #rma-form-title-bottom{
+    max-width: 812px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #rma-form-text-bottom{
+    max-width: 1022px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+
+  #rma-form-title-bottom p{
+    justify-content: center;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    color:var(--primaryColor);
+    text-align: center;
+    line-height: var(--lineHeight1and483);
+    margin-top: 60px;
+  }
+
+  #rma-form-text-bottom p,#rma-form-text-bottom li{
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+  }
+  #rma-form-text-bottom ol li p {
+    margin: 30px 0 30px 70px;
+  }
+  @media screen and (max-width:833px){
+    #rma-form-title-top,#rma-form-title-bottom{
+      padding-left: 24px;
+      padding-right:24px;
+      text-align:center;
+      margin: 1.56rem auto 0.20rem;
+    }
+    #rma-form-text-top,#rma-form-text-bottom{
+      margin-left:0;
+      margin-right: 0;
+      padding-left:16px;
+      padding-right:24px;
+
+    }
+ #rma-form-text-bottom ol li p {
+    margin: 30px 0 30px 0;
+  }
+  #rma-form-title-top h2{
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+  }
+  #rma-form-text-top p,#rma-form-text-top  li{
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+  }
+  #rma-form-title-bottom p{
+    font-size: var(--baseFontSize);
+  }
+  }

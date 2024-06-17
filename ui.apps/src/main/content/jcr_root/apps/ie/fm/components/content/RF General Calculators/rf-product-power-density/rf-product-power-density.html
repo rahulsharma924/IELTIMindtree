@@ -1,0 +1,107 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+		<div class="form-block-cls">
+			<div class="column"><h4>${properties.calculationtitle}</h4></div>
+			<div class="row top-block-cls mt-4 ">
+				<div class="col-lg-8 col-12">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<label class="general-cls">${properties.outputlabeltitle}</label>
+							<input type="text" id="pr" class="input" value="${properties.outputPlaceholder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)">
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+						<div class="col-lg-6 col-md-6 dt-mt-rem">
+							<select id="from" class="input" data-acsb-navigable="true" data-acsb-now-navigable="true"
+								aria-hidden="false">
+								<option value="mW">Milliwatts</option>
+								<option value="W">Watts</option>
+								<option value="dBm">dBm</option>
+								<option value="dBW">dBW</option>
+							</select>
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+					<div class="row dt-mt-rem">
+						<div class="col-lg-6 col-md-6">
+							<label class="general-cls">${properties.gainlabeltitle} </label>
+							<input type="text" id="gr" class="input" value="${properties.gainPlaceholder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)">
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+					<div class="row dt-mt-rem">
+						<div class="col-lg-6 col-md-6">
+							<label class="general-cls">${properties.distancelabeltitle} </label>
+							<input id="dr" class="input" type="text" value="${properties.distancePlaceholder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)">
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+						<div class="col-lg-6 col-md-6 dt-mt-rem">
+							<select id="unit1" class="input">
+								<option value="km">Kilometers</option>
+								<option value="m">Meters</option>
+								<option value="cm">Centimeters</option>
+								<option value="mi">Miles</option>
+								<option value="yards">Yards</option>
+								<option value="ft" selected="selected">Feet</option>
+								<option value="in">Inches</option>
+							</select>
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12  dt-mt-rem">
+					<div class="row">
+						<div class="col-12">
+							<button id="go" class="ie-primary-btn" type="button" onclick="generalClickFnDensity()"
+						value="Calculate">
+						${properties.powercalculatebtntitle}
+					</button>
+					<p class="calculate-error-cls"><span class="error ErrorText"></span><span id="errormsg"
+							class="error ErrorText"></span></p>
+						</div>
+					</div>	
+					<div class="row mt-2">
+						<div class="col-12">
+							<div class="calculator-results">
+								<p>${properties.powerresultlabel}</p>
+								<div class="result_container results-calc">
+									<div class="result">
+											<span class="result-converted"> ${properties.powerresultlabeltitle} </span> <span id="range"
+											class="output" aria-hidden="true" data-acsb-hidden="true"
+											data-acsb-force-hidden="true"></span></div>
+								</div>						
+							</div>
+						</div>
+					</div>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

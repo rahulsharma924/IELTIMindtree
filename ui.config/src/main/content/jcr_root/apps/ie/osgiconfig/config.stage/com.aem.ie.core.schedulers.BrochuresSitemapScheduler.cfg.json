@@ -1,0 +1,6 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "schedulerName":"Brochures SiteMap Generator Configuration",
+  "schedulerExpression":"0 0 0/1 1/1 * ? *",
+  "serviceEnabled": "true"
+}

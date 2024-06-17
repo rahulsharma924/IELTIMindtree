@@ -1,0 +1,9 @@
+<sly
+data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+data-sly-call="${clientlib.css @ categories='softwaredownload-clientlibs'}"/>
+
+
+<div class="software_block">
+<h2 class="fv_main_heading sd-title">${properties.sdownloadstitle}</h2>
+<div class="fv_Para_small sd-text">${properties.sdownloadstext @context='html'}</div>
+</div>

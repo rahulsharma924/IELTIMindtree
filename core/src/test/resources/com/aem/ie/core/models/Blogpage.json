@@ -1,0 +1,28 @@
+{
+  "blogpage":{
+    "blogauthor": "by Pete McNeil ",
+    "textIsRich": [
+      "true",
+      "true",
+      "true",
+      "true"
+    ],
+    "blogdate": "Mon Mar 04 2019 00:00:00 GMT+0530",
+    "sling:resourceType": "ie/fm/components/content/blogpage",
+    "blogtext": "<p>A low noise amplifier (LNA) is an essential active RF device in virtually all receiver (RX) front-ends (FE) and throughout the signal chain in many sensitive designs. LNAs are designed to amplify weak RF signals while introducing minimal noise into the signal chain. For these reasons, LNAs can be found at the front-end for essentially all test and measurement receivers, such as vector network analyzers, spectrum/signal analyzers, and digitizers. Moreover, LNAs are ubiquitous in the front-ends for RF sensing applications, for instance, radar and millimeter-wave imaging.</p>\r\n",
+    "blogimgtext": "Low Noise RF Amplifier  2021",
+    "blogimg": "/content/dam/image25.png",
+    "jcr:created": "Thu Mar 02 2023 12:05:32 GMT+0530",
+    "jcr:lastModifiedBy": "vkatiyar@infiniteelectronics.com",
+    "jcr:createdBy": "admin",
+    "blogtitle": "Low Noise Amplifiers Q&A  2021",
+    "blogshare": "Share now",
+    "bloglinkedin": "#",
+    "bloglabel": "ie:category/adapters",
+    "jcr:lastModified": "Mon Mar 06 2023 13:49:21 GMT+0000",
+    "jcr:primaryType": "nt:unstructured",
+    "blogimage": "/content/dam/ie/image 25.png",
+    "blogfb": "#",
+    "blogtwitter": "#"
+  }
+}

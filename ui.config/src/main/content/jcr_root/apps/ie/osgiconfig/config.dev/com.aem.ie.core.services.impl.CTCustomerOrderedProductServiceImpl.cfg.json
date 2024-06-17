@@ -1,0 +1,5 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getCustomerOrderedProductURL":"https://apim-iedtecomm-dev01.azure-api.net/account/fairview/fetch-products"
+  
+}

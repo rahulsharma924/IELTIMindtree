@@ -1,0 +1,56 @@
+{
+  "PageUtils": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industrial automation",
+      "cq:lastReplicationAction": "Activate",
+      "pwaOrientation": "any",
+      "cq:template": "/conf/fm/settings/wcm/templates/home-page"
+    }
+  },
+  "PageUtils1": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industrial automation",
+      "cq:lastReplicationAction": "Activate",
+      "pwaOrientation": "any",
+      "cq:template": "/settings/wcm/templates/news-template"
+    }
+  },
+  "PageUtils2": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Industrial automation",
+      "cq:lastReplicationAction": "Activate",
+      "pwaOrientation": "any",
+      "cq:template": "/settings/wcm/templates/blog-template"
+    }
+  },
+    "PageUtils3": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Sun Mar 19 2023 23:55:32 GMT+0530",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Industrial automation",
+        "cq:lastReplicationAction": "Activate",
+        "pwaOrientation": "any",
+        "cq:template": "/settings/wcm/templates/article-page"
+      }
+  }
+}
+
+

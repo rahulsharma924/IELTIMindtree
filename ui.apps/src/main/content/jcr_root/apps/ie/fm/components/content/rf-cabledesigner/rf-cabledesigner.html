@@ -1,0 +1,507 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.all @ categories='cat-rf-cabledesigner'}" />
+<div class="aem-GridColumn aem-GridColumn--default--12">
+    <div class="rf-container">
+        <div class="rf_cabledesigner_main_page">
+
+
+            <div class="row flex-column flex-column-reverse flex-md-row">
+
+                <div class="col-12 col-md-4 left_sidebar_wrap">
+                    <div class="container">
+                        <div class="accordion key-specification-cls">
+                            <h2 class="specifications"><span class="key-specification-label"></span> <span class="plusminus">+</span></h2>
+                            <div class="accordion-item connector1-cls analytic-connector1 cable_connector_keys" data-section="con1">
+                                <div class="accordion-titel">
+                                    <span class="border"></span>
+                                    <h2>${properties.connector1text || 'Connector 1'}</h2>
+                                </div>
+                                <div class="accordion-contant">
+                                </div>
+                            </div>
+                            <div class="accordion-item cableOptions-cls analytic-cable cable_connector_keys" data-section="cabl">
+                                <div class="accordion-titel">
+                                    <span class="border"></span>
+                                    <h2>${properties.cabletext || 'Cable'}</h2>
+                                </div>
+                                <div class="accordion-contant">
+
+                                </div>
+                            </div>
+                            <div class="accordion-item connector2-cls analytic-connector2 cable_connector_keys" data-section="con2">
+                                <div class="accordion-titel ">
+                                    <span class="border"></span>
+                                    <h2>${properties.connector2text || 'Connector 2'}</h2>
+                                </div>
+                                <div class="accordion-contant">
+
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-item assemblyOptions-cls analytic-assembly-option">
+                                <div class="accordion-titel">
+                                    <span class="border"></span>
+                                    <h2>${properties.assemblyoptionsmaintitle || 'Assembly options'} (optional)</h2>
+                                </div>
+                                <div class="accordion-contant">
+                                    <sly
+                                        data-sly-use.listUse="${'/apps/ie/fm/clientlibs/clientlib-base/js/listcollection.js' @ multifieldName='assemblycheckboxoptions'}">
+                                    </sly>
+                                    <sly data-sly-list=${listUse}>
+                                        <div class="accordion-contant-section"><span class="active-state-cls selected"></span>
+                                            <p class="accordion-contant-content">
+                                                ${item.properties.assemblyoptioncheck}<span class="strong"
+                                                    title="${item.properties.assemblyoptioncheck}"></span> </p>
+                                        </div>
+                                    </sly>
+                                    <div class="accordion-contant-section"><span class="active-state-cls not-selected"></span>
+                                        <p class="accordion-contant-content">${properties.clocklingsidelabel ||
+                                            'Clocking'}: <span class="strong"
+                                                title="${properties.clocklingsidelabel || 'Clocking'}">0</span> </p>
+                                    </div>
+                                  
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="assembly-btn">
+                            <button class="primary-assembly ie-primary-btn disabled">${properties.createAssemblybtnText
+                                || 'Create Cable Assembly'}</button>
+                                <span class="assembly-tooltip">Please select all parameters for connectors 1,2 and cable before submitting. </span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-md-8 right_side_content_wrap">
+
+                    <div class="top_section">
+                        <h1>${properties.heading || 'RF Cable Designer'}</h1>
+                        <p class="secondary_color">${properties.subtext || 'New to Cable Designer?'} <a
+                                class="bold_link" href="${properties.learnmoreurl}">${properties.learnmoretext || 'Learn
+                                More'}</a></p>
+                    </div>
+                    <h3>${properties.subheading || 'Design Estimate'}</h3>
+                    <p class="sub_heading_desc">${properties.subheadingdesc || 'This is an estimate of how your part
+                        will be produced based on your inputs.'}</p>
+                    <div
+                        class="row flex-column flex-md-row  align-items-center align-items-md-stretch card_section_row">
+                        <div class="col-12 col-xl-10">
+                            <div class="row">
+                                <sly
+                                    data-sly-use.listUse="${'/apps/ie/fm/clientlibs/clientlib-base/js/listcollection.js' @ multifieldName='cards'}">
+                                </sly>
+                                <sly data-sly-list=${listUse}>
+                                    <div class="col card_section">
+                                        <div class="card_wrap">
+                                            <div class="card_title">${item.properties.title}</div>
+                                            <div class="img_wrap">
+                                                <div class="icon_section"><i class="fa-regular fa-circle-check"></i>
+                                                </div>
+                                                <div class="img_section"><img src="${item.properties.file}"
+                                                        alt="${item.properties.title}" title="${item.properties.title}" data-default-img="${item.properties.file}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </sly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-column filter_section">
+                        <div class="col-12 col-xl-10">
+                            <h4><i class="fa-solid fa-filter icon_section"></i> <span class="filter-config-label"></span></h4>
+                            <div class="row flex-column flex-sm-row">
+                                <!-- <div class="col-12 col-sm-7 col-lg-6 column_section">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label class="title" for="unit">Unit</label>
+                                            <div class="select_container">
+                                                <select class="input_field unit_field" id="unit">
+                                                    <option value="MHz">MHz</option>
+                                                    <option value="GHz">GHz</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col col_2">
+                                            <label class="title" for="max-frequency">Max frequency</label>
+                                            <div class="input_container">
+                                                <input type="number" class="input_field" id="max-frequency" placeholder="40,000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-12 col-sm-5 column_section">
+                                    <label class="checkbox-container" for="stock-parts"><span class="show-stock-part-label"></span>
+                                        <input type="checkbox" checked="checked" id="stock-parts">
+                                        <span class="checkmark"></span>
+                                    </label> <!--
+                                    <label class="checkbox-container" for="display-components">Only display RoHS
+                                        components
+                                        <input type="checkbox" id="display-components">
+                                        <span class="checkmark"></span>
+                                    </label> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="filter_selection">
+                               
+                                <div class="card assembly-cls" id="card_3">
+                                    <div class="card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed"
+                                                data-target="#collapseFour">
+                                                <i class="fa-solid fa-chevron-up icon_section"></i>
+                                                ${properties.assemblyoptionsmaintitle || 'Assembly options'}
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFour" class="collapse collapseFour card-body-wrap" aria-labelledby="headingFour"
+                                        data-parent="#filter_selection">
+                                        <div class="card-body">
+                                            <div class="reset_btn reset_click"></div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="row">
+                                                        <sly
+                                                            data-sly-use.listUse="${'/apps/ie/fm/clientlibs/clientlib-base/js/listcollection.js' @ multifieldName='assemblycheckboxoptions'}">
+                                                        </sly>
+                                                        <sly data-sly-list=${listUse}>
+                                                            <div class="col-md-6 check-box-${itemList.index}">
+                                                                <label class="checkbox-container"
+                                                                    for="${item.properties.assemblyoptionid}">${item.properties.assemblyoptioncheck}
+                                                                    <i class="fa fa-question-circle-o question_icon"
+                                                                        aria-hidden="true" data-target="assembly_popup_1"></i>
+                                                                    <input type="checkbox" class="assembly_click"
+                                                                        id="${item.properties.assemblyoptionid}"
+                                                                        value="${item.properties.assemblyoptioncheck}">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+
+                                                        </sly>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4 select_container">
+                                                    <label for="clocking">${properties.clockingdegtitle || 'Clocking
+                                                        (deg)'} <i class="fa fa-question-circle-o question_icon"
+                                                            aria-hidden="true" data-target="assembly_popup_2"></i></label>
+                                                    <select class="input_field assembly_option_click" data-target="Clocking"
+                                                        id="clocking" disabled>
+                                                        <sly
+                                                            data-sly-use.selectoptionsUse="${'/apps/ie/fm/clientlibs/clientlib-base/js/listcollection.js' @ multifieldName='assemblyselectoptions'}">
+                                                        </sly>                                                      
+                                                        <sly data-sly-list=${selectoptionsUse}>
+                                                            <option>${item.properties.clockdegoptions}</option>
+                                                            <sly>
+                                                    </select>
+                                                </div>
+                                             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="rnd" class="d-none">
+
+                </div>
+            </div>
+
+            <div class="icon_popup">
+                <div class="icon_popup_wrap">
+                </div>
+            </div>
+            <div class="d-none">
+                <div id="assembly_popup_1">
+                    ${properties.assemblyheatshrinkicontext @context='html'}<img src="${properties.assemblyheatshrinkiconimage @context='uri'}">
+                </div>
+                <div id="assembly_popup_2">
+					${properties.clockicontext @context='html'} <img src="${properties.clockiconimage @context='uri'}"></i>
+                   
+                </div>
+                <div id="found_product">
+                    <div class="title">Your product was found!</div>
+                    <div class="desc"><p>${properties.searchcabletext || 'The configuration you requested already exists. Click continue to view product.'}</p></div>
+                </div>
+                <div id="no_product">
+                    <div class="title">Your search <span class="wrong_text"></span> did not match any products</div>
+                    <div class="desc">
+                        <strong>Suggestions:</strong>
+                        <ul>
+                            <li>Try a different SKU</li>
+                            <li>Make sure all words are spelled correctly</li>
+                            <li>Try different keywords</li>
+                            <li>Try more general keywords</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="no-results">
+                    <div class="title"></div>
+                    <div class="desc">
+                        <strong>No results found!</strong>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade seeallmatches-cls" id="popup_div" tabindex="-1" role="dialog"
+                aria-labelledby="searchlist" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" id="searchlist"> 
+                        <div class="modal-header" >
+                            <h5 class="modal-title" id="exampleModalLongTitle"><span class="nomatches-cls"></span> <span class="part-matches-label"></span></h5>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="table_wrap">
+                                <table class="table table-hover">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col" class="sku_label"></th>
+                                            <th scope="col" class="product_label"></th>                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary cancel_btn"
+                                data-dismiss="modal"></button>
+                            <button type="button" class="btn ie-primary-btn select_btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- check product found or not modal	 start -->
+        <div class="modal check_product_result" id="check_product_result">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn ie-primary-btn continue_btn" id="creat_cableassembly">Continue</button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <!--	 check product found or not modal End -->
+        </div>
+    </div>
+    <!-- modal starts here -->
+    <div id="modalSpinnerId" class="modal modal-spinner-cls fade bd-example-modal-lg" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content spinner-wrapper">
+                <span class="fa fa-spinner fa-spin fa-3x text-white">&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+    <!-- modal ends here -->
+
+    <!-- captcha modal	 start -->
+    <div class="modal captcha-cls">
+        <div class="modal-dialog" role="document" style="top:30%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">${properties.captchaheading ||'Complete captcha before proceeding'}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <sly
+                        data-sly-resource="${'captcha' @ resourceType='/apps/ie/fm/components/content/account/recaptcha'}">
+                    </sly>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--	 captcha modal End -->
+
+       
+
+
+</div>
+
+<sly
+    data-sly-use.listUse="${'/apps/ie/fm/clientlibs/clientlib-base/js/listcollection.js' @ multifieldName='propertynames'}">
+</sly>
+<sly data-sly-list=${listUse}>
+    <input type="hidden" id="${item.properties.propertyname}" value="${item.properties.propertyprintname}" />
+</sly>
+
+<input type="hidden" value="${properties.redirecturl || '/content/fm/en/the-rf-cable-designer/rfcd-product'}.html"
+    id="product-page-url">
+
+
+<script id="keyItemTemplate" type="text/x-handlebars-template">     
+    <div class="accordion-contant-section"><span class="selected active-state-cls"></span><p class="accordion-contant-content" filtername="{{filtername}}">{{filtername}}:<span class="strong" title="{{idx}}">none</span> </p></div>
+</script>
+<script id="eachBlockTemplate" type="text/x-handlebars-template"> 
+   <div class="col-md-6 col-lg-4 col-sm-6 filter_wrap">
+       <div class="filter_title" titleval="{{idx}}">
+            {{filtername}}
+       </div>
+      <div class="filter-container">
+          <div class="search_wrap d-flex align-items-center">
+              <i class="fa fa-search"></i>
+              <input class="form-control filter_search" type="text"  placeholder="Search" />
+      </div>
+      <div class="search_list_wrap"><ul class="list-group search_list"></ul></div>
+      </div>
+   </div> 
+</script>
+
+<script id="innerBlockTemplate" type="text/x-handlebars-template">
+   <li class="list-group-item" val="{{value}}"><i class="fa fa-check icon_section" aria-hidden="true"></i>{{value}}</li>
+</script>
+
+<script id="searchDomTemplate" type="text/x-handlebars-template">
+   <div pname="{{name}}" psku=" {{sku}}" class='name'>
+       <a href="{{link}}" download>{{name }}</a>
+   </div> 
+   <div class='sku' asku="{{sku}}">
+   <span class='sku_label'>{{skuLabel}}: </span>
+   {{sku}}
+   </div>
+</script>
+
+<template id="ccc-card-accordian">
+    <div class="card {{data.className}} connector_cable_wrap" data-section="{{data.attrDataSection}}" id="{{data.cardId}}">
+        <div class="card-header" id="heading_{{index}}">
+            <h5 class="mb-0">
+
+                <button class="btn btn-link collapsed"
+                    data-target="#collapse_{{index}}">
+                    <i class="fa-solid fa-chevron-up icon_section"></i> <span class="heading_label">{{data.heading}}</span>
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapse_{{index}}" class="collapse card-body-wrap" aria-labelledby="heading_{{index}}"
+            data-parent="#filter_selection">
+            <div class="card-body">
+                <div class="reset_btn reset_click"></div>
+                 <div class="check-box-same-as-one"> 
+                    </div>
+                <div class="radio_wrap row select_type">
+                    <div class="col"><label class="radio-container "
+                        for="select-parameters-{{index}}"><span class="radio-label1"></span>
+                        <input type="radio" id="select-parameters-{{index}}" checked="checked"
+                            name="search_section_{{index}}" class="select_section"
+                            data-target="parameter_section">
+                        <span class="checkmark"></span>
+                    </label></div>
+                    <div class="col"><label class="mid_text"></label></div>
+                    <div class="col">
+                        <label class="radio-container"
+                            for="search-an-existing-part-number-{{index}}"><span class="radio-label2"></span>
+                            <input type="radio" name="search_section_{{index}}"
+                                id="search-an-existing-part-number-{{index}}" class="select_section"
+                                data-target="existing_part_number_section">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div
+                    class="existing_part_number_section option_container">
+                    <div class="search_whole_wrap">
+                        <div class="search_wrap d-flex align-items-center">
+                            <label class="fa fa-search icon_section"
+                                for="filter_search_{{index}}"></label>
+                            <input class="form-control search_part_num" type="search"
+                                placeholder="Search by part name or number"
+                                id="filter_search_{{index}}" data-target="Connector_One_Selections">
+
+                        </div>
+                        <div class="search_result_wrap">
+                            <div class="col-12 search_result">
+                                <div class="recomended_wrap">
+                                    <div class="search_title"></div>
+                                    <p class="rec-spinner-wrapper"><span
+                                            class="fa fa-spinner fa-spin fa-3x text-black"
+                                            aria-hidden="true"
+                                            style="display: block;"></span></p>
+                                    <div class="content_section">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected_part_section">
+                            <div class="prdct-details d-flex flex-lg-row">
+                                <div class="slected_label"> </div>
+                                <div class="result_section">
+
+                                    <div class="pdf_section d-flex">
+                                        <div class="icon_section"><i class="fa-sharp fa-solid fa-file-pdf"></i></div>
+                                        <div class="icon_detail"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="parameter_section option_container">
+                    <div class="selected_part_section">
+                        <div class="prdct-details d-flex flex-lg-row w-100">
+                            <div class="slected_label"> </div>
+                            <div class="result_section invisible">
+                                <div class="pdf_section d-flex">
+                                    <div class="icon_section"><i class="fa-sharp fa-solid fa-file-pdf"></i></div>
+                                    <div class="icon_detail"></div>
+                                </div>
+                            </div>
+                            <div class="match_link"><a data-target="#popup_div"
+                                    class="get-all-matches invisible"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row filter-area-cls">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+<template id="same-as-one-template">
+    <div class="check-box-same-as-one"> <label class="checkbox-container"
+        for="sameasconnector1"><span class="same1_label"></span>
+        <input type="checkbox" class="sameasconnector1"
+            id="sameasconnector1" value=""> <span
+            class="checkmark"></span> </label> </div>
+</template>
+<div class="overlayCls"></div>
+<section class="modalCls"> 
+    <div class="spinner-wrapper">
+        <span class="fa fa-spinner fa-spin fa-3x text-white">&nbsp;&nbsp;&nbsp;</span>
+    </div>
+</section>  
+
+
+ 

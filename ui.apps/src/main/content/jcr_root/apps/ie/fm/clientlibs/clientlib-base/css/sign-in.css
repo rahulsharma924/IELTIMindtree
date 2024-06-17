@@ -1,0 +1,677 @@
+#rightpanel.cmp-container .benefits-wrapper {
+  background: var(--secondaryColor);
+  padding: 20px 0px 0px 0px;
+}
+#signinheader{
+  margin-top: 0;
+}
+
+#signinheader h1{
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize45);
+  line-height: var(--baseLineHeight);
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #282828;
+  width: 80%;
+  padding: 0px 6px 10px;
+}
+
+.signinemail .cmp-form-text label {
+  text-transform: none;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  color: var(--primaryColor);
+  width: 80%;
+}
+
+.signinemail .cmp-form-text__text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Foundation/4 */
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+  height: 44px;
+  background: var(--secondaryColor) !important;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 14px;
+  line-height: 20px;
+  width: 390px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.password .cmp-form-text label {
+  text-transform: none;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  color: var(--primaryColor);
+  width: 80%;
+}
+.align-item-lable {
+  white-space: nowrap;
+}
+.password .cmp-form-text__text {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--secondaryColor);
+  /* Foundation/4 */
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+  /* Valu4 */
+  height: 44px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--btnDisabledLight);
+  width: 390px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.password .cmp-form-text .frgpwd {
+  text-align: right;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightMedium);
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  align-items: center;
+  text-align: right;
+  font-feature-settings: "tnum" on, "lnum" on;
+  /* FM Palette/Default */
+  color: var(--invertedColor);
+  width: 80%;
+}
+
+.options .cmp-form-options__field-label .cmp-form-options__field--checkbox {
+  /* Shape */
+  box-sizing: border-box;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: -15px;
+  top: -20px;
+  /* White */
+  background: var(--secondaryColor);
+  /* Cloud/Darker */
+  border: 1px solid #bac7d5;
+  border-radius: 3px;
+}
+
+.options .cmp-form-options__field-label .cmp-form-options__field-description {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 14px;
+  line-height: 20px;
+  color: #252a31;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: -20px;
+  top: -20px;
+  white-space: nowrap !important;
+}
+
+.signinbutton .cmp-button {
+  /* Foundation/5 */
+  width: 390px;
+  height: 52px;
+  background-color: var(--btnDisabledLight);
+  border-radius: 4px;
+  border: 0;
+  margin: 15px 8px 40px;
+  padding: 0;
+  cursor: pointer;
+  pointer-events: none;
+}
+.signinbutton .cmp-button:hover {
+  cursor: default;
+}
+.signinbutton .cmp-button.signin-btn-enabled:hover {
+  cursor: pointer;
+}
+
+.signinbutton .cmp-button .cmp-button__text {
+  position: relative;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  padding: 14px 0;
+  display: block;
+  text-align: center;
+  color: var(--secondaryColor);
+}
+/* 
+.signinbutton .cmp-button:focus {
+  outline: none;
+  cursor: pointer;
+} */
+
+#signinpwd.cmp-form-text__text:focus,
+#signinemail.cmp-form-text__text:focus {
+  outline: 2px solid var(--blueColorLight);
+}
+#signinpwdMsg{
+  width:65%;
+  float:left;
+}
+#signinpwdMsg::after{
+   content: "\00a0";
+}
+
+#forgotpwd {
+  text-align: right;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightMedium);
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  align-items: center;
+  text-align: right;
+  font-feature-settings: "tnum" on, "lnum" on;
+  /* FM Palette/Default */
+  color: var(--invertedColor);
+  max-width: 388px;
+  margin-top: -33px;
+}
+
+#forgotpwd  p{
+  width:35%;
+  float:right;
+}
+
+#forgotpwd > p > a {
+  color: var(--invertedColor);
+  text-decoration: none;
+  cursor: pointer;
+}
+#forgotpwd > p > a:hover{
+  text-decoration: underline;
+}
+#forgotpwd>p>a:focus{
+  border: 0;
+  color: var(--invertedColorFocus);
+}
+#signin-agree {
+  position: relative;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize12);
+  line-height: 20px;
+  max-width: 397px;
+  /* or 167% */
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+  /* Foundation/6 */
+  color: #454b4f;
+}
+#signin-agree p {
+  line-height: 20px;
+}
+#signin-agree p a {
+  border: 0.125em solid transparent;
+  border-radius: 0.25em;
+  color: var(--secondaryLinkNormal);
+  text-decoration: none;
+  font-weight: var(--fontWeightMedium);
+}
+#signin-agree p a:hover,
+#signin-agree p a:focus {
+  color: var(--secondaryLinkNormal);
+  font-weight: var(--fontWeightBold);
+  text-decoration: underline;
+}
+#signin-agree p a:active{
+  color: var(--secondaryLinkActive);
+  font-weight: var(--fontWeightBold);
+  text-decoration: underline;
+}
+.cmp-separator hr {
+  position: relative;
+  width: 400px;
+  height: 0;
+  left: -180px;
+  top: 295px;
+  border: 1px solid var(--livesupportBorderClr);
+  transform: rotate(90deg);
+}
+.cmp-separator__horizontal-rule {
+  background-color: #eceff1;
+  border: none;
+}
+
+/*2nd layout*/
+
+#benefits {
+  padding: 100px 0px 0px 165px;
+}
+
+#benefits p {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#benefits p:nth-child(1) {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightBold);
+  font-size: 22px;
+  line-height: 33px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--secondaryBlack);
+}
+
+#signin-createaccount {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  width: 284px;
+  height: 54px;
+  background: #fff;
+  border: 1px solid #005da6;
+  border-radius: 4px;
+  margin-left: 0px;
+}
+
+#signin-createaccount .cmp-button__text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #005da6;
+  flex: none;
+  flex-grow: 0;
+}
+
+#donthaveanacc h2 {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize22);
+  line-height: var(--baseLineHeight);
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--secondaryBlack);
+  padding: 24px 0px 0px 0px;
+}
+
+#benefitstext {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--secondaryBlack);
+  margin-top: -10px;
+}
+
+#benefitsplan {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: var(--fontWeightSmall);
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 150% */
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: var(--secondaryBlack);
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 1000px) {
+  #leftpanel {
+    margin-left: 0px;
+  }
+
+  #signinheader h1 {  
+    margin-top: 0;
+  }
+  .signinemail .cmp-form-text__text {
+    width: 100%;
+  }
+  .password .cmp-form-text__text {
+    width: 100%;
+  }
+
+  .options {
+    width: 200px;
+  }
+  .signinbutton .cmp-button {
+    width: 325px;
+  }
+  #signin-agree {
+    width: 385px;
+    font-size: var(--fontSize12);
+    padding-right: 40px;
+  }
+  #signin-agree p {
+    line-height:20px;
+    padding-left: 0;
+  }
+  .options .cmp-form-options__field-label .cmp-form-options__field-description {
+    /* left: 25px;
+        top: -34px; */
+    margin-right: -44px;
+    white-space: nowrap;
+  }
+}
+.rememberme-container {
+  display: flex;
+  margin: 10px 0 10px;
+}
+.rememberme-container .rememberme-container__input {
+  height: 20px;
+  width: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+.rememberme-container .rememberme-container__label {
+  color: #252a31;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .875rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 13px;
+    margin-top: 0;
+  }
+  #mob-align {
+    position: relative;
+  }
+  .cmp-separator hr {
+    position: relative;
+    width: 381px;
+    height: 0;
+    left: -162px;
+    top: 260px;
+    padding-left: -29px;
+    border: 1px solid var(--livesupportBorderClr);
+    transform: rotate(90deg);
+  }
+  #donthaveanacc h2{
+    padding: 40px 0 0 0;
+  }
+  #forgotpwd {
+    margin-top: -3px;
+  }
+  .rememberme-container {
+    margin: 10px 0 30px;
+  }
+  .rememberme-container .rememberme-container__input {
+    margin-left: 0;
+  }
+  #forgotpwd  p {
+    width:100%;
+  }
+ #signinpwdMsg {
+     width:100%;
+     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #benefitsplan {
+    margin-left: 0px;
+  }
+  #SigninpageContainer .cmp-title {
+    margin-top: 0px;
+  }
+  .signinbutton {
+    margin-bottom: 22px;
+  }
+}
+#SigninpageContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 400px) {
+  #benefitsplan {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #signin #rightpanel.cmp-container .donthaveanaccount h2,
+  .benefits {
+    white-space: nowrap;
+  }
+  #mob-align {
+    width: auto;
+    margin: 15px 0 0;
+  }
+  .signinbutton .cmp-button {
+    width: 100%;
+    margin: 0;
+  }
+  #signinheader h1{
+    padding: 0px 0 10px;
+  }
+  #signin-agree {
+    max-width: 100%;
+    font-size: var(--fontSize12);
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+  #signin .responsivegrid {
+    margin-left: 0;
+  }
+  #SigninpageContainer {
+    padding: 0;
+  }
+  #SigninpageContainer .signin-page {
+    padding: 0 24px;
+  }
+  #SigninpageContainer #rightpanel {
+    padding: 24px 24px 0 24px;
+  }
+  #separatorline {
+    padding: 10px;
+  }
+  #rightpanel::before {
+    width: 100%;
+  }
+  .signinbutton {
+    margin-bottom: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 13px;
+    margin-top: 0;
+  }
+  #signin #rightpanel.cmp-container .benefits-wrapper {
+    padding: 4px 0 0 0px;
+  }
+
+  #signin-createaccount {
+    width: 100%;
+  }
+  #forgotpwd  p {
+    width:100%;
+  }
+  #signinpwdMsg {
+     width:100%;
+     display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  #signin .benefits #benefitstext p{
+    white-space: pre-wrap;
+  }
+  #SigninpageContainer #rightpanel {
+    border-top: 1px solid var(--livesupportBorderClr);
+  }
+  .cmp-separator hr {
+    display: none;
+  }
+ 
+  #signinheader h1{
+    font-size: var(--fontSize22);
+    padding: 20px 0 10px;
+  }
+  
+
+  #signinheader h1 {
+    line-height: var(--baseLineHeight);
+    padding-left: 0;
+  }
+  #donthaveanacc h2{
+    padding: 0px;
+  }
+  #forgotpwd {
+    text-align: center;
+    margin-top: -2px;
+  }
+  .rememberme-container {
+    margin: 10px 0 30px;
+  }
+  .rememberme-container .rememberme-container__input {
+    margin-left: 0;
+  }
+  .custom_form_signin_error_msg{
+    line-height: 14px;
+  }
+}
+
+#signin .signin-btn-enabled {
+  background-color: var(--invertedColor);
+  border: 1px solid var(--invertedColor);
+  pointer-events: all !important;
+}
+
+.signin-btn-enabled:focus {
+  background-color: var(--invertedColor);
+  outline: 2px solid var(--blueColorLight);
+  outline-offset: 1px;
+}
+#signin .signinbutton .cmp-button.signin-btn-enabled:hover {
+  cursor: pointer;
+  background-color: var(--invertedColorHover);
+}
+#signin .signinbutton .cmp-button.signin-btn-enabled:active {
+  outline: 0 none;
+  background-color: var(--invertedColorVisited);
+}
+#benefitstext p{
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  #signin .benefits #benefitstext p{   
+    white-space:nowrap;
+  
+  }
+  form.signin-page .password .cmp-form-text .fa-thin {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 13px;
+  }
+  /* #mob-align{position: relative;} */
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #signin .benefits #benefitstext p{
+    width: 289px;
+    white-space: pre-wrap;
+  }
+  .cmp-separator hr {
+    position: relative;
+    width: 400px;
+    height: 0;
+    left: -174px;
+    top: 258px;
+    border: 1px solid var(--livesupportBorderClr);
+    transform: rotate(90deg);
+  }
+  .custom_form_signin_error_msg {
+    height: 18px;
+  }
+  .rememberme-container .rememberme-container__input {
+    margin: 0 0 20px 0;
+  }
+  #signin #signin-createaccount {
+    width: 250px;
+  }
+}
+.sign-password-container {
+  position: relative;
+  max-width: 390px;
+}
+
+#signin-createaccount:hover {
+  outline: 0 none;
+  background-color: var(--secondaryBtnHover);
+  text-decoration: none;
+}
+
+#signin-createaccount:focus {
+  outline: 2px solid var(--blueColorLight);
+  outline-offset: -2px;
+}
+
+#signin-createaccount:active {
+  outline: 0 none;
+  background-color: var(--secondaryBtnVisited);
+  border: 1px solid var(--secondaryBtnVisited);
+}
+
+.text .sidebar__menu p{
+  margin: 3px 0 5px 0;
+}
+
+/* Moved styles from sigin.css to here */
+.sign-in {
+  padding-left: 200px;
+}
+.sign-in-text {
+  float: left;
+  margin-top: -10px;
+}

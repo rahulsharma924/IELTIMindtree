@@ -1,0 +1,109 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+		</div>
+		<div class="rfp-form-block-cls mt-3">
+			<div class="column">
+				<h4>${properties.calculationtitle}</h4>
+			</div>
+			<p class="label-cls">
+				${properties.selecinputttitle}
+			</p>
+			<div class="row">
+				<div class="col-lg-9 col-12">
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6">
+							<select id="option" class="input" data-acsb-navigable="true" data-acsb-now-navigable="true"
+								aria-hidden="false" data-acsb-hidden="false" data-acsb-validation-uuid="option"
+								data-acsb-field-visible="true" aria-required="true" aria-label="Inductance (nH)"
+								data-acsb-tooltip="Inductance (nH) | Required field">
+								<option value="l">Inductance (nH)</option>
+								<option value="x">Reactance</option>
+							</select>
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<input id="input" type="text" class="input" value="${properties.Placeholder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)" data-acsb-navigable="true"
+								data-acsb-now-navigable="true" aria-hidden="false" data-acsb-hidden="false"
+								data-acsb-validation-uuid="input" data-acsb-field-visible="true" aria-required="true"
+								aria-label="text" data-acsb-tooltip="text | Required field" />
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 offset-lg-4 col-md-6">
+							<label for="freq">${properties.frequencyTitle}</label>
+							<input id="freq" class="input" type="text" value="${properties.FrequencyPlaceholder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)" data-acsb-navigable="true"
+								data-acsb-now-navigable="true" aria-hidden="false" data-acsb-hidden="false"
+								data-acsb-validation-uuid="freq" data-acsb-field-visible="true" aria-required="true"
+								aria-label="text" data-acsb-tooltip="text | Required field" />
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+						<div class="col-lg-4 dt-mt-rem col-md-6">
+							<select id="option1" class="input" data-acsb-navigable="true" data-acsb-now-navigable="true"
+								aria-hidden="false" data-acsb-hidden="false" data-acsb-validation-uuid="option1"
+								data-acsb-field-visible="true" aria-required="true" aria-label="GHz"
+								data-acsb-tooltip="GHz | Required field">
+								<option value="GHz">GHz</option>
+								<option value="MHz">MHz</option>
+							</select>
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="row">
+						<div class="col-12">
+							<button id="go" class="ie-primary-btn" type="button" onclick="generalClickFnIra()"
+								value="Calculate">
+								${properties.iracalculatebtntitle}
+							</button>
+							<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText"></span></p>
+						</div>
+					</div>
+					<div class="row dt-mt-rem">
+						<div class="col-12">
+							<div class="calculator-results calculator-results-full">
+								<label>${properties.iraresultlabel}</label>
+								<div class="result_container results-calc">
+									<div class="result">
+										<span class="result-converted">${properties.iraresultlabeltitle1}</span><span
+											id="l" class="output" aria-hidden="true" data-acsb-hidden="true"
+											data-acsb-force-hidden="true"></span><br />
+										<span class="result-converted">${properties.iraresultlabeltitle2}</span><span
+											id="x" class="output" aria-hidden="true" data-acsb-hidden="true"
+											data-acsb-force-hidden="true"></span><br />
+										<span class="result-converted">${properties.iraresultlabeltitle3}</span><span
+											id="b" class="output" aria-hidden="true" data-acsb-hidden="true"
+											data-acsb-force-hidden="true"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

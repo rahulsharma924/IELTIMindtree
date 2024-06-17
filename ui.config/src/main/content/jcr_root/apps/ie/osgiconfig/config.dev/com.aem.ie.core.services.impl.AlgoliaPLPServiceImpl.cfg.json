@@ -1,0 +1,6 @@
+{
+  "algoliaId":"$[env:algId]",
+  "algoliaKey":"$[env:algApi]",
+  "indexInuse":"$[env:indexInuse]",
+  "indexBs":"$[env:indexBs]"
+}

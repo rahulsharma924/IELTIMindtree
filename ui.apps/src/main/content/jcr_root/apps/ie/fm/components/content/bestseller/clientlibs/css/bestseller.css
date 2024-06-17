@@ -1,0 +1,64 @@
+/*--css from here--*/
+
+#bestsellers .aem-Grid.aem-Grid--default--10>.aem-GridColumn.aem-GridColumn--default--8 {
+  width: 100%;
+  margin-left: 0;
+}
+
+#bestsellers .new.newpar {
+  margin: 0;
+  height: 0;
+}
+
+.plp-actions .label-value i {
+  font-style: normal;
+}
+.delivery-label {
+  margin-bottom: 14px;
+}
+
+/*-------Tile view desktop------*/
+.category-products .search-panel.tile-view .ais-Hits-list .ais-Hits-item {
+  width: calc(31.3% - 0rem);
+  margin: 0 1.5% 20px 1.5%;
+  padding: 20px 14px;
+}
+.category-products .card-view .tile-prod-labels,
+.category-products .table-view .tile-prod-labels,
+.category-products .tile-view .algolia-product-labels .algolia-rohs,
+.category-products .tile-view .algolia-product-labels .algolia-new,
+.category-products .tile-view .algolia-product-labels .freight-label {
+  display: none;
+}
+.custom-column-button {
+  background-color: var(--invertedColor);
+  border: 1px solid var(--invertedColor);
+  outline: 0;
+  color: var(--secondaryColor);
+  text-align: center;
+  padding: 12px 14px 12px 14px;
+  border-radius: 4px;
+  cursor: pointer
+}
+.custom-column-button:hover {
+  background-color: var(--invertedColorHover);
+  border: 1px solid var(--invertedColorHover);
+}
+.custom-column-button:active {
+  background: var(--invertedColorVisited);
+  border: 1px solid var(--invertedColorVisited);
+}
+.custom-column-button:focus {
+  outline: 2px solid var(--blueColorLight);
+  background-color: var(--invertedColor);
+  outline-offset: 2px;
+}
+.category-products .search-panel.tile-view .plp-viewcol-2.plp-actions {
+  margin-top: 22px;
+}
+
+@media only screen and (max-width:991px) {
+  #plp-page .aem-Grid.aem-Grid--12>.aem-GridColumn.aem-GridColumn--default--9.wd-grid-100 {
+    width: 100%
+  }
+}

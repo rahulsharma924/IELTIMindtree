@@ -1,0 +1,20 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='landingpage-white-papersAll'}"
+/>
+<sly data-sly-use.cfvalues="${'com.aem.ie.core.models.ContentFragmentContent' @cfInput1=properties.cfmpath1, cfInput2=properties.cfmpath2, cfInput3=properties.cfmpath3, cfInput4=properties.cfmpath4}">
+   <div class="white-paper-main analyticwhitepaper" data-sly-list.key1="${cfvalues.whitePaperMyHashMap}">
+      <div class="white-card">
+         <div class="white-title"><p class="title">${key1 @ context='html'}</p></div>
+         <div class="white-desc"><p class="broucherDesc">${cfvalues.whitePaperMyHashMap[key1] @ context='html'}</p></div>
+         <div class="cardbroucherLink" data-sly-list.key2="${cfvalues.WhitePaperImageMyHashMap}">
+               <sly data-sly-test="${key2 == key1}">
+                  <a href="${cfvalues.WhitePaperImageMyHashMap[key2]}" class="ie-tertiary-link font-weight-500" title="${properties.pdfname}">
+                        <i class="fa-sharp fa-solid fa-file-pdf"></i> 
+                     ${properties.pdfname}
+                  </a>
+               </sly>
+         </div>
+      </div>
+   </div>
+</sly>

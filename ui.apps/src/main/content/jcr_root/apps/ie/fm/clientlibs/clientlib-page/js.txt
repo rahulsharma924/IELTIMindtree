@@ -1,0 +1,7 @@
+#base=js
+#jquery.dataTables.min.js
+#popper.min.js
+#bootstrap.min.js
+#fontawesome.js
+#slick.js
+#pdpheader.js

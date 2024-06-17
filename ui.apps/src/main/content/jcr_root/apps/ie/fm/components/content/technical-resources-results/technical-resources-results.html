@@ -1,0 +1,78 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ~ Copyright 2021 Adobe
+   ~
+   ~ Licensed under the Apache License, Version 2.0 (the "License");
+   ~ you may not use this file except in compliance with the License.
+   ~ You may obtain a copy of the License at
+   ~
+   ~     http://www.apache.org/licenses/LICENSE-2.0
+   ~
+   ~ Unless required by applicable law or agreed to in writing, software
+   ~ distributed under the License is distributed on an "AS IS" BASIS,
+   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   ~ See the License for the specific language governing permissions and
+   ~ limitations under the License.
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+   <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+   data-sly-call="${clientlib.css @ categories='technical-resources-results'}" />
+
+
+   <div id="hits-content" class="tech-resource-search--result">
+      <div class="heading-container">
+      <h2 class="tech-resource-results--count"><strong><span class="tech-results_count"></span> Results <span class="tech-resource-results--query"><span></strong></h2>
+         </div>
+      
+      <!--Technical resources Result Page-->
+      <div class="resources">
+         <div class="resources-list">
+            <div class="section-whitepapers">
+               <h2 class="section-heading d-none">${properties.whitepapers}</h2>
+               <div class="landingpage-white-papers">
+                  <div class="white-paper-main analyticwhitepaper">
+                  </div>
+               </div>
+            </div>
+            <div class="section-techarticles">
+               <h2 class="section-heading d-none">${properties.technicalarticles}</h2>
+               <div class="landingpage-technicalarticles">
+                  <div class="technical-resources-articles">
+                     <div class="technicalresources_articles_container">
+                        <div class="technical_resources_articles analytictechnicalarticles">                                                                                                                                          
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="section-brochures">
+               <h2 class="section-heading d-none">${properties.brochures}</h2>
+               <div class="landingpage-brochures">                  
+                  <div class="resourceCard">                                          
+                     <div class="broucherInformation analyticbrouchers">
+                        
+                     </div>                                             
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>   
+      <!-- Empty Search Result-->
+      <div class="tech-resource-result--empty d-none">
+       <h2 id="search-title"></h2>
+            <p class="no-result-title"></p>
+         <div class="bs-title-container d-none"></div>
+         <div class="no-result-content">
+      
+            <p id="suggestions"></p>
+            <ul>
+               <li id="sgpointOne"></li>
+               <li id="sgpointTwo"></li>
+               <li id="sgpointThree"></li>
+            </ul>
+            <p class="btn-not-find"><a id="backToHome" title="Back to Homepage" href="/content/fm/en/homepage.html"></a></p>
+         </div>
+      </div>
+   </div>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='technical-resources-results'}"
+   />

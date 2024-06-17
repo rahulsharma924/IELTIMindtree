@@ -1,0 +1,52 @@
+<section
+  data-comp-id="faq"
+  data-default-value="${properties.number}"
+  data-load-more="${properties.loadmore}"
+  data-load-less="${properties.loadless}"
+  class="faqs"
+>
+  <sly data-sly-use.hashmap="com.aem.ie.core.models.FAQModel">
+    <sly data-sly-list.key="${hashmap.viewAllFaqList}">
+      <div
+        class="faq__list accordion_container"
+        data-current-value="${properties.number}"
+      >
+        <h2 class="fv_main_heading faq__title">${key @ context='html'}</h2>
+        <sly
+          class="faq__heading"
+          data-sly-list.keyValue="${hashmap.viewAllFaqList[key]}"
+        >
+          <div class="faq__list--item">
+            <h3 class="faq__heading accordion_head">
+              ${keyValue.question @ context='html'}
+            </h3>
+            <div class="faq__body accordion_body">
+              ${keyValue.answer @ context='html'}
+            </div>
+          </div>
+        </sly>
+      </div>
+    </sly>
+    <sly data-sly-list.key="${hashmap.faqCategoryList}">
+      <div
+        class="faq__list accordion_container"
+        data-current-value="${properties.number}"
+      >
+        <h2>${properties.title}</h2>
+        <sly
+          class="faq__body"
+          data-sly-list.keyValue="${hashmap.faqCategoryList[key]}"
+        >
+          <div class="faq__list--item">
+            <h3 class="faq__heading accordion_head">
+              ${keyValue.question @ context='html'}
+            </h3>
+            <div class="faq__body accordion_body">
+              ${keyValue.answer @ context='html'}
+            </div>
+          </div>
+        </sly>
+      </div>
+    </sly>
+  </sly>
+</section>

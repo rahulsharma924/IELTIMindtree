@@ -1,0 +1,4 @@
+#base=js
+pagination.js
+blogList.js
+blog-list.js

@@ -1,0 +1,455 @@
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  outline: none;
+}
+.email-confirmation-msg button.close {
+  margin-left: 16px;
+}
+.email-confirmation-msg {
+  position: fixed;
+  transform: translate(-50%, 0);
+  top: 123px;
+  z-index: 1000;
+  background: var(--secondaryColor);
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 25px 50px -12px rgba(6, 25, 56, 0.25);
+  border-radius: 8px;
+  left: 82%;
+  width: 50%;
+  max-width: 385px;
+}
+.email-confirmation-msg i.fa-solid.fa-circle-check {
+  color: #10b981;
+  font-family: var(--fontfamilyIcon);
+}
+.email-confirmation-msg .email-confirm-text {
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--baseFontSize);
+  line-height: var(--lineHeight1and3Q);
+  color: var(--primaryColor);
+  padding: 0 85px 0 18px;
+}
+.email-confirmation-msg .fa-xmark {
+  color: var(--btnDisabledLight);
+}
+
+.email-confirmation-msg i.fa-duotone.fa-xmark {
+  margin-left: 22px;
+  font-size: var(--baseFontSize);
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightMedium);
+  color: var(--btnDisabledLight);
+  cursor: pointer;
+}
+.orderSummaryProductsList-section {
+  padding: 21px 20px 21px 40px;
+  background: var(--secondaryBtnHover);
+  color: var(--primaryColor);
+  width: 596px;
+  margin: 0 auto;
+}
+.details-export-wrapper {
+  text-align: right;
+  justify-content: right;
+}
+.details-export-wrapper button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and35);
+  color: var(--primaryColor);
+  padding: 0;
+  margin: 0;
+}
+.details-export-wrapper button:hover {
+  color: var(--invertedColor);
+  text-decoration: underline;
+  outline: none;
+  border: none;
+}
+.details-export-wrapper button:focus-visible,
+.details-export-wrapper button:focus {
+  color: var(--invertedColorFocus);
+  text-decoration: underline;
+  outline: none;
+  border: none;
+}
+.details-export-wrapper p {
+  padding: 0;
+  margin: 0 15px;
+  color: var(--cartDividend);
+  font-size: var(--fontSize24);
+  font-weight: 100;
+}
+.order-summary-heading,
+.order-summary-heading-mob {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize22);
+  line-height: var(--lineHeight2);
+  color: var(--plptitles);
+  margin-bottom: 30px;
+  text-align: left;
+  display: block;
+}
+.order-summary-heading-mob {
+  display: none;
+}
+.productList-img-description {
+  margin-bottom: 39px;
+}
+.orderSummaryProductsList-section
+  .product-list-wrapper
+  .order-summary-productList
+  .productList-details
+  .productList-img-description
+  .img-wrapper {
+  border: 1px solid var(--secondaryBtnVisited);
+  border-radius: 5px;
+  background: var(--secondaryColor);
+  width: 101px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderSummaryProductsList-section
+  .product-list-wrapper
+  .order-summary-productList
+  .productList-details
+  .productList-img-description
+  .img-wrapper
+  img,
+.orderSummaryProductsList-section
+  .product-list-wrapper
+  .order-summary-productList
+  .productList-details
+  .productList-img-description
+  .img-wrapper
+  > img {
+  width: 71px;
+  height: 78px;
+  object-fit: contain;
+  margin: 3px 16px;
+}
+.orderSummaryProductsList-section
+  .product-list-wrapper
+  .order-summary-productList
+  .productList-details
+  .productList-img-description
+  .productList-description {
+  padding-left: 16px;
+  text-align: left;
+}
+.orderSummaryProductsList-section
+  .product-list-wrapper
+  .order-summary-productList
+  .productList-details
+  .productList-img-description
+  .productList-description
+  p {
+  margin: 0;
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1andQ);
+  color: var(--primaryColor);
+  font-weight: var(--fontWeightSmall);
+}
+.orderSummaryProductsList-section
+  .product-list-wrapper
+  .order-summary-productList
+  .productList-details
+  .productList-img-description
+  .productList-description
+  p
+  b {
+  font-weight: var(--fontWeightBold);
+}
+.productList-emailmodal-header {
+  padding: 26px 24px;
+  border-bottom: 1px solid var(--jomlFormBorder);
+}
+.productList-emailmodal-title {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize22);
+  line-height: var(--lineHeight2);
+  color: var(--primaryColor);
+  text-align: left;
+}
+.productList-emailmodal-content {
+  background: var(--secondaryColor);
+  box-shadow: 0 25px 50px -12px rgba(6, 25, 56, 0.25);
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+.productList-emailmodal-body {
+  padding: 27px 24px 54px;
+  text-align: left;
+}
+.notification-email-address-block {
+  margin-bottom: 25px;
+}
+.notification-email-address-block p,
+.notification-email-address-block input {
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  color: var(--primaryColor);
+  margin: 0;
+  margin-bottom: 6px;
+}
+.notification-email-address-block p.validateOrderConfirmationEmailMsg {
+  color: var(--errorMedium);
+  font-size: var(--fontSize13);
+  line-height: var(--lineHeightSmall);
+}
+.notification-email-address-block input {
+  background: var(--secondaryColor);
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+  padding: 12px;
+  width: 304px;
+}
+button.add-more-emails {
+  padding: 12px 21px;
+  background: var(--secondaryColor);
+  border-radius: 4px;
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1andQ);
+  text-decoration: none;
+  cursor: pointer;
+}
+button.add-more-emails:hover {
+  background-color: var(--secondaryBtnHover);
+  color: var(--darkBlue);
+  text-decoration: none;
+  border: 1px solid var(--darkBlue);
+  outline: none;
+}
+button.add-more-emails:active {
+  outline: 2px solid var(--secondaryBtnVisited);
+  background-color: var(--secondaryBtnVisited);
+  color: var(--darkBlue);
+  text-decoration: none;
+  border: none;
+}
+button.add-more-emails:focus,
+button.add-more-emails:focus-visible {
+  outline: 2px solid var(--blueColorLight);
+  background-color: var(--secondaryColor);
+  color: var(--darkBlue);
+  text-decoration: none;
+  border: none;
+}
+.notification-email-address-block .fa-thin.fa-trash,
+.notification-email-address-block .fa-light.fa-check,
+.productList-emailmodal-header .fa-thin.fa-xmark {
+  font-size: var(--fontSize14);
+  font-family: var(--fontfamilyIcon);
+  font-weight: var(--fontWeightMedium);
+  color: var(--secondaryBlack);
+  margin-left: 15px;
+  cursor: pointer;
+}
+.notification-email-address-block .trash-img {
+  width: 13px;
+  height: 20px;
+  object-fit: contain;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.productList-emailmodal-header .fa-thin.fa-xmark {
+  display: none;
+}
+.notification-email-address-block .fa-light.fa-check {
+  color: var(--successMedium);
+  margin-left: 11px;
+}
+.productList-emailmodal-footer {
+  background: var(--secondaryBtnHover);
+  padding: 14px;
+  display: flex;
+  justify-content: right;
+}
+.productList-emailmodal-footer button.productList-emailmodal-footer-close-btn,
+.productList-emailmodal-footer button.productList-emailmodal-footer-sve-btn {
+  padding: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 87px;
+  height: 44px;
+  display: flex;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid var(--SearchIcon);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1andQ);
+  cursor: pointer;
+}
+.productList-emailmodal-footer button.productList-emailmodal-footer-close-btn {
+  margin-right: 14px;
+  color: var(--primaryColor);
+  background: var(--secondaryColor);
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-close-btn:hover {
+  background: var(--secondaryBtnHover);
+  border: 1px solid var(--jomlFormBorder);
+  text-decoration: none;
+  outline: none;
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-close-btn:focus {
+  outline: 2px solid var(--blueColorLight);
+  outline-offset: 2px;
+  text-decoration: none;
+  background: var(--secondaryColor);
+  border: none;
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-close-btn:active {
+  border: 2px solid var(--secondaryBtnVisited);
+  background-color: var(--secondaryBtnVisited);
+}
+.productList-emailmodal-footer button.productList-emailmodal-footer-sve-btn {
+  background: var(--invertedColor);
+  color: var(--secondaryColor);
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-sve-btn:hover {
+  background: var(--invertedColorHover);
+  color: var(--secondaryColor);
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-sve-btn:focus {
+  background: var(--invertedColor);
+  outline: 2px solid var(--blueColorLight);
+  border: none;
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-sve-btn:active {
+  outline: 0 none;
+  background-color: var(--invertedColorVisited);
+}
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-sve-btn:disabled,
+.productList-emailmodal-footer
+  button.productList-emailmodal-footer-sve-btn:disabled,
+.add-more-emails:disabled {
+  background: var(--btnDisabledLight);
+  color: var(--secondaryColor);
+  pointer-events: none;
+  border: none;
+  outline: none;
+}
+
+.oSPLC-wrapper .order-summary-productList {
+  margin-top: -21px;
+}
+@media screen and (min-width: 768px) {
+  .productList-emailmodal-dialog {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 833px) {
+  .orderSummaryProductsList-section {
+    width: 70%;
+  }
+  .details-export-wrapper button,
+  .orderSummaryProductsList-section
+    .product-list-wrapper
+    .order-summary-productList
+    .productList-details
+    .productList-img-description
+    .productList-description
+    p {
+    font-size: var(--fontSize12);
+    line-height: var(--lineHeight1and12);
+  }
+  .order-summary-heading,
+  .order-summary-heading-mob {
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+  }
+  .order-summary-heading-mob {
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+  }
+  .orderSummaryProductsList-section
+    .product-list-wrapper
+    .order-summary-productList
+    .productList-details
+    .productList-img-description
+    .img-wrapper {
+    width: 64px;
+    height: 82px;
+  }
+  .orderSummaryProductsList-section
+    .product-list-wrapper
+    .order-summary-productList
+    .productList-details
+    .productList-img-description
+    .img-wrapper
+    img,
+  .orderSummaryProductsList-section
+    .product-list-wrapper
+    .order-summary-productList
+    .productList-details
+    .productList-img-description
+    .img-wrapper
+    > img {
+    width: 45px;
+    height: 78px;
+    margin: 3px 10px;
+  }
+  button.add-more-emails {
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1andQ);
+  }
+  .productList-emailmodal-header .fa-thin.fa-xmark {
+    display: flex;
+    font-size: var(--fontSize32);
+    margin: 0;
+    line-height: var(--lineHeight2);
+  }
+  .productList-emailmodal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .email-confirmation-msg {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .orderSummaryProductsList-section {
+    width: 100%;
+  }
+  .notification-email-address-block input,
+  button.add-more-emails {
+    width: 289px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .notification-email-address-block input,
+  button.add-more-emails {
+    width: 70%;
+  }
+}

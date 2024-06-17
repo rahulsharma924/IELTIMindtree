@@ -1,0 +1,16 @@
+#
+# This file contains the filter ACL, and can be customized.
+#
+# By default, it includes the default filter ACL.
+#
+
+$include "./default_filters.any"
+
+/0064 { /type "allow" /extension '(txt|css|eot|gif|ico|jpeg|jpg|js|gif|pdf|PDF|png|svg|swf|ttf|woff|woff2|html|mp4|mov|m4v|xml|aspx)' /path "/content/fm/*" }  # disable this rule to allow mapped content only
+/0065 { /type "allow" /method "GET" /extension '(css|PDF|eot|gif|ico|jpeg|jpg|js|gif|png|svg|swf|ttf|woff|woff2|txt|iges|step|zip)' }
+/0066 { /type "allow" /extension '(json)' /path "/content/dam/fm/json/*" }
+/0067 { /type "allow" /extension '(json)' /path "/content/dam/fm/*" }
+/0068 { /type "allow" /url "/bin/*"}
+/0069 { /type "allow" /extension '(json)' /path "/content/dam/infinite-electronics/json/*" }
+/0070 { /type "allow" /extension '(STEP)' /path "/content/dam/infinite-electronics/product-assets/fairview-microwave/*"}
+/0071 { /type "allow" /extension '(txt)' /path "/content/fm/*" }

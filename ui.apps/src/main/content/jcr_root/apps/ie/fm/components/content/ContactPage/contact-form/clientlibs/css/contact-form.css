@@ -1,0 +1,188 @@
+
+.grid-layout-col{
+  width:50%;
+  float:left;
+  margin-bottom: 26px;
+}
+.grid-layout-col-fw{
+  width: 100%;
+  margin-bottom:30px;
+}
+.col-sm-6{
+  max-width: 100%;
+}
+.LV_invalid_field,input.LV_invalid_field:active,input.LV_invalid_field:hover,textarea.LV_invalid_field:active,textarea.LV_invalid_field:hover{
+  outline:1px solid var(--requiredFieldClr);
+}
+.LV_valid{
+  display:none; }
+.LV_validation_message{
+  font-weight:var(--fontWeightBold);
+  margin:0 0 0 15px;
+}
+.LV_invalid{
+  color: var(--requiredFieldClr);
+  font-size:var(--fontSize10);
+}
+.elq-form .elq-label{
+  display:inline-block;
+  max-width:100%;
+  width:100%;
+  font-weight: var(--fontWeightSmall);  
+  line-height: var(--baseLineHeight);
+  box-sizing:border-box;
+  margin-bottom:6px;
+}
+.elq-form input{
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;  
+  height:44px;
+  padding:12px;
+}
+#contactContentContainer .elq-form hr{
+  border-top:1px solid #BBB;
+}
+.elq-form .elq-item-input,.elq-form .elq-item-select,.elq-form .elq-item-textarea{
+  font-size:inherit;
+  line-height:inherit;
+  color:var(--primaryColor);
+  margin:0;
+}
+.elq-form .elq-item-textarea{
+  resize:vertical;
+  min-height:48px;
+  max-height:360px;
+  box-sizing:border-box;
+}
+.elq-form .elq-item-select{
+  text-transform:none;
+  width:100%;
+}
+.contact-us-form-cont .elq-form .elq-required{
+  color:var(--primaryColor);
+  display:inline;
+  float:none;
+  font-weight: var(--fontWeightBold);
+  margin:0;
+  padding:0;
+}
+  .submit-button-style{
+    width: 112px;
+    height: 50px ;
+    padding: 15px 25px;
+    background: var(--invertedColor);
+    border-radius: 4px;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: var(--secondaryColor);
+    cursor:pointer;
+  }
+  .elq-form input.elq-item-input{
+    width:100%;
+  } 
+  .elq-form textarea{
+    border: 1px solid var(--SearchIcon);
+    border-radius: 4px; 
+    min-height: 125px; 
+    padding-top:12px;
+    padding-left:12px;
+    resize: none;
+    width: 100%;
+  }
+  .elq-form input:focus-visible,
+  .elq-form textarea:focus-visible,
+  .elq-form .elq-item-select:focus-visible{
+    outline: 2px solid var(--blueColorLight);
+  }
+  .elq-form select{
+    border: 1px solid var(--SearchIcon);
+    border-radius: 4px;  
+    height:44px;
+  }
+  .elq-form input.submit-button-style{
+    height: 50px ;
+  }
+  @media screen and (max-width:833px){
+  .elq-form input.submit-button-style {
+    width: inherit;
+    }  
+  }
+  .submit-button-style:hover{
+    background:  var(--invertedColorHover);
+    color: var(--secondaryColor);
+  }
+  .submit-button-style:active{
+    background: var(--invertedColorVisited);
+    color: var(--secondaryColor);
+    outline:0 ;
+  }
+  .submit-button-style:focus{
+    
+    background:  var(--invertedColor);
+    color: var(--secondaryColor);
+    outline: 2px solid var(--blueColorLight);
+    outline-offset: 2px;
+  }
+  .elq-form ::placeholder{
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1and428);
+    color: var(--btnDisabledLight);
+  
+  } 
+  .elq-form textarea:focus::placeholder{
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1and428);
+    color: transparent;
+  
+  } 
+  .cu-sel {
+    padding-left:10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--secondaryColor);
+    background-repeat: no-repeat;
+    border: 1px solid var(--SearchIcon);
+    background-size: 10px 10px;
+    border-radius: 5px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-position: 97% 50%;
+  }
+  
+  @media screen and (max-width:767px) {
+    .grid-layout-col, .elq-form .elq-item-select{
+      width:100%;
+    }
+    .layout-col{
+      padding-left:25px;
+    }
+  }
+
+@media screen and (min-width:769px){
+  .elq-form .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:27px;
+  }
+  .contact-form form{
+    margin-top:22px;
+    margin-left:-22px;
+  } 
+}
+@-webkit-keyframes spin{
+  0%{
+    -webkit-transform:rotate(0deg)}
+  to{
+    -webkit-transform:rotate(1turn)}
+}
+@keyframes spin{
+  0%{
+    transform:rotate(0deg)}
+  to{
+    transform:rotate(1turn)}
+}

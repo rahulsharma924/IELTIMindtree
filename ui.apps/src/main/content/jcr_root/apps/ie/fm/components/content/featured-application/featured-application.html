@@ -1,0 +1,21 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='industry-featured-application'}" /> 
+
+<div id="featuredapplication" class="accordion-featured-body">
+    <div class="accordion-feature">
+        <h2 class="fv_main_heading feature_mb35">${properties.headertitle}</h2>
+        <div data-sly-list.multi="${resource.getChildren}">
+            <sly data-sly-test="${multi.name == 'accdetails'}" id="label-featured">
+                <div class="acc-container-featured" data-sly-repeat.accList="${multi.getChildren}">
+                    <div class="label-featured">
+                        <!--<img alt="featureApplication" class="accimage" src="${accList.accImage}">--><strong>${accList.title}</strong></div>
+                    <div class="content-featured" data-sly-test.description="${accList.description}">${description @ context="html"}</div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</div>
+ <sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='industry-featured-application'}" /> 

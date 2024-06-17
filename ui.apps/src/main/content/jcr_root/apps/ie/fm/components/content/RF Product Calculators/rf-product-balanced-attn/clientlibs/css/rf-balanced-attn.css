@@ -1,0 +1,69 @@
+/*balanced-attn*/
+#button_cont .related_search{
+  display:none;
+}
+
+#Balanced-Attenuator {
+    margin: 30px 100px 0 250px;
+}
+
+#Balanced-Attenuator1 .cmp-image__image {
+    margin: 50px 0 0 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Balanced-Attenuator2 .cmp-image__image {
+    margin: 0 0 0 100px;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Balanced-Attenuator .aem-Grid {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 767px) {
+#Balanced-Attenuator .aem-Grid {
+    display: inline-block;
+}
+#Balanced-Attenuator {
+    text-align: center;
+    margin: 0;
+}
+#Balanced-Attenuator1 .cmp-image__image {
+    margin: 0 0 20px 100px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Balanced-Attenuator2 .cmp-image__image {
+     margin: 0 75px;
+    height: auto;
+    width: 50%;
+}
+}
+
+@media screen and (min-width: 768px)and (max-width: 991px) {
+#Balanced-Attenuator .aem-Grid {
+    display: inline-flex;
+}
+#Balanced-Attenuator {
+    margin: 0 0 0 80px;
+
+}
+#Balanced-Attenuator1 cmp-image__image {
+    margin: 50px 0 0 75px;
+    
+}
+#Balanced-Attenuator2 .cmp-image__image {
+    width: 50%;
+    
+}
+}

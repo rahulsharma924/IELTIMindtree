@@ -1,0 +1,60 @@
+<div class="key-specification-handle d-none">
+  <div class="key-spec">
+    <h2 class="key-title accord-key-title">{{0.labels.keySpecifications}}</h2>
+    <h2 class="key-title desk-key-title"><span>{{0.labels.keySpecifications}}</span></h2>
+    <div class="key-title accord-key-links justify-end">
+      {{#if assets}} {{#if (isDataSheetDefined assets)}}
+      <div class="datasheet-btn-pdf analytics-datasheet-pdp">
+        <a
+          title="{{0.labels.dataSheet}}"
+          x-cq-linkchecker="skip"
+          href="{{dataSheetLink}}"
+          ><i class="fa-sharp fa-solid fa-file-pdf"></i>{{0.labels.dataSheet}}</a
+        >
+      </div>
+      {{else}} {{/if}} {{#if (isSpecSheetDefined assets)}}
+      <div class="datasheet-btn-pdf analytics-datasheet-pdp">
+        <a
+          title="{{0.labels.specSheet}}"
+          x-cq-linkchecker="skip"
+          href="{{specSheetLink}}"
+          ><i class="fa-sharp fa-solid fa-file-pdf"></i>{{0.labels.specSheet}}</a
+        >
+      </div>
+      {{else}} {{/if}} {{/if}}
+      <div class="datasheet-btn-viewall">
+        <a
+          title="{{0.labels.viewAll}}"
+          data-toggle="modal"
+          href="#view-all-modal"
+        >
+          {{0.labels.viewAll}}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="speprate-line"></div>
+  <div class="key-spec-details accord-key-desc">
+    {{#if keySpecs}} {{#each keySpecs}}
+    <div class="key-grid-two">
+      <div class="key-spec-data">
+        <div class="key-title-head">{{this.name}}</div>
+        <div class="key-title-value">{{this.value}}</div>
+      </div>
+    </div>
+    {{/each}} {{else}}
+    <div class="key-grid-two">
+      <div class="key-spec-data">
+        <div class="key-title-head">{{0.labels.na}}</div>
+        <div class="key-title-value">{{0.labels.na}}</div>
+      </div>
+    </div>
+    <div class="key-grid-two">
+      <div class="key-spec-data">
+        <div class="key-title-head">{{0.labels.na}}</div>
+        <div class="key-title-value">{{0.labels.na}}</div>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>

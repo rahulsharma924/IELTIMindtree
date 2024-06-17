@@ -1,0 +1,16 @@
+<div data-sly-use.technicalArticleModel="com.aem.ie.core.models.TechnicalArticleModel"/>
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+   data-sly-call="${clientlib.css @ categories='toolsandresources-articles'}"/>
+<div class="technicalresources_articles_container">
+  <div class="technical_resources_articles analytictechnicalarticles">
+<sly data-sly-list.resourcesdetails="${technicalArticleModel.resourcesdetails}">  
+      <div class="technical-articles">
+        <h2 class="technical-articles-title">${resourcesdetails.articletitle}</h2>
+        <sly class="technical-articles-description broucherDesc-limit">${resourcesdetails.articledescription @context = 'html'}</sly>
+        <h3 class="basefont-size"><a href="${resourcesdetails.articlelink}.html" title="${resourcesdetails.linktext}" class="ie-tertiary-link font-weight-500 articleView" >${resourcesdetails.linktext}</a></h3>
+      </div>
+</sly>
+</div>
+</div>
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+   data-sly-call="${clientlib.js @ categories='toolsandresources-articles'}"/>

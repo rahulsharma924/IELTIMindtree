@@ -1,0 +1,112 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+		</div>
+		<div class="rfp-form-block-cls mt-3">
+			<div class="content-section cell large-10">${properties.striplinenotesection}</div>
+			<div class="row">
+				<div class="col-lg-9 col-12">
+					<div class="row set-mb dt-mt-rem">
+						<div class="col-lg-4 col-md-6">
+							<select id="option2" class="input">
+								<option value="epsilon">Dielectric Constant</option>
+								<option value="vop">Velocity of Propogation (%)</option>
+							</select><span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<input id="pin" class="input" type="text" value="${properties.striplinePlacehoder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)"> <span
+								class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6 offset-lg-4">
+							<label for="wid" >${properties.tracewidthlabel}</label>
+							<input id="wid" class="input" type="text" value="${properties.tracewidthPlacehoder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)"> <span
+								class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6 dt-mt-rem">
+							<select id="unit1" class="input">
+								<option value="mm">Millimeters</option>
+								<option value="cm">Centimeters</option>
+								<option value="in">Inches</option>
+							</select> <span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6 offset-lg-4">
+							<label for="hit">${properties.traceheightlabel}</label>
+							<input id="hit" class="input" type="text" value="${properties.traceheightPlacehoder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)"> <span
+								class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6 dt-mt-rem">
+							<select id="unit2" class="input">
+								<option value="mm">Millimeters</option>
+								<option value="cm">Centimeters</option>
+								<option value="in">Inches</option>
+							</select> <span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6 offset-lg-4">
+							<label for="thk">${properties.tracethicknesslabel}</label>
+							<input id="thk" class="input" type="text" value="${properties.tracethicknessPlacehoder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)"> <span
+								class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6 dt-mt-rem">
+							<select id="unit3" class="input">
+								<option value="mm">Millimeters</option>
+								<option value="cm">Centimeters</option>
+								<option value="in">Inches</option>
+							</select> <span class="error ErrorText"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="row">
+						<div class="col-12">
+							<button id="go" class="ie-primary-btn calculate-btn" type="button" onclick="generalClickFnStripline()"
+							value="Calculate">
+							${properties.striplinecalculatebtntitle}
+						</button>
+						<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText"></span></p>
+						</div>
+					</div>
+					<div class="row dt-mt-rem">
+						<div class="col-12">
+							<div class="calculator-results calculator-results-full mt-1">
+								<label>${properties.striplineresultlabel}</label>
+								<div class="result_container results-calc">
+									<div class="result">
+									<span class="resultlabeltitle1"> ${properties.striplineresultlabeltitle1}
+										</span> <span id="imp" class="output"></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

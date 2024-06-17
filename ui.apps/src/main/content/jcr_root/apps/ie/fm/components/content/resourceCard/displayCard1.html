@@ -1,0 +1,27 @@
+
+<template data-sly-template.message="${@ resourceCardModel}">
+<div class="broucherInformation analyticbrouchers">
+
+        <sly data-sly-list.resourceCard="${resourceCardModel.resourceCards}">
+
+
+        <div class="broucher_details">
+                <img src="${resourceCard.image}" class="BroucherImage img-height" alt="${resourceCard.title}"/>
+                <p class="broucherTitle">${resourceCard.title}</p>
+                <p class="broucherDesc broucherDesc-limit">${resourceCard.description}</p>
+                <div class="broucherLink">
+                    <a href="${resourceCard.resourceLink}" class="ie-tertiary-link font-weight-500" title="${properties.resourceIconlabel}">
+                        <sly data-sly-test="${resourceCard.enablePdfIcon == true}">
+                            <i class="fa-sharp fa-solid fa-file-pdf"></i> 
+                        </sly>
+                        ${properties.resourceIconlabel}
+                    </a>
+                </div>
+            </div>
+
+
+        </sly>
+    </div>
+
+
+</template>

@@ -1,0 +1,35 @@
+{
+	"supportscredentials": false,
+	"supportedmethods": [
+		"GET",
+		"HEAD",
+		"PUT",
+		"FETCH",
+		"POST"
+
+	],
+	"exposedheaders": [
+		""
+	],
+	"alloworigin": [
+		"https://pilot-payflowlink.paypal.com",
+		"https://stage.fairviewmicrowave.com"
+
+	],
+	"maxage:Integer": 1800,
+	"alloworiginregexp": [
+		""
+	],
+	"supportedheaders": [
+		"Origin",
+		"Accept",
+		"X-Requested-With",
+		"Content-Type",
+		"Access-Control-Request-Method",
+		"Access-Control-Request-Headers"
+	],
+	"allowedpaths": [
+		"/bin/.*"
+
+	]
+}

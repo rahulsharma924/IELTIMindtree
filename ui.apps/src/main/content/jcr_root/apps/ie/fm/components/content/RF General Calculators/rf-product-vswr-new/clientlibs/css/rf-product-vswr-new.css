@@ -1,0 +1,35 @@
+#vswr-img1 .cmp-image__image {
+    margin: auto;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+#vswr-img1 .cmp-image__image {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+}
+
+@media screen and (min-width: 768px)and (max-width: 991px) {
+
+#vswr-img1 .cmp-image__image {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+}

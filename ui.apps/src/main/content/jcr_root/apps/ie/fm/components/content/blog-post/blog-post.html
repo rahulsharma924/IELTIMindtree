@@ -1,0 +1,50 @@
+<sly data-sly-use.algoliaConfig="com.aem.ie.core.models.AlgoliaConfigModel">
+</sly>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='blogPost'}" />
+<sly data-sly-use.blogPost="com.aem.ie.core.models.BlogPostModel">
+   <section class="featured-blog-post">
+      <div class="blog-post-heading-description-wrapper">
+         <h2 class="news-post-main-heading">${blogPost.heading}</h2>
+         <p class="news-post-main-description">${blogPost.subHeading}</p>
+      </div>
+      <div class="blog-post-card-wrapper">
+         <sly data-sly-list.item="${blogPost.blogPosts}">
+            <!--<sly data-sly-test="${item.enableHeading=='true'}">-->
+               <article class="col-3">
+                  <div class="blog-post-card">
+                     <div class="blog-post-card-label">
+                        <sly data-sly-list.label="${item.blogLink}">
+                           <span data-label="${label}" class="label blog-post__label">${label}</span>
+                        </sly>
+                     </div>
+                     <div class="blog-heading-description-wrapper">
+                        <div class="blog-heading-publish-wrapper">
+                           <h2 class="blog-card-heading">${item.blogTitle}</h2>
+                          <p class="blog-card-publishDate">
+                              ${item.blogAuthor}
+                              <sly data-sly-test="${item.blogDate && item.blogAuthor}"> | </sly>
+                              ${item.blogDate}
+                           </p>
+                        </div>
+                        <div class="blog-description-wrapper">
+                           <div class="blog-description blogPostBrocherDesc">
+                              ${item.blogDescription @context='html'}
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="blog-card-read-more-wrapper">
+                        <a href="${item.blogPagePath}.html" role="link" title="${item.blogTitle}" class="ie-secondary-link blog-card-read-more">Read More</a>
+                     </div>
+                  </div>
+               </article>
+            <!--</sly>-->
+         </sly>
+      </div>
+   </section>
+</sly>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='blogPost'}" />

@@ -1,0 +1,11 @@
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='servicesheader-clientlib'}" />
+<div id="${properties.compid}">    
+    <h2 data-sly-test="${properties.servicesheadertext}" class="servicesheader-headertitle fv_main_heading">  ${properties.servicesheadertext}</h2>
+    <div data-sly-test="${properties.text}" class="servicesheader-headertext fv_Para_small">${properties.text @context='html'}</div>
+    <div data-sly-test="${properties.servicescontactus}" class="servicesheader-contactus ie-primary-link analytictoolsandresourcescontactus"><a title="${properties.servicescontactus}" href="/content/fm/en/contact-us.html" class="ie-primary-link">${properties.servicescontactus}</a></div>
+</div>
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='servicesheader-clientlib'}" />

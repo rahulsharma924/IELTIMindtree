@@ -1,0 +1,38 @@
+@media only screen and (max-width: 651px) {
+    .back-to-top {
+        position: fixed;
+        bottom: 50px;
+        width: 35px;
+        height: 35px;
+        background: var(--secondaryColor);
+        border: 1px solid var(--btnDisabledLight);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        font-weight: var(--fontWeightBolder);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+        display: none;
+        padding-top: 7px;
+        right:15px;
+    }
+    .back-to-top a i {
+        padding-top: 8px;
+        font-weight: var(--fontWeightBolder);
+        font-size: var(--baseFontSize);
+        color: var(--btnDisabledLight);
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media only screen and (min-width: 652px) {
+    .back-to-top {
+        display: none;
+    }
+    .back-to-top a i {
+        display: none;
+    }
+}

@@ -1,0 +1,463 @@
+
+.form-block-cls 
+.top-block-cls input,
+.set-mb .offset-lg-4 {
+  color: var(--paginationAnchorClrActive);
+}
+.result span {
+  padding-right: 10px;
+  display: inline-block;
+}
+.result  .output,.result .result-converted,
+.result .resultlabeltitle1 {
+  line-height: var(--lineHeight1and35);
+  font-size: var(--baseFontSize);
+  font-family: var(--fontFamily);
+  padding-right: 5px;
+  display: inline-block;
+  line-height: 1.5rem;
+}
+.result  .output{
+  font-weight: var(--fontWeightBold);
+}
+.result-converted{
+  font-weight: var(--fontWeightNormal);
+}
+.general-cls {
+  font-weight: var(--fontWeightBold);
+  font-size: 1rem;
+  display: block;
+}
+
+/* rfp-form-block-cls */
+.rfp-form-block-cls {
+  max-width: 70rem;
+  margin: auto;
+}
+
+.rfp-form-block-cls label {
+  font-family: var(--fontFamily);
+  color: var(--secondaryBlack);
+  font-weight: var(--fontWeightBold);
+  font-size: 1rem;
+  display: block;
+}
+
+.set-mb {
+  margin-bottom: 1.85rem
+}
+.set-mb-fix {
+  margin-bottom: 1rem
+}
+.result_container .result {
+  width: 302px;
+  padding: 0 .5rem;
+}
+
+#Antenna-Downtilt-image1 .cmp-image__image {
+  margin: 15% 0px;
+  padding: 0px 60px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+#Antenna-Downtilt-image2 .cmp-image__image {
+  height: 100%;
+  width: 35%;
+}
+
+#Antenna-Downtilt .aem-Grid {
+  display: -webkit-inline-box;
+}
+
+#Antenna-Downtilt {
+  padding: 50px 50px 0 50px;
+}
+
+#Antenna-Downtilt-image2 {
+  margin: 0px;
+}
+
+#calc-content {
+  align-items: baseline;
+  display: flex;
+}
+
+#calc-content-left p {
+  font-weight: var(--fontWeightSmall);
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--secondaryBlack);
+}
+
+#calc-content .text {
+  max-width: 50%;
+  padding: 50px 50px 0px 50px;
+}
+
+#calc-content .cmp-embed {
+  width: 220%;
+}
+
+.rf-calculator-container {
+  width: 100%;
+}
+
+.result-wavelength-cls{
+ position: relative;
+ /* top:-23px; */
+ vertical-align: top;
+}
+@media screen and (min-width: 768px) {
+  #rfCalculatorMultiImage-Block {
+    padding-left: 40px;
+    max-width: 80rem;
+    margin: auto;
+  }
+
+  #rfCalculatorMultiImage-Block img {
+    height: auto;
+    width: auto;
+    margin: auto;
+  }
+
+  #rfCalculatorMultiImage-Block>div {
+    display: flex;
+  }
+
+  #rfCalculatorMultiImage-Block>div .cmp-image {
+   
+    display: flex;
+    height: 100%;
+  }
+  .dt-mt-rem {
+    margin-top: 1.75rem
+  } 
+  .dt-mt-rem-rfp {
+    margin-top: 2.5rem
+  }
+  .dt-mt-rem-deci{
+    margin-top: .6rem;
+  }
+  .dt-mt-rem-up{
+    margin-top: 1.6rem;
+  }
+  .dt-mt-rem-dual{
+    margin-top: 1.75rem;
+  }
+/*
+  .rfp-form-block-cls .row .col-lg-4,
+  .rfp-form-block-cls .row .col-lg-6,
+  .rfp-form-block-cls .row .col-md-4,
+  .rfp-form-block-cls .row .col-md-6,
+   .rfp-form-block-cls .row .col-12,
+  .form-block-cls .row .col-lg-4,
+  .form-block-cls .row .col-lg-6,
+  .form-block-cls .row .col-md-4,
+  .form-block-cls .row .col-md-6,
+  .form-block-cls .row .col-12
+  {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  } 
+*/
+}
+
+@media screen and (max-width: 767px) {
+  .title-block-cls p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  .title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: var(--secondaryBlack);
+  }
+
+  #Antenna-Downtilt .aem-Grid {
+    display: block;
+  }
+
+  #Antenna-Downtilt .cmp-image .cmp-image__image {
+    height: auto;
+    width: 100%;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+
+  #Antenna-Downtilt {
+    padding: 20px;
+  }
+
+  #calc-content {
+    display: block;
+  }
+
+  #calc-content .text {
+    max-width: 100%;
+    padding: 0px 20px 0 20px;
+  }
+
+  #calc-content .cmp-embed {
+    width: 100%;
+  }
+
+  #calucatewhitepaper {
+    margin-left: 0;
+  }
+
+  .dt-mt-rem {
+    margin-top: 1.75rem
+  }
+  .dt-mt-rem-dual{
+    margin-top: .5rem;
+  }
+
+  #calucatewhitepaper p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: var(--fontWeightBold);
+  }
+  .rfp-form-block-cls .row select, .form-block-cls .row select{
+    padding: 0 1rem;
+    background-position: 95% 50%;
+  }
+  #disclaimercalculate p{
+    margin: 0 1rem 3rem 1rem;
+  }
+  .calculator-wrapper-cls .error{
+    margin:0 0 10px 0;
+  }
+  .result_container .result{
+    width: 100%;
+  }
+  .dt-mt-rem-fix {
+    margin-top: 1.4rem
+  } 
+  .dt-mt-rem-rfp {
+    margin-top: 2.5rem
+  }
+  .dt-mt-rem-deci{
+    margin-top: .6rem;
+  }
+  .dt-mt-rem-up{
+    margin-top: 1.6rem;
+  }
+  #imagecalculator,#rfCalculatorMultiImage-Block {
+    margin-bottom: 1.75rem;
+    padding: 25px;
+  }
+.ie-primary-btn{
+  margin-top: 1rem;
+}
+
+}
+
+@media screen and (min-width: 768px)and (max-width: 1024px) {
+  .title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    text-align: center;
+    color: var(--secondaryBlack);
+  }
+
+  #Antenna-Downtilt .aem-Grid {
+    display: inline-flex;
+  }
+
+  #Antenna-Downtilt-image2 .cmp-image__image {
+    height: auto;
+    width: 50%;
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+
+  }
+
+  #Antenna-Downtilt-image1 .cmp-image__image {
+    height: auto;
+    width: 100%;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+
+  #Antenna-Downtilt {
+    padding: 20px;
+  }
+
+  #calc-content {
+    display: block;
+  }
+
+  #calc-content .text {
+    max-width: 100%;
+    padding: 0px 20px 0 20px;
+  }
+
+  #calc-content .cmp-embed {
+    width: 100%;
+  }
+
+  #calc-content .sidebar__menu {
+    margin-left: 0px;
+  }
+
+  #calucatewhitepaper p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  #disclaimercalculate p{
+    margin: 0 1rem 2rem 1rem;
+  }
+  #imagecalculator,#rfCalculatorMultiImage-Block {
+    margin-bottom: 1.75rem;
+    padding: 25px;
+  }
+  #imagecalculator .cmp-image__image{
+    height: auto !important;
+    width: auto !important;
+    margin: auto;
+  }
+  .rfp-form-block-cls input {
+    width: 17rem;
+    height: 2.75rem;
+    padding: 0 1rem;
+  }
+  .dt-mt-rem-dual{
+    margin-top: .5rem;
+  }
+  .calculator-wrapper-cls{
+    padding:0 1.5rem;
+  }
+  #multiImgBlockExpanded-left img ,#multiImgBlockExpanded-right img{
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px)and (max-width: 991px) {
+  rfp-form-block-cls .ie-primary-btn,
+  .form-block-cls .ie-primary-btn{
+    margin-top: 1rem;
+  }
+  .rfp-form-block-cls .row select,
+  .form-block-cls .row select {
+    background-position: 100% 50%;
+  }
+}
+@media screen and (max-width: 991px) { 
+
+  .rfp-form-block-cls input {
+    width: 17rem;
+    height: 2.75rem;
+    padding: 0 1rem;
+  }
+
+  .rfp-form-block-cls select {
+    margin-bottom: 2rem;
+    width: 95%;
+    height: 2.75rem;
+  }
+
+  #imagecalculator .cmp-image__image {
+    height: auto !important;
+  }
+
+  .rfp-form-block-cls .set-mb {
+    margin-bottom: .3rem
+  }
+  #rfCalculatorMultiImage-Block .aem-Grid{
+    display: grid;    
+  }
+  #rfCalculatorMultiImage-Block .aem-Grid .image{
+    width: 100% !important;
+  }
+  #rfCalculatorMultiImage-Block .cmp-image img{
+    height: auto !important;
+  }
+  #secondary-cal-image .cmp-image__image {
+    padding: 0 15%;
+  }
+  .rfp-form-block-cls select,.rfp-form-block-cls input{
+    margin-bottom: .5rem !important;
+  }
+  .pae-btnblock-cls .dt-mt-rem {
+   margin-top: .5rem; 
+  }
+
+  .dt-mt-rem-fix{
+    margin-top: .5rem;
+  }
+}  
+
+@media screen and (min-width: 1024px) {
+  #disclaimercalculate p{
+    margin-bottom:.0rem;
+  }
+  #calucatewhitepaper p {
+    font-size: 1.93rem;
+    line-height: 2rem;
+    padding: 0;
+    margin: 7rem 0 3rem;
+    text-align: center;
+    font-weight: var(--fontWeightBold);
+  }
+    .dt-mt-rem {
+    margin-top: 1.75rem
+  }
+  .dt-mt-rem-fix {
+    margin-top: 1.4rem
+  } 
+  #imagecalculator {
+    margin:50px 0 25px 0;
+  }
+}
+@media screen and (min-width: 991px)and (max-width: 1280px) {
+  .result_container .result{
+    width: auto !important;
+  }
+  #multiImgBlockExpanded-left img ,#multiImgBlockExpanded-right img{
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+
+  /* rfp*/
+  .rfp-form-block-cls input {
+    width: 17rem;
+    height: 2.75rem;
+    padding: 0 1rem;
+  }
+
+  .rfp-form-block-cls select {
+    width: 17rem;
+    height: 2.75rem;
+    padding: 0 1rem;
+  }
+
+  .dt-mt-rem {
+    margin-top: 1.75rem
+  }
+
+
+
+}
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .title-block-cls h1 {
+    text-align: center;
+  }
+}

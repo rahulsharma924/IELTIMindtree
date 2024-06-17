@@ -1,0 +1,18 @@
+
+<template data-sly-template.message="${@ items, itemsList}">
+	<div class="linkCard-block ${itemsList.index > 0 && itemsList.index < 3 ? 'linkCard-block--border' : '' @context='styleString'} ">
+		<div class="linkCard-icon">
+			<i class="${items.valueMap.iconPath}"></i>
+		</div>
+		<h2 class="linkCard-title">${items.valueMap.title}</h2>
+			<sly data-sly-test="${items.valueMap.descriptionType == '_text'}">
+            	<div class="linkCard-description">${items.valueMap.descriptionText @ context='text' }</div>
+			</sly>
+			<sly data-sly-test="${items.valueMap.descriptionType == '_html'}">
+            	<div class="linkCard-description">${items.valueMap.descriptionHtml @ context='html' }</div>
+			</sly>
+		<div class="linkCard-button">
+			<a href="${items.valueMap.linkUrl}" title="${items.valueMap.linkName}" target="${items.valueMap.linkTarget}" id="${items.valueMap.id}">${items.valueMap.linkName}</a>
+		</div>
+	</div>
+</template>

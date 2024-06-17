@@ -1,0 +1,46 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+<button
+  data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+  data-sly-use.iconTemplate="icon.html"
+  data-sly-element="${button.buttonLink.valid ? 'a' : 'button'}"
+  type="${button.buttonLink.valid ? '' : 'button'}"
+  style="text-decoration: none"
+  id="${button.id}"
+  class="ie-blue-border-btn backtosignin_btn analytic-confirmationpage"
+  data-sly-attribute="${button.buttonLink.htmlAttributes}"
+  aria-label="${button.accessibilityLabel}"
+  data-cmp-clickable="${button.data ? true : false}"
+  data-cmp-data-layer="${button.data.json}"
+>
+ 
+    ${button.text}
+  
+</button>
+<script>
+  document.querySelector("body").addEventListener('click', function(e) { 
+    //debugger;
+    var buttonElement = e.target.closest('button');
+        var label="";
+        var category= "";
+        if(buttonElement !== null && buttonElement.closest('.analytic-confirmationpage')!=null){  
+            label= buttonElement.textContent.trim(); 
+            category= "continue shopping-" +'${currentPage.getName @ context="scriptString"}' + " page";        
+          ctalinkDataLayerCall(label,category);               
+      }        
+    }, false);	
+</script>

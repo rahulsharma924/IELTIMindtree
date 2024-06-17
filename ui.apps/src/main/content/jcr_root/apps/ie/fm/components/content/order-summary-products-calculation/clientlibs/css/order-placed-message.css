@@ -1,0 +1,74 @@
+.order-placed-confirmation-message-section {
+	margin: 0 auto 20px;
+	text-align: center;
+	display: block;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+.order-placed-heading {
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize31);
+	line-height: var(--lineHeight1and35);
+	color: var(--fontWeightBold);
+}
+.order-placed-description {
+	margin: 15px auto 0;
+	text-align: center;
+	color: var(--primaryColor);
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--baseFontSize);
+	line-height: var(--baseLineHeight);
+}
+.order-placed-description p {
+	color: var(--primaryColor);
+	margin: 0 auto;
+}
+.order-placed-description a {
+	color: var(--invertedColor);
+	text-decoration: none;
+}
+.order-placed-description a:hover {
+    color: var(--invertedColor);
+    text-decoration: underline;
+    font-weight: var(--fontWeightBold);
+}
+.order-placed-description a:focus {
+    color: var(--invertedColorFocus);
+    text-decoration: underline;
+    font-weight: var(--fontWeightBold);
+}
+.order-placed-description-refNum,
+.tax-exemption-section {
+    margin-bottom: 35px;
+}
+.tax-exemption-section p a {
+    color: var(--blueColorDark);
+    text-decoration: none;
+}
+.tax-exemption-section a#downloadLink {
+    font-weight: var(--fontWeightBold);
+}
+.tax-exemption-section p a:hover {
+    color: var(--secondaryLinkNormal);
+    text-decoration: underline;
+    font-weight: var(--fontWeightBold);
+}
+.tax-exemption-section p a:focus {
+    color: var(--secondaryLinkActive);
+    text-decoration: underline;
+    font-weight: var(--fontWeightBold);
+}
+@media screen and (max-width: 833px) {
+    .order-placed-heading {
+		font-size: var(--fontSize22);
+		line-height: var(--baseLineHeight);
+    }
+    .order-placed-description {
+        font-size: var(--fontSize12);
+        line-height: var(--baseLineHeight);
+    }
+    .order-placed-description-refNum,
+    .tax-exemption-section {
+        margin-bottom: 15px;
+    }
+}

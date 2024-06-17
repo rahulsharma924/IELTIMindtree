@@ -1,0 +1,154 @@
+/* .text-email a {
+    color: var(--blueColorDark);
+} */
+div.text-email {
+    display: inline;
+}
+.messagecard-title {
+    font-size: var(--fontSize32);
+    font-weight: var(--fontWeightBold);
+    line-height: var(--lineHeight1andQ);
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+.message-card-icon {
+    margin-bottom: 19px;
+    padding-top:20px;
+}
+.message-card-icon i {
+    font-size: var(--fontSize28);
+    line-height: var(--lineHeightSmall);
+}
+.message-card-icon img {
+    font-family: var(--fontfamilyIcon);
+    font-size: var(--fontSize28);
+    font-weight: var(--fontWeightSmaller);
+    line-height: var(--lineHeightSmall);
+    text-align: left;
+    width:37px;
+    height:29px;
+}
+
+.message-card-box {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+.message-card-block {
+    background-color: var(--secondaryBtnHover);
+    border: 1px solid var(--quickLinksBorder);
+    border-bottom: 4px solid var(--invertedColor);
+    margin: 0 32px 0 0;
+    padding-left: 29px;
+    padding-top: 29px;
+    width: 389px;
+}
+
+.message-card-boxtitle {
+    font-size: var(--baseFontSize);
+    font-weight: var(--fontWeightBold);
+    line-height: var(--baseLineHeight);
+    text-align: left;
+    padding-bottom: 6px;
+}
+
+.message-card-boxsubtitle {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightSmall);
+    line-height: var(--lineHeight1and3Q);
+    text-align: left;
+    padding-bottom: 19px;
+    padding-right: 27px;
+}
+
+.message-card-livechat>button {
+    border-radius: 4px;
+    background: var(--secondaryColor);
+    color: var(--darkBlue);
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    border: 1px solid var(--darkBlue);
+    width: auto;
+    height: auto;
+    padding: 13px 27px;
+    cursor: pointer;
+}
+.message-card-livechat>button:hover {
+    cursor: pointer;
+    background-color: var(--secondaryBtnHover);
+}
+.message-card-livechat>button:focus {
+    outline: 2px solid var(--blueColorLight);
+    outline-offset: -2px;
+    background-color: var(--secondaryColor);
+}
+.message-card-livechat>button:active {
+    outline: 2px solid var(--secondaryBtnVisited);
+    background-color: var(--secondaryBtnVisited);
+}
+.message-card-livechat>button:visited {
+    background-color: var(--secondaryBtnVisited);
+}
+.message-card-livechat {
+    padding-bottom: 81px;
+}
+.bottom-div {
+    margin-top: 10px;
+}
+.message-card-calltext {
+    font-size: var(--fontSize14);
+    font-weight: var(--fontWeightSmall);
+    line-height: var(--lineHeight1and3Q);
+    text-align: left;
+}
+.message-card-boxtwoin {
+    padding-bottom: 45px;
+}
+@media screen and (max-width:575px) {
+    div.text-email {
+        display: block;
+    }
+}
+@media screen and (max-width:833px) {
+    .message-card-box {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 24px;
+    }
+    .message-card-block {
+        width: 100%;
+        margin: 0 0 25px 0;
+        padding-left: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .message-card-boxsubtitle {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 10px;
+    }
+    .message-card-boxtitle {
+        text-align: center;
+    }
+    .message-card-livechat {
+        padding-bottom: 45px;
+    }
+    .message-card-boxtwoin {
+        padding: 0 5px 45px 5px;
+    }
+    .messagecard-title {
+        font-size: var(--fontSize22);
+        line-height: var(--baseLineHeight);
+    }
+}
+
+.text-bold {
+    font-weight: var(--fontWeightNormal);
+}

@@ -1,0 +1,189 @@
+#tool_resources_banner, #industrial_autiomation_banner{
+     width:100%;
+}
+ .fixedElement {
+     position:fixed;
+     top:147px;
+     z-index:99;
+}
+ .secondaryNavigation ul{
+     width:100%;
+     max-width: 100%;
+     margin: 0 auto;
+     padding: 0;
+     background:var(--secondaryColor);
+     border-bottom: 1px solid var(--secondaryBtnVisited);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ .secondaryNavigation ul .secondaryNavigation_links{
+     margin:0 16px;
+     background-color: #fff;
+}
+ .secondaryNavigation_links .secondaryNavigation_link{
+	border-bottom:4px solid var(--secondaryColor);
+	padding:11px 0;
+	font-size: var(--fontSize14);
+	line-height: var(--baseLineHeight);
+	font-weight: var(--fontWeightSmall);
+	display: block;
+	color: var(--primaryColor);
+	text-align: center;
+	text-decoration: none;
+}
+ .secondaryNavigation_links .secondaryNavigation_link:hover{
+    font-weight:bold;
+}
+ .secondaryNavigation_links .secondaryNavigation_link::before {
+    display: block;
+    content: attr(title);
+     font-weight: bold;
+     height: 0;
+     overflow: hidden;
+     visibility: hidden;
+}
+ .secondaryNavigation_links .secondaryNavigation_link.secNav_active{
+    font-weight:bold;
+     border-bottom:4px solid var(--invertedColor);
+}
+ .secondaryNav_hamburger{
+     display: none;
+}
+ @media (min-width: 320px) and (max-width:833px) {
+     .secondaryNavigation ul{
+        border-bottom: 0;
+         position: relative;
+         max-width:100%;
+         height: 44px;
+         display:flex;
+         flex-flow: wrap;
+         padding:0;
+         margin: 0;
+    }
+     .secondaryNavigation ul .secondaryNavigation_links{
+         flex:0 0 50%;
+         padding:0;
+         margin: 0;
+         -webkit-box-shadow: 2px 2px 0px -1px rgba(229,231,233,0.68);
+         -moz-box-shadow: 2px 2px 0px -1px rgba(229,231,233,0.68);
+        box-shadow: 2px 2px 0px -1px rgba(229,231,233,0.68);
+    }
+    .secondaryNavigation ul .secondaryNavigation_links:first-child{
+        border-right: 1px solid #E5E7E9;
+    }
+    .secondaryNavigation ul .secondaryNavigation_links:nth-child(3){
+        border-right: 1px solid #E5E7E9;
+    }
+    
+     .secondaryNavigation_links .secondaryNavigation_link{
+         border-bottom:0;
+         font-size: var(--fontSize12);
+    }
+     .secondaryNavigation_links .secondaryNavigation_link.secNav_active{
+        border-bottom:2px solid var(--invertedColor);
+    }
+     #industrial_autiomation_banner .industrialautomation_mobile_links{
+		flex:0 0 33%;
+		box-shadow:none;
+        height: 44px;
+        line-height: 44px;
+    }
+     #industrial_autiomation_banner .industrialautomation_mobile_links .secondaryNavigation_link{
+         padding:11px;
+    }
+     #industrial_autiomation_banner .industrialautomation_mobile_links:nth-child(2n) .secondaryNavigation_link{
+         border-left: 1px solid rgba(229,231,233,0.68);
+         border-right: 1px solid rgba(229,231,233,0.68);
+    }
+     .secondaryNav_hamburger .fa-iphonebars{
+         position: absolute;
+         top:6px;
+         left:8px;
+    }
+     .secondaryNav_hamburger {
+         background: var(--secondaryColor);
+         border: 1px solid var(--btnDisabledLight);
+         box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
+         border-radius: 50%;
+         width: 30px;
+         height: 30px;
+         font-weight: var(--fontWeightBolder);
+         font-size: var(--fontSize14);
+         line-height: var(--lineHeightSmall);
+         color: var(--btnDisabledLight);
+         left: 20px;
+         top:120px;
+         position: fixed;
+         z-index: 999;
+    }
+     .secondaryNav_hamburger{
+         display: none;
+    }
+     .secondaryNav_hamburger:focus {
+         outline: 0;
+    }
+     #secondaryNav_model .modal-content{
+         margin: 0;
+         width: 100%;
+         height: auto;
+         margin: auto;
+         margin-top: 105px;
+         border-radius: 0;
+    }
+     #secondaryNav_model .modal-header{
+         padding: 10px 15px 5px;
+         border-radius: 0;
+    }
+     #responsiveMyAccountModal{
+         display: inline-grid;
+    }
+     #responsiveMyAccountModal a{
+         font-size:var(--baseFontSize);
+         line-height:var(--baseLineHeight);
+         font-weight: var(--fontWeightNormal);
+         text-decoration: none;
+         opacity: 1;
+         color: var(--primaryColor);
+         display: block;
+         margin: 12px 0;
+    }
+     #secondaryNav_model .modal-header .close span{
+         color:var(--btnDisabledLight);
+    }
+     #secondaryNav_model .modal-header .close{
+         padding: 0;
+         margin: 0;
+    }
+     .model_secondaryNavigation{
+         width:100%;
+         max-width: 100%;
+         margin: 0 auto;
+         border-bottom:0;
+         display: block;
+    }
+     .model_secondaryNavigation_links{
+         padding:0;
+    }
+     .model_secondaryNavigation_links .model_secondaryNavigation_link{
+         padding:0;
+         color: var(--primaryColor);
+         text-decoration: none;
+    }
+     .model_secondaryNavigation_links .model_secondaryNavigation_link:hover{
+        font-weight:bold;
+    }
+}
+ @media (max-width:600px) {
+     #industrial_autiomation_banner .industrialautomation_mobile_links .secondaryNavigation_link{
+         padding:3px 11px;
+         height: 44px;
+         display: grid;
+    }
+}
+ @media only screen and (min-width:834px) and (max-width:1023px){
+     .secondaryNav_hamburger {
+         margin-top:45px;
+    }
+}
+ 

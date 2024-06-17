@@ -1,0 +1,61 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+		${properties.text @context='html'}
+		</div>
+
+ <div class="form-block-cls">
+	<div class="column"><h3>${properties.calculationtitle}</h3></div>			
+			<div class="row top-block-cls mt-4">
+				<div class="col-lg-4 col-md-6">
+					<label for="attn" for="unit" class="general-cls">${properties.Attenuationlabel}</label>
+					<input id="attn" class="input" type="text" value="${properties.AttenuationPlacehoder}" onblur="blurFn(this)" onfocus="focusFn(this)" />
+					<span class="error ErrorText"></span>
+					</div>
+				<div class="col-lg-4 col-md-6">
+					<label for="imp" for="unit" class="general-cls">${properties.Impedancelabel}</label>
+					<input id="imp" class="input" type="text" value="${properties.ImpedancePlacehoder}" onblur="blurFn(this)" onfocus="focusFn(this)" />
+					<span class="error ErrorText"></span>
+				</div>
+				<div class="col-lg-4 col-md-12  dt-mt-rem">
+					<button id="go" class="ie-primary-btn"  type="button"
+						onclick="generalClickTeeFn()" value="Calculate">
+						${properties.teecalculatebtntitle}
+					</button>
+					<p class="calculate-error-cls"><span class="error ErrorText"></span><span id="errormsg" class="error ErrorText"></span></p>
+					<div>
+					<p class="results-calc-h4">${properties.teeresultlabel}</p>
+					<div class="result_container results-calc">						
+						<div class="result">
+								<span  class="result-converted"> R<sub>1</sub>: </span> 
+								<span id="r1" class="output"> </span> <br> 
+								<span class="result-converted"> R<sub>2</sub>: </span> 
+								<span id="r2" class="output"> </span>
+							</div>
+							</div>
+							</div>
+							<div id="button_cont"><input class="related_search" type="button" value="${properties.findrelatedprdTitle}"></div>
+						</div>
+				</div>
+		
+			</div>				
+		</div>
+
+   </div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+			
+		</div>
+   </div>
+</div>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

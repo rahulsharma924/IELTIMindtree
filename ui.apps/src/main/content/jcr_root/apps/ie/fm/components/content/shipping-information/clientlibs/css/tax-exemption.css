@@ -1,0 +1,110 @@
+#taxCheck {
+	accent-color: var(--blueColorDark);
+	border: 1px solid var(--secondaryBlack);
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.stateDetails {
+	padding: 0;
+	justify-content: left;
+	align-items: center;
+}
+.radio-wrapper {
+	justify-content: left;
+	align-items: center;
+	margin-right: 29px;
+}
+.radio-wrapper input {
+	margin-right: 12px;
+}
+.tax-exemption-block .checkout-heading, .tax-exemption-block .shipping-title {
+	margin: 13px 0;
+}
+.tax-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.tax-exemption {
+	clear: none;
+	float: left;
+	color: var(--primaryColor);
+}
+#taxExemptionCheck {
+	display: none;
+	padding:0;
+}
+.tax-exemption h2 {
+	font-size: var(--fontSize18);
+	line-height: var(--baseLineHeight);
+	color: var(--primaryColor);
+	padding-bottom: 13px;
+}
+.stateDetails input[type=radio] {
+	position: static;
+}
+ .tax-exemption label {
+     text-transform: none;
+     font-weight: var(--fontWeightNormal);
+     font-size: var(--baseFontSize);
+     line-height: var(--baseLineHeight);
+     color: var(--primaryColor);
+     padding-bottom: 15px;
+}
+#taxExemptLabel {
+	position: absolute;
+	left: 1.75rem 
+}
+#taxNumber {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: var(--secondaryColor);
+	border: 1px solid var(--SearchIcon);
+	border-radius: 4px;
+	height: 44px;
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize14);
+	line-height: var(--baseLineHeight);
+	color: var(--btnDisabledLight);
+	width: 100%;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	text-indent:10px;
+	margin-top:20px;
+}
+.check_box {
+	display: flex;
+}
+.tax-message {
+    background: var(--noteWrapBg);
+    border-top: 2px solid var(--blueColorDark);
+    padding: 12px 20px 15px 14px;    
+	display: none;
+	margin-top: 6px;
+    margin-bottom: 30px;
+}
+.tax-message p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 18px;
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    font-weight: var(--fontWeightSmall);
+}
+.tax-message p a{
+    font-weight: var(--fontWeightBold);
+}
+.taxexemption_msg-upperdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.tax-message .fa-exclamation-circle {
+    color: var(--blueColorDark);
+	position: relative;
+    top: 4px;
+}

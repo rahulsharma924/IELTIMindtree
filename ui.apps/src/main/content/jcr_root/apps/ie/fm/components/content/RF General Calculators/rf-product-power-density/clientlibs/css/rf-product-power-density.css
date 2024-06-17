@@ -1,0 +1,100 @@
+
+
+#powerdensity {
+    padding: 0;
+    margin: 30px 125px 0 125px;
+}
+.calculator-results .results-calc-h4 {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1andQ);
+    letter-spacing: 0.03rem;
+    color: #000000;
+}
+
+#powerdensity-img1 .cmp-image__image {
+    margin: 100px 0 0 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0 0 0 100px;
+
+}
+#powerdensity-img2 .cmp-image__image {
+    margin: 0px 0 0 50px;
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#powerdensity .aem-Grid {
+    display: inline-flex;
+}
+
+#powerdensity-img2{
+margin: 0px 0 0 100px;
+}
+@media screen and (max-width: 767px) {
+#powerdensity .aem-Grid {
+    display: inline-block;
+}
+#powerdensity {
+	padding: 0;
+    text-align: center;
+    margin: 30px;
+}
+#powerdensity-img1 .cmp-image__image {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+#powerdensity-img2 .cmp-image__image {
+    margin: 0;
+    width: 100%;
+}
+.title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: var (--fontSize24);
+    line-height: var(--lineHeight2and1Q);
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+#powerdensity-img2 {
+    margin: 0;
+}
+}
+
+@media screen and (min-width: 768px)and (max-width: 991px) {
+#powerdensity .aem-Grid {
+    display: inline-flex;
+}
+#powerdensity {
+	padding: 0;
+    max-width: 70%;
+    margin: 0 auto;
+}
+#powerdensity-img1 .cmp-image__image {
+    margin: 100px 0 0 0;
+    width: 100%;
+    padding: 0;
+}
+    .title-block-cls h1 {
+    font-weight: var(--fontWeightBold);
+    font-size: var (--fontSize24);
+    line-height: var(--lineHeight2and1Q);
+    text-align: center;
+    color: var(--secondaryBlack);
+}
+#powerdensity-img2 .cmp-image__image {
+    padding: 0;
+    margin: 0 0 0 50px;
+    width: 80%;
+}
+#powerdensity-img2 {
+    margin: 20px;
+}
+
+}

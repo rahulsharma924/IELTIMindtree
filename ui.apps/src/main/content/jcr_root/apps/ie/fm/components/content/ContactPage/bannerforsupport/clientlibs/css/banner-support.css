@@ -1,0 +1,184 @@
+#autocomplete-faq input.support-search-input:focus-visible {
+    border: 2px solid var(--blueColorLight);
+    outline: 0;
+} 
+.support-banner-conatiner {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+#support_banner-section .faq__banner__img {
+        display: block;   
+}
+.content-section {
+    margin: 46px 0 0 0;
+    left: 50%;
+    align-items: center;
+    text-align: center;
+    top: 27%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 100%;
+}
+
+.support-banner-conatiner-section {
+    position: relative;
+}
+.support-available {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize12);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    color: var(--secondaryColor);
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.support-header {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize45);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    color: var(--secondaryColor);
+}
+
+.support-banner-image {
+    max-height: 259px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.search-box-support {
+    display: flex;
+    justify-content: center;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.support-search-input {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    color: var(--btnDisabledLight);
+    border: 1px solid var(--secondaryBtnVisited);
+    width: 100%;
+    /* padding: 9px 9px 9px 19px; */
+    border-radius: 50px;
+    height: 40px;
+}
+
+.support-search-btn {
+    background-color: transparent;
+    font-size: var(--fontSize18);
+    padding: 8px 0;
+    position: relative;
+    right: 8%;
+    border: 0;
+    color: var(--darkGrey);
+    transition: all 0.4s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#support-banner-conatiner .support-search-btn:focus {
+    outline: 0;
+}
+
+#support-banner-conatiner .support-search-btn:focus-visible {
+    outline: 0;
+}
+@media screen and (min-width: 883px){
+#support-banner-conatiner {
+    max-width: inherit;
+}
+}
+@media screen and (max-width: 767px) {
+    .search-box-support{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .support-available {
+        margin-bottom: 15px;
+    }
+   .support-header {
+    margin-bottom: 0;
+    font-weight: var(--fontWeightNormal);
+    font-size: var(--fontSize18);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    color: var(--secondaryColor);
+    }
+    .support-search-btn {
+        right: 8%;
+    	font-size: var(--fontSize12);
+    padding: 5px 0;
+    }
+    .support-search-input {
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize12);
+        line-height: var(--baseLineHeight);
+        color: var(--btnDisabledLight);
+        border: 1px solid var(--secondaryBtnVisited);
+        width: 50%;
+        padding: 9px;
+        border-radius: 50px;
+        /* height: 25px; */
+    }
+    #support_banner-section .support-search-input {
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize12);
+        line-height: var(--baseLineHeight);
+        width: 100%;
+        /* height: 25px; */
+        padding:0 24px;
+    }
+    .content-section {
+        margin: 35px 0 0 0;
+        left: 50%;
+        align-items: center;
+        text-align: center;
+        top: 20%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        width: 100%;
+    }
+    .support-banner-image {
+        height: auto;
+        max-height: 150px;
+        object-fit: contain;
+        width: auto;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .support-banner-image {
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+        width: auto;
+    }
+    .support-header {
+        font-weight: var(--fontWeightSmall);
+        font-size: var(--fontSize45);
+        line-height: var(--baseLineHeight);
+        text-align: center;
+        color: var(--secondaryColor);
+    }
+    .support-available {
+        font-weight: var(--fontWeightBold);
+        font-size: var(--fontSize12);
+        line-height: var(--baseLineHeight);
+        text-align: center;
+        color: var(--secondaryColor);
+        margin-bottom: 13px;
+        text-transform: uppercase;
+    }
+}
+/* .aa-SubmitButton{
+	pointer-events: none;
+} */
+.active-search .aa-SubmitButton{
+	pointer-events: inherit;
+}
+ .active-search .aa-SubmitButton:after{
+	color:var(--secondaryBlack);
+}

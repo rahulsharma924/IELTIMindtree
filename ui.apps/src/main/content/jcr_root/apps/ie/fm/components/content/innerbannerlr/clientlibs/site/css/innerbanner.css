@@ -1,0 +1,77 @@
+.bannerInnerLR_description {
+    max-width: 86%;
+}
+.bannerInnerLR{
+     width: 100%;
+    
+     background-color: var(--secondaryLinkNormal);
+}
+ .bannerInnerLR .bannerInnerLR_section{
+    max-width: 1280px;
+    margin: 0 auto;
+     background-color: var(--secondaryLinkNormal);
+     width: 100%;
+     height: 387px;
+     display: flex;
+     flex-wrap:wrap ;
+     justify-content: left;
+     align-items:start;
+}
+ .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content{
+     flex:0 0 50%;
+     height: 100%;
+}
+ .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content .bannerInnerLR_content_textarea{
+     width: 480px;
+     margin: 0 auto;
+     padding-top: 52px;
+}
+.bannerInnerLR_content_textarea p {
+    color: var(--secondaryColor);
+}
+ .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content .bannerInnerLR_heading{
+     font-size: var(--fontSize45);
+     line-height:var(--baseLineHeight);
+     font-weight: var(--fontWeightSmall);
+     color: var(--secondaryColor);
+}
+ .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content .bannerInnerLR_description p{
+     font-weight: var(--fontWeightBold);
+     color: var(--secondaryColor);
+     padding-top: 12px;
+}
+ .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_image{
+     flex: 0 0 50%;
+     height: 100%;
+}
+ .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_image img{
+     max-width: 100%;
+     object-fit: cover;
+     overflow: hidden;
+}
+
+ @media (min-width: 320px) and (max-width:833px) {
+     .bannerInnerLR{
+         max-width: 100%;
+    }
+     .bannerInnerLR .bannerInnerLR_section{
+         height:auto;
+         display:block;
+    }
+     .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content{
+         flex:0 0 100%;
+    }
+     .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content .bannerInnerLR_content_textarea{
+         width: 100%;
+         padding:26px 30px 26px 30px;
+    }
+     .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content .bannerInnerLR_heading{
+         font-size:var(--fontSize31);
+    }
+     .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_content .bannerInnerLR_description{
+         font-size:var(--fontSize14);
+    }
+     .bannerInnerLR .bannerInnerLR_section .bannerInnerLR_image{
+         display: none;
+    }
+}

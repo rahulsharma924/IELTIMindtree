@@ -1,0 +1,9 @@
+//Configuration created by Apache Sling JCR Installer
+{
+"smtp.password":"VgPD5Cctw94%",
+"smtp.port:Integer":30002,
+"smtp.user":"AEM@infiniteelectronics.com",
+"smtp.starttls":true,
+"from.address":"sales@fairviewmicrowave.com",
+"smtp.host":"$[env:AEM_PROXY_HOST;default=proxy.tunnel]"
+}

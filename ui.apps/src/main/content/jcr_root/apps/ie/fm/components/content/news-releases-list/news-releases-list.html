@@ -1,0 +1,44 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='newsReleasesList'}"
+/>
+
+<section class="news-list-with-filters-wrapper news__release--list">
+  <sly data-sly-include="news-release-list-template.html"></sly>
+  <!--/* desktop view - fliters */-->
+
+  <div class="col-12 news-lists-wrapper">
+    <div id="newsList_wrapper" class="dataTables_wrapper">
+      <!-- <div class="mob-wrapper">-->
+      <!--/* mobile view - filters starts */-->
+
+      <!--/* mobile view - filters ends */-->
+      <h2 class="news-post-main-heading">News releases</h2>
+      <div class="newsSorting-by-wrapper">
+        <div class="sort-by">
+          <div class="ais-SortBy newsSortBy">
+            <label class="sort-by-label" id="newsSelectfilter">Sort By:</label>
+            <select
+              id="newsSelectTypes" aria-labelledby="newsSelectfilter"
+              class="ais-SortBy-select newsSortBySelect for-dropdown-icon"
+            >
+              <option class="ais-SortBy-option" value="newest">Newest</option>
+              <option class="ais-SortBy-option" value="oldest">Oldest</option>
+              <option class="ais-SortBy-option" value="atoz">A - Z</option>
+              <option class="ais-SortBy-option" value="ztoa">Z - A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="pagination" class="news_pagination"></div>
+      <div
+        id="newsList"
+        class="newsList-filterByCategory analyticnewsreleases"></div>
+      <div id="pagination1" class="news_pagination"></div>
+    </div>
+  </div>
+</section>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='newsReleasesList'}"
+/>

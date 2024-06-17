@@ -1,0 +1,101 @@
+[
+  {
+    "messages": {
+      "maxChar10":"Maximum chars allowed is 10",
+      "maxChar20":"Maximum chars allowed is 20",
+      "maxChar25":"Maximum chars allowed is 25",
+      "maxChar30":"Maximum chars allowed is 30",
+      "maxChar40":"Maximum chars allowed is 40",
+      "maxChar50":"Maximum chars allowed is 50",
+      
+      "enterName":"Please enter your name",
+      "notValidName":"Name is not valid",
+      "fnameNotBeBlank":"First name should not be blank",
+      "fname50Chars":"First name should be less than or equal to 50 characters",
+      "notValidFname":"First name is not valid",
+      "lnameNotBeBlank":"Last name should not be blank",
+      "lname50Chars":"Last name should be less than or equal to 50 characters",
+      "notValidLname":"Last name is not valid",
+      
+      "emailNotBeBlank":"Email should not be blank",
+      "notValidEmail":"Please enter a valid Email ID",
+      "enterAdditionalEmail":"Please enter an additional Email Id",
+      "dontIncludeUsername":"Does not include any part of your username",
+      "emailAlreadyUsed":"Entered email is already being used, use another email address to continue",
+      
+      "companyNotBlank": "Company should not be blank",
+      "notValidCompany": "Company is not valid",
+
+      "passwordNotBlank":"Password should not be blank",
+      "enterPassword":"Please enter the password",
+      "enterCurrPass": "Please enter current password",
+      "minPasswordlength":"Password length should be at least 8 characters",
+      "maxPasswordlength":"Password length should not exceed 50 characters",
+      "reenterPassword":"Re-enter the password to confirm",
+      "confirmPasswordNotMatch":"Confirm password does Corrected with enter password",
+      "reenterCurrentPassword":"Current password is invalid, re-enter the current password",
+      "enterNewPassword":"Please enter a new password",
+      "minNewPasswordlength":"New password length should be at least 8 characters",
+      "maxNewPasswordlength":"New password length should not exceed 15 characters",
+      "enterConfPassword":"Please enter the confirm password",
+      "minConfPasswordlength":"Confirm password length should be at least 8 characters",
+      "maxConfPasswordlength":"Confirm password length should not exceed 15 characters",
+      "confPasswordNotMatch":"Confirm password does Corrected the new password",
+      "passwordWithEmailChar": "Password cannot include any part of your email address",
+      "notIncludeUserName": "Does not include any part of your username",
+      "notMatchingPass":"Password and confirm password do not match",
+
+      "industryNotSelected": "Please select industry",
+
+      "minPhonelength": "Minimum chars allowed is 10",
+      "enterAddress1":"Please enter your address line 1",		
+      "notValidAddress":"Address is not valid",
+      "enterPhone":"Please enter your phone number",		
+      "notValidPhone":"Enter a valid phone number",
+      "enterCity":"Please enter your city",		
+      "notValidCity":"City is not valid",
+      "enterZipcode":"Please enter the zip code",		
+      "notValidZipOrPost":"Please enter a valid Zipcode/Postal code",
+      "enterCountry":"Please select your country/region",		
+      "enterState":"Please select your state",
+      "enterIndustry":"Please select the industry",	
+      "selectAddressType":"Please select the Address type",
+      "notValidPostalCode":"Please enter a valid U.S. postal code",
+      "captchErrorMsg": "Please verify that you are not a robot",
+  
+      "enterCarrierAccount":"Please enter a carrier account number",
+      "NotValidCarrierAccount":"Please enter a valid carrier account number",
+      "selectShippingAccount":"Please select your shipping account",
+      
+      "noResultsFromCurrentSearch":"No results with your current selection"
+    },
+    "labels": {
+      "ok":"OK",
+      "addToCart":"Add to cart",
+      "cancel":"CANCEL",
+      "save":"SAVE",
+      "noResult":"No result"
+    },
+    "redirectionURL": {
+      "page_SucessfulResetPassword":"/content/fm/en/reset-password/successful-password-reset.html",
+      "page_SucessfulAccountCreated":"/content/fm/en/successfully-account-created.html",
+      "page_EmailSent":"/content/fm/en/reset-password/email-sent.html",
+      "page_ShippingInformation":"/content/fm/en/shipping-information.html",
+      "page_Home":"/content/fm/en/homepage.html",
+      "page_ProductDetails":"product-details.html",
+      "page_ProductListing":"plp-page.html",
+      "page_ContinueShopping":"/content/fm/en/continue-shopping.html",
+      "page_EmptyShoppingcart":"/content/fm/en/shopping-cart-empty.html",
+      "page_Viewall":"/content/fm/en/view-all.html"
+  
+    },
+    "dataJSON": {
+      "json_NewCountries":"/content/dam/infinite-electronics/json/fairview-microwave/newestCountries.json",
+      "json_HolidayCalendar":"/content/dam/infinite-electronics/json/fairview-microwave/HolidayCalenderJSON.json",
+      "json_Categories":"/content/dam/infinite-electronics/json/fairview-microwave/Categories.json",
+      "json_RecentlyViewedProducts":"/content/dam/infinite-electronics/json/fairview-microwave/recently-viewed-products.json",
+      "json_PlpTable":"/content/dam/infinite-electronics/json/fairview-microwave/plptable.json",
+      "json_RegistrationResponse":"/content/dam/infinite-electronics/json/fairview-microwave/registration-response.json"
+    }
+  }
+  ]

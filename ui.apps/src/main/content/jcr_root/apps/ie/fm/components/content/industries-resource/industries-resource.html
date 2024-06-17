@@ -1,0 +1,36 @@
+<sly data-sly-use.irmodel="com.aem.ie.core.models.IndustriesResourceModel"/>
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.css @ categories='industries-resources'}" />
+
+
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.js @ categories='industries-resources'}" />
+
+
+
+<div  id="resource" class="resource_Title_Description">
+    <h2 class="fv_main_heading resource-title">${properties.resourcestitle}</h2>
+
+<div data-sly-list.blogresources="${irmodel.resourcesdetails}" class="resource_card industries_resources">
+
+
+    <div class="resource_card_container">
+       <div class="resource_label1">${blogresources.labelname}</div>
+        <div class="resource_Title_Description">
+            <div class="resource_card-title">${blogresources.title} </div>
+            <div class="resource_card-desc">${blogresources.description}</div>
+        </div>
+        <div class="resource-view_more">
+          <sly data-sly-test="${blogresources.enablePdfIcon == true}">
+          <i class="fa-sharp fa-solid fa-file-pdf"></i>
+          </sly>
+          <a class="view-more-title ie-tertiary-link font-weight-500" href="${blogresources.pdflink}">${blogresources.pdftitle}</a>
+        </div>
+    </div>     
+    </div>
+</div>
+
+

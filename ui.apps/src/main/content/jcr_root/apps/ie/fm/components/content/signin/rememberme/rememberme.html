@@ -1,0 +1,80 @@
+<sly
+  data-sly-use.options="com.adobe.cq.wcm.core.components.models.form.Options"
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.isNotEmpty="${options.items.size}"
+>
+  <fieldset class="cmp-form-options cmp-form-options--${options.type.value}">
+    <sly
+      data-sly-test="${options.type.value == 'checkbox' || options.type.value == 'radio'}"
+    >
+      <legend class="cmp-form-options__legend">${options.title}</legend>
+      <div class="rememberme-container">
+        <input
+          class="rememberme-input remember-ml-0 cmp-form-options__field cmp-form-options__field--${options.type.value} rememberme-container__input"
+          name="rememberme"
+          value="${optionItem.value}"
+          checked="${optionItem.selected}"
+          disabled="${optionItem.disabled}"
+          type="${options.type.value}"
+          id="rememberme"
+          data-sly-attribute.aria-describedby="${options.helpMessage ? [options.id, 'helpMessage'] : '' @ join = '-'}"
+        />
+        <label
+          class="align-item-lable cmp-form-options__field-label rememberme-container__label"
+          data-sly-repeat.optionItem="${options.items}"
+          for="rememberme"
+          >${optionItem.text}
+        </label>
+      </div>
+    </sly>
+
+    <sly
+      data-sly-test="${options.type.value == 'drop-down' || options.type.value == 'multi-drop-down'}"
+    >
+      <label class="cmp-form-options__label" for="${options.id}"
+        >${options.title}</label
+      >
+      <select
+        class="cmp-form-options__field cmp-form-options__field--${options.type.value}"
+        name="${options.name}"
+        id="${options.id}"
+        data-sly-list.optionItem="${options.items}"
+        data-sly-attribute.multiple="${options.type.value == 'multi-drop-down'}"
+      >
+        <option
+          value="${optionItem.value}"
+          selected="${optionItem.selected}"
+          disabled="${optionItem.disabled}"
+          data-sly-attribute.aria-describedby="${options.helpMessage ? [options.id, 'helpMessage'] : '' @ join = '-'}"
+        >
+          ${optionItem.text}
+        </option>
+      </select>
+    </sly>
+    <p
+      id="${options.id}-helpMessage"
+      class="cmp-form-options__help-message"
+      data-sly-test="${options.helpMessage}"
+    >
+      ${options.helpMessage}
+    </p>
+  </fieldset>
+</sly>
+<sly
+  data-sly-call="${template.placeholder @ isEmpty=!isNotEmpty, classAppend='cmp-form-options'}"
+></sly>
+
+<script>
+  $(function () {
+    var checkbox = $("#rememberme");
+
+    checkbox.change(function () {
+      if (checkbox.is(":checked")) {
+        $("#rememberme").val("checked");
+        $("#rememberme").val("checked");
+      } else {
+        $("#rememberme").val("unchecked");
+      }
+    });
+  });
+</script>

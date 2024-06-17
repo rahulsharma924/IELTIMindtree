@@ -1,0 +1,17 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='whitePaperAll'}" />
+<sly data-sly-use.whitepaperhashmap="com.aem.ie.core.models.WhitePaperModel">
+<div class="white-paper-main analyticwhitepaper" data-sly-list.key1="${whitepaperhashmap.whitePaperMyHashMap}">
+<div class="white-card">
+<div class="white-title"><p class="title">${key1 @ context='html'}</p></div>
+<div class="white-desc"><p class="broucherDesc broucherDesc-limit">${whitepaperhashmap.whitePaperMyHashMap[key1] @ context='html'}</p></div>
+<div class="whitepaper-pdf" data-sly-list.key2="${whitepaperhashmap.WhitePaperImageMyHashMap}">
+<sly data-sly-test="${key2 == key1}">
+    <i class="fa-sharp fa-solid fa-file-pdf"></i> 
+<a href="${whitepaperhashmap.WhitePaperImageMyHashMap[key2]}" class="ie-tertiary-link font-weight-500" title="${properties.pdfname}">${properties.pdfname}</a>
+</sly>
+</div>
+</div>
+</div>
+</sly>

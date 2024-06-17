@@ -1,0 +1,36 @@
+{"testone":{
+ "heading": "heading",
+ "latestBlog": "false",
+ "subHeading": "subHeading",
+ "blogPostList": ["/content/fm/en/testpage"],
+ "blogPosts":{
+  "blogDate": "Thu Mar 09 2023 00:00:00 GMT+0530",
+  "blogAuthor": "Peter McNeil",
+  "blogText": "text",
+  "blogDescription": "A low noise amplifier",
+  "blogLabel": [
+    "label"
+  ],
+  "blogPagePath": "/content/fm/en/blog/adapters",
+  "title": "Low Noise Amplifiers Q&A ",
+  "jcr:primaryType": "nt:unstructured"
+ }
+},"testtwo":{
+"heading": "heading",
+"latestBlog": "true",
+"subHeading": "subHeading",
+"blogPostList": ["/content/fm/en/testpage"],
+"blogPosts":{
+"blogDate": "Thu Mar 09 2023 00:00:00 GMT+0530",
+"blogAuthor": "Peter McNeil",
+"blogText": "text",
+"blogDescription": "A low noise amplifier",
+"blogLabel": [
+"label"
+],
+"blogPagePath": "/content/fm/en/blog/adapters",
+"title": "Low Noise Amplifiers Q&A ",
+"jcr:primaryType": "nt:unstructured"
+}
+}
+}

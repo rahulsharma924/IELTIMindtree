@@ -1,0 +1,50 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+        data-sly-call="${clientlib.css @ categories='taxexempt'}" />
+
+<div class="pi-txe-title">
+        <div id="taxexemptstatus-title">
+                <p>${properties.taxexmpttitle}</p>
+        </div>
+        <div id="approved" class="analyticorderhistory-leftnav">
+                <p><i class="fa-regular fa-check"></i><strong>${properties.approvedlab}</strong></p>
+        </div>
+        <div id="states" class="padding-for-states analyticorderhistory-leftnav"
+                data-states-notapproved=${properties.statesnotappr}>
+
+
+        </div>
+        <div id="payment-terms">
+                <p><strong>${properties.paymenttermslab}:</strong> <span id="cardList"
+                                data-purorder-text="${properties.potext}"
+                                data-payment-notpresent=${properties.paynotpresent}></span></p>
+        </div>
+
+        <div id="custID">
+                <p><strong>${properties.custidlab}:</strong><span id="erpCustId"></span></p>
+        </div>
+
+
+</div>
+
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+        data-sly-call="${clientlib.js @ categories='taxexempt'}" />
+<!-- Modal -->
+<div class="modal fade" id="SavedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <div class="modal-body">
+                                <div class="savemodal-wrapper">
+                                        <div class="loader_wrapper info-loader-cls" id="loading-indicator">
+                                                <div class="loader"></div>
+                                        </div>
+                                        <div class="info-updated-block d-none">${properties.popuptext}</div>
+                                </div>
+                                <div class="close-section-cls"><button type="button" data-dismiss="modal"
+                                                class="cancelbtn-mt ie-primary-btn">${properties.buttontext}</button></div>
+
+                        </div>
+                </div>
+        </div>
+</div>

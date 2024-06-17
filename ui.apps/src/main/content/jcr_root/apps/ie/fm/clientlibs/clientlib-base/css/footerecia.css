@@ -1,0 +1,44 @@
+.footer-resourceimages-mbl {
+  display: none;
+}
+.footer-ecia img {
+  padding-top: 55px;
+  padding-left: 16px;
+}
+
+.footer-connectwithus {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.footer-resourceimages {
+  margin-left: 16px;
+  padding-top: 40px;
+}
+
+.footerresource-fblinkedin-img img {
+  padding: 16px 24px 0px 0px;
+}
+.footerresource-twitter-img img {
+  padding: 17px 0px 0px 0px;
+}
+
+@media screen and (max-width: 833px) {
+  .footer-connectsection {
+    display: inline-block;
+  }
+  .footer-eciasection {
+    display: inline-block;
+    padding-left: 38px;
+    position: relative;
+    bottom: 24px;
+  }
+
+  .footer-resourceimages-mbl {
+    display: block;
+    padding: 36px 24px 0 24px;
+  }
+}

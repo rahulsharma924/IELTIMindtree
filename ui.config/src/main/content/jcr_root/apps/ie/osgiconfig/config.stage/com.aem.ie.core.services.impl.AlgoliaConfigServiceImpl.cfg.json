@@ -1,0 +1,14 @@
+{
+  "algoliaId":"testing20MRCI4146",
+  "algoliaKey":"3297c12de1f34b28fb57bf7e6cb4b808",
+  "indexInuse":"fm_product_en_uat",
+  "indexNmAsc":"fm_product_en_name_asc_uat",
+  "indexNmDsc":"fm_product_en_name_desc_uat",
+  "indexPrAsc":"fm_product_en_price_asc_uat",
+  "indexPrDsc":"fm_product_en_price_desc_uat",
+  "indexBs":"fm_product_en_bestseller_uat",
+  "indexContent":"crawler_fm_content_en_uat",
+  "indexContentAsc":"crawler_fm_content_en_name_asc_uat",
+  "indexContentDsc":"crawler_fm_content_en_name_desc_uat",
+  "indexQuerySuggest":"fm_product_en_query_suggestions_uat"
+}

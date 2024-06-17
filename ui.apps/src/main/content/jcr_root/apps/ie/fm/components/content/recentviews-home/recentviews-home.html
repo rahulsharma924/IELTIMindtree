@@ -1,0 +1,20 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='category-recentviewshome'}"
+/>
+
+<div id="recentviewshome-data" class="recent-views-home">
+  <h3>Recently viewed products</h3>
+  <div id="multilist" class="view-table recent-product-list">
+    <div class="view-tr">
+      <div class="view-td">Product</div>
+      <div class="view-td"></div>
+      <div class="view-td">SKU</div>
+      <div class="view-td text-align-price">Price/Unit</div>
+      <div class="view-td"></div>
+    </div>
+  </div>
+</div>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='category-recentviewshome'}" />

@@ -1,0 +1,10 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getSecureTokenUrl":"https://pilot-payflowpro.paypal.com",
+  "getSecureTokenUsername": "FAIRVIEWNCCAPITEST",
+  "getSecureTokenPassword": "Fairview2015u",
+  "getSecureTokenVendor": "FAIRVIEWNCCTEST",
+  "getPaypalUpdateAddressUrl":"https://apim-iedtecomm-dev01.azure-api.net/paypal/fairview/updateAddress",
+  "getPaypalPlaceOrderUrl":"https://apim-iedtecomm-dev01.azure-api.net/paypal/fairview/placeOrder",
+  "getPlaceOrderServelet": "https://publish-p78402-e955507.adobeaemcloud.com/bin/payflowProcessOrder"
+}

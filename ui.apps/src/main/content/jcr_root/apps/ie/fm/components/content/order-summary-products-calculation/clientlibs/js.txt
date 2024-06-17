@@ -1,0 +1,3 @@
+#base=js
+order-summary-calculation.js
+order-summary-analytics.js

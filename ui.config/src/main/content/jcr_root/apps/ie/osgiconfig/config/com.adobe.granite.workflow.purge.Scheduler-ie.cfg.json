@@ -1,0 +1,5 @@
+{
+  "scheduledpurge.workflowStatus":"COMPLETED",
+  "scheduledpurge.name":"scheduled Purging",
+  "scheduledpurge.daysold:Integer":180
+}

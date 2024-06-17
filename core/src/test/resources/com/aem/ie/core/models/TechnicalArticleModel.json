@@ -1,0 +1,57 @@
+{
+  "resourcesdetails": {
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "articledescription": "articledescription",
+      "linktext": "linktext",
+      "articlelink": "/content/fm/en/testpage",
+      "articletitle": "articletitle",
+      "title": "TechnicalArticle title",
+      "enableHeading": ""
+    },"item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "articledescription": "",
+      "linktext": "linktext",
+      "articlelink": "/content/fm/en/testpage",
+      "articletitle": "",
+      "title": "TechnicalArticle title",
+      "enableHeading": "true"
+    }
+  },"convertersLinksDetails": {
+  "item0": {
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/fm/en/testpage",
+    "showCustom": "",
+    "title": "CalAndConverters title",
+    "description": "CalAndConverters description",
+    "category": "service-cards-clientlib"
+  },"item1": {
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/fm/en/testpage",
+    "showCustom": "true",
+    "title": "CalAndConverters title",
+    "description": "CalAndConverters description",
+    "category": "service-cards-clientlib"
+  }
+},"resourceCards": {
+  "item0": {
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/dam/fm/product/datasheets/test.pdf",
+    "showCustom": "",
+    "title": "CalAndConverters title",
+    "description": "CalAndConverters description",
+    "ctatitle": "ctatitle",
+    "image": "/content/dam/ie/image.jpg",
+    "resourceheading": "heading"
+  },"item1": {
+    "jcr:primaryType": "nt:unstructured",
+    "resourceLink": "/content/dam/fm/product/datasheets/test.pdf",
+    "showCustom": "true",
+    "title": "CalAndConverters title",
+    "description": "CalAndConverters description",
+    "ctatitle": "ctatitle",
+    "image": "/content/dam/ie/image.jpg",
+    "resourceheading": "heading"
+  }
+}
+}

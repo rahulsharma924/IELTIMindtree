@@ -1,0 +1,162 @@
+ #tool_resources_faq{
+     width: 1280px;
+     max-width: 100%;
+     margin: 0 auto;
+     padding-bottom: 58px;
+}
+ #tool_resources_faq .cmp-accordion__item{
+     border-bottom: 1px solid var(--secondaryBtnVisited) !important;
+     margin: 0 130px;
+     padding-bottom: 32px;
+}
+ #tool_resources_faq button, .faqs .cmp-accordion__button{
+     background-color: var(--secondaryColor);
+     color: var(--primaryColor);
+     cursor: pointer;
+     margin:32px 0 0 0;
+     padding: 0;
+     font-weight: var(--fontWeightSmall);
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size:var(--fontSize18);
+     transition: 0.4s;
+     position: relative;
+}
+ #tool_resources_faq .cmp-accordion__title, .faqs .cmp-accordion__title{
+     display:inline-block;
+     padding-right: 20px;
+     font-size: var(--fontSize18);
+     font-weight: var(--fontWeightSmall);
+     line-height:var(--baseLineHeight);
+     color: var(--primaryColor);
+}
+ #tool_resources_faq .cmp-accordion__button .cmp-accordion__icon1:after, .faqs .cmp-accordion__button .cmp-accordion__icon1:after, .faqs .cmp-accordion__button .cmp-accordion__icon:after{
+     content: "\002B" !important;
+     font-size: 26px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     color: var(--primaryColor);
+     background-color:transparent !important;
+     mask: none !important;
+}
+ #tool_resources_faq .cmp-accordion__button--expanded .cmp-accordion__icon1:after, .faqs .cmp-accordion__button--expanded .cmp-accordion__icon1:after, .faqs .cmp-accordion__button--expanded .cmp-accordion__icon:after{
+     content: "\2212" !important;
+     font-size: 26px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     color: var(--primaryColor);
+     mask: none !important;
+}
+ #tool_resources_faq .cmp-accordion__button--expanded .textbold, .faqs .cmp-accordion__button--expanded .textbold{
+     font-weight: var(--fontWeightBold);
+}
+ #tool_resources_faq .cmp-accordion__panel, .faqs .cmp-accordion__panel{
+     padding:0;
+     margin: 0;
+}
+ #tool_resources_faq .cmp-text p, .faqs .cmp-text p{
+     font-size: var(--baseFontSize);
+     line-height:var(--baseLineHeight);
+     color: var(--secondaryBlack);
+     padding-bottom: 5px;
+     margin-bottom: 0;
+     font-weight: var(--fontWeightSmall);
+     padding-left: 0;
+}
+ #tool_resources_faq .cmp-accordion__item, #tool_resources_faq .cmp-accordion__header, #tool_resources_faq .cmp-accordion__button, #tool_resources_faq .cmp-accordion__panel, #tool_resources_faq .text p, .faqs .cmp-accordion__item, .faqs .cmp-accordion__header, .faqs .cmp-accordion__button, .faqs .cmp-accordion__panel, .faqs .text p{
+     -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+     -ms-transition: all 0.5s ease-in-out;
+     transition: all 0.5s ease-in-out;
+}
+#BrochureInfo #faq_viewall {
+    padding-top: 13px;
+    margin-bottom: 65px;
+}
+ #faq_viewall{
+     display: block;
+     width: 120px;
+     height: 52px;
+     border-radius: 4px;
+     margin: 0 auto;
+     background: var(--secondaryColor);
+     font-size: var(--baseFontSize);
+     font-weight: var(--fontWeightBold);
+     line-height:var(--baseLineHeight);
+     border: 1px solid var(--SearchIcon);
+     padding-top: 16px;
+     text-align: center;
+     cursor: pointer;
+     pointer-events: auto;
+}
+ #faq_viewall .cmp-button__text{
+     color: var(--primaryColor);
+	 padding: 0;
+}
+ #faq_viewall:hover{
+     text-decoration: none;
+     background:var(--secondaryBtnHover);
+     color: var(--primaryColor);
+     border: 1px solid var(--secondaryBtnVisited);
+}
+
+ #faq_viewall .cmp-button__text:hover{
+     color: var(--primaryColor);
+}
+ #faq_viewall:hover .cmp-button__text{
+     color: var(--primaryColor);
+}
+ #faq_viewall:focus{
+     text-decoration: none;
+     background:var(--secondaryColor);
+     color: var(--primaryColor);
+     border: 1px solid var(--secondaryBtnVisited);
+     outline: 2px solid var(--blueColorLight);
+}
+ #faq_viewall .cmp-button__text:focus{
+     color: var(--primaryColor);
+}
+ #faq_viewall:focus .cmp-button__text{
+     color: var(--primaryColor);
+}
+ #faq_viewall:active{
+     text-decoration: none;
+     background:var(--secondaryBtnVisited);
+     color: var(--primaryColor);
+     border: 1px solid var(--secondaryBtnVisited);
+     outline:none;
+}
+ #faq_viewall .cmp-button__text:active{
+     color: var(--primaryColor);
+}
+ #faq_viewall:active .cmp-button__text{
+     color: var(--primaryColor);
+}
+ @media (min-width: 320px) and (max-width:833px) {
+     #tool_resources_faq{
+         width: 100%;
+         padding:0 24px 35px 24px;
+    }
+     #tool_resources_faq .cmp-accordion__item{
+         width: 100%;
+         margin-left: 0;
+         padding-bottom: 35px;
+    }
+     #tool_resources_faq .cmp-accordion__title{
+         font-size: 0.75rem;
+         padding-right: 40px;
+    }
+     #tool_resources_faq .cmp-text p{
+         font-size:0.75rem;
+         margin-bottom: 0;
+    }
+   
+     #tool_resources_faq button{
+         margin: 35px 0 0 0;
+    }
+}
+ 

@@ -1,0 +1,95 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+		<div class="rfp-form-block-cls mt-3 cra-block-cls">
+			<div class="column"><h4>${properties.calculationtitle}</h4></div>
+			<p class="label-cls">
+				${properties.selecinputttitle}
+			</p>
+			<div class="row">
+				<div class="col-lg-9 col-12">					
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6">
+							<select id="option" class="input" data-acsb-navigable="true" data-acsb-now-navigable="true"
+								aria-hidden="false">
+								<option value="c">Capacitance (pF)</option>
+								<option value="x">Reactance</option>
+							</select>
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<input id="input" class="input" type="text" value="${properties.Placeholder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)">
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 offset-lg-4 col-md-6">
+							<label>${properties.frequencyTitle}</label>
+							<input id="freq" class="input" type="text" value="${properties.FrequencyPlaceholder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)">
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+						<div class="col-lg-4 dt-mt-rem col-md-6">
+							<select id="option1" class="input">
+								<option value="GHz">GHz</option>
+								<option value="MHz">MHz</option>
+							</select>
+							<span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="row">
+						 <div class="col-12">
+							<button id="go" class="ie-primary-btn" type="button" onclick="generalClickFnCra()" value="Calculate">
+								${properties.cracalculatebtntitle}
+							</button>
+							<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText"></span></p>		
+						 </div>
+					</div>
+					<div class="row dt-mt-rem">
+						<div class="col-12">
+							<div class="calculator-results calculator-results-full">
+								<label>${properties.craresultlabel}</label>
+								<div class="result_container results-calc">
+									<div class="result">
+											<span id="output_type"  class="result-converted" >
+											${properties.craresultlabeltitle1} </span> 
+											<span id="c" class="output"></span> <br> 
+											<span class="result-converted"> ${properties.craresultlabeltitle2} </span> 
+											<span id="x"
+											class="output"></span> <br> <span
+											class="result-converted"> ${properties.craresultlabeltitle3} </span> <span id="b"
+											class="output"></span> <br></div>
+								</div>
+							</div>
+						</div>
+				   </div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

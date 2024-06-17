@@ -1,0 +1,46 @@
+<div class="d-none shippng__details--handlerbar">
+  <div class="titleO">Order details</div>
+  <div class="row">
+    <div class="col-md-3 col-12 each-col">
+      <div class="title-col">Shipping address:</div>
+      <div>
+        <ul class="details-list">
+          <li>{{firstName}} {{isNotNA lastName}}</li>
+          <li>{{isNotNA streetNumber}}</li>
+          <li>{{isNotNA streetName}}</li>
+          <li>{{city}}, {{state}} {{postalCode}}</li>
+          <li>{{country}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 each-col">
+      <div class="title-col">Billing address:</div>
+      <div>
+        <ul class="details-list">
+          <li>{{billFirstName}} {{isNotNA billLastName}}</li>
+          <li>{{isNotNA billStreetNumber}}</li>
+          <li>{{isNotNA billStreetName}}</li>
+          <li>{{billCity}}, {{billState}} {{billPostalCode}}</li>
+          <li>{{billCountry}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 center-block each-col">
+      <div class="title-col">Ordered by</div>
+      <div>
+        <ul class="details-list">
+          <li>{{userfirstName}} {{userLastName}}</li>
+          <li>{{userEmail}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 each-col">
+      <div class="title-col">Shipping method</div>
+      <div>
+        <ul class="details-list">
+          <li>{{shippingMethodName}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

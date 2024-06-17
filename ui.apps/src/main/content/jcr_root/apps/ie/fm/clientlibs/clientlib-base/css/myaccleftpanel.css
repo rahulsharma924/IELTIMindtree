@@ -1,0 +1,292 @@
+.personalinfo-leftpanel {
+  position: relative;
+  display: block;
+}
+#useraccdetails {
+  height: 46px;
+  font-weight: var(--fontWeightSmall);
+  font-size:var(--fontSize31);
+  line-height:var(--lineHeight1and483);
+  color: var(--secondaryBlack);
+  position: relative;
+  display: block;
+}
+#myaccount-container-left .cmp-text p a:hover{
+  text-decoration-color:var(--secondaryBlack);
+}
+#myaccount-container-left .sidebar__menu p a:focus{
+  border:0;
+}
+#useraccdetails a {
+  color: var(--secondaryBlack);
+  font-weight: var(--fontWeightSmall);
+  font-size:var(--baseFontSize);
+  line-height:var(--baseLineHeight);
+  text-decoration: none;
+}
+#useraccdetails p {
+  padding: 0;
+}
+
+#myacclink-signoutbutton {
+  background: var(--secondaryColor);
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 217px;
+  height: 52px;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height:var(--baseLineHeight);
+  align-items: center;
+  text-align: center;
+  color: var(--primaryColor);
+}
+#myacclink-signoutbutton:active {
+  background-color: var(--secondaryBtnVisited);
+}
+
+#myacclink-signoutbutton p {
+  font-weight: var(--fontWeightBold);
+  font-size:var(--baseFontSize);
+  line-height:var(--baseLineHeight);
+  align-items: center;
+  text-align: center;
+  color: var(--primaryColor);
+  margin-top: 9px;
+}
+.signout-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+.cmp-text p a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+#myacclink-signoutbutton:hover {
+  background:var(--secondaryBtnHover);
+}
+#myacclink-signoutbutton:active {
+  background: var(--secondaryBtnVisited);
+  box-shadow: none;
+}
+
+#myacclink-heading a:hover {
+  font-weight: bold;
+}
+#myacclink-signoutbutton:focus {
+  background-color: var(--secondaryBtnVisited);
+  outline: none;
+}
+/* SideBar Navigation*/
+.sidebar__menu {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height:var(--lineHeight1andQ);
+  color: var(--primaryColor);
+  position: relative;
+  margin-left: 52px;
+}
+
+.sidebar__menu p a {
+  color: var(--secondaryBlack);
+}
+.sidebar__menu p a:hover {
+  font-weight: bold;
+}
+/* Left panel css */
+#myaccount-container-left{
+  padding-left:20px;
+}
+.sidebar__menu p a.current {
+  border-left: 4px solid #d83a22;
+  height: 25px;
+  margin-left: -30px;
+  padding-left: 28px;
+}
+#myaccount-container-left .signoutbutton{
+  margin-left:-20px;
+}
+/* 2nd Nav bar for mobile devices */
+#myacclink-heading h2{
+  font-weight: var(--fontWeightBold);
+ }
+@media screen and (max-width: 991px) {
+  #my-account-mobile-nav {
+    border: 1px solid var(--btnDisabledLight);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    background: var(--secondaryColor);
+    font-weight: var(--fontWeightBolder);
+    font-size:var(--fontSize15);
+    line-height:var(--lineHeightSmall);
+    color: var(--btnDisabledLight);
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: -5px;
+    height: 30px;
+    width: 30px;
+    padding: 7px 7px;
+    display:none;
+  }
+  #my-account-mobile-nav:focus {
+    outline: none;
+  }
+  #MyAccountModalreponsiveMobile{
+    padding-left: 0;
+  }
+  #MyAccountModalreponsiveMobile #useraccdetails{
+    display: block;
+  }
+  #MyAccountModalreponsiveMobile .modal-content{
+    margin:0;
+  }
+  #MyAccountModalreponsiveMobile .modal-header .close{
+    padding:10px 15px;
+    margin: 0;
+  }
+  #MyAccountModalreponsiveMobile.modal-header .close span{
+    color: var(--btnDisabledLight);
+    font-weight: var(--fontWeightBolder);
+    font-size:var(--fontSize15);
+    line-height:var(--lineHeightSmall);
+  }
+  #MyAccountMobilerespModal form.personalinfo-leftpanel{
+    display:block;
+    margin: 15px 0px 0px 15px;
+  }
+  #myacclink-subheading-oh p a.current, 
+  #myacclink-subheading-po p a.current, 
+  #myacclink-subheading-pi p a.current, 
+  #myacclink-subheading-ab p a.current, 
+  #myacclink-subheading-pm p a.current {
+    margin-left: -35px;
+    padding-left: 35px;
+  }
+  #myacclink-subheading-oh p a {
+    margin-left: 5px;
+  }
+  #myacclink-subheading-po p a {
+    margin-left: 5px;
+  }
+  #myacclink-subheading-pi p a {
+    margin-left: 5px;
+  }
+  #myacclink-heading-ad p a {
+    margin-left: 0px;
+  }
+  #myacclink-subheading-ab p a {
+    margin-left: 5px;
+  }
+  #myacclink-heading-os p a {
+    font-weight: var(--fontWeightBold);
+    padding-left: 0px;
+  }
+  #myacclink-heading-bg p a {
+    margin-left: 0;
+  }
+  #myacclink-subheading-pm p a {
+    margin-left: 5px;
+  }
+  #MyAccountModalreponsiveMobile .modal-body {
+    padding: 0 15px 0px;
+  }
+
+  #MyAccountModalreponsiveMobile .modal-header {
+    padding: 0px 0px 0px;
+    border-bottom: 1px solid var(--secondaryBtnVisited);
+  }
+  #MyAccountModalreponsiveMobile #myacclink-signoutbutton {
+    position: absolute;
+    margin-top: 20px;
+  }
+  .modal-backdrop.show {
+    opacity: 0.1;
+  }
+  #MyAccountModalreponsiveMobile #signOutBtnTextDesk {
+    padding: 30px 0 90px 24px;
+  }
+  #useraccdetails {
+    display: block;
+    font-size: var(--baseFontSize);
+    left:0px;
+    margin-top: 10px;
+  }
+   #main-header #MyAccountModalreponsiveMobile .cmp-container{
+    display:block;
+    padding-left: 25px;
+  }
+  #myacclink-signoutbutton {
+    left: 15px;
+    margin-top: 15px;
+  }
+    .sidebar__menu #MyAccountModalreponsiveMobile p {
+      padding-left: 5px;
+  }
+  .modal-backdrop.show {
+    opacity: 0.1;
+  }
+  #MyAccountModalreponsiveMobile .modal-dialog{
+    max-width: 100%;
+    margin:10px;
+  }
+  #MyAccountModalreponsiveMobile .modal-header {
+    padding: 0px 0px 0px;
+    border-bottom: 1px solid var(--secondaryBtnVisited);
+  }
+  #signOutBtnTextDesk {
+    padding: 0;
+  }
+
+  /* Left panel mobile devices */
+  .myaccount-template #myaccount-container-left{
+    display:none
+  }
+  .myaccount-template .aem-Grid>.aem-GridColumn.aem-GridColumn--default--9, .myaccount-template .aem-Grid.aem-Grid--default--12>.aem-GridColumn.aem-GridColumn--default--9{
+    width:100%;
+  }
+  #myacclink-heading-bg, #myacclink-heading-ad{
+    margin-top:25px;
+    margin-bottom: 15px;
+  }
+  #myacclink-heading-os{
+    margin-top:15px;
+    margin-bottom: 15px;
+  }
+  #MyAccountModalreponsiveMobile .sidebar__menu  p{
+    margin:10px 0px;
+  }
+
+}
+/* 2nd Nav bar for mobile devices ends */
+
+.sidebar__menu.cmp-text p {
+  padding-left: 10px;
+  margin: 5px 0;
+}
+
+.sidebar__menu.cmp-text p strong{
+  margin-left: -10px;
+}
+
+.sidebar__menu.cmp-text p a{
+  color: var(--secondaryBlack);
+}
+.sidebar__menu.cmp-text p a:hover {
+  color: var(--invertedColor);
+  text-decoration: underline;
+}
+
+.sidebar__menu .back__to__home {
+  padding-left: 0
+}
+
+.back__to__home .fa-chevron-left {
+  padding-right: 8px;
+}
+
+.sidebar__menu.cmp-text p a:focus {
+  outline: none;
+  border: none;
+}

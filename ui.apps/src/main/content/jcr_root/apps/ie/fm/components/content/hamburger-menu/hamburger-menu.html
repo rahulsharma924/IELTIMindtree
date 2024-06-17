@@ -1,0 +1,124 @@
+<sly data-sly-use.algoliaConfig="com.aem.ie.core.models.AlgoliaConfigModel">
+</sly>
+<sly
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+data-sly-call="${clientlib.all @ categories='hamburgerMenu'}" />
+
+<button type="button" id="my-account-mobile-nav" class="d-lg-none" title="My account hamburger menu " data-toggle="modal" data-target="#MyAccountModalreponsiveMobile">
+  <i class="fa-solid fa-bars"></i> 
+</button>
+<div class="fm-mobile-navigation">
+  <input type="checkbox" id="openSidebarMenu" aria-labelledby ="openSidebar"/>
+
+  <label for="openSidebarMenu" class="sidebarIconToggle" id="openSidebar" onclick="onClickMenu()">
+    <i class="fa-solid fa-bars" onclick="on()"></i>
+  </label>
+
+  <div id="sidebarMenu" class="active">
+    <div class="hamburger_top_inside">
+      <div class="hiddendiv" id="closebutton" onclick="onClickMenuShow()">
+       		 <i class="fa-solid fa-xmark" onclick="off()"></i>
+      </div>
+      <div>
+        <img class="fm_Logomobile" src="${properties.image}" alt="${properties.hamburgeralttext}" width="154" height="23"/>
+      </div>
+    </div>
+
+    <div>
+      <div class="products-active">
+      <button class="back-to-menu"><i class="fa-thin fa-angle-left"></i>Menu</button>
+      <button class="productsbtn-mob">${properties.products}</button>
+      </div>
+      <hr class="sec_level_border" />
+      <div class="industries-active">
+      <button class="back-to-menu-industries d-none"><i class="fa-thin fa-angle-left"></i>Menu</button>
+      </div>
+
+      <ul class="menu">
+        <li class="menu_item navigation-productsmenu-mob">
+          <button class="products-btn mob" id="productsjson">${properties.products}<span class="hamburger_right_icon"></span></button>
+			<div class="products-table-wrapper">
+              <ul id='productstable-mob'>
+                   <li><a title="New Releases" class="has_menuitem d-block new-release-label"  href="/content/fm/en/new-rf-microwave-and-millimeter-wave-product-releases.html">New Releases</a></li>
+
+				<li><a title="Bestsellers" class="d-block bestsellers-label" href="/content/fm/en/best-selling-rf-microwave-and-millimeter-wave-products.html">Bestsellers</a></li>
+             </ul>
+             <div class="zeynep_mob megaNavigation">
+					<ul id="fair_first_level_mob" class="products_items"></ul>
+			 </div>
+          </div>
+        </li>
+        <sly data-sly-list.primarynav="${resource.getChildren}" class="megamenu-mob">
+          <sly data-sly-test="${primarynav.name == 'navMulti'}">
+            <sly data-sly-list.nav="${primarynav.getChildren}">
+              <li class="menu_item navigation-menu-mob productList-display d-block" id="${nav.id}">
+                <a href="${nav.Url}">${nav.title}<span class="hamburger_right_icon"></span></a>
+                <sly data-sly-list.submenu="${nav.listChildren}" class="">
+                  <sly data-sly-test="${submenu.name == 'secondarynav'}">
+                    <ul class="submenu-mob d-none" id="industries-submenu" data-sly-list.secondnav="${submenu.getChildren}">
+                      <li>
+                        <a class="industries-links" href="${secondnav.buttonlink}">${secondnav.title}</a>
+                      </li>
+                    </ul>
+                  </sly>
+                </sly>
+              </li>
+              <!--/* <li class="menu_item productList-display d-block"><a href="/content/fm/en/theRfCableDesigner.html">The RF Cable Designer™</a><span class="hamburger_right_icon"></span></li>
+              <li class="menu_item productList-display d-block"><a href="/content/fm/en/ToolsAndResources.html">Tools & Resources</a><span class="hamburger_right_icon"></span></li>
+              <li class="menu_item productList-display d-block"><a href="/content/fm/en/support.html">Support</a><span class="hamburger_right_icon"></span></li> */-->
+            </sly>
+          </sly>
+        </sly>
+
+      </ul>
+    </div>
+
+    <div class="hamburger_links_below hamburger_sign_in productList-display d-block" id="signInHamB">
+      <span class="hamburger_links_icon">
+      <a href="${properties.signInLink}"><i class="fa-solid fa-user signinicon"></i
+      ></a></span>
+      <span class="hamburger_sign_in_link"
+        ><a href="${properties.signInLink}">${properties.signIn}</a></span
+      >
+    </div>
+    <div class="hamburger_links_below hamburger_chat productList-display d-block">
+      <span class="hamburger_links_icon">
+        <i class="livechat-menu fa-solid fa-headset  analytic-Live-support"></i
+      ></span>
+      <span class="hamburger_chat_link"><button  class="livechat-menu analytic-Live-support">${properties.liveChat}</button></span>
+    </div>
+    <div class="hamburger_links_below hamburger_call productList-display d-block">
+      <span class="hamburger_links_icon">
+        <a href="tel:${properties.callUsLink}"> <i class="fa-solid fa-phone callUSicon"></i
+      ></a></span>
+      <span class="hamburger_call_link">
+        <a href="tel:${properties.callUsLink}" title="${properties.callUsLink}">${properties.callUs} ${properties.callUsLink}</a>
+      </span>
+    </div>
+    <div class="hamburger_links_below productList-display" id="signOutBtnTextHamB">
+      <span class="hamburger_links_icon">
+        <i class="fa-solid fa-sign-out"></i
+      ></span>
+      <span class="hamburger_sign_out_link">${properties.signOut}</span>
+    </div>
+
+    <div></div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+<!--/.Navbar-->
+
+<div class="modal fade " id="MyAccountModalreponsiveMobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalmobile" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" id="exampleModalmobile">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="MyAccountMobilerespModal">
+        
+      </div>
+    </div>
+  </div>
+</div>

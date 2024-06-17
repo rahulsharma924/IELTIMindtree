@@ -1,0 +1,54 @@
+<sly
+        data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+        data-sly-call="${clientlib.all @ categories='list-plp'}"
+/>
+<div class="plp-page-ssr-wrapper">
+    <div class="container">
+        <h2 class="plp-g-card-title">Products</h2>
+        <div data-sly-use.productList="com.aem.ie.core.models.ProductList">
+            <div class="plp-g-card-wrapper">
+                <ol class="plp-g-card" data-sly-list.key="${productList.productListMap}">
+                    <li>
+                        <div class="plp-g-card-grid">
+                            <div class="plp-g-card-qty">
+                                <span> ${key.inventory @ context='html'}</span>
+                                <span><input class="plp-g-card-input-checkbox" type="checkbox" /></span>
+                            </div>
+                            <div class="plp-g-card-img">
+                                <img src="${key.LargeImage @ context='uri'}"></img>
+                            </div>
+                            <div class="plp-g-card-desc">
+                                ${key.name}
+                            </div>
+                            <div class="plp-g-card-datasheet">
+                                <a x-cq-linkchecker="skip" title="Datasheet" target="_blank"
+                                   href="${key.DataSheet @context='uri'}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Datasheet</a>
+                            </div>
+                            <div class="plp-g-card-sku">
+                                <span class="label-txt">SKU</span>
+                                <span class="label-value">${key.brandSKU}</span>
+                            </div>
+                            <div class="plp-g-card-price">
+                                <span class="label-txt">Starting price</span>
+                                <span class="label-value">$${key.startingPrice}
+                                </span>
+                            </div>
+                            <div class="plp-g-card-delivery">
+                                <span class="label-txt">Estimated shipment</span>
+                                <span class="label-value">${key.estimatedShipmentDate}</span>
+                            </div>
+                            <div class="plp-g-card-add-to-cart">
+                                <div class="qty">
+                                    <button class="cart-qty-minus" type="button"><span class="dec-val"> - </span></button>
+                                    <input type="text" class="qty_num" name="qty_num" value="1">
+                                    <button class="cart-qty-plus" type="button"><span class="inc-val"> + </span></button>
+                                </div>
+                                <button type="button" title="Add to cart" class="plp-g-add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

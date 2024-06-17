@@ -1,0 +1,26 @@
+.category-products .search-panel.tile-view .dec-val,
+.category-products .search-panel.tile-view .inc-val {
+  padding: 5px;
+}
+
+button.cart-qty-minus,
+button.cart-qty-plus {
+  border: none;
+  background-color: #fff;
+  padding: 0;
+}
+input.qty_num {
+  border: 0;
+  width: 19px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+div.qty {
+  width: 66px;
+  display: flex;
+}
+button.cart-qty-minus:focus,
+button.cart-qty-plus:focus {
+  outline: 0;
+}

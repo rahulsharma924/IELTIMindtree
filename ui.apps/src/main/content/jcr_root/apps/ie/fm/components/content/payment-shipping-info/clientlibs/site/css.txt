@@ -1,0 +1,3 @@
+#base=css
+payment-shipping-info.css
+shippingInfo-customCapabilities.css

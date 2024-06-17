@@ -1,0 +1,1283 @@
+/*braintree form css*/
+
+.payment-info .purchase-orderInfo{
+	display: none;
+}
+.card-details {
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--baseFontSize);
+	line-height:var(--baseLineHeight);
+	font-feature-settings: 'tnum' on, 'lnum' on;
+	color: #212529;
+
+}
+.card-label{
+    display:inline-block;
+    margin-bottom:0.5rem;
+ }
+.billing-address-details {
+	position: relative;
+	display: none;
+	padding-left: 0;
+
+}
+
+.methodofShipping {
+	padding-left: 25px;
+}
+
+span .fa-check {
+	padding: 0;
+	top: 5px;
+}
+
+.selected-address {
+	padding: 0px 25px;
+}
+
+.EditbillingInfo {
+	border: none;
+	background: none;
+	color: var(--secondaryLinkNormal);
+	font-weight:var(--fontWeightBold);
+	padding: 0;
+	position :absolute;
+    top:0;
+    right:0;
+}
+
+.EditbillingInfo:focus {
+	outline: none;
+}
+
+.payment-main-wrapper {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.placeorder-btn-block {
+	margin-top: 25px;
+	margin-bottom: 90px;
+	width: 100%;
+}
+.saveShippingAddressBtn{
+       float:right;
+}
+
+#placeOrderBtn:hover,
+#brainTreePay:hover {
+	background: var(--invertedColorHover);
+	
+}
+
+#placeOrderBtn:focus,
+#brainTreePay:focus {
+	outline: 2px auto #3144d8;
+	outline-offset: 2px;
+}
+
+#placeOrderBtn:active,
+#brainTreePay:active {
+	outline: 0 none;
+	background-color: var(--invertedColorVisited);
+}
+#brainTreePay {
+	position: absolute;
+}
+
+#card-number {
+	width: 100%;
+}
+
+#card-number,
+#cvv,
+#expiration-date {
+
+	height: 46.92px;
+	background: var(--secondaryColor);
+	border: 1px solid var(--SearchIcon);
+	border-radius: 5px;
+	padding-left: 10px;
+
+}
+
+.expiration-cvv-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.expiration-wrapper,
+.cvv-wrapper {
+	width: 49%;
+	margin: 25px 0;
+}
+/* css for billing address */
+.billing-add-types {
+	display: flex;
+	gap: 15px;
+	margin: 15px 0px;
+}
+.edit-billing-add {
+	position: absolute;
+	bottom: 20px;
+	left: 88px;
+}
+#editNewBillingAddressCountry,#editBillingAddressState,#addNewBillingAddressCountry,#addNewBillingAddressState{
+height: 44px;
+}
+a.add-new-address-btn {
+	color: var( --invertedColor);
+	font-weight:var(--fontWeightMedium);
+	font-size: var(--baseFontSize);
+	line-height: 20px;
+}
+a.card-link.clickable {
+	color: var(--secondaryBlack);
+	font-weight:var(--fontWeightBold);
+	font-size: var(--baseFontSize);
+	line-height:var(--baseLineHeight);
+}
+.other-address-list {
+	padding: 20px 0px;
+}
+
+
+/* Shipping information page css starts here */
+.saved-card {
+	padding-left: 0px;
+
+}
+
+.save_details {
+	display: flex;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+	background-color: var(--secondaryColor);
+	border: 6px solid #007bff;
+	width: 20px;
+	height: 20px;
+}
+
+.check_box {
+	accent-color: #007bff;
+	border: 1px solid var(--secondaryBlack);
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.custom-radio .custom-control-input:not(:checked)~.custom-control-label::before {
+	background-color: var(--secondaryColor);
+	border: 1.5px solid var(--primaryColor);
+	width: 20px;
+	height: 20px;
+}
+
+.saved-card .custom-radio {
+	padding-bottom: 25px;
+	line-height: 30px;
+	padding-left: 5px;
+	display: flex;
+}
+
+.errNumber,
+.errED,
+.errCvv {
+	display: none;
+}
+
+.payment-method,
+.saved-card-details {
+	padding-left: 10px;
+}
+
+.enter-carrier-error-message {
+	color: var( --invertedColor);
+	margin-block: 0;
+	
+
+	font-weight:var(--fontWeightMedium);
+	font-size:var(--fontSize12);
+	height: 16px;
+	width: 100%;
+	line-height: 18px;
+
+}
+
+.placeorder-btn {
+	padding: 10px 25px;
+	width: 20.12rem;
+	
+}
+
+.payment-info-order-summary-details {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.custom-control input {
+	position: static;
+}
+
+.custom-control {
+	padding-left: 0;
+}
+
+.billing-address {
+	display: flex;
+	padding-right: 10px;
+	margin-bottom: 15px;
+}
+
+.checkbox-label {
+	margin-bottom: 0;
+	padding-left: 12px
+}
+
+.box {
+	border: 1px solid #eee;
+	margin-top: 22px;
+}
+
+.payment-method-header {
+	
+	font-weight: var(--fontWeightSmall);
+	font-size:var(--fontSize22);
+	margin-bottom: 24px;
+}
+
+.purchaseOrder,
+.card-details {
+	display: none;
+}
+
+.card-deck {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+.shipping-title {
+	font-weight:var(--fontWeightBold);
+	margin-bottom: 12px;
+
+}
+
+.shipping-title,
+.customer-name,
+.customer-address,.customer-email,.customer-phone,.customer-addressline {
+	padding-left: 10px;
+    line-height:28px;
+	display:block;
+}
+
+.fa-check {
+	padding: 7px 8px 8px;
+	color: #059669;
+	position: absolute;
+	left: 0;
+	top: 13%;
+}
+
+.returnCart {
+	color: var(--secondaryLinkNormal);
+	font-weight:var(--fontWeightNormal);
+}
+
+
+.EditShippingInfo {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	color: var(--secondaryLinkNormal);
+	font-weight:var(--fontWeightMedium);
+}
+.editbillingInfo {
+    position: absolute;
+        right: 20px;
+        top: 20px;
+        color: var(--secondaryLinkNormal);
+        font-weight: 600
+}
+
+.save_details {
+	padding-bottom: 20px;
+
+}
+
+.payment-method {
+	font-weight:var(--fontWeightBold);
+	padding-bottom: 25px;
+	line-height: 30px;
+	display: block;
+}
+
+.payment-details {
+	border: 1px solid var(--secondaryBtnVisited);
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#shipping_address {
+	padding: 0;
+}
+
+.form-check-label {
+	font-weight: var(--fontWeightSmall);
+}
+
+.continue-btn {
+    padding: 10px 25px;
+    width: 174px;
+	border: 1px solid var(--invertedColorHover);
+    
+}
+.shipping-address-form label {
+    
+    font-weight:var(--fontWeightNormal);
+    font-size:var( --baseFontSize);
+    line-height:var(--baseLineHeight);
+    color: var(--primaryColor);
+}
+#addNewBillingAddressPopup .modal-footer {
+    background: var(--secondaryBtnHover);
+    border-top: 0;
+    padding: 14px 30px 17px 55px;
+}
+#addNewBillingAddressPopup .cancelBillingAddressBtn {
+    font-size: var(--fontSize14);
+    padding: 12px 35px;
+    margin-right: 1rem;
+}
+#addNewBillingAddressPopup .saveBillingAddressBtn  {
+    font-size: var(--fontSize14);
+    padding: 12px 42px;
+}
+#addNewBillingAddressPopup .modal-header {
+    padding: 37px 0 26px 54px;
+    border-bottom: 1px solid var(--SearchIcon);
+    box-shadow: none;
+}
+
+
+/*------Order summery css start--------*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.single_product_total_amount {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+input.qty_num {
+	border: 0;
+	width: 87px;
+	text-align: center;
+	font-size: 14px;
+	background-color: var(--secondaryColor);
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	height: 33px;
+}
+
+button.cart-qty-minus,
+button.cart-qty-plus {
+	border: 0;
+	background-color: var(--secondaryColor);
+	padding: 0;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 7px;
+}
+
+button.cart-qty-minus {
+	left: 20px;
+}
+
+button.cart-qty-plus {
+	right: 24px;
+}
+
+.single_product_price {
+
+	font-weight: var(--fontWeightSmall);
+	font-size:var(--fontSize12);
+	line-height: 20px;
+	color: var(--primaryColor);
+	margin: 10px;
+	white-space: nowrap;
+	margin-top: 6px;
+	margin-left: 30px;
+}
+
+div.qty {
+	display: flex;
+	position: relative;
+	left: -15px;
+}
+
+.cart_quantity_div {
+	display: flex;
+	justify-content: end;
+}
+
+.cartItem div#quantityDropdown {
+	display: none;
+}
+
+.add-new-address-modal.modal-backdrop.fade {
+	display: none;
+}
+
+.viewOrderSummary_box {
+	margin-bottom: 1rem;
+}
+
+.order-summary-sect {
+	padding: 30px;
+	margin-top: 5px;
+	background-color: var(--secondaryBtnHover);
+}
+
+#checkout-ordersummary {
+	padding: 0px;
+	background-color: var(--secondaryBtnHover);
+}
+
+.cartItem_wrapper {
+	padding: 0 10px;
+	max-height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-width: thin;
+}
+
+.cart_order_summary_left-total {
+	
+
+	font-weight:var(--fontWeightBold);
+	font-size:var( --baseFontSize);
+	line-height:var(--baseLineHeight);
+	color: var(--secondaryBlack);
+}
+
+.cart_order_summary_right-total {
+	
+
+	font-weight:var(--fontWeightBold);
+	font-size:var( --baseFontSize);
+	line-height:var(--baseLineHeight);
+	color: var(--secondaryBlack);
+}
+
+.cart_order_summary_right {
+	
+
+	font-weight: var(--fontWeightSmall);
+	font-size:var( --baseFontSize);
+	line-height:var(--baseLineHeight);
+	color: var(--secondaryBlack);
+}
+
+.cart_order_summary_left {
+	
+
+	font-weight: var(--fontWeightSmall);
+	font-size:var( --baseFontSize);
+	line-height:var(--baseLineHeight);
+	color: var(--secondaryBlack);
+}
+
+#checkout-ordersummary .order-total {
+
+	margin-bottom: 2rem;
+
+}
+
+#checkout-ordersummary .itemSubTotal-value {
+	font-size:var( --baseFontSize);
+	font-weight:var(--fontWeightBold);
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary .subtotalValue {
+	font-size:var( --baseFontSize);
+	font-weight:var(--fontWeightBold);
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary .cartdetail {
+	display: inline-flex;
+}
+
+#checkout-ordersummary .cartdetail .cartsummary {
+	display: inline-flex;
+}
+
+#checkout-ordersummary .ordertotal .ordersummary-total {
+	display: inline-flex;
+}
+
+#checkout-ordersummary .checkout-itemMultiPrice .fa-usd {
+	font-weight: var(--fontWeightSmall);
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary .close {
+	font-size: 1.5rem;
+	color: #879096;
+}
+
+#checkout-ordersummary .count-inlineflex {
+	display: inline-flex;
+	border: solid 1px var(--secondaryBtnVisited);
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	height: 30px;
+	justify-content: center;
+	border-radius: 4px;
+}
+
+#checkout-ordersummary .product-count .checkout-qtyminus {
+	line-height: 32px;
+}
+
+#checkout-ordersummary .product-count .checkout-Itemqty {
+	width: 55px;
+	text-align: center;
+	border: none;
+	font-size: var(--fontSize14);
+}
+
+#checkout-ordersummary .product-count .checkout-qtyminus,
+#checkout-ordersummary .product-count .checkout-qtyplus {
+	width: 34px;
+	height: 34px;
+	background: transparent;
+	text-align: center;
+	font-size: var(--fontSize14);
+	line-height:var(--lineHeight2andH42);
+	color:var(--secondaryBlack);
+	cursor: pointer;
+	font-weight:var(--fontWeightMedium);
+}
+
+#checkout-ordersummary .viewCartLink {
+	color: var( --invertedColor);
+	
+	font-size:var( --baseFontSize);
+	font-weight:var(--fontWeightMedium);
+	line-height:var(--lineHeight1and875);
+}
+
+#checkout-ordersummary .viewCartLink:active {
+	color: var(--invertedColorFocus);
+	text-decoration: underline;
+	font-weight:var(--fontWeightBold);
+}
+
+#checkout-ordersummary .checkoutBtn {
+	background-color: var( --invertedColor);
+	color: var(--secondaryColor);
+	font-size:var( --baseFontSize);
+	
+	font-weight:var(--fontWeightBold);
+	padding: 10px 56px;
+	line-height:var(--baseLineHeight);
+}
+
+#checkout-ordersummary .checkoutBtn:hover {
+	background-color: var(--invertedColorHover);
+	color: var(--secondaryColor);
+}
+
+.cart-qty-plus,
+.cart-qty-minus {
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary input.qty_num {
+	border: 1px solid var(--secondaryBtnVisited);
+}
+
+#checkout-ordersummary .itemPrice {
+	font-size: var(--fontSize14);
+	font-weight:var(--fontWeightBold);
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary .itemSubTotal {
+	font-size:var( --baseFontSize);
+	font-weight:var(--fontWeightBold);
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary .removeItemLink {
+	float: right;
+	font-size:var(--fontSize11);
+	font-weight:var(--fontWeightMedium);
+	color: var( --invertedColor);
+	text-align: end;
+}
+
+#checkout-ordersummary .removeItemLink:hover {
+	font-weight:var(--fontWeightBold);
+	color: var( --invertedColor);
+}
+
+#checkout-ordersummary .removeItemLink:active {
+	font-weight:var(--fontWeightBold);
+	color: var(--invertedColorFocus);
+	text-decoration: underline;
+}
+
+#checkout-ordersummary .checkout-itemMultiPrice {
+	font-size:var(--fontSize12);	
+	font-weight: var(--fontWeightSmall);
+	color: var(--primaryColor);
+	line-height:var(--lineHeight2andH);
+}
+
+#checkout-ordersummary .itemDescription p {
+	line-height: 20px;
+}
+
+#checkout-ordersummary .itemDetails {
+	font-size: var(--fontSize14);
+	color: var(--primaryColor);	
+	font-weight: var(--fontWeightSmall);
+	word-break: break-all;
+}
+
+#checkout-ordersummary .itemDescription {
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize14);
+	line-height:var(--lineHeight1and428);
+	color: var(--primaryColor);
+}
+
+#checkout-ordersummary .viewCartLink:hover {
+	color: var( --invertedColor);
+	font-weight:var(--fontWeightBold);
+}
+
+/*#checkout-ordersummary .scrollbar::-webkit-scrollbar {
+	width: 3px;
+	background-color:var(--cartPopUpBg);
+}
+
+#checkout-ordersummary .scrollbar::-webkit-scrollbar-thumb {
+	background-color: var(--SearchIcon);
+}*/
+
+#checkout-ordersummary .itemImg {
+	border: 1px solid var(--secondaryBtnVisited);
+	border-radius: 4px;
+	padding: 0px 15px;
+	background: var(--secondaryColor);
+}
+
+
+#checkout-ordersummary .checkoutBtn:hover {
+	background: var(--invertedColorHover);
+	border: 1px solid var(--invertedColorHover);
+}
+
+#checkout-ordersummary .checkoutBtn:active {
+	background: var(--invertedColorVisited);
+	border: 1px solid var(--invertedColorVisited);
+}
+
+#checkout-ordersummary .checkoutBtn:focus {
+	background: var( --invertedColor);
+	border: 2px solid #3144d8;
+	box-shadow: none;
+}
+
+#checkout-ordersummary h2 {
+	
+
+	font-weight: var(--fontWeightSmall);
+	font-size:var(--fontSize22);
+	line-height:var(--baseLineHeight);
+	color:var(--plptitles);
+	margin-bottom: 40px;
+
+}
+
+#checkout-ordersummary .cartItem {
+	margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 767px) {
+	.order-summary-sect {
+		width: 100%;
+		display: block;
+		flex: 100%;
+		max-width: 100%;
+		padding: 22px;
+	}
+
+	.cartItem_wrapper {
+		padding: 0px 10px 0px 0px;
+	}
+
+	#checkout-ordersummary .itemImg {
+		padding: 0px 5px;
+
+	}
+
+	#checkout-ordersummary .modal-content {
+		/* width: 292px; */
+		margin: 103px 24px 0 0;
+	}
+
+	#checkout-ordersummary .modal-body {
+		padding: 0px 20px 0 20px;
+	}
+
+	#checkout-ordersummary .checkoutBtn {
+		padding: 10px 56px;
+	}
+
+	/* .row {
+
+flex-wrap: nowrap;
+
+} */
+
+	#checkout-ordersummary .subtotalValue {
+		font-size:var( --baseFontSize);
+		font-weight:var(--fontWeightBold);
+		color: var(--primaryColor);
+	}
+
+	#checkout-ordersummary .cartitemprice {
+		padding: 0px;
+	}
+
+	#checkout-ordersummary .cart-itemdetails {
+		padding: 0px;
+	}
+
+	#checkout-ordersummary .checkout-itemMultiPrice {
+		padding-left: 10px;
+	}
+
+	#checkout-ordersummary {
+		padding: 0;
+
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 833px) {
+	.order-summary-sect {
+		width: 100%;
+		display: block;
+		flex: 100%;
+		max-width: 100%;
+	}
+
+	#checkout-ordersummary .modal-content {
+		/* width: 292px; */
+		margin: 103px 24px 0 0;
+	}
+
+	#checkout-ordersummary .modal-body {
+		padding: 0px 20px 0 20px;
+	}
+
+	#checkout-ordersummary .checkoutBtn {
+		padding: 10px 56px;
+	}
+
+	#checkout-ordersummary .itemImg {
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+	}
+
+	#checkout-ordersummary .subtotalValue {
+		font-size:var( --baseFontSize);
+		font-weight:var(--fontWeightBold);
+		color: var(--primaryColor);
+	}
+
+	#checkout-ordersummary .cartitemprice {
+		padding: 0px;
+	}
+
+	#checkout-ordersummary .cart-itemdetails {
+		padding: 0px;
+	}
+
+	#checkout-ordersummary .checkout-itemMultiPrice {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (min-width: 833px) and (max-width: 991px) {
+	#checkout-ordersummary .modal-content {
+		margin: 110px 30px 0 0;
+	}
+}
+
+#editShippingAddressPopup .modal-header {
+	padding: 37px 0 26px 54px;
+	border-bottom: 1px solid var(--SearchIcon);
+	box-shadow: none;
+}
+#editShippingAddressPopup .modal-dialog {
+	width: 750px;
+}
+#editShippingAddressPopup .saveShippingAddressBtn {
+	background-color: var( --invertedColor);
+	color: var(--secondaryColor);
+	font-size: var(--fontSize14);	
+	font-weight:var(--fontWeightBold);
+	padding: 12px 42px;
+	line-height:var(--lineHeight1and428);
+}
+
+#editShippingAddressPopup .saveShippingAddressBtn:hover {
+	background: var(--invertedColorHover);
+	border-radius: 0;
+}
+
+#editShippingAddressPopup .saveShippingAddressBtn:active {
+	background: var(--invertedColorVisited);
+	border: 1px solid var(--invertedColorVisited);
+}
+
+#editShippingAddressPopup .saveShippingAddressBtn:focus {
+	background: var( --invertedColor);
+	outline: 2px solid #3144d8;
+	outline-offset: 1px;
+}
+
+
+#editShippingAddressPopup .cancelShippingAddressBtn {
+	
+	font-weight:var(--fontWeightBold);
+	font-size:var(--fontSize14);
+	line-height:var(--lineHeight1and428);
+	color: var(--primaryColor);
+	padding: 12px 35px;
+	outline: 1px solid var(--SearchIcon);
+	margin-right: 1rem;
+	background-color: var(--secondaryColor);
+}
+
+#billingAddressPopup {
+	display: none;
+}
+
+#billingAddressPopup .cancelShippingAddressBtn:hover {
+	background-color: var(--secondaryBtnHover);
+}
+
+#billingAddressPopup .cancelShippingAddressBtn:focus {
+	outline: 2px solid #3144d8;
+	box-shadow: none;
+}
+
+#billingAddressPopup .cancelShippingAddressBtn:active {
+	background-color: var(--secondaryBtnVisited);
+	outline: none;
+}
+
+#billingAddressPopup .modal-body {
+	padding: 25px 50px;
+}
+
+
+#billingAddressPopup .modal-footer {
+	background: var(--secondaryBtnHover);
+	border-top: none;
+	padding: 14px 30px 17px 55px;
+}
+
+#billingAddressPopup .modal-dialog {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#billingAddressPopup .modal-content {
+	border-radius: 0;
+	border: none;
+	height: 100%;
+	margin: 140px auto;
+}
+
+#addNewBillingAddressPopup .modal-title {
+    
+    font-weight:var(--fontWeightBold);
+    font-size:var(--fontSize31);
+    color: var(--primaryColor);
+}
+#addNewBillingAddressPopup .modal-body {
+    padding: 15px 50px;
+}
+
+
+.modal-footer.ShippingAddressFooter {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	-ms-flex-pack: end;
+	padding: .75rem;
+	border-bottom-right-radius: calc(.3rem - 1px);
+	border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.modal-footer.editShippingAddressFooter .modal-footer {
+	flex: auto;
+	border-top: none;
+}
+
+.modal-footer.editShippingAddressFooter {
+	justify-content: space-between;
+}
+
+.modal-footer-editshippingaddress .deleteShippingAddressBtn {
+	
+	font-weight:var(--fontWeightMedium);
+	font-size:var( --baseFontSize);
+	line-height:var(--lineHeight1andQ);
+	color: var( --invertedColor);
+	background-color: transparent;
+}
+
+.modal-footer-editshippingaddress a:hover {
+	font-weight:var(--fontWeightBold);
+	text-decoration: underline;
+}
+
+.modal-footer-editshippingaddress a:active {
+
+	font-weight:var(--fontWeightBold);
+	color: var(--invertedColorFocus);
+	text-decoration: underline;
+}
+
+#billingAddressPopup .custom-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	max-width: 100%;
+	background-color: var(--secondaryColor);
+	background-repeat: no-repeat;
+	background-size: 10px 10px;
+	border-radius: 5px;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+	height: 44px;
+}
+
+#billingAddressPopup .custom-select:focus {
+	outline: 2px solid #3144d8;
+	box-shadow: none;
+}
+
+#billingAddressPopup .modal-title {	
+	font-weight:var(--fontWeightBold);
+	font-size: var(--fontSize31);
+	color: var(--primaryColor);
+}
+
+#addNewShippingAddressPopup .modal-header {
+    padding: 37px 0 26px 54px;
+    border-bottom: 1px solid var(--SearchIcon);
+    box-shadow: none;
+}
+#addNewShippingAddressPopup .modal-title {    
+    font-weight:var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    color: var(--primaryColor);
+}
+#addNewShippingAddressPopup .saveShippingAddressBtn {
+    background-color: var( --invertedColor);
+    color: var(--secondaryColor);
+    font-size: var(--fontSize14);    
+    font-weight:var(--fontWeightBold);
+    padding: 12px 42px;
+    line-height:var(--lineHeight1and428);
+}
+#addNewShippingAddressPopup .saveShippingAddressBtn:hover {
+    background: var(--invertedColorHover);
+}
+#addNewShippingAddressPopup .saveShippingAddressBtn:active {
+    background: var(--invertedColorVisited);
+    border: 1px solid var(--invertedColorVisited);
+}
+#addNewShippingAddressPopup .saveShippingAddressBtn:focus {
+    background: var( --invertedColor);
+    outline: 2px solid #3144d8;
+    box-shadow: none;
+    outline-offset: 1px;
+}
+#addNewShippingAddressPopup .cancelShippingAddressBtn {    
+    font-weight:var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height:var(--lineHeight1and428);
+    color: var(--primaryColor);
+    padding: 12px 35px;
+    border: 1px solid var(--SearchIcon);
+    margin-right: 1rem;
+    background-color: var(--secondaryColor);
+}
+#addNewShippingAddressPopup .cancelShippingAddressBtn:hover {
+    background-color: var(--secondaryBtnHover);
+  }
+  #addNewShippingAddressPopup .cancelShippingAddressBtn:focus {
+    outline: 2px solid #3144d8;
+    box-shadow: none;
+  }
+  #addNewShippingAddressPopup .cancelShippingAddressBtn:active {
+    background-color: var(--secondaryBtnVisited);
+    outline: 0;
+  }
+#addNewShippingAddressPopup .modal-body {
+    padding: 15px 50px;
+}
+#addNewShippingAddressPopup .modal-footer {
+    background: var(--secondaryBtnHover);
+    border-top: none;
+    padding: 14px 33px 12px 0;
+}
+#addNewShippingAddressPopup .modal-content {
+    height: 100%;
+}
+/*default address delete btn*/
+a.deleteShippingAddressBtn[data-isdefaultadd='true'] {
+    pointer-events: none;
+    text-decoration: none;
+}
+
+/* Add new shipping address popup CSS ends hear */
+/* confirm delete popup */
+#deleteConfirm .modal-dialog, #successfullyDeleted .modal-dialog,
+#duplicatedAddress .modal-dialog, #successfullyAdded .modal-dialog,
+#duplicateAddnewAddress .modal-dialog{
+    margin: 140px auto;
+  }
+#deleteConfirm .modal-content, #successfullyDeleted .modal-content,
+#duplicatedAddress .modal-content, #successfullyAdded .modal-content,
+#duplicateAddnewAddress .modal-content{
+    height: auto;
+    margin: 0 auto;
+  }
+  #successfullyDeleted .modal-body,
+  #duplicatedAddress .modal-body, #successfullyAdded .modal-body,
+  #successfullyDeleted .modal-body {
+    text-align: center;
+    flex-grow: inherit;
+    padding: 55px 110px;
+  }
+  #deleteConfirm .modal-body,
+  #duplicateAddnewAddress .modal-body{
+    text-align: center;
+    flex-grow: inherit;
+    padding: 30px 110px;
+  }
+  #deleteConfirm .modal-body h4, #successfullyDeleted .modal-body h4,
+  #duplicatedAddress .modal-body h4, #successfullyAdded .modal-body h4,
+  #duplicateAddnewAddress .modal-body h4{
+    color: var(--secondaryBlack);
+    font-size: var(--fontSize31);
+    line-height:var(--lineHeight1and483);
+    font-weight: var(--fontWeightSmall);
+  }
+  #deleteConfirm .modal-footer, #successfullyDeleted .modal-footer,
+  #duplicatedAddress .modal-footer, #successfullyAdded .modal-footer,
+  #duplicateAddnewAddress .modal-footer {
+    border: 0;
+    background-color: var(--secondaryBtnHover);
+    padding: 18px 27px 16px 0;
+  }
+  #deleteConfirm .modal-footer div, #successfullyDeleted .modal-footer div,
+  #duplicatedAddress .modal-footer div, #successfullyAdded .modal-footer div,
+  #duplicateAddnewAddress .modal-footer div {
+    position: relative;
+    margin:auto;
+  }
+  .ie-primary-btn:active {
+    background: var(--invertedColorVisited);
+    border: 1px solid var(--invertedColorVisited);
+  }
+  .ie-scondary-btn:active {
+    background: var(--secondaryBtnVisited);
+  }
+  #duplicatedAddress .ie-primary-btn,
+  #deleteConfirm .ie-primary-btn,
+  #successfullyDeleted .ie-primary-btn,
+  #successfullyAdded .ie-primary-btn,
+  #duplicateAddnewAddress .ie-primary-btn{
+    font-size: var(--fontSize14);
+    padding: 12px 26px;
+    line-height:var(--lineHeight1and428);
+}
+#deleteConfirm .ie-scondary-btn{
+    font-size: var(--fontSize14);
+    padding: 12px 34px;
+    line-height:var(--lineHeight1and428);
+    margin-right: 16px;
+}
+  /* confirm delete popup */
+#editBillingAddressPopup .modal-header,
+#deleteConfirm .modal-header,
+#successfullyAdded .modal-header,
+#duplicatedAddress .modal-header,
+#successfullyDeleted .modal-header,
+#duplicateAddnewAddress .modal-header{
+    padding: 37px 0 26px 54px;
+    border-bottom: 1px solid var(--SearchIcon);
+    box-shadow: none;
+}
+#editBillingAddressPopup .modal-dialog {
+    width: 750px;
+}
+#editBillingAddressPopup .saveShippingAddressBtn {
+    font-size: var(--fontSize14);   
+    padding: 12px 42px;
+	border: 1px solid var(--invertedColorHover);
+}
+#editBillingAddressPopup .cancelShippingAddressBtn {
+    font-size: var(--fontSize14);
+    padding: 12px 35px;
+    margin-right: 1rem;
+}
+#editBillingAddressPopup .modal-body {
+    padding: 25px 50px;
+}
+#editBillingAddressPopup .modal-footer {
+    background: var(--secondaryBtnHover);
+    border-top: none;
+    padding: 14px 30px 17px 55px;
+}
+#addNewBillingAddressPopup .modal-dialog,
+#editBillingAddressPopup .modal-dialog {
+    width: 100%;
+    margin: 0 auto;
+}
+#addNewBillingAddressPopup .modal-content,
+#editBillingAddressPopup .modal-content {
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    margin: 140px auto;
+}
+.modal-footer.editBillingAddressFooter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    -ms-flex-pack: end;
+    padding: .75rem;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+.modal-footer.editBillingAddressFooter .modal-footer {
+    flex: auto;
+    border-top: none;
+}
+.modal-footer.editBillingAddressFooter {
+    justify-content: space-between;
+}
+.modal-footer-editBillingaddress a:hover{
+    font-weight:var(--fontWeightBold);
+    text-decoration: underline;
+}
+.modal-footer-editBillingaddress a:active {
+    
+    font-weight:var(--fontWeightBold);
+    color: var(--invertedColorFocus);
+    text-decoration: underline;
+}
+  #editBillingAddressPopup .custom-select:focus {
+    outline: 2px solid #3144d8;
+    box-shadow: none;
+  }
+  #editBillingAddressPopup .modal-title,
+  #deleteConfirm .modal-title,
+  #successfullyDeleted .modal-title,
+  #successfullyAdded .modal-title,
+  #duplicateAddnewAddress .modal-title{
+    
+    font-weight:var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    color: var(--primaryColor);
+}
+  @media screen and (max-width: 767px) {
+    #editBillingAddressPopup .modal-footer{
+        padding: 15px;
+          }
+    #editBillingAddressPopup .modal-body {
+        padding: 15px 32px 15px 32px;
+    }
+  
+    #editBillingAddressPopup .saveShippingAddressBtn {
+        padding: 12px 26px;
+    }
+    #editBillingAddressPopup .modal-header {
+        padding: 26px 0 20px 32px;
+        border-bottom: none;
+    }
+    #editBillingAddressPopup .cancelShippingAddressBtn{
+        padding: 12px 18px;
+        margin-right: 0.5rem;
+    }
+    .modal-footer-editshippingaddress{
+        margin: 25px 0 0px;
+    }
+    .modal-footer.editShippingAddressFooter{
+        justify-content: space-between;
+    }
+    #deleteConfirm .modal-header,
+#successfullyAdded .modal-header,
+#duplicatedAddress .modal-header,
+#successfullyDeleted .modal-header,
+#duplicateAddnewAddress .modal-header{
+    padding: 25px 0 25px 25px;
+}
+  }
+
+@media screen and (max-width: 767px) {
+	#billingAddressPopup .modal-footer {
+		padding: 15px;
+	}
+
+	#billingAddressPopup .modal-body {
+		padding: 15px 32px 15px 32px;
+	}
+
+	#billingAddressPopup .saveShippingAddressBtn {
+		padding: 12px 26px;
+	}
+
+	#billingAddressPopup .modal-header {
+		padding: 26px 0 20px 32px;
+		border-bottom: none;
+	}
+
+	#billingAddressPopup .cancelShippingAddressBtn {
+		padding: 12px 18px;
+		margin-right: 0.5rem;
+	}
+
+	.modal-footer-editshippingaddress {
+		margin: 25px 0 0px;
+	}
+
+	.modal-footer.editShippingAddressFooter {
+		justify-content: space-between;
+	}
+}

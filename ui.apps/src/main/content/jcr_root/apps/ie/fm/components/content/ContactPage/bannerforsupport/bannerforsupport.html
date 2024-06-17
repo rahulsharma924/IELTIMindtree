@@ -1,0 +1,24 @@
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='bannerforsupport'}" />
+
+
+<section id="support-banner-conatiner" class="support-banner-conatiner">
+		<div id="${properties.conatinersectionID}" class="support-banner-conatiner-section">
+			<div class="background image faq__banner__img"><img class="support-banner-image" alt="${properties.imagealttext}" id="${properties.supportImageID}" src="${properties.supportImage}" width="100" height="259"></div>
+			<div id="${properties.sectionID}" class="${properties.sectionclass}">
+				<p id="${properties.titleID}"  class="support-available">${properties.title}</p>
+				<h1 id="${properties.headerTitleID}" class="support-header">${properties.headerTitle}</h1>
+				<div id="${properties.descriptionID}" class="support-description">${properties.description @ context="html"}</div>
+				<div class="search-box search-box-support">
+                        <div class="support-search-input" data-placeholder="${properties.placeholdertitle}" id="autocomplete-faq"></div>
+                        <!--<button class="support-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+
+                 </div>
+			</div>
+		</div>
+    </section>
+
+	<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='bannerforsupport'}" />

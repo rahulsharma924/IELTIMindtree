@@ -1,0 +1,165 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='blogListWithFilters'}"
+/>
+
+<section class="blog-list-with-filters-wrapper blog__list--component">
+  <sly data-sly-include="blog-list--template.html"></sly>
+  <!--/* desktop view - fliters */-->
+  <div class="blog-filters-wrapper">
+    <h2 class="news-post-main-heading blog-filters-main-heading">Filters</h2>
+    <div id="blog-fliters-accordion">
+      <div class="card blog-filters-card">
+        <div
+          class="card-header blog-filters-card-header border-top"
+          id="blog-filters-headingOne"
+        >
+          <div class="blog-filters-title">
+            <button
+              class="btn btn-link blog-filters-accordion-btn"
+              data-toggle="collapse"
+              data-target="#blog-filters-collapseOne"
+              aria-expanded="true"
+              aria-controls="blog-filters-collapseOne"
+            >
+              Categories
+              <i class="fa-sharp fa-regular fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="blog-filters-collapseOne"
+          class="collapse"
+          aria-labelledby="blog-filters-headingOne"
+          data-parent="#blog-fliters-accordion"
+        >
+          <div class="card-body blog-filters-card-body">
+            <ul class="blog-filters-list filterContainer"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card blog-filters-card blog__filters--archives">
+        <div
+          class="card-header blog-filters-card-header"
+          id="blog-filters-headingTwo"
+        >
+          <div class="blog-filters-title">
+            <button
+              class="btn btn-link collapsed blog-filters-accordion-btn"
+              data-toggle="collapse"
+              data-target="#blog-filters-collapseTwo"
+              aria-expanded="false"
+              aria-controls="blog-filters-collapseTwo"
+            >
+              Archives
+              <i class="fa-sharp fa-regular fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          id="blog-filters-collapseTwo"
+          class="collapse"
+          aria-labelledby="blog-filters-headingTwo"
+          data-parent="#blog-fliters-accordion"
+        >
+          <div class="card-body blog-filters-card-body">
+            <ul class="blog-filters-list archives_list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blog-lists-wrapper">
+    <div id="result-query-blog" class="result-blog"></div>
+    <div id="blogList_wrapper" class="dataTables_wrapper">
+      <div class="mob-wrapper">
+        <!--/* mobile view - filters starts */-->
+        <section class="blog-list-with-filters-mobile">
+          <div id="mob_dropdown" class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="fliter-mob-dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="filter-icon fa-regular fa-filter-list font-12"></i
+              >Filters
+            </button>
+            <div
+              class="dropdown-menu"
+              aria-labelledby="fliter-mob-dropdownMenuButton"
+            >
+              <ul class="blogList_MobView">
+                <li class="category-subMenu accordion-mob">
+                  <button
+                    class="btn btn-link blog-filters-accordion-btn btnWidth"
+                    data-toggle="collapse"
+                    data-target="#blog-filters-collapseOne_mob"
+                    aria-expanded="true"
+                    aria-controls="blog-filters-collapseOne_mob"
+                  >
+                    Categories
+                  </button>
+                  <div
+                    id="blog-filters-collapseOne_mob"
+                    class="collapse"
+                    aria-labelledby="blog-filters-headingOne"
+                  >
+                    <div class="card-body blog-filters-card-body cate_list">
+                      <ul class="blog-filters-list filterContainer"></ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="archives-submenu accordion-mob">
+                  <button
+                    class="btn btn-link collapsed blog-filters-accordion-btn btnWidth"
+                    data-toggle="collapse"
+                    data-target="#blog-filters-collapseTwo_mob"
+                    aria-expanded="false"
+                    aria-controls="blog-filters-collapseTwo_mob"
+                  >
+                    Archives
+                  </button>
+                  <div
+                    id="blog-filters-collapseTwo_mob"
+                    class="collapse"
+                    aria-labelledby="blog-filters-headingTwo"
+                  >
+                    <div class="card-body blog-filters-card-body cate_list">
+                      <ul class="blog-filters-list archives_list"></ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--/* mobile view - filters ends */-->
+        <div class="blogSorting-by-wrapper">
+          <div class="sort-by">
+            <div class="ais-SortBy blogSortBy">
+              <label class="sort-by-label" id="blogSelectfilter">Sort By: </label>
+              <select id="blogSelectTypes" aria-labelledby="blogSelectfilter" class="ais-SortBy-select blogSortBySelect for-dropdown-icon">
+               
+                <option class="ais-SortBy-option" value="date">Date</option>
+                <option class="ais-SortBy-option" value="atoz">A - Z</option>
+                <option class="ais-SortBy-option" value="ztoa">Z - A</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pagination" class="blog_pagination"></div>
+      <ul id="blogList" class="blogList-filterByCategory"></ul>
+      <div id="pagination1" class="blog_pagination"></div>
+    </div>
+  </div>
+</section>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='blogListWithFilters'}"
+/>

@@ -1,0 +1,300 @@
+#rf-interface .cmp-teaser__title{
+    color: var(--secondaryColor);
+    font-weight:  var(--fontWeightSmall);
+    font-size: var(--fontSize45);
+    line-height: var(--baseLineHeight);
+    max-width: 1000px;
+}
+#rf-interface .cmp-teaser__image img{
+    height: 190px;
+    display: block;
+}
+.cmp-title{
+    text-align: center;  
+}
+/*.card-gutters>[class*=col-]{
+    padding: 0 6px;
+}*/
+.dsc-title h1{
+    font-weight:  var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    line-height: var(--lineHeight1and35);
+}
+ .dsc-title{
+    margin: 50px auto 30px;
+    max-width: 80%;
+    line-height: var(--baseLineHeight);
+    text-align: center;    
+}
+.dsc-title p{
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+}
+/* .dsc-title a{
+    color: var(--serviceCardlink);
+    text-decoration:var(--textDecorationUnderline);
+}
+  .dsc-title a:hover {
+    color: var(--secondaryLinkNormal);
+    font-weight: var(--fontWeightBold);
+    text-decoration: var(--textDecorationUnderline);
+  }
+  .dsc-title a:active {
+    font-weight: var(--fontWeightBold);
+    text-decoration: var(--textDecorationUnderline);
+    color: var(--secondaryLinkActive);
+  } */
+.card-body-content{
+    padding: 21px 11px 21px 11px;
+    height: 476px;
+}
+.card-title{
+    margin:0 ;
+    font-size: var(--baseFontSize);
+}
+.text-desc{
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    margin-top: 20px;
+}
+.third-para{
+    font-style: italic;
+}
+.mf-text{
+    font-weight:  var(--fontWeightBold);
+    font-size: var(--fontSize12);
+    line-height: var(--baseLineHeight);
+    margin:6px 0 0 0;
+}
+.card-thumb{
+    width: 50%;
+}
+.shop-now-btn{
+    padding: 13px 64px;
+    display: inline-block;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    margin: 18px auto;
+    cursor: pointer;
+    
+}
+
+.img-border{
+    border: 1px solid var(--secondaryBtnVisited);
+}
+.img-container{
+    height: 164px;
+}
+.img-container img{
+    height: 163px;
+    object-fit:cover;
+}
+
+.threeimge-card .img-container{
+    height: 104px;
+}
+
+.threeimge-card .img-container img{
+    height: 102px;
+    object-fit:cover;
+}
+
+.flexwrap{
+    gap: 10px;
+}
+.rfdatasheet{
+    display: flex;
+    border: 1px solid var(--SearchIcon);
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width:102px;
+    padding: 1px;
+    cursor:pointer;
+}
+.rfdatasheet a{
+    font-size: var(--fontSize12);
+    color: var(--secondaryBlack);
+    padding: 7px;
+    font-weight:  var(--fontWeightBold);
+    line-height: var(--baseLineHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.rf-lg-columns.ie-columns {
+    max-width:740px;
+}
+.rf-wrapper-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    gap: 15px;
+}
+.ie-columns {
+   max-width: 363px;
+   padding: 0px;
+   border: 1px solid rgba(0,0,0,.125);
+}
+.bma-desc{
+    min-height: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bma-line-text{
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    line-height: var(--baseLineHeight);
+    font-size: var(--fontSize12);
+    font-weight:  var(--fontWeightSmall);
+    margin-bottom: 10px;
+}
+.rfdatasheet a:focus {
+    background:var(--cartPopUpBg);
+    border-radius: 4px;
+    outline: 2px solid var(--blueColorLight);
+    outline-offset: 1px;
+}
+.rfdatasheet a:hover{
+    background: var(--secondaryBtnHover);    
+}
+.rfdatasheet a i{
+    margin-right: 6px;
+    font-size: var(--baseFontSize);
+}
+.title-text{
+    font-weight:  var(--fontWeightBold);
+}
+@media screen and (max-width:833px){
+    .card-gutters{
+        margin: 0 30px;
+    }
+    .rf-wrapper-main {
+        margin: 0 30px;
+        gap: 30px;
+    }
+    #rf-interface .cmp-teaser__title{
+        font-size: var(--fontSize22);
+        max-width:170px;
+    }
+
+   .dsc-title h2, .dsc-title h1{
+        font-weight:  var(--fontWeightBold);
+        font-size: var(--baseFontSize);
+    }
+    #rf-interface .cmp-teaser__image img{
+        object-fit: cover;
+        min-height:190px;
+    }
+    .rf-wrapper-main .ie-columns {
+        max-width:48%;
+    }
+    /*.rfdatasheet{
+        max-width: 60%;
+    }*/
+
+    .text-desc{
+        font-size: var(--fontSize12);
+        padding: 0 28px;
+    }
+    .dsc-title p {
+        font-size: var(--fontSize12);
+    }
+    .rf-lg-columns.ie-columns {
+        max-width: 100%;
+    }
+    .img-container img {
+       width: auto;
+       object-fit: cover;
+}
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 769px){
+    .rf-wrapper-main {
+        margin: 0 24px;
+        gap: 0px;
+    }
+    .rf-wrapper-main .ie-columns {
+        padding-bottom: 28px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .rf-lg-columns.ie-columns {
+        max-width: 660px;
+    }
+    .rf-wrapper-main .ie-columns {
+        margin: 0;
+        max-width: 320px;
+    }
+    .img-container img {
+        height: 75%;       
+    }
+    .rf-wrapper-main {
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+
+}
+@media screen and (max-width:575px){
+    .card-thumb {
+        width: 48%;
+    }
+    .flexwrap{
+        flex-wrap: wrap;
+    }
+    .card-gutters{
+        margin: 0;
+    }
+    .rf-wrapper-main {
+        margin: 0;
+        gap: 15px;
+    }
+    .rf-wrapper-main .ie-columns {
+        max-width: 100%;
+        padding: 11px 21px;
+        margin-left: 3px;
+        
+     }
+     .col-xs-12 {
+        width: 98%;
+     }
+     .img-container img {
+        width: auto;
+        object-fit: cover;
+    }
+
+    .threeimge-card .card-thumb {
+        width: 30%;
+    }
+    .threeimge-card .img-container {
+        height:102px;
+    }
+ .threeimge-card .img-container img {
+        width: auto;
+        
+    }
+}
+
+.ie-columns .card
+{
+    border: none;
+}
+.threeimge-card .shop-now-btn{
+    margin-top: 76px;
+}
+
+.img-border{
+    overflow: hidden;
+}

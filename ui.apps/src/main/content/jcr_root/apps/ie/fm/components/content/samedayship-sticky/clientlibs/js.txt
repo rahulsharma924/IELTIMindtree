@@ -1,0 +1,2 @@
+#base=js
+samedayship-sticky.js

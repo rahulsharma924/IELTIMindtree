@@ -1,0 +1,159 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+     data-sly-call="${clientlib.css @ categories='fm.plp'}" />
+<div class="loader_wrapper" id="loading-indicator"><div class="loader"></div></div>
+<div class="breadcrumb-container pb-0">
+  <div class="aem-Grid aem-Grid--12">
+    <div class="fm-container">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="plp-breadcrumbs">
+          <ul>
+            <li class="home">
+              <a href="/content/fm/en/homepage.html" title="Go to Home Page"
+                >Home</a
+              >
+              <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            </li>
+            <li class="category3">
+              <strong>Search Results</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bs-title-container">
+  <div class="fm-container">
+    <div class="category-products aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blank-none-mob"
+      >
+        &nbsp;
+      </div>
+      <div
+        class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <h1 id="search-title"></h1>
+        <div class="tab d-none">
+          <button class="tablinks redirect-tab">
+            Products (<span class="stats-title"></span>)
+          </button>
+          <button class="tablinks active-tab">
+            Content (<span class="stats-content-title"></span>)
+          </button>
+        </div>
+        <p class="no-result-title d-none">No results found</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fm-container">
+  <div class="category-products aem-Grid aem-Grid--12">
+    <div
+      class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 mob-search-none"
+    >
+      &nbsp;
+    </div>
+    <div
+      class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+    >
+      <p class="not-find d-none">
+        Not finding what you’re looking for? Reach out to one of our agents
+        through
+        <a class="livechat-menu not-find-anch" title="Live Chat" href="#"
+          >Live Chat</a
+        >
+      </p>
+      <div class="no-result-content d-none">
+        <p>Suggestions:</p>
+        <ul>
+          <li>Make sure that all words are spelled correctly.</li>
+          <li>Try different keywords.</li>
+          <li>Try more general keywords.</li>
+        </ul>
+        <p class="btn-not-find">
+          <a title="Back to Homepage" href="/content/fm/en/homepage.html"
+            >Back to Homepage</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content-tab" class="tabcontent">
+  <div class="fm-container">
+    <div id="search-content" class="category-products aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="plp-product-list">
+          <div class="plp-toolbar">
+            <div class="toolbar-first-row">
+              <div class="sort-by-wrapper mob-disp-none-imp">
+                <div class="sort-by-label">Sort By:</div>
+                <div class="sort-by-content"></div>
+              </div>
+              <div class="hits-per-page-mob"></div>
+            </div>
+            <div class="toolbar-second-row">
+              <div class="limiter">
+                <div class="show_text">Show</div>
+                <div class="hits-per-page-content"></div>
+                <div class="of_text">of</div>
+                <div class="stats3"></div>
+              </div>
+
+              <div id="pagination-top3" class="pagination"></div>
+            </div>
+          </div>
+          <div class="search-panel tile-view">
+            <div class="search-panel__results">
+              <div class="table-scroll-dv-nw">
+                <div class="pr-table-dv-nw">
+                  <div id="hits-content" class="search-accord-heading hits-contentsearch"></div>
+                </div>
+              </div>
+              <div class="hitsTable-wrapper"></div>
+              <div class="pagination"></div>
+            </div>
+          </div>
+
+          <div class="toolbar-second-row mob-bot-pagination">
+            <div class="limiter mt-0 analyticplplimiter">
+              <div class="show_text">Show</div>
+              <div class="hits-per-page3-bottom"></div>
+              <div class="of_text">of</div>
+              <div class="stats3-bottom"></div>
+            </div>
+
+            <div id="pagination-bottom4" class="pagination mt-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='category-results-content'}"
+/>

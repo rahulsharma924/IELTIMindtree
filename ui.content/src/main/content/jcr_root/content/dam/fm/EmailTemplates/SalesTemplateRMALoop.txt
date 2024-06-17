@@ -1,0 +1,8 @@
+<tr>
+ <td>${skuvalue}</td>
+ <td>${quantity}</td>
+ <td>${reorder}</td>
+ </tr>
+
+
+

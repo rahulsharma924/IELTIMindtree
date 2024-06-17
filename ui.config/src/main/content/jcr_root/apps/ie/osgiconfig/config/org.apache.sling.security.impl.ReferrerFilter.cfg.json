@@ -1,0 +1,18 @@
+{
+  "allow.empty": false,
+  "allow.hosts": [
+    "pilot-payflowlink.paypal.com",
+     "stage.fairviewmicrowave.com"
+  ],
+  "allow.hosts.regexp": [
+    ""
+  ],
+  "filter.methods": [
+    "DELETE",
+    "COPY",
+    "MOVE"
+  ],
+  "exclude.agents.regexp": [
+    ""
+  ]
+}

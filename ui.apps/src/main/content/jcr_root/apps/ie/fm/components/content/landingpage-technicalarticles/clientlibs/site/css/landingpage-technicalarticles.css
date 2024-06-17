@@ -1,0 +1,206 @@
+#technicalarticles_heading {
+    background: var(--secondaryBtnHover);
+}
+
+.technicalresources_articles_container {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.technical_resources_articles {
+    background: var(--secondaryBtnHover);
+    padding: 0 129px 54px 129px;
+}
+
+.technical-articles {
+    background: var(--secondaryColor);
+    border: 1px solid var(--secondaryBtnVisited);
+    border-radius: 4px;
+    width: 100%;
+    padding: 23px 23px 16px 36px;
+    margin-bottom: 12px;
+}
+
+.technical-articles .technical-articles-title {
+    font-weight: var(--fontWeightBold);
+    font-size: 1.125rem;
+    line-height: var(--baseLineHeight);
+    color: var(--tabPanelClr);
+    margin-block: 0.75rem;
+    text-align: left;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.technical-articles .technical-articles-description {
+    line-height: var(--lineHeight1and428);
+}
+
+.technical-articles .technical-articles-description p {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    color: var(--tabPanelClr);
+}
+
+.article-view {
+    padding: 10px 0 0px 0;
+    background: var(--secondaryBtnHover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.technical-articles p{
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    color: var(--tabPanelClr);
+    padding-bottom: 5px;
+    }
+.articleView{
+    text-decoration:underline;
+    }
+
+@media only screen and (max-width: 833px) {
+    .technicalresources_articles_container {
+        width: 100%;
+    }
+    .technical-articles {
+        width: 100%;
+        height: 100%;
+    }
+    .technical_resources_articles {
+        padding: 0 24px 54px 24px;
+        margin: 0;
+    }
+  
+    .technical-articles .technical-articles-title,
+    .technical-articles .technical-articles-link {
+        font-size: var(--baseFontSize);
+    }
+}
+#TechnicalResourceInfo #ResourceTitle {
+    margin-top: 0;
+}
+#TechnicalResourceInfo #ResourceTitle h1, #TechnicalResourceInfo #ResourceTitle h2 {
+    padding: 50px 0 3px 0;
+}
+
+#TechnicalResourceInfo {
+    background: var(--secondaryBtnHover);
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#TechnicalResourceInfo .article-view {
+    margin-top: 20px;
+    padding-bottom:0px;
+    background: #fafbfa;
+}
+
+#TechnicalResourceInfo #ResourceViewAll {
+    margin: 0;
+}
+
+#TechnicalResourceInfo #ResourceViewAll:hover {
+    background: var(--secondaryBtnHover);
+}
+
+#TechnicalResourceInfo #ResourceViewAll:focus {
+    border-radius: 4px;
+}
+
+#TechnicalResourceInfo #ResourceViewAll:active {
+    background: var(--secondaryBtnVisited);
+    border-radius: 4px;
+}
+
+#TechnicalResourceInfo #ResourceDescription p {
+    text-align: center;
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    color: var(--primaryColor);
+    margin-bottom: 30px;
+}
+
+#TechnicalResourceInfo .technical-articles .technical-articles-description {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    color: var(--tabPanelClr);
+    padding-bottom: 5px;
+}
+
+#TechnicalResourceInfo .technical_resources_articles {
+    padding-bottom: 0;
+}
+
+#ResourceViewAll {
+    background: var(--secondaryColor);
+    border-radius: 4px;
+    border: 1px solid var(--secondaryBtnVisited);
+    margin-left: 50%;
+    border-radius: 4px;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+#WhitePaperInfo .button {
+    padding-bottom: 71px;
+    text-align: center;
+}
+
+#TechnicalResourceInfo .button {
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+
+#BrochureInfo .button {
+    text-align: center;
+}
+
+#WhitePaperInfo .button span,
+#TechnicalResourceInfo .button span,
+#BrochureInfo .button span {
+    font-style: normal;
+    font-weight: var( --fontWeightBold);
+    font-size: var(--baseFontSize);
+    line-height: var(--baseLineHeight);
+    color: #0E0F10;
+}
+
+#TechnicalResourceInfo #ResourceViewAll:hover,
+#WhitePaperInfo #ResourceViewAll:hover,
+#BrochureInfo #ResourceViewAll:hover {
+    background: var(--secondaryBtnHover);
+    text-decoration: none;
+}
+
+#TechnicalResourceInfo #ResourceViewAll:active,
+#WhitePaperInfo #ResourceViewAll:active,
+#BrochureInfo #ResourceViewAll:active {
+    background: var(--secondaryColor);
+    
+    border-radius: 4px;
+}
+
+#TechnicalResourceInfo #ResourceViewAll:focus,
+#WhitePaperInfo #ResourceViewAll:focus,
+#BrochureInfo #ResourceViewAll:focus {
+    background: var(--secondaryBtnVisited);
+}
+@media only screen and (max-width:767px) {
+    #TechnicalResourceInfo .article-view{
+    padding-bottom: 20px;
+    }
+    }

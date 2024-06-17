@@ -1,0 +1,31 @@
+<div class="benefits-wrapper">
+  <h2 data-sly-test="${properties.titleone}">${properties.titleone}</h2>
+  <div class="benefits-descriptions">
+    <div class="fast-checkout">
+      <p data-sly-test="${properties.checkouttitle}">
+        <i class="fa-solid fa-truck-fast"></i>
+        <b>${properties.checkouttitle}</b>
+      </p>
+      <p data-sly-test="${properties.checkout}">${properties.checkout}</p>
+    </div>
+    <div class="easy-tracking">
+      <p data-sly-test="${properties.easytrackingtitle}">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <b>${properties.easytrackingtitle}</b>
+      </p>
+      <p data-sly-test="${properties.easytracking}">
+        ${properties.easytracking}
+      </p>
+    </div>
+    <div class="quick-recap">
+      <p data-sly-test="${properties.quickrecaptitle}">
+        <i class="fa-solid fa-rectangle-vertical-history"></i>
+        <b>${properties.quickrecaptitle}</b>
+      </p>
+      <p data-sly-test="${properties.quickrecap}">${properties.quickrecap}</p>
+    </div>
+  </div>
+  <div class="logintext" data-sly-test="${properties.logintext}">
+    ${properties.logintext @context='html'}
+  </div>
+</div>

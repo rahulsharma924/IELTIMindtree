@@ -1,0 +1,59 @@
+.error-handler {
+  padding-left: 10px;
+}
+
+.error-handler .modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+
+.error-handler .modal-content {
+  height: auto;
+  margin: 0;
+  max-width: 749px;
+}
+
+.error-handler .modal-body {
+  padding: 29px 40px;
+  text-align: center;
+  min-height: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-handler .modal-header {
+  padding: 37px 24px 39px 40px;
+}
+
+.error-handler .modal-footer {
+  padding: 18px 37px 16px 37px;
+}
+
+.error-handler .modal-body p {
+  font-size: var(--fontSize22);
+  line-height: var(--baseLineHeight);
+  margin: 0;
+}
+.error-handler .modal-body p.description-title {
+  font-size: var(--fontSize31);
+  line-height: var(--baseLineHeight);
+  margin: 0;
+}
+.error-handler .modal-body span {
+  font-size: var(--fontSize31);
+  line-height: var(--lineHeight1and483);
+}
+
+.error-handler .modal-footer .btn {
+  width: 121px;
+}
+
+.error-handler .modal-footer .ie-scondary-btn.btn:hover {
+  color: var(--primaryColor);
+}
+
+.error-handler .modal-footer .ie-primary-btn:hover {
+  color: var(--secondaryColor);
+}

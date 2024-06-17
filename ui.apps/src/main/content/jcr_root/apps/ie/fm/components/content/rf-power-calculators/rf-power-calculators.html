@@ -1,0 +1,72 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+    <div class="col-12 calculator-wrapper-cls">
+        <div class="title-block-cls">
+            ${properties.text @context='html'}
+        </div>
+        <div class="form-block-cls">
+            <p>${properties.inputtype}</p>
+            <div class="row top-block-cls">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <label for="from" class="d-none">milliWatt</label>
+                            <select id="from" class="input">
+                                <option value="mW">Milliwatts</option>
+                                <option value="W">Watts</option>
+                                <option value="dBm">dBm</option>
+                                <option value="dBW">dBW</option>
+                                <option value="mV">Millivolts</option>
+                                <option value="V">Volts</option>
+                            </select>
+                            <span class="error ErrorText"></span>
+                        </div>
+                        <div class="col-lg-6 col-md-6"><input type="text" id="NumericId" class="input" value="Use numeric value" onblur="blurFn(this)" onfocus="focusFn(this)" /><span class="error ErrorText"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <p>${properties.outputtype}</p>
+                            <label for="from1" class="d-none">milliWatt</label>
+                            <select id="from1" class="input">
+                                <option value="mW">Milliwatts</option>
+                                <option value="W">Watts</option>
+                                <option value="dBm">dBm</option>
+                                <option value="dBW">dBW</option>
+                                <option value="mV">Millivolts</option>
+                                <option value="V">Volts</option>
+                            </select>
+                            <span class="error ErrorText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                     <div class="row">
+                        <div class="col-12">
+                             <button id="go" class="ie-primary-btn" type="button" type="button" onclick="generalClickFn('power')" value="Calculate">
+                            Calculate
+                        </button>
+                        <p class="calculate-error-cls"><span class="error ErrorText"></span><span id="errormsg" class="error ErrorText"></span></p>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                                 <div class="calculator-results">
+                            <p>${properties.result}</p>
+                            <div class="result_container results-calc power-result-cls">
+                                <div class="result">
+                                    <div><span class="result-converted convertedpower-cls"></span><span id="power" class="output"></span><span id="vpp" class="output"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rf-calculator-container">
+        <div class="row flex-column flex-md-row"></div>
+    </div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='rf-power-calculator'}"></sly>

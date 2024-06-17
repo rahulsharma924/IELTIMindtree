@@ -1,0 +1,29 @@
+<sly
+data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+data-sly-call="${clientlib.css @ categories='sdownloadcta-clientlibs'}"/>
+
+
+<div class="software-download-cta">
+<div class="sdownloadcta-img">
+<img alt="software" src="${properties.sdownloadctaimage}" loading="lazy"/>
+</div>
+
+
+<div class="sdownloadcta-right">
+<div class="sdownloadcta-padding analyticsdownload" data-sly-list.sdctamulti="${resource.getChildren}">
+	<sly data-sly-test="${sdctamulti.name == 'sdctadetails'}">
+		<div data-sly-repeat.sdcta="${sdctamulti.getChildren}">
+
+		<div data-sly-test="${sdctaList.count <= 3}">
+			<div class="sdownloadcta-cta"><a href="${sdcta.sdctalink}"><i class="fa-light fa-download"></i>${sdcta.sdctatitle}</a></div>
+			<div class="sdownloadcta-text fv_Para_small">${sdcta.sdctatext}</div>
+		</div>		
+		</div> 
+	</sly>
+</div>
+</div>
+</div>
+
+<sly
+data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}" 
+data-sly-call="${clientlib.js @ categories='sdownloadcta-clientlibs'}"/>

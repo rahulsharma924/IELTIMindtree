@@ -1,0 +1,4 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "deliveryCTURL":"https://apim-iedtecomm-prod01.azure-api.net/delivery/fairview/getDeliveryRates"
+}

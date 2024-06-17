@@ -1,0 +1,46 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2015 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />-->
+
+<div data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.text="${textModel.text}"
+     data-cmp-data-layer="${textModel.data.json}"
+     id="${component.id}"
+     class="cmp-text">
+    <p class="cmp-text__paragraph sign-in-text"
+       data-sly-unwrap="${textModel.isRichText}">
+
+<div class="d-none d-md-block">
+
+<div style="float: left;border-radius: 50%;background: #E5E7E9;padding: 5px 10px;margin-right: 5px;">
+
+<i class="fa-solid fa-comment-dots" style="font-size: 13px;"></i>
+
+</div>
+
+<div class="contact-text analyticheader analyticcontactus">
+
+${text @ context = textModel.isRichText ? 'html' : 'text'}
+
+</div>
+
+
+</div>
+</p>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"></sly>

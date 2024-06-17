@@ -1,0 +1,31 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='fmreleases-clientlib'}" />
+<sly data-sly-use.newsDetailModel="com.aem.ie.core.models.NewsDetailModel">
+   <article class="blog_post_detail_page">
+      <h1>${pageProperties.pageTitle}</h1>
+      <span>${newsDetailModel.newsLabel}</span>
+      ${properties.newsContent @context='html'}
+   </article>
+</sly>
+
+<sly data-sly-test="${properties.newsimage}">
+<div class="row hero_imageDiv">
+		<div class="col-sm-12 hero_image_div">
+	     <div class="hero_image_container">
+			<img width="504" height="348" src="${properties.newsimage}" alt="${properties.newsimagealt}" />
+		  </div>
+		</div>
+		<sly data-sly-test="${properties.newsimgtext !=null && properties.newsimgtext !=' '}">
+		<span class="image_blog_title">${properties.newsimgtext}</span>
+	   </sly>
+</div>
+</sly>
+<div class="blog_post_detail_page">
+      ${properties.aboutnewscontent @context='html'}
+	  <div class="news-detail-button-block">
+		  <a class="news-detail-back-btn" href="${newsDetailModel.BackButtonUrl @ context='uri'}">${properties.newsBackButtonText || 'Back'}</a>
+	  </div>
+</div>
+
+

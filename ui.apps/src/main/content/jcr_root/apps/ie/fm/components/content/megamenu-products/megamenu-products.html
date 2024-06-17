@@ -1,0 +1,78 @@
+<sly data-sly-use.algoliaConfig="com.aem.ie.core.models.AlgoliaConfigModel">
+</sly>
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='megamenuProducts'}"
+/>
+<section class="products-wrapper analyticmegamenu">
+  <button
+    class="products-btn product-label"
+    id="productsjson-desktop"
+    onclick="onOverlayProducts()"
+  >
+    Products
+  </button>
+  <!--- Start of MegaMenu SSr obj -->
+  <sly data-sly-use.megamenuObj="com.aem.ie.core.models.MegaMenuSSRModel">
+    <div id="megamenu-obj" class="megamenu-Obj d-none">
+      ${megamenuObj.categoryJsonObject}
+    </div>
+  </sly>
+  <!--- end -->
+  <div class="zeynep megaNavigation">
+    <ul class="nosubmenu_links">
+      <li>
+        <a
+          title="New Releases"
+          class="has_menuitem d-block new-release-label"
+          href="/content/fm/en/new-rf-microwave-and-millimeter-wave-product-releases.html"
+          >New Releases</a
+        >
+      </li>
+      <li>
+        <a
+          title="Bestsellers"
+          class="d-block bestsellers-label"
+          href="/content/fm/en/best-selling-rf-microwave-and-millimeter-wave-products.html"
+          >Bestsellers</a
+        >
+      </li>
+    </ul>
+    <ul id="fair_first_level" class="products_items"></ul>
+    <div class="promotion_box">
+      <div class="promotion_title product-promotion-label">
+        ${properties.pptitle}
+      </div>
+      <sly data-sly-test="${'/content' in properties.redirectionurl}">
+        <div class="promotion_img">
+          <a
+            title="${properties.pptitle}"
+            href="${properties.redirectionurl}.html"
+            target="${properties.targetdropdown}"
+          >
+            <img src="${properties.productimage}" alt="${properties.imgalttxt}"
+          /></a>
+        </div>
+      </sly>
+
+      <sly data-sly-test="${!('/content' in properties.redirectionurl)}">
+        <div class="promotion_img">
+          <a
+            title="${properties.pptitle}"
+            href="${properties.redirectionurl}"
+            target="${properties.targetdropdown}"
+          >
+            <img src="${properties.productimage}" alt="${properties.imgalttxt}"
+          /></a>
+        </div>
+      </sly>
+    </div>
+  </div>
+</section>
+
+<div id="overlay-products"></div>
+<!--/* <div class="overlay" id="overlay"></div> */-->
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='megamenuProducts'}"
+/>

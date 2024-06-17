@@ -1,0 +1,47 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ~ Copyright 2021 Adobe
+   ~
+   ~ Licensed under the Apache License, Version 2.0 (the "License");
+   ~ you may not use this file except in compliance with the License.
+   ~ You may obtain a copy of the License at
+   ~
+   ~     http://www.apache.org/licenses/LICENSE-2.0
+   ~
+   ~ Unless required by applicable law or agreed to in writing, software
+   ~ distributed under the License is distributed on an "AS IS" BASIS,
+   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   ~ See the License for the specific language governing permissions and
+   ~ limitations under the License.
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+   <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+   data-sly-call="${clientlib.css @ categories='faq-category-results'}" />
+<div id="hits-content" data-load-more="${properties.loadmore}" data-load-less="${properties.loadless}" class="faqs faq__search--result">
+<h2 class="faq__results--count d-none"><strong><span class="faq__results__count"></span> Results <span class="faq__results--query"><span></strong></h2>
+
+<!--Faq Result Page-->
+<div class="accordion_container">
+   <div class="faq__list">
+    
+   </div>
+</div>   
+<!-- Empty Search Result-->
+<div class="faq__result--empty d-none">
+ <h2 id="search-title"></h2>
+      <p class="no-result-title"></p>
+   <div class="bs-title-container d-none"></div>
+   <div class="no-result-content">
+
+      <p id="suggestions"></p>
+      <ul>
+         <li id="sgpointOne"></li>
+         <li id="sgpointTwo"></li>
+         <li id="sgpointThree"></li>
+      </ul>
+      <p class="btn-not-find"><a id="backToHome" title="Back to Homepage" href="/content/fm/en/homepage.html"></a></p>
+   </div>
+</div>
+</div>
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='faq-category-results'}"
+   />

@@ -1,0 +1,53 @@
+.error404 {
+	margin: 0 auto;
+}
+.error404-description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 90px 0;
+}
+.error404-description p {
+	color: var(--primaryColor);
+	font-weight: var(--fontWeightSmall);
+	font-size: var(--fontSize18);
+	line-height: var(--baseLineHeight);
+	text-align: center;
+	max-width: 857px;
+}
+.error404-description p a {
+    font-weight: var(--fontWeightMedium);
+	color: var(--errorMedium);
+}
+@media only screen and (max-width: 576px) {
+	.error404-description p {
+		max-width: 100%;
+		padding: 0 24px;
+		font-size: var(--baseFontSize);
+	}
+	#contactBanner .cmp-teaser__description p {
+		font-size: var(--fontSize14);
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .error404-description p {
+        max-width: 71%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .error404-description p {
+        max-width: 71%;
+    }
+}
+@media only screen and (min-width:769px) {
+    #contactBanner .cmp-teaser__description p {
+        font-size: var(--fontSize22);
+        font-weight: var(--fontWeightSmall);
+    }
+}
+@media only screen and (max-width: 768px) {
+	#contactBanner .cmp-teaser__description p {
+		font-size: var(--fontSize14);
+		margin: 15px 0 0;
+	}
+}

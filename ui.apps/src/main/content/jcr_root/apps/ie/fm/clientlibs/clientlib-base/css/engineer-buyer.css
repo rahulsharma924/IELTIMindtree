@@ -1,0 +1,388 @@
+.row.container-fluid.engineer-buyer-component {
+  padding: 60px 33px;
+  background: var(--secondaryColor);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  max-width: 100%;
+  height: 540px;
+  max-height: 100%;
+}
+.row.container-fluid.engineer-buyer-component .engineer,
+.row.container-fluid.engineer-buyer-component .buyer {
+  display: flex;
+  background: var(--secondaryBtnHover);
+  width: 49%;
+  height: 421px;
+  max-height: 100%;
+}
+.row.container-fluid.engineer-buyer-component .engineer .engineer_img,
+.row.container-fluid.engineer-buyer-component .buyer .buyer_img {
+  width: 35%;
+  height: 100%;
+}
+.row.container-fluid.engineer-buyer-component .engineer .engineer_content,
+.row.container-fluid.engineer-buyer-component .buyer .buyer_content {
+  width: 65%;
+  padding: 40px 20px 42px 20px;
+}
+.row.container-fluid.engineer-buyer-component .engineer .engineer_img img,
+.row.container-fluid.engineer-buyer-component .buyer .buyer_img img {
+  height: 421px;
+  width: 210px;
+  object-fit: cover;
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_title,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_title {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize31);
+  line-height: 1.483;
+  color: var(--darkBlue);
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_desc,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_desc {
+  font-weight: var(--fontWeightSmall);
+  line-height:var(--baseLineHeight);
+  color: var(--primaryColor);
+  margin: 12px 0 83px 0;
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_links,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_links {
+  display: flex;
+  justify-content: space-between;
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_links
+  button:nth-child(2),
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_links
+  button:nth-child(2) {
+  margin: 0 7px;
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_links
+  .engineer_btn,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_links
+  .buyer_btn{
+  background: var(--secondaryColor);
+  width: 103px;
+  height: 123px;
+  padding: 28px 0;
+  border: 1px solid var(--shopByBorderClr);
+  border-radius: 4px;
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  font-weight: var(--fontWeightMedium);
+  text-align: center;
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_links
+  .engineer_btn
+  .engineer-icon,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_links
+  .buyer_btn
+  .buyer-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  font-weight: var(--fontWeightMedium);
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_links
+  .engineer_btn
+  a,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_links
+  .buyer_btn
+  a {
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  display: block;
+  text-align: center;
+  margin: 0 7px;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.row.container-fluid.engineer-buyer-component
+  .engineer
+  .engineer_content
+  .engineer_links
+  .engineer_btn
+  a:hover,
+.row.container-fluid.engineer-buyer-component
+  .buyer
+  .buyer_content
+  .buyer_links
+  .buyer_btn
+  a:hover {
+  color: var(--invertedColor);
+}
+
+
+@media screen and (max-width:991px) {
+  .row.container-fluid.engineer-buyer-component {
+    padding: 31px 24px 33px 24px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  .row.container-fluid.engineer-buyer-component .engineer {
+    margin-bottom: 10px;
+  }
+  .row.container-fluid.engineer-buyer-component .engineer,
+  .row.container-fluid.engineer-buyer-component .buyer {
+    width: 100%;
+    height: auto;
+  }
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_img img,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_img img {
+    width: 100%;
+    height:352px;
+  }
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_content {
+    padding: 20px 9px 13px 20px;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_title,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_title {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize18);
+    line-height: 2.555;
+    color: var(--secondaryLinkNormal);
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_desc,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_desc {
+    font-weight: var(--fontWeightSmall);
+    font-size: var(--fontSize12);
+    line-height: var(--baseLineHeight);
+    color: var(--primaryColor);
+    margin: 2px 0 15px 0;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links
+    button
+    .engineer-icon,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_links
+    button
+    .buyer-icon {
+    width: 17px;
+    height: 15px;
+    margin-bottom: 5px;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links
+    button
+    a,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_links
+    button
+    a {
+    margin: 5px;
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSize12);
+    line-height: var(--baseLineHeight);
+    text-align: center;
+    color: var(--primaryColor);
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links
+    button:nth-child(2),
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_links
+    button:nth-child(2) {
+    margin: 0;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links
+    .engineer_btn:first-child,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_links
+    .buyer_btn:first-child {
+    margin-bottom: 12px;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links
+    button:last-child
+    a {
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content .engineer_links .engineer_btn:nth-child(2),
+   .row.container-fluid.engineer-buyer-component .buyer .buyer_content .buyer_links .buyer_btn:nth-child(2){
+    margin: 0 10px;
+   }
+   .row.container-fluid.engineer-buyer-component .engineer .engineer_content .engineer_links, .row.container-fluid.engineer-buyer-component .buyer .buyer_content .buyer_links{
+    justify-content: start;
+   }
+  
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_img img,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_img img {
+    object-fit: contain;
+  }
+
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_img,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_img {
+    width: 25%;
+  }
+
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_content {
+    width: 70%;
+  }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content .engineer_links .engineer_btn:nth-child(2),
+   .row.container-fluid.engineer-buyer-component .buyer .buyer_content .buyer_links .buyer_btn:nth-child(2){
+    margin: 0 10px;
+   }
+   .row.container-fluid.engineer-buyer-component .engineer .engineer_content .engineer_links, .row.container-fluid.engineer-buyer-component .buyer .buyer_content .buyer_links{
+    justify-content: start;
+   }
+  
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_img img,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_img img {
+    object-fit: contain;
+  }
+
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_img,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_img {
+    width:25%;
+  }
+
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:575px) {
+ #rfcableconnector-a2c8dcc7ab .rfcableconnector_content{margin-top: 30px;}
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_img img,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_img img {
+    object-fit: cover;
+  }
+  .row.container-fluid.engineer-buyer-component
+    .engineer
+    .engineer_content
+    .engineer_links
+    .engineer_btn,
+  .row.container-fluid.engineer-buyer-component
+    .buyer
+    .buyer_content
+    .buyer_links
+    .buyer_btn {
+      width: 82px;
+      height: 100px;
+      padding: 10px 0;
+  }
+
+
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content,
+  .row.container-fluid.engineer-buyer-component .buyer .buyer_content {
+    padding: 0 5px 5px 10px;
+  }
+  .row.container-fluid.engineer-buyer-component .engineer .engineer_content .engineer_links .engineer_btn, .row.container-fluid.engineer-buyer-component .buyer .buyer_content .buyer_links .buyer_btn{
+    width:90px;
+  }
+}
+#home .engineer_btn a:focus{
+  text-decoration: var(--textDecorationUnderline);
+  color: var(--invertedColorFocus);
+}
+#home .engineer_btn a:hover{
+  font-weight: var(--fontWeightBold);
+}
+#home .buyer_btn a:focus{
+  text-decoration: var(--textDecorationUnderline);
+  color: var(--invertedColorFocus);
+}
+#home .buyer_btn a:hover{
+  font-weight: var(--fontWeightBold);
+}

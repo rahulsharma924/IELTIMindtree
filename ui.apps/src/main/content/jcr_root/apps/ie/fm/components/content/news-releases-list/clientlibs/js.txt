@@ -1,0 +1,4 @@
+#base=js
+pagination.js
+news-release-list.js
+newsReleasesList.js

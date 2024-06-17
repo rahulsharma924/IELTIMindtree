@@ -1,0 +1,192 @@
+.blog_post_detail_page {
+    max-width:814px;
+    float: none;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+}
+.blog_post_detail_page h1 {
+    font-style: normal;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize31);
+    line-height: var(--lineHeight1and35);
+    color: var(--primaryColor);
+    margin-bottom: 32px;
+}
+.blog_post_detail_page h2{
+    font-size:var(--fontSize22);
+    font-weight: var(--fontWeightBold);
+}
+.blog_post_detail_page span {
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize14);
+    line-height: var(--lineHeight1and428);
+    color: var(--invertedColor);
+    margin-bottom: 19px;
+    text-transform: uppercase;
+}
+.blog_post_detail_page h5 {
+    font-style: normal;
+    font-weight: var(--fontWeightBold);
+    font-size: var(--fontSize22);
+    line-height: var(--baseLineHeight);
+}
+.blog_post_detail_page p, .blog_post_detail_page div {
+    font-size: var(--fontSize14);
+    line-height: var(--baseLineHeight);
+    color: var(--primaryColor);
+    text-align: left;
+    max-width: 814px;
+    position: relative;
+    margin: 0 auto;
+    background: var(--secondaryColor);
+    padding: 15px 0;
+}
+.blog_post_detail_page p img{
+    width: 100%;
+    object-fit: contain;
+    border: 2px solid var(--carouselSingleBr);
+    border-radius: 4px;
+}
+.blog_post_detail_page p img.newspress_images{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    text-align: center;
+}
+
+
+/* Back button css start */
+.news-detail-button-block {
+    position: absolute !important;
+    right: 0;
+    bottom: 0.1rem;
+}
+.news-detail-back-btn {
+  color: var(--primaryColor) !important;
+  font-weight: var(--fontWeightBold);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  line-height: var(--baseLineHeight);
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColorLight);
+}
+/*
+.news-detail-back-btn:visited {
+  background: var(--secondaryBtnVisited);
+  border: 1px solid var(--borderColorLight);
+}
+*/
+.news-detail-back-btn:hover {
+  background: var(--secondaryBtnHover);
+  /*border: 1px solid var(--borderColorLight);*/
+  text-decoration: none !important;
+}
+/*
+.news-detail-back-btn:focus {
+  background: var(--secondaryColor);
+  outline: 2px solid var(--blueColorLight);
+  box-shadow: none;
+}
+.news-detail-back-btn:active {
+  text-decoration: none;
+  background: var(--secondaryBtnVisited);
+  color: var(--primaryColor);
+  border: 1px solid var(--secondaryBtnVisited);
+  outline: 0;
+}*/
+
+/* Back button css end */
+
+@media(max-width:480px) and (min-width:320px){
+.blog_post_detail_page {
+    width: 100%;
+	padding: 0 20px;
+}
+}
+
+
+@media screen and (min-width:576px) {
+    .blog_post_detail_page ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-left: 30px;
+   
+    }
+    .blog_post_detail_page ul li{
+        list-style: disc;
+        line-height:var(--baseLineHeight);
+    }
+    .blog_post_detail_page ol{
+        padding-left: 0;
+    margin-left: 30px;
+    }
+    .blog_post_detail_page ol li{
+        line-height:var(--baseLineHeight);
+    }
+}
+@media screen and (max-width:575px) {
+    .blog_post_detail_page ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-left: 20px;
+   
+    }
+    .blog_post_detail_page ul li{
+        list-style: disc;
+        line-height:var(--baseLineHeight);
+    }
+    .blog_post_detail_page ol{
+        padding-left: 0;
+    margin-left: 20px;
+    }
+    .blog_post_detail_page ol li{
+        line-height:var(--baseLineHeight);
+    }
+}
+.hero_image_container {
+    background: var(--secondaryColor);
+    border: 2px solid var(--carouselSingleBr);
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    max-width: 814px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero_image_container img{
+    object-fit: contain;
+}
+.image_blog_title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.6;
+    text-align: right;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom:10px;
+    color: var(--secondaryBlack);
+    max-width:814px;
+}
+	@media screen and (max-width: 767px) {
+	.hero_imageDiv {
+        padding: 0 39px;
+    }
+	.hero_image_div {
+        padding: 0;
+    }
+	.hero_image_container {
+        padding: 10px;
+    }
+	.hero_image_container img {
+        width: 100%;
+    }
+	.image_blog_title {
+        font-style: normal;
+        padding-right:0;
+    }
+}

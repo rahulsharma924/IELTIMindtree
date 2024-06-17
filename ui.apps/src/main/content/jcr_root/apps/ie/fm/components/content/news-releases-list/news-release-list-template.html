@@ -1,0 +1,20 @@
+<div class="news__release--list d-none">
+  {{#each (limit newsList limitData)}}
+  <div class="news__list--item">
+    <a href="{{newsPagePath}}" target="_blank" role="link" title="{{newsTitle}}" x-cq-linkchecker="skip"
+      ><div class="newsList-block filterDiv">
+        <div class="newsList-leftblock">
+          <p class="newsList-name-date-category">
+            <span class="newsList-date" data-event-date="{{newsDate}}">
+              {{newsDate}}
+            </span>
+          </p>
+          <h2 class="newsList-block-heading">{{newsTitle}}</h2>
+        </div>
+        <div class="newsList-rightblock">
+          <i class="fa fa-angle-right"></i>
+        </div></div
+    ></a>
+    </div>
+  {{/each}}
+</div>

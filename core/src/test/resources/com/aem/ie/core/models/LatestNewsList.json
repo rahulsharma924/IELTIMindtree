@@ -1,0 +1,24 @@
+{
+  "latestNews": {
+    "jcr:lastModifiedBy": "admin",
+    "heading": "Latest news",
+    "sling:resourceType": "ie/fm/components/content/latest-news",
+    "subHeading": "View our latest press releases",
+    "jcr:lastModified": "Mon Mar 13 2023 15:21:55 GMT+0000",
+    "jcr:primaryType": "nt:unstructured",
+    "latestNewsList": {
+      "item0": {
+        "latestNewsTitle": "Title 1",
+        "latestNewsLabel": "Label 1",
+        "latestNewsDate": "25/05/2022",
+        "latestNewsPagePath": "/content/fm/en/news"
+      },
+      "item1": {
+        "latestNewsTitle": "Title 2",
+        "latestNewsLabel": "Label 2",
+        "latestNewsDate": "24/05/2022",
+        "latestNewsPagePath": "/content/fm/en/news"
+      }
+    }
+  }
+}

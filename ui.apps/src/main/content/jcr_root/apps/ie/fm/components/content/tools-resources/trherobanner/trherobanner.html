@@ -1,0 +1,84 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+  <sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='trherobanner'}" 
+/>
+
+
+<section 
+	 data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.imageTemplate="image.html"
+     data-sly-use.pretitleTemplate="pretitle.html"
+     data-sly-use.titleTemplate="title.html"
+     data-sly-use.descriptionTemplate="description.html"
+     data-sly-use.actionsTemplate="actions.html"
+     data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+     id="${teaser.id}"
+     class="tools-res_container cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+     data-cmp-data-layer="${teaser.data.json}">
+    <div class="cmp-teaser__link tr_container_top"
+       data-sly-attribute="${teaser.link.htmlAttributes}"
+       data-sly-unwrap="${!teaser.link.valid || !teaser.actions.empty}"
+       data-cmp-clickable="${teaser.data ? true : false}">
+
+        <div id="tr_container_img_heading" class="cmp-teaser__content tr_container_img_heading">
+			<sly data-sly-call="${imageTemplate.image @ teaser=teaser}"></sly>
+
+			<sly data-sly-call="${titleTemplate.title @ teaser=teaser}"></sly>
+        </div>
+
+		<sly data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+
+    </div>
+    
+	<div class="tr_container_main">
+	 	<sly data-sly-call="${pretitleTemplate.pretitle @ teaser=teaser}"></sly>
+		<sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+	</div>
+
+
+</div>
+<sly 
+	data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}">
+
+</sly>
+<button type="button" class="MyAccountModalMenuIcon d-lg-none" title="" data-toggle="modal" data-target="#MyAccountModalMobile">
+  <i class="fa-solid fa-bars"></i> 
+</button>
+<div class="modal fade " id="MyAccountModalMobile" tabindex="-1" role="dialog" aria-labelledby="myaccountModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header" id="myaccountModalCenterTitle">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="responsiveMyAccountModal">
+          <a href="#" title="Services">Services</a>
+          <a href="#" title="Converters & Calculators">Converters & Calculators</a>
+          <a href="#" title="Technical Resources">Technical Resources</a>
+          <a href="#" title="FAQ">FAQ</a>
+       </div>
+    </div>
+  </div>
+</section>
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='trherobanner'}" 
+/>

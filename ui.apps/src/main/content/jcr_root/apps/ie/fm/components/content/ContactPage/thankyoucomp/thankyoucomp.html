@@ -1,0 +1,28 @@
+
+<sly
+
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+
+	data-sly-call="${clientlib.css @ categories='thankyoucomp'}" />
+
+        
+        <sly data-sly-test="${!properties.hihello && properties.thankyoutitle && properties.thankyoumsg}">
+                <div class="thankyou">
+                        <div><h1 class="thankyou-title">${properties.thankyoutitle} <span id="userFirstName"></span></h1> </div>
+                        <div><h3 class="thankyou-msg">${properties.thankyoumsg}</h3></div>
+                        <div><sly data-sly-set.myPath="/content/fm/en/homepage.html" />
+                                <input class="thankyou-btn" type="Submit" onclick="location.href='${myPath @ context='scriptString'}'" value="Return to Home" /></div>
+                </div>
+        </sly>
+
+        <sly data-sly-test="${properties.hihello && !properties.thankyoutitle && !properties.thankyoumsg}">
+                <div id="rma-thankyou-title">
+                        <h2>${properties.hihello} <span id="userRMAThankName"></span></h2>
+                </div>
+        </sly>
+
+<sly
+
+data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+
+data-sly-call="${clientlib.js @ categories='thankyoucomp'}" />

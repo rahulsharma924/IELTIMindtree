@@ -1,0 +1,108 @@
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.css @ categories='rf-power-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+		<div class="form-block-cls">
+			<div class="column"><h4>${properties.calculationtitle}</h4></div>
+			<p>${properties.waveguidelabel}</p>			
+			<div class="row top-block-cls">
+				<div class="col-lg-8">				
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<select id="option" class="input" onchange="changeFn()">
+								<option value="xx">-custom-</option>
+								<option value="wr3">WR3</option>
+								<option value="wr4">WR4</option>
+								<option value="wr7">WR7</option>
+								<option value="wr8">WR8</option>
+								<option value="wr10">WR10</option>
+								<option value="wr12">WR12</option>
+								<option value="wr15">WR15</option>
+								<option value="wr19">WR19</option>
+								<option value="wr22">WR22</option>
+								<option value="wr28">WR28</option>
+								<option value="wr34">WR34</option>
+								<option value="wr42">WR42</option>
+								<option value="wr51">WR51</option>
+								<option value="wr62">WR62</option>
+								<option value="wr75">WR75</option>
+								<option value="wr90">WR90</option>
+								<option value="wr112">WR112</option>
+								<option value="wr137">WR137</option>
+								<option value="wr159">WR159</option>
+								<option value="wr187">WR187</option>
+								<option value="wr229">WR229</option>
+								<option value="wr284">WR284</option>
+								<option value="wr340">WR340</option>
+								<option value="wr430">WR430</option>
+								<option value="wr510">WR510</option>
+								<option value="wr650">WR650</option>
+								<option value="wr770">WR770</option>
+								<option value="wr975">WR975</option>
+							</select> <span class="error ErrorText" aria-hidden="true" data-acsb-hidden="true"
+								data-acsb-force-hidden="true"></span>
+						</div>
+					</div>
+					<p>${properties.broadwallwidthlabel}</p>
+					<div class="row">						
+						<div class="col-lg-6 col-md-6">
+							<input id="w" class="input" value="${properties.broadwallwidthPlaceholder}" onblur="blurFn(this)" onfocus="focusFn(this)" placeholder="text"> <span class="error ErrorText" ></span>
+						 </div>
+						 <div class="col-lg-6 col-md-6">
+							 <select id="unit" class="input"><option value="in">Inches</option><option value="cm">Centimeters</option><option value="mm">Millimeters</option></select> <span class="error ErrorText" ></span>
+						 </div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="row set-mb-fix">
+						<div class="col-12">
+							<button id="go" class="ie-primary-btn" type="button"
+							onclick="generalClickWaveRectFn()" value="Calculate">
+							${properties.waveguidecalculatebtntitle}
+						</button>
+						<p class="calculate-error-cls"><span class="error ErrorText"></span><span id="errormsg"
+								class="error ErrorText"></span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="calculator-results calculator-results-full">
+								<h4 class="results-calc-h4 mb-3">${properties.waveguideresultlabel}</h4>
+								<div class="result_container results-calc" aria-hidden="true" data-acsb-hidden="true">
+										<div class="result"><span> ${properties.wgresultlabeltitle1} </span> <span id="fc" class="output"></span> <br> <span
+												> ${properties.wgresultlabeltitle2} </span> <span
+												id="fr" class="output"></span> <br> <span id="matchlabel"
+												> ${properties.wgresultlabeltitle3} </span> <span
+												id="match" class="output"></span> <br>
+										</div>
+									</div>
+								</div>
+								<div id="button_cont">
+								<input class="related_search" type="button" value="${properties.findrelatedprdTitle}"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+
+<sly
+   data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

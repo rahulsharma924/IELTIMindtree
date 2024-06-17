@@ -1,0 +1,3 @@
+#base=js
+newfooter.js
+analytics.js

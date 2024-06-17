@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-01-13T18:32:31.709+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-12-01T05:40:14.590Z"
+        cq:lastReplicated_preview="{Date}2022-12-01T06:24:42.955Z"
+        cq:lastReplicated_publish="{Date}2022-12-01T05:40:14.590Z"
+        cq:lastReplicatedBy="SChandrasekaran@infiniteelectronics.com"
+        cq:lastReplicatedBy_preview="mdash@infiniteelectronics.com"
+        cq:lastReplicatedBy_publish="SChandrasekaran@infiniteelectronics.com"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_preview="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:tags="[]"
+        cq:template="/conf/fm/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer"
+        jcr:uuid="f25224a7-97ad-47cc-9216-0c592745e2d5"
+        sling:resourceType="cq/experience-fragments/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ie/fm/components/content/container"
+            id="main-footer"
+            layout="responsiveGrid">
+            <separator
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/separator/v1/separator"/>
+            <footer_nestedmultifi
+                jcr:created="{Date}2023-01-10T11:12:44.451+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-01-13T18:32:31.575+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ie/fm/components/content/footer-nestedmultifield"
+                connectwithus="Connect with us"
+                eciaimg="/content/dam/fm/homepage-associations 1.png"
+                fbimg="/content/dam/fm/icon_fb.png"
+                footerinc="©  Infinite Electronics International, Inc. All Rights Reserved"
+                footersitemap="Sitemap"
+                linkedinimg="/content/dam/fm/icon_linkl.png"
+                twitterimg="/content/dam/fm/icon_twitter.png">
+                <footertitlemulti jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        footerheadtitle="ABOUT US">
+                        <footermulti jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/About-us"
+                                footertitle="Who We Are"
+                                newtabcheck="true"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/about-us/news"
+                                footertitle="News"
+                                newtabcheck="true"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/about-us/careers"
+                                footertitle="Careers"
+                                newtabcheck="true"/>
+                        </footermulti>
+                    </item0>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        footerheadtitle="Contact Info">
+                        <footermulti jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                contactdesc="Headquarters 1301 Leora Ln Lewisville, Texas 75056"
+                                contactmail="sales@fairviewmicrowave.com"
+                                footerlink="/content/fm/en/contact"
+                                footertitle="Contact Us "
+                                newtabcheck="true"/>
+                        </footermulti>
+                    </item1>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        footerheadtitle="Resources">
+                        <footermulti jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/catalog-download"
+                                footertitle="Catalog Download"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/technical-support"
+                                footertitle="Technical Support"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/credit-application"
+                                footertitle="Credit Application"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/faq"
+                                footertitle="Help / FAQs"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/rma-form"
+                                footertitle="RMA Form"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/software-downloads"
+                                footertitle="Software Downloads"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/contact-us/rfcalculators-conversions"
+                                footertitle="RF Calculators &amp; Conversions"/>
+                        </footermulti>
+                    </item2>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        footerheadtitle="POLICIES">
+                        <footermulti jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/policies/quality-policy"
+                                footertitle="Quality Policy"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="https://www.infiniteelectronics.com/privacy-policy/"
+                                footertitle="Privacy Policy"
+                                newtabcheck="true"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/policies/shipping-policy"
+                                footertitle="Shipping Policy"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="https://www.infiniteelectronics.com/csca-declaration/"
+                                footertitle="Supply Chain Act Declaration"
+                                newwincheck="true"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="https://www.infiniteelectronics.com/qa-and-compliance/"
+                                footertitle="QA &amp; Compliance"
+                                newwincheck="true"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="/content/fm/en/policies/terms-conditions"
+                                footertitle="Terms &amp; Conditions"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                footerlink="https://www.infiniteelectronics.com/website-terms-of-service/"
+                                footertitle="Website Terms of Service"
+                                newwincheck="true"/>
+                        </footermulti>
+                    </item3>
+                </footertitlemulti>
+            </footer_nestedmultifi>
+            <backto_topicon_1303269187
+                jcr:created="{Date}2022-11-30T07:37:09.760Z"
+                jcr:createdBy="DBovas@infiniteelectronics.com"
+                jcr:lastModified="{Date}2022-11-30T07:37:09.760Z"
+                jcr:lastModifiedBy="DBovas@infiniteelectronics.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ie/fm/components/content/backto-topicon">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="10"
+                        width="2"/>
+                </cq:responsive>
+            </backto_topicon_1303269187>
+        </root>
+    </jcr:content>
+</jcr:root>

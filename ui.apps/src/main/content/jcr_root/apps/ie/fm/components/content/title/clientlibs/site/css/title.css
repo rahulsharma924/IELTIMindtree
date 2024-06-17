@@ -1,0 +1,19 @@
+#ResourceTitle h1, #ResourceTitle h2{
+    font-weight:var(--fontWeightBold);
+    font-size:var(--fontSize31);
+    line-height:var(--baseLineHeight);
+    text-align: center;
+    color:var(--primaryColor);
+}
+#ResourceTitle{
+    margin: 0 0 2.12rem 0;
+}
+#WhitePaperInfo #ResourceTitle h1, #WhitePaperInfo #ResourceTitle h2{
+    margin-top: 50px;
+}
+#formtitle {
+    margin-bottom: 0px;
+}
+#formtitle h1{
+    line-height: 1.2;
+}

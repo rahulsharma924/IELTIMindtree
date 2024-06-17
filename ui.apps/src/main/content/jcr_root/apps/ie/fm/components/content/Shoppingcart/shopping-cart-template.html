@@ -1,0 +1,130 @@
+<div class="shopping--cart d-none">
+  {{#each lineItems}}
+  <div class="single_product_details">
+    <div class="row">
+      <div
+        class="col-md-2 col-sm-3 col-3 col-lg-2 algoli_img sku_img_{{@index}} 
+        analytics_prod_detail_{{@index}}"
+        data-analytics-prod-detail="{{bestSellerRank}}@@{{color}}@@{{length}}@@{{returnCategory category}}@@{{startingPrice}}"
+      >
+      {{imgURL assets seoName variant.sku custom "cart_image_section"}}
+       
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 col-lg-10">
+        {{#if isOversized}}
+        <div class="freight__message">   
+          <div class="freight_label">
+            Freight
+          <span class="tooltiptext"></span>
+          </div>     
+        </div>
+        {{/if}}
+        <p class="cart_product_details cart_prod_{{@index}}">
+          {{seoUrl categorySEOURL seoName variant.sku
+          custom.fields.masterSku name false}}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-2 col-md-2 mx-wd-left"></div>
+      <div class="col-md-7 col-sm-7 col-12 col-lg-5">
+        <div id="first_div">
+          <div class="col-9">
+            {{#if inventory}}
+            <div class="available_quantity prod_avail sku_avail_wrapper">
+              <span class="sku_avail sku_avail_{{@index}}"> {{inventory}}</span>
+              available
+            </div>
+            {{/if}}
+
+            <p class="sku_number mb-0" data-sku="{{getSku variant.sku custom.fields.masterSku}}">
+              SKU: {{skuVarient variant.sku custom slug}}
+            </p>
+
+            {{#if color}}
+            <div class="prod_color sku_color_wrapper">
+              <span>Color: </span
+              ><span class="sku_colr sku_color_{{@index}}">{{color}}</span>
+            </div>
+            {{/if}} {{#if length}}
+            <div class="prod_len sku_len_wrapper">
+              <span>Length: </span
+              ><span class="sku_len sku_len_{{@index}}">{{length}}</span>
+            </div>
+            {{/if}}
+          </div>
+          <div class="col-3 shopping-cart-position">
+            <a
+              class="remove_cart_product activeLink"
+              onclick="removeLineItem(this)"
+              data-lineitem-id="{{id}}"
+              data-isitemcustom="{{customValue variant.sku}}"
+              data-analyticprod="{{skuVarient variant.sku custom slug}}@@{{#each name}} {{this}}{{/each}}@@{{id}}@@{{#if price.value}}{{priceFormate price.value}}{{else}}{{priceFormate money}} {{/if}}@@{{#if productType}}{{productType.id}}{{else}}{{custom.type.id}}{{/if}}@@{{quantity}}"
+              data-analyticslug="{{slug}}"
+              title="remove"
+              href="javascript:void(0)"
+              >Remove</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-5 col-12 col-lg-5">
+        <div class="root"></div>
+        <div class="row second_div">
+          <!--<div class="col-2 col-sm-3"></div>-->
+          <div class="col-10 col-sm-12 apdme">
+            <div class="cart_quantity_div">
+              <div class="qty shopping__cart--button">
+                <button
+                  class="cart-qty-minus"
+                  type="button"
+                  data-isitemcustom="{{customValue variant.sku}}"
+                >
+                  <span class="dec-val"> - </span></button
+                ><input
+                  type="number"
+                  data-lineitemid="{{id}}"
+                  data-isitemcustom="{{customValue variant.sku}}"
+                  oninput="changeValue(this)"
+                  maxlength="5"
+                  onfocus="addSummaryKey(this)"
+                  onchange="addSummary(this);"
+                  class="qty_num qty_shopping_cart sku_inven_1 sku_isDiscontinued_1"
+                  name="qty_num"
+                  value="{{quantity}}"
+                  algolio_inven="{{inventory}}"
+                  algolio_isdiscontinued="{{isDiscontinued}}"
+                /><button
+                  class="cart-qty-plus"
+                  type="button"
+                  data-isitemcustom="{{customValue variant.sku}}"
+                >
+                  <span class="inc-val"> + </span>
+                </button>
+              </div>
+              <div
+                id="quantityDropdown"
+                class="quantityDropdown quantity-dropdown-content reverse"
+              >
+                {{#if price.value}} {{dropDown price.value price.tiers}}
+                {{else}} {{dropDown money price.tiers}} {{/if}}
+              </div>
+              <span class="single_product_price">x</span>
+            </div>
+            <div class="price">
+              <span class="single_product_price single_pr_price"><span>$</span>{{#if price.value}}{{getPriceOfProdAsPerQuantity quantity price.value}}{{else}}{{getPriceOfProdAsPerQuantity quantity money}}{{/if}}</span>
+            <div
+              class="single_product_total_amount"
+              data-price="{{priceFormate totalPrice}}"
+              data-totalpriceval="{{priceFormate totalPrice}}"
+            >
+              <p><span>$</span>{{priceFormate totalPrice}}</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

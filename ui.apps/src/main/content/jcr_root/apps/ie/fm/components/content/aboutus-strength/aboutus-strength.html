@@ -1,0 +1,16 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='aboutus-strength-clientlib'}" />
+<div class="strength-section">
+    <div class="aboutus_Title_Description">
+        <p class="ourstrength-title">${properties.headertitle}</p>
+    </div>
+    <sly data-sly-use.aboutModel="com.aem.ie.core.models.AboutModel">
+   <div class="aboutus-strength-section" data-sly-list="${aboutModel.AccDetails}">
+   <div class="strengths_card_container mt-space-mobile">
+		<div class="img-wd">
+            <span  class="strength-section-image"><i class="${item.ourstrengthImg @ context='html'}"></i></span>                
+         </div>
+         <div class="strength-card-section">${item.ourstrengthTitle @ context='html'}</div>
+        </div>
+</div>
+</sly>
+</div>

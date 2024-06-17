@@ -1,0 +1,148 @@
+
+#how-to-order-container .howtoorder_item {
+ max-width: 1069px;
+ margin: 0 90px 18px;
+ background-color: white;
+  }
+@media screen and (min-width:833px){
+    /* How to order css */
+      #how-to-order-container .howtoorder_container {
+        display: flex;
+        border-left: 4px solid var(--invertedColor);
+      }
+      #how-to-order-container .howtoorder_icon {
+        padding: 0px 85px 0 50px;
+        align-self: center;
+        height: 24px;
+        width: 44px;
+        
+      }
+      #how-to-order-container .howtoorder_heading {
+        font-weight: bold;
+        margin: 0;
+        font-size: var(--fontSize18);
+        line-height: var(--baseLineHeight);
+      }
+      #how-to-order-container .howtoorder_text {
+        padding: 16px 0;
+      }
+      #how-to-order-container .howtoorder_description {
+        padding-top: 8px;
+        margin: 0;
+      }
+      #how-to-order-container .howtoorder_text p{
+        padding: 0;
+        margin: 0;
+        font-size: var(--fontSize14);
+        line-height: var(--baseLineHeight);
+      }
+      #how-to-order-container .howtoorder_container dl, ol, ul {
+        margin: 0;
+      }
+      #how-to-order-container .howtoorder_text ul li {
+        list-style: disc;
+      }
+      #how-to-order-container .howtoorder_text li {
+        font-size: var(--fontSize14);
+        line-height: var(--baseLineHeight);
+      }
+
+}
+@media screen and (max-width:833px){
+  #how-to-order-container .howtoorder_item{
+    margin: 0 24px 18px 24px;
+  }
+
+  #how-to-order-container .howtoorder_container {
+    display: flex;
+    border-left: 4px solid var(--invertedColor);
+  }
+  #how-to-order-container .howtoorder_icon {
+    padding: 0px 50px 0 25px;
+    align-self: center;
+    height: 24px;
+    width: 44px;
+    
+  }
+  #how-to-order-container .howtoorder_heading {
+    font-weight: bold;
+    margin: 0;
+    font-size: var(--fontSize18);
+  }
+  #how-to-order-container .howtoorder_text {
+    padding: 16px 0;
+    word-break: break-word;
+  }
+  #how-to-order-container .howtoorder_description {
+    padding-top: 8px;
+    margin: 0;
+  }
+  #how-to-order-container .howtoorder_text p{
+    padding: 0;
+    margin: 0;
+  }
+  #how-to-order-container .howtoorder_container dl, ol, ul {
+    margin: 0;
+  }
+  #how-to-order-container .howtoorder_text ul li {
+    list-style: disc;
+  }
+}
+#how-to-order-container {
+  background-color: #FAFBFB;
+}
+
+#how-to-order-container .text {
+  background-color: white;
+}
+
+#how-to-order .cmp-title__text {
+  font-size: var(--fontSize31);
+  font-weight: var(--fontWeightBold);
+  line-height: var(--lineHeight1and483);
+  text-align: left;
+}
+
+#how-to-order .text p,
+#how-to-order .text ol>li {
+
+  font-size: var(--baseFontSize);
+  font-weight: var(--fontWeightNormal);
+  line-height: var(--baseLineHeight);
+  padding-left: 0px;
+  text-align: left;
+
+}
+
+#how-to-order .text p b {
+  margin-left: 0px;
+}
+
+#how-to-order-container .text,
+#how-to-order-container .cmp-title__text {
+    text-align: center;
+}
+
+@media screen and (max-width:833px) {
+
+  #how-to-order-container .text,
+  #how-to-order-container .cmp-title__text {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+  }
+}
+#how-to-order-container .text{
+  padding-bottom: 41px;
+    padding-top: 37px;
+}
+@media screen and (min-width: 833px) and (max-width:1024px) {
+  #how-to-order-container .howtoorder_item{
+    margin: 0 24px 18px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #how-to-order-container .howtoorder_item{
+    margin: 0 auto 18px auto;
+  }
+}

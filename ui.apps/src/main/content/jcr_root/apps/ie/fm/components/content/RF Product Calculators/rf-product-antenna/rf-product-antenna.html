@@ -1,0 +1,126 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='rf-calculator'}"></sly>
+
+<div class="aem-GridColumn aem-GridColumn--default--12">
+	<div class="col-12 calculator-wrapper-cls">
+		<div class="title-block-cls">
+			${properties.text @context='html'}
+
+		</div>
+		<div class="rfp-form-block-cls">
+			<div class="column">
+				<h4>${properties.calculationtitle}</h4>
+			</div>
+			<div class="row">
+				<div class="col-lg-9 col-12">
+					<div class="row set-mb">
+						<div class="col-lg-4 offset-lg-4 col-md-6">
+							<label for="th">${properties.transmitterlabel}</label>
+							<input id="th" class="input" type="text" value="${properties.transmitterPlacehoder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)"><span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<label>${properties.transmitterunitlabel}</label> <select id="unit1" class="input">
+								<option value="km">Kilometers</option>
+								<option value="m">Meters</option>
+								<option value="cm">Centimeters</option>
+								<option value="mi">Miles</option>
+								<option value="yards">Yards</option>
+								<option value="ft" selected="selected">Feet</option>
+								<option value="in">Inches</option>
+							</select><span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 offset-lg-4 col-md-6">
+							<label for="rh">${properties.receiverlabel}</label> <input id="rh" class="input" type="text"
+								value="${properties.receiverPlacehoder}" onblur="blurFn(this)"
+								onfocus="focusFn(this)"><span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<label>${properties.receiverunitlabel}</label> <select id="unit2" class="input">
+								<option value="km">Kilometers</option>
+								<option value="m">Meters</option>
+								<option value="cm">Centimeters</option>
+								<option value="mi">Miles</option>
+								<option value="yards">Yards</option>
+								<option value="ft" selected="selected">Feet</option>
+								<option value="in">Inches</option>
+							</select><span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 col-md-6">
+							<select id="option2" class="input" onchange="changeFnRfd()">
+								<option value="dist">Distance</option>
+								<option value="angle">Downtilt (deg)</option>
+							</select><span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<input id="td" class="input" type="text" value="${properties.Placehoder1}"
+								onblur="blurFn(this)" onfocus="focusFn(this)"><span class="error ErrorText"></span>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<select id="unit3" class="input">
+								<option value="km">Kilometers</option>
+								<option value="m">Meters</option>
+								<option value="cm">Centimeters</option>
+								<option value="mi" selected="selected">Miles</option>
+								<option value="yards">Yards</option>
+								<option value="ft">Feet</option>
+								<option value="in">Inches</option>
+							</select><span class="error ErrorText"></span>
+						</div>
+					</div>
+					<div class="row set-mb">
+						<div class="col-lg-4 offset-lg-4 col-md-6">
+							<label for="vb">${properties.beamwidthlabel}</label>
+							<input id="vb" class="input" type="text" value="${properties.beamwidthPlacehoder}"
+								onblur="blurFn(this)" onfocus="focusFn(this)"><span class="error ErrorText"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12 dt-mt-rem"> 
+					<div class="row set-mb-fix">
+						<div class="col-12">
+							<button id="go" class="ie-primary-btn" type="button" onclick="generalClickFnRfp()"
+								value="Calculate">
+								${properties.calculatebtntitle}
+							</button>
+							<p class="calculate-error-cls"><span id="errormsg" class="error ErrorText"></span></p>
+						</div>
+					</div>
+					<div class="row dt-mt-rem-up">
+						<div class="col-12">
+							<div class="calculator-results calculator-results-full">
+								<label>${properties.resultlabel}</label>
+								<div class="result_container results-calc">
+									<div class="result">
+											<span id="output_type"
+												class="resultlabeltitle1">${properties.resultlabeltitle1}</span>
+											<span id="downtilt" class="output"></span><br>
+											<span class="resultlabeltitle1">${properties.resultlabeltitle2}</span>
+											<span id="iRad" class="output"></span><br>
+											<span class="resultlabeltitle1">${properties.resultlabeltitle3}</span>
+											<span id="oRad" class="output"></span><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rf-calculator-container">
+		<div class="row flex-column flex-md-row">
+
+		</div>
+	</div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.js @ categories='rf-power-calculator'}"></sly>

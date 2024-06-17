@@ -1,0 +1,1252 @@
+/* css for guest user & logged in user */
+#shipping-information-guest-user .logged-in-user {
+  display: none;
+}
+#shipping-information-logged-in-user .guest-user {
+  display: none;
+}
+/* Shipping information page css starts here */
+
+.default-shipping-address p.default-addr__fields,
+.vldaddr-pu-addrs p.validation-addr__fields,
+.other-shipping-address p.other-address__fields {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: var(--baseLineHeight);
+}
+.mathod-of-shipping .shippinginfo_msg-upperdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-left: 14px;
+  padding-top: 12px;
+}
+.mathod-of-shipping .shippinginfo_msg-lowerdiv {
+  padding-bottom: 10px;
+  padding-left: 52px;
+  padding-top: 4px;
+  padding-right: 20px;
+}
+.mathod-of-shipping .shippinginfo_msg-upperdiv .fa-exclamation-triangle {
+  color: var(--warningYellow);
+}
+.mathod-of-shipping .shippinginfo__method-error {
+  background-color: var(--featuredTagBgClr);
+  border-top: 2px solid var(--warningYellow);
+  display: none;
+}
+.mathod-of-shipping .shippinginfo__method-title {
+  padding-left: 18px;
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  font-weight: var(--fontWeightBold);
+  color: var(--primaryColor);
+}
+.mathod-of-shipping .shippinginfo__method-subtitle {
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  font-weight: var(--fontWeightSmall);
+  color: var(--newsDateColor);
+}
+.shippinginfo__method-error p.shippingingo__methoderror-txt {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.guest-shipaddress__wrap-dd {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* .guest-shipaddress__wrap-dd::after{
+   content: "";
+    justify-self: end;
+    width: 10px;
+    height: 8px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+    background-color: var(--select-arrow);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 49px;
+    right: 20px;
+}*/
+.shipping-info-order-summary-details {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.shipping-address-form select {
+  height: 44px;
+}
+
+.shipping-address-form .CompanyNamefield {
+  padding-bottom: 15px;
+}
+
+.shipping-address-form .AddressLineoptional {
+  padding-bottom: 15px;
+}
+
+.shippingInformation-section {
+  color: var(--IScarrouselDecClr);
+}
+
+.shippingInfo {
+  margin: 20px 0px 40px 0px;
+  border: 1px solid var(--blueColorDark);
+  border-radius: 4px;
+  padding: 22px;
+}
+
+.add-new-address-modal.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+.add-new-address-modal.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.add-new-address-modal.modal-backdrop.fade {
+  opacity: 0;
+}
+
+#shippingInformation #otherAddressClickText {
+  margin-top: 18px;
+}
+
+.shippingInformation-section
+  .custom-radio
+  .custom-control-input:checked
+  ~ .custom-control-label::after,
+.addrval-div
+  .custom-radio
+  .custom-control-input:checked
+  ~ .custom-control-label::after {
+  display: none;
+}
+
+.shippingInformation-section
+  .custom-radio
+  .custom-control-input:checked
+  ~ .custom-control-label::before,
+.addrval-div
+  .custom-radio
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: var(--secondaryColor);
+  border: 6px solid #007bff;
+  width: 20px;
+  height: 20px;
+}
+
+.shippingInformation-section
+  .custom-radio
+  .custom-control-input:not(:checked)
+  ~ .custom-control-label::before,
+.addrval-div
+  .custom-radio
+  .custom-control-input:not(:checked)
+  ~ .custom-control-label::before {
+  background-color: var(--secondaryColor);
+  border: 1.5px solid var(--primaryColor);
+  width: 20px;
+  height: 20px;
+}
+
+#phoneNumber.form-control {
+  width: 49%;
+}
+
+#shippingInformation .add-new-address-btn {
+  font-weight: var(--fontWeightMedium);
+}
+
+#shippingInformation .add-new-address-btn:active {
+  font-weight: var(--fontWeightBold);
+}
+
+#shippingInformation .add-new-address-btn:hover {
+  font-weight: var(--fontWeightBold);
+}
+
+#shippingInformation .EditShippingInfo {
+  font-size: var(--baseFontSize);
+  font-weight: var(--fontWeightMedium);
+  padding-left: 15px;
+  color: var(--secondaryLinkNormal);
+}
+
+#shippingInformation .EditShippingInfo:hover {
+  font-weight: var(--fontWeightBold);
+}
+
+#shippingInformation .EditShippingInfo:active {
+  font-weight: var(--fontWeightBold);
+  color: #002a42;
+  text-decoration: underline;
+}
+
+#shippingInformation .shipping-info-headder {
+  font-weight: var(--fontWeightSmall);
+  font-size: 1.37rem;
+  margin-bottom: 22px;
+}
+
+#shippingInformation .shipping-info-headder {
+  font-weight: var(--fontWeightSmall);
+  font-size: 1.37rem;
+  margin-bottom: 24px;
+}
+
+#shippingInformation .address-details {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  padding-left: 15px;
+  color: var(--IScarrouselDecClr);
+  margin-bottom: 5px;
+}
+
+#shippingInformation .contactInfo h3 {
+  font-style: normal;
+  font-weight: var(--fontWeightBold);
+  font-size: 1.12rem;
+  line-height: var(--baseLineHeight);
+  margin-bottom: 24px;
+}
+
+/* shipping form css starts hear */
+
+.shipping-address-form label {
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  color: var(--primaryColor);
+}
+
+.shipping-address-form .form-control {
+  border: 1px solid var(--SearchIcon);
+  color: var(--primaryColor);
+  height: calc(1.5em + 1.25rem + 2px);
+}
+.contactInfo {
+  margin-top: 40px !important;
+}
+#shippingInformation .contactInfo .form-control {
+  border: 1px solid var(--SearchIcon);
+  color: var(--primaryColor);
+  height: calc(1.5em + 1.25rem + 2px);
+}
+
+#shippingInformation .contactInfo label {
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  color: var(--primaryColor);
+}
+
+.shippingInformation-section .custom-select:focus {
+  outline: 2px solid var(--blueColorLight);
+  box-shadow: none;
+}
+
+#addNewShippingAddressPopup .custom-select:focus {
+  outline: 2px solid var(--blueColorLight);
+  box-shadow: none;
+}
+
+#addNewShippingAddressPopup label.wrap:after,
+#editShippingAddressPopup label.wrap:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  color: var(--secondaryBlack);
+  position: absolute;
+  right: 20px;
+  top: 42px;
+  z-index: 1;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  text-align: right;
+}
+
+.shipping-info-order-summary-details .custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  max-width: 100%;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  background-repeat: no-repeat;
+  border: 1px solid var(--SearchIcon);
+  background-size: 10px 10px;
+  border-radius: 5px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==);
+}
+.order-summry-select option {
+  color: #0e0f10;
+}
+select#finalDestinationCountry:focus {
+  color: #454b4f;
+}
+.order-country-select {
+  margin-top: 0.3rem;
+}
+.shipping-address-form select.form-control:not([size]):not([multiple]) {
+  height: calc(3.25rem + 2px);
+}
+.select-estimate select.form-control:not([size]):not([multiple]) {
+  height: calc(3.25rem + 2px);
+}
+
+/* ends */
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: var(--secondaryColor);
+  border-color: var(--blueColorDark);
+  background-color: var(--blueColorDark);
+}
+
+.shipping-address-form input:focus-visible {
+  outline: 2px solid var(--blueColorLight);
+}
+
+.custom-control-label::before {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.custom-control-label::after {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.other-address-list a {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  color: var(--secondaryBlack);
+}
+
+#shippingInformation .email-message {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  margin-left: 10px;
+}
+
+/* Add new shipping address popup CSS starts hear  */
+
+#addNewShippingAddressPopup .modal-header {
+  padding: 37px 0 26px 54px;
+  border-bottom: 1px solid var(--SearchIcon);
+  box-shadow: none;
+}
+
+#addNewShippingAddressPopup .modal-title {
+  font-weight: var(--fontWeightBold);
+  font-size: 1.93rem;
+  color: var(--primaryColor);
+}
+
+#addNewShippingAddressPopup .saveShippingAddressBtn {
+  font-size: 0.87rem;
+  padding: 12px 42px;
+}
+
+#addNewShippingAddressPopup .cancelShippingAddressBtn {
+  font-size: 0.87rem;
+  padding: 12px 35px;
+  margin-right: 1rem;
+}
+
+#addNewShippingAddressPopup .modal-body {
+  padding: 15px 50px;
+}
+
+#addNewShippingAddressPopup .modal-footer {
+  background: var(--secondaryBtnHover);
+  border-top: none;
+  padding: 14px 33px 12px 0;
+}
+
+#addNewShippingAddressPopup .modal-content {
+  height: 100%;
+}
+/*default address delete btn*/
+a.deleteShippingAddressBtn[data-isdefaultadd="true"] {
+  pointer-events: none;
+  text-decoration: none;
+}
+/* .modal-footer.editShippingAddressFooter .modal-footer-editshippingaddress .deleteShippingAddressBtn {
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.modal-footer.editShippingAddressFooter .modal-footer-editshippingaddress .deleteShippingAddressBtn[disabled="disabled"] {
+    cursor: default;
+} */
+
+/* Add new shipping address popup CSS ends hear */
+
+/* confirm delete popup */
+#deleteConfirm .modal-dialog,
+#successfullyDeleted .modal-dialog,
+#duplicatedAddress .modal-dialog,
+#successfullyAdded .modal-dialog,
+#duplicateAddnewAddress .modal-dialog,
+#successFullySaved .modal-dialog,
+#unknownAddresstype .modal-dialog {
+  margin: 140px auto;
+}
+#deleteConfirm .modal-content,
+#successfullyDeleted .modal-content,
+#duplicatedAddress .modal-content,
+#successfullyAdded .modal-content,
+#duplicateAddnewAddress .modal-content,
+#successFullySaved .modal-content,
+#unknownAddresstype .modal-content {
+  height: auto;
+  margin: 0 auto;
+}
+#successfullyDeleted .modal-body,
+#duplicatedAddress .modal-body,
+#successfullyAdded .modal-body,
+#successfullyDeleted .modal-body,
+#successFullySaved .modal-body,
+#unknownAddresstype .modal-body {
+  text-align: center;
+  flex-grow: inherit;
+  padding: 55px 110px;
+}
+#deleteConfirm .modal-body,
+#duplicateAddnewAddress .modal-body,
+#unknownAddresstype .modal-body {
+  text-align: center;
+  flex-grow: inherit;
+  padding: 30px 110px;
+}
+#deleteConfirm .modal-body h4,
+#successfullyDeleted .modal-body h4,
+#duplicatedAddress .modal-body h4,
+#successfullyAdded .modal-body h4,
+#duplicateAddnewAddress .modal-body h4,
+#successFullySaved .modal-body h4,
+#unknownAddresstype .modal-body h4 {
+  color: var(--secondaryBlack);
+  font-size: 1.93rem;
+  line-height: 46px;
+  font-weight: var(--fontWeightSmall);
+}
+#deleteConfirm .modal-footer,
+#successfullyDeleted .modal-footer,
+#duplicatedAddress .modal-footer,
+#successfullyAdded .modal-footer,
+#duplicateAddnewAddress .modal-footer,
+#successFullySaved .modal-footer,
+#unknownAddresstype .modal-footer {
+  border: 0;
+  background-color: var(--secondaryBtnHover);
+  padding: 18px 27px 16px 0;
+}
+#deleteConfirm .modal-footer div,
+#successfullyDeleted .modal-footer div,
+#duplicatedAddress .modal-footer div,
+#successfullyAdded .modal-footer div,
+#duplicateAddnewAddress .modal-footer div,
+#successFullySaved .modal-footer div,
+#unknownAddresstype .modal-footer div {
+  position: relative;
+  margin: auto;
+}
+#duplicatedAddress .ie-primary-btn,
+#deleteConfirm .ie-primary-btn,
+#successfullyDeleted .ie-primary-btn,
+#successfullyAdded .ie-primary-btn,
+#duplicateAddnewAddress .ie-primary-btn,
+#successFullySaved .ie-primary-btn,
+#unknownAddresstype .ie-primary-btn {
+  /* padding:10px 38px; */
+  font-size: var(--fontSize14);
+  padding: 12px 26px;
+  line-height: var(--lineHeight1and428);
+}
+#deleteConfirm .ie-scondary-btn,
+#unknownAddresstype .ie-scondary-btn {
+  font-size: var(--fontSize14);
+  padding: 12px 34px;
+  line-height: var(--lineHeight1and428);
+  margin-right: 16px;
+}
+/* confirm delete popup */
+/*  loader and guest user styles */
+.guest-user,
+.logged-in-user {
+  display: none;
+}
+.guest-user.tokenActive,
+.logged-in-user.tokenActive {
+  display: block;
+}
+.loader {
+  position: absolute;
+  top: 250px;
+  left: 46%;
+  border: 10px solid var(--formLoaderBorder);
+  border-radius: 50%;
+  border-top: 10px solid var(--invertedColor);
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+.carrier-err-desc,
+.carrier-error .carrier-overweight {
+  display: none;
+}
+.carrier-error .carrier-err-desc {
+  display: block;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mpobile CSS starts here */
+
+@media screen and (max-width: 767px) {
+  .shippingInfo {
+    width: 100%;
+    margin: 35px 25px 40px 0px;
+  }
+  #phoneNumber.form-control {
+    width: 100%;
+  }
+  .other-address-list {
+    margin-top: 28px;
+  }
+  #otherAddressAccordion .custom-control {
+    margin-bottom: 28px;
+  }
+  /* Add new shipping address popup css starts here */
+  #addNewShippingAddressPopup .modal-dialog {
+    width: 100%;
+    margin: 140px 0;
+  }
+  #addNewShippingAddressPopup .modal-content {
+    border-radius: 0;
+    border: none;
+    margin: 140px auto;
+  }
+  #addNewShippingAddressPopup .modal-body {
+    padding: 15px 26px 15px 32px;
+  }
+  #addNewShippingAddressPopup .saveShippingAddressBtn {
+    padding: 12px 26px;
+  }
+  #addNewShippingAddressPopup .modal-footer {
+    background: var(--secondaryColor);
+  }
+  #addNewShippingAddressPopup .modal-header {
+    padding: 26px 0 20px 32px;
+    border-bottom: none;
+  }
+
+  #addNewShippingAddressPopup .cancelShippingAddressBtn {
+    padding: 12px 18px;
+  }
+  #addNewShippingAddressPopup .modal-footer {
+    background: var(--secondaryColor);
+    border-top: 0;
+    padding: 0px 33px 15px 0;
+  }
+  /* Add new shipping address popup css ends here */
+  #successfullyDeleted .modal-body,
+  #duplicatedAddress .modal-body,
+  #successfullyAdded .modal-body,
+  #duplicateAddnewAddress .modal-body,
+  #successfullyDeleted .modal-body,
+  #successFullySaved .modal-body,
+  #unknownAddresstype .modal-body {
+    padding: 20px 25px;
+  }
+}
+
+/* Mobile CSS ends here */
+
+/* DT-598 DT-763 and DT-806 CSS ends here */
+
+/* DT-599 CSS starts here */
+
+#checkout-final-declaration .declaration-title {
+  color: var(--secondaryBlack);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize18);
+  line-height: var(--baseLineHeight);
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#checkout-final-declaration .freight-forwarder {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  color: var(--secondaryBlack);
+}
+
+#checkout-final-declaration .freight-forwarder img {
+  width: 16px;
+  height: 25px;
+  margin-left: 3px;
+}
+
+.declaration-yes-no {
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.declaration-yes-no .check-me {
+  color: var(--secondaryBlack);
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--baseFontSize);
+  line-height: 28px;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.declaration-text-yes p {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and428);
+  color: var(--secondaryBlack);
+  max-width: 701px;
+  margin-top: 30px;
+}
+
+.checkout-final-declaration input[type="radio"]:checked {
+  background-color: #2196f3;
+}
+
+.checkout-final-declaration input[type="radio"]:focus {
+  background-color: #2196f3;
+  height: 20px;
+  width: 20px;
+}
+
+.warning-yellow-icon {
+  margin: 14px 17px 0px 13px;
+}
+
+.close-yellow-icon {
+  margin: 57px 21px 0px 25px;
+}
+.close-yellow-icon .xmark {
+  color: var(--warningMedium);
+}
+.shipping-method-yes {
+  display: none;
+  padding: 0px;
+  max-width: 653px;
+  background: var(--featuredTagBgClr);
+  border-radius: 4px;
+  border-top: 2px solid var(--warningMedium);
+  margin-top: 20px;
+}
+
+#shipping-title-yellow {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.shipping-charges {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  display: flex;
+  max-width: 541px;
+  align-items: center;
+  color: var(--newsDateColor);
+}
+.freight-forwarder-yes {
+  display: none;
+}
+.tax-exemption-check-section {
+  display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.shipping-title {
+  color: var(--secondaryBlack);
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize18);
+  line-height: var(--baseLineHeight);
+  margin-top: 15px;
+}
+
+.tooltip {
+  color: var(--darkBlue);
+}
+.types-of-shipping {
+  background: var(--secondaryColor);
+  /* border: 1px solid var(--secondaryBtnVisited); */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.shipping-ul {
+  padding-left: 0px;
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#method-of-shipping {
+  max-width: 654px;
+}
+
+.shipping-methods-section {
+  border: 1px solid var(--secondaryBtnVisited);
+}
+
+#method-of-shipping .active {
+  width: 100%;
+  background: var(--secondaryBtnHover);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 15px;
+  height: 52px;
+}
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition: none;
+}
+
+.declaration-yes-no .custom-control {
+  padding-left: 12px;
+}
+
+.shipping-li {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 15px;
+  height: 52px;
+  background: var(--secondaryColor);
+  border-bottom: 1px solid var(--secondaryBtnVisited);
+  justify-content: space-between;
+}
+.shipping-ul > li:last-child {
+  border-bottom: none;
+}
+
+.shipping-li label {
+  font-size: var(--baseFontSize);
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: var(--secondaryBlack);
+  margin-left: 12px;
+}
+
+.method-shipping-radio {
+  margin-right: 12px;
+}
+
+#estimate-arrival {
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  color: var(--successMedium);
+  display: none;
+}
+
+#show-more-option-mobile {
+  display: none;
+}
+
+#show-mobile-shipping-method {
+  display: block;
+  padding-left: 0;
+}
+
+#show-more-option-mobile span {
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and428);
+  display: flex;
+  align-items: center;
+  color: var(--secondaryLinkNormal);
+}
+
+.fa-chevron-down {
+  margin-right: 10px;
+}
+
+#select-box-account {
+  background: var(--secondaryColor);
+  border: 1px solid var(--SearchIcon);
+  box-shadow: 0px 1px 2px rgba(6, 25, 56, 0.05);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--fontSize14);
+  line-height: var(--baseLineHeight);
+  color: var(--newsDateColor);
+  height: 44px;
+  background: #fff
+    url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBMNSA1TDEwIDBIMFoiIGZpbGw9IiMyMTI1MjkiLz4KPC9zdmc+Cg==)
+    no-repeat 95%;
+  -webkit-appearance: none;
+}
+
+#select-box-account:focus {
+  border-color: #436eff;
+  box-shadow: none;
+}
+
+#select-box-account:focus-visible {
+  outline: 2px solid var(--blueColorLight);
+}
+
+#carrier-acc-number {
+  font-weight: var(--fontWeightSmall);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and428);
+  color: var(--btnDisabledLight);
+  padding: 12px;
+  gap: 8px;
+  height: 44px;
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+}
+.grey-bg-input {
+  background: var(--secondaryBtnVisited);
+}
+#carrier-acc-number:focus {
+  border-color: #436eff;
+  box-shadow: none;
+}
+
+#carrier-acc-number:focus-visible {
+  outline: 2px solid var(--blueColorLight);
+}
+
+/* .shipping-carrier {
+    display: none;
+} */
+
+.shipping-carrier {
+  padding: 15px 15px 0 15px;
+  display: none;
+}
+.shipping-carrier .form-group {
+  margin-bottom: 0;
+}
+
+.shipping-carrier label {
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--baseFontSize);
+  line-height: var(--baseLineHeight);
+  color: var(--miniCartFreight);
+}
+
+.address-title-shipping {
+  font-size: var(--fontSize22);
+  color: var(--IScarrouselDecClr);
+  font-weight: var(--fontWeightSmall);
+  margin-top: 0.3rem;
+  line-height: var(--baseLineHeight);
+}
+
+.modal-body-filter {
+  padding: 10px 20px;
+}
+
+.d-flex-zipcode .select-estimate {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flex-direction-column .select-estimate {
+  padding-right: 10px;
+}
+
+.flex-direction-column .last-estimate {
+  padding-right: 0px;
+}
+
+.d-flex-zipcode {
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.order-country-input input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--SearchIcon);
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 10px;
+}
+
+.label-text {
+  color: var(--primaryColor);
+  font-size: var(--baseFontSize);
+  font-weight: var(--fontWeightNormal);
+}
+
+.order-country-input {
+  margin-top: 0.3rem;
+}
+
+.order-confirmation-mail {
+  font-size: var(--fontSize12);
+  line-height: var(--baseLineHeight);
+  color: var(--primaryColor);
+  margin-bottom: 0;
+  margin-top: 9px;
+}
+
+.edit-adddress-box {
+  margin-top: 30px;
+}
+
+.order-country-input input:focus,
+.select-estimate select:focus {
+  border-color: #436eff;
+  box-shadow: none;
+}
+
+.order-country-input input:focus-visible,
+.select-estimate select:focus-visible {
+  outline: 2px solid var(--blueColorLight);
+}
+
+.checkout-final-declaration input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+
+.enter-carrier-error-message,
+.invalid-carrier-error-message,
+.email-error-message {
+  color: var(--invertedColor);
+  margin-block: 0;
+
+  font-style: normal;
+  font-weight: var(--fontWeightMedium);
+  font-size: var(--fontSize12);
+  height: 16px;
+  width: 100%;
+  line-height: var(--baseLineHeight);
+}
+
+@media only screen and (max-width: 575px) {
+  #show-more-option-mobile {
+    display: block;
+  }
+  #show-mobile-shipping-method {
+    display: none;
+  }
+  .close-yellow-icon {
+    margin-top: 14px;
+  }
+}
+
+@media only screen and (max-width: 833px) {
+  .flex-direction-column {
+    flex-direction: column;
+  }
+  .select-mt {
+    margin-top: 0.8rem;
+  }
+  .d-flex-zipcode .select-estimate {
+    padding-right: 0px;
+  }
+  .shipping-li,
+  #method-of-shipping .active {
+    display: block;
+  }
+  ul.shipping-ul .shipping-li {
+    height: auto;
+    padding-top: 20px;
+  }
+  #method-of-shipping .active {
+    height: auto;
+    padding-top: 15px;
+  }
+  #estimate-arrival {
+    padding-left: 35px;
+  }
+  .shipping-li.active label {
+    line-height: 25px;
+  }
+}
+
+/* return to cart and redirecting to sign in page css starts */
+
+.redirect-signInPage {
+  padding: 5px 0px 0px 0px;
+  font-size: 16px;
+  line-height: var(--baseLineHeight);
+}
+
+.redirect-signInPage a {
+  font-weight: var(--fontWeightNormal);
+}
+
+.redirect-signIn-block {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 40px;
+}
+
+.redirect-signIn-block p {
+  margin: 0;
+  text-align: left;
+  font-weight: var(--fontWeightSmall);
+  font-size: 16px;
+  line-height: var(--baseLineHeight);
+  color: var(--secondaryBlack);
+  margin-right: 35px;
+}
+
+.redirect-signIn-block a {
+  padding: 12px;
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and428);
+  width: 188px;
+  height: 44px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* return to cart and redirecting to sign in page css ends */
+
+/* continue button css starts */
+
+.continue-btn {
+  padding: 10px 25px;
+  width: 174px;
+}
+
+/* continue button css ends */
+
+/* mobile view css starts */
+
+@media screen and (max-width: 833px) {
+  .shippingInformation-section {
+    width: 100%;
+    display: block;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .redirect-signIn-block {
+    display: block;
+  }
+  .redirect-signIn-block a {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+  .redirect-signInPage {
+    padding-left: 0;
+  }
+  .activeLink,
+  .continue-btn,
+  .continue-btn-block a,
+  .continue-btn-block button {
+    width: 100%;
+  }
+  #method-of-shipping li.shipping-li:last-child.active {
+    padding-top: 20px;
+  }
+  #successfullyDeleted .modal-body,
+  #duplicatedAddress .modal-body,
+  #successfullyAdded .modal-body,
+  #successfullyDeleted .modal-body,
+  #successFullySaved .modal-body {
+    padding: 30px 50px;
+  }
+  #deleteConfirm .modal-body,
+  #duplicateAddnewAddress .modal-body {
+    padding: 30px 40px;
+  }
+}
+/* mobile view css ends */
+/* edited by Nithya 26/01 for checkout stories   */
+
+.cartItem div#quantityDropdown {
+  display: none;
+}
+
+div.qty {
+  display: flex;
+  position: relative;
+  left: -15px;
+}
+
+button.cart-qty-minus,
+button.cart-qty-plus {
+  border: 0;
+  background-color: var(--secondaryColor);
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 7px;
+  cursor: pointer;
+}
+input.qty_num {
+  border: 0;
+  width: 87px;
+  text-align: center;
+  font-size: var(--fontSize14);
+  background-color: var(--secondaryColor);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  height: 33px;
+}
+.single_product_total_amount p {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSize14);
+  line-height: var(--lineHeight1and428);
+  text-align: right;
+  color: var(--primaryColor);
+  margin: revert;
+  margin-right: 10px;
+}
+
+.cart_quantity_div {
+  display: flex;
+  justify-content: end;
+}
+
+.single_product_total_amount {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.shipping-li.active #estimate-arrival {
+  display: block;
+}
+
+.shippingInformation-section {
+  padding: 0 9px;
+}
+
+/*  Obvious UI defects  */
+@media only screen and (max-width: 575px) {
+  .redirect-signIn-block {
+    margin-top: 31px;
+  }
+}
+/*  Obvious UI defects  */
+
+.button__disabled {
+  pointer-events: none;
+  background: gray;
+  border-color: gray;
+}
+
+.link__disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* TO show space during loader..*/
+.shipping-information {
+  min-height: 300px;
+}
+
+/* Shipping Method Loader */
+.shipping__loader {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(var(--invertedColor) 0 0) 0/0% no-repeat
+    var(--borderColorLight);
+  animation: l1 2s infinite linear;
+}
+@keyframes l1 {
+  100% {
+    background-size: 100%;
+  }
+}
+
+.loader__dots {
+  width: 35px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #d83a22 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: dots 1s infinite linear;
+  position: absolute;
+  top: 35px;
+  right: -28px;
+}
+@keyframes dots {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+#final-declaration-error {
+  margin-top: -20px;
+}

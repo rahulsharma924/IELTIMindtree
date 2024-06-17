@@ -1,0 +1,172 @@
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.css @ categories='shippingbillingaddress'}"
+/>
+<section class="address__book">
+  <sly data-sly-include="address-cart-template.html"></sly>
+  <h3 class="address-title-shipping">Shipping addresses</h3>
+  <div class="my-address-cards shipping positionrelative"></div>
+  <h3 class="address-title-shipping billing-address-section">
+    Billing addresses
+  </h3>
+  <div class="my-address-cards billing positionrelative"></div>
+  <div class="edit_adddress_box scroll-box-dropdown arrow--1">
+    <h3 class="address-title-shipping">Address information</h3>
+    <div class="row-data">
+      <div class="d-flex-zipcode">
+        <div class="select-estimate">
+          <label for="editfirstName" class="label-text">Name</label>
+          <div class="order-country-input">
+            <input
+              type="text"
+              id="editfirstName"
+              name="addfirstName"
+              placeholder="First Name"
+              class="first__name"
+            />
+          </div>
+          <p class="ie-error-medium validation-error" id="editfirstNameMsgs"></p>
+        </div>
+        <!--  <div class="select-estimate">
+                <label for="addlastname" class="label-text">Last Name</label>
+                <div class="order-country-input">
+                    <input type="text" id="addlastname" name="addlastname" placeholder="Last Name">
+                </div>
+                <p class="ie-error-medium" id="addlastNameMsgs"></p>
+            </div>-->
+      </div>
+      <div class="d-flex-zipcode">
+        <div class="select-estimate">
+          <label for="editcompanyname" class="label-text"
+            >Company name (optional)</label
+          >
+          <div class="order-country-input">
+            <input type="text" class="company__name" id="editcompanyname" name="addcompanyname" />
+          </div>
+          <p class="ie-error-medium validation-error" id="editcompanyMsgs"></p>
+        </div>
+      </div>
+      <div class="d-flex-zipcode">
+        <div class="select-estimate">
+          <label for="addmodalcountryUpdate" class="label-text"
+            >Country/Region</label
+          >
+          <select
+            class="order-summry-select order-country-select country__name"
+            name="addmodalcountry"
+            id="addmodalcountryUpdate"
+          >
+            <option value="" selected="selected">Select</option>
+          </select>
+          <p class="ie-error-medium validation-error" id="editcountrymsg"></p>
+        </div>
+      </div>
+      <div class="d-flex-zipcode">
+        <div class="select-estimate">
+          <label for="editaddressone" class="label-text">Address line 1</label>
+          <div class="order-country-input">
+            <input type="text" id="editaddressone" class="address__first--name" name="addaddressone" />
+          </div>
+          <p class="ie-error-medium validation-error" id="editaddressmsg"></p>
+        </div>
+      </div>
+      <div class="d-flex-zipcode">
+        <div class="select-estimate">
+          <label for="editaddresstwo" class="label-text"
+            >Address line 2 (optional)</label
+          >
+          <div class="order-country-input">
+            <input type="text" id="editaddresstwo" class="address__second--name" name="addaddresstwo" />
+          </div>
+          <p class="ie-error-medium validation-error" id="editaddressmsgtwo"></p>
+        </div>
+      </div>
+      <div class="d-flex-zipcode flex-direction-column">
+        <div class="select-estimate">
+          <label for="editcityname" class="label-text">City</label>
+          <div class="order-country-input">
+            <input type="text" id="editcityname" class="city__name" name="addcityname" />
+          </div>
+          <p class="ie-error-medium validation-error" id="editcityMsg"></p>
+        </div>
+        <div class="select-estimate select-mt">
+          <label for="addmodalstateUpdate" class="label-text">State</label>
+          <select
+            class="order-summry-select order-country-select state__name"
+            name="addmodalstate"
+            id="addmodalstateUpdate"
+          >
+            <option value="" selected="selected">Select</option>
+          </select>
+          <p class="ie-error-medium validation-error" id="editstatemsg"></p>
+        </div>
+        <div class="select-estimate select-mt">
+          <label for="editzipcode" class="label-text">Zip code</label>
+          <div class="order-country-input">
+            <input type="text" id="editzipcode" class="zip__code" name="addzipcode" />
+          </div>
+          <p class="ie-error-medium validation-error" id="editzipcodemsg"></p>
+          <p class="ie-error-medium validation-error" id="editzipcodelengthmsg"></p>
+        </div>
+      </div>
+      <div class="d-flex-zipcode">
+        <div class="select-estimate">
+          <label for="editphonenumber" class="label-text">Phone number</label>
+          <div class="order-country-input">
+            <input
+              type="tel"
+              id="editphonenumber"
+              name="addphonenumber"
+              class="editphonenumber phonenumberval phone__number"
+            />
+          </div>
+          <p class="ie-error-medium validation-error" id="editphonenumberMsgs"></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer-filter spacealign" id="edit_address_bottom">
+      <div>
+        <a
+          href="javascript:void(0);"
+          id="delete_address_btn"
+          class="deleteAddress"
+          data-id=""
+        >
+          Delete address</a
+        >
+      </div>
+      <div class="right-section-footer">
+        <div class="compare-box">
+          <input
+            id="default"
+            class="compare-checkbox"
+            type="checkbox"
+            value="default"
+          />
+          <label for="default"
+            ><span class="d-none-compare-mobile"
+              >Make default address</span
+            ></label
+          >
+        </div>
+        <button
+          class="footer-btn-clear cancel-mt ie-scondary-btn"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          class="footer-btn-apply updateAddress ie-primary-btn"
+          type="button"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.js @ categories='shippingbillingaddress'}"
+/>

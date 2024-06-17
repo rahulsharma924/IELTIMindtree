@@ -1,0 +1,14 @@
+#
+# This file contains the rewrite rules, and can be customized.
+#
+# By default, it includes just the rewrite rules. You can
+# add rewrite rules to this file but you should still include
+# the default rewrite rules.
+
+Include conf.d/rewrites/default_rewrite.rules
+
+#RewriteCond %{SERVER_NAME} localhost:8080 [NC]
+RewriteRule ^/robots.txt$ /content/fm/robots.txt [NC,PT,L]
+
+RewriteRule "^/$" "/content/fm/en/home.html" [PT,L]
+

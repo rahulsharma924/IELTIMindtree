@@ -1,0 +1,275 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+
+
+<sly
+  data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+  data-sly-call="${clientlib.all @ categories='category-bestseller'}"
+/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" 
+     data-sly-call="${clientlib.css @ categories='fm.plp'}" />
+<section class="compare-sec">
+  <div class="fm-container">
+    <div class="aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="compare-title">
+          <h3>Compare</h3>
+          <p class="compare-text"></p>
+          <a href="/content/fm/en/compare.html" class="compare-btn">Compare</a>
+        </div>
+      </div>
+      <div
+        class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="compare-image">
+          <ul id="compare-products"></ul>
+          <ul class="compare-dummy">
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="breadcrumb-container pb-0">
+  <div class="aem-Grid aem-Grid--12">
+    <div class="fm-container">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div class="plp-breadcrumbs">
+          <ul>
+            <li class="home">
+              <a href="/content/fm/en/homepage.html" title="Go to Home Page"
+                >Home</a
+              >
+              <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+            </li>            
+            <li class="category4">
+              <strong> Best Sellers</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bs-title-container">
+  <div class="fm-container">
+    <div class="aem-Grid aem-Grid--12">
+      <div
+        class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blank-none-mob"
+      >
+        &nbsp;
+      </div>
+      <div
+        class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+      >
+        <div data-sly-use.hashmap="com.aem.ie.core.models.NewsReleasesModel">
+          <div class="plp-head-content productListpage show-less" data-sly-list.key="${hashmap.myHashMap}">
+            <h1>${key @ context='html'}</h1>
+            <div class="plp-category-description more ">
+              ${hashmap.myHashMap[key] @ context='html'}
+            </div>
+            <a href="javascript:void(0)" role="button" id="read-desc" class="a-show-more morelink"></a>
+          </div>
+        </div>
+        <!--<h1>Best Sellers</h1>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fm-container">
+  <div id="bestseller-data" class="category-products aem-Grid aem-Grid--12">
+    <div
+      class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+    >
+      <div class="plp-filter">
+        <div class="plp-filter-title">
+          Filters<button class="filter-close" onclick="$algolia.filterClose()">
+            <i class="fa-regular fa-xmark font-22"></i>
+          </button>
+        </div>
+        <div id="current-refinements"></div>
+        <div id="clear-refinements"></div>
+        <div class="accordion-list">
+          <div
+            class="accordion-item accord-static cat-filter plp-filter-cty analyticsplpfilter"
+          >
+            <div class="accordion-head">Category</div>
+            <div class="accordion-content" id="brand-list"></div>
+          </div>
+          <div class="accordion-item lvl1-filter plp-filter-cty d-none">
+            <div class="accordion-head open">Sub categories</div>
+            <div class="accordion-content" id="lvl1-cat"></div>
+          </div>
+          <div id="catfilter-head"></div>
+          <div
+            class="accordion-item accord-static plp-filter-cty analyticsplpfilter"
+          >
+            <div class="accordion-head">Price Range</div>
+            <div class="accordion-content price-range-item" id="price-range">
+              <div class="customised-range-remove"></div>
+            <div class="customised-range">
+              <div id="range-input"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fixed-pop-button">
+          <div id="clear-refinements-mob"></div>
+          <button class="apply_btn_fix" onclick="$algolia.filterClose()">
+            Apply
+          </button>
+        </div>
+        <div style="display: none" class="best-products"></div>
+        <div style="display: none" id="shipmentDate"></div>
+      </div>
+    </div>
+
+    <div
+      class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"
+    >
+      <div class="plp-product-list">
+        <div class="plp-toolbar">
+          <div class="plp-title plp-title-mob">Products</div>
+          <div class="toolbar-first-row">
+            <div class="plp-title plp-title-desk">Products</div>
+            <div class="plp-view-mode analyticbestsellers">
+              <div class="tile-view-button active">
+                <i class="fa-regular fa-rectangle-vertical-history font-14"></i>
+                Tile
+              </div>
+              <div class="card-view-button">
+                <i class="fa-regular fa-list-radio font-14"></i>
+                Card
+              </div>
+              <div class="table-view-button">
+                <i class="fa-regular fa-table-list font-14"></i>
+                Table
+              </div>
+            </div>
+            <div class="filter-by-wrapper">
+              <div class="filter-by-label">
+                <button onclick="$algolia.filterPopup()">
+                  <i class="fa-sharp fa-regular fa-filter-list"></i> Filter
+                </button>
+              </div>
+            </div>
+            <div class="sort-by-wrapper analyticbestsellerssortby">
+              <div class="sort-by-label">Sort By:</div>
+              <div class="sort-by"></div>
+            </div>
+            <div class="hits-per-page-mob"></div>
+          </div>
+          <div class="toolbar-second-row showing-bar-desk-none">
+            <div class="limiter analyticbestsellerslimiter">
+              <div class="show_text">Show</div>
+              <div class="hits-per-page"></div>
+              <div class="of_text">of</div>
+              <div class="stats2"></div>
+            </div>
+
+            <div id="pagination-top" class="pagination"></div>
+          </div>
+
+          <div class="showing-bar-mob">
+            <strong>Showing</strong> 1 to <span id="page-length-end"></span> of
+            <span class="mstats"></span>
+          </div>
+        </div>
+        <div class="search-panel tile-view">
+          <div class="search-panel__results">
+            <div class="table-scroll-dv-nw">
+              <div class="pr-table-dv-nw">
+                <div class="pr-tr-dv" id="plptable-head">
+                  <div class="pr-th-dv"><span>Compare</span></div>
+                  <div class="pr-th-dv"><span>Product name</span></div>
+                  <div class="pr-th-dv sticky-action"><span>Actions</span></div>
+                  <div class="pr-th-dv"><span>Quantity</span></div>
+                  <div class="pr-th-dv"><span>SKU</span></div>
+                  <div class="pr-th-dv"><span>Price per unit</span></div>
+                  <div class="pr-th-dv">
+                    <span
+                      ><i class="fa-regular fa-circle-info"></i> Ship date</span
+                    >
+                  </div>
+                </div>
+                <div id="hits"></div>
+              </div>
+            </div>
+            <div class="hitsTable-wrapper">
+              <div class="modal custom-column" id="myModal1">
+                <div class="custom-column-inner analyticbestsellerseditparameters">
+                  <i class="fa fa-times pdpclose" aria-hidden="true" id="closeId1"></i>
+                  <div class="custom-column-header">
+                    <h3>Custom Column Display</h3>
+                  </div>
+                  <div class="custom-column-content checkbox-flex">
+                    <div class="custom-column-checkbox mt-0">
+                      <div class="compare-box pos-relat">
+                        <input
+                          id="selectAllcheckbox"
+                          onclick="$algolia.selectAllCheck(this);"
+                          class="compare-checkbox"
+                          type="checkbox"
+                        /><label for="selectAllcheckbox"
+                          ><span>Select All</span></label
+                        >
+                      </div>
+                    </div>
+                    <div id="catfilter-popup" class="pop-filter-flex"></div>
+                  </div>
+                  <div class="custom-column-footer">
+                    <button class="custom-column-button" id="custom-column-btn">
+                      APPLY CHANGES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination"></div>
+          </div>
+        </div>
+
+        <div class="toolbar-second-row mob-bot-pagination">
+          <div
+            class="limiter mt-0 analyticplplimiter analyticbestsellerslimiter"
+          >
+            <div class="show_text">Show</div>
+            <div class="hits-per-page-bottom"></div>
+            <div class="of_text">of</div>
+            <div class="stats2-bottom"></div>
+          </div>
+
+          <div id="pagination-bottom" class="pagination mt-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  var currentPageName = '${currentPage.getName @ context="scriptString"}'; //variable declared for analytic code
+</script>

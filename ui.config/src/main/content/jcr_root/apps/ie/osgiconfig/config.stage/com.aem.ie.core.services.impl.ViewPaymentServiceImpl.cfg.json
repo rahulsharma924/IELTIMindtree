@@ -1,0 +1,7 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "getViewPaymentMethodURL":"https://apim-iedtecomm-uat01.azure-api.net/account/fairview/view-payment-methods",
+  "getPaymentToken": "https://apim-iedtecomm-uat01.azure-api.net/payment/fairview/token",
+  "processPayment": "https://apim-iedtecomm-uat01.azure-api.net/payment/fairview/processPayment",
+  "choosePayment": "https://apim-iedtecomm-uat01.azure-api.net/payment/fairview/choosePayment"
+}

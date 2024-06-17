@@ -1,0 +1,118 @@
+.jml_input label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0e0f10;
+  padding: 0;
+  margin: 0;
+}
+.join-mailing-list_main {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background: #fafbfb;
+}
+.jml_input {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.jml_input .mailing-title {
+  margin: 26px 20px 31px 0;
+}
+.jml_input input {
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #e5e7e9;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #454b4f;
+  padding-left: 12px;
+  width: 274px;
+  margin: 16px 21px 21px 0;
+}
+.jml_btn_wrap {
+  width: auto;
+  margin: 17px 0 19px;
+}
+.jml_btn {
+  background: #d83a22;
+  border: 1px solid #d83a22;
+  border-radius: 4px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  width: auto;
+  padding: 11px 16px;
+}
+.jml_btn:hover,
+.jml_btn:active,
+.jml_btn:visited,
+.jml_btn:focus {
+  color: #ffffff;
+}
+.jml_btn:hover{
+  cursor:pointer;
+  background-color: #A80711;
+}
+
+.jml_btn:focus{
+  outline: 2px solid #3144D8;
+  outline-offset:2px;
+}
+.jml_btn:active{
+  outline: 0 none;
+  background-color: #6A0000;
+}
+
+
+@media screen and (max-width: 767px) {
+  .jml_btn {
+    width: 100%;
+  }
+  .join-mailing-list_main.row {
+    padding:13px 55px 30px 55px;
+    margin:0;
+  }
+  .jml_input {
+    display: block;
+    width: 100%;
+  }
+  .jml_input input {
+    width: 100%;
+    margin: 0px;
+  }
+  .jml_btn {
+    margin-left: 0px;
+  }
+  .jml_input .mailing-title {
+    text-align: left;
+    margin: 0px auto 11px;
+  }
+  .jml_btn_wrap {
+    width: 100%;
+    margin: 8px auto 0;
+  }
+}
+
+#home .jml_btn:focus{background-color:#D83A22;
+  outline: 2px solid #3144D8;
+  outline-offset:2px !important;
+}
+#home .jml_btn:hover{
+  cursor:pointer;
+  background-color: #A80711;
+  }
+  #home .jml_btn:active{
+  outline: 0 none;
+ background-color: #6A0000;
+}
